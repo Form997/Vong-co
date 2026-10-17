@@ -49,3 +49,8 @@ Tư liệu GS.TS Trần Quang Hải có nhắc một tiết mục *“Bá Nha T�
 - [ ] Thẩm định trực tiếp bởi nghệ nhân/nhà nghiên cứu chuyên môn.
 
 **Quy tắc: chỗ chưa kiểm định để trống và nói rõ; không tạo “lời gốc”, không bịa nốt nhạc.**
+
+
+## PHẦN LỜI — PHẦN NHẠC — PHẦN NHẠC CỤ
+
+Xem hồ sơ bổ sung: **[Lời, nguồn ký âm 32 câu và biên chế nhạc cụ](01-loi-nhac-nhac-cu.md)**. Lưu ý đây là tài liệu nghiên cứu và lời mới chưa ráp nhịp; chưa có tổng phổ/âm thanh đã kiểm định.
