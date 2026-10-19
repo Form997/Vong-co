@@ -7,15 +7,15 @@
 - 6 Bắc, hơi Bắc; 32 câu. Một nguồn do nhạc sĩ Văn Dần công bố ghi **32 câu nhịp tư**, trình bày chữ nhạc từ lớp I trở đi: https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/ . **Đọc bản ghi nhạc ở chính nguồn**; không sao chép nguyên văn phần ký âm chưa xác minh quyền tái bản.
 - Tư liệu ICHCAP ghi **32 câu nhịp 8**, có bản độc tấu đàn tranh của nhạc sư Nguyễn Vĩnh Bảo, thu năm 1977: https://archive.unesco-ichcap.org/kor/ek/sub16/pdf_file/handbook_cd8.pdf . Hai cách đếm cần nghiên cứu với người biết bài và bản đờn, **không tự đồng nhất**.
 - Hệ chữ nhạc thường dùng: Hò, Xự, Xang, Xê, Cống, Liu (có các dạng quãng tám và chữ phụ tùy bản); đừng đổi thành các nốt C–D–E cố định khi chưa chốt dây/giọng.
-- Sơ đồ nghiên cứu đang dùng (cần kiểm chứng dị bản): lớp I câu 1–8; lớp II 9–14; lớp III 15–26; lớp IV 27–32.
+- Sơ đồ nghiên cứu đang dùng (cần kiểm chứng dị bản): theo bản chữ nhạc Văn Dần: lớp I câu 1–8; lớp II 9–16; lớp III 17–24; lớp IV 25–32 (không trộn với cách chia lớp ở dị bản khác).
 
 **Khung ghi bản nhạc (đợi kiểm ký âm):**
 | Câu | Lớp | Chữ nhạc/lòng bản | Phách, trường độ, song lang | Nguồn/tư liệu | Duyệt |
 |---|---|---|---|---|---|
 | 01–08 | I | **Chưa nhập** | **Chưa kiểm** | Văn Dần; đối chiếu ICHCAP | Chưa |
-| 09–14 | II | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
-| 15–26 | III | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
-| 27–32 | IV | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
+| 09–16 | II | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
+| 17–24 | III | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
+| 25–32 | IV | **Chưa nhập** | **Chưa kiểm** | Như trên | Chưa |
 
 ## B. PHẦN LỜI
 
@@ -74,3 +74,7 @@ Các nhạc cụ dưới đây là **gợi ý biên chế thực hành đờn ca
 - ICHCAP (tư liệu về 20 bản Tổ, đàn tranh và nghệ nhân): https://archive.unesco-ichcap.org/kor/ek/sub16/pdf_file/handbook_cd8.pdf
 - Cục Di sản văn hóa, nghiên cứu *Đờn ca tài tử – nhạc giải trí của người dân phương Nam*: https://dsvh.gov.vn/Upload/files/Tap%20chi%20DSVH/So%2047/4714_Don%20ca%20Tai%20tu%20nhac%20giai%20tri%20cua%20nguoi%20dan%20phuong%20Nam.pdf
 - Nhạc sĩ Văn Dần, bản chữ nhạc *Lưu Thủy Trường* (2013): https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/
+
+
+## Bổ sung kiểm chứng 19/10/2026
+Xem [phiếu đối chiếu bản chép Văn Dần và biên chế hòa tấu 2013](01-phien-ban-van-dan-doi-chieu.md). Nguồn Văn Dần cung cấp cả ký âm chữ và lời ca *Bá Nha Tử Kỳ* đủ 32 câu (lời Cao Hoài Sang); truy cập ở nguồn gốc thay vì sao chép chưa được phép.
