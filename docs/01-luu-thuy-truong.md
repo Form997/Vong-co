@@ -61,3 +61,13 @@ Xem hồ sơ bổ sung: **[Lời, nguồn ký âm 32 câu và biên chế nhạc
 
 
 > **ĐÍNH CHÍNH KIỂM ĐỊNH 19/10/2026:** Sơ đồ lớp 8+8+8+8 bên trên **chỉ là quy ước trình bày của bản 32 câu được chọn**. Người học không áp dụng mặc nhiên sang bản 16 câu nhịp 8 do nhạc sư Nguyễn Vĩnh Bảo trình bày. Vị trí song lang cần xác nhận trên đúng nguồn ký âm/bản thu trước khi thực hành. [Biên bản V1](01-bien-ban-kiem-dinh-chot-v1.md).
+
+
+## Hiệu đính biên tập 19/10/2026 — nguyên tắc bản đang học
+- **Không lấy một sơ đồ chia lớp làm chân lý lịch sử:** 32 câu nhịp tư / 4 nhóm 8 câu chỉ là hệ quy chiếu giáo trình đã chọn. Nguồn mô tả 16 câu nhịp 8 và cách gọi khác phải lưu riêng; chưa có bảng tương ứng từng phách được duyệt.
+- **Không khẳng định vị trí song lang theo từng phách:** hướng dẫn hiện tại là định hướng tập luyện, chỉ kiểm được sau khi chọn bản ký âm và đối chiếu bản thu.
+- **Không gọi lời thơ 8 dòng là bài ca hoàn chỉnh:** tệp lời mới chỉ là bản thảo, chưa có âm tiết ăn khớp từng câu lòng bản.
+- **Không coi danh sách nhạc cụ là phối khí chuẩn:** từng bản thu cần kiểm thông tin từng track, người diễn, chức năng nhạc cụ.
+- **Không công bố trọn ký âm và MP3 có chủ sở hữu nếu chưa có quyền dùng.**
+- **Trạng thái nghiệm thu:** chốt hồ sơ nghiên cứu V1; chưa đạt nghiệm thu nghệ thuật hay số hóa tổng phổ.
+- [Biên bản kiểm định V1](01-bien-ban-kiem-dinh-chot-v1.md) · [Nguồn thu âm](../audio/01-luu-thuy-truong-nguon-thu.md)
