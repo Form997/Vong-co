@@ -58,7 +58,7 @@ Các nhạc cụ trên là **lựa chọn biên chế thực hành**, không kh�
 
 ## 5. Kiểm định và cấp phép
 - [x] Tìm được **ký âm chữ nhạc** và **lời ca** chia 32 câu, có nguồn/tên tác giả.
-- [x] Chỉ rõ hai hệ nhịp tư (32 câu) và nhịp 8 (16 câu) không thể trộn mốc song lang.
+- [x] Chỉ rõ hai hệ nhịp tư (32 câu) và nhịp 8 (16 câu) đang được phân biệt ở cấp tư liệu; quan hệ đối chiếu từng phách còn chờ kiểm.
 - [x] Đưa quy trình tập người đờn và người ca.
 - [ ] Chưa có **bản ký âm khuông 5 dòng/MusicXML** đã kiểm.
 - [ ] Chưa có giấy phép sao chép, tái bản trọn ký âm và lời Cao Hoài Sang.
@@ -67,3 +67,13 @@ Các nhạc cụ trên là **lựa chọn biên chế thực hành**, không kh�
 
 ## Đính chính kiểm định
 Những chỉ dẫn rao, nhịp và ngân chữ ở đây là **quy trình luyện tập đề xuất**, không phải hướng dẫn đã kiểm tới từng phách. Các khác biệt 16 câu nhịp 8 / 32 câu nhịp tư phải giữ nguyên nhãn dị bản; không tự động quy đổi. [Biên bản chốt hồ sơ V1](01-bien-ban-kiem-dinh-chot-v1.md).
+
+
+## Hiệu đính biên tập 19/10/2026 — nguyên tắc bản đang học
+- **Không lấy một sơ đồ chia lớp làm chân lý lịch sử:** 32 câu nhịp tư / 4 nhóm 8 câu chỉ là hệ quy chiếu giáo trình đã chọn. Nguồn mô tả 16 câu nhịp 8 và cách gọi khác phải lưu riêng; chưa có bảng tương ứng từng phách được duyệt.
+- **Không khẳng định vị trí song lang theo từng phách:** hướng dẫn hiện tại là định hướng tập luyện, chỉ kiểm được sau khi chọn bản ký âm và đối chiếu bản thu.
+- **Không gọi lời thơ 8 dòng là bài ca hoàn chỉnh:** tệp lời mới chỉ là bản thảo, chưa có âm tiết ăn khớp từng câu lòng bản.
+- **Không coi danh sách nhạc cụ là phối khí chuẩn:** từng bản thu cần kiểm thông tin từng track, người diễn, chức năng nhạc cụ.
+- **Không công bố trọn ký âm và MP3 có chủ sở hữu nếu chưa có quyền dùng.**
+- **Trạng thái nghiệm thu:** chốt hồ sơ nghiên cứu V1; chưa đạt nghiệm thu nghệ thuật hay số hóa tổng phổ.
+- [Biên bản kiểm định V1](01-bien-ban-kiem-dinh-chot-v1.md) · [Nguồn thu âm](../audio/01-luu-thuy-truong-nguon-thu.md)
