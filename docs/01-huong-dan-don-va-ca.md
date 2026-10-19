@@ -1,6 +1,6 @@
 # Bài 01 — Hướng dẫn đờn và ca theo bản ký âm Lưu Thủy Trường
 
-**Phiên bản học tập:** Nhạc sĩ Văn Dần, 32 câu nhịp tư, 4 lớp × 8 câu. **Bản ký âm và lời ca nằm tại nguồn, không sao chép toàn văn vào GitHub khi chưa có quyền tái bản.** Đây là chỉ dẫn học từ nguồn, chưa phải bản phối/giáo trình được nghệ nhân nghiệm thu.
+**Phiên bản học tập:** Bản chữ nhạc 32 câu nhịp tư được Văn Dần công bố. Mốc 4 lớp × 8 câu chỉ là quy ước trình bày của tài liệu chọn; không coi đây là chuẩn cho mọi dị bản. **Bản ký âm và lời ca nằm tại nguồn, không sao chép toàn văn vào GitHub khi chưa có quyền tái bản.** Đây là chỉ dẫn học từ nguồn, chưa phải bản phối/giáo trình được nghệ nhân nghiệm thu.
 
 ## 1. Bản ký âm và lời để học cùng nhau
 - [Bản chữ nhạc 32 câu và lời “Bá Nha Tử Kỳ” của Cao Hoài Sang (1955)](https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/) — Văn Dần công bố ngày 18/08/2013.
@@ -28,7 +28,7 @@
 ### Trong lúc đờn và ca
 1. Người đờn **học lòng bản trước khi biến tấu**. Khi ca, tránh chơi quá dày ở phần có chữ lời; các khoảng giữa câu có thể đáp đờn, nhưng vẫn tuân thủ bản và người dẫn.
 2. Người ca bám **dòng lời cùng số câu** với ký âm; nhấn chữ theo ý nghĩa và thanh điệu tiếng Việt, không ép thanh nặng/hỏi/ngã vào cách luyến khác đường nét ca mẫu.
-3. Người giữ song lang theo quy ước **nhịp tư của tư liệu Viện Âm nhạc**: điểm gõ cuối nhịp 3 và cuối nhịp 4 (đồng thời kết câu). Chú ý đây là mô tả nhịp, **không phải một file hướng dẫn vị trí nốt/lệnh MIDI**.
+3. Người giữ song lang chỉ gõ theo **quy ước của đúng bản chép và bản thu đang tập**, sau khi người hướng dẫn xác nhận. Không dùng mô tả cuối nhịp 3 và nhịp 4 như công thức chung; cách phân câu nhịp tư và nhịp 8 làm thay đổi số dấu song lang.
 4. Kết mỗi lớp (8,16,24), người đờn và ca đối chiếu chữ kết trong bản, không tự thêm câu. Nghỉ lấy hơi theo chỗ ca thực tế, không mặc định nghỉ sau mọi dấu phẩy văn xuôi.
 5. Khi dứt câu 32, phối hợp dứt cùng lòng bản và dấu nhịp, chỉ thêm phần vĩ thanh nếu cả dàn đã thống nhất.
 
@@ -51,7 +51,7 @@ Các nhạc cụ trên là **lựa chọn biên chế thực hành**, không kh�
 
 ## 4. Bài thực hành
 - Buổi 1: xem/đọc câu 1–2 **ở tài liệu gốc**, nghe, đọc tên chữ nhạc, gõ nhịp không có lời.
-- Buổi 2: luyện đàn 1–2, ca 1–2; đối chiếu người ca vào và kết câu, song lang cuối nhịp 3–4.
+- Buổi 2: luyện đàn 1–2, ca 1–2; đối chiếu người ca vào và kết câu, kiểm điểm gõ song lang với nghệ nhân theo phiên bản chọn.
 - Buổi 3: tập trọn lớp I (1–8) rồi kiểm câu kết lớp.
 - Buổi 4–6: luyện các lớp II, III, IV; không đặt tiến độ nếu chưa chắc chữ/nhịp.
 - Buổi 7: diễn tập đầy đủ với bản thu và đánh dấu câu lỗi; buổi này chỉ là gợi ý, chưa phải tiêu chuẩn năng lực.
@@ -63,3 +63,7 @@ Các nhạc cụ trên là **lựa chọn biên chế thực hành**, không kh�
 - [ ] Chưa có **bản ký âm khuông 5 dòng/MusicXML** đã kiểm.
 - [ ] Chưa có giấy phép sao chép, tái bản trọn ký âm và lời Cao Hoài Sang.
 - [ ] Chưa có nghệ nhân thẩm định cụ thể các kỹ thuật và chỗ ca vào ở từng phách.
+
+
+## Đính chính kiểm định
+Những chỉ dẫn rao, nhịp và ngân chữ ở đây là **quy trình luyện tập đề xuất**, không phải hướng dẫn đã kiểm tới từng phách. Các khác biệt 16 câu nhịp 8 / 32 câu nhịp tư phải giữ nguyên nhãn dị bản; không tự động quy đổi. [Biên bản chốt hồ sơ V1](01-bien-ban-kiem-dinh-chot-v1.md).
