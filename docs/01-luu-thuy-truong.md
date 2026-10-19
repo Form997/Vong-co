@@ -1,6 +1,6 @@
 # Bài 01 — LƯU THỦY TRƯỜNG
 
-> Hồ sơ nghiên cứu đờn ca tài tử Nam Bộ — bản biên tập 18/10/2026. **Trạng thái: đã xác minh tên bài, nhóm, cấu trúc sơ bộ; CHƯA xác minh toàn bộ lòng bản và lời ca.** Không được giới thiệu hồ sơ này như một bản ký âm hoàn chỉnh.
+> Hồ sơ nghiên cứu đờn ca tài tử Nam Bộ — bản biên tập 18/10/2026. **Trạng thái: chốt hồ sơ nguồn V1, chưa kiểm đủ lòng bản và ca từ; KHÔNG PHẢI bản biểu diễn đã nghiệm thu.** Không được giới thiệu hồ sơ này như một bản ký âm hoàn chỉnh.
 
 ## 1. Nhận diện
 - Tên: **Lưu Thủy Trường**; thuộc **6 bản Bắc**, trong hệ **20 bản Tổ**.
@@ -23,7 +23,7 @@
 Dữ liệu cần biên tập cho từng câu: lớp, số câu, nhịp/phách theo nguồn, chữ nhạc (Hò, Xự, Xang, Xê, Cống, Liu…), trường độ, điểm nhấn, kết câu, vị trí song lang, nguồn trang/bản thu, người kiểm bản. Tuyệt đối không điền nốt bằng suy đoán hay lặp mô-típ cho đủ câu. Hệ chữ nhạc, dây đàn và cao độ thực tế phải được phân biệt; không tự quy đổi chữ nhạc sang cao độ tuyệt đối.
 
 ## 4. Lời ca
-**CHƯA CÓ LỜI CỔ HOẶC LỜI CA 32 CÂU ĐƯỢC XÁC THỰC VỀ TÁC GIẢ, DỊ BẢN VÀ QUYỀN TÁI BẢN.**
+**Đã tìm thấy bản lời 'Bá Nha Tử Kỳ' gắn với bản ký âm tại nguồn Văn Dần; chưa kiểm độc lập đầy đủ tác giả, năm, đối chiếu từng câu và quyền tái bản.**
 
 Tư liệu GS.TS Trần Quang Hải có nhắc một tiết mục *“Bá Nha Tử Kỳ”* dùng **lớp I và II** của Lưu Thủy Trường, ca sĩ Đoàn Dự. Đó là **ví dụ một lời ca/bản diễn xướng**, không phải bằng chứng rằng toàn bộ 32 câu có cùng một bộ lời cổ cố định. Không tự chép lời của nghệ sĩ hiện đại rồi gọi là “lời nguyên bản”.
 
@@ -58,3 +58,6 @@ Tư liệu GS.TS Trần Quang Hải có nhắc một tiết mục *“Bá Nha T�
 ## PHẦN LỜI — PHẦN NHẠC — PHẦN NHẠC CỤ
 
 Xem hồ sơ bổ sung: **[Lời, nguồn ký âm 32 câu và biên chế nhạc cụ](01-loi-nhac-nhac-cu.md)**. Lưu ý đây là tài liệu nghiên cứu và lời mới chưa ráp nhịp; chưa có tổng phổ/âm thanh đã kiểm định.
+
+
+> **ĐÍNH CHÍNH KIỂM ĐỊNH 19/10/2026:** Sơ đồ lớp 8+8+8+8 bên trên **chỉ là quy ước trình bày của bản 32 câu được chọn**. Người học không áp dụng mặc nhiên sang bản 16 câu nhịp 8 do nhạc sư Nguyễn Vĩnh Bảo trình bày. Vị trí song lang cần xác nhận trên đúng nguồn ký âm/bản thu trước khi thực hành. [Biên bản V1](01-bien-ban-kiem-dinh-chot-v1.md).
