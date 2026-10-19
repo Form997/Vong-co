@@ -1,6 +1,6 @@
 # LƯU THỦY TRƯỜNG — GIÁO TRÌNH THỰC HÀNH V2
 **Bản Tổ 01 · Hệ 6 Bắc · Biên tập 19/10/2026**  
-**Trạng thái:** Đã kiểm nguồn và hướng dẫn; **chưa kiểm nốt và ca từng phách, chưa nghiệm thu nghệ nhân**.
+**Trạng thái:** Đã xác nhận trực tiếp bản chữ nhạc Văn Dần và bản giải thích của Phạm Văn Vĩnh; **chưa kiểm nốt và ca từng phách, chưa nghiệm thu nghệ nhân**.
 
 ## 1. Chọn phiên bản rõ ràng trước khi tập
 | Mã | Nguồn | Mô tả | Quy tắc sử dụng |
@@ -12,6 +12,8 @@
 **Hai quan điểm xuất xứ đang bất đồng:** Viện Âm nhạc cho rằng có sự phát triển từ Lưu Thủy trong nhạc Huế; theo lời nhạc sư Nguyễn Vĩnh Bảo qua Phạm Văn Vĩnh, Lưu Thủy Trường không phát triển từ Lưu Thủy Đoản. Không chốt một bên thành sự thật đã thống nhất.
 
 ## 2. Lộ trình 32 câu theo bản VD-32/4
+
+**[Sổ kiểm 32 câu V3: theo dõi ký âm, lời, song lang và ngón đờn từng câu](01-so-kiem-32-cau-v3.md)**. Hiện chưa có câu nào được duyệt đầy đủ về biểu diễn.
 | Chặng học | Câu | Người đờn | Người ca | Kiểm định |
 |---|---|---|---|---|
 | A | 01–08 | Xác định chữ đầu, chữ kết, trường độ, chỗ chuyển câu trên **ký âm nguồn** | Đọc đúng hàng lời ca tương ứng, đánh dấu ngân và lấy hơi qua nghe mẫu | Chưa đo từng phách |
@@ -51,7 +53,7 @@
 **Mức lỗi:** Nặng = đổi/lẫn lòng bản, khẳng định sai phách, mạo nhận tác giả/giấy phép; vừa = chệch chữ/ngân hoặc gõ song lang trong phiên bản đã định; nhẹ = khác trang trí ngón có căn cứ. Phân loại chỉ sau đối chiếu, không chấm máy móc.
 
 ## 5. Những điểm cần sửa từ giáo trình V1
-1. Chữ nhạc đầu tiên phải dựa vào **câu 1 nguồn**; tư liệu Viện Âm nhạc nhấn mạnh chữ **Hò ở nhịp 2 câu 1**, và ghi nhận một số lời ca dùng chữ khác thuận giọng nam. Không suy diễn rằng ca sĩ phải ca chữ Hò ngay nốt đầu tiên.
+1. Ở câu 1, bản Văn Dần ghi các chữ mở đầu và chữ Hò trong ngoặc; **không suy ra vị trí phách, cao độ tuyệt đối hoặc vị trí vào của người ca** chỉ từ ký hiệu này. Cần xác minh quy tắc chép nhạc và nghe biểu diễn đúng phiên bản.
 2. Lời mới [Bạn đờn bên bến nước](../lyrics/01-luu-thuy-truong-loi-moi.md) là **8 dòng thơ dự thảo**, không phải 32 câu ca đã ăn chữ.
 3. Không dựng file MIDI/MusicXML chỉ từ tên chữ nhạc không xác định độ cao và trường độ.
 4. Bản thu [tham chiếu](../audio/01-luu-thuy-truong-nguon-thu.md) không có nghĩa là được phép sao chép MP3 vào repository.
@@ -64,4 +66,4 @@
 - [ ] Bản thu mới hoặc bản thu đủ quyền sử dụng, kèm thông tin nghệ sĩ.
 - [ ] Biên bản duyệt bởi người có chuyên môn.
 
-**Kết luận:** V2 đạt làm giáo trình nền tảng đối chiếu và thực hành có kiểm soát, **chưa đạt tổng phổ/bản ca chuẩn để biểu diễn**.
+**Kết luận:** V2 là giáo trình nền tảng đối chiếu và thực hành có kiểm soát, **chưa đạt tổng phổ/bản ca chuẩn để biểu diễn**.
