@@ -7,15 +7,15 @@
 - Tính chất diễn tấu: sáng, khoan thai, có sức sống; cách nhấn và luyến cần nghe, đối chiếu nghệ nhân cùng dị bản, không đánh cứng như một chuỗi nốt MIDI.
 - Bản Lưu Thủy Trường không đồng nhất với **Lưu Thủy Đoản**; không dùng một bản khác thay cho lòng bản này.
 - Số câu: **32**.
-- Tài liệu tham khảo ghi **4 lớp: 8 + 6 + 12 + 6 câu** (nguồn: tư liệu GS.TS Trần Quang Hải). Lưu ý: nguồn ICHCAP ghi **32 câu nhịp 8**, trong khi tài liệu của Viện Âm nhạc ghi **32 câu nhịp tư**. **Chưa được tự ý hòa hai hệ đếm nhịp hoặc suy ra số phách**; cần đối chiếu bản chép, quy ước nhịp và bản diễn xướng cụ thể trước khi nhập nốt.
+- Tài liệu tham khảo ghi **4 lớp, mỗi lớp 8 câu (theo bản chép Văn Dần); tư liệu khác ghi 8 + 6 + 12 + 6 và cần xem là dị bản/phân lớp khác** (nguồn: tư liệu GS.TS Trần Quang Hải). Lưu ý: nguồn ICHCAP ghi **32 câu nhịp 8**, trong khi tài liệu của Viện Âm nhạc ghi **32 câu nhịp tư**. **Chưa được tự ý hòa hai hệ đếm nhịp hoặc suy ra số phách**; cần đối chiếu bản chép, quy ước nhịp và bản diễn xướng cụ thể trước khi nhập nốt.
 
 ## 2. Sơ đồ các lớp (chỉ là số câu, KHÔNG phải bản nhạc)
 | Lớp | Số câu | Câu theo thứ tự toàn bài | Trạng thái |
 |---|---:|---|---|
 | I | 8 | 01–08 | Chưa nhập ký âm |
-| II | 6 | 09–14 | Chưa nhập ký âm |
-| III | 12 | 15–26 | Chưa nhập ký âm |
-| IV | 6 | 27–32 | Chưa nhập ký âm |
+| II | 8 | 09–16 | Chưa nhập ký âm |
+| III | 8 | 17–24 | Chưa nhập ký âm |
+| IV | 8 | 25–32 | Chưa nhập ký âm |
 
 ## 3. Lòng bản / ký âm
 **CHƯA CÓ BẢN KÝ ÂM ĐƯỢC XÁC MINH ĐỦ 32 CÂU ĐỂ XUẤT BẢN.**
@@ -40,7 +40,7 @@ Tư liệu GS.TS Trần Quang Hải có nhắc một tiết mục *“Bá Nha T�
 
 ## 7. Danh sách kiểm định trước khi gắn nhãn hoàn chỉnh
 - [x] Đúng tên bản, thuộc 6 Bắc.
-- [x] Kiểm chứng thông tin 32 câu và nguồn mô tả 4 lớp.
+- [x] Kiểm chứng thông tin 32 câu; đối chiếu cấu trúc từng dị bản, ưu tiên cấu trúc 8–8–8–8 khi dùng bản chép Văn Dần.
 - [ ] Đối chiếu hai cách ghi nhịp 4 / nhịp 8 với bản ký âm cụ thể.
 - [ ] Chép đủ 32 câu lòng bản từ nguồn được phép sử dụng, có đối chiếu hai người.
 - [ ] Gắn nhịp, vị trí song lang, kỹ thuật nhấn rung, lưu dấu dị bản.
