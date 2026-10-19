@@ -2,6 +2,32 @@
 **Bản Tổ 01 · Hệ 6 Bắc · Biên tập 19/10/2026**  
 **Trạng thái:** Đã xác nhận trực tiếp bản chữ nhạc Văn Dần và bản giải thích của Phạm Văn Vĩnh; **chưa kiểm nốt và ca từng phách, chưa nghiệm thu nghệ nhân**.
 
+## PHẦN LỜI CA — ĐỌC TRỰC TIẾP TẠI ĐÂY
+
+### Lời mới: *Bạn đờn bên bến nước* (bản thảo dự án Hai Đất)
+
+Nước xuôi qua bến quê mình,  
+Gió đưa câu đờn thắm tình tri âm.  
+Kìm ngân bên bóng trăng rằm,  
+Tranh gieo tiếng ngọc, xa xăm hóa gần.
+
+Chiều nghiêng mái lá sân đình,  
+Gặp nhau xin giữ nghĩa tình trước sau.  
+Nước còn xuôi mãi qua cầu,  
+Tiếng đờn còn đó, ngọt câu quê nhà.
+
+> **Quan trọng:** Đây chỉ là **8 dòng lời mới**, chưa đặt khớp 32 câu lòng bản nên **không thể ca ngay theo Lưu Thủy Trường**. Không gọi là lời cổ hoặc phiên bản đã nghiệm thu.
+
+### Lời ca có nguồn: *Bá Nha Tử Kỳ*
+
+- **[Đọc lời ca đánh số theo từng câu trên trang nhạc sĩ Văn Dần](https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/)**.
+- Trang nguồn ghi tác giả lời **Cao Hoài Sang**, năm **1955**. Đây là ghi nhận từ trang, chưa được kiểm chứng độc lập về tác quyền.
+- Chưa đưa nguyên văn toàn bộ lời của tác giả này lên GitHub vì **chưa có xác nhận quyền tái bản**.
+
+[Lời mới — tệp riêng](../lyrics/01-luu-thuy-truong-loi-moi.md) · [Sổ kiểm 32 câu](01-so-kiem-32-cau-v3.md)
+
+---
+
 ## 1. Chọn phiên bản rõ ràng trước khi tập
 | Mã | Nguồn | Mô tả | Quy tắc sử dụng |
 |---|---|---|---|
