@@ -7,7 +7,7 @@
 - 6 Bắc, hơi Bắc; 32 câu. Một nguồn do nhạc sĩ Văn Dần công bố ghi **32 câu nhịp tư**, trình bày chữ nhạc từ lớp I trở đi: https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/ . **Đọc bản ghi nhạc ở chính nguồn**; không sao chép nguyên văn phần ký âm chưa xác minh quyền tái bản.
 - Tư liệu ICHCAP ghi **32 câu nhịp 8**, có bản độc tấu đàn tranh của nhạc sư Nguyễn Vĩnh Bảo, thu năm 1977: https://archive.unesco-ichcap.org/kor/ek/sub16/pdf_file/handbook_cd8.pdf . Hai cách đếm cần nghiên cứu với người biết bài và bản đờn, **không tự đồng nhất**.
 - Hệ chữ nhạc thường dùng: Hò, Xự, Xang, Xê, Cống, Liu (có các dạng quãng tám và chữ phụ tùy bản); đừng đổi thành các nốt C–D–E cố định khi chưa chốt dây/giọng.
-- Sơ đồ nghiên cứu đang dùng (cần kiểm chứng dị bản): theo bản chữ nhạc Văn Dần: lớp I câu 1–8; lớp II 9–16; lớp III 17–24; lớp IV 25–32 (không trộn với cách chia lớp ở dị bản khác).
+- Sơ đồ dùng để biên tập riêng bản 32 câu nhịp tư: I 1–8; II 9–16; III 17–24; IV 25–32. **Đây là một quy ước trình bày, không phải phân lớp bắt buộc của mọi phiên bản.**
 
 **Khung ghi bản nhạc (đợi kiểm ký âm):**
 | Câu | Lớp | Chữ nhạc/lòng bản | Phách, trường độ, song lang | Nguồn/tư liệu | Duyệt |
@@ -78,3 +78,6 @@ Các nhạc cụ dưới đây là **gợi ý biên chế thực hành đờn ca
 
 ## Bổ sung kiểm chứng 19/10/2026
 Xem [phiếu đối chiếu bản chép Văn Dần và biên chế hòa tấu 2013](01-phien-ban-van-dan-doi-chieu.md). Nguồn Văn Dần cung cấp cả ký âm chữ và lời ca *Bá Nha Tử Kỳ* đủ 32 câu (lời Cao Hoài Sang); truy cập ở nguồn gốc thay vì sao chép chưa được phép.
+
+
+> ĐÍNH CHÍNH: Điểm gõ song lang và số lần gõ **phải được duyệt theo đúng bản ký âm/bản thu**. Không dùng quy tắc mặc định cho cả hệ 32 câu nhịp tư và 16 câu nhịp 8. [Biên bản kiểm định](01-bien-ban-kiem-dinh-chot-v1.md).
