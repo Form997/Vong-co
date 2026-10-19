@@ -3,7 +3,7 @@
 **Phiên bản tham chiếu:** bản chữ nhạc trên trang nhạc sĩ Văn Dần, đăng ngày 18/8/2013:
 https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/
 
-## Phân lớp THEO BẢN CHÉP VĂN DẦN
+## Phân lớp THEO QUY ƯỚC TRÌNH BÀY 32 CÂU NHỊP TƯ (KHÔNG ÁP DỤNG CHO MỌI DỊ BẢN)
 | Lớp | Câu | Tổng câu | Ghi chú |
 |---|---|---:|---|
 | I | 01–08 | 8 | Mở đầu |
@@ -11,7 +11,7 @@ https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/
 | III | 17–24 | 8 | Chuyển lớp theo bản chép |
 | IV | 25–32 | 8 | Kết bài |
 
-**Lưu ý đối chiếu:** Phân chia 8–6–12–6 xuất hiện trong một số tài liệu diễn giải, nhưng **không phải ranh giới 4 lớp của bản chép Văn Dần**. Không ghép cấu trúc dị bản này với văn bản kia rồi gọi là nguyên mẫu. Tư liệu ICHCAP và Viện Âm nhạc cũng dùng cách gọi nhịp khác nhau (*nhịp 8* so với *nhịp tư*); chưa thể quy đổi một–một khi thiếu hệ đếm và đối chiếu trực tiếp.
+**Lưu ý đối chiếu:** Phân chia 8–6–12–6 xuất hiện trong một số tài liệu diễn giải, nhưng **chưa đủ căn cứ để coi là ranh giới lớp của bản chép Văn Dần**. Không ghép cấu trúc dị bản này với văn bản kia rồi gọi là nguyên mẫu. Tư liệu ICHCAP và Viện Âm nhạc cũng dùng cách gọi nhịp khác nhau (*nhịp 8* so với *nhịp tư*); chưa thể quy đổi một–một khi thiếu hệ đếm và đối chiếu trực tiếp.
 
 ## Nhạc — đường dẫn gốc và quy trình nhập nốt
 - **Lòng bản đủ 32 câu:** [bản chữ nhạc Văn Dần, có thể xem đầy đủ từng chữ đờn tại nguồn](https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/). Không chép nguyên toàn bộ bản ký âm của tác giả vào kho khi chưa xác minh quyền sử dụng.
@@ -43,3 +43,6 @@ https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/
 - [ ] File âm thanh thực tế do người có chuyên môn kiểm định.
 
 **Trạng thái: đã xác nhận nguồn ký âm và lời ca đủ 32 câu để tra cứu; chưa hoàn tất tác phẩm biểu diễn hoặc sao chép các nội dung có bản quyền.**
+
+
+> Đính chính: khẳng định phân lớp là 'bản gốc duy nhất' không có căn cứ; bảng trên là sơ đồ dùng cho giáo trình. Danh tính nghệ sĩ của các nguồn thu âm cần đối chiếu theo từng track, không gộp dàn của một CD vào mọi bản thu.
