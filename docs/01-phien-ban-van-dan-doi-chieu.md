@@ -46,3 +46,13 @@ https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/
 
 
 > Đính chính: khẳng định phân lớp là 'bản gốc duy nhất' không có căn cứ; bảng trên là sơ đồ dùng cho giáo trình. Danh tính nghệ sĩ của các nguồn thu âm cần đối chiếu theo từng track, không gộp dàn của một CD vào mọi bản thu.
+
+
+## Hiệu đính biên tập 19/10/2026 — nguyên tắc bản đang học
+- **Không lấy một sơ đồ chia lớp làm chân lý lịch sử:** 32 câu nhịp tư / 4 nhóm 8 câu chỉ là hệ quy chiếu giáo trình đã chọn. Nguồn mô tả 16 câu nhịp 8 và cách gọi khác phải lưu riêng; chưa có bảng tương ứng từng phách được duyệt.
+- **Không khẳng định vị trí song lang theo từng phách:** hướng dẫn hiện tại là định hướng tập luyện, chỉ kiểm được sau khi chọn bản ký âm và đối chiếu bản thu.
+- **Không gọi lời thơ 8 dòng là bài ca hoàn chỉnh:** tệp lời mới chỉ là bản thảo, chưa có âm tiết ăn khớp từng câu lòng bản.
+- **Không coi danh sách nhạc cụ là phối khí chuẩn:** từng bản thu cần kiểm thông tin từng track, người diễn, chức năng nhạc cụ.
+- **Không công bố trọn ký âm và MP3 có chủ sở hữu nếu chưa có quyền dùng.**
+- **Trạng thái nghiệm thu:** chốt hồ sơ nghiên cứu V1; chưa đạt nghiệm thu nghệ thuật hay số hóa tổng phổ.
+- [Biên bản kiểm định V1](01-bien-ban-kiem-dinh-chot-v1.md) · [Nguồn thu âm](../audio/01-luu-thuy-truong-nguon-thu.md)
