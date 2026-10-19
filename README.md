@@ -5,6 +5,7 @@ Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.
 
 ## Mở tài liệu
+- **[Giáo trình nâng cao V2 – Bài 01](docs/01-giao-trinh-thuc-hanh-v2.md)** — phiên bản tham chiếu chính, luyện đờn–ca theo từng chặng và phiếu kiểm định (chưa nghiệm thu biểu diễn).
 - **[Bài 01 – Lưu Thủy Trường](docs/01-luu-thuy-truong.md)** — phân tích nguồn, cấu trúc 32 câu, các điểm cần kiểm chứng nhịp 4 / nhịp 8, ca từ và ngón đờn.
 - **[Mục lục 20 bản Tổ](docs/20-ban-to.md)** — 6 Bắc, 7 Lễ, 3 Nam, 4 Oán; trạng thái kiểm định từng bản.
 
