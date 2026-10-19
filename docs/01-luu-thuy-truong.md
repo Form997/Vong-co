@@ -6,8 +6,8 @@
 - Tên: **Lưu Thủy Trường**; thuộc **6 bản Bắc**, trong hệ **20 bản Tổ**.
 - Tính chất diễn tấu: sáng, khoan thai, có sức sống; cách nhấn và luyến cần nghe, đối chiếu nghệ nhân cùng dị bản, không đánh cứng như một chuỗi nốt MIDI.
 - Bản Lưu Thủy Trường không đồng nhất với **Lưu Thủy Đoản**; không dùng một bản khác thay cho lòng bản này.
-- Số câu: **32**.
-- Tài liệu tham khảo ghi **4 lớp, mỗi lớp 8 câu (theo bản chép Văn Dần); tư liệu khác ghi 8 + 6 + 12 + 6 và cần xem là dị bản/phân lớp khác** (nguồn: tư liệu GS.TS Trần Quang Hải). Lưu ý: nguồn ICHCAP ghi **32 câu nhịp 8**, trong khi tài liệu của Viện Âm nhạc ghi **32 câu nhịp tư**. **Chưa được tự ý hòa hai hệ đếm nhịp hoặc suy ra số phách**; cần đối chiếu bản chép, quy ước nhịp và bản diễn xướng cụ thể trước khi nhập nốt.
+- Số câu theo bản chép Văn Dần: **32 câu nhịp tư**; theo trình bày nhạc sư Nguyễn Vĩnh Bảo (qua Phạm Văn Vĩnh): **16 câu nhịp 8**.
+- Tài liệu tham khảo ghi **4 lớp, mỗi lớp 8 câu (theo bản chép Văn Dần); tư liệu khác ghi 8 + 6 + 12 + 6; chưa có bản ký âm tương ứng được kiểm để kết luận đây là dị bản xác định** (nguồn: tư liệu GS.TS Trần Quang Hải). Lưu ý: nguồn ICHCAP ghi **32 câu nhịp 8**, trong khi cách diễn giải của nhạc sư Nguyễn Vĩnh Bảo (qua Phạm Văn Vĩnh) ghi **16 câu nhịp 8**, tài liệu Viện Âm nhạc ghi **32 câu nhịp tư**. **Chưa được tự ý hòa hai hệ đếm nhịp hoặc suy ra số phách**; cần đối chiếu bản chép, quy ước nhịp và bản diễn xướng cụ thể trước khi nhập nốt.
 
 ## 2. Sơ đồ các lớp (chỉ là số câu, KHÔNG phải bản nhạc)
 | Lớp | Số câu | Câu theo thứ tự toàn bài | Trạng thái |
@@ -50,6 +50,10 @@ Tư liệu GS.TS Trần Quang Hải có nhắc một tiết mục *“Bá Nha T�
 
 **Quy tắc: chỗ chưa kiểm định để trống và nói rõ; không tạo “lời gốc”, không bịa nốt nhạc.**
 
+
+## Biên bản chốt V1
+
+**[Xem biên bản kiểm định và quyết định chốt hồ sơ V1](01-bien-ban-kiem-dinh-chot-v1.md)** — chưa duyệt bản biểu diễn hoàn chỉnh.
 
 ## PHẦN LỜI — PHẦN NHẠC — PHẦN NHẠC CỤ
 
