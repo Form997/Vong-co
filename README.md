@@ -1,5 +1,11 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## NGHIỆM THU V2 (nhánh này)
+
+Bắt đầu **bản Tổ số 01 – Lưu Thủy Trường**. [Biên bản V2 bài 01](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) và [bảng kiểm văn bản 32 câu](ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md) đã lập. **0/20 bài đạt nghiệm thu diễn xướng; 01/20 đang kiểm**. Chưa có nghệ nhân duyệt, không gọi đây là chứng nhận.
+
+---
+
 Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**. Mục tiêu: mỗi bản có nguồn, lòng bản, lớp/câu/nhịp, lời ca, hướng dẫn diễn tấu, bản nghe **được phép sử dụng**, cùng nhật ký kiểm định.
 
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.
