@@ -5,6 +5,7 @@ Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.
 
 ## Mở tài liệu
+- **[BIÊN BẢN KIỂM TOÁN V1 — 20/20 bản Tổ](docs/kiem-toan-v1-20-ban.md)** — kết quả kiểm kê, lỗi V1 đã sửa, dị bản và việc chưa thể nghiệm thu.
 - **[Danh mục 20 bản Tổ và 20 thư mục riêng](docs/20-ban-to.md)** — mỗi bản ở `ban-to/NN-ten-bai/`.
 - **[Bài 02 – Phú Lục Chấn](ban-to/02-phu-luc-chan/README.md)** — nguồn lịch sử, nhịp, nhạc cụ và tình trạng lời/nhạc.
 - **[Sổ kiểm 34 câu – Phú Lục Chấn](ban-to/02-phu-luc-chan/kiem-dinh-34-cau.md)** — theo dõi kiểm định từng câu.
