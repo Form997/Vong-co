@@ -8,7 +8,7 @@
 - [Viện Âm nhạc — tài liệu Hai mươi bài Tổ](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf): **Tiểu Khúc 29 câu nhịp tư, hơi Lễ**, phát triển từ bản cùng tên trong nhạc Lễ Nam Bộ; gọi tắt **Bài Tiểu**.
 - [Văn Dần — Lược khảo hình thành bài bản đờn ca tài tử Nam Bộ (2013)](https://nhacsivandan.wordpress.com/2013/11/03/luoc-khao-hinh-thanh-bai-ban-don-ca-tai-tu-nam-bo/): Tiểu Khúc là bản cuối trong Bảy Lễ, 29 câu, tóm tắt nét hơi điệu của sáu bản trước theo cách diễn giải của tác giả.
 - Tính chất theo Viện Âm nhạc: vận nhạc khúc chiết, nghiêm trang, thường có các ý nhạc tương đối độc lập. Hệ âm chính được tài liệu ghi **Liu–U–Xang–Xê–Cống**.
-- **Không đồng nhất** Tiểu Khúc với các tác phẩm khác cùng tên hoặc ghép nhịp của Bảy Bắc vào hơi Lễ.
+- **Không đồng nhất** Tiểu Khúc với các tác phẩm khác cùng tên hoặc ghép nhịp của Sáu Bắc vào hơi Lễ.
 
 ## 2. Cấu trúc tham chiếu 29 câu
 Viện Âm nhạc chia thành bốn lớp **10–7–8–4** để hỗ trợ giảng dạy; bản truyền trước đây không nhất thiết chia lớp.
