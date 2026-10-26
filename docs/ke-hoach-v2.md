@@ -1,5 +1,7 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Điều chỉnh ưu tiên 27/10/2026:** khởi động nghiệm thu từ **bản 01**, không bắt đầu bằng bài 10. Mọi phán quyết theo bằng chứng trực tiếp và không có “đạt” tự động.
+
 **Quyết định phạm vi (27/10/2026): V2 CHỈ LÀ NGHIỆM THU.** V1 là kho hồ sơ nguồn được khóa; V2 không được dùng để thay thế việc thiếu bằng sáng tác hoặc ghi trạng thái “đạt” theo cảm tính.
 
 ## Kết quả nghiệm thu bắt buộc
@@ -23,7 +25,7 @@ Mỗi bản Tổ phải có **biên bản nghiệm thu riêng**, gồm:
 - **Phạm vi không bao gồm:** tự viết lời mới, tạo ký âm từ suy đoán, mở rộng số bản, thiết kế giao diện hoặc xây tính năng phần mềm không phục vụ kiểm định.
 
 ## Thứ tự nghiệm thu
-**Đợt 1 (thí điểm quy trình):** bài 10 Long Đăng — hiện chưa có đủ ký âm 40 câu được thẩm định, **trạng thái CHỜ NGHIỆM THU**.
+**Đợt 1 (khởi động theo thứ tự người dùng yêu cầu): bài 01 Lưu Thủy Trường** — [biên bản nghiệp vụ](../ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) và [kiểm văn bản 32 câu](../ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md). Đã xác nhận chỉ mục, còn bất đồng 32/4 – 16/8 – 32/8; **CHỜ NGHIỆM THU biểu diễn**. Bài 10 Long Đăng chuyển vào danh sách xử lý sau bài 01.
 
 **Đợt 2 (rủi ro dị bản):** 04 Cổ Bản, 06 Tây Thi, 01 Lưu Thủy Trường, 08 Ngũ Đối Thượng, 15 Nam Ai, 16 Đảo Ngũ Cung, 18 Phụng Hoàng.
 
