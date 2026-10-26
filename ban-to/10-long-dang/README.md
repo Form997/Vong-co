@@ -2,7 +2,7 @@
 
 **Nhóm:** Bảy Lễ / Thất Chánh · **Hơi:** Lễ · **Bản quản lý:** 40 câu nhịp tư · **Ngày cập nhật:** 27/10/2026.
 
-> **Trạng thái:** Đã kiểm chứng danh mục, cấu trúc từ Viện Âm nhạc, lời ca có tác giả và một bản thu nghệ nhân trong danh mục. Chưa tìm/đối chiếu trọn 40 câu ký âm có lai lịch rõ và chưa có quyền tái bản ca từ hoặc MP3. Không phải giáo trình biểu diễn đã nghiệm thu.
+> **Trạng thái sau rà soát 27/10/2026: CHƯA HOÀN THÀNH.** Đã xác nhận 40 câu/3 lớp; mới bổ sung nguồn **Nhị Tấn tập V** có bản lời *Bàng Quyên xuống núi* ghi Thái Thụy Phong, cùng một bản lời hiện đại được đánh số 40 câu. Chưa xác thực đủ ký âm từng phách và chưa có quyền tái bản lời/MP3.
 
 ## 1. Nguồn lịch sử và cấu trúc
 - [Viện Âm nhạc — thuyết minh 20 bài bản Tổ](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf): **Long Đăng 40 câu nhịp tư**, hơi Lễ, phát triển bằng cách mở nhịp và kết cấu từ Long Đăng trong nhạc Lễ Nam Bộ. Thường gọi tắt là **bài Đăng**.
@@ -32,6 +32,17 @@ Theo Viện Âm nhạc, bản trước đây không nhất thiết chia lớp; �
 - [Danh mục TKaraoke](https://lyric.tkaraoke.com/s.tim?q=long-dang&t=11) liệt kê bài **Long Đăng 40 câu nhịp 4 – Bình Phước Điểm Hẹn Mùa Xuân**, nhưng ghi các biến thể tên tác giả **Đỗ Hoài Thu / Hoài Như / Đỗ Hoài Như**.
 - Nguồn này chỉ dùng để tìm hướng kiểm tác giả, **không chọn làm lời chính khi danh tính người soạn chưa được xác minh**.
 
+### *Bàng Quyên xuống núi* — Thái Thụy Phong (nguồn sách Nhị Tấn tập V)
+- **[Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập V, bản số hóa trên Scribd](https://www.scribd.com/document/729254130/Nhac-Tai-Tu-Nam-Bo-5-Nhi-Tan)** có mục **“2. LONG ĐĂNG – Bàng Quyên xuống núi”, “Soạn lời: Thái Thụy Phong”**, theo phần văn bản được lập chỉ mục công khai. Đây là nguồn sách cụ thể, **mới xác nhận thông tin mục và người soạn; chưa đối chiếu ảnh từng trang, năm/ấn bản và đủ 40 câu**.
+- Không ghi Thái Thụy Phong là tác giả lòng bản Long Đăng; đây là người **soạn lời cho một bài ca trên Long Đăng**.
+- Có thể dùng làm nguồn lời ưu tiên tra bản chép, không phát hành lại toàn văn khi chưa rõ quyền.
+
+### *Bình Phước điểm hẹn mùa xuân* — bản lời ca đánh số 40 câu
+- [TKaraoke — trang ghi tác giả **Đỗ Hoài Thu** và đủ 40 câu](https://lyric.tkaraoke.com/78557/long_dang___40_cau___nhip_4__binh_phuoc_diem_hen_mua_xuan.html).
+- [TKaraoke — bài đăng khác ghi **Hoài Như**, nhưng phần cuối lại ghi Đỗ Hoài Thu](https://lyric.tkaraoke.com/74382/long_dang_40_cau_binh_phuoc_diem_hen_mua_xuan.html).
+- **Không gộp chắc hai trang thành một văn bản duy nhất hay một tác giả đã xác nhận**: khác lời ở nhiều câu, có sự bất nhất tên người soạn và dấu đánh số. Đây là hai lời/phiên bản **mới** đăng trên nguồn phổ thông, không phải ca cổ đầu tiên.
+- Lời đánh số 1–40 chưa chứng minh khớp từng phách với bản đờn của nghệ nhân. Không chép nguyên văn.
+
 ## 4. Bản thu và nghệ nhân
 - [Tủ nhạc Cổ Nhạc miền Nam — Nam Kỳ Lục Tỉnh](https://www.namkyluctinh.org/am-nhac/tu-nhac-co-nhac-mien-nam.html): **Long Đăng — NSƯT Ba Tu độc tấu đờn kìm**, thuộc bộ **20 bản Tổ** phát hành bởi **Sở VH-TT&DL Long An năm 2006** (theo metadata tủ nhạc).
 - Bản ca *Hồn Thiêng Sông Núi* — **Bạch Huệ** được giới thiệu bởi GS.TS Trần Quang Hải (đường dẫn tài liệu nguồn ở mục 3).
@@ -45,14 +56,19 @@ Theo Viện Âm nhạc, bản trước đây không nhất thiết chia lớp; �
 5. **Song lang:** nguồn xác định **nhịp tư** nhưng chưa có đánh dấu từng phách được đối chiếu; không tự tạo vị trí gõ cho 40 câu.
 6. **Kết lớp:** tập mốc câu 16, 28, 40 để quản lý, nhưng xác nhận điểm dứt hơi và chuyển câu từ bản đờn nguồn/nghệ nhân trước khi coi đó là điểm nghỉ.
 
-## 6. Phiếu kiểm định và điều kiện chốt
+## 6. Cảnh báo trùng tên với Long Đăng ở Huế
+- [Cơ sở dữ liệu Nhã nhạc Huế](https://csdl-nhanhac.huecit.com/Tu-lieu-nha-nhac/Thong-tin-tu-lieu?sIndex=65) cũng có bài **Long Đăng** dùng trong dàn Tiểu nhạc lễ cung đình, ghi trình diễn của Nguyễn Ngọc Hùng (tỳ bà) và Hồ Ái (đàn nhị), cùng hệ thống **108/116 nhịp C** trong trường hợp họ khảo cứu.
+- Đó là **tư liệu của truyền thống Nhã nhạc Huế**, **không phải** bản tài tử **Long Đăng 40 câu nhịp tư**. Không dùng âm thanh hay số nhịp Huế để kết luận bản tài tử đã hoàn chỉnh.
+
+## 7. Phiếu kiểm định và điều kiện chốt
 - [x] Danh mục Bảy Lễ, tên Long Đăng/bài Đăng có nguồn.
 - [x] 40 câu nhịp tư, 3 lớp 16–12–12 có nguồn Viện Âm nhạc.
-- [x] Có nguồn nghệ nhân Ba Tu đờn kìm và lời ca Trần Ngọc Thạch/Bạch Huệ.
+- [x] Có nguồn nghệ nhân Ba Tu đờn kìm; lời Trần Ngọc Thạch/Bạch Huệ mới ở mức danh mục cần kiểm track.
+- [x] Tìm được nguồn sách Nhị Tấn tập V về *Bàng Quyên xuống núi* (Thái Thụy Phong), chưa rà đủ nguyên bản.
 - [x] Có ghi mâu thuẫn tên tác giả lời hiện đại trên TKaraoke, không tự giải quyết.
 - [ ] Chưa có ký âm chữ nhạc nguyên bản **đủ 40 câu** được kiểm từng chữ/trường độ.
 - [ ] Chưa có lời đủ 40 câu được phép đăng và xác thực khớp bản nhạc.
 - [ ] Chưa thẩm định kỹ thuật ngón và điểm song lang bằng nghệ nhân.
 - [ ] Chưa xác minh quyền đưa MP3 hoặc ký âm lên GitHub.
 
-**KẾT LUẬN: CHỐT HỒ SƠ NGUỒN V1; CHƯA CHỐT BẢN DIỄN XƯỚNG HOÀN CHỈNH.**
+**KẾT LUẬN SAU RÀ SOÁT: HỒ SƠ NGUỒN ĐÃ BỔ SUNG, NHƯNG BÀI 10 CHƯA HOÀN THÀNH.** [Đối chiếu lời và nguồn ký âm](nguon-loi-ky-am-can-kiem.md).
