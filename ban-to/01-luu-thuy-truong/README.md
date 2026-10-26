@@ -1,14 +1,21 @@
-# Bản Tổ 01 — Lưu Thủy Trường
+# BẢN TỔ 01 — LƯU THỦY TRƯỜNG
 
-**Nhóm:** Sáu Bắc · **Trạng thái:** tạo thư mục riêng để nghiên cứu. Chưa đăng ký âm/lời ca có nguồn hoặc bản thu được phép dùng cho bài này.
+**Nhóm:** Sáu Bắc · **Đã lập hồ sơ nghiên cứu riêng** · **Rà soát ngày 27/10/2026**.
 
-## Hồ sơ dự kiến
-- Nguồn lịch sử, bản chép, dị bản, nguồn nghệ nhân;
-- Ký âm chữ nhạc, câu/lớp/nhịp và hướng dẫn nhạc cụ;
-- Lời ca có tác giả và quyền sử dụng, đối chiếu từng câu;
-- MP3/thu âm được phép chia sẻ;
-- Phiếu kiểm định và kết luận riêng.
+> Đây là trang điều hướng chính thức cho bài 01, thay cho mẫu “chưa nghiên cứu” trước đây. **Có tài liệu nguồn, chưa nghiệm thu biểu diễn từng phách.**
 
-**Quy tắc:** Không bịa lời, nốt hoặc giấy phép. Đối chiếu danh mục từ [Tuổi Trẻ](https://tuoitre.vn/don-ca-tai-tu-trong-khong-gian-van-hoa-nam-bo-118696.htm).
+## Những nội dung đã có
+- [Giáo trình thực hành V2 và lời *Bá Nha Tử Kỳ* có nguồn](../../docs/01-giao-trinh-thuc-hanh-v2.md).
+- [Khảo cứu bản Lưu Thủy Trường, dị bản 32 câu nhịp tư/16 câu nhịp tám](../../docs/01-luu-thuy-truong.md).
+- [Nguồn nghệ nhân Nguyễn Vĩnh Bảo, bản thu 1977, ký âm Văn Dần](../../docs/01-nguon-ban-co-nghe-nhan.md).
+- [Sổ kiểm định 32 câu theo bản Văn Dần](../../docs/01-so-kiem-32-cau-v3.md).
+- [Dẫn nguồn bản thu](../../audio/01-luu-thuy-truong-nguon-thu.md).
+- [Quy trình người đờn và người ca](../../docs/01-huong-dan-don-va-ca.md).
 
-Hồ sơ bài 01 đã biên soạn trước: [Giáo trình V2](../../docs/01-giao-trinh-thuc-hanh-v2.md), [nguồn bản cổ](../../docs/01-nguon-ban-co-nghe-nhan.md), [sổ kiểm 32 câu](../../docs/01-so-kiem-32-cau-v3.md).
+## Cảnh báo kiểm toán
+- 32 câu nhịp tư là **hệ bản chép Văn Dần**; 16 câu nhịp tám là **hệ Nguyễn Vĩnh Bảo qua Phạm Văn Vĩnh**. Không trộn nhịp.
+- Cách chia 4×8 và 8+6+12+6 là **hai mô tả lớp cùng tổng 32**, chưa xác định tương ứng một–một trên ký âm.
+- *Bá Nha Tử Kỳ* ghi Cao Hoài Sang (1955) ở nguồn công bố, không phải lời duy nhất của bài. Lời tự sáng tác thử **không phải lời gốc**.
+- Chưa có quyền đăng lại toàn văn ký âm/lời ca hoặc MP3 và chưa có xác nhận kỹ thuật của nghệ nhân.
+
+**Trạng thái: HỒ SƠ NGUỒN, CHƯA NGHIỆM THU BẢN DIỄN.**
