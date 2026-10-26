@@ -1,5 +1,7 @@
 # BẢN TỔ SỐ 06 — TÂY THI (HỆ VẮN / TRƯỜNG)
 
+**ĐÍNH CHÍNH KIỂM TOÁN V1:** ICHCAP/Viện Âm nhạc dùng Tây Thi Trường trong danh mục 20 bản Tổ. Tên thư mục `06-tay-thi-van` được giữ để bảo toàn liên kết, KHÔNG có nghĩa hệ Vắn được cơ quan đó sử dụng làm bản chuẩn. Cần đối chiếu ký âm riêng cho mỗi hệ.
+
 **Nhóm: Sáu Bắc · Lập hồ sơ ngày 27/10/2026.**  
 **TRẠNG THÁI: tư liệu có bất đồng về hệ phân câu; chưa nghiệm thu bản biểu diễn.**
 
