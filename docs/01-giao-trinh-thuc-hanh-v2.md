@@ -2,29 +2,25 @@
 **Bản Tổ 01 · Hệ 6 Bắc · Biên tập 19/10/2026**  
 **Trạng thái:** Đã xác nhận trực tiếp bản chữ nhạc Văn Dần và bản giải thích của Phạm Văn Vĩnh; **chưa kiểm nốt và ca từng phách, chưa nghiệm thu nghệ nhân**.
 
-## PHẦN LỜI CA — ĐỌC TRỰC TIẾP TẠI ĐÂY
+## LỜI CA CÓ NGUỒN CỦA BÀI SỐ 1 — LƯU THỦY TRƯỜNG
 
-### Lời mới: *Bạn đờn bên bến nước* (bản thảo dự án Hai Đất)
+### *Bá Nha Tử Kỳ* — lời Cao Hoài Sang (theo tư liệu công bố, năm 1955)
 
-Nước xuôi qua bến quê mình,  
-Gió đưa câu đờn thắm tình tri âm.  
-Kìm ngân bên bóng trăng rằm,  
-Tranh gieo tiếng ngọc, xa xăm hóa gần.
+**[ĐỌC NGUYÊN VĂN 32 CÂU LỜI CA KÈM CHỮ NHẠC Ở NGUỒN GỐC — NHẠC SĨ VĂN DẦN](https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/)**
 
-Chiều nghiêng mái lá sân đình,  
-Gặp nhau xin giữ nghĩa tình trước sau.  
-Nước còn xuôi mãi qua cầu,  
-Tiếng đờn còn đó, ngọt câu quê nhà.
+Thông tin thư mục: Văn Dần đăng ngày **18/08/2013**, trình bày **Lưu Thủy Trường, 32 câu nhịp tư**, gồm **4 lớp**, mỗi lớp tám câu ký âm, sau đó là 32 câu lời *Bá Nha Tử Kỳ*. Trang ghi **“Soạn lời: Cao Hoài Sang 1955”**. Đây là **một bản lời ca có tác giả**, không phải lời cổ duy nhất của Lưu Thủy Trường.
 
-> **Quan trọng:** Đây chỉ là **8 dòng lời mới**, chưa đặt khớp 32 câu lòng bản nên **không thể ca ngay theo Lưu Thủy Trường**. Không gọi là lời cổ hoặc phiên bản đã nghiệm thu.
+**Trích dẫn ngắn để nhận diện bài, không phải toàn văn:**
+> Trăng thu / Nồng tiếng nhạn trong sương  
+> Non xanh nước biếc một bầu
 
-### Lời ca có nguồn: *Bá Nha Tử Kỳ*
+Chú ý dấu `/` ở trên chỉ để phân tách hai mảnh trích dẫn, **không phải ký hiệu trường độ**. Học viên cần theo đúng vị trí dấu ngoặc và chỗ nghỉ trên nguồn ký âm gốc. Bản công bố kết ở câu 32, hỏi về bản đờn vừa được nghe.
 
-- **[Đọc lời ca đánh số theo từng câu trên trang nhạc sĩ Văn Dần](https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/)**.
-- Trang nguồn ghi tác giả lời **Cao Hoài Sang**, năm **1955**. Đây là ghi nhận từ trang, chưa được kiểm chứng độc lập về tác quyền.
-- Chưa đưa nguyên văn toàn bộ lời của tác giả này lên GitHub vì **chưa có xác nhận quyền tái bản**.
+**Không sao chép toàn bộ 32 câu lời ca vào GitHub:** chưa có căn cứ về giấy phép công bố lại toàn văn lời sáng tác của Cao Hoài Sang. Sử dụng đường dẫn chính xác, nguồn tác giả, năm và vị trí câu để người học đọc trực tiếp. Việc học theo bản gốc khác với quyền phát hành lại toàn bộ.
 
-[Lời mới — tệp riêng](../lyrics/01-luu-thuy-truong-loi-moi.md) · [Sổ kiểm 32 câu](01-so-kiem-32-cau-v3.md)
+**Lời tự biên soạn trước đây** `Bạn đờn bên bến nước` **không phải lời của bản 1** và không còn hiển thị ở vị trí lời chính. Tệp nháp lịch sử đặt riêng: [lời sáng tác thử, chưa phổ lòng bản](../lyrics/01-luu-thuy-truong-loi-moi.md).
+
+Đối chiếu tiến độ 32 câu ở [sổ kiểm định](01-so-kiem-32-cau-v3.md).
 
 ---
 
