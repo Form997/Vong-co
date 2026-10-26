@@ -31,6 +31,8 @@ Theo ấn phẩm [Viện Âm nhạc, *Hai mươi bài Tổ*](https://vienamnhac.
 ### Một lời ca khác trên mạng
 [Bản karaoke Phú Lục Chấn, lời chủ đề Thúy Kiều](https://www.karaoke.cailuongtoiyeu.com/karaoke-ph%C3%BA-l%E1%BB%A5c-ch%E1%BA%A5n.html) có cách đánh số đến câu 34; **chưa xác thực người soạn lời, bản nhạc tương ứng, năm và quyền tái bản**. Xếp vào nguồn tham khảo *chưa đạt chuẩn kiểm định*, không làm lời chính.
 
+[Danh mục riêng các nguồn lời ca và bản thu](nguon-loi-va-ban-thu.md).
+
 ## 4. Bản đờn, bản ca và nhạc cụ CÓ NGUỒN
 ### Viện Âm nhạc: bài Hội nghị Diên Hồng
 Theo danh mục của Viện Âm nhạc:
