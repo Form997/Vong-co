@@ -5,6 +5,7 @@ Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.
 
 ## Mở tài liệu
+- **[Nguồn bản cổ và nghệ nhân – Bài 01](docs/01-nguon-ban-co-nghe-nhan.md)** — Nguyễn Vĩnh Bảo, bản thu 1977 và bản ký âm Văn Dần; chưa xác định một nguyên bản đầu tiên.
 - **[Sổ kiểm 32 câu V3](docs/01-so-kiem-32-cau-v3.md)** — kiểm độc lập chữ nhạc, lời, song lang, ngón đờn từng câu; chưa có câu nào nghiệm thu biểu diễn.
 - **[Giáo trình nâng cao V2 – Bài 01](docs/01-giao-trinh-thuc-hanh-v2.md)** — phiên bản tham chiếu chính, luyện đờn–ca theo từng chặng và phiếu kiểm định (chưa nghiệm thu biểu diễn).
 - **[Bài 01 – Lưu Thủy Trường](docs/01-luu-thuy-truong.md)** — phân tích nguồn, cấu trúc 32 câu, các điểm cần kiểm chứng nhịp 4 / nhịp 8, ca từ và ngón đờn.
