@@ -1,5 +1,5 @@
-# BẢN TỔ 04 — CỔ BẢN VẮN
-**Nhóm:** Sáu Bắc · **Phiên bản học:** Cổ Bản Vắn, 34 câu nhịp tư · **Ngày khảo cứu:** 26/10/2026
+# BẢN TỔ 04 — CỔ BẢN (VẮN / TRƯỜNG)
+**Nhóm:** Sáu Bắc · **Phiên bản học V1 trong thư mục này:** Cổ Bản Vắn, 34 câu nhịp tư; **cách gọi trong danh mục ICHCAP/Viện Âm nhạc:** Cổ Bản Trường. **Không coi Vắn 34 câu là thay thế Trường**. · **Ngày khảo cứu:** 26/10/2026
 
 > **Trạng thái:** Đã tìm được ký âm chữ nhạc đủ 34 câu, một bản lời đánh số đủ 34 câu, nguồn biểu diễn, nguồn dị bản Cổ Bản Trường. Chưa có giấy phép tái bản toàn văn, chưa kiểm được từng trường độ/song lang và chưa có nghệ nhân nghiệm thu.
 
