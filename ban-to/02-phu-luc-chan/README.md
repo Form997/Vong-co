@@ -1,45 +1,74 @@
-# Bài Tổ 02 — PHÚ LỤC CHẤN
+# BẢN TỔ 02 — PHÚ LỤC CHẤN (PHÚ LỤC CHÂN)
+**Nhóm Sáu Bắc · Hồ sơ nguồn và giáo trình thực hành V2 · 26/10/2026**  
+**Trạng thái: nguồn lịch sử, một lời ca có tác giả, các bản ghi hình đã xác định; chưa có tổng phổ 34 câu được kiểm và chưa có toàn văn lời được phép tái bản.**
 
-**Nhóm:** Sáu Bắc · **Hơi/điệu:** Bắc. **Trạng thái:** hồ sơ nghiên cứu nguồn; chưa có ký âm và lời ca trọn bài được kiểm định.
+## 1. Nhận diện và các dị bản
+- Nhạc sĩ Văn Dần ghi **Phú Lục Chấn**, 34 câu **nhịp tư**, khởi đầu bằng chữ **Xự**, thuộc sáu bản Bắc. [Nguồn Văn Dần](https://nhacsivandan.wordpress.com/2013/11/03/luoc-khao-hinh-thanh-bai-ban-don-ca-tai-tu-nam-bo/).
+- Tài liệu Viện Âm nhạc dùng tên **Phú Lục Chân** trong mục biểu diễn, và ghi 34 câu nhịp tư, chia 4 lớp, ba lớp đầu 8 câu và lớp cuối 10 câu. [Nguồn Viện Âm nhạc](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf).
+- Theo GS.TS Trần Quang Hải, bản có nguồn từ Phú Lục ở Huế, liên hệ với bản Phú Lục Vắn; bản Chấn 34 câu nhịp tư gồm bốn lớp **8–8–8–10**, có tính chất sôi nổi, rộn rã, khẩn trương. Đây là lời giải thích lịch sử cần tiếp tục tra cứu tài liệu gốc. [Nguồn](https://tranquanghai1944.wordpress.com/2014/09/17/hai-muoi-bai-to-co-nhac-mien-nam/).
+- **Không lẫn Phú Lục Chấn 34 câu với Phú Lục Vắn 17 câu** hay bản có nhịp/phân câu khác.
 
-## Danh tính và cấu trúc
-- Phú Lục Chấn thuộc sáu bản Bắc của hệ hai mươi bản Tổ; phân biệt với *Phú Lục* trong nhạc Huế và *Phú Lục Vắn*.
-- Theo bài nghiên cứu của nhạc sĩ Văn Dần, **Phú Lục Chấn gồm 34 câu nhịp tư**, chữ khởi đầu **Xự**, liên quan quá trình chấn chỉnh bài *Phú Lục* ở Huế.
-- Một số nguồn mô tả **Phú Lục Vắn 17 câu**, khác hệ nhịp; không tráo bản vắn vào 34 câu.
-- Nguồn giới thiệu cấu trúc **4 lớp 8+8+8+10**; cần đối chiếu với bản ký âm/ nghệ nhân, chưa suy ra trường độ hoặc điểm gõ song lang.
+## 2. Cấu trúc theo hệ 34 câu nhịp tư
+| Lớp | Câu | Số câu | Trạng thái đối chiếu |
+|---|---|---:|---|
+| I | 01–08 | 8 | Có nguồn cấu trúc, chưa nhập từng chữ nhạc |
+| II | 09–16 | 8 | Có nguồn cấu trúc, chưa nhập từng chữ nhạc |
+| III | 17–24 | 8 | Có nguồn cấu trúc, chưa nhập từng chữ nhạc |
+| IV | 25–34 | 10 | Có nguồn cấu trúc, chưa nhập từng chữ nhạc |
 
-## Ký âm và lời ca
-- **Chưa có bộ ký âm xác minh từng chữ đờn/trường độ đủ 34 câu** trong repository. Không bịa chữ nhạc và ngón đờn.
-- **Chưa có một văn bản lời ca 34 câu được kiểm nguồn, tác giả, dị bản và quyền tái bản.** Không tự sáng tác lời rồi gắn là lời truyền thống.
-- Tên bài có chữ Phú Lục không có nghĩa lời ca cổ cố định cho mọi bản diễn tấu; nhạc tài tử có thể gắn nhiều bài ca theo lòng bản.
-- Khi tìm được nguồn ký âm/lời: kiểm tên bản, số câu, nhịp, bản chép, tác giả lời, nguồn xuất bản, tính hợp pháp của bản đăng.
+[Sổ kiểm định riêng 34 câu](kiem-dinh-34-cau.md): **0/34 câu** đã nghiệm thu đủ chữ nhạc–trường độ–lời–nhịp–ngón.
 
-## Hướng dẫn phối hợp đờn và ca (chỉ ở cấp quy trình)
-1. Trước lúc vào: trưởng dàn chọn đúng **phiên bản Phú Lục Chấn 34 câu**, chốt dây và âm vực người ca, cho nhạc cụ rao theo hơi Bắc.
-2. Lúc nhạc dạo: người đờn kìm và tranh giữ định vị lòng bản; nhạc cụ khác tùy dàn. Không khẳng định bài bắt buộc có một phối khí lịch sử duy nhất.
-3. Khi nghệ sĩ bắt đầu ca: chỉ vào ở điểm khớp bản nhạc/ bản lời có nguồn. Người đờn giữ chữ chính và dứt câu, tiết chế âm lượng che giọng. Người ca giữ thanh điệu và nhịp, ngân theo hướng dẫn nghệ nhân.
-4. Song lang: chưa gán vị trí gõ cụ thể, chờ đối chiếu đúng bản chép cùng hệ nhịp.
-5. Khi kết: xác nhận chữ kết/ điểm dứt trong nguồn, không tự tạo thêm nốt hay câu.
+## 3. Lời ca CÓ NGUỒN, không phải lời tự viết
+### Hội nghị Diên Hồng — Mười Phú
+Theo ấn phẩm [Viện Âm nhạc, *Hai mươi bài Tổ*](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf):
+- Bản: **PHÚ LỤC CHÂN** (cách viết trong ấn phẩm)
+- Bài ca: **Hội nghị Diên Hồng**
+- Tác giả: **Mười Phú**
+- Nghệ sĩ ca: **Đoàn Dự**
 
-## Nhạc cụ để thực hành (không phải một bản thu cố định)
-- Đờn kìm: bám trục lòng bản, khảy rõ chữ và chỗ kết.
-- Đờn tranh: rải, nhấn/vuốt theo kỹ thuật người truyền, phối hợp và nhường giọng ca.
-- Đờn cò: nối tuyến nhạc, kiểm lối kéo/luyến với bản đờn.
-- Song lang: điểm nhịp theo quy ước được xác thực.
-- Đờn bầu, sến, guitar phím lõm, sáo/tiêu là lựa chọn bổ sung của những dàn đờn cụ thể; chưa có căn cứ gán mặc định vào bản thu Phú Lục Chấn.
+**Không có bản toàn văn lời ca của Mười Phú đủ 34 câu được kiểm và xác nhận quyền đăng lại** trong hồ sơ. Không gắn đoạn lời tự viết làm lời của bài Tổ, không gán tên “lời nguyên bản duy nhất”. Cần xin phép chủ sở hữu để tái bản toàn bộ nếu thuộc phạm vi bảo hộ.
 
-## Nguồn có thể truy xét
-1. [Nhạc sĩ Văn Dần — Lược khảo hình thành bài bản đờn ca tài tử Nam Bộ (03/11/2013)](https://nhacsivandan.wordpress.com/2013/11/03/luoc-khao-hinh-thanh-bai-ban-don-ca-tai-tu-nam-bo/): Phú Lục Chấn, 34 câu nhịp tư, khởi đầu chữ Xự.
-2. [Nguyệt Cầm — Cấu trúc 20 bài bản Tổ](https://nguyetcam.vn/cau-truc-20-bai-ban-to-cai-luong): 34 câu, 4 lớp 8/8/8/10; đây là nguồn tham khảo thứ cấp.
-3. [Tuổi Trẻ — Đờn ca tài tử trong không gian văn hóa Nam Bộ](https://tuoitre.vn/don-ca-tai-tu-trong-khong-gian-van-hoa-nam-bo-118696.htm): nhận diện hệ 20 bản Tổ và dàn nhạc.
-4. [Nam Kỳ Lục Tỉnh — Nhạc Tài Tử: 20 bài Tổ](https://www.namkyluctinh.org/tac-gia-tac-pham/n/nguyen-tuan-khanh/nhac-tai-tu-20-bai-to.html): danh mục và bản độc tấu đờn kìm của nhạc sư Ba Tu năm 2007 được giới thiệu. Cần xác minh **URL track số 2** và giấy phép trước khi đưa MP3.
+### Một lời ca khác trên mạng
+[Bản karaoke Phú Lục Chấn, lời chủ đề Thúy Kiều](https://www.karaoke.cailuongtoiyeu.com/karaoke-ph%C3%BA-l%E1%BB%A5c-ch%E1%BA%A5n.html) có cách đánh số đến câu 34; **chưa xác thực người soạn lời, bản nhạc tương ứng, năm và quyền tái bản**. Xếp vào nguồn tham khảo *chưa đạt chuẩn kiểm định*, không làm lời chính.
 
-## Bảng kiểm phát hành
-- [x] Đúng tên bài, nhóm, nguồn mô tả 34 câu nhịp tư.
-- [x] Ghi rõ nguồn thứ cấp đề cập phân lớp 8+8+8+10.
-- [ ] Bản ký âm đủ 34 câu đã đối chiếu 2 nguồn.
-- [ ] Lời ca hợp pháp, có nguồn và ăn đúng chữ nhạc.
-- [ ] File MP3/âm thanh chính bài có metadata và quyền dùng.
-- [ ] Ngón đờn/điểm song lang/ca được nghệ nhân duyệt.
+## 4. Bản đờn, bản ca và nhạc cụ CÓ NGUỒN
+### Viện Âm nhạc: bài Hội nghị Diên Hồng
+Theo danh mục của Viện Âm nhạc:
+| Vai trò | Người trình diễn |
+|---|---|
+| Ca | Đoàn Dự |
+| Đờn tranh | Duy Kim |
+| Đờn kìm | Trường Giang (TP.HCM) |
+| Đờn cò | Thanh Hoàng |
+| Guitar (trong dàn tài tử) | Hoàng Vũ |
 
-**Không gắn nhãn hoàn chỉnh trước khi kiểm những mục chưa đạt.**
+Đây là **đội hình của tiết mục được ghi trong tư liệu**, không phải dàn nhạc bắt buộc của mọi cách đờn Phú Lục Chấn.
+
+### Tư liệu ghi hình do nhạc sĩ Văn Dần giới thiệu
+- [Hòa tấu bài Phú Lục Chấn](https://www.youtube.com/watch?v=y_A4oAIgGSY)
+- [Hoàng Quý ca Phú Lục Chấn](https://www.youtube.com/watch?v=tPnWg-fhxuM)
+- [Trang xuất xứ nhạc sĩ Văn Dần, ghi hình tại tư gia nhạc sĩ Tấn Nhì](https://nhacsivandan.wordpress.com/2013/11/05/sinh-hoat-don-ca-tai-tu-tai-tu-gia-nhac-si-tan-nhi-2/)
+
+**Lưu ý:** mới xác nhận đường dẫn từ nguồn giới thiệu; chưa nghe đối chiếu để kết luận video chứa đủ 34 câu hay giống hệt bản thu Viện Âm nhạc. Không tải lên GitHub như MP3 nếu chưa có quyền tái phân phối.
+
+## 5. Hướng dẫn người đờn và người ca
+**Trước khi biểu diễn:** chọn đúng bản 34 câu nhịp tư, thống nhất dây/hò và cao độ theo ca sĩ; người đờn rao hơi Bắc. Chữ Xự được Văn Dần ghi là **chữ khởi đầu trong phân tích bài**, không đủ để gán luôn thời điểm ca sĩ vào hoặc nốt MIDI cụ thể.
+
+**Khi người ca bắt đầu:** dựa trên **bản lời có tác giả ăn đúng lòng bản**, không ca theo văn xuôi bất kỳ. Đờn kìm giữ các chữ nhạc chủ chốt; đờn tranh và đờn cò đối đáp, trang trí theo ngón truyền dạy và giảm mật độ khi ca để nghe rõ lời; guitar phím lõm (nếu có) phụ họa theo đúng hơi. Không ép các nhạc cụ chơi đồng âm giống hệt nhau.
+
+**Song lang:** không tự gán công thức vị trí từng phách khi chưa kiểm bản ký âm cùng nhịp và nghệ nhân. Người giữ song lang xác nhận điểm báo nhịp và kết câu trước khi vào bài.
+
+**Kết lớp và kết bản:** kiểm tại các mốc 08, 16, 24, 34 theo cách phân lớp này; chỉ dứt/tiếp theo đúng câu kết trong ký âm nguồn, không thêm nốt hoặc kéo ngân để lấp thời gian.
+
+## 6. Danh sách kiểm định để chốt bản biểu diễn
+- [x] Tên, nhóm 6 Bắc, 34 câu nhịp tư có nguồn.
+- [x] Cấu trúc tham chiếu 8–8–8–10 có nguồn.
+- [x] Xác định được **Hội nghị Diên Hồng** của Mười Phú và ca sĩ/nhạc cụ trong ấn phẩm Viện Âm nhạc.
+- [x] Xác định đường dẫn giới thiệu hai video hòa tấu/ca.
+- [ ] Bản chép **đủ chữ nhạc, trường độ, dấu nhịp của 34 câu**, có quyền trích dùng.
+- [ ] Lời ca **đúng từng câu**, đầy đủ quyền tái bản.
+- [ ] So bản thu với một dị bản ký âm xác định, đánh dấu mốc song lang.
+- [ ] Người dạy hoặc nghệ nhân duyệt kỹ thuật rung/nhấn/ngón, ca ăn chữ.
+- [ ] Kiểm giấy phép MP3 để đưa nguyên file vào kho.
+
+**QUYẾT ĐỊNH:** đạt hồ sơ khảo cứu nguồn V2; **chưa đạt bản ký âm–lời–âm thanh hoàn chỉnh để biểu diễn**.
