@@ -2,9 +2,9 @@
 
 **Preserving a living musical tradition through source-grounded research, transparent variants, and responsible AI access.**
 
-[**Đọc README tiếng Việt**](README.md) · [**Source registry (20 documented references)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
+[**Đọc README tiếng Việt**](README.md) · [**Source registry (22 documented references)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
 
-> **Research status, 28 October 2026:** 20/20 research folders indexed; 10/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
+> **Research status, 28 October 2026:** 20/20 research folders indexed; 11/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
 
 ## What is this project?
 
@@ -42,8 +42,9 @@ Two research issues already flagged in the V2 documents illustrate why version m
 - **Ngũ Đối Thượng:** a source-verified 61-phrase score (Nhị Tấn, Vol. III, pp. 226–233) and a **60-phrase variant described as omitting source phrase 53**. The 60-phrase crosswalk is preliminary, **not yet independently audio-validated**. [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md).
 - **Ngũ Đối Hạ:** a newly located printed **38-phrase score** (Nhị Tấn, Vol. III, pp. 234/236) and **38 numbered lyric phrases** for *Kim, Kiều hoa viên ngộ* (pp. 235/237; book credits Cao Hoài Sang, 1940). Five printed sections; an academic study also mentions a three-section grouping. **Performance status remains unverified**. [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md).
 - **Long Đăng:** a complete **40-phrase score** was found in Nhị Tấn, Vol. III (printed pp.238, 240 and **242**), with separately numbered lyrics *Kiều vãng Trọng hiên* (pp.239, 241, **243**; attributed in print to Cao Hoài Sang, 1940). **Phrases 39–40 are at the start of pages 242/243, before the following *Long Ngâm* section.** Vol. V pp.501–502 contains a **different 40-phrase lyric set**, *Bàng Quyên xuống núi*, attributed to Thái Thụy Phong. [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md).
+- **Long Ngâm:** the following section of Nhị Tấn, Vol. III contains a **33-phrase score** (pp.242/244) and **33 numbered phrases of lyrics** *Tống Trọng qui tang* (pp.243/245; credited in print to Cao Hoài Sang, 1940). The first pages also contain the final two phrases of Long Đăng, while Vạn Giá begins after phrase 33. Three sections **8–11–14**; opening pitch terminology differs between an academic discussion (**Xư**) and the printed first notation (**Líu**), and remains subject to specialist review. **No performance phrases have been validated.** [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md).
 
-[**V2 review policy**](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [**Source audit records for pieces 01–10**](https://github.com/Form997/Vong-co/tree/v2-development/ban-to) · [**V1 audit**](docs/kiem-toan-v1-20-ban.md)
+[**V2 review policy**](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [**Source audit records for pieces 01–11**](https://github.com/Form997/Vong-co/tree/v2-development/ban-to) · [**V1 audit**](docs/kiem-toan-v1-20-ban.md)
 
 ## For AI researchers, heritage institutions, and technology companies
 
