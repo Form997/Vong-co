@@ -1,5 +1,19 @@
 # BẢN TỔ SỐ 09 — NGŨ ĐỐI HẠ (BÀI HẠ)
 
+## V2 — ĐÍNH CHÍNH NGUỒN NGŨ ĐỐI HẠ (28/10/2026)
+
+**[Biên bản nghiệm thu V2 (8 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ nguồn 38 câu nhạc và 38 câu lời](v2-ra-soat-38-cau.md)**.
+
+- **V1 từng ghi chưa có bản chữ nhạc đủ 38 câu có nguồn.** Nay đã tìm thấy và xem trực tiếp ảnh **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997), trang in 234 và 236**, đánh số trọn **01–38**. Lời cùng sách ở **235 và 237** cũng đủ **38 câu**, mang tên **“Kim, Kiều hoa viên ngộ”**, ghi **Cao Hoài Sang (1940)**. Đây là **thay đổi quan trọng về mức chứng cứ** chứ **không phải chứng nhận bản biểu diễn**.
+- Đã đối chiếu [Cổ Nhạc Nam Bộ, đăng 16/02/2021](https://conhacnambo.com/destop/topics_list.php?topic_id=422), cũng có 38 câu nhạc, **ghi rõ theo Nhị Tấn** (bản đăng lại không độc lập).
+- Chốt **bản in tham chiếu 5 lớp 9–6–6–6–11**. TS. Bùi Thiên Hoàng Quân (2017) ghi thêm cách chia **3 lớp 20–10–8**; bảo lưu cho nghiên cứu, không áp nhầm ranh lớp.
+- **Ba bộ lời khác nhau:** lời in *Kim, Kiều hoa viên ngộ* (Cao Hoài Sang, theo sách ghi 1940), *Hồn thiêng sông núi* (nguồn tư liệu ca Bạch Huệ ghi Trần Ngọc Thạch) và *Niềm vui trở lại* (Phạm Văn Phú, 2019). Không tráo chữ ca hoặc gán chung tác giả.
+- **Kết luận: đã kiểm sự hiện diện 38/38 câu nhạc và 38/38 câu lời trong sách, 0/38 câu đã được thẩm định thực đờn–ca. CHỜ NGHIỆM THU.** Chưa có quyền công bố nguyên tác nhạc/lời hoặc MP3.
+
+> Phần nội dung V1 phía dưới được **giữ làm lịch sử nghiên cứu**, có vài nhận định về việc “chưa tìm được” đã được **đính chính bằng nguồn in ở V2**. Không sửa nhánh `v1-frozen`.
+
+---
+
 **Nhóm:** Bảy Lễ / Bảy bài Hạ · **Hơi:** Lễ (Bắc–Lễ) · **Bản tham chiếu:** 38 câu nhịp tư · **Cập nhật:** 27/10/2026.
 
 > **Tình trạng:** Hồ sơ nguồn và hướng dẫn diễn tập, chưa phải toàn văn ký âm/lời ca được thẩm định từng phách.
