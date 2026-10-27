@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Bài 03 — Bình Bán Chấn (27/10/2026):** đã lập [biên bản V2](../ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng kiểm nguồn 44 câu](../ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md). Có 44 câu nhạc và 44 câu lời trong hai nguồn; khác lời ở một vài vị trí, bản Thủ/Bình Bán cần phân tách. **CHỜ NGHIỆM THU**, tiến độ **3/20 đã mở, 0/20 đạt diễn xướng**.
+
+---
+
 **Tiến độ đợt nghiệm thu:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
 
 ---
