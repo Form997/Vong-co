@@ -48,6 +48,10 @@
 | REF-16 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III, 1997**, Trung tâm Văn hóa Quận 8 | **Ngũ Đối Hạ**: ký âm **38 câu**, nhịp tư, song lang 3–4 (**tr.234 và 236**); lời 38 câu *Kim, Kiều hoa viên ngộ*, ghi **Cao Hoài Sang (1940)** (**tr.235 và 237**). Đã trực tiếp kiểm ảnh đủ bốn trang và chỉ mục 01–38. | [Tập III – PDF số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · **Chưa có quyền tái phân phối lời/ký âm/âm thanh** |
 | REF-17 | **Cổ Nhạc Nam Bộ, Truyền Nguyễn đăng 16/02/2021**, *Ngũ Đối Hạ – Bảy Bản Tổ (Hạ)* | Đăng 38 câu nhạc và 5 lớp, **ghi theo tài liệu NS Nhị Tấn**. Dùng để so vị trí số câu, không tính là bản chép gốc độc lập. | [Ngũ Đối Hạ 38 câu](https://conhacnambo.com/destop/topics_list.php?topic_id=422) · Cần đối chiếu dấu chép và quyền sử dụng |
 
+| REF-18 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP III (1997)**, Trung tâm Văn hóa Quận 8 – CLB Đờn ca tài tử Quận 8, Nam Kỳ Lục Tỉnh số hóa | **Long Đăng**: nhạc câu **01–18 tr.238**, **19–38 tr.240**, **39–40 tr.242**; lời *Kiều vãng Trọng hiên* ghi **Cao Hoài Sang (1940)** ở **239,241,243**. **Đã xem ảnh trực tiếp cả sáu trang**, kiểm nhãn 1–40. | [PDF tập III – nhạc và lời Long Đăng](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Không có bằng chứng được phép sao chép lại toàn văn |
+| REF-19 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP V (1997), phụ lục tr.501–502** | **40 câu lời “Bàng Quyên xuống núi”**, ghi **Thái Thụy Phong**, đã xem ảnh hai trang. **Đây là lời ca khác, KHÔNG PHẢI tổng phổ Long Đăng**, nên không lấy tập V thay nguồn chữ nhạc tập III. | [PDF tập V – phụ lục lời ca](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%205%20-%20Nhi%20Tan.pdf) · Chưa có giấy phép phổ biến nguyên văn |
+| REF-20 | **Cổ Nhạc Nam Bộ, *Long Đăng – Bảy Bản Tổ (Hạ)*, 16/02/2021** | Đăng lại **40 số câu nhạc và ba lớp 16–12–12**, có chú thích “theo tài liệu NS Nhị Tấn”. Dùng để đối chiếu mã chỉ mục với tập III; **không tính là nguồn in đầu tiên độc lập**. | [Long Đăng 40 câu – bản đăng trực tuyến](https://conhacnambo.com/mobile/topics_body_Lyrics.php?topic_id=421) · Chưa rõ phép chép/khai thác thương mại |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -68,6 +72,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–09](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–10](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
