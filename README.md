@@ -1,4 +1,4 @@
-# HAI ĐẤT · 20 BẢN TỔ ĐỜN CA TÀI TỬ NAM BỘ
+# VỌNG CỔ · 20 BẢN TỔ ĐỜN CA TÀI TỬ NAM BỘ
 
 [**English / International AI & Research Overview**](README.en.md)
 
