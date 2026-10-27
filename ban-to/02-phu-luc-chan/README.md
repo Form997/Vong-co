@@ -2,6 +2,15 @@
 **Nhóm Sáu Bắc · Hồ sơ nguồn và giáo trình thực hành V2 · 26/10/2026**  
 **Trạng thái: nguồn lịch sử, một lời ca có tác giả, các bản ghi hình đã xác định; chưa có tổng phổ 34 câu được kiểm và chưa có toàn văn lời được phép tái bản.**
 
+## V2 — ĐÃ MỞ NGHIỆM THU (27/10/2026)
+
+- [**Biên bản nghiệm thu V2 — Phú Lục Chấn**](v2-bien-ban-nghiem-thu.md): 7 phát hiện có dẫn nguồn và phán quyết **CHỜ NGHIỆM THU**.
+- [**Rà soát 34 câu với chỉ mục chữ nhạc và lời ca**](v2-ra-soat-34-cau.md): chứng minh có bản ký âm đủ **34 câu** Nhị Tấn tập II trang 126/128/130, đối chiếu **32 câu lời** trong sách với **34 câu lời** của Văn Dần.
+- **Đính chính phần V1 còn hiển thị bên dưới:** câu nói “chưa có bản chép đủ 34 câu” **đã lỗi thời**. Nay đã tìm được, nhưng **0/34 câu được nghiệm thu kỹ thuật biểu diễn**. Không được hiểu có sách ký âm là đã xác nhận trường độ/song lang/ngón đờn.
+- Phải tách **Thủ Phú Lục Chấn (Nhị Tấn tập I)** và **Phú Lục Chấn (tập II)**, cũng như lời **Hội nghị Diên Hồng** khác lời **Bá Nha Tử Kỳ**.
+
+---
+
 ## 1. Nhận diện và các dị bản
 - Nhạc sĩ Văn Dần ghi **Phú Lục Chấn**, 34 câu **nhịp tư**, khởi đầu bằng chữ **Xự**, thuộc sáu bản Bắc. [Nguồn Văn Dần](https://nhacsivandan.wordpress.com/2013/11/03/luoc-khao-hinh-thanh-bai-ban-don-ca-tai-tu-nam-bo/).
 - Tài liệu Viện Âm nhạc dùng tên **Phú Lục Chân** trong mục biểu diễn, và ghi 34 câu nhịp tư, chia 4 lớp, ba lớp đầu 8 câu và lớp cuối 10 câu. [Nguồn Viện Âm nhạc](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf).

@@ -1,5 +1,16 @@
 # BẢN TỔ SỐ 03 — BÌNH BÁN CHẤN
 
+## V2 — NGHIỆM THU ĐỢT KIỂM NGUỒN (27/10/2026)
+
+- [**Biên bản nghiệm thu V2: 7 vấn đề và trạng thái từng tiêu chí**](v2-bien-ban-nghiem-thu.md)
+- [**Bảng rà soát 44 câu dựa trên sách Nhị Tấn và Văn Dần**](v2-ra-soat-44-cau.md)
+- Đã **xem trang in 130–135 của Nhị Tấn tập II**: có đủ **44 câu chữ nhạc và 44 câu lời**. Cùng cấu trúc 4 lớp 10–12–10–12.
+- Phải tách **Thủ Bình Bán Chấn** (Nhị Tấn tập I) và **Bình Bán Chấn** (tập II); khác lời ca và có khác nhạc mở đầu.
+- Phát hiện những chỗ cần đối chiếu lại ở lời ca câu **03, 15, 24**. Không tự hiệu đính khi thiếu bản hát chứng thực.
+- **Kết luận: ĐẠT kiểm chỉ mục nguồn 44 câu; CHỜ NGHIỆM THU diễn xướng (0/44).** Không sử dụng README hoặc bảng kiểm nguồn như giấy xác nhận toàn bài.
+
+---
+
 **Nhóm:** Sáu Bắc · **Bản tham chiếu:** 44 câu nhịp tư · **Biên soạn:** 26/10/2026.  
 **Trạng thái:** Có ký âm chữ và hai nguồn lời ca có tác giả, bản thu nghệ sĩ; CHƯA đối chiếu kỹ từng phách hay có quyền tái bản toàn văn.
 

@@ -1,5 +1,27 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## Nghiệm thu V2 — cập nhật bài 03
+
+Đã kiểm văn bản nguồn cho **bài 01, 02 và 03**, cả ba **CHỜ NGHIỆM THU diễn xướng**. [Mở biên bản V2 Bình Bán Chấn](ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng đối chiếu 44 câu](ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md).
+
+**Tiến độ:** **03/20 đã mở nghiệm thu**, **00/20 nghiệm thu diễn xướng đạt**. V1 đóng băng không chỉnh sửa.
+
+---
+
+## V2 — NGHIỆM THU ĐANG MỞ
+
+- [Bài 01 Lưu Thủy Trường — biên bản V2](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md): **CHỜ NGHIỆM THU**.
+- [Bài 02 Phú Lục Chấn — biên bản V2](ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md): **CHỜ NGHIỆM THU**; đã tìm bản ký âm đủ 34 câu và phát hiện bất đồng 32/34 câu lời giữa nguồn.
+- **Trạng thái:** 2/20 bài mở nghiệm thu nguồn, **0/20 bài nghiệm thu diễn xướng ĐẠT**. Không sửa nhánh V1 khóa.
+
+---
+
+## NGHIỆM THU V2 (nhánh này)
+
+Bắt đầu **bản Tổ số 01 – Lưu Thủy Trường**. [Biên bản V2 bài 01](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) và [bảng kiểm văn bản 32 câu](ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md) đã lập. **0/20 bài đạt nghiệm thu diễn xướng; 01/20 đang kiểm**. Chưa có nghệ nhân duyệt, không gọi đây là chứng nhận.
+
+---
+
 Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**. Mục tiêu: mỗi bản có nguồn, lòng bản, lớp/câu/nhịp, lời ca, hướng dẫn diễn tấu, bản nghe **được phép sử dụng**, cùng nhật ký kiểm định.
 
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.

@@ -1,3 +1,51 @@
+# V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
+
+> **Bài 03 — Bình Bán Chấn (27/10/2026):** đã lập [biên bản V2](../ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng kiểm nguồn 44 câu](../ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md). Có 44 câu nhạc và 44 câu lời trong hai nguồn; khác lời ở một vài vị trí, bản Thủ/Bình Bán cần phân tách. **CHỜ NGHIỆM THU**, tiến độ **3/20 đã mở, 0/20 đạt diễn xướng**.
+
+---
+
+**Tiến độ đợt nghiệm thu:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
+
+---
+
+> **Điều chỉnh ưu tiên 27/10/2026:** khởi động nghiệm thu từ **bản 01**, không bắt đầu bằng bài 10. Mọi phán quyết theo bằng chứng trực tiếp và không có “đạt” tự động.
+
+**Quyết định phạm vi (27/10/2026): V2 CHỈ LÀ NGHIỆM THU.** V1 là kho hồ sơ nguồn được khóa; V2 không được dùng để thay thế việc thiếu bằng sáng tác hoặc ghi trạng thái “đạt” theo cảm tính.
+
+## Kết quả nghiệm thu bắt buộc
+Mỗi bản Tổ phải có **biên bản nghiệm thu riêng**, gồm:
+1. **Định danh:** số thứ tự, tên/dị danh, nhóm Bắc–Lễ–Nam–Oán; mã dị bản, quy tắc đếm câu/nhịp, người truyền bản và trang nguồn.
+2. **Lòng bản/ký âm:** kiểm đủ từng câu, chữ nhạc, trường độ, chữ kết, nhịp, lớp và các câu chuyển. Đối chiếu một bản chép có xuất xứ với bản thu cùng dị bản.
+3. **Lời ca:** kiểm nhan đề, tác giả/năm (hoặc ghi chưa rõ), số câu, âm tiết so với chữ đờn, dấu thanh, chỗ ngân/thở. Không đánh đồng lời mới, lời xưa, trích đoạn và toàn bài.
+4. **Đờn/ca:** đối chiếu rao, ngón nhấn/rung/vỗ, điểm gõ song lang, mô/chầu, chuyển hơi, phối hợp ca–đờn với bản thu và người có chuyên môn.
+5. **Nguồn và bản quyền:** nguồn ban đầu, niên đại, số trang, URL, quyền dùng ký âm/lời/MP3; đánh dấu không rõ thay vì sao chép.
+6. **Biên bản:** từng lỗi ghi vị trí câu/phách, nguồn chứng, mức nghiêm trọng, hướng sửa, người kiểm, ngày, tình trạng; bản đạt cần **có người thẩm định thực tế**.
+
+**Ba phán quyết:** `ĐẠT` (đủ chứng cứ và đã thẩm định), `KHÔNG ĐẠT` (phát hiện sai lệch được chứng minh), `CHỜ NGHIỆM THU` (chưa đủ tư liệu/kiểm thực tế). Không tự coi thiếu bằng chứng là lỗi đã chứng minh.
+
+## Quy trình bắt buộc
+**B1: khóa dị bản → B2: rà nguồn ký âm → B3: rà nguồn lời → B4: so bản thu từng câu/phách → B5: kiểm ngón, hơi, song lang → B6: lập lỗi và sửa → B7: thẩm định độc lập → B8: chốt biên bản.**
+
+- Không sửa V1 đã khóa; mọi đính chính lưu dưới V2, có liên kết bằng chứng.
+- Mỗi bản có bảng câu đầy đủ, **nhưng bảng trống không phải bằng chứng đã nghiệm thu**.
+- Không phát hành PDF/MP3/đầy đủ ca từ chưa rõ quyền.
+- Không ép nghiệm thu khi còn bất đồng nguồn, ví dụ Nam Ai 68/84, Đảo Ngũ Cung 67/68, Cổ Bản Vắn/Trường, Tây Thi Vắn/Trường.
+- **Phạm vi không bao gồm:** tự viết lời mới, tạo ký âm từ suy đoán, mở rộng số bản, thiết kế giao diện hoặc xây tính năng phần mềm không phục vụ kiểm định.
+
+## Thứ tự nghiệm thu
+**Đợt 1 (khởi động theo thứ tự người dùng yêu cầu): bài 01 Lưu Thủy Trường** — [biên bản nghiệp vụ](../ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) và [kiểm văn bản 32 câu](../ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md). Đã xác nhận chỉ mục, còn bất đồng 32/4 – 16/8 – 32/8; **CHỜ NGHIỆM THU biểu diễn**. Bài 10 Long Đăng chuyển vào danh sách xử lý sau bài 01.
+
+**Đợt 2 (rủi ro dị bản):** 04 Cổ Bản, 06 Tây Thi, 01 Lưu Thủy Trường, 08 Ngũ Đối Thượng, 15 Nam Ai, 16 Đảo Ngũ Cung, 18 Phụng Hoàng.
+
+**Đợt 3:** 02, 03, 05, 07, 09, 11, 12, 13, 14, 17, 19, 20.
+
+## Quy tắc báo cáo
+**20/20 bài đã lập hồ sơ V1; số bài ĐẠT nghiệm thu V2 hiện tại: 0/20.** Con số này chỉ thay đổi khi có hồ sơ kiểm từng câu, bằng chứng đối chiếu và kết luận của người kiểm chuyên môn.
+
+---
+
+## Phụ lục — kế hoạch V2 trước khi chốt phạm vi (lưu lịch sử)
+
 # KẾ HOẠCH V2 — TỪ HỒ SƠ NGUỒN ĐẾN GIÁO TRÌNH ĐỜN CA KIỂM ĐỊNH
 
 **Khởi động:** 27/10/2026 · **Phạm vi:** 20 bản Tổ, 6 Bắc – 7 Lễ – 3 Nam – 4 Oán.

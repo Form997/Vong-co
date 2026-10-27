@@ -1,5 +1,14 @@
 # BẢN TỔ 01 — LƯU THỦY TRƯỜNG
 
+## NGHIỆM THU V2 — ĐANG THỰC HIỆN (27/10/2026)
+
+- **[Biên bản nghiệm thu chính thức, phân biệt nguồn 32/4 – 16/8 – 32/8 và nhật ký 10 phát hiện](v2-bien-ban-nghiem-thu.md)**
+- **[Bảng đối chiếu thực tế 32/32 vị trí chữ nhạc và nhãn lời, kèm chữ kết và cảnh báo](v2-ra-soat-32-cau.md)**
+- **Quyết định: CHỜ NGHIỆM THU**. Mới kiểm văn bản 32 câu; **0/32 câu được nghiệm thu bản diễn xướng**. Chưa có bản ghi âm được nghe phân phách cùng hệ hoặc chữ ký nghệ nhân.
+- Không sửa bản V1 đã khóa; mọi đính chính và bằng chứng đặt trong V2.
+
+---
+
 **Nhóm:** Sáu Bắc · **Đã lập hồ sơ nghiên cứu riêng** · **Rà soát ngày 27/10/2026**.
 
 > Đây là trang điều hướng chính thức cho bài 01, thay cho mẫu “chưa nghiên cứu” trước đây. **Có tài liệu nguồn, chưa nghiệm thu biểu diễn từng phách.**
