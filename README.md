@@ -1,5 +1,13 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## NGHIỆM THU V2 — BÀI 05 XUÂN TÌNH CHẤN
+
+[Biên bản nghiệm thu Xuân Tình Chấn](ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) và [sổ 48 câu](ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md): đã xác nhận 48 câu nhạc và 48 câu lời trong Nhị Tấn tập II; phát hiện khác chữ nhạc câu 37 và một số câu lời so với Văn Dần. **CHỜ NGHIỆM THU diễn xướng**.
+
+**Tiến độ V2:** 5/20 bản đã mở kiểm nguồn; **0/20 bản đạt diễn xướng**. V1 vẫn khóa riêng.
+
+---
+
 ## NGHIỆM THU V2 — BẢN 04
 
 [Biên bản Cổ Bản](ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md): phát hiện V1 đã lấy Vắn 34 câu làm hệ học, trong khi Viện Âm nhạc chọn **Trường 68 câu** ở danh mục 20 bản Tổ. V2 có **sổ 68 câu Trường riêng** và **sổ 34 câu Vắn riêng**. Bản 04 **CHỜ NGHIỆM THU**; **4/20 bài đã mở kiểm nguồn, 0/20 đạt biểu diễn**.
