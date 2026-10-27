@@ -1,5 +1,19 @@
 # BẢN TỔ 10 — LONG ĐĂNG (BÀI ĐĂNG)
 
+## V2 — NGHIỆM THU KIỂM NGUỒN LONG ĐĂNG (28/10/2026)
+
+**[Biên bản nghiệm thu V2, 9 phát hiện](v2-bien-ban-nghiem-thu.md)** · **[Sổ rà soát 40 câu](v2-ra-soat-40-cau.md)**.
+
+**ĐÍNH CHÍNH V1 quan trọng:** đã tìm và **xem ảnh bản in ký âm đầy đủ 40 câu** trong **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP III (1997), trang 238, 240 và 242**; phần lời cùng sách nằm ở **239, 241, 243**, ghi **“Kiều vãng Trọng hiên” – Cao Hoài Sang (1940)**. Các câu **39–40 nằm trên đầu trang 242–243 trước đầu mục Long Ngâm**, rất dễ bỏ sót khi đọc trang 240–241. Đây là nguồn ký âm chính của V2.
+
+- **Tập V, phụ lục 501–502** có **40 câu lời khác “Bàng Quyên xuống núi” – Thái Thụy Phong**; **không phải tổng phổ Long Đăng**, cũng chưa chứng minh hai bộ lời khớp từng phách trong cùng một bản thu.
+- Đối chứng [Cổ Nhạc Nam Bộ, đăng 16/02/2021](https://conhacnambo.com/mobile/topics_body_Lyrics.php?topic_id=421), ghi 40 câu nhạc theo Nhị Tấn; đây là **bản đăng lại**, không chứng cứ độc lập.
+- Cấu trúc nhạc **40 câu nhịp tư, 3 lớp 16–12–12**, sách ghi song lang 3–4. **ĐÃ KIỂM có mặt 40/40 nhãn nhạc và 40/40 nhãn lời; 0/40 câu được thẩm định đờn–ca.** Không được đánh dấu đạt vì chưa đối chiếu bản thu/ngón/nhịp hoặc quyền.
+- **Không nhầm Long Đăng trong Nhã nhạc Huế** với Long Đăng tài tử Nam Bộ; cần ghi mã truyền thống khi phục vụ AI.
+- Nhánh `v1-frozen` giữ nguyên; phần nội dung dưới đây là V1 trước đính chính và không được dùng làm kết luận V2.
+
+---
+
 **Nhóm:** Bảy Lễ / Thất Chánh · **Hơi:** Lễ · **Bản quản lý:** 40 câu nhịp tư · **Ngày cập nhật:** 27/10/2026.
 
 > **Trạng thái sau rà soát 27/10/2026: CHƯA HOÀN THÀNH.** Đã xác nhận 40 câu/3 lớp; mới bổ sung nguồn **Nhị Tấn tập V** có bản lời *Bàng Quyên xuống núi* ghi Thái Thụy Phong, cùng một bản lời hiện đại được đánh số 40 câu. Chưa xác thực đủ ký âm từng phách và chưa có quyền tái bản lời/MP3.
