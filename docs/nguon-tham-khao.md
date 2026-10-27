@@ -38,6 +38,9 @@
 | REF-12 | **Karaoke Cải Lương Tổng hợp** – *Xàng Xê 64 câu, Bích câu kỳ ngộ* | Nguồn lời được đăng tới câu 64, trang ghi **Trần Ngọc Thạch**. Dùng để mở phiếu so lời, **chưa xác minh độc lập tác giả, bản in và nhạc–lời khớp 64 câu**. | [Bích câu kỳ ngộ – Xàng Xê 64 câu](https://www.karaoke.cailuongtoiyeu.com/karaoke-xang-xe-64-cau.html) · Đã mở |
 | REF-13 | **Tủ nhạc Cổ Nhạc miền Nam – Nam Kỳ Lục Tỉnh** | Đầu mối tìm bản thu nhạc sư, dàn nhạc và dị bản; dữ liệu giới thiệu **không mặc định quyền tải về/đăng lại**. | [Tủ nhạc Cổ Nhạc miền Nam](https://www.namkyluctinh.org/am-nhac/tu-nhac-co-nhac-mien-nam.html) · Đã mở |
 
+| REF-14 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)** – Trung tâm Văn hóa Quận 8, Câu lạc bộ Đờn ca tài tử Quận 8; Nam Kỳ Lục Tỉnh số hóa | **Ngũ Đối Thượng**: nhạc **61 câu nhịp tư** và lời *Kiều du Thanh Minh* ghi Cao Hoài Sang (1940), trang in **226–233**. Đã xem ảnh trực tiếp cả 8 trang (226–233). | [Tập III – PDF số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Bản số hóa chỉ để trích nguồn, **chưa xác định quyền sao chép lại lời/ký âm** |
+| REF-15 | **Cổ Nhạc Nam Bộ** – *Ngũ Đối Thượng – Bảy bản Tổ (Hạ)*, 13/02/2021 | Đối chiếu trực tuyến **61 câu chữ nhạc**, phân lớp **16–8–8–16–13**, song lang 3–4 theo trang; dẫn nguồn theo Nhị Tấn. | [Ngũ Đối Thượng – 61 câu](https://conhacnambo.com/destop/topics_list.php?topic_id=423) · **Nguồn đăng lại**, chưa xác minh tác quyền/độ chính xác từng phách so với bản in và bản thu |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -58,6 +61,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–07](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–08](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
