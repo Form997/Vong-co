@@ -2,9 +2,9 @@
 
 **Preserving a living musical tradition through source-grounded research, transparent variants, and responsible AI access.**
 
-[**Đọc README tiếng Việt**](README.md) · [**Source registry (15 documented references)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
+[**Đọc README tiếng Việt**](README.md) · [**Source registry (17 documented references)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
 
-> **Research status, 27 October 2026:** 20/20 research folders indexed; 8/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
+> **Research status, 28 October 2026:** 20/20 research folders indexed; 9/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
 
 ## What is this project?
 
@@ -40,8 +40,9 @@ Two research issues already flagged in the V2 documents illustrate why version m
 - **Cổ Bản:** a 68-phrase **Trường** version must not be conflated with a 34-phrase **Vắn** version.
 - **Tây Thi:** a 52-phrase **Trường** version and a 26-phrase **Vắn** version are managed separately. An online “34 phrases” heading does not match the corresponding 26 numbered phrases and is treated as an unresolved editorial error, not as evidence of a third complete score.
 - **Ngũ Đối Thượng:** a source-verified 61-phrase score (Nhị Tấn, Vol. III, pp. 226–233) and a **60-phrase variant described as omitting source phrase 53**. The 60-phrase crosswalk is preliminary, **not yet independently audio-validated**. [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md).
+- **Ngũ Đối Hạ:** a newly located printed **38-phrase score** (Nhị Tấn, Vol. III, pp. 234/236) and **38 numbered lyric phrases** for *Kim, Kiều hoa viên ngộ* (pp. 235/237; book credits Cao Hoài Sang, 1940). Five printed sections; an academic study also mentions a three-section grouping. **Performance status remains unverified**. [See V2 review](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md).
 
-[**V2 review policy**](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [**Source audit records for pieces 01–08**](https://github.com/Form997/Vong-co/tree/v2-development/ban-to) · [**V1 audit**](docs/kiem-toan-v1-20-ban.md)
+[**V2 review policy**](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [**Source audit records for pieces 01–09**](https://github.com/Form997/Vong-co/tree/v2-development/ban-to) · [**V1 audit**](docs/kiem-toan-v1-20-ban.md)
 
 ## For AI researchers, heritage institutions, and technology companies
 
