@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Bài 05 – Xuân Tình Chấn (27/10/2026):** [biên bản V2](../ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) và [sổ 48 câu](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md) đã lập. Nhị Tấn tập II và Văn Dần có 48 câu nhạc + 48 câu lời, lớp 14–16–10–8; có khác chữ nhạc câu 37 và chữ lời 05/11/23/26/30. Thủ Xuân Tình Chấn tập I là bản nguồn riêng. **CHỜ NGHIỆM THU**, tổng **5/20 mở và 0/20 đạt diễn xướng**.
+
+---
+
 > **Bài 04 (27/10/2026):** mở [biên bản nghiệm thu Cổ Bản](../ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md); tách **Cổ Bản Trường 68 câu/8 lớp** theo Viện Âm nhạc và **Cổ Bản Vắn 34 câu/5 lớp** theo Nhị Tấn/Văn Dần. Đã rà vị trí nguồn 68/68 và 34/34; **cả hai CHỜ nghiệm thu âm thanh/ngón/song lang**, không tăng số bản trong danh mục. **Tiến độ tổng: 4/20 mở, 0/20 đạt**.
 
 ---
