@@ -1,5 +1,13 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## V2 — NGHIỆM THU ĐANG MỞ
+
+- [Bài 01 Lưu Thủy Trường — biên bản V2](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md): **CHỜ NGHIỆM THU**.
+- [Bài 02 Phú Lục Chấn — biên bản V2](ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md): **CHỜ NGHIỆM THU**; đã tìm bản ký âm đủ 34 câu và phát hiện bất đồng 32/34 câu lời giữa nguồn.
+- **Trạng thái:** 2/20 bài mở nghiệm thu nguồn, **0/20 bài nghiệm thu diễn xướng ĐẠT**. Không sửa nhánh V1 khóa.
+
+---
+
 ## NGHIỆM THU V2 (nhánh này)
 
 Bắt đầu **bản Tổ số 01 – Lưu Thủy Trường**. [Biên bản V2 bài 01](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) và [bảng kiểm văn bản 32 câu](ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md) đã lập. **0/20 bài đạt nghiệm thu diễn xướng; 01/20 đang kiểm**. Chưa có nghệ nhân duyệt, không gọi đây là chứng nhận.
