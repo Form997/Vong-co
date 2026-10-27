@@ -1,5 +1,13 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## NGHIỆM THU V2 — BÀI 06 TÂY THI
+
+[Biên bản V2 Tây Thi](ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md): đính chính lỗi nguồn ghi **“Vắn 34 câu”** từ tiêu đề blog không khớp 26 câu nội dung. Đã tách sổ **Trường 52 câu** và **Vắn 26 câu**, không gộp lời hoặc bản thu.
+
+**Tiến độ:** **6/20 bài mở kiểm nguồn**, **0/20 bài đạt nghiệm thu diễn xướng**. V1 và MCP vẫn tách nhánh, không sửa.
+
+---
+
 ## NGHIỆM THU V2 — BÀI 05 XUÂN TÌNH CHẤN
 
 [Biên bản nghiệm thu Xuân Tình Chấn](ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) và [sổ 48 câu](ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md): đã xác nhận 48 câu nhạc và 48 câu lời trong Nhị Tấn tập II; phát hiện khác chữ nhạc câu 37 và một số câu lời so với Văn Dần. **CHỜ NGHIỆM THU diễn xướng**.
