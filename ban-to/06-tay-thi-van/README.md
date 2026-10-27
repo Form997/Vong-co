@@ -1,5 +1,20 @@
 # BẢN TỔ SỐ 06 — TÂY THI (HỆ VẮN / TRƯỜNG)
 
+## NGHIỆM THU V2 — BÀI 06 (27/10/2026)
+
+**[Biên bản V2 — Tây Thi](v2-bien-ban-nghiem-thu.md)** · **[Sổ Trường 52 câu](v2-kiem-52-cau-tay-thi-truong.md)** · **[Sổ Vắn 26 câu](v2-kiem-26-cau-tay-thi-van.md)**.
+
+**ĐÍNH CHÍNH V1:** Trang Văn Dần *Tây Thi Vắn* ghi tiêu đề **34 câu**, nhưng nội dung chỉ có **26 câu được đánh số (01–26)**, một số dòng có nhãn phụ 15/2–22/9. Sách Nhị Tấn tập II cũng ghi **Vắn 26 câu nhịp tư, ba lớp 9–13–4** (tr.120–123) và có đủ 26 câu nhạc cùng 26 câu lời *Trọng Thủy, Mỵ Châu*. **Chưa có bằng chứng về một tổng phổ Vắn 34 câu**. Cụm “34 câu lời” hoặc mã `TV-34-L` bên dưới là *cách ghi lịch sử V1 đã được phát hiện sai*, không được dùng làm số câu kiểm định V2.
+
+- **Hệ chính V2:** Tây Thi **Trường 52 câu nhịp tư**, lớp **18–26–8**, nguồn Nhị Tấn tập II tr.146–153 và Văn Dần. Lời *Lễ nhạc giáo hóa dân tâm*, ghi Nhị Tấn 1974.
+- **Dị bản riêng V2:** Tây Thi **Vắn 26 câu nhịp tư**, lớp **9–13–4**. Lời *Trọng Thủy, Mỵ Châu* trong sách Nhị Tấn, lời *Thúy Kiều gặp Thúc Sinh* ghi Trần Ngọc Thạch trên trang Văn Dần; **không trộn**.
+- **ĐẠT rà chỉ mục nguồn** 52/52 Trường và 26/26 Vắn; **CHỜ NGHIỆM THU diễn xướng** (0/52, 0/26), thiếu bản thu đối chứng cùng truyền bản, song lang/ngón đờn được duyệt và quyền sử dụng.
+- Giữ nguyên đường dẫn thư mục `06-tay-thi-van` để không gây lỗi các liên kết có trước. Không thay đổi nhánh V1 đã khóa.
+
+> Phần sau là hồ sơ nghiên cứu V1 để tra cứu lịch sử. Trong trường hợp khác biệt, **biên bản nghiệm thu V2 mới được áp dụng**.
+
+---
+
 **ĐÍNH CHÍNH KIỂM TOÁN V1:** ICHCAP/Viện Âm nhạc dùng Tây Thi Trường trong danh mục 20 bản Tổ. Tên thư mục `06-tay-thi-van` được giữ để bảo toàn liên kết, KHÔNG có nghĩa hệ Vắn được cơ quan đó sử dụng làm bản chuẩn. Cần đối chiếu ký âm riêng cho mỗi hệ.
 
 **Nhóm: Sáu Bắc · Lập hồ sơ ngày 27/10/2026.**  
