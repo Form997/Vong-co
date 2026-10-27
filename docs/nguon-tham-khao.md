@@ -52,6 +52,9 @@
 | REF-19 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP V (1997), phụ lục tr.501–502** | **40 câu lời “Bàng Quyên xuống núi”**, ghi **Thái Thụy Phong**, đã xem ảnh hai trang. **Đây là lời ca khác, KHÔNG PHẢI tổng phổ Long Đăng**, nên không lấy tập V thay nguồn chữ nhạc tập III. | [PDF tập V – phụ lục lời ca](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%205%20-%20Nhi%20Tan.pdf) · Chưa có giấy phép phổ biến nguyên văn |
 | REF-20 | **Cổ Nhạc Nam Bộ, *Long Đăng – Bảy Bản Tổ (Hạ)*, 16/02/2021** | Đăng lại **40 số câu nhạc và ba lớp 16–12–12**, có chú thích “theo tài liệu NS Nhị Tấn”. Dùng để đối chiếu mã chỉ mục với tập III; **không tính là nguồn in đầu tiên độc lập**. | [Long Đăng 40 câu – bản đăng trực tuyến](https://conhacnambo.com/mobile/topics_body_Lyrics.php?topic_id=421) · Chưa rõ phép chép/khai thác thương mại |
 
+| REF-21 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP III (1997)**, Trung tâm Văn hóa Quận 8 và CLB Đờn ca tài tử Quận 8 | **Long Ngâm**: **33 câu ký âm**, nhịp tư/song lang 3–4, ở trang in **242 (1–16), 244 (17–33)**; **33 câu lời** *Tống Trọng qui tang*, ghi **Cao Hoài Sang (1940)** tại **243 và 245**. Đã xem trực tiếp ảnh đủ 4 trang, phân biệt phần Long Đăng và Vạn Giá liền kề. | [PDF tập III – bản in số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Chưa xác minh quyền tái bản nguyên văn |
+| REF-22 | **Cổ Nhạc Nam Bộ, Truyền Nguyễn đăng 16/02/2021** — *Long Ngâm – Bảy Bản Tổ (Hạ)* | Có **33 số câu nhạc và 3 lớp**, xác nhận trang đăng ghi **theo tài liệu NS Nhị Tấn**. Đối chứng ký hiệu số câu, không tính là một bản chép sơ cấp độc lập. | [Long Ngâm 33 câu, bản đăng lại](https://conhacnambo.com/destop/topics_list.php?topic_id=420) · Chưa rõ quyền sao chép lại |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -72,6 +75,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–10](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–11](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
