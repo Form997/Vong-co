@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 9/20 bài đã mở biên bản nguồn V2; 0/20 bài nghiệm thu diễn xướng đạt.** Các số **8/20** và trước đó nằm ở đoạn **lưu vết tiến độ lịch sử** bên dưới, không phải trạng thái hôm nay.
+> **TIẾN ĐỘ HIỆN HÀNH — 28/10/2026: 10/20 bài đã mở biên bản kiểm nguồn V2, 0/20 bài đạt nghiệm thu diễn xướng.** Chưa có chữ ký thẩm định đờn–ca cho các bài 01–10.
+
+> **Bài 10 – Long Đăng:** đã lập [biên bản V2](../ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) và [sổ 40 câu](../ban-to/10-long-dang/v2-ra-soat-40-cau.md). **Giải quyết điểm nghẽn V1:** tìm được ký âm **40/40 câu ở Nhị Tấn TẬP III**, trang **238/240/242**; lời *Kiều vãng Trọng hiên* **40/40 câu** tại **239/241/243**, ghi Cao Hoài Sang (1940). Câu 39–40 nằm trước phần **Long Ngâm** ở hai trang cuối; **tập V tr.501–502 chỉ là bộ lời khác *Bàng Quyên xuống núi* – Thái Thụy Phong**, không phải tổng phổ. **CHỜ NGHIỆM THU biểu diễn (0/40)**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 9/20 bài đã mở biên bản nguồn V2; 0/20 bài nghiệm thu diễn xướng đạt.** Các số **8/20** và trước đó nằm ở đoạn **lưu vết tiến độ lịch sử** bên dưới, không phải trạng thái hôm nay.
 
 > **Bài 09 – Ngũ Đối Hạ:** đã tạo [biên bản V2](../ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) và [sổ 38 câu](../ban-to/09-ngu-doi-ha/v2-ra-soat-38-cau.md). **Phát hiện mới so với V1:** sách Nhị Tấn tập III có **nhạc 38 câu tr.234,236** và **lời 38 câu tr.235,237** (*Kim, Kiều hoa viên ngộ* — Cao Hoài Sang, ghi 1940). 5 lớp **9+6+6+6+11**; một nguồn nghiên cứu có sơ đồ **3 lớp 20+10+8**. **ĐẠT kiểm sự hiện diện nhạc/lời 38/38 nhưng CHỜ NGHIỆM THU biểu diễn (0/38)**.
 
