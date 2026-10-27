@@ -5,6 +5,7 @@ Install Python 3.11+ and 'mcp>=2,<3'. See README.md.
 from __future__ import annotations
 
 import os
+from typing import Any
 from mcp.server import MCPServer
 
 from catalog import Catalog
@@ -24,43 +25,43 @@ store = Catalog()
 
 
 @mcp.tool(structured_output=True)
-def list_ban_to() -> dict:
+def list_ban_to() -> dict[str, Any]:
     """List exactly the 20 pieces, groups, and V1 source file links."""
     return store.list_ban_to()
 
 
 @mcp.tool(structured_output=True)
-def search_ban_to(query: str) -> dict:
+def search_ban_to(query: str) -> dict[str, Any]:
     """Search by song name, group, or number (accent insensitive)."""
     return store.search_ban_to(query)
 
 
 @mcp.tool(structured_output=True)
-def get_ban_to(bai_so: int, version: str = "v1") -> dict:
+def get_ban_to(bai_so: int, version: str = "v1") -> dict[str, Any]:
     """Read the research README for a song. version is v1 or v2."""
     return store.get_ban_to(bai_so, version)
 
 
 @mcp.tool(structured_output=True)
-def get_nghiem_thu(bai_so: int) -> dict:
+def get_nghiem_thu(bai_so: int) -> dict[str, Any]:
     """Read a V2 review report without treating it as a pass certificate."""
     return store.get_nghiem_thu(bai_so)
 
 
 @mcp.tool(structured_output=True)
-def get_di_ban(bai_so: int) -> dict:
+def get_di_ban(bai_so: int) -> dict[str, Any]:
     """Get source-grounded lines about alternative versions of one song."""
     return store.get_di_ban(bai_so)
 
 
 @mcp.tool(structured_output=True)
-def get_nguon(bai_so: int) -> dict:
+def get_nguon(bai_so: int) -> dict[str, Any]:
     """List bibliographic links already published in that V1 dossier."""
     return store.get_nguon(bai_so)
 
 
 @mcp.tool(structured_output=True)
-def get_quy_che_v2() -> dict:
+def get_quy_che_v2() -> dict[str, Any]:
     """Read the current V2 acceptance criteria. Not a pass report."""
     return store.get_quy_che_v2()
 
