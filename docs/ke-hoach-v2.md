@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+**Tiến độ đợt nghiệm thu:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
+
+---
+
 > **Điều chỉnh ưu tiên 27/10/2026:** khởi động nghiệm thu từ **bản 01**, không bắt đầu bằng bài 10. Mọi phán quyết theo bằng chứng trực tiếp và không có “đạt” tự động.
 
 **Quyết định phạm vi (27/10/2026): V2 CHỈ LÀ NGHIỆM THU.** V1 là kho hồ sơ nguồn được khóa; V2 không được dùng để thay thế việc thiếu bằng sáng tác hoặc ghi trạng thái “đạt” theo cảm tính.
