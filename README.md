@@ -6,7 +6,7 @@
 
 > **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
 >
-> **Trạng thái 27/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **08/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
+> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **09/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
 
 [**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
@@ -43,7 +43,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 | 06 | Sáu Bắc | [Tây Thi (Vắn / Trường)](ban-to/06-tay-thi-van/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) |
 | 07 | Bảy Lễ | [Xàng Xê](ban-to/07-xang-xe/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) |
 | 08 | Bảy Lễ | [Ngũ Đối Thượng](ban-to/08-ngu-doi-thuong/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 09 | Bảy Lễ | [Ngũ Đối Hạ](ban-to/09-ngu-doi-ha/README.md) | Chưa mở biên bản V2 |
+| 09 | Bảy Lễ | [Ngũ Đối Hạ](ban-to/09-ngu-doi-ha/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 10 | Bảy Lễ | [Long Đăng](ban-to/10-long-dang/README.md) | Chưa mở biên bản V2 |
 | 11 | Bảy Lễ | [Long Ngâm](ban-to/11-long-ngam/README.md) | Chưa mở biên bản V2 |
 | 12 | Bảy Lễ | [Vạn Giá](ban-to/12-van-gia/README.md) | Chưa mở biên bản V2 |
@@ -61,6 +61,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 - **Tây Thi (06):** Trường **52 câu** và Vắn **26 câu**; nhãn “34 câu” trên một trang nguồn Vắn đã được chỉ ra là **không khớp 26 câu nội dung được đánh số** ở biên bản V2.
 - **Xàng Xê (07):** một số nguồn gọi lớp III **Xê**, nguồn khác **Xề**; có khác biệt trong cách diễn giải nhịp. Các cách ghi chưa được hòa giải bằng kiểm nghe.
 - **Ngũ Đối Thượng (08):** bản in 61 câu nhịp tư; hệ 60 câu được thuyết minh là **bỏ câu gốc 53**, nên đã lập bảng ánh xạ riêng tại V2. **Chưa nghe/duyệt bản 60 câu độc lập**.
+- **Ngũ Đối Hạ (09):** đã tìm được **ký âm 38 câu (Nhị Tấn tập III, tr.234/236)** cùng lời *Kim, Kiều hoa viên ngộ* **38 câu (tr.235/237)**; có hai phương án chia **5 lớp và 3 lớp**. Chưa kiểm thực tấu.
 - Các mâu thuẫn về **Nam Ai 68/84 và Đảo Ngũ Cung 67/68** còn cần đối chứng. Không tự chuẩn hóa bằng suy đoán.
 
 [Danh mục và hệ câu/nhịp V1](docs/20-ban-to.md) · [Biên bản kiểm toán V1](docs/kiem-toan-v1-20-ban.md) · [Quy chế nghiệm thu V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md)
@@ -116,11 +117,11 @@ Mỗi hồ sơ cần qua bốn tầng bằng chứng:
 
 **Trạng thái của bài:** `CHỜ NGHIỆM THU` (thiếu bằng chứng) · `KHÔNG ĐẠT` (sai lệch đã chứng minh) · `ĐẠT` (đủ điều kiện và có kiểm duyệt). Mọi kết quả **ĐẠT kiểm nguồn** chỉ áp dụng ở tiêu chí đã kiểm, **không phải ĐẠT toàn bài**.
 
-**Tình trạng hiện tại: 8/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
+**Tình trạng hiện tại: 9/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
 
 ## Nguồn khoa học và tư liệu có thể truy cập
 
-**[MỞ DANH MỤC 15 NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
+**[MỞ DANH MỤC 17 NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
 
 Các mốc tham khảo chính, sắp theo **mục đích và mức xuất xứ** (không đánh đồng tất cả nguồn là tài liệu học thuật đồng cấp):
 
