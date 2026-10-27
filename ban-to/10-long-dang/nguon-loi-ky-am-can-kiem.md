@@ -1,5 +1,15 @@
 # Bài 10 Long Đăng — đối chiếu nguồn còn thiếu
 
+## ĐÍNH CHÍNH V2 — TÌM ĐƯỢC KÝ ÂM LONG ĐĂNG 40 CÂU (28/10/2026)
+
+**[Biên bản nghiệm thu V2](v2-bien-ban-nghiem-thu.md)** · **[Sổ xác minh 40 câu](v2-ra-soat-40-cau.md)**.
+
+Đã kiểm trực tiếp sách **Nhị Tấn, tập III**, chữ nhạc tại **trang in 238, 240, 242**, lời *Kiều vãng Trọng hiên* (Cao Hoài Sang, 1940) tại **239, 241, 243**. Có đủ **40/40 câu nhạc và 40/40 câu lời**, bao gồm **39–40 ở đầu 242/243**, trước phần Long Ngâm.
+
+Nguồn tập V **501–502** đã xác minh bằng ảnh và chỉ là **bộ lời *Bàng Quyên xuống núi* của Thái Thụy Phong**, không phải nguồn ký âm chính. Vì vậy **mục “chưa thu được ký âm đủ 40 câu” trong lịch sử V1 phía dưới đã được giải quyết tại mức nguồn văn bản**, nhưng **chưa kiểm ký âm theo phách/ngón/audio** và **chưa có quyền tái bản**. **CHỜ NGHIỆM THU**.
+
+---
+
 Cập nhật 27/10/2026. **Bài 10 CHƯA XONG**; không ghi hồ sơ nguồn là hoàn chỉnh âm nhạc.
 
 | Hạng mục | Nguồn | Trạng thái |
