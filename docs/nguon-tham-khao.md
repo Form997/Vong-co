@@ -55,6 +55,10 @@
 | REF-21 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, TẬP III (1997)**, Trung tâm Văn hóa Quận 8 và CLB Đờn ca tài tử Quận 8 | **Long Ngâm**: **33 câu ký âm**, nhịp tư/song lang 3–4, ở trang in **242 (1–16), 244 (17–33)**; **33 câu lời** *Tống Trọng qui tang*, ghi **Cao Hoài Sang (1940)** tại **243 và 245**. Đã xem trực tiếp ảnh đủ 4 trang, phân biệt phần Long Đăng và Vạn Giá liền kề. | [PDF tập III – bản in số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Chưa xác minh quyền tái bản nguyên văn |
 | REF-22 | **Cổ Nhạc Nam Bộ, Truyền Nguyễn đăng 16/02/2021** — *Long Ngâm – Bảy Bản Tổ (Hạ)* | Có **33 số câu nhạc và 3 lớp**, xác nhận trang đăng ghi **theo tài liệu NS Nhị Tấn**. Đối chứng ký hiệu số câu, không tính là một bản chép sơ cấp độc lập. | [Long Ngâm 33 câu, bản đăng lại](https://conhacnambo.com/destop/topics_list.php?topic_id=420) · Chưa rõ quyền sao chép lại |
 
+| REF-23 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)** – Trung tâm Văn hóa Quận 8, CLB Đờn ca tài tử Quận 8, bản số hóa Nam Kỳ Lục Tỉnh | **Vạn Giá:** bản in có **47 câu nhạc nhịp tư** ở tr.**244 (01), 246 (02–21), 248 (22–41), 250 (42–47)**; **47 câu lời** *Biệt mãi thanh lâu*, ghi **Cao Hoài Sang 1940**, ở tr.**245/247/249/251**. **Đã xem ảnh trực tiếp đủ 8 trang**, ranh với Long Ngâm ở đầu và Tiểu Khúc ở cuối. | [PDF tập III – Vạn Giá tr.244–251](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Chưa được cấp quyền đăng lại nguyên văn, cũng chưa thẩm âm |
+| REF-24 | **Cổ Nhạc Nam Bộ – Truyền Nguyễn đăng 15/02/2021**, *6. Vạn Giá – Bảy Bản Tổ (Hạ)* | Có **47 số câu chữ nhạc và năm lớp 8+6+10+14+9**, trang ghi **“Theo tài liệu NS Nhị Tấn”**; là **bản đăng lại**, không phải chứng cứ gốc độc lập thứ hai. | [Vạn Giá – 47 câu, bản đăng lại](https://conhacnambo.com/destop/topics_list.php?topic_id=419) · Chưa rõ quyền sao chép/đào tạo AI |
+| REF-25 | **TKaraoke – *Vạn Giá 47 câu – Nhẫn nhịn***, trang ghi tác giả **Hoài Như** | Có **47 nhãn câu lời hiện đại**, dùng để ghi nhận **bộ lời riêng khác *Biệt mãi thanh lâu***; chưa được nguồn sách/người soạn xác minh độc lập. | [Nhẫn nhịn – TKaraoke](https://lyric.tkaraoke.com/74557/van_gia__47_cau__tua_bai_ca__nhan_nhin.html) · Không phải nguồn ký âm/giấy phép tái bản |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -75,6 +79,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–11](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–12](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
