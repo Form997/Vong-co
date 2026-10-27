@@ -26,6 +26,11 @@ Kho nghiên cứu, đối chiếu và xây dựng giáo trình **20 bản Tổ**
 
 > **Đang xây dựng, chưa có bản ký âm hoặc audio hoàn chỉnh.** Không dùng bản nghiên cứu sơ bộ này thay thế tài liệu nghệ nhân giảng dạy.
 
+
+## Kết nối MCP (thử nghiệm chỉ đọc)
+
+[HAI ĐẤT VỌNG CỔ MCP](integrations/vong-co-mcp/README.md) — mã Python SDK v2, 7 công cụ tra cứu, dùng hồ sơ V1 và hiển thị biên bản V2 chưa nghiệm thu. Đây **chưa phải Plugin ChatGPT công khai** và chưa có máy chủ HTTPS triển khai. Không cho phép ghi/sửa GitHub hoặc tự duyệt bài.
+
 ## Mở tài liệu
 - **[BIÊN BẢN KIỂM TOÁN V1 — 20/20 bản Tổ](docs/kiem-toan-v1-20-ban.md)** — kết quả kiểm kê, lỗi V1 đã sửa, dị bản và việc chưa thể nghiệm thu.
 - **[Danh mục 20 bản Tổ và 20 thư mục riêng](docs/20-ban-to.md)** — mỗi bản ở `ban-to/NN-ten-bai/`.
