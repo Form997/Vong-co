@@ -1,5 +1,13 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## NGHIỆM THU V2 — BÀI 07 XÀNG XÊ
+
+[**Biên bản nghiệm thu bài 07**](ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) và [**sổ 64 câu Xàng Xê**](ban-to/07-xang-xe/v2-ra-soat-64-cau.md) đã lập. Tìm được nguồn lời *Bích câu kỳ ngộ* ghi Trần Ngọc Thạch và 64 nhãn câu, song còn bất đồng cách gọi lớp **Xê/Xề**, quy ước **nhịp tư/nhịp tư lơi** và vài ký hiệu chữ kết lời/nhạc. **CHỜ NGHIỆM THU**, không phát hành audio/lời chưa có phép.
+
+**Tiến độ V2:** **7/20 bài đã mở kiểm nguồn; 0/20 bài đạt nghiệm thu diễn xướng**. Nhánh V1 và MCP thử nghiệm không bị sửa.
+
+---
+
 ## NGHIỆM THU V2 — BÀI 06 TÂY THI
 
 [Biên bản V2 Tây Thi](ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md): đính chính lỗi nguồn ghi **“Vắn 34 câu”** từ tiêu đề blog không khớp 26 câu nội dung. Đã tách sổ **Trường 52 câu** và **Vắn 26 câu**, không gộp lời hoặc bản thu.
