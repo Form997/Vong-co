@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Bài 07 — Xàng Xê (27/10/2026):** đã tạo [biên bản V2](../ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) và [sổ 64 câu](../ban-to/07-xang-xe/v2-ra-soat-64-cau.md). **64 câu, 4 lớp 20–16–12–16**; đã rà nguồn chữ nhạc theo Cổ Nhạc Nam Bộ. Tìm được lời 64 câu *Bích câu kỳ ngộ* (trang đăng ghi Trần Ngọc Thạch) — mới xác nhận hiện diện, chưa kiểm ca/ngón. Khác tên lớp **Xê/Xề** và diễn giải nhịp giữa Viện Âm nhạc và TS. Bùi Thiên Hoàng Quân. **CHỜ NGHIỆM THU**, tổng **7/20 mở và 0/20 đạt diễn xướng**.
+
+---
+
 > **Bài 06 – Tây Thi (27/10/2026):** [biên bản V2](../ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) đã lập, xác nhận **Trường 52 câu/3 lớp 18–26–8** và **Vắn 26 câu/3 lớp 9–13–4** qua Nhị Tấn và Văn Dần. **Sửa sai V1:** trang Vắn của Văn Dần ghi tiêu đề 34 nhưng nội dung chỉ đánh số 26 câu; không có chứng cứ về tổng phổ 34 câu. Hai bộ lời Vắn và lời Trường quản lý riêng. **CHỜ NGHIỆM THU**, tiến độ **6/20 bài đã mở; 0/20 đạt diễn xướng**.
 
 ---
