@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Bài 06 – Tây Thi (27/10/2026):** [biên bản V2](../ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) đã lập, xác nhận **Trường 52 câu/3 lớp 18–26–8** và **Vắn 26 câu/3 lớp 9–13–4** qua Nhị Tấn và Văn Dần. **Sửa sai V1:** trang Vắn của Văn Dần ghi tiêu đề 34 nhưng nội dung chỉ đánh số 26 câu; không có chứng cứ về tổng phổ 34 câu. Hai bộ lời Vắn và lời Trường quản lý riêng. **CHỜ NGHIỆM THU**, tiến độ **6/20 bài đã mở; 0/20 đạt diễn xướng**.
+
+---
+
 > **Bài 05 – Xuân Tình Chấn (27/10/2026):** [biên bản V2](../ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) và [sổ 48 câu](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md) đã lập. Nhị Tấn tập II và Văn Dần có 48 câu nhạc + 48 câu lời, lớp 14–16–10–8; có khác chữ nhạc câu 37 và chữ lời 05/11/23/26/30. Thủ Xuân Tình Chấn tập I là bản nguồn riêng. **CHỜ NGHIỆM THU**, tổng **5/20 mở và 0/20 đạt diễn xướng**.
 
 ---
