@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH – 27/10/2026: 8/20 đã mở biên bản nguồn V2; 0/20 đã đạt nghiệm thu diễn xướng.** Chỉ các biên bản được chuyên gia duyệt đủ bằng chứng mới có thể đổi trạng thái toàn bài.
+> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 9/20 bài đã mở biên bản nguồn V2; 0/20 bài nghiệm thu diễn xướng đạt.** Các số **8/20** và trước đó nằm ở đoạn **lưu vết tiến độ lịch sử** bên dưới, không phải trạng thái hôm nay.
+
+> **Bài 09 – Ngũ Đối Hạ:** đã tạo [biên bản V2](../ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) và [sổ 38 câu](../ban-to/09-ngu-doi-ha/v2-ra-soat-38-cau.md). **Phát hiện mới so với V1:** sách Nhị Tấn tập III có **nhạc 38 câu tr.234,236** và **lời 38 câu tr.235,237** (*Kim, Kiều hoa viên ngộ* — Cao Hoài Sang, ghi 1940). 5 lớp **9+6+6+6+11**; một nguồn nghiên cứu có sơ đồ **3 lớp 20+10+8**. **ĐẠT kiểm sự hiện diện nhạc/lời 38/38 nhưng CHỜ NGHIỆM THU biểu diễn (0/38)**.
+
+---
+
+> **MỐC LỊCH SỬ – 27/10/2026: 8/20 đã mở biên bản nguồn V2; 0/20 đã đạt nghiệm thu diễn xướng.** Chỉ các biên bản được chuyên gia duyệt đủ bằng chứng mới có thể đổi trạng thái toàn bài.
 
 > **Bài 08 – Ngũ Đối Thượng:** đã tạo [biên bản V2](../ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md), [sổ 61 câu](../ban-to/08-ngu-doi-thuong/v2-ra-soat-61-cau.md) và [bảng đối chiếu 60 câu](../ban-to/08-ngu-doi-thuong/v2-doi-chieu-60-cau.md). Nhị Tấn tập III tr.226–233 có **61/61 nhãn nhạc và 61/61 nhãn lời**; bản 60 câu theo nguồn thuyết minh **lược câu 53** và đánh số lại từ đó. Bảng 60 chỉ là **ánh xạ có điều kiện**, chưa phải bản chép/bản thu đã nghiệm thu riêng. **CHỜ NGHIỆM THU; 0/61** câu được thẩm định biểu diễn.
 
