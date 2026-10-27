@@ -1,5 +1,11 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **TIẾN ĐỘ HIỆN HÀNH – 27/10/2026: 8/20 đã mở biên bản nguồn V2; 0/20 đã đạt nghiệm thu diễn xướng.** Chỉ các biên bản được chuyên gia duyệt đủ bằng chứng mới có thể đổi trạng thái toàn bài.
+
+> **Bài 08 – Ngũ Đối Thượng:** đã tạo [biên bản V2](../ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md), [sổ 61 câu](../ban-to/08-ngu-doi-thuong/v2-ra-soat-61-cau.md) và [bảng đối chiếu 60 câu](../ban-to/08-ngu-doi-thuong/v2-doi-chieu-60-cau.md). Nhị Tấn tập III tr.226–233 có **61/61 nhãn nhạc và 61/61 nhãn lời**; bản 60 câu theo nguồn thuyết minh **lược câu 53** và đánh số lại từ đó. Bảng 60 chỉ là **ánh xạ có điều kiện**, chưa phải bản chép/bản thu đã nghiệm thu riêng. **CHỜ NGHIỆM THU; 0/61** câu được thẩm định biểu diễn.
+
+---
+
 > **Bài 07 — Xàng Xê (27/10/2026):** đã tạo [biên bản V2](../ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) và [sổ 64 câu](../ban-to/07-xang-xe/v2-ra-soat-64-cau.md). **64 câu, 4 lớp 20–16–12–16**; đã rà nguồn chữ nhạc theo Cổ Nhạc Nam Bộ. Tìm được lời 64 câu *Bích câu kỳ ngộ* (trang đăng ghi Trần Ngọc Thạch) — mới xác nhận hiện diện, chưa kiểm ca/ngón. Khác tên lớp **Xê/Xề** và diễn giải nhịp giữa Viện Âm nhạc và TS. Bùi Thiên Hoàng Quân. **CHỜ NGHIỆM THU**, tổng **7/20 mở và 0/20 đạt diễn xướng**.
 
 ---
@@ -20,7 +26,7 @@
 
 ---
 
-**Tiến độ đợt nghiệm thu:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
+**Lưu vết tiến độ khi mở bài 02:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
 
 ---
 
