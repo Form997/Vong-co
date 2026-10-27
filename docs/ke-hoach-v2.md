@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH — 28/10/2026: 10/20 bài đã mở biên bản kiểm nguồn V2, 0/20 bài đạt nghiệm thu diễn xướng.** Chưa có chữ ký thẩm định đờn–ca cho các bài 01–10.
+> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 11/20 bản Tổ đã mở biên bản nguồn V2; 0/20 được nghiệm thu diễn xướng.** Chưa có thẩm định đầy đủ bằng bản nghe và nghệ nhân.
+
+> **Bài 11 – Long Ngâm:** [biên bản V2](../ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) và [sổ 33 câu](../ban-to/11-long-ngam/v2-ra-soat-33-cau.md) đã lưu. **33 nhãn nhạc tr.242/244, 33 nhãn lời tr.243/245** trong Nhị Tấn tập III, lời **“Tống Trọng qui tang” – Cao Hoài Sang (1940)**. Chia lớp **8+11+14**. Phân biệt **Long Đăng 39–40** nằm đầu tr.242/243 và **Vạn Giá** bắt đầu sau Long Ngâm trên tr.244/245. Ghi điểm cần chuyên gia giải thích: **chữ mở Xư trong bài nghiên cứu** so với **“(--) Líu (XỰ)” ở sách Nhị Tấn**. **CHỜ NGHIỆM THU diễn xướng (0/33)**.
+
+---
+
+> **MỐC LỊCH SỬ — 28/10/2026: 10/20 bài đã mở biên bản kiểm nguồn V2, 0/20 bài đạt nghiệm thu diễn xướng.** Chưa có chữ ký thẩm định đờn–ca cho các bài 01–10.
 
 > **Bài 10 – Long Đăng:** đã lập [biên bản V2](../ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) và [sổ 40 câu](../ban-to/10-long-dang/v2-ra-soat-40-cau.md). **Giải quyết điểm nghẽn V1:** tìm được ký âm **40/40 câu ở Nhị Tấn TẬP III**, trang **238/240/242**; lời *Kiều vãng Trọng hiên* **40/40 câu** tại **239/241/243**, ghi Cao Hoài Sang (1940). Câu 39–40 nằm trước phần **Long Ngâm** ở hai trang cuối; **tập V tr.501–502 chỉ là bộ lời khác *Bàng Quyên xuống núi* – Thái Thụy Phong**, không phải tổng phổ. **CHỜ NGHIỆM THU biểu diễn (0/40)**.
 
