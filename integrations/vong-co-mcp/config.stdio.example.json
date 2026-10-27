@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "hai-dat-vong-co": {
+      "command": "python",
+      "args": ["/path/to/Vong-co/integrations/vong-co-mcp/server.py"],
+      "env": {
+        "MCP_TRANSPORT": "stdio"
+      }
+    }
+  }
+}
