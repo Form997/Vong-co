@@ -1,5 +1,13 @@
 # HAI ĐẤT · KHO 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+## Nghiệm thu V2 — cập nhật bài 03
+
+Đã kiểm văn bản nguồn cho **bài 01, 02 và 03**, cả ba **CHỜ NGHIỆM THU diễn xướng**. [Mở biên bản V2 Bình Bán Chấn](ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng đối chiếu 44 câu](ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md).
+
+**Tiến độ:** **03/20 đã mở nghiệm thu**, **00/20 nghiệm thu diễn xướng đạt**. V1 đóng băng không chỉnh sửa.
+
+---
+
 ## V2 — NGHIỆM THU ĐANG MỞ
 
 - [Bài 01 Lưu Thủy Trường — biên bản V2](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md): **CHỜ NGHIỆM THU**.
