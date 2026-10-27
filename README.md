@@ -1,5 +1,7 @@
 # HAI ĐẤT · 20 BẢN TỔ ĐỜN CA TÀI TỬ NAM BỘ
 
+[**English / International AI & Research Overview**](README.en.md)
+
 **Gìn giữ tiếng đờn bằng tri thức có nguồn. Kết nối di sản với thế hệ người học và công nghệ AI.**
 
 > **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
