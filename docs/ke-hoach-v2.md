@@ -1,5 +1,9 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
+> **Bài 04 (27/10/2026):** mở [biên bản nghiệm thu Cổ Bản](../ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md); tách **Cổ Bản Trường 68 câu/8 lớp** theo Viện Âm nhạc và **Cổ Bản Vắn 34 câu/5 lớp** theo Nhị Tấn/Văn Dần. Đã rà vị trí nguồn 68/68 và 34/34; **cả hai CHỜ nghiệm thu âm thanh/ngón/song lang**, không tăng số bản trong danh mục. **Tiến độ tổng: 4/20 mở, 0/20 đạt**.
+
+---
+
 > **Bài 03 — Bình Bán Chấn (27/10/2026):** đã lập [biên bản V2](../ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng kiểm nguồn 44 câu](../ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md). Có 44 câu nhạc và 44 câu lời trong hai nguồn; khác lời ở một vài vị trí, bản Thủ/Bình Bán cần phân tách. **CHỜ NGHIỆM THU**, tiến độ **3/20 đã mở, 0/20 đạt diễn xướng**.
 
 ---
