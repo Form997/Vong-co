@@ -20,6 +20,7 @@ from urllib.parse import urlsplit
 from v3_validate import ROOT, CATALOG, strict_load, validate_catalog
 
 INDEX = ROOT / "data" / "v3_2" / "phrase_index.json"
+SCHEMA = ROOT / "data" / "v3_2" / "schema.json"
 ROOT_KEYS = {"schema_version", "started_on", "research_scope",
              "performance_status", "rights_status", "reader_notice", "items"}
 ITEM_KEYS = {"piece_id", "slug", "title", "variant_id", "phrase_count",
@@ -107,8 +108,36 @@ def expectation(piece_id: int, cells: list[str], number: int) -> dict:
     }
 
 
+def validate_schema_contract(schema: object) -> list[str]:
+    """Guarantee published schema documents the authoritative Python constraints."""
+    errs: list[str] = []
+    if not isinstance(schema, dict):
+        return ["Schema V3.2 không phải object."]
+    if schema.get("properties", {}).get("schema_version", {}).get("const") != "3.2.0-alpha.1":
+        errs.append("Schema V3.2 không cùng phiên bản dữ liệu.")
+    for label, obj, keys in (
+        ("gốc", schema, ROOT_KEYS),
+        ("hệ bài", schema.get("$defs", {}).get("item", {}), ITEM_KEYS),
+        ("câu", schema.get("$defs", {}).get("phrase", {}), PHRASE_KEYS),
+        ("lớp", schema.get("$defs", {}).get("section", {}), {"label", "start", "end"}),
+    ):
+        if not isinstance(obj, dict) or set(obj.get("required", [])) != keys:
+            errs.append(f"JSON Schema thiếu/thừa trường bắt buộc cấp {label}.")
+        if not isinstance(obj, dict) or obj.get("additionalProperties") is not False:
+            errs.append(f"JSON Schema phải cấm trường lạ cấp {label}.")
+    if schema.get("properties", {}).get("rights_status", {}).get("const") != "unverified":
+        errs.append("JSON Schema không được mặc nhận quyền tái bản.")
+    if schema.get("properties", {}).get("performance_status", {}).get("const") != "pending":
+        errs.append("JSON Schema không được tự nghiệm thu diễn xướng.")
+    return errs
+
+
 def validate_phrase_index(data: object, catalog: dict, root: Path = ROOT) -> list[str]:
     errors: list[str] = []
+    try:
+        errors.extend(validate_schema_contract(strict_load(root / "data/v3_2/schema.json")))
+    except (OSError, ValueError, TypeError) as exc:
+        errors.append(f"Thiếu hoặc sai schema V3.2: {exc}")
     if not exact_fields(data, ROOT_KEYS, "Gốc V3.2", errors):
         return errors
     if data["schema_version"] != "3.2.0-alpha.1" or data["started_on"] != "2026-10-28":
