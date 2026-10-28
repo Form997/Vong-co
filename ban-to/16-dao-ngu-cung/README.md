@@ -1,5 +1,22 @@
 # BẢN TỔ 16 — ĐẢO NGŨ CUNG (NAM ĐẢO)
 
+## V2 — NGHIỆM THU KIỂM NGUỒN ĐẢO NGŨ CUNG (28/10/2026)
+
+**[Biên bản V2 (11 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ nguồn 67 vị trí in trong Nhị Tấn tập III](v2-ra-soat-67-cau.md)** · **[Sổ khung Viện Âm nhạc 68 câu — CHƯA KIỂM TỔNG PHỔ](v2-doi-chieu-68-cau.md)**.
+
+**PHÁT HIỆN MỚI SO VỚI V1:** Đã tìm và **xem ảnh sách Nhị Tấn tập III, trang in 278–287**. Tiêu đề bài in **“Đảo Ngũ Cung (52 câu, nhịp tư, song lang 3–4)”**; gồm **4 câu Phản Xuân qua Đảo (đánh 1–4) + sáu lớp Nam Đảo × 8 (đánh 1–48)**, rồi có **Song Cước 15 câu (đánh 1–15)** in thêm ở tr.284–287. **Tổng số vị trí in toàn trình tự là 52+15=67**, với nhạc/lời ca ***Tích Thúy Kiều (tiếp theo)*** tương ứng. **Không được diễn giải tiêu đề sách là “Đảo Ngũ Cung 68”**, cũng không bỏ phần Song Cước vì sách đặt đầu bài “52 câu”.
+
+- **Viện Âm nhạc** mô tả **68 = 4 Phản + 48 Nam Đảo + 16 Song Cước**, nếu tấu độc lập **bỏ câu 68**, còn **67**. Đường PDF Viện đang lỗi **502**; **chưa có bản ký âm 68 độc lập đã soi trang**, nên **67 theo Nhị Tấn và 67 theo Viện không mặc nhiên đồng nhất**.
+- **Bản in S1 không thấy Song Cước câu 16**. Chưa đủ chứng cứ kết luận đó là “câu bị lỗi mất” hay trùng chính xác câu cuối bị lược trong hệ Viện.
+- **Chuyển hơi tại câu Nam Đảo 47–48 trước Song Cước**: sách chú dẫn từ **hơi Đảo sang Ai oán**, từ **cung Hò Tư qua Hò Nhứt**. Chưa kiểm bản thu, trường độ, phách/song lang và ngón.
+- **Lỗi mặt chữ cần lưu:** phần lời sách tr.283 ghi **“Lớp IX”** tại câu 25–32, nhạc trang 282 lại ghi **“Lớp IV”**. Trang Văn Dần ghi **lặp số 32** ở đầu lớp V; không âm thầm hiệu đính nguồn.
+- **Ba bộ lời được quản lý độc lập**: *Tích Thúy Kiều (tiếp theo)* trong Nhị Tấn III, *Lục Vân Tiên* (trang Văn Dần ghi **Trần Ngọc Thạch**), và *Gương mê sắc (Lòng dạ đàn bà)* (phụ lục Nhị Tấn III ghi **Sáu Hải**).
+- **ĐẠT kiểm sự hiện diện 67/67 vị trí in; 0/67 câu được nghiệm thu biểu diễn.** Sổ 68 có 68 mã quản lý nhưng **chưa xác minh đủ ký âm 68 nguồn riêng**. **PHÁN QUYẾT: CHỜ NGHIỆM THU**. Nhánh `v1-frozen` giữ nguyên.
+
+> Phần dưới đây là **hồ sơ V1 lịch sử**; dùng kết quả đối chiếu V2 phía trên khi V1 nói “chưa tìm được bộ ký âm có nguồn”. Không phân phối nguyên văn nhạc/lời/MP3 hoặc gắn nhãn có quyền thương mại nếu chưa có phép.
+
+---
+
 **Nhóm:** Ba Nam · **Hơi điệu:** Đảo, có đoạn chuyển sang Ai/Song Cước · **Cập nhật:** 27/10/2026  
 **Mức hồ sơ:** NGHIÊN CỨU NGUỒN V1 — chưa nghiệm thu biểu diễn.
 
