@@ -7,7 +7,7 @@
 <p align="center">
   <a href="README.md">Tiếng Việt</a> ·
   <a href="#start-here">Get started</a> ·
-  <a href="docs/v3.1-khoi-dong.md">V3.1 preview</a> ·
+  <a href="docs/v3.2-khoi-dong.md">V3.2 lessons</a> ·
   <a href="#browse-the-20-compositions">20 compositions</a> ·
   <a href="#research-versions">Version history</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
@@ -28,6 +28,18 @@
 
 ---
 
+### V3.2 — Study each phrase through a traceable source, never guessed notes
+
+**Started 28 October 2026**, developed on [`v3.2-development`](https://github.com/Form997/Vong-co/tree/v3.2-development) without modifying V1, V2 or the existing public V3.1 site.
+
+V3.2 introduces **72 documented phrase positions in two separately identified source systems**: **Lưu Thủy Trường** (32 phrases, four-beat system `LT-32-4`) and **Phụng Cầu Hoàng Duyên** (40 phrases, eight-beat system `PC-40-8`). Each indexed position links back to V2's numbered source review, its class, notes and printed score/lyric page where documented. No invented song lang events, musical notes, tempo, performance approval or sound recordings are included.
+
+The 20-song browser distinguishes **2 source-indexed study modules** and **18 pieces awaiting qualified conversion of their V2 ledgers**. This does **not** mean the other 18 lack V2 source tables: [the 20-piece audit](docs/v3.2-kiem-toan-20-ban.md) identifies special cases and uncertainties.
+
+[Python validation — 60 tests passing](https://github.com/Form997/Vong-co/actions/runs/40692114438) · [Chromium browser checks](https://github.com/Form997/Vong-co/actions/runs/40692114437) · [machine-readable index/schema](data/v3_2/README.md) · [five-stage evidence acceptance rules](docs/v3.2-quy-trinh-tham-dinh.md).
+
+**Release state: research preview on a separate branch.** V3.1 is the public website until the V3.2 pull request is reviewed, merged and GitHub Pages deployment succeeds. **0/20 compositions are certified for performance**, and music/audio reuse permissions remain unverified.
+
 ### V3.1 — Discoverable evidence-backed pages
 
 Started **28 October 2026** on `v3.1-development`. V3.1 adds **20 standalone, source-aware composition pages**, filters for three evidence levels, and Vietnamese-alphabet sorting. Every page links to its V2 research record and distinguishes unapproved performance and reuse rights.
@@ -42,7 +54,7 @@ Started **28 October 2026** on `v3.1-development`. V3.1 adds **20 standalone, so
 |---|---|
 | **Try the V3 catalog viewer** | [How to run the website](web/v3/README.md) · [View HTML source](web/v3/index.html) |
 | **Visit the public V3 website** | [Open HAI ĐẤT on GitHub Pages](https://form997.github.io/Vong-co/) |
-| **Preview V3.1** | [Build and test 20 dedicated pages](web/v3/README.md) |
+| **Preview V3.2 source-indexed lessons** | [Run the lesson viewer](web/v3/README.md) · [72 phrase locators](data/v3_2/README.md) |
 | **Explore the tradition** | [20 composition index](#browse-the-20-compositions) |
 | **Learn and perform** | [Per-composition research folders](ban-to/) · [First-piece practice notes (Vietnamese)](docs/01-huong-dan-don-va-ca.md) |
 | **Investigate scores and variants** | [V2 findings and unresolved discrepancies](docs/tong-hop-phat-hien-v2.md) · [Evidence registry](docs/nguon-tham-khao.md) |
@@ -107,9 +119,10 @@ The project groups the 20 pieces into **Sáu Bắc (6)**, **Bảy Lễ (7)**, **
 | **V1 — The evidence base** | **12 October 2026** | Twenty folders, sources, variants, auditing notes | **397.63 KiB** |
 | **V2 — Tracing each phrase** | **19 October 2026** (V2-labeled commit); formal review framework **27 October** | Twenty source-review minutes, phrase/page ledgers, documented discrepancies; **no performance certifications** | **942.96 KiB** |
 | **V3.0-alpha — Evidence-aware browsing** | **28 October 2026** | 20-piece JSON catalog and public GitHub Pages viewer | **1,055.84 KiB** |
-| **V3.1 — Per-piece research pages** | **28 October 2026** | 20 standalone pages, 3 evidence-level filters, Vietnamese A–Z sorting; deployed | **1,111.14 KiB** |
+| **V3.1 — Per-piece research pages** | **28 October 2026** | 20 standalone pages, evidence filters and sorting; deployed | **1,111.14 KiB** |
+| **V3.2 — Study a phrase, trace its source** | **28 October 2026** | 72 phrase locators for 2 independently indexed systems; review protocol, no unlicensed audio | **1,215.88 KiB** |
 
-V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha measures **1,081,181 bytes / 133 files** at [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). V3.1 preview measured **1,130,175 bytes / 140 files** at [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d); the merged **release snapshot** measured **1,137,811 bytes / 140 files** at [`5243541`](https://github.com/Form997/Vong-co/tree/5243541e3ba9e6bb5953994188853c6fd6612248). This differs from the **197,920-byte / 27-file** generated Pages artifact. These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
+V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha measures **1,081,181 bytes / 133 files** at [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). V3.1 preview measured **1,130,175 bytes / 140 files** at [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d); the merged **release snapshot** measured **1,137,811 bytes / 140 files** at [`5243541`](https://github.com/Form997/Vong-co/tree/5243541e3ba9e6bb5953994188853c6fd6612248). This differs from the **197,920-byte / 27-file** generated V3.1 Pages artifact. The V3.2 research snapshot has **1,245,064 uncompressed Git bytes / 150 files** at [`efb84fa`](https://github.com/Form997/Vong-co/tree/efb84fa0065465d6bdf5ed90cac2bbfc4e4063fd); this is a pinned **pre-README** snapshot, not a ZIP size or an automatically updated branch size. These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
 
 [**Full version ledger and future-version template (Vietnamese)**](docs/nhat-ky-phien-ban.md) · [Reproducible Python size reporter](scripts/thong-ke-dung-luong.py)
 
