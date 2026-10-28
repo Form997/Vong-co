@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 15/20 bài đã mở biên bản rà nguồn V2; 0/20 được nghiệm thu diễn xướng.** Đã mở **hai bài Ba Nam: Nam Xuân (#14) và Nam Ai (#15)**; còn năm bài chưa mở V2.
+> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 16/20 bài đã mở rà nguồn V2; 0/20 đã nghiệm thu diễn xướng.** Đã mở đủ **3/3 bài Ba Nam** (14–16), vẫn cần đối chiếu bản thu và người thẩm định chuyên môn. Còn **4 bài Bốn Oán** chưa mở biên bản nguồn V2.
+
+> **Bài 16 – Đảo Ngũ Cung / Nam Đảo:** [biên bản V2](../ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md), [sổ 67 vị trí S1](../ban-to/16-dao-ngu-cung/v2-ra-soat-67-cau.md), [khung 68 Viện chưa thẩm định riêng](../ban-to/16-dao-ngu-cung/v2-doi-chieu-68-cau.md). **Nhị Tấn tập III tr.278–287 in “Đảo Ngũ Cung (52 câu)” = 4 Phản Xuân + 48 lòng, kế tiếp 15 Song Cước = 67 vị trí nhạc/lời đã định vị.** Viện Âm nhạc mô tả **68=4+48+16**, độc tấu bỏ câu 68 thành 67 nhưng **chưa chứng minh hai hệ 67 cùng bản**. Sách có chú chuyển **hơi Ai oán và Hò Tư→Hò Nhứt** trước Song Cước; sai nhãn lời **Lớp IX/IV** ở tr.283/282 và lỗi **lặp câu 32** ở Văn Dần. Ba bộ lời: *Tích Thúy Kiều* (Nhị Tấn III), *Lục Vân Tiên* (Trần Ngọc Thạch), *Gương mê sắc* (Sáu Hải). **CHỜ NGHIỆM THU (0/67), sổ 68 mới là khung vị trí chưa xác minh tổng phổ**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 15/20 bài đã mở biên bản rà nguồn V2; 0/20 được nghiệm thu diễn xướng.** Đã mở **hai bài Ba Nam: Nam Xuân (#14) và Nam Ai (#15)**; còn năm bài chưa mở V2.
 
 > **Bài 15 – Nam Ai:** [biên bản V2](../ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md), [sổ 84 câu bản in](../ban-to/15-nam-ai/v2-ra-soat-84-cau.md), [bảng ánh xạ 68 chưa chứng nhận](../ban-to/15-nam-ai/v2-doi-chieu-68-cau.md). **Đã soi ảnh Nhị Tấn tập III tr.268–277:** sách in **“Nam Ai (84 câu, nhịp tư, song lang 3–4)”**, 4 câu Phản Xuân qua Ai **đánh số 1–4 riêng**, 10 lớp Nam Ai **đánh số 1–80**, lời *Tích Thúy Kiều (tiếp theo)* có số tương ứng. **Khác nguồn Văn Dần ở câu chuyển 02 và lòng 01/26**. Viện Âm nhạc lập chỉ mục **68=4+64**, nguồn hỏi đáp có lối giải thích **68 lòng +16 bổ sung**, **104 câu** được nhắc trong lược khảo/danh mục nhưng **chưa có tổng phổ 104 thẩm định**. Sau 80 câu, sách còn **20 câu Nam Xuân** để liên hoàn, không tự gán 104 là lòng Nam Ai độc lập. **CHỜ NGHIỆM THU diễn xướng; 0/84**.
 
