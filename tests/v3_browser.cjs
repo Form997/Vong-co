@@ -20,7 +20,7 @@ async function run() {
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 1,
     locale: "vi-VN",
-    colorScheme: "dark",
+    colorScheme: "light",
   });
   const consoleErrors = [];
   page.on("pageerror", err => consoleErrors.push(String(err)));
@@ -38,6 +38,20 @@ async function run() {
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
     assert.equal((await page.locator("#count-lessons").innerText()).trim(), "2");
     console.log("PASS: load 20 pieces and 30 variants");
+
+    // Visual regression contract: coherent heritage color system and hero landmarks.
+    assert.match(await page.locator("#hero-title").innerText(), /Giữ hồn tiếng đờn/);
+    assert.equal(await page.locator(".hero-art").getAttribute("aria-hidden"), "true");
+    const palette = await page.evaluate(() => ({
+      body: getComputedStyle(document.body).backgroundColor,
+      foreground: getComputedStyle(document.body).color,
+      hero: getComputedStyle(document.querySelector(".hero")).backgroundImage,
+      focusableCards: [...document.querySelectorAll("button.piece")].every(e => e.type === "button")
+    }));
+    assert.equal(palette.body, "rgb(246, 244, 238)");
+    assert.match(palette.hero, /linear-gradient/);
+    assert.ok(palette.focusableCards);
+    console.log("PASS: editorial ivory/jade palette, accessible hero and real button cards");
 
     const groups = [
       ["sau-bac", 6],
@@ -149,6 +163,9 @@ async function run() {
     assert.equal(audioNodes, 0, "No unlicensed media embeds");
     console.log("PASS: Phung Cau source index has 40 labels; final phrase on pp.340/341");
     assert.match(await page.locator("main").innerText(), /0\/20/);
+    assert.equal(await page.locator(".detail-hero").count(), 1);
+    assert.equal(await page.locator("nav.quick-links").count(), 0); // semantic anchors live inside hero
+    assert.equal(await page.locator("details.phrase-row").count(), 40);
     const detailLayout = await page.evaluate(() => ({ vw: innerWidth, sw: document.documentElement.scrollWidth }));
     assert.ok(detailLayout.sw <= detailLayout.vw + 1, "Detail page overflows mobile viewport");
     console.log("PASS: standalone Phung Cau page, 0/20 disclaimer and mobile layout");
@@ -180,11 +197,39 @@ async function run() {
     assert.deepEqual(consoleErrors, [], "No uncaught browser JavaScript errors");
     console.log("PASS: local V2 review links and error-free browser rendering");
 
+    // Check that mobile, tablet, and desktop widths do not horizontally overflow.
+    for (const width of [360, 390, 768, 1024, 1366]) {
+      await page.setViewportSize({width,height:900});
+      const bounds = await page.evaluate(() => ({
+        viewport: document.documentElement.clientWidth,
+        scroll: document.documentElement.scrollWidth,
+        hero: document.querySelector(".hero").getBoundingClientRect().width,
+        art: getComputedStyle(document.querySelector(".hero-art")).display
+      }));
+      assert.ok(bounds.scroll <= bounds.viewport + 1,
+        "Horizontal overflow at " + width + ": " + JSON.stringify(bounds));
+      assert.ok(bounds.hero > 250, "Hero unexpectedly narrow at " + width);
+      if (width <= 700) assert.equal(bounds.art, "none");
+    }
+    console.log("PASS: responsive layout at 360/390/768/1024/1366px, no horizontal overflow");
+
     fs.mkdirSync("browser-evidence", {recursive:true});
+    await page.setViewportSize({width:390,height:844});
     await page.screenshot({path:"browser-evidence/v3-mobile.png", fullPage:true});
+    await page.locator(".hero").screenshot({path:"browser-evidence/v3-mobile-hero.png"});
+    await page.setViewportSize({width:768,height:960});
+    await page.screenshot({path:"browser-evidence/v3-tablet.png", fullPage:true});
     await page.setViewportSize({width:1366,height:900});
     await page.screenshot({path:"browser-evidence/v3-desktop.png", fullPage:true});
-    console.log("PASS: saved mobile and desktop UI snapshots");
+    await page.locator(".hero").screenshot({path:"browser-evidence/v3-desktop-hero.png"});
+
+    await page.goto(new URL("../../bai/20-phung-cau/", BASE).toString(),{waitUntil:"networkidle"});
+    await page.setViewportSize({width:1366,height:900});
+    await page.screenshot({path:"browser-evidence/v3-lesson-desktop.png", fullPage:true});
+    await page.setViewportSize({width:390,height:844});
+    await page.locator("#cau-01 summary").click();
+    await page.screenshot({path:"browser-evidence/v3-lesson-mobile.png", fullPage:true});
+    console.log("PASS: saved mobile/tablet/desktop home and lesson visual snapshots");
   } finally {
     await browser.close();
   }

@@ -7,22 +7,37 @@ from urllib.parse import quote, urlsplit
 
 BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
 LESSON_CSS = """
-.lesson-intro{padding:15px 18px;background:#263245;border:1px solid #86724c;border-radius:12px;margin:15px 0;color:#f8e7c2}
-.lesson-links{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
-.lesson-links a{padding:7px 11px;border:1px solid #627c87;border-radius:8px;font-weight:600;font-size:13px}
-.lesson-group{margin:20px 0;padding-top:8px;border-top:1px solid var(--line)}
-.lesson-group h3{color:var(--gold);font-size:20px}
-.phrase-row{margin:9px 0;background:#0c2130;border:1px solid #3c556a;border-radius:12px;overflow:hidden}
-.phrase-row:focus-within{border-color:var(--gold)}
-.phrase-row summary{padding:12px 14px;cursor:pointer;font-size:14px;font-weight:700}
-.phrase-row summary:hover{background:#1d384b}
-.phrase-row .body{padding:3px 15px 16px;font-size:13px}
-.phrase-row .body p{margin:7px 0;color:var(--dim)}
-.phrase-row .body strong{color:var(--ink)}
-.lesson-practice{border:1px solid #4b716e;padding:14px 17px;background:#0f2b31;border-radius:12px}
-.lesson-empty{padding:17px 19px;border:1px dashed var(--line);border-radius:10px;color:var(--dim)}
-@media print{.top,.button{display:none}.section,.phrase-row{break-inside:avoid}body{background:white;color:black}.muted{color:#444}}
-@media(max-width:560px){.phrase-row summary{font-size:13px}}
+
+/* HAI ĐẤT V3.2 • Source-first lesson cards, integrated heritage design */
+.lesson-intro{padding:18px 21px;border-radius:13px;background:#fbf1dd;border:1px solid #e3d1a8;margin:19px 0;color:#685238;font-size:13px;line-height:1.8}
+.lesson-intro strong{color:#644422}
+.lesson-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:21px 0 28px}
+.lesson-links a{display:inline-flex;align-items:center;min-height:36px;padding:8px 13px;background:#eff3ed;border:1px solid #d5e1d5;border-radius:100px;color:#285b49;text-decoration:none;font-weight:750;font-size:11px;line-height:1.4}
+.lesson-links a:hover{background:#e1ece2;border-color:#b7cdbc}
+.lesson-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:36px 0 25px;align-items:start}
+.lesson-group h3{grid-column:1/-1;font:500 27px/1.25 Georgia,"Times New Roman",serif;color:#173a30;border-bottom:1px solid #d6e0d7;padding:0 0 14px;margin:0 0 5px;letter-spacing:-.02em}
+.phrase-row{background:#f8f9f4;border:1px solid #dde6dc;border-radius:13px;overflow:hidden;margin:0;min-width:0;transition:border-color .18s,box-shadow .18s}
+.phrase-row:hover{border-color:#afc8b5}
+.phrase-row[open]{background:#fffefb;border-color:#8fb0a2;box-shadow:0 10px 26px rgba(27,62,48,.06)}
+.phrase-row summary{position:relative;list-style:none;cursor:pointer;display:flex;align-items:center;padding:14px 42px 14px 16px;min-height:61px;font-weight:750;font-size:12px;color:#244d3d;line-height:1.5}
+.phrase-row summary::-webkit-details-marker{display:none}
+.phrase-row summary:after{content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:23px;font-weight:300;color:#4f7965}
+.phrase-row[open] summary:after{content:"−"}
+.phrase-row:focus-within{outline:2px solid #bd985c;outline-offset:1px}
+.phrase-row .body{padding:0 16px 17px;border-top:1px solid #e3eae0;font-size:12px;line-height:1.72;color:#586b60;overflow-wrap:anywhere}
+.phrase-row .body p{margin:10px 0;color:#586b60}
+.phrase-row .body strong{color:#234638}
+.phrase-row .body a{font-weight:750;display:inline-block;margin-top:4px}
+.phrase-row .body code{background:#eaf0e8;color:#204b3d;border-radius:5px;padding:3px 7px;font:700 12px ui-monospace,SFMono-Regular,monospace}
+.lesson-practice{background:#edf3ea;border-radius:14px;border:1px solid #cbded0;padding:22px 25px;margin:17px 0;color:#29493b;font-size:13px}
+.lesson-practice strong{font-weight:800;color:#1e4735}
+.lesson-practice ol{padding-left:20px;margin:12px 0 0}
+.lesson-practice li{margin:7px 0}
+.lesson-empty{padding:19px 21px;border-radius:12px;background:#f9f1e4;border:1px dashed #dac6a6;color:#665844;font-size:13px;line-height:1.8}
+@media(max-width:760px){.lesson-group{grid-template-columns:1fr}.lesson-group h3{font-size:24px}.phrase-row summary{font-size:13px}}
+@media(max-width:560px){.lesson-intro{padding:16px}.lesson-practice{padding:17px}.lesson-links{gap:7px}.lesson-links a{font-size:11px}.lesson-group{margin-top:28px}}
+@media print{.top,.button{display:none}.section,.phrase-row{break-inside:avoid}body{background:white;color:black}.muted{color:#555}.phrase-row[open]{box-shadow:none}}
+
 """
 
 

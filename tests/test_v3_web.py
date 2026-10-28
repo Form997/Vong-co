@@ -60,6 +60,21 @@ class V3WebTests(unittest.TestCase):
         self.assertIn("20/20", self.html)
         self.assertIn("chưa", self.html.lower())
 
+    def test_editorial_design_uses_one_cohesive_accessible_palette(self):
+        self.assertIn("--paper:#f6f4ee", self.html)
+        self.assertIn("--forest:#10382f", self.html)
+        self.assertIn('class="hero-art" aria-hidden="true"', self.html)
+        self.assertIn('class="hero-copy"', self.html)
+        self.assertIn("prefers-reduced-motion:reduce", self.html)
+        self.assertIn(":focus-visible", self.html)
+        self.assertIn('id="tra-cuu"', self.html)
+
+    def test_ui_is_independent_of_external_fonts_or_decorative_assets(self):
+        self.assertNotIn("@import", self.html)
+        self.assertNotIn("fonts.googleapis.com", self.html)
+        self.assertNotIn("unsplash", self.html.lower())
+        self.assertNotIn("<iframe", self.html.lower())
+
     def test_inline_script_present(self):
         self.assertEqual(len(self.scripts), 1)
         self.assertIn("function updateDetail()", self.scripts[0])
