@@ -138,7 +138,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
   .stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(4):before{display:none}
   .hero{grid-template-columns:1fr minmax(175px,.44fr);padding:55px 34px;min-height:440px}
   .hero-art{min-height:250px}
-  .art-disc{width:260px}.art-disc strong{font-size:130px}
+  .art-disc{width:min(100%,235px)}.art-disc strong{font-size:clamp(72px,11vw,120px)}
 }
 @media(max-width:700px){
   .container{padding:0 18px}.top-inner{min-height:70px}
@@ -162,7 +162,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
   footer{margin-top:65px;padding:42px 0}
 }
 @media(max-width:560px){
-  .container{padding:0 16px}.top-links a:last-child{padding:8px 10px}
+  .container{padding:0 16px}.top-inner{gap:10px}.top-links{gap:8px}.top-links a:first-child{display:none}.top-links a:last-child{padding:8px 10px}
   .hero{padding:35px 23px 29px}.hero h1{font-size:clamp(38px,10vw,49px)}
   .hero .eyebrow{font-size:9px;letter-spacing:1.6px}
   .hero-actions{gap:9px}.primary,.secondary{padding:11px 17px;font-size:12px}
