@@ -6,7 +6,7 @@
 
 > **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
 >
-> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **16/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
+> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **17/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
 
 [**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
@@ -51,7 +51,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 | 14 | Ba Nam | [Nam Xuân](ban-to/14-nam-xuan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 15 | Ba Nam | [Nam Ai](ban-to/15-nam-ai/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 16 | Ba Nam | [Đảo Ngũ Cung](ban-to/16-dao-ngu-cung/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | Chưa mở biên bản V2 |
+| 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 18 | Bốn Oán | [Phụng Hoàng](ban-to/18-phung-hoang/README.md) | Chưa mở biên bản V2 |
 | 19 | Bốn Oán | [Giang Nam](ban-to/19-giang-nam/README.md) | Chưa mở biên bản V2 |
 | 20 | Bốn Oán | [Phụng Cầu](ban-to/20-phung-cau/README.md) | Chưa mở biên bản V2 |
@@ -70,6 +70,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 - **Nam Xuân (14):** tìm thấy **68 câu nhạc + 68 câu lời** trong Nhị Tấn tập III, nhạc tr.**260/262/264/266/268**, lời *Tích Thúy Kiều* tr.**261/263/265/267/269** (sách ghi **Phan Trúc Quân/Sáu Lục, trước 1900**). **8 lớp 8 câu + LỚP IX bốn câu 65–68** trên bản in. Văn Dần khác nét nhạc tại **câu 38, 42**. Phụ lục tập IV có ***Tô Huệ – Chức Cẩm Hồi Văn*: 48 câu + chỉ dẫn hát lặp 20 câu**, không được ghép thành bộ lời gốc 68 câu. **CHỜ nghiệm thu biểu diễn**.
 - **Nam Ai (15):** đã tìm bản ký âm/lời **84 câu trong Nhị Tấn tập III tr.268–277**, gồm **4 câu chuyển Phản Xuân qua Ai đánh số riêng + 80 câu lòng trong 10 lớp**. **Hệ 68** theo thuyết minh Viện (4+64) và cách giải thích khác (68 lòng+16 nối) **chưa cùng phép đếm**. **Số 104** được lược khảo nhắc nhưng **chưa có tổng phổ riêng được kiểm**; sách còn chép **20 câu Nam Xuân** sau 80 câu lòng Nam Ai để diễn liên hoàn, không tự xem là 104 câu Nam Ai độc lập. Sai khác mặt chữ **câu chuyển 02 và lòng 01/26** giữa Nhị Tấn và Văn Dần; **CHỜ nghiệm thu**.
 - **Đảo Ngũ Cung (16):** nguồn in **Nhị Tấn tập III tr.278–287** có **52 câu** (4 Phản + 48 Nam Đảo) và **15 câu Song Cước**, tổng **67 vị trí nhạc/lời**; thuyết minh **Viện Âm nhạc 68 câu** (4+48+16), **bỏ câu cuối khi diễn riêng** còn 67. **Chưa chứng minh hai hệ 67 là một truyền bản**. Nguồn lời cần tách ***Tích Thúy Kiều*** (Nhị Tấn), ***Lục Vân Tiên*** (trang Văn Dần ghi Trần Ngọc Thạch) và ***Gương mê sắc*** (phụ lục ghi Sáu Hải). Có lỗi nhãn **Lớp IX/IV** trong trang in và lặp **số 32** trong nguồn web; đều CHỜ chuyên gia rà.
+- **Tứ Đại Oán (17):** đã tìm bản in đủ **38 câu nhạc nhịp tám/song lang 6–8**, **Nhị Tấn tập IV tr.302/304/306/308**, lời ***Bá Lý Hề*** tr.**303/305/307/309**, sách ghi **soạn lời Trần Quan Quờn**. Bản in **7 lớp: 6+8+8+4+4+4+4**. Bộ lời xưa ***Bùi Kiệm – Bùi Ông – Nguyệt Nga*** tại **Nhị Tấn tập II tr.181–184** là **bộ khác**, có **lỗi nhãn 21 lặp hai lần/thiếu 22 ở tr.183** và thuật lại các mốc 1910/1915 cần xác minh lịch sử. Phân biệt **Tứ Đại Vắn 19 câu nhịp tư**; chưa nghiệm thu âm thanh.
 - **Nhóm Ba Nam (14–16): đã mở đủ 3/3 biên bản kiểm nguồn V2**, nhưng **0/3 bài đạt nghiệm thu diễn xướng**. Không tự chuẩn hóa bằng suy đoán.
 
 [Danh mục và hệ câu/nhịp V1](docs/20-ban-to.md) · [Biên bản kiểm toán V1](docs/kiem-toan-v1-20-ban.md) · [Quy chế nghiệm thu V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md)
@@ -125,11 +126,11 @@ Mỗi hồ sơ cần qua bốn tầng bằng chứng:
 
 **Trạng thái của bài:** `CHỜ NGHIỆM THU` (thiếu bằng chứng) · `KHÔNG ĐẠT` (sai lệch đã chứng minh) · `ĐẠT` (đủ điều kiện và có kiểm duyệt). Mọi kết quả **ĐẠT kiểm nguồn** chỉ áp dụng ở tiêu chí đã kiểm, **không phải ĐẠT toàn bài**.
 
-**Tình trạng hiện tại: 16/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
+**Tình trạng hiện tại: 17/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
 
 ## Nguồn khoa học và tư liệu có thể truy cập
 
-**[MỞ DANH MỤC 46 MỤC NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
+**[MỞ DANH MỤC 51 MỤC NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
 
 Các mốc tham khảo chính, sắp theo **mục đích và mức xuất xứ** (không đánh đồng tất cả nguồn là tài liệu học thuật đồng cấp):
 
