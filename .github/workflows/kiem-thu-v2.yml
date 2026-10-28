@@ -52,6 +52,9 @@ jobs:
           print("PASS: 20/20 ho so, 20/20 bien ban V2, README phan biet nghiem thu.")
           PY
 
+      - name: Kiem tra lien ket noi bo README va tai lieu
+        run: python scripts/kiem-tra-lien-ket.py
+
       - name: Goi API GitHub de thu thong ke dung luong V1-V2
         env:
           GITHUB_TOKEN: ${{ github.token }}
