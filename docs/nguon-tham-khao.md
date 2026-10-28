@@ -126,3 +126,17 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 | REF-56 | Nhị Tấn, Hệ thống bài bản ĐCTT | Định danh Phụng Hoàng trong Bốn Oán; không phải tổng phổ | [Nguồn](https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/he-thong-bai-ban-dhon-ca-tai-tu.html) |
 
 **Trạng thái:** chỉ mở hồ sơ kiểm nguồn, không xác nhận đã đọc đủ bản ký âm hoặc nghiệm thu diễn xướng.
+
+
+## Bổ sung bài 19 — Giang Nam Cửu Khúc (28/10/2026)
+
+| ID | Tài liệu | Đã xác minh và giới hạn | Liên kết |
+|---|---|---|---|
+| REF-57 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (1997), tr.320–331** | Đã kiểm 58 nhãn ký âm và 58 nhãn lời *Kim, Kiều hoa viên ngộ* (soạn lời Nguyễn Văn Thinh 1970 theo tr.321). Nhịp tám/song lang 6–8. Lớp 16+18+13+11; khác chỉ mục Viện ở câu 47/48. Khúc 8 nhạc 47, lời 45. Chú thích tr.330 về OAN/LIU câu 1/5/17/21 và kết câu 58. Ảnh tr.328 chưa tải được, có văn bản PDF. Không thẩm âm hoặc quyền sao chép. | [Nguồn](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) |
+| REF-58 | **Viện Âm nhạc, *Hai mươi bài bản Tổ*, mục Giang Nam** | Theo chỉ mục: 58 câu, 4 lớp 16+18+12+12; nhịp 8, nguồn Giang Nam nhịp tư liên hệ Vọng Giang Nam, khác chữ Oan/Lưu câu đầu; **PDF trả 502, chưa xem ảnh**, khác ranh lớp in Nhị Tấn. | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-59 | **Viện Âm nhạc – giáo trình guitar phím lõm** | Hồ sơ V1 nhắc chín khúc và ba nhịp mô giữa các khúc; chưa kiểm trực tiếp tài liệu và thời điểm mô từng câu. | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-60 | **Trần Thiên Hùng, *Giang Nam tam khúc – Bên Trời Tha Hương*** | Lời riêng 16 câu, tác giả tự nêu hệ 3 lớp 16+18+24. Không phải lời 58 câu *Kim, Kiều hoa viên ngộ* của Nguyễn Văn Thinh. | [Nguồn](https://lyric.tkaraoke.com/49813/giang_nam_tam_khuc___ben_troi_tha_huong.html) |
+| REF-61 | **Cổng tỉnh Đồng Nai – sáng tác mới ĐCTT** | Hồ sơ V1 ghi *Thương Quá Đồng Nai* (Giang Nam Cửu Khúc), chưa xác minh toàn lời, người viết, ráp ca và quyền dùng. | [Nguồn](https://dongnai.gov.vn/vi/news/chuong-trinh-ke-hoach-phat-trien-ktxh/sang-tac-moi-cho-don-ca-tai-tu-dong-nai-18153.html) |
+| REF-62 | **Tủ nhạc Cổ Nhạc miền Nam – Ba Tu đờn kìm** | Hồ sơ V1 ghi nhận metadata Giang Nam Cửu Khúc do Ba Tu độc tấu; chưa rà bản thu/timecode và giấy phép. | [Nguồn](https://www.namkyluctinh.org/am-nhac/tu-nhac-co-nhac-mien-nam.html) |
+
+**Nguyên tắc:** Tài liệu chính có số trang, song **không có thẩm định nghệ nhân**; không tự chép toàn bộ ký âm, lời ca hay MP3. [Sổ câu và lỗi 45/47/48](../ban-to/19-giang-nam/v2-ra-soat-58-cau.md).
