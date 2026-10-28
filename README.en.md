@@ -28,6 +28,12 @@
 
 ---
 
+### V3 browser-tested preview — deployment requires owner opt-in
+
+**42 Python tests pass**; [real Chromium acceptance checks pass](https://github.com/Form997/Vong-co/actions/runs/40675487073), including diacritic-insensitive search, the 6/7/3/4 family filters, distinct Phụng Hoàng/Phụng Cầu, deep links and a 390px mobile viewport.
+
+**Pages artifact:** successfully built with **7 allowlisted files**. **Live deployment:** **not enabled** — the Deploy job is `Skipped` until the repository owner approves and configures GitHub Pages. [Safe publishing instructions (Vietnamese)](docs/v3-github-pages.md) · [V3 browser preview guide](web/v3/README.md).
+
 ## Start here
 
 | Your goal | The best entry point |
