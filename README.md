@@ -29,6 +29,12 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 
 ---
 
+### V3 thử nghiệm trên trình duyệt — đã kiểm, chưa xuất bản Pages
+
+**42 bài thử Python đã đạt**, và [Chromium đã kiểm thành công các thao tác thực tế](https://github.com/Form997/Vong-co/actions/runs/40675487073): tìm không dấu, bộ lọc 6/7/3/4, tách Phụng Hoàng/Phụng Cầu, truy cập bài theo `#bai-20` và giao diện điện thoại rộng 390 px.
+
+**Đóng gói Pages:** thành công với **7 tệp công khai**. **Xuất bản Pages:** **chưa bật**; job Deploy mặc định `Skipped` để chỉ công bố khi chủ dự án đồng ý. [Cách bật GitHub Pages an toàn](docs/v3-github-pages.md) · [Cách xem trước và chạy thử website V3](web/v3/README.md).
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
