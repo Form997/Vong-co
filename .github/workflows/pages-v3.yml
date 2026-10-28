@@ -50,8 +50,11 @@ jobs:
           path: _site
 
   deploy:
-    name: "Deploy public research preview"
+    name: "Deploy public research preview (opt-in)"
     needs: prepare
+    # Keep the project green while Pages/environment access is not configured.
+    # The owner explicitly enables public deployment after reviewing settings.
+    if: ${{ vars.HAI_DAT_PAGES_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 12
     environment:
