@@ -5,10 +5,13 @@ on:
     branches:
       - v3-development
       - v3.1-development
+      - v3.2-development
     paths:
       - ".github/workflows/kiem-thu-trinh-duyet-v3.yml"
       - "web/v3/**"
       - "data/v3/catalog.json"
+      - "data/v3_2/**"
+      - "scripts/v3_2_*"
       - "tests/v3_browser.cjs"
       - "scripts/v3_build_site.py"
   workflow_dispatch:
