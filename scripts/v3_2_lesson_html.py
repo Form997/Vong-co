@@ -42,8 +42,8 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
     if lesson is None:
         return ('<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">'
                 '<h2 id="learn-title">Học theo từng câu — đang chờ sổ nguồn</h2>'
-                '<p class="lesson-empty">Bài này đã có hồ sơ nguồn V2, nhưng V3.2 '
-                'chưa có bảng chỉ mục từng câu được đối chiếu đủ để công bố. '
+                '<p class="lesson-empty">Bài này có bảng hoặc sổ câu V2 ở mức độ khác nhau, '
+                'nhưng V3.2 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
                 'Không tự tạo nốt đờn, lời ca, ngón bấm, điểm song lang hoặc số trang.</p>'
                 '<p>Đọc hồ sơ và biên bản nguồn V2 ở phần bên dưới để biết điều đã kiểm.</p>'
                 '</section>')
@@ -120,6 +120,8 @@ Toàn bộ dự án hiện có 0/20 bài nghiệm thu diễn xướng.</div>
 <nav class="lesson-links" aria-label="Nguồn và lớp">
 <a href="{source}" target="_blank" rel="noopener noreferrer">Nguồn bài gốc ↗</a>
 <a href="{register}" target="_blank" rel="noopener noreferrer">Sổ V2 từng câu ↗</a>
+<a href="{safe_url(BLOB + 'docs/v3.2-quy-trinh-tham-dinh.md')}" target="_blank" rel="noopener noreferrer">Quy trình thẩm định ↗</a>
+<a href="{safe_url(BLOB + 'docs/v3.2-phieu-thuc-hanh.md')}" target="_blank" rel="noopener noreferrer">Phiếu thực hành ↗</a>
 {' '.join(jump)}
 </nav>
 <div class="lesson-practice" role="note">
