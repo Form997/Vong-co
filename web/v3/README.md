@@ -1,58 +1,59 @@
-# HAI ĐẤT V3.1 — Tra cứu 20 bản Tổ và trang riêng từng bài
+# HAI ĐẤT V3.2 — Thư viện tra cứu và HỌC THEO NHÃN CÂU CÓ NGUỒN
 
-**Trạng thái:** V3.1 được khởi động ngày **28/10/2026** trên nhánh `v3.1-development`, sau đó đã được [PR #5](https://github.com/Form997/Vong-co/pull/5) hợp nhất vào `v3-development` và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40689588576). Website công khai nay là **V3.1**.
+**Ngày bắt đầu V3.2:** 28/10/2026.  
+**Nhánh làm việc:** [`v3.2-development`](https://github.com/Form997/Vong-co/tree/v3.2-development).  
+**Website công khai hiện tại:** [HAI ĐẤT V3.1](https://form997.github.io/Vong-co/), đã được [GitHub Pages xác nhận triển khai](https://github.com/Form997/Vong-co/actions/runs/40689588576). **V3.2 chưa thay thế website đó cho tới khi Pull Request được kiểm và merge.**
 
-[**Website V3 công khai**](https://form997.github.io/Vong-co/) · [**Danh mục JSON**](../../data/v3/catalog.json) · [**Nhật ký V3.1**](../../docs/v3.1-khoi-dong.md)
+## Điều mới trong V3.2
 
-## Có gì mới trong V3.1?
+Website vẫn có **20 trang riêng / 30 hệ bản thuộc danh mục V3**, đồng thời bổ sung:
 
-- **20 trang riêng có URL ổn định**: `/Vong-co/bai/01-luu-thuy-truong/` đến `/Vong-co/bai/20-phung-cau/`, **được tạo khi build** từ dữ liệu JSON. Các URL này đã được **GitHub Pages báo xuất bản thành công sau khi hợp nhất PR #5**.
-- Mỗi trang có tên bài, nhóm, tên khác, từng hệ câu/nhịp **theo nguồn**, mức chứng cứ, lưu ý nghiên cứu, liên kết biên bản V2, nút bài trước/sau và đường trở về danh mục.
-- Tìm không dấu, lọc 4 nhóm **Sáu Bắc (6), Bảy Lễ (7), Ba Nam (3), Bốn Oán (4)**; thêm lọc **có chỉ mục ở V2 / nguồn thuật lại / ánh xạ chưa thẩm định** và sắp xếp theo tên tiếng Việt hoặc số bài.
-- **Sitemap 22 địa chỉ**: trang gốc, danh mục và 20 trang bài; không gán chứng nhận hay chép nguyên nội dung được bảo hộ.
-- Gói Pages giới hạn **27 tệp công khai**: 7 tệp nền (HTML, JSON, schema, robots, sitemap, nojekyll) và 20 trang HTML được tạo. **Không** chép `ban-to/`, `docs/`, mã Python, thử nghiệm, PDF hoặc MP3 vào website.
+- **72 vị trí câu có nguồn:** 32 vị trí của **Lưu Thủy Trường – LT-32-4** và 40 vị trí của **Phụng Cầu Hoàng Duyên – PC-40-8**. Đây là **nhãn câu V2**, không phải 72 câu đờn đã được kiểm nghe.
+- Khối **“Học từng câu”** ngay ở trang bài: nút mở từng số câu có lớp, nguồn nhạc/lời, chữ kết ngắn nếu có, trang PDF nếu đã đối chứng, những chỗ cần người học hỏi nghệ nhân.
+- Lọc bài theo trạng thái **đã chuyển thành chỉ mục học V3.2 (2)** hoặc **chưa chuyển (18)**. **18 bản đều có sổ hoặc bảng V2 ở nhiều mức**, không có nghĩa “mất nguồn”: [Kiểm toán từng bài](../../docs/v3.2-kiem-toan-20-ban.md).
+- [JSON 72 câu](../../data/v3_2/phrase_index.json), [JSON Schema](../../data/v3_2/schema.json) và [trình kiểm dữ liệu theo sổ V2](../../scripts/v3_2_validate.py), không cần API bên ngoài.
+- Link đến [quy chế thẩm định](../../docs/v3.2-quy-trinh-tham-dinh.md) và [phiếu thực hành](../../docs/v3.2-phieu-thuc-hanh.md). Mọi trang ghi **0/20 nghiệm thu diễn xướng**, chưa có bản ghi có quyền tái phát.
 
-## Chạy và xem trang V3.1 thực sự
+## Xem thử V3.2 từ GitHub (chưa cần cập nhật website)
 
-Trong nhánh `v3.1-development`, tại thư mục gốc của repository:
+Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:
 
 ```bash
-python scripts/v3_validate.py
+python scripts/v3_validate.py --json
+python scripts/v3_2_validate.py --json
 python -m unittest discover -s tests -p "test_*.py" -v
 python scripts/v3_build_site.py --out _site
 python -m http.server 8000 --directory _site
 ```
 
-Mở trong trình duyệt (trên máy chạy thử):
+Mở:
 
 ```text
 http://localhost:8000/web/v3/
-http://localhost:8000/bai/01-luu-thuy-truong/
-http://localhost:8000/bai/20-phung-cau/
+http://localhost:8000/bai/01-luu-thuy-truong/#hoc-tung-cau
+http://localhost:8000/bai/20-phung-cau/#hoc-tung-cau
+http://localhost:8000/bai/18-phung-hoang/#hoc-tung-cau
 ```
 
-Với Codespaces, mở cổng 8000 bằng tính năng **Ports**. Không mở trực tiếp `file://` vì trình duyệt có thể không cho `fetch` dữ liệu JSON.
+Dùng **GitHub Codespaces** cũng được: mở port 8000 ở tab **Ports**. Trang bài #18 cố ý **không hiển thị 48 câu giả** khi sổ V2 còn ghi “Chưa xác minh”. Với lần build sau, thư mục `_site` cần rỗng; công cụ sẽ từ chối đè lên output cũ để tránh đăng nhầm tệp.
 
-**Chú ý:** chương trình không xóa thư mục `_site` đã có; lần build mới phải dùng thư mục đích rỗng hoặc xóa bản thử cũ có chủ đích.
+**Không mở riêng file HTML qua `file://`**: JavaScript tải JSON bằng HTTP, và trình duyệt có thể chặn đường dẫn file cục bộ.
 
-### Kết quả kiểm thử
+## Dữ liệu kiểm nguồn được trình bày thế nào?
 
-- [GitHub Actions V3.1 — 45 bài thử Python đạt](https://github.com/Form997/Vong-co/actions/runs/40688707624).
-- [Chromium end-to-end](https://github.com/Form997/Vong-co/actions/runs/40688596819) đã kiểm tra tìm kiếm, lọc chứng cứ, sắp xếp tiếng Việt, 20 URL trả HTTP 200, liên kết nguồn và giao diện 390 px.
-- [Đóng gói bản xem trước V3.1](https://github.com/Form997/Vong-co/actions/runs/40688707588): **27 tệp, 197.920 byte**, Build thành công, Deploy Skipped **khi còn ở nhánh thử nghiệm**. Sau khi merge PR #5, [Deploy chính thức thành công](https://github.com/Form997/Vong-co/actions/runs/40689588576).
+**Câu Lưu Thủy Trường:** hệ `LT-32-4` có 4 lớp × 8 câu. Website giữ mặt chữ ngắn `HO` và `HÒ` khác nhau theo sổ V2. Không lấy chữ kết để suy ra nốt Tây phương, độ dài hoặc cách đánh ngón. Không trộn 16 câu nhịp tám từ nguồn Nguyễn Vĩnh Bảo.
 
-## Quy trình phát hành an toàn — đã thực hiện
+**Câu Phụng Cầu:** hệ `PC-40-8` có lớp I **18 câu**, II **8 câu**, III **14 câu**. Nhạc tr.**332–340**, lời tr.**333–341** ở tập IV Nhị Tấn, đoạn cuối câu 40 tiếp ngay sang bài khác. Các link mở PDF đúng trang nếu trình duyệt hỗ trợ. Cặp 1–20 chỉ là **nhãn để rà**, không chứng nhận chầu/mô hay nhịp 7/8.
 
-`v3.1-development` → kiểm thử tự động → **Pull Request** vào `v3-development` → rà soát → merge → workflow Pages triển khai khi điều kiện được cấp → xác nhận trang web online.
+**18 bài chưa vào module V3.2:** [tổng hợp 20 sổ V2](../../docs/v3.2-kiem-toan-20-ban.md). Nhiều bảng có số câu và nguồn nhưng cần parser riêng từng cấu trúc (ví dụ 61/60, 84/80, 67/68). Không tạo số trang hoặc nốt nhạc không có bằng chứng.
 
-Nhánh `main` và `v1-frozen` không bị thay đổi. V3.1 **không** tự cấp phép nội dung hay tuyên bố đã nghiệm thu âm nhạc: **20/20 đã mở hồ sơ kiểm nguồn; 0/20 nghiệm thu diễn xướng**.
+## Kiểm thử, phát hành và quyền
 
-**Giới hạn còn lại:** chưa có ký âm/audio đủ quyền công bố, chưa nghiệm thu thực tấu nghệ nhân, chưa có giao diện nhập/sửa dữ liệu hay API/AI chính thức; các bài V3.1 là trang **metadata**, không phải bài học hoàn chỉnh hoặc bản diễn nhạc.
+- Bộ Python phải kiểm đúng toàn bộ 72 hàng V2 và chặn tự gắn `audio_url`, nốt, `lesson_certified`, đổi quyền hoặc đổi hệ nhịp.
+- Chromium thực tế kiểm: 20 bản/30 hệ, tìm không dấu, lọc 2/18, 32+40 nhãn câu, trang PDF, khả năng xem điện thoại 390 px và không có lỗi JavaScript.
+- Gói GitHub Pages chỉ được phép chứa **HTML tra cứu, JSON/schema và robots/sitemap**, không chép nguồn PDF/MP3/ký âm hoặc thư mục V2 lên web. 20 trang bài vẫn giữ nguyên địa chỉ từ V3.1.
+- **Chỉ merge vào `v3-development` sau khi CI đạt và được rà soát**. Website công khai chỉ cập nhật khi [workflow Pages](../../.github/workflows/pages-v3.yml) có **Deploy Success**.
 
-## Phát hành V3.1 đã xác nhận
+**Đã mở hồ sơ nguồn 20/20, nhưng nghiệm thu biểu diễn vẫn 0/20.** Địa chỉ web, README hoặc điểm kiểm thử phần mềm không phải chứng nhận của cơ quan chuyên môn.
 
-- [Kết quả GitHub Actions triển khai Pages](https://github.com/Form997/Vong-co/actions/runs/40689588576): **Build Success · Deploy Success**.
-- [Kiểm thử Python sau merge](https://github.com/Form997/Vong-co/actions/runs/40689588560) và [Chromium sau merge](https://github.com/Form997/Vong-co/actions/runs/40689588524): **Success**.
-- [Website tra cứu](https://form997.github.io/Vong-co/) · [Lưu Thủy Trường](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/) · [Phụng Cầu](https://form997.github.io/Vong-co/bai/20-phung-cau/).
-
-*URL công khai đã được GitHub deploy ghi nhận. Kiểm thử HTTP 20 trang được thực hiện trong môi trường Chromium của GitHub Actions; chưa thực hiện kiểm tra truy cập web công khai độc lập từ bên ngoài.*
+[Nhật ký V3.2](../../docs/v3.2-khoi-dong.md) · [Chính sách source-first](../../docs/v3.2-quy-trinh-tham-dinh.md) · [Danh mục nguồn V2](../../docs/nguon-tham-khao.md).
