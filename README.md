@@ -10,6 +10,19 @@
 
 [**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
+## Nhật ký các thế hệ V — Mỗi phiên bản là một bước tiến có chứng cứ
+
+Chúng tôi không chỉ ghi **“đã nâng cấp”**: mỗi thế hệ đều có **ngày bắt đầu**, **điểm mới dễ hiểu** và **dung lượng đo được**, để người học lẫn nhà phát triển AI nhìn rõ dự án đã tiến xa đến đâu.
+
+| Thế hệ | Bắt đầu ghi nhận trên GitHub | Có gì mới? | Dung lượng tại bản chụp |
+|---|---|---|---:|
+| **[V1 — Gieo nền tư liệu](docs/nhat-ky-phien-ban.md#2-v1--gieo-nền-cho-tiếng-đờn-được-lưu-giữ)** | **12/10/2026** | Hình thành bộ hồ sơ cho 20 bản Tổ, có thư mục tra cứu, nguồn, lời ca tham khảo, nhận diện dị bản và các vấn đề chưa xác minh. | **397,63 KiB** (407,18 KB) |
+| **[V2 — Đưa câu đờn trở về nguồn](docs/nhat-ky-phien-ban.md#3-v2--mỗi-câu-đờn-phải-có-đường-dẫn-trở-về-nguồn)** | **19/10/2026**; bắt đầu quy chế nghiệm thu V2 **27/10** | Mở **20/20 biên bản kiểm nguồn**, lập sổ đối chiếu câu/trang, lưu sai biệt dị bản và giới hạn chứng cứ; **0/20 nghiệm thu diễn xướng**. | **942,96 KiB** (965,59 KB) |
+
+<sub>**Cách đo minh bạch:** V1 = 407.176 byte / 64 tệp tại commit [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 = 965.588 byte / 112 tệp tại commit [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). Đây là **kích thước các tệp Git chưa nén tại snapshot**, không phải ZIP hoặc dung lượng hiện thời luôn cố định của nhánh. Ngày bắt đầu là **mốc commit sớm nhất có bằng chứng**, không tự khẳng định thời điểm bắt đầu nghiên cứu ngoài GitHub. 1 KiB = 1.024 byte, còn 1 KB = 1.000 byte.</sub>
+
+**Từ V3 trở đi:** mỗi khi mở thế hệ mới, README này và [**Nhật ký các thế hệ V**](docs/nhat-ky-phien-ban.md) phải được bổ sung ngay **ngày khởi động, ba điểm mới có giá trị và kích thước có commit đối chứng**. Nếu chưa có dữ liệu đo thì ghi **“chưa đo”**, tuyệt đối không tự đoán. Có thể dùng [**công cụ đo dung lượng từ GitHub**](scripts/thong-ke-dung-luong.py) để kiểm lại bằng dữ liệu thực.
+
 ## Vì sao HAI ĐẤT được xây dựng?
 
 Đờn ca tài tử Nam Bộ là nghệ thuật gắn với người đờn, người ca, làn hơi, lối nhấn, nhịp song lang và sự truyền dạy giữa các thế hệ. **UNESCO ghi danh nghệ thuật Đờn ca tài tử năm 2013**, nhưng chính dự án GitHub này **không phải công trình do UNESCO chứng nhận, bảo trợ hoặc đồng phát triển**. [Xem quyết định UNESCO 8.COM 8.31](https://ich.unesco.org/en/decisions/8.COM/8.31).
