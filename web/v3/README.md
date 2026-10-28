@@ -12,6 +12,12 @@
 
 **Đây là bản thử nghiệm V3.0-alpha, chưa phải website công khai đã triển khai trên GitHub Pages.** Khi cấu hình GitHub Pages, cần chạy từ **thư mục gốc kho** để đường dẫn `../../data/v3/catalog.json` vẫn tồn tại.
 
+## Xuất bản GitHub Pages — đã chuẩn bị, chưa lên mạng
+
+Workflow [**thử xuất bản V3**](../../.github/workflows/pages-v3.yml) đã tạo được gói website **7 tệp**, nhưng job Deploy [chưa thành công ở lần chạy #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366). GitHub Pages **chưa được xác nhận hoạt động**. Không chia sẻ đường dẫn như một website đang online.
+
+**Chủ kho cần kiểm tra Settings → Pages (Source: GitHub Actions) và quy tắc môi trường `github-pages`**. Đọc [**hướng dẫn khắc phục chi tiết theo GitHub Docs**](../../docs/v3-github-pages.md).
+
 ## Chạy thử bằng Python trên Codespaces hoặc máy tính
 
 Tại thư mục gốc repository, nhánh `v3-development`:
