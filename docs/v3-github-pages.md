@@ -1,8 +1,14 @@
 # HƯỚNG DẪN XUẤT BẢN WEBSITE V3 TRÊN GITHUB PAGES
 
+> **CẬP NHẬT THỰC TẾ — 28/10/2026:** GitHub đã **triển khai thành công website V3.0** ở [run #40675923989, attempt 3](https://github.com/Form997/Vong-co/actions/runs/40675923989), job **Deploy public research preview = Success**. GitHub xác nhận địa chỉ [https://form997.github.io/Vong-co/](https://form997.github.io/Vong-co/). Các lỗi và hướng dẫn bên dưới là **lịch sử xử lý ban đầu**, không phải trạng thái hiện tại.
+>
+> **V3.1:** nhánh `v3.1-development` hiện **chỉ build và kiểm thử**, không tự deploy. Gói V3.1 gồm **27 tệp** (20 trang bài mới); chỉ sau khi xét duyệt Pull Request vào `v3-development` mới kích hoạt xuất bản V3.1. Xem [hướng dẫn thử V3.1](../web/v3/README.md).
+
+
+
 **Dự án:** [Form997/Vong-co](https://github.com/Form997/Vong-co) · **Nhánh nguồn:** `v3-development` · **Phiên bản:** V3.0-alpha (nghiên cứu).
 
-> **Trạng thái kiểm chứng ngày 28/10/2026:** Đã tạo workflow xuất bản và chạy được bước **đóng gói 7 tệp**. Tuy nhiên [lần thử triển khai Pages #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366) **không thành công tại job Deploy trước khi các bước trên runner khởi chạy**. Sau đó workflow đã được thiết kế **opt-in**, [lượt mới có Build thành công, Deploy = Skipped](https://github.com/Form997/Vong-co/actions/runs/40675606473). **Chưa có website đã xuất bản**; không được lấy trạng thái workflow xanh khi Deploy bỏ qua làm bằng chứng website đã lên mạng. Connector không lấy được log lỗi của job Deploy, nên **chưa xác định chắc chắn nguyên nhân**. Các mục dưới đây là cách kiểm tra cấu hình theo GitHub Docs, không phải khẳng định đã sửa lỗi.
+> **Trạng thái kiểm chứng ngày 28/10/2026:** Đã tạo workflow xuất bản và chạy được bước **đóng gói 7 tệp**. Tuy nhiên [lần thử triển khai Pages #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366) **không thành công tại job Deploy trước khi các bước trên runner khởi chạy**. Sau đó workflow đã được thiết kế **opt-in**, [lượt mới có Build thành công, Deploy = Skipped](https://github.com/Form997/Vong-co/actions/runs/40675606473). **Tại lần thử đó chưa có website đã xuất bản**; không được lấy trạng thái workflow xanh khi Deploy bỏ qua làm bằng chứng website đã lên mạng. Connector không lấy được log lỗi của job Deploy, nên **chưa xác định chắc chắn nguyên nhân**. Các mục dưới đây là cách kiểm tra cấu hình theo GitHub Docs, không phải khẳng định đã sửa lỗi.
 
 ## 1. Những gì đã được chuẩn bị
 
@@ -35,7 +41,7 @@ https://form997.github.io/Vong-co/
 https://form997.github.io/Vong-co/web/v3/
 ```
 
-**Đây chỉ là địa chỉ theo quy tắc GitHub Pages, chưa xác nhận truy cập được.** URL chính thức phải đối chiếu với Settings → Pages sau khi deploy.
+**Sau khi khắc phục lỗi**, GitHub Deploy xác nhận địa chỉ trên trong nhật ký chạy thành công. URL triển khai của riêng V3.1 sẽ được xác nhận lại sau khi phát hành.
 
 ## 3. Nếu Pages tiếp tục báo lỗi
 
