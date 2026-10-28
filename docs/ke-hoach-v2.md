@@ -1,3 +1,5 @@
+> **MỐC MỚI 28/10/2026: 19/20 bài mở biên bản kiểm nguồn V2; 0/20 nghiệm thu diễn xướng.** [**Bài 19 – Giang Nam Cửu Khúc: biên bản**](../ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md), [**sổ 58 câu có trang in**](../ban-to/19-giang-nam/v2-ra-soat-58-cau.md). Đã định vị 58 nhãn nhạc và 58 nhãn lời *Kim, Kiều hoa viên ngộ* trong Nhị Tấn IV tr.320–331; lời ghi **Nguyễn Văn Thinh 1970**. **Bất đồng đáng xử lý:** Nhị Tấn **16+18+13+11** so với Viện **16+18+12+12**; **Khúc 8 nhạc từ 47, lời từ 45**; Viện PDF 502, ảnh Nhị Tấn tr.328 chưa tải được; không coi đã nghiệm thu. **Còn bài 20 – Phụng Cầu**.
+
 > **MỐC MỚI 28/10/2026: 18/20 bài đã mở biên bản nguồn V2; 0/20 nghiệm thu diễn xướng.** [Bài 18 – Phụng Hoàng](../ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) có [sổ 48 vị trí dự kiến](../ban-to/18-phung-hoang/v2-ra-soat-48-cau.md). **Chưa xác nhận trực tiếp ký âm từng câu**, chưa có lời 48 câu/âm thanh/giấy phép; không tính sổ vị trí là kiểm nhạc đạt.
 
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
