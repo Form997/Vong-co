@@ -1,5 +1,22 @@
 # BẢN TỔ 15 — NAM AI
 
+## V2 — NGHIỆM THU KIỂM NGUỒN NAM AI (28/10/2026)
+
+**[Biên bản V2 (11 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ 84 câu nguồn in — 4 câu chuyển + 80 câu 10 lớp](v2-ra-soat-84-cau.md)** · **[Sổ đối chiếu hệ 68 có điều kiện](v2-doi-chieu-68-cau.md)**.
+
+**ĐÍNH CHÍNH QUAN TRỌNG SO VỚI V1:** Sách **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997), trang in 268–277** ghi trực tiếp **“NAM AI (84 câu, nhịp tư, song lang 3–4)”**. Đã soi ảnh các trang này, thấy **bốn câu Phản Xuân qua Ai có đánh số 1–4 riêng** và **mười lớp Nam Ai có 80 câu đánh số lại 1–80**. Lời ***Tích Thúy Kiều (tiếp theo)*** cũng có 4 câu chuyển và 80 số câu tương ứng. **Sổ V2 ghi đúng hai hệ số của sách, không giả sử sách đánh 01–84 liên tục.**
+
+- **Hệ 68** theo thuyết minh Viện Âm nhạc: **4+64** (8 lớp); trang PDF Viện đang lỗi **502**, sổ 68 là **ánh xạ tra cứu tạm thời**, chưa tìm được tổng phổ 68 cùng nguồn để chứng thực. Một nguồn truyền dạy khác lại giải thích **68 câu lòng + 16 câu bổ sung khi liên hoàn**; đây là **cách đếm khác, chưa quy đổi được**.
+- **Hệ 104** được bài lược khảo Tấn Nhì/Văn Dần và danh mục Viện Âm nhạc nhắc tới. Nhị Tấn tập III chép thêm **20 câu Nam Xuân** sau 84 vị trí Nam Ai, nên có thể tính được **84+20=104 vị trí trong một trình tự liên hoàn**; **chưa được phép khẳng định** đó là tổng phổ “104 câu Nam Ai” độc lập từ các nguồn khác.
+- **Sai khác chữ nhạc phải kiểm:** câu **02 của Phản Xuân** (**Xàng** ở Nhị Tấn, **Hò** ở Văn Dần); câu **01 và 26 của lòng Nam Ai** cũng không cùng mặt chữ giữa hai nguồn. **Không tự sửa nguồn hoặc kết luận một bên sai**.
+- **Mái Ai** ở lớp **VII (49–56)**, **VIII (57–64)**; nguồn 84 còn lớp **IX (65–72)** và **X (73–80)**. Không xóa IX/X theo mô tả 68.
+- **Lời lịch sử:** Viện Âm nhạc dẫn đến ấn phẩm 1905 ***Bản đờn tranh và bài ca***, Phụng Hoàng Sang – Nguyễn Tư Bá, tr.59 về *Tô Huệ chức cẩm hồi văn*; **chưa xem scan trang 59**. Lời *Tích Thúy Kiều* trong sách Nhị Tấn là bộ lời khác.
+- **ĐẠT kiểm sự hiện diện chỉ mục nguồn 84/84, chưa kiểm thẩm âm; 0 câu đạt nghiệm thu diễn xướng. PHÁN QUYẾT CHỜ NGHIỆM THU.** Giữ `v1-frozen` nguyên trạng và chưa được phép đăng lại toàn ký âm/lời/MP3.
+
+> Nội dung bên dưới là lịch sử **V1**, trong đó có mệnh đề về nguồn 84 chủ yếu từ Văn Dần đã được **bổ sung bằng chứng bản in Nhị Tấn**; khi tra cho AI/MCP, ưu tiên biên bản V2 cùng chứng cứ trang nguồn.
+
+---
+
 **Nhóm:** Ba Nam · **Hơi:** Ai / Ai Oán · **Tình trạng:** hồ sơ nguồn V1 (27/10/2026), CHƯA nghiệm thu biểu diễn.
 
 > **Hai truyền bản phải quản lý độc lập:** tài liệu Viện Âm nhạc mô tả **68 câu nhịp tư** (8 lớp 8 câu + 4 câu Phần Xuân qua Ai); trong khi bản ký âm **Văn Dần (2013) có nhãn 84 câu nhịp tư**, thực tế trang trình bày **bốn câu Phản Xuân qua Ai + 80 câu chia 10 lớp**. Không tùy tiện gộp, cắt hoặc tuyên bố một bên sai.
