@@ -126,7 +126,7 @@ class PhraseLessonsTests(unittest.TestCase):
             if item["id"] in (1,20):
                 continue
             html = render_lesson(item, None)
-            self.assertIn("chưa có bảng chỉ mục", html)
+            self.assertIn("chưa chuẩn hóa", html)
             self.assertNotIn("class=\"phrase-row\"", html)
 
     def test_lesson_01_and_20_include_only_their_indexed_rows(self):
