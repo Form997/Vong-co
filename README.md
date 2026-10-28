@@ -6,7 +6,7 @@
 
 > **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
 >
-> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **19/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
+> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **20/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
 
 [**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
@@ -54,7 +54,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 | 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 18 | Bốn Oán | [Phụng Hoàng](ban-to/18-phung-hoang/README.md) | [Biên bản V2](ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 19 | Bốn Oán | [Giang Nam](ban-to/19-giang-nam/README.md) | [Biên bản V2](ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 20 | Bốn Oán | [Phụng Cầu](ban-to/20-phung-cau/README.md) | Chưa mở biên bản V2 |
+| 20 | Bốn Oán | [Phụng Cầu](ban-to/20-phung-cau/README.md) | [Biên bản V2](ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 
 **Lưu ý quan trọng khi tra cứu:**
 - **Cổ Bản (04):** Trường **68 câu** và Vắn **34 câu** là hai hệ đối chiếu, **không cộng thành một bài 102 câu**.
@@ -73,6 +73,8 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 - **Tứ Đại Oán (17):** đã tìm bản in đủ **38 câu nhạc nhịp tám/song lang 6–8**, **Nhị Tấn tập IV tr.302/304/306/308**, lời ***Bá Lý Hề*** tr.**303/305/307/309**, sách ghi **soạn lời Trần Quan Quờn**. Bản in **7 lớp: 6+8+8+4+4+4+4**. Bộ lời xưa ***Bùi Kiệm – Bùi Ông – Nguyệt Nga*** tại **Nhị Tấn tập II tr.181–184** là **bộ khác**, có **lỗi nhãn 21 lặp hai lần/thiếu 22 ở tr.183** và thuật lại các mốc 1910/1915 cần xác minh lịch sử. Phân biệt **Tứ Đại Vắn 19 câu nhịp tư**; chưa nghiệm thu âm thanh.
 - **Phụng Hoàng (18):** đã mở [biên bản V2](ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) và [sổ 48 vị trí dự kiến](ban-to/18-phung-hoang/v2-ra-soat-48-cau.md); **chưa kiểm trực tiếp 48 nhãn ký âm**. 48 câu/4 lớp là mô tả từ nguồn, phân biệt 12 câu cải lương và 72 câu nhịp tư được Nhị Tấn thuật lại từ 1905. **CHỜ NGHIỆM THU**.
 - **Giang Nam Cửu Khúc (19):** Nhị Tấn tập IV **tr.320/322/324/326/328/330** có **58 nhãn nhạc**; **tr.321/323/325/327/329/331** có **58 nhãn lời *Kim, Kiều hoa viên ngộ* ghi Nguyễn Văn Thinh (1970)**. **Bản in chia lớp 16+18+13+11 (IV từ câu 48)**, trong khi Viện Âm nhạc mô tả **16+18+12+12 (IV từ 47)**. Nhãn **Khúc 8 trong cùng sách bắt đầu câu 47 ở nhạc, câu 45 ở lời**. Chú thích **OAN/LIU ở 1/5/17/21 và kết 58**; chưa nghiệm thu biểu diễn. [Biên bản](ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md) · [Sổ 58 câu](ban-to/19-giang-nam/v2-ra-soat-58-cau.md).
+- **Phụng Cầu Hoàng Duyên (20):** Nhị Tấn tập IV **tr.332/334/336/338/340** chứa **40 nhãn nhạc**, lời ***Bá Nha Đoạn Cầm*** **tr.333/335/337/339/341** chứa **40 nhãn lời** ghi **Nhị Tấn (2002)**. **3 lớp 18+8+14** trùng thuyết minh Viện. **Mốc thư tịch bất nhất: bìa 1997, lời 2002, bài khảo cứu cuối sách 1999**; mục lục ghi ***Tư Mã Tương Như*** khác tựa lời trang 333. **Dứt ngoại/chầu–mô chưa kiểm thực tấu; 0/40 nghiệm thu**. [Biên bản](ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) · [Sổ 40 câu có trang](ban-to/20-phung-cau/v2-ra-soat-40-cau.md).
+- **Mốc 20/20:** Đã **mở đủ 20 hồ sơ kiểm nguồn V2**, **không đồng nghĩa 20/20 có bản nhạc hoàn chỉnh/được nghiệm thu**. Bài 18 Phụng Hoàng mới có sổ 48 vị trí chờ kiểm, các bài khác còn phách, âm thanh, quyền, dị bản chưa đạt. **00/20 bài đạt nghiệm thu diễn xướng**.
 - **Nhóm Ba Nam (14–16): đã mở đủ 3/3 biên bản kiểm nguồn V2**, nhưng **0/3 bài đạt nghiệm thu diễn xướng**. Không tự chuẩn hóa bằng suy đoán.
 
 [Danh mục và hệ câu/nhịp V1](docs/20-ban-to.md) · [Biên bản kiểm toán V1](docs/kiem-toan-v1-20-ban.md) · [Quy chế nghiệm thu V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md)
@@ -128,7 +130,7 @@ Mỗi hồ sơ cần qua bốn tầng bằng chứng:
 
 **Trạng thái của bài:** `CHỜ NGHIỆM THU` (thiếu bằng chứng) · `KHÔNG ĐẠT` (sai lệch đã chứng minh) · `ĐẠT` (đủ điều kiện và có kiểm duyệt). Mọi kết quả **ĐẠT kiểm nguồn** chỉ áp dụng ở tiêu chí đã kiểm, **không phải ĐẠT toàn bài**.
 
-**Tình trạng hiện tại: 19/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
+**Tình trạng hiện tại: 20/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
 
 ## Nguồn khoa học và tư liệu có thể truy cập
 
@@ -167,4 +169,4 @@ Nếu phát hiện lỗi, hãy [**mở GitHub Issue**](https://github.com/Form99
 
 ---
 
-<sub>HAI ĐẤT · Research-first Vietnamese traditional music knowledge base · Cập nhật nội dung README: 27/10/2026 · Repository: <a href="https://github.com/Form997/Vong-co">Form997/Vong-co</a></sub>
+<sub>HAI ĐẤT · Research-first Vietnamese traditional music knowledge base · Cập nhật nội dung README: 28/10/2026 · Repository: <a href="https://github.com/Form997/Vong-co">Form997/Vong-co</a></sub>
