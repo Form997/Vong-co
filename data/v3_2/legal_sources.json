@@ -1,8 +1,8 @@
 {
   "project": "HAI DAT — 20 bản Tổ Đờn ca tài tử Nam Bộ",
   "revision": "V3.2 legal-security.1",
-  "verified_on": "2026-10-28",
-  "note": "Danh mục nguồn chính thức hoặc đơn vị quản lý. Ngày hiệu lực là mốc được cơ quan công bố; không khẳng định mọi điều khoản áp dụng cho mọi website hoặc người dùng. Trước khi thay đổi mô hình phải kiểm lại sửa đổi và phạm vi áp dụng. WIPO treaty, NIST guidance, GitHub terms không được đồng nhất với luật quốc gia.",
+  "verified_on": "2026-10-29",
+  "note": "Danh mục nguồn chính thức hoặc đơn vị quản lý. Ngày hiệu lực là mốc được cơ quan công bố; không khẳng định mọi điều khoản áp dụng cho mọi website hoặc người dùng. Trước khi thay đổi mô hình phải kiểm lại sửa đổi và phạm vi áp dụng. WIPO treaty, NIST guidance, GitHub terms không được đồng nhất với luật quốc gia. Kiểm EU AI Act phải kèm Regulation (EU) 2026/1744 được thông qua tháng 7/2026; không sử dụng lộ trình bản 2024 mà bỏ qua các sửa đổi.",
   "sources": [
     {
       "id": "VN-CYBER-2025",
@@ -20,7 +20,7 @@
       "effective_on": "2026-01-01",
       "legal_weight": "binding",
       "applicability": "when-personal-data",
-      "official_url": "https://bocongan.gov.vn/chinh-sach-phap-luat/co-so-du-lieu-van-ban/luat-bao-ve-du-lieu-ca-nhan-1753688803"
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=214590&pageid=27160&typegroup="
     },
     {
       "id": "VN-PERSONAL-DECREE",
@@ -29,7 +29,7 @@
       "effective_on": "2026-01-01",
       "legal_weight": "binding",
       "applicability": "when-personal-data",
-      "official_url": "https://chinhphu.vn/?classid=1&docid=216387&pageid=27160"
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=216387&pageid=27160"
     },
     {
       "id": "VN-IP-2025",
@@ -38,7 +38,7 @@
       "effective_on": "2026-04-01",
       "legal_weight": "binding",
       "applicability": "core",
-      "official_url": "https://vbpl.moj.gov.vn/botaichinh/Pages/vbpq-thuoctinh.aspx?ItemID=187492&Keyword="
+      "official_url": "https://vanban.chinhphu.vn/?docid=216511&pageid=27160"
     },
     {
       "id": "VN-DATA-2024",
@@ -47,7 +47,7 @@
       "effective_on": "2025-07-01",
       "legal_weight": "binding",
       "applicability": "assess-data-operations",
-      "official_url": "https://vbpl.moj.gov.vn/botuphap/Pages/vbpq-thuoctinh.aspx?ItemID=174877"
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=212488&pageid=27160"
     },
     {
       "id": "VN-INTERNET-2024",
@@ -83,7 +83,7 @@
       "effective_on": "2025-07-01",
       "legal_weight": "binding",
       "applicability": "heritage-activities",
-      "official_url": "https://vanban.chinhphu.vn/?docid=212473&pageid=27160"
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=212473&pageid=27160"
     },
     {
       "id": "EU-GDPR",
@@ -106,10 +106,10 @@
     {
       "id": "EU-AI-ACT",
       "jurisdiction": "Liên minh châu Âu",
-      "title": "Regulation (EU) 2024/1689 (AI Act, áp dụng theo từng giai đoạn)",
-      "effective_on": "2026-08-02",
+      "title": "Regulation (EU) 2024/1689 (AI Act), as amended in 2026 by Regulation (EU) 2026/1744",
+      "effective_on": null,
       "legal_weight": "binding",
-      "applicability": "if-ai-system-in-scope-check-amendments",
+      "applicability": "phase-in-dates-amended-in-2026-check-each-article-and-system-role",
       "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
     },
     {
@@ -124,11 +124,11 @@
     {
       "id": "US-COPPA",
       "jurisdiction": "Hoa Kỳ",
-      "title": "COPPA 16 CFR Part 312, sửa đổi 2025 (hiệu lực 23/06/2025; đa số hạn tuân thủ 22/04/2026)",
+      "title": "COPPA 16 CFR Part 312 (rule amended 2025; compliance dates in amended text)",
       "effective_on": "2025-06-23",
       "legal_weight": "binding",
       "applicability": "operators-in-scope-children-under-13",
-      "official_url": "https://www.govinfo.gov/content/pkg/FR-2025-04-22/html/2025-05904.htm"
+      "official_url": "https://www.ftc.gov/legal-library/browse/federal-register-notices/16-cfr-part-312-coppa-final-rule-amendments"
     },
     {
       "id": "US-DMCA-512",
@@ -183,6 +183,15 @@
       "legal_weight": "platform-terms",
       "applicability": "always-on-github-pages",
       "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+    },
+    {
+      "id": "EU-AI-OMNIBUS-2026",
+      "jurisdiction": "Liên minh châu Âu",
+      "title": "Regulation (EU) 2026/1744 — amending AI Act timetable and other provisions",
+      "effective_on": null,
+      "legal_weight": "binding",
+      "applicability": "when-in-scope-of-ai-act-and-applicable-provision",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
     }
   ]
 }
