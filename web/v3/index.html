@@ -338,7 +338,8 @@ footer p{margin:0;font-size:12px;max-width:850px}
         card.append(node("span","num",String(item.id).padStart(2,"0")),
           node("strong","",item.title),
           node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"),
-          node("small","",hasLesson ? "Có sổ câu đối chiếu V3.2 (chưa nghiệm thu)" : "Sổ V2 chưa chuyển thành bài học V3.2"));
+          node("small",hasLesson ? "piece-status" : "piece-status pending",
+            hasLesson ? "◉ Có chỉ mục học câu V3.2" : "◌ Chờ chuẩn hóa sổ V2"));
         card.addEventListener("click", () => {
           state.selected = item.id;
           updateList(); updateDetail();
@@ -359,14 +360,14 @@ footer p{margin:0;font-size:12px;max-width:850px}
       const detail = byId("detail"); detail.replaceChildren();
       const item = state.catalog?.items.find(x=>x.id===state.selected);
       if (!item) {
-        detail.append(node("div","tag","Hướng dẫn tra cứu"), node("h3","","Chọn một bản Tổ"), node("p","","Hãy chọn tên bài ở danh sách để xem nguồn và dị bản.")); return;
+        detail.append(node("div","tag","Mục lục tương tác"), node("h3","","Chọn một bản Tổ"), node("p","","Chọn tên bài ở danh sách để xem xuất xứ, các hệ câu và nguồn tham khảo.")); return;
       }
       detail.append(node("div","tag",item.family_label + " · Bản số " + String(item.id).padStart(2,"0")),node("h3","",item.title));
       if (item.aliases.length) detail.append(node("p","","Tên khác: " + item.aliases.join(" · ")));
       const pills=node("div","pills");
       pills.append(node("span","pill neutral","Hồ sơ nguồn V2: đã mở"),node("span","pill","Diễn xướng: chờ nghiệm thu"),node("span","pill","Quyền: chưa xác minh"));
       detail.append(pills,node("p","",item.research_note));
-      const caption=node("div","tag","Các hệ bản đang quản lý");caption.style.marginTop="19px";detail.append(caption);
+      const caption=node("div","tag","Các hệ đang được đối chiếu");caption.style.marginTop="19px";detail.append(caption);
       for(const v of item.variants) {
         const wrapper=node("section","variant");
         wrapper.append(node("strong","",v.label));
