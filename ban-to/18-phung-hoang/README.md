@@ -54,3 +54,8 @@
 - [ ] Chưa có giấy phép đăng lại ký âm/scan/lời/MP3.
 
 **KẾT LUẬN: ĐẠT HỒ SƠ NGUỒN V1; CHƯA DUYỆT BIỂU DIỄN.** [Nguồn và dị bản](nguon-va-di-ban.md).
+
+
+## Cập nhật V2 — 28/10/2026
+
+Đã mở [biên bản kiểm nguồn V2](v2-bien-ban-nghiem-thu.md) và [sổ 48 vị trí dự kiến](v2-ra-soat-48-cau.md). **48 câu/4 lớp là mô tả từ nguồn, chưa kiểm trực tiếp đủ ký âm từng câu hoặc ranh lớp.** Chưa có bộ lời 48 câu, đối chứng âm thanh hay giấy phép được xác minh. **CHỜ NGHIỆM THU; 0/48 câu diễn xướng được duyệt.**
