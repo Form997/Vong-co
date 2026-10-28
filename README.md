@@ -25,7 +25,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 > **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
 > [!NOTE]
-> **Website V3.0 đã được GitHub Pages triển khai thành công ngày 28/10/2026**: [mở trang tra cứu công khai](https://form997.github.io/Vong-co/) · [minh chứng Deploy](https://github.com/Form997/Vong-co/actions/runs/40675923989). **V3.1 đang được phát triển trong nhánh riêng**, chưa thay thế website công khai. Giao diện và hồ sơ nghiên cứu **không tương đương nghiệm thu âm nhạc**.
+> **Website V3.0 đã được GitHub Pages triển khai thành công ngày 28/10/2026**: [mở trang tra cứu công khai](https://form997.github.io/Vong-co/) · [minh chứng Deploy](https://github.com/Form997/Vong-co/actions/runs/40675923989). **V3.1 đã được hợp nhất và triển khai công khai thành công** theo [GitHub Pages run #40689588576](https://github.com/Form997/Vong-co/actions/runs/40689588576). Giao diện và hồ sơ nghiên cứu **không tương đương nghiệm thu âm nhạc**.
 
 ---
 
@@ -33,9 +33,9 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 
 **Ngày bắt đầu:** 28/10/2026, nhánh `v3.1-development`. V3.1 tạo **20 trang URL riêng** từ metadata V3, thêm **lọc mức chứng cứ** và **sắp xếp A–Z tiếng Việt**, có danh sách nguồn/nhận xét chưa kiểm chứng ở từng hệ bản. [Xem kế hoạch V3.1](docs/v3.1-khoi-dong.md).
 
-**Đã kiểm thử:** [45 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40688707624), [Chromium trên điện thoại và 20 URL HTTP thành công](https://github.com/Form997/Vong-co/actions/runs/40688596819). [Gói Pages gồm 27 tệp](https://github.com/Form997/Vong-co/actions/runs/40688707588) đã dựng thành công; **Deploy V3.1 bị bỏ qua có chủ đích để không cập nhật website công khai trước khi duyệt**.
+**Đã phát hành V3.1:** [45 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40689588560), [Chromium trên điện thoại và 20 URL HTTP thành công](https://github.com/Form997/Vong-co/actions/runs/40689588524), [GitHub Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40689588576). Website công khai nay có 20 trang bài riêng.
 
-**Website V3 đang hoạt động theo nhật ký Deploy**: [mở trang](https://form997.github.io/Vong-co/). **20 trang riêng V3.1 chỉ khả dụng trên website sau khi hoàn tất Pull Request và triển khai bản mới.**
+**Website V3 đang hoạt động theo nhật ký Deploy**: [mở trang](https://form997.github.io/Vong-co/). **Pull Request #5 đã được hợp nhất và GitHub triển khai V3.1 thành công**, có thể truy cập các URL `/bai/<slug>/`.
 
 ## Bắt đầu tại đây
 
@@ -64,7 +64,7 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 | **Hồ sơ 20 bài** | Đã có 20 thư mục và biên bản kiểm nguồn V2 | [Danh mục bài](docs/20-ban-to.md) |
 | **V3.0-alpha — dữ liệu máy đọc** | **20 bản, 30 hệ bản/dị bản**, JSON + JSON Schema, chưa nghiệm thu diễn xướng | [Catalog](data/v3/catalog.json) · [Tài liệu dữ liệu](data/v3/README.md) |
 | **Website V3 đã triển khai** | GitHub Pages có [kết quả Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40675923989) | [Mở website](https://form997.github.io/Vong-co/) |
-| **V3.1 — cải tiến đang xét duyệt** | Tạo 20 trang chi tiết riêng, 3 mức lọc chứng cứ, sắp xếp tên; bản thử nghiệm chưa công bố | [Phạm vi V3.1](docs/v3.1-khoi-dong.md) · [Kiểm thử](https://github.com/Form997/Vong-co/actions/runs/40688707624) |
+| **V3.1 — đã triển khai** | 20 trang chi tiết riêng, lọc mức chứng cứ, sắp xếp A–Z; **Deploy thành công** | [Mở bài số 01](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/) · [Kiểm thử](https://github.com/Form997/Vong-co/actions/runs/40689588524) |
 | **Sổ đối chiếu câu & dị bản** | Đã mở theo bài; mức kiểm chứng không đồng đều | [Báo cáo phát hiện V2](docs/tong-hop-phat-hien-v2.md) |
 | **Nguồn tham khảo** | Có mã nguồn, liên kết, trang in và giới hạn sử dụng | [Sổ nguồn](docs/nguon-tham-khao.md) |
 | **Kiểm thử mã nguồn** | Workflow GitHub Actions hoạt động trên V2; có các bài thử Python và kiểm cấu trúc | [Xem kết quả CI](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) |
@@ -107,9 +107,9 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 | **V1 – Gieo nền tư liệu** | **12/10/2026** | Tạo hệ thống hồ sơ và nguồn cho 20 bản Tổ, ghi nhận dị bản và phần còn thiếu | **397,63 KiB** |
 | **V2 – Đưa câu đờn trở về nguồn** | **19/10/2026**; bắt đầu quy chế kiểm nguồn toàn bộ **27/10** | Mở biên bản cho **20/20**, đối chiếu số câu, nguồn, trang in, lời ca và cách phân lớp; **chưa nghiệm thu biểu diễn** | **942,96 KiB** |
 | **V3.0-alpha – Tra cứu có nguồn** | **28/10/2026** | JSON 20 bản, **30 hệ bản**, kiểm định tự động, website GitHub Pages đã triển khai | **1.055,84 KiB** |
-| **V3.1 – 20 trang riêng có chứng cứ** | **28/10/2026** | Bộ lọc mức chứng cứ, A–Z tiếng Việt, 20 trang độc lập và sitemap; kiểm thử đạt, **chưa đưa lên website công khai** | **1.103,69 KiB** |
+| **V3.1 – 20 trang riêng có chứng cứ** | **28/10/2026** | Bộ lọc chứng cứ, A–Z tiếng Việt, 20 trang độc lập và sitemap; **đã phát hành Pages** | **1.111,14 KiB** |
 
-*Dung lượng **Git chưa nén tại snapshot có commit cố định**, không phải ZIP hay kích thước nhánh thay đổi liên tục. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4). V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha: **1.081.181 byte**, 133 tệp tại [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). V3.1 bản thử: **1.130.175 byte**, 140 tệp tại [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d), **không phải** dung lượng gói website (197.920 byte/27 tệp).*
+*Dung lượng **Git chưa nén tại snapshot có commit cố định**, không phải ZIP hay kích thước nhánh thay đổi liên tục. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4). V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha: **1.081.181 byte**, 133 tệp tại [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). V3.1 bản thử: **1.130.175 byte**, 140 tệp tại [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d). **V3.1 bản phát hành:** **1.137.811 byte**, 140 tệp tại [merge commit `5243541`](https://github.com/Form997/Vong-co/tree/5243541e3ba9e6bb5953994188853c6fd6612248). Đây là tổng kích thước Git chưa nén, **khác** dung lượng gói web (197.920 byte/27 tệp).*
 
 
 [**Nhật ký V1–V2, mốc thời gian, số đo và mẫu ghi thế hệ tiếp theo**](docs/nhat-ky-phien-ban.md) · [Công cụ Python đo dung lượng](scripts/thong-ke-dung-luong.py)
@@ -135,7 +135,7 @@ Dự án ưu tiên **tra cứu bằng chứng trước khi đưa ra kết luận
 **Đường dẫn cho kỹ thuật:**
 [Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế V2](docs/ke-hoach-v2.md) · [Sổ nguồn](docs/nguon-tham-khao.md) · [Workflow kiểm thử](.github/workflows/kiem-thu-v2.yml)
 
-**V3.0-alpha đã triển khai Pages thành công**; **V3.1 đang chờ Pull Request và phát hành**. Cả hai vẫn là sản phẩm tra cứu metadata, chưa có nghiệm thu biểu diễn. Bước kế tiếp là bổ sung chứng cứ từng câu/trang, xác minh quyền âm thanh và thẩm định chuyên môn trước khi tính đến AI/MCP ổn định. [Lộ trình V3.1](docs/v3.1-khoi-dong.md).
+**V3.0-alpha và V3.1 đều đã được GitHub Pages triển khai thành công**; V3.1 được phát hành sau khi [Pull Request #5](https://github.com/Form997/Vong-co/pull/5) được hợp nhất. Cả hai vẫn là sản phẩm tra cứu metadata, chưa có nghiệm thu biểu diễn. Bước kế tiếp là bổ sung chứng cứ từng câu/trang, xác minh quyền âm thanh và thẩm định chuyên môn trước khi tính đến AI/MCP ổn định. [Lộ trình V3.1](docs/v3.1-khoi-dong.md).
 
 ## Nguồn, quyền sử dụng và liêm chính khoa học
 
@@ -150,4 +150,4 @@ Một trang in, một điểm sai khác câu nhạc được chỉ rõ, hay mộ
 
 <p align="center"><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
 
-<p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v3.1-development">Nhánh phát triển V3.1</a></sub></p>
+<p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v3-development">Nhánh phát hành V3.1</a></sub></p>
