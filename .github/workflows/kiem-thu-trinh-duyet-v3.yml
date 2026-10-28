@@ -14,6 +14,15 @@ on:
       - "scripts/v3_2_*"
       - "tests/v3_browser.cjs"
       - "scripts/v3_build_site.py"
+  pull_request:
+    branches:
+      - v3-development
+    paths:
+      - "web/v3/**"
+      - "scripts/v3_build_site.py"
+      - "scripts/v3_2_lesson_html.py"
+      - "tests/v3_browser.cjs"
+      - ".github/workflows/kiem-thu-trinh-duyet-v3.yml"
   workflow_dispatch:
 
 permissions:
