@@ -19,7 +19,7 @@
 - Cách viết `HO` ở câu đầu Lưu Thủy Trường được **giữ nguyên**, không tự thay thành `HÒ`; chữ kết không cho biết cao độ tuyệt đối hoặc mọi nét luyến láy.
 - Lưu Thủy Trường còn các hệ `LT-16-8` và `LT-32-8` **khác nguồn**. Hai hệ này hiện **không được lập sổ V3.2**, không đổi nhịp tư sang nhịp tám bằng phép tính.
 - Tại Phụng Cầu, trang PDF **38–47** tương ứng các trang in **332–341** trong tài liệu đã kiểm ở V2; bộ chỉ mục không sao chép ảnh PDF, bản ký âm hay lời. Nhãn cặp 1–20 **không phải 20 điểm chầu/mô đã xác minh**.
-- **18/20 bài còn lại:** V3.2 chưa có sổ nhãn từng câu được chọn và đối chiếu đúng hệ. Giao diện thông báo trạng thái chưa sẵn sàng, không tạo đủ 20 “bài học” giả.
+- **18/20 bài còn lại:** nhiều bài **đã có bảng V2**, nhưng chưa được kiểm và chuẩn hóa từng trường vào module bài học V3.2. [Sổ kiểm toán 20 bài](../../docs/v3.2-kiem-toan-20-ban.md) ghi rõ sổ nào chờ nhập, sổ nào còn nhiều dòng dự kiến. Giao diện báo “chưa chuẩn hóa” chứ không ngầm hiểu là “thiếu nguồn”.
 
 ## Cơ chế kiểm nguồn tránh dữ liệu AI bịa
 
