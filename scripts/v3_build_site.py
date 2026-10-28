@@ -27,6 +27,7 @@ ALLOWLIST = (
     ("data/v3/catalog.json", "data/v3/catalog.json"),
     ("data/v3/schema.json", "data/v3/schema.json"),
     ("data/v3_2/phrase_index.json", "data/v3_2/phrase_index.json"),
+    ("data/v3_2/schema.json", "data/v3_2/schema.json"),
 )
 BASE_FILES = ("index.html", ".nojekyll", "robots.txt", "sitemap.xml")
 
