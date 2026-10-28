@@ -9,7 +9,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
   <a href="README.en.md">English</a> ·
   <a href="#bắt-đầu-tại-đây">Bắt đầu</a> ·
   <a href="#danh-mục-20-bản-tổ">20 bản Tổ</a> ·
-  <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
+  <a href="https://github.com/Form997/Vong-co/blob/v2-development/docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
   <a href="CONTRIBUTING.md">Đóng góp</a>
 </p>
 
