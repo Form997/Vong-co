@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b1724">
   <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
-  <title>HAI ĐẤT V3.1 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.2 · Thư viện 20 bản Tổ</title>
   <style>
     :root {--bg:#0b1724;--panel:#14263a;--panel2:#1a3045;--line:#30475b;--ink:#f4f3ed;--muted:#b2c2cc;--accent:#e3bf7a;--teal:#88d0c6;--warning:#f7d797;--radius:16px;}
     * { box-sizing:border-box }
@@ -41,7 +41,7 @@
     .notice{display:flex;gap:12px;align-items:start;margin:18px 0 32px;border:1px solid #6b5e3e;background:#29293a;padding:16px 19px;border-radius:12px;color:#f4e5c9;font-size:13px}
     .notice strong{display:block;color:var(--warning)}
     .notice svg {flex:none;margin-top:3px}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0 48px}
+    .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:15px 0 48px}
     .stat{background:linear-gradient(155deg,#192c3f,#102134);border:1px solid var(--line);border-radius:var(--radius);padding:21px}
     .stat strong{font-family:Georgia,serif;font-size:33px;line-height:1.2;color:var(--accent);display:block}
     .stat span{color:var(--muted);font-size:12px;letter-spacing:.2px}
@@ -108,7 +108,7 @@
   </header>
   <main class="container" id="dau-trang">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="eyebrow">Phiên bản V3.1 · Tra cứu theo từng bản Tổ</div>
+      <div class="eyebrow">Phiên bản V3.2 · Tra cứu theo từng bản Tổ</div>
       <h1 id="hero-title">Hai mươi bản Tổ.<br><em>Muôn nẻo tiếng đờn.</em></h1>
       <p>Khám phá Đờn ca tài tử Nam Bộ qua những hồ sơ có nguồn. Tra cứu bài bản, đối chiếu hệ câu và dị bản — để mỗi điều tìm hiểu đều có dấu vết trở về tư liệu gốc.</p>
       <div class="hero-actions">
@@ -124,6 +124,7 @@
       <div class="stat"><strong id="count-pieces">20</strong><span>Bản Tổ trong danh mục</span></div>
       <div class="stat"><strong id="count-variants">—</strong><span>Hệ bản và dị bản mô tả</span></div>
       <div class="stat"><strong>04</strong><span>Nhóm Bắc · Lễ · Nam · Oán</span></div>
+      <div class="stat"><strong id="count-lessons">—</strong><span>Bài có chỉ mục học từng câu V3.2</span></div>
       <div class="stat"><strong>00</strong><span>Bài đã nghiệm thu diễn xướng</span></div>
     </section>
     <section id="tra-cuu" aria-labelledby="browse-title">
@@ -150,6 +151,13 @@
               <option value="derived_unverified">Ánh xạ chưa kiểm chứng</option>
             </select>
           </label>
+          <label for="lesson-status">Bài học từng câu
+            <select id="lesson-status" aria-label="Lọc bài có chỉ mục học câu">
+              <option value="all">Tất cả 20 bản Tổ</option>
+              <option value="indexed">Đã có sổ câu học V3.2</option>
+              <option value="pending">Chưa có sổ câu đủ chuẩn</option>
+            </select>
+          </label>
           <label for="sort-order">Sắp xếp
             <select id="sort-order" aria-label="Chọn thứ tự sắp xếp">
               <option value="number">Theo số thứ tự bài</option>
@@ -172,19 +180,20 @@
   </main>
   <footer><div class="container">
     <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
-    <p>V3.1 · Bắt đầu 28/10/2026 · Đây là giao diện nghiên cứu thử nghiệm. Không phải trang được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <p>V3.2 · Bắt đầu 28/10/2026 · Đây là giao diện nghiên cứu thử nghiệm. Không phải trang được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
     <div class="footer-links"><a href="https://github.com/Form997/Vong-co/blob/v3-development/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
   </div></footer>
   <script>
     "use strict";
     const DATA_URL = "../../data/v3/catalog.json";
+    const PHRASE_URL = "../../data/v3_2/phrase_index.json";
     const SOURCE_BASE = "https://github.com/Form997/Vong-co/blob/v3-development/";
     const LABELS = {
       source_indexed: "Có chỉ mục từ V2",
       source_reported: "Nguồn thuật lại",
       derived_unverified: "Ánh xạ chưa thẩm định"
     };
-    const state = { catalog: null, family: "all", term: "", selected: null, evidence: "all", sort: "number" };
+    const state = { catalog: null, lessons: null, family: "all", term: "", selected: null, evidence: "all", sort: "number", lessonStatus: "all" };
     const byId = (id) => document.getElementById(id);
     const norm = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
     function node(tag, className, text) {
@@ -203,9 +212,12 @@
     }
     function matchingItems() {
       if (!state.catalog) return [];
+      const available = new Set((state.lessons?.items || []).map(x => x.piece_id));
       const subset = state.catalog.items.filter(item => (
         (state.family === "all" || state.family === item.family) &&
-        (state.evidence === "all" || item.variants.some(v => v.evidence_status === state.evidence))
+        (state.evidence === "all" || item.variants.some(v => v.evidence_status === state.evidence)) &&
+        (state.lessonStatus === "all" || (state.lessonStatus === "indexed" && available.has(item.id)) ||
+          (state.lessonStatus === "pending" && !available.has(item.id)))
       ));
       const keyword = norm(state.term.trim());
       let found = subset;
@@ -231,9 +243,11 @@
       for (const item of list) {
         const card = node("button","piece"); card.type = "button";
         card.setAttribute("aria-pressed",String(state.selected === item.id));
+        const hasLesson = state.lessons?.items.some(x => x.piece_id === item.id);
         card.append(node("span","num",String(item.id).padStart(2,"0")),
           node("strong","",item.title),
-          node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"));
+          node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"),
+          node("small","",hasLesson ? "Có sổ câu đối chiếu V3.2 (chưa nghiệm thu)" : "Chưa có chỉ mục từng câu đủ chuẩn"));
         card.addEventListener("click", () => {
           state.selected = item.id;
           updateList(); updateDetail();
@@ -272,9 +286,21 @@
         wrapper.append(meta,node("p","",v.qualification),link("Xem nguồn đối chiếu ↗",v.reference_url));detail.append(wrapper);
       }
       const links=node("div","detail-links");
+      const indexed = state.lessons?.items.find(x => x.piece_id === item.id);
+      const availability = node("p", "", indexed
+        ? "Bài này có sổ " + indexed.phrase_count + " vị trí nhãn câu theo hệ " + indexed.variant_id +
+          ". Chưa có nhịp/ngón/song lang được nghiệm thu."
+        : "Chưa có sổ từng câu đủ chuẩn cho V3.2; không suy diễn từ số câu trong danh mục.");
+      detail.append(availability);
       const pageLink = node("a", "piece-page-link", "Trang riêng của bản Tổ ↗");
       pageLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/";
-      links.append(pageLink, researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
+      links.append(pageLink);
+      if (indexed) {
+        const studyLink = node("a","study-link","Học từng câu theo nguồn ↗");
+        studyLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/#hoc-tung-cau";
+        links.append(studyLink);
+      }
+      links.append(researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
       detail.append(links);
     }
     function filterFamily(family) {
@@ -295,7 +321,9 @@
       byId("search").value = "";
       state.family = "all";
       state.evidence = "all";
+      state.lessonStatus = "all";
       byId("evidence").value = "all";
+      byId("lesson-status").value = "all";
       for (const tab of document.querySelectorAll(".tab")) {
         tab.setAttribute("aria-pressed", String(tab.dataset.group === "all"));
       }
@@ -304,14 +332,19 @@
     document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
     byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
     byId("evidence").addEventListener("change", e => {state.evidence=e.target.value;updateList();});
+    byId("lesson-status").addEventListener("change", e => {state.lessonStatus=e.target.value;updateList();});
     byId("sort-order").addEventListener("change", e => {state.sort=e.target.value;updateList();});
     async function start(){
       try{
-        const resp = await fetch(DATA_URL,{cache:"no-store"});
-        if(!resp.ok) throw new Error("HTTP "+resp.status);
-        const data=await resp.json();
-        if(!Array.isArray(data.items)||data.items.length!==20||data.catalog_status!=="research_preview") throw new Error("Không đúng định dạng danh mục V3");
-        state.catalog=data;
+        const [resp, lessonResp] = await Promise.all([
+          fetch(DATA_URL,{cache:"no-store"}),fetch(PHRASE_URL,{cache:"no-store"})
+        ]);
+        if(!resp.ok||!lessonResp.ok) throw new Error("Không tải được JSON danh mục/chỉ mục: " + resp.status + "/" + lessonResp.status);
+        const [data, lessonData] = await Promise.all([resp.json(),lessonResp.json()]);
+        if(!Array.isArray(data.items)||data.items.length!==20||data.catalog_status!=="research_preview") throw new Error("Không đúng danh mục V3");
+        if(lessonData.schema_version!=="3.2.0-alpha.1"||!Array.isArray(lessonData.items)||lessonData.items.length!==2||lessonData.items.reduce((n,x)=>n+x.phrases.length,0)!==72) throw new Error("Chỉ mục V3.2 thiếu dữ liệu đã kiểm.");
+        state.catalog=data; state.lessons=lessonData;
+        byId("count-lessons").textContent=lessonData.items.length;
         const hashMatch=location.hash.match(/^#bai-(\d{2})$/);
         state.selected=hashMatch?Number(hashMatch[1]):1;
         byId("count-pieces").textContent=data.items.length;
