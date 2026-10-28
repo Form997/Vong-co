@@ -11,6 +11,7 @@
 | **V1 — Đặt nền tư liệu** | **12/10/2026** (commit đầu tiên, không suy ra ngày bắt đầu làm ngoài GitHub) | Bắt đầu xây dựng thư mục 20 bản Tổ, đặt hệ thống nguồn, lời ca, ký âm tham khảo, nhận diện các dị bản và ghi nhận vấn đề còn thiếu | **397,63 KiB** (407.176 byte) | 64 |
 | **V2 — Từ danh mục đến hồ sơ có chứng cứ** | **19/10/2026** (commit sớm nhất có nhãn V2 trong lịch sử); **27/10/2026** bắt đầu giai đoạn nghiệm thu V2 theo quy chế | Mở biên bản kiểm nguồn **20/20 bản**, xây sổ câu theo nguồn/trang, bóc tách khác biệt dị bản, cập nhật README và danh mục trích dẫn; **0/20 bài được nghiệm thu diễn xướng** | **942,96 KiB** (965.588 byte) | 112 |
 | **V3.0-alpha — Dữ liệu tra cứu có chứng cứ** | **28/10/2026**, có commit khởi động riêng | JSON **20 bài + 30 hệ bản/dị bản**, lược đồ JSON, validator, trang tra cứu tiếng Việt trên điện thoại; **39 phép thử và 170 liên kết nội bộ đạt trên GitHub Actions**; chưa có bản thu/âm nhạc nghiệm thu hoặc website Pages đã triển khai | **1.055,84 KiB** (1.081.181 byte) | 133 |
+| **V3.1 — 20 trang bài có thể tra cứu độc lập** | **28/10/2026**, nhánh `v3.1-development` | **20 trang chi tiết sinh tự động**, 3 bộ lọc mức chứng cứ, A–Z tiếng Việt, liên kết nguồn V2, sitemap và kiểm thử trình duyệt; **45 bài Python đạt**, chưa đưa lên website công khai | **1.103,69 KiB** (1.130.175 byte) | 140 |
 
 ### Mốc đo và bằng chứng
 
@@ -68,7 +69,28 @@
 
 **Mức hoàn thành âm nhạc:** **0/20** bài được nghiệm thu diễn xướng, không thay đổi. **V3 vẫn alpha**.
 
-## 5. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
+### V3.0 đã xuất bản website (sau các mốc alpha ban đầu)
+
+**28/10/2026:** sau khi cấu hình nhánh được phép triển khai, [GitHub Pages run #40675923989, attempt 3](https://github.com/Form997/Vong-co/actions/runs/40675923989) có **Build Success và Deploy Success**. Địa chỉ do GitHub Deploy xác nhận: [https://form997.github.io/Vong-co/](https://form997.github.io/Vong-co/). Các mục V3.0 ở phần trên ghi “chưa có website” là **trạng thái tại snapshot trước khi triển khai**, không phải trạng thái hiện hành.
+
+## 5. V3.1 — Mỗi bản Tổ có một trang riêng và đường dẫn trở về chứng cứ
+
+**Ngày khởi động:** **28/10/2026** theo [commit khởi động V3.1](https://github.com/Form997/Vong-co/blob/v3.1-development/docs/v3.1-khoi-dong.md). **Nhánh:** `v3.1-development`, tách từ `v3-development`.
+
+**Những điểm mới đã làm được:**
+1. **20 địa chỉ riêng cho 20 bản Tổ:** từ một danh mục chung, mỗi bài có trang HTML được sinh từ JSON lúc build; hỗ trợ tiêu đề, phân nhóm, dị bản/hệ câu, nguồn, cảnh báo chưa nghiệm thu, bài trước/sau. Người đọc có thể mở đúng bài mình muốn; **không đưa ký âm, lời ca hoặc MP3 chưa được cấp phép** vào các trang này.
+2. **Tìm kiếm và duyệt danh mục dễ hơn:** thêm lọc mức chứng cứ `source_indexed / source_reported / derived_unverified`, sắp xếp theo bảng chữ cái tiếng Việt, giữ tìm kiếm tên không dấu và lọc 4 nhóm Bắc–Lễ–Nam–Oán.
+3. **Đường dẫn nguồn và công bố minh bạch:** từng hệ tham chiếu có link nguồn; trang bài đưa người đọc đến hồ sơ và biên bản V2. Sinh sitemap có 22 URL, gắn tiêu đề SEO và canonical theo từng bản.
+4. **Kiểm thử phần mềm thực tế:** [45 bài Python thành công](https://github.com/Form997/Vong-co/actions/runs/40688707624); [Chromium kiểm tìm kiếm, bộ lọc, sắp xếp, trải nghiệm 390 px và 20 URL trả HTTP 200](https://github.com/Form997/Vong-co/actions/runs/40688596819).
+5. **Đóng gói an toàn trước khi triển khai:** [workflow build V3.1](https://github.com/Form997/Vong-co/actions/runs/40688707588) đã tạo **27 tệp HTML/JSON liên quan, tổng 197.920 byte**. Đây là **dung lượng gói web chưa nén**, khác số liệu kho Git.
+
+**Dung lượng bản chụp V3.1:** **1.130.175 byte** = **1.130,18 KB** = **1.103,69 KiB**, **140 tệp**, đo từ Git tree tại [commit `f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d). **Không** coi số này là dung lượng ZIP hoặc kích thước nhánh luôn cố định. Ngày bắt đầu và thời điểm đo được giữ riêng.
+
+**Tình trạng:** V3.1 **đã code và kiểm thử, chưa hợp nhất vào `v3-development`, chưa công bố thay thế website V3.0**. Dữ liệu chuyên môn vẫn **20/20 hồ sơ có biên bản, 0/20 bài nghiệm thu diễn xướng**. Chưa có quyền tái phân phối âm thanh/ca từ hoặc chứng nhận nghệ nhân.
+
+**Liên kết:** [Giới thiệu V3.1](v3.1-khoi-dong.md) · [Hướng dẫn chạy thử V3.1](../web/v3/README.md) · [Mã tạo trang](../scripts/v3_build_site.py).
+
+## 6. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.
 
