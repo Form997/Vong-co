@@ -109,6 +109,26 @@ class V3CatalogTests(unittest.TestCase):
         data["started_on"] = "2027-01-01"
         self.check_invalid(data, "Ngày khởi động V3")
 
+    def test_unexpected_root_field_rejected(self):
+        data = copy.deepcopy(self.catalog)
+        data["approved"] = True
+        self.check_invalid(data, "trường lạ")
+
+    def test_unexpected_piece_field_rejected(self):
+        data = copy.deepcopy(self.catalog)
+        data["items"][0]["fake_audio"] = "allowed"
+        self.check_invalid(data, "trường lạ")
+
+    def test_unexpected_variant_field_rejected(self):
+        data = copy.deepcopy(self.catalog)
+        data["items"][0]["variants"][0]["approved_by_unesco"] = True
+        self.check_invalid(data, "trường lạ")
+
+    def test_duplicate_alias_rejected(self):
+        data = copy.deepcopy(self.catalog)
+        data["items"][19]["aliases"].append("phụng cầu")
+        self.check_invalid(data, "tên trùng")
+
     def test_null_beats_can_be_used_for_unknown(self):
         data = copy.deepcopy(self.catalog)
         data["items"][0]["variants"][0]["beats_per_phrase"] = None
