@@ -24,7 +24,7 @@
 > **Research status — 28 October 2026.** **20/20** composition dossiers have a V2 **source-review record**; **0/20** compositions have passed performance-level validation. This is a developing, source-grounded research project, **not** a certified score/audio collection or a license-cleared AI training dataset. Green software-test badges do not mean musical validation.
 
 > [!NOTE]
-> **V3.0-alpha began on 28 October 2026.** [20-piece catalog with 30 documented systems/variants](data/v3/catalog.json), [JSON Schema](data/v3/schema.json), [Vietnamese search interface](web/v3/README.md), and [successful V3 GitHub Actions tests](https://github.com/Form997/Vong-co/actions/runs/40653394677) (**32 tests passed and 144 internal links checked** at the first fixed snapshot). The web viewer is source code **not yet deployed on GitHub Pages**. This is an **alpha research preview**, not a music performance certification.
+> **V3.0-alpha began on 28 October 2026.** [20-piece catalog with 30 documented systems/variants](data/v3/catalog.json), [JSON Schema](data/v3/schema.json), [Vietnamese search interface](web/v3/README.md), and [successful V3 GitHub Actions tests](https://github.com/Form997/Vong-co/actions/runs/40654050406) (**39 tests passed, 170 internal links checked**, including a real local HTTP smoke test). The web viewer is source code **not yet deployed on GitHub Pages**. This is an **alpha research preview**, not a music performance certification.
 
 ---
 
@@ -95,9 +95,9 @@ The project groups the 20 pieces into **Sáu Bắc (6)**, **Bảy Lễ (7)**, **
 |---|---|---|---:|
 | **V1 — The evidence base** | **12 October 2026** | Twenty folders, sources, variants, auditing notes | **397.63 KiB** |
 | **V2 — Tracing each phrase** | **19 October 2026** (V2-labeled commit); formal review framework **27 October** | Twenty source-review minutes, phrase/page ledgers, documented discrepancies; **no performance certifications** | **942.96 KiB** |
-| **V3.0-alpha — Evidence-aware browsing** | **28 October 2026** | 20-piece JSON catalog, 30 variant records, automated checks and Vietnamese static viewer | **1,041.85 KiB** |
+| **V3.0-alpha — Evidence-aware browsing** | **28 October 2026** | 20-piece JSON catalog, 30 variant records, automated checks and Vietnamese static viewer | **1,055.84 KiB** |
 
-V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha measures **1,066,857 bytes / 132 files** at [`7ff24c4`](https://github.com/Form997/Vong-co/tree/7ff24c4f9399a482cfee14c33119f0ddc4d27f35). These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
+V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha measures **1,081,181 bytes / 133 files** at [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
 
 [**Full version ledger and future-version template (Vietnamese)**](docs/nhat-ky-phien-ban.md) · [Reproducible Python size reporter](scripts/thong-ke-dung-luong.py)
 
