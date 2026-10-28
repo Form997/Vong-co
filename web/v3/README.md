@@ -14,6 +14,14 @@ Website vẫn có **20 trang riêng / 30 hệ bản thuộc danh mục V3**, đ�
 - [JSON 72 câu](../../data/v3_2/phrase_index.json), [JSON Schema](../../data/v3_2/schema.json) và [trình kiểm dữ liệu theo sổ V2](../../scripts/v3_2_validate.py), không cần API bên ngoài.
 - Link đến [quy chế thẩm định](../../docs/v3.2-quy-trinh-tham-dinh.md) và [phiếu thực hành](../../docs/v3.2-phieu-thuc-hanh.md). Mọi trang ghi **0/20 nghiệm thu diễn xướng**, chưa có bản ghi có quyền tái phát.
 
+## Thiết kế UI mới — Heritage Editorial (28/10/2026)
+
+**Đã phát hành sau [PR #9](https://github.com/Form997/Vong-co/pull/9).** Không còn toàn bộ trang xanh đen với các hộp dày đặc: nay dùng **nền ngà `#f6f4ee`**, **xanh rừng `#10382f`**, **vàng đồng `#c79c5d`**; font hệ thống kết hợp Georgia cho tiêu đề. Trang đầu có hình tròn đồng tâm vẽ bằng CSS **không phải ảnh đàn/ảnh nghệ nhân**. Dễ đọc trên màn hình nhỏ và không cần CDN.
+
+Trang chính có khối giới thiệu rõ nét, thanh tìm kiếm lớn, tab lọc nhóm, bộ lọc chứng cứ, thẻ bài và thông tin nguồn song song; trang từng bài có hero nhận diện, nút chuyển đến nguồn/bài học, accordion từng câu dễ bấm. Có `focus-visible`, `prefers-reduced-motion`, phông chữ fallback và nhãn biểu mẫu. Không sử dụng ảnh/font ngoài hay trình phát âm thanh chưa có quyền.
+
+**Đối chứng kỹ thuật:** [62 Python tests đạt](https://github.com/Form997/Vong-co/actions/runs/40697296133); [Chromium 5 kích thước màn hình đạt và có ảnh](https://github.com/Form997/Vong-co/actions/runs/40697296268); [Pages đã triển khai](https://github.com/Form997/Vong-co/actions/runs/40697296276). Gói HTML/JSON xuất bản: **29 tệp, 462.065 byte** tại lần build này.
+
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
 Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:
