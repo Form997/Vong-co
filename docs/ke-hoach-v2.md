@@ -1,3 +1,5 @@
+> **MỐC MỚI 28/10/2026: 18/20 bài đã mở biên bản nguồn V2; 0/20 nghiệm thu diễn xướng.** [Bài 18 – Phụng Hoàng](../ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) có [sổ 48 vị trí dự kiến](../ban-to/18-phung-hoang/v2-ra-soat-48-cau.md). **Chưa xác nhận trực tiếp ký âm từng câu**, chưa có lời 48 câu/âm thanh/giấy phép; không tính sổ vị trí là kiểm nhạc đạt.
+
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
 > **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 17/20 bài đã mở biên bản rà nguồn V2; 0/20 bài được nghiệm thu diễn xướng.** Đã mở bài đầu **Bốn Oán: Tứ Đại Oán (17)**; ba bài 18–20 chưa mở V2.
