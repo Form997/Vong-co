@@ -11,7 +11,7 @@
 | **V1 — Đặt nền tư liệu** | **12/10/2026** (commit đầu tiên, không suy ra ngày bắt đầu làm ngoài GitHub) | Bắt đầu xây dựng thư mục 20 bản Tổ, đặt hệ thống nguồn, lời ca, ký âm tham khảo, nhận diện các dị bản và ghi nhận vấn đề còn thiếu | **397,63 KiB** (407.176 byte) | 64 |
 | **V2 — Từ danh mục đến hồ sơ có chứng cứ** | **19/10/2026** (commit sớm nhất có nhãn V2 trong lịch sử); **27/10/2026** bắt đầu giai đoạn nghiệm thu V2 theo quy chế | Mở biên bản kiểm nguồn **20/20 bản**, xây sổ câu theo nguồn/trang, bóc tách khác biệt dị bản, cập nhật README và danh mục trích dẫn; **0/20 bài được nghiệm thu diễn xướng** | **942,96 KiB** (965.588 byte) | 112 |
 | **V3.0-alpha — Dữ liệu tra cứu có chứng cứ** | **28/10/2026**, có commit khởi động riêng | JSON **20 bài + 30 hệ bản/dị bản**, lược đồ JSON, validator, trang tra cứu tiếng Việt trên điện thoại; **39 phép thử và 170 liên kết nội bộ đạt trên GitHub Actions**; chưa có bản thu/âm nhạc nghiệm thu hoặc website Pages đã triển khai | **1.055,84 KiB** (1.081.181 byte) | 133 |
-| **V3.1 — 20 trang bài có thể tra cứu độc lập** | **28/10/2026**, nhánh `v3.1-development` | **20 trang chi tiết sinh tự động**, 3 bộ lọc mức chứng cứ, A–Z tiếng Việt, liên kết nguồn V2, sitemap và kiểm thử trình duyệt; **45 bài Python đạt**, chưa đưa lên website công khai | **1.103,69 KiB** (1.130.175 byte) | 140 |
+| **V3.1 — 20 trang bài có thể tra cứu độc lập** | **28/10/2026**, nhánh khởi động `v3.1-development` | **20 trang HTML sinh tự động**, 3 mức lọc chứng cứ, A–Z tiếng Việt, liên kết nguồn V2, sitemap; **45 bài Python và Chromium đạt, Pages đã triển khai** | **1.111,14 KiB** (1.137.811 byte) | 140 |
 
 ### Mốc đo và bằng chứng
 
@@ -86,7 +86,9 @@
 
 **Dung lượng bản chụp V3.1:** **1.130.175 byte** = **1.130,18 KB** = **1.103,69 KiB**, **140 tệp**, đo từ Git tree tại [commit `f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d). **Không** coi số này là dung lượng ZIP hoặc kích thước nhánh luôn cố định. Ngày bắt đầu và thời điểm đo được giữ riêng.
 
-**Tình trạng:** V3.1 **đã code và kiểm thử, chưa hợp nhất vào `v3-development`, chưa công bố thay thế website V3.0**. Dữ liệu chuyên môn vẫn **20/20 hồ sơ có biên bản, 0/20 bài nghiệm thu diễn xướng**. Chưa có quyền tái phân phối âm thanh/ca từ hoặc chứng nhận nghệ nhân.
+**Dung lượng phiên bản phát hành V3.1:** tại [merge commit `5243541`](https://github.com/Form997/Vong-co/tree/5243541e3ba9e6bb5953994188853c6fd6612248), **140 tệp, 1.137.811 byte = 1.137,81 KB = 1.111,14 KiB**. Con số trên là snapshot *Git* chưa nén; **27 tệp / 197.920 byte** là gói website được tạo riêng. Mốc [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d) ở trên là số đo **trước phát hành** và được giữ làm đối chứng, không sửa/xóa lịch sử.
+
+**Tình trạng:** V3.1 **đã hợp nhất qua [PR #5](https://github.com/Form997/Vong-co/pull/5) và triển khai thành công [Pages #40689588576](https://github.com/Form997/Vong-co/actions/runs/40689588576)**. Bộ kiểm thử trên nhánh phát hành: [Python #40689588560](https://github.com/Form997/Vong-co/actions/runs/40689588560) và [Chromium #40689588524](https://github.com/Form997/Vong-co/actions/runs/40689588524) đều **Success**. Dữ liệu chuyên môn vẫn **20/20 hồ sơ có biên bản, 0/20 bài nghiệm thu diễn xướng**. Chưa có quyền tái phân phối âm thanh/ca từ hoặc chứng nhận nghệ nhân.
 
 **Liên kết:** [Giới thiệu V3.1](v3.1-khoi-dong.md) · [Hướng dẫn chạy thử V3.1](../web/v3/README.md) · [Mã tạo trang](../scripts/v3_build_site.py).
 
