@@ -1,5 +1,22 @@
 # BẢN TỔ 13 — TIỂU KHÚC (BÀI TIỂU)
 
+## V2 — NGHIỆM THU KIỂM NGUỒN TIỂU KHÚC (28/10/2026)
+
+**[Biên bản V2 (9 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ 29 câu có trang in và chữ kết](v2-ra-soat-29-cau.md)**.
+
+**ĐÍNH CHÍNH QUAN TRỌNG V1:** Đã tìm và xem **ảnh trực tiếp** sách **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III, 1997, trang in 250–253**. Phần **Tiểu Khúc 29 câu nhịp tư, song lang 3–4** có:
+- **29/29 ký âm**: tr.250 **câu 01–12**, tr.252 **13–29**.
+- **29/29 nhãn lời *Dữ Thúc thành hôn***: tr.251 **01–12**, tr.253 **13–29**; sách ghi **Cao Hoài Sang (1940)**. Trước đây V1 còn ghi chưa tìm được tổng phổ đủ 29 câu có trang nguồn kiểm; **mức thiếu nguồn này đã được khắc phục**, không đồng nghĩa đã có quyền chép lại hay đã thẩm âm.
+- **Bốn lớp 10+7+8+4**, lớp IV **26–29**. Tr.250–251 có **Vạn Giá câu 42–47 ở phần trên**; tr.252–253 có **Ngũ Đối Ai** ở bên dưới câu 29 Tiểu Khúc. **Không lấy nhầm sang bản Tổ 13 hoặc tạo thêm bản Tổ**.
+- **Bộ lời thứ hai từ ấn phẩm:** [Nhị Tấn tập V, tr.503–504](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%205%20-%20Nhi%20Tan.pdf) có **29 câu lời *Bàng Quyên chặt chơn Tôn Tẫn***, ghi **Thái Thụy Phong**. Đây **không phải tổng phổ ký âm Tiểu Khúc trong tập III**.
+- **Bộ lời từ chương trình VOH 2022:** *Anh hùng Nguyễn Trung Trực* ghi **Thiếu Bá** với chương trình học và ráp đủ bốn lớp. Không gộp ba bộ lời; khi dùng AI/MCP phải trả **tác giả của đúng bộ lời**, không gán tác giả lời thành tác giả lòng bản.
+- Bản Cổ Nhạc Nam Bộ [Tiểu Khúc 29 câu](https://conhacnambo.com/mobile/topics_body_Lyrics.php?topic_id=418) được đăng **theo Nhị Tấn**, không tính là nguồn in sơ cấp độc lập.
+- **Đạt kiểm hiện diện 29 nhãn nhạc và 29 nhãn lời S1, 0/29 câu đạt nghiệm thu thực tấu**. Song lang/ngón/hơi Lễ, thời điểm audio, giấy phép và người duyệt đều **CHỜ NGHIỆM THU**.
+
+> Các mục dưới đây là **hồ sơ lịch sử V1**; không chỉnh sửa nhánh `v1-frozen`. Khi thông tin cũ nói “chưa tìm được ký âm đầy đủ”, áp dụng phần **đính chính có dẫn chứng V2** phía trên.
+
+---
+
 **Nhóm:** Bảy Lễ / Thất Chánh · **Bản tham chiếu:** 29 câu, nhịp tư · **Ngày khảo cứu:** 27/10/2026.
 
 > **Kết quả:** Đã đối chiếu 29 câu, bốn lớp và tìm được 2 nguồn lời ca có tên tác giả, chương trình truyền thanh hướng dẫn ca đủ bốn lớp và bản thu đờn kìm của Ba Tu. **Chưa nhập bản ký âm 29 câu đã duyệt từng nốt, chưa xác minh quyền tái bản bản thu/lời.**
