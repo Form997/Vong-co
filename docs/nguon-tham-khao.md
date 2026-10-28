@@ -1,6 +1,6 @@
 # Nguồn tham khảo, xuất xứ tư liệu và giới hạn sử dụng
 
-> **HAI ĐẤT · 20 bản Tổ đờn ca tài tử Nam Bộ** · Đối chiếu liên kết ngày **27/10/2026**. Đây là **danh mục nguồn đã dùng để nghiên cứu và kiểm tra dự án**, không phải danh sách tài liệu do dự án sở hữu hay có giấy phép tái bản. Một số tài liệu khác còn được ghi trực tiếp trong hồ sơ từng bài.
+> **HAI ĐẤT · 20 bản Tổ đờn ca tài tử Nam Bộ** · Cập nhật sổ nguồn ngày **28/10/2026**. Đây là **danh mục nguồn đã dùng để nghiên cứu và kiểm tra dự án**, không phải danh sách tài liệu do dự án sở hữu hay có giấy phép tái bản. Một số tài liệu khác còn được ghi trực tiếp trong hồ sơ từng bài.
 
 ## Cách đánh giá nguồn
 
@@ -59,6 +59,12 @@
 | REF-24 | **Cổ Nhạc Nam Bộ – Truyền Nguyễn đăng 15/02/2021**, *6. Vạn Giá – Bảy Bản Tổ (Hạ)* | Có **47 số câu chữ nhạc và năm lớp 8+6+10+14+9**, trang ghi **“Theo tài liệu NS Nhị Tấn”**; là **bản đăng lại**, không phải chứng cứ gốc độc lập thứ hai. | [Vạn Giá – 47 câu, bản đăng lại](https://conhacnambo.com/destop/topics_list.php?topic_id=419) · Chưa rõ quyền sao chép/đào tạo AI |
 | REF-25 | **TKaraoke – *Vạn Giá 47 câu – Nhẫn nhịn***, trang ghi tác giả **Hoài Như** | Có **47 nhãn câu lời hiện đại**, dùng để ghi nhận **bộ lời riêng khác *Biệt mãi thanh lâu***; chưa được nguồn sách/người soạn xác minh độc lập. | [Nhẫn nhịn – TKaraoke](https://lyric.tkaraoke.com/74557/van_gia__47_cau__tua_bai_ca__nhan_nhin.html) · Không phải nguồn ký âm/giấy phép tái bản |
 
+| REF-26 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)**, Trung tâm Văn hóa Quận 8 / Câu lạc bộ Đờn ca tài tử Quận 8 | **Tiểu Khúc**, 29 câu nhịp tư/song lang 3–4, **4 lớp 10–7–8–4**. **Ký âm tr.250 (01–12), 252 (13–29)**; lời *Dữ Thúc thành hôn* **tr.251 (01–12), 253 (13–29)**, sách ghi **Cao Hoài Sang (1940)**. Đã xem ảnh đủ 4 trang, kiểm ranh với Vạn Giá và Ngũ Đối Ai. | [PDF tập III, tr.250–253](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Chưa có quyền sao chép lại chữ nhạc/lời |
+| REF-27 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập V (1997), phụ lục tr.503–504** | **29 câu lời *Bàng Quyên chặt chơn Tôn Tẫn***, ghi **Thái Thụy Phong**. Đã xem ảnh hai trang. **Là lời ca riêng, không phải ký âm toàn bản hoặc chứng nhận khớp bản nhạc tập III.** | [PDF tập V, phụ lục tr.503–504](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%205%20-%20Nhi%20Tan.pdf) · Quyền tái bản chưa xác minh |
+| REF-28 | **Cổ Nhạc Nam Bộ**, Truyền Nguyễn, 11/02/2021 – *7. Tiểu Khúc – Bảy bản Tổ (Hạ)* | Đăng **29 câu chữ nhạc** và 4 lớp **10–7–8–4**, ghi **“Theo tài liệu NS Nhị Tấn”**. Chỉ là nguồn dẫn lại, **không tính nguồn ký âm gốc độc lập**. | [Tiểu Khúc 29 câu](https://conhacnambo.com/mobile/topics_body_Lyrics.php?topic_id=418) · Chưa kiểm quyền phát lại |
+| REF-29 | **VOH – Thanh âm dân tộc (2022)**, hướng dẫn Tiểu Khúc với lời *Anh hùng Nguyễn Trung Trực* | Ghi **tác giả lời Thiếu Bá**, hướng dẫn bốn lớp, lớp I **1–10**, lớp III **18–25**, lớp IV **26–29**, có bài **ráp 4 lớp**. Nêu danh tính người hướng dẫn và ban đệm. **Chưa nghe kiểm phách với sách Nhị Tấn**. | [Lớp I 14/10/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-lop-1-anh-hung-nguyen-trung-truc-14220922000010432.html) · [Lớp IV 04/11/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-lop-4-anh-hung-nguyen-trung-truc-14220922000010436.html) · [Ráp 4 lớp 11/11/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-rap-4-lop-anh-hung-nguyen-trung-truc-14220922000010437.html) |
+| REF-30 | **Karaoke Cải Lương Tổng hợp – *Tiểu Khúc 29 câu / Dữ Thúc Thành Hôn*** | Trang giới thiệu ghi **Cao Hoài Sang**. Dùng như đối chứng nhận diện tên bài lời, **không thay thế sách Nhị Tấn** về xuất xứ, không cấp quyền khai thác thương mại. | [Karaoke Tiểu Khúc 29 câu](https://www.karaoke.cailuongtoiyeu.com/karaoke-tieu-khuc-29-cau.html) · Chưa xác minh quyền |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -79,6 +85,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–12](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–13](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
