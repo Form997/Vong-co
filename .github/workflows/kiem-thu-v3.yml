@@ -5,6 +5,7 @@ on:
     branches:
       - v3-development
       - v3.1-development
+      - v3.2-development
   pull_request:
     branches:
       - main
@@ -36,6 +37,8 @@ jobs:
 
       - name: Kiem dinh danh muc JSON va lien ket 20 ho so
         run: python scripts/v3_validate.py --json
+      - name: Kiem 72 nhan cau dung theo so nguon V2
+        run: python scripts/v3_2_validate.py --json
 
       - name: Kiem tra lien ket tai lieu noi bo
         run: |
@@ -80,4 +83,4 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           python scripts/thong-ke-dung-luong.py \
-            --refs v1-frozen v2-development v3-development v3.1-development --json
+            --refs v1-frozen v2-development v3-development v3.1-development v3.2-development --json
