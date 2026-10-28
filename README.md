@@ -49,6 +49,14 @@ Trong trang bài, người học mở từng câu, đọc nguồn và ghi điề
 
 **Tình trạng mới nhất:** [V3.2 đã phát hành trên GitHub Pages](https://github.com/Form997/Vong-co/actions/runs/40694415309) sau khi [PR #8](https://github.com/Form997/Vong-co/pull/8) được hợp nhất; [60/60 bài Python trên nhánh phát hành đạt](https://github.com/Form997/Vong-co/actions/runs/40694415249) và [Chromium thực tế đạt](https://github.com/Form997/Vong-co/actions/runs/40694415286). Mở [bài Lưu Thủy Trường](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/#hoc-tung-cau) hoặc [Phụng Cầu](https://form997.github.io/Vong-co/bai/20-phung-cau/#hoc-tung-cau) để xem các vị trí câu được dẫn nguồn.
 
+#### V3.2 · Làm mới giao diện thư viện — 28/10/2026
+
+Sau khi hoàn tất phần học theo nguồn, dự án đã phát hành **giao diện mới theo phong cách thư viện di sản** qua [Pull Request #9](https://github.com/Form997/Vong-co/pull/9). Phối màu **ngà / xanh rừng / vàng đồng**, trang chào có đồ họa đồng tâm bằng CSS tự viết, bộ lọc và thẻ bài rõ ràng hơn; **20 trang tác phẩm cùng 72 nhãn câu** dùng cùng hệ thiết kế. Không tải font, ảnh stock hay thư viện giao diện từ bên thứ ba.
+
+**Đã phát hành trên GitHub Pages:** [Deploy thành công #40697296276](https://github.com/Form997/Vong-co/actions/runs/40697296276) · [62 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40697296133) · [Chromium kiểm 360/390/768/1024/1366 px](https://github.com/Form997/Vong-co/actions/runs/40697296268). Không đổi dữ liệu nguồn và chưa có bài nào được nghiệm thu diễn xướng.
+
+**Kích thước tại commit phát hành UI [`a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15):** **150 tệp, 1.275.924 byte = 1.246,02 KiB** (mã nguồn Git chưa nén); gói website riêng **29 tệp, 462.065 byte**, không phải tệp ZIP.
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
