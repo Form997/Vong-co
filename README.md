@@ -1,168 +1,135 @@
-# VỌNG CỔ · 20 BẢN TỔ ĐỜN CA TÀI TỬ NAM BỘ
+<h1 align="center">HAI ĐẤT</h1>
 
-[**English / International AI & Research Overview**](README.en.md)
+<p align="center"><strong>20 BẢN TỔ · ĐỜN CA TÀI TỬ NAM BỘ</strong></p>
 
-**Gìn giữ tiếng đờn bằng tri thức có nguồn. Kết nối di sản với thế hệ người học và công nghệ AI.**
+<p align="center">Gìn giữ tiếng đờn bằng tư liệu có nguồn.<br>
+Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học với nghiên cứu và công nghệ.</p>
 
-> **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
->
-> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **17/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
+<p align="center">
+  <a href="README.en.md">English</a> ·
+  <a href="#bắt-đầu-tại-đây">Bắt đầu</a> ·
+  <a href="#danh-mục-20-bản-tổ">20 bản Tổ</a> ·
+  <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
+  <a href="CONTRIBUTING.md">Đóng góp</a>
+</p>
 
-[**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
+<p align="center">
+  <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml"><img alt="GitHub Actions - V2 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml/badge.svg?branch=v2-development"></a>
+  <img alt="V2: 20 trên 20 hồ sơ kiểm nguồn đã mở" src="https://img.shields.io/badge/V2-20%2F20%20h%E1%BB%93%20s%C6%A1%20ngu%E1%BB%93n-28776D">
+  <img alt="Chưa có bài nghiệm thu diễn xướng" src="https://img.shields.io/badge/Di%E1%BB%85n%20x%C6%B0%E1%BB%9Bng-0%2F20%20nghi%E1%BB%87m%20thu-8B6F47">
+</p>
 
-## Vì sao HAI ĐẤT được xây dựng?
+> [!NOTE]
+> **Trang công khai trên nhánh `main`** được giới thiệu riêng; các nguồn và biên bản **V2** nằm trên [nhánh `v2-development`](https://github.com/Form997/Vong-co/tree/v2-development). Liên kết tới V2 là tài liệu nghiên cứu đang phát triển, **không có nghĩa toàn bộ V2 đã hợp nhất vào `main`**.
 
-Đờn ca tài tử Nam Bộ là nghệ thuật gắn với người đờn, người ca, làn hơi, lối nhấn, nhịp song lang và sự truyền dạy giữa các thế hệ. **UNESCO ghi danh nghệ thuật Đờn ca tài tử năm 2013**, nhưng chính dự án GitHub này **không phải công trình do UNESCO chứng nhận, bảo trợ hoặc đồng phát triển**. [Xem quyết định UNESCO 8.COM 8.31](https://ich.unesco.org/en/decisions/8.COM/8.31).
-
-Tên kho trên GitHub là `Vong-co`, nhưng **phạm vi hiện tại là 20 bản Tổ đờn ca tài tử**, không phải tuyên bố kho đã chứa mọi bài vọng cổ/cải lương.
-
-**Vấn đề chúng tôi muốn giải quyết:** người học có thể tìm được tên một bản nhạc, nhưng lại gặp các cách ghi **Vắn/Trường, 26/34/52 câu, nhịp tư/nhịp tám, lời ca khác tác giả và bản diễn tấu khác truyền bản**. AI rất dễ nhầm các nguồn này thành một “bản chuẩn” duy nhất nếu không có hồ sơ dẫn chứng.
-
-**HAI ĐẤT lựa chọn cách làm khác:** mỗi bài có tên, nguồn, mã dị bản, đối chiếu câu/lớp/nhịp, biên bản phát hiện và trạng thái **đã kiểm hay chưa kiểm**. Gặp chỗ chưa đủ bằng chứng, dự án **ghi rõ chưa xác minh** thay vì sáng tác hoặc sửa cho có vẻ hoàn chỉnh.
-
-### Dự án dành cho ai?
-
-| Người sử dụng | Giá trị có thể khai thác |
-|---|---|
-| **Người học đờn, ca; nghệ nhân và giảng viên** | Tìm tên bài, phân lớp, nguồn bản ký âm/bộ lời; xem vấn đề cần đối chứng với cách diễn tấu thực tế |
-| **Nhà nghiên cứu âm nhạc, thư viện và đơn vị bảo tồn** | Lần theo nguồn, dị bản, cách đếm câu, những điểm bất đồng và lịch sử hiệu đính |
-| **Nhóm AI, RAG, NLP tiếng Việt và doanh nghiệp công nghệ văn hóa** | Thử nghiệm truy hồi có dẫn chứng, truy vấn hồ sơ từ GitHub và đọc trạng thái nghiệm thu thông qua **MCP chỉ đọc** |
-| **Người phát triển ứng dụng giáo dục** | Xây dựng chức năng tra cứu và học tập **sau khi đánh giá độ tin cậy, quyền sử dụng và giới hạn của từng nguồn** |
-
-## Khám phá 20 bản Tổ
-
-Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là **chỉ mục nội bộ của HAI ĐẤT**, không khẳng định mọi truyền thống đều sắp xếp giống nhau. Các thư mục Vắn cũ của bài 04 và 06 được giữ nguyên đường dẫn; **bản Trường được kiểm riêng ở V2**.
-
-| STT | Nhóm | Bản Tổ — mở hồ sơ nghiên cứu | Biên bản nghiệm thu V2 |
-|---:|---|---|---|
-| 01 | Sáu Bắc | [Lưu Thủy Trường](ban-to/01-luu-thuy-truong/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) |
-| 02 | Sáu Bắc | [Phú Lục Chấn](ban-to/02-phu-luc-chan/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md) |
-| 03 | Sáu Bắc | [Bình Bán Chấn](ban-to/03-binh-ban-chan/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) |
-| 04 | Sáu Bắc | [Cổ Bản (Vắn / Trường)](ban-to/04-co-ban-van/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md) |
-| 05 | Sáu Bắc | [Xuân Tình Chấn](ban-to/05-xuan-tinh-chan/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) |
-| 06 | Sáu Bắc | [Tây Thi (Vắn / Trường)](ban-to/06-tay-thi-van/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) |
-| 07 | Bảy Lễ | [Xàng Xê](ban-to/07-xang-xe/README.md) | [Xem biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) |
-| 08 | Bảy Lễ | [Ngũ Đối Thượng](ban-to/08-ngu-doi-thuong/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 09 | Bảy Lễ | [Ngũ Đối Hạ](ban-to/09-ngu-doi-ha/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 10 | Bảy Lễ | [Long Đăng](ban-to/10-long-dang/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 11 | Bảy Lễ | [Long Ngâm](ban-to/11-long-ngam/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 12 | Bảy Lễ | [Vạn Giá](ban-to/12-van-gia/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 13 | Bảy Lễ | [Tiểu Khúc](ban-to/13-tieu-khuc/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 14 | Ba Nam | [Nam Xuân](ban-to/14-nam-xuan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 15 | Ba Nam | [Nam Ai](ban-to/15-nam-ai/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 16 | Ba Nam | [Đảo Ngũ Cung](ban-to/16-dao-ngu-cung/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 18 | Bốn Oán | [Phụng Hoàng](ban-to/18-phung-hoang/README.md) | Chưa mở biên bản V2 |
-| 19 | Bốn Oán | [Giang Nam](ban-to/19-giang-nam/README.md) | Chưa mở biên bản V2 |
-| 20 | Bốn Oán | [Phụng Cầu](ban-to/20-phung-cau/README.md) | Chưa mở biên bản V2 |
-
-**Lưu ý quan trọng khi tra cứu:**
-- **Cổ Bản (04):** Trường **68 câu** và Vắn **34 câu** là hai hệ đối chiếu, **không cộng thành một bài 102 câu**.
-- **Tây Thi (06):** Trường **52 câu** và Vắn **26 câu**; nhãn “34 câu” trên một trang nguồn Vắn đã được chỉ ra là **không khớp 26 câu nội dung được đánh số** ở biên bản V2.
-- **Xàng Xê (07):** một số nguồn gọi lớp III **Xê**, nguồn khác **Xề**; có khác biệt trong cách diễn giải nhịp. Các cách ghi chưa được hòa giải bằng kiểm nghe.
-- **Ngũ Đối Thượng (08):** bản in 61 câu nhịp tư; hệ 60 câu được thuyết minh là **bỏ câu gốc 53**, nên đã lập bảng ánh xạ riêng tại V2. **Chưa nghe/duyệt bản 60 câu độc lập**.
-- **Ngũ Đối Hạ (09):** đã tìm được **ký âm 38 câu (Nhị Tấn tập III, tr.234/236)** cùng lời *Kim, Kiều hoa viên ngộ* **38 câu (tr.235/237)**; có hai phương án chia **5 lớp và 3 lớp**. Chưa kiểm thực tấu.
-- **Long Đăng (10):** tìm được ký âm đủ **40 câu trong Nhị Tấn tập III** (tr.238/240/242), với lời **Kiều vãng Trọng hiên** (tr.239/241/243); **tập V tr.501–502 là bộ lời khác Bàng Quyên xuống núi**. Hai câu 39–40 nằm trước đầu mục Long Ngâm nên phải đọc tiếp tới tr.242/243. Chưa nghiệm thu biểu diễn.
-- **Long Ngâm (11):** sách Nhị Tấn tập III có **33 câu nhạc** (tr.242/244) và **33 câu lời *Tống Trọng qui tang*** (tr.243/245; ghi Cao Hoài Sang 1940). Lưu ý phân biệt Long Đăng ở đầu trang và Vạn Giá ở phần cuối; chưa nghiệm thu âm thanh.
-- **Vạn Giá (12):** ký âm **47 câu** tr.244/246/248/250 và lời **“Biệt mãi thanh lâu”** tr.245/247/249/251, sách Nhị Tấn tập III ghi **Cao Hoài Sang (1940)**; **câu 42–47 nằm sát trước Tiểu Khúc**. Lời *Nhẫn nhịn* (TKaraoke ghi Hoài Như) là nguồn mới riêng, chưa rà ca cùng bản đờn.
-- **Tiểu Khúc (13):** bản ký âm **29 câu, bốn lớp 10+7+8+4** trong Nhị Tấn tập III, nhạc tr.**250/252**, lời *Dữ Thúc thành hôn* tr.**251/253** (sách ghi **Cao Hoài Sang 1940**). Phụ lục tập V tr.**503–504** có lời khác *Bàng Quyên chặt chơn Tôn Tẫn* (Thái Thụy Phong); VOH 2022 có bài *Anh hùng Nguyễn Trung Trực* (ghi Thiếu Bá). **Đừng trộn ba bộ lời hoặc coi bản thu đã được nghiệm thu**.
-- **Nhóm Bảy Lễ (07–13): đã mở đủ 7/7 biên bản kiểm nguồn V2, nhưng 0/7 bài đạt nghiệm thu diễn xướng.**
-- **Nam Xuân (14):** tìm thấy **68 câu nhạc + 68 câu lời** trong Nhị Tấn tập III, nhạc tr.**260/262/264/266/268**, lời *Tích Thúy Kiều* tr.**261/263/265/267/269** (sách ghi **Phan Trúc Quân/Sáu Lục, trước 1900**). **8 lớp 8 câu + LỚP IX bốn câu 65–68** trên bản in. Văn Dần khác nét nhạc tại **câu 38, 42**. Phụ lục tập IV có ***Tô Huệ – Chức Cẩm Hồi Văn*: 48 câu + chỉ dẫn hát lặp 20 câu**, không được ghép thành bộ lời gốc 68 câu. **CHỜ nghiệm thu biểu diễn**.
-- **Nam Ai (15):** đã tìm bản ký âm/lời **84 câu trong Nhị Tấn tập III tr.268–277**, gồm **4 câu chuyển Phản Xuân qua Ai đánh số riêng + 80 câu lòng trong 10 lớp**. **Hệ 68** theo thuyết minh Viện (4+64) và cách giải thích khác (68 lòng+16 nối) **chưa cùng phép đếm**. **Số 104** được lược khảo nhắc nhưng **chưa có tổng phổ riêng được kiểm**; sách còn chép **20 câu Nam Xuân** sau 80 câu lòng Nam Ai để diễn liên hoàn, không tự xem là 104 câu Nam Ai độc lập. Sai khác mặt chữ **câu chuyển 02 và lòng 01/26** giữa Nhị Tấn và Văn Dần; **CHỜ nghiệm thu**.
-- **Đảo Ngũ Cung (16):** nguồn in **Nhị Tấn tập III tr.278–287** có **52 câu** (4 Phản + 48 Nam Đảo) và **15 câu Song Cước**, tổng **67 vị trí nhạc/lời**; thuyết minh **Viện Âm nhạc 68 câu** (4+48+16), **bỏ câu cuối khi diễn riêng** còn 67. **Chưa chứng minh hai hệ 67 là một truyền bản**. Nguồn lời cần tách ***Tích Thúy Kiều*** (Nhị Tấn), ***Lục Vân Tiên*** (trang Văn Dần ghi Trần Ngọc Thạch) và ***Gương mê sắc*** (phụ lục ghi Sáu Hải). Có lỗi nhãn **Lớp IX/IV** trong trang in và lặp **số 32** trong nguồn web; đều CHỜ chuyên gia rà.
-- **Tứ Đại Oán (17):** đã tìm bản in đủ **38 câu nhạc nhịp tám/song lang 6–8**, **Nhị Tấn tập IV tr.302/304/306/308**, lời ***Bá Lý Hề*** tr.**303/305/307/309**, sách ghi **soạn lời Trần Quan Quờn**. Bản in **7 lớp: 6+8+8+4+4+4+4**. Bộ lời xưa ***Bùi Kiệm – Bùi Ông – Nguyệt Nga*** tại **Nhị Tấn tập II tr.181–184** là **bộ khác**, có **lỗi nhãn 21 lặp hai lần/thiếu 22 ở tr.183** và thuật lại các mốc 1910/1915 cần xác minh lịch sử. Phân biệt **Tứ Đại Vắn 19 câu nhịp tư**; chưa nghiệm thu âm thanh.
-- **Nhóm Ba Nam (14–16): đã mở đủ 3/3 biên bản kiểm nguồn V2**, nhưng **0/3 bài đạt nghiệm thu diễn xướng**. Không tự chuẩn hóa bằng suy đoán.
-
-[Danh mục và hệ câu/nhịp V1](docs/20-ban-to.md) · [Biên bản kiểm toán V1](docs/kiem-toan-v1-20-ban.md) · [Quy chế nghiệm thu V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md)
-
-## Dành cho AI, doanh nghiệp và nhà phát triển
-
-**English overview:** *HAI ĐẤT is a Vietnamese research repository of the 20 foundational Đờn ca tài tử compositions of Southern Vietnam. It organizes sources, musical variants and evidence-based review records. A read-only experimental MCP connector offers source-grounded retrieval. The repository is not yet a validated performance corpus or a licensed dataset for AI training or commercial redistribution.*
-
-### Kiến trúc hiện tại: nghiên cứu trước, tích hợp sau
-
-```text
-V1 – v1-frozen       → Hồ sơ nghiên cứu và nguồn của 20 bản Tổ
-V2 – v2-development  → Biên bản, sai khác, mức độ kiểm chứng (đang làm)
-                          ↓
-MCP thử nghiệm chỉ đọc → Danh mục / tìm kiếm / nguồn / dị bản / nghiệm thu
-                          ↓
-AI Assistant / RAG / ứng dụng học tập (do bên tích hợp tự triển khai)
-```
-
-**[Xem mã nguồn HAI ĐẤT VỌNG CỔ MCP](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)** · [Hướng dẫn chạy MCP](https://github.com/Form997/Vong-co/blob/feature/mcp-readonly-v1/integrations/vong-co-mcp/README.md) · [12 phép kiểm tự động đã đạt ngày 27/10/2026](https://github.com/Form997/Vong-co/actions/runs/40479366376)
-
-**Các công cụ đã có trong nguyên mẫu:** `list_ban_to`, `search_ban_to`, `get_ban_to`, `get_nghiem_thu`, `get_di_ban`, `get_nguon`, `get_quy_che_v2`.
-
-Ví dụ lời gọi từ **một MCP client được cấu hình phù hợp**:
-
-```text
-search_ban_to(query="Tây Thi")
-get_ban_to(bai_so=6, version="v1")
-get_nghiem_thu(bai_so=6)
-```
-
-Câu trả lời AI đúng chuẩn phải **dẫn URL nguồn**, nói rõ **bản Vắn hay bản Trường**, phân biệt **đã tìm tài liệu** với **đã duyệt diễn xướng**, và không tự bịa ca từ/ngón đờn/phách khi hồ sơ chưa xác nhận.
-
-**Giới hạn thực tế:** MCP này hiện là **mã thử nghiệm**, đã kiểm giao thức và một số ca truy xuất, **chưa triển khai máy chủ HTTPS công cộng**, **chưa phát hành Plugin ChatGPT**, **chưa có API thương mại hay cam kết uptime/SLA**. Việc GitHub công khai **không bảo đảm công ty hoặc mô hình AI sẽ tự động tìm thấy, tích hợp hay được phép huấn luyện trên dữ liệu**.
-
-### Khi dữ liệu thay đổi, người dùng sẽ không bị “nhảy bản” ngoài ý muốn
-
-- `main`: trang giới thiệu công khai và điều hướng dự án.
-- `v1-frozen`: mốc lưu trữ V1, **không sửa lại tư liệu lịch sử**; bảo vệ nhánh trên GitHub cần được cấu hình riêng nếu muốn chặn ghi kỹ thuật.
-- `v2-development`: nơi ghi phát hiện, biên bản và hiệu đính trong thời gian nghiệm thu.
-- `feature/mcp-readonly-v1`: mã thử nghiệm MCP; không ghi/sửa nội dung nghiên cứu.
-
-**Định hướng trước khi phát hành cho doanh nghiệp:** duyệt thay đổi qua Pull Request, chạy kiểm tra, khóa tag/commit dữ liệu đã nghiệm thu, cơ chế quay lại bản cũ và cho MCP sản xuất **chỉ đọc phiên bản đã duyệt** thay vì đọc tùy tiện nhánh đang sửa.
-
-## Chất lượng dữ liệu: không đánh đổi sự thật để đủ 20 bài
-
-Mỗi hồ sơ cần qua bốn tầng bằng chứng:
-
-1. **Danh mục:** đúng tên, nhóm, mã dị bản, nguồn và quy tắc phân câu.
-2. **Văn bản:** xác minh chỉ mục từng câu, chữ nhạc và lời trong **bản chép xác định**; có số câu **không đồng nghĩa đã kiểm trường độ**.
-3. **Đối chứng âm nhạc:** nghe **bản thu cùng hệ**, đánh dấu thời gian, so chữ kết, phách/song lang, hơi điệu, ngón và cách ca.
-4. **Nghiệm thu:** có nguồn gốc minh bạch, quyền sử dụng phù hợp và xác nhận chuyên môn độc lập.
-
-**Trạng thái của bài:** `CHỜ NGHIỆM THU` (thiếu bằng chứng) · `KHÔNG ĐẠT` (sai lệch đã chứng minh) · `ĐẠT` (đủ điều kiện và có kiểm duyệt). Mọi kết quả **ĐẠT kiểm nguồn** chỉ áp dụng ở tiêu chí đã kiểm, **không phải ĐẠT toàn bài**.
-
-**Tình trạng hiện tại: 17/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
-
-## Nguồn khoa học và tư liệu có thể truy cập
-
-**[MỞ DANH MỤC 51 MỤC NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
-
-Các mốc tham khảo chính, sắp theo **mục đích và mức xuất xứ** (không đánh đồng tất cả nguồn là tài liệu học thuật đồng cấp):
-
-| Loại | Cơ quan / tác giả | Tài liệu, liên kết |
-|---|---|---|
-| **Di sản – nguồn chính thức** | UNESCO, 2013 | [Quyết định công nhận nghệ thuật Đờn ca tài tử – 8.COM 8.31](https://ich.unesco.org/en/decisions/8.COM/8.31) |
-| **Tư liệu học thuật / di sản** | Viện Âm nhạc Việt Nam & ICHCAP, 2015 | [Đờn ca tài tử Nam Bộ – handbook PDF](https://archive.unesco-ichcap.org/eng/ek/sub16/pdf_file/handbook_cd8.pdf) |
-| **Ấn phẩm chuyên môn** | Viện Âm nhạc – bộ *Hai mươi bài bản Tổ* | [Tài liệu thuyết minh (PDF)](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) — **lúc kiểm 27/10/2026 PDF trả 502**, cần kiểm lại trước khi trích nội dung mới |
-| **Ký âm/bộ lời** | Nhị Tấn, 1997; bản số hóa Nam Kỳ Lục Tỉnh | [Tập I](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%201%20-%20Nhi%20Tan.pdf) · [Tập II](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf) |
-| **Nghiên cứu và bản chép** | Nhạc sĩ Tấn Nhì, bài đăng trên blog Văn Dần, 2013 | [Lược khảo hình thành bài bản](https://nhacsivandan.wordpress.com/2013/11/03/luoc-khao-hinh-thanh-bai-ban-don-ca-tai-tu-nam-bo/) |
-| **Nghiên cứu chuyên ngành** | TS. Bùi Thiên Hoàng Quân, *Tạp chí Khoa học ĐH Sài Gòn*, 2017 | [Cấu trúc Bảy bản Lễ – bản đăng lại](https://tailieuvn.net/cau-truc-bay-ban-le-nhac-tai-tu-nam-bo-8526/) |
-| **Lưu trữ âm thanh** | ICH Links, nghệ nhân Nguyễn Vĩnh Bảo, bản ghi 1977 | [Lưu Thủy Trường – metadata bản thu](https://www.ichlinks.com/archive/materials/audiosV.do?ichDataUid=16097184005120000346&nation=VN) |
-| **Nguồn chữ nhạc trực tuyến** | Cổ Nhạc Nam Bộ, 2021 | [Xàng Xê – 64 câu nhịp tư](https://conhacnambo.com/destop/topics_list.php?topic_id=424) |
-
-**Danh mục đầy đủ** bổ sung các nguồn trực tiếp về lời ca, nhạc sĩ và tủ nhạc, đồng thời nói rõ **nguồn nào có thể chỉ dùng để định hướng, nguồn nào đã xem trực tiếp và nguồn nào chưa kiểm được**. Một đường dẫn có thể truy cập được **không đồng nghĩa nội dung đã được nghiệm thu hoặc có quyền khai thác thương mại**.
-
-## Bản quyền, đạo đức nghiên cứu và sử dụng AI
-
-- Dự án **không nhận là tác giả của 20 bản Tổ, những ca từ có người soạn, bản chép Nhị Tấn, bản ghi nghệ nhân hoặc ấn phẩm cơ quan chuyên môn**.
-- Mỗi tác phẩm, bản phối, bản ghi và bài viết có thể có quyền riêng. **Dẫn link hoặc trích nguồn không phải giấy phép sao chép, dịch vụ phát nhạc, huấn luyện AI hay tái sử dụng thương mại**.
-- Tại thời điểm rà soát **27/10/2026**, repository **chưa có tệp LICENSE được xác nhận**. Người muốn phân phối lại mã hay dữ liệu cần liên hệ người có quyền, yêu cầu cấp phép phù hợp; khi cấp phép mã nguồn về sau phải **tách khỏi quyền của nội dung âm nhạc bên thứ ba**.
-- Không làm giả chứng nhận nghệ nhân, giấy phép, âm thanh hoặc mức kiểm. Khi chưa biết, hệ thống phải trả lời **“chưa xác minh”** kèm nguồn và đề xuất bước kiểm.
-- UNESCO, Viện Âm nhạc và ICHCAP được dẫn **theo tư liệu của họ**; **không phải nhà tài trợ, đối tác chính thức hoặc đơn vị phê duyệt repo**.
-
-## Cùng xây dựng một kho tư liệu có thể kiểm chứng
-
-Chúng tôi hoan nghênh **nghệ nhân, người dạy đờn–ca, nhà nghiên cứu, thư viện, đơn vị bảo tồn và các nhóm AI/công nghệ văn hóa** góp ý có căn cứ.
-
-Nếu phát hiện lỗi, hãy [**mở GitHub Issue**](https://github.com/Form997/Vong-co/issues) và ghi **bài số mấy, mã dị bản, câu/lớp, nguồn gốc có link/trang, vấn đề, bản đề xuất và quyền sử dụng**. Ý kiến chưa có nguồn sẽ được ghi là **đề xuất cần kiểm**, không tự đưa thẳng vào bộ đã nghiệm thu.
-
-**Mục tiêu dài hạn:** để di sản được tra cứu dễ dàng hơn **mà không đánh mất dị bản, công lao nghệ nhân và tính xác thực của nguồn**.
+> [!IMPORTANT]
+> **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
 ---
 
-<sub>HAI ĐẤT · Research-first Vietnamese traditional music knowledge base · Cập nhật nội dung README: 27/10/2026 · Repository: <a href="https://github.com/Form997/Vong-co">Form997/Vong-co</a></sub>
+## Bắt đầu tại đây
+
+| Bạn đến để… | Nơi nên mở trước |
+|---|---|
+| **Khám phá 20 bản Tổ** và đọc từng bài | [Danh mục 20 bản ngay bên dưới](#danh-mục-20-bản-tổ) |
+| **Học đờn – ca**, hiểu số câu và hơi điệu | [Hồ sơ từng bài](https://github.com/Form997/Vong-co/tree/v2-development/ban-to/) · [Hướng dẫn đọc và thực hành bài 01](https://github.com/Form997/Vong-co/blob/v2-development/docs/01-huong-dan-don-va-ca.md) |
+| **Nghiên cứu và đối chiếu** ký âm, lời, dị bản | [Những phát hiện V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md) · [Nguồn tham khảo](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) |
+| **Phát triển ứng dụng AI / RAG / MCP** | [Nguyên mẫu MCP chỉ đọc](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế chứng cứ V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) |
+| **Đề xuất sửa lỗi hoặc đóng góp** | [Hướng dẫn đóng góp](CONTRIBUTING.md) · [Gửi vấn đề](https://github.com/Form997/Vong-co/issues/new/choose) |
+
+### Vì sao dự án này khác một danh sách tên bài?
+
+Một bản nhạc có thể tồn tại dưới nhiều **dị bản**, cách đếm **câu**, **lớp**, hệ **nhịp** và bộ **lời ca** khác nhau. Chúng tôi ghi rõ **nguồn nào nói gì**, **đã xem trang nào**, **câu nào còn mâu thuẫn** và **điều gì chưa được người thực hành xác nhận**.
+
+**Ba nguyên tắc xuyên suốt:** nguồn phải truy được · dị bản không bị trộn · chưa đủ chứng cứ thì nói **“chưa xác minh”**.
+
+UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 ([quyết định chính thức](https://ich.unesco.org/en/decisions/8.COM/8.31)); điều đó **không** có nghĩa UNESCO chứng nhận, tài trợ hoặc hợp tác với kho GitHub HAI ĐẤT này.
+
+## Dự án có gì để xem ngay?
+
+| Hạng mục | Hiện trạng | Mở minh chứng |
+|---|---|---|
+| **Hồ sơ 20 bài** | Đã có 20 thư mục và biên bản kiểm nguồn V2 | [Danh mục bài](https://github.com/Form997/Vong-co/blob/v2-development/docs/20-ban-to.md) |
+| **Sổ đối chiếu câu & dị bản** | Đã mở theo bài; mức kiểm chứng không đồng đều | [Báo cáo phát hiện V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md) |
+| **Nguồn tham khảo** | Có mã nguồn, liên kết, trang in và giới hạn sử dụng | [Sổ nguồn](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) |
+| **Kiểm thử mã nguồn** | Workflow GitHub Actions hoạt động trên V2; có các bài thử Python và kiểm cấu trúc | [Xem kết quả CI](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) |
+| **Tích hợp cho AI** | Có **nguyên mẫu MCP chỉ đọc ở nhánh riêng**; chưa công bố là dịch vụ thương mại ổn định | [Xem prototype](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) |
+| **Nghiệm thu biểu diễn** | **0/20**; còn đối chiếu phách, lối nhấn, song lang, bản thu, nghệ nhân | [Quy chế V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) |
+
+## Danh mục 20 bản Tổ
+
+**Sáu Bắc (01–06) · Bảy Lễ (07–13) · Ba Nam (14–16) · Bốn Oán (17–20).** Mỗi liên kết mở **hồ sơ bài** hoặc **biên bản kiểm nguồn**, không phải bản ghi âm đã nghiệm thu.
+
+| Số | Nhóm | Bản Tổ | Kiểm nguồn V2 |
+|---:|---|---|---|
+| 01 | Sáu Bắc | [Lưu Thủy Trường](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/01-luu-thuy-truong/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) |
+| 02 | Sáu Bắc | [Phú Lục Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/02-phu-luc-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md) |
+| 03 | Sáu Bắc | [Bình Bán Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/03-binh-ban-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) |
+| 04 | Sáu Bắc | [Cổ Bản (Vắn / Trường)](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/04-co-ban-van/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md) |
+| 05 | Sáu Bắc | [Xuân Tình Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/05-xuan-tinh-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) |
+| 06 | Sáu Bắc | [Tây Thi (Vắn / Trường)](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) |
+| 07 | Bảy Lễ | [Xàng Xê](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) |
+| 08 | Bảy Lễ | [Ngũ Đối Thượng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md) |
+| 09 | Bảy Lễ | [Ngũ Đối Hạ](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) |
+| 10 | Bảy Lễ | [Long Đăng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) |
+| 11 | Bảy Lễ | [Long Ngâm](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) |
+| 12 | Bảy Lễ | [Vạn Giá](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) |
+| 13 | Bảy Lễ | [Tiểu Khúc](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) |
+| 14 | Ba Nam | [Nam Xuân](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) |
+| 15 | Ba Nam | [Nam Ai](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md) |
+| 16 | Ba Nam | [Đảo Ngũ Cung](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md) |
+| 17 | Bốn Oán | [Tứ Đại Oán](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) |
+| 18 | Bốn Oán | [Phụng Hoàng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/18-phung-hoang/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) |
+| 19 | Bốn Oán | [Giang Nam](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/19-giang-nam/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md) |
+| 20 | Bốn Oán | [Phụng Cầu](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/20-phung-cau/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) |
+
+**Cần lưu ý khi tìm hiểu:** *Cổ Bản* có hệ Vắn/Trường **34/68 câu**; *Tây Thi* có hệ **26/52 câu**. *Phụng Hoàng* (#18) **khác** *Phụng Cầu* (#20). Không suy từ số dòng trong sổ câu ra việc đã thẩm định nhạc. Những khác biệt khó hơn, như ranh lớp **Giang Nam**, được lưu đầy đủ trong [báo cáo phát hiện](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md).
+
+## Các thế hệ V — lịch sử có thể kiểm chứng
+
+| Phiên bản | Bắt đầu ghi nhận | Bước tiến chính | Dung lượng bản chụp |
+|---|---|---|---:|
+| **V1 – Gieo nền tư liệu** | **12/10/2026** | Tạo hệ thống hồ sơ và nguồn cho 20 bản Tổ, ghi nhận dị bản và phần còn thiếu | **397,63 KiB** |
+| **V2 – Đưa câu đờn trở về nguồn** | **19/10/2026**; bắt đầu quy chế kiểm nguồn toàn bộ **27/10** | Mở biên bản cho **20/20**, đối chiếu số câu, nguồn, trang in, lời ca và cách phân lớp; **chưa nghiệm thu biểu diễn** | **942,96 KiB** |
+
+*Các số trên là **kích thước Git chưa nén tại các commit cố định**, không phải dung lượng ZIP hoặc dung lượng nhánh luôn thay đổi. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968).*
+
+[**Nhật ký V1–V2, mốc thời gian, số đo và mẫu ghi thế hệ tiếp theo**](https://github.com/Form997/Vong-co/blob/v2-development/docs/nhat-ky-phien-ban.md) · [Công cụ Python đo dung lượng](https://github.com/Form997/Vong-co/blob/v2-development/scripts/thong-ke-dung-luong.py)
+
+## Dành cho nhà nghiên cứu, lập trình viên và tổ chức
+
+```text
+Nguồn gốc / ảnh trang sách / dị bản / dữ liệu mô tả
+                           ↓
+             Hồ sơ nghiên cứu V1
+                           ↓
+       Sổ đối chiếu & biên bản nguồn V2
+                           ↓
+         Kiểm thử cấu trúc và trích nguồn
+                           ↓
+     Nguyên mẫu MCP chỉ đọc (nhánh riêng)
+                           ↓
+       Ứng dụng tra cứu AI / giáo dục
+```
+
+Dự án ưu tiên **tra cứu bằng chứng trước khi đưa ra kết luận**. Bên tích hợp AI cần giữ nguyên tác giả, hệ dị bản, nguồn/trang, tình trạng xác minh và quyền sử dụng; khi không đủ dữ liệu thì phải có cơ chế **không khẳng định**.
+
+**Đường dẫn cho kỹ thuật:**
+[Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [Sổ nguồn](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) · [Workflow kiểm thử](https://github.com/Form997/Vong-co/blob/v2-development/.github/workflows/kiem-thu-v2.yml)
+
+**Hướng phát triển V3–V4 (dự kiến, chưa phát hành):** chuẩn hóa dữ liệu có cấu trúc → giao diện tra cứu tiếng Việt → đối chiếu bản thu có quyền sử dụng → thử nghiệm AI/MCP có kiểm soát. **Không** công bố đây là sản phẩm đã chạy ổn định hoặc đã được kiểm định âm nhạc.
+
+## Nguồn, quyền sử dụng và liêm chính khoa học
+
+- **Nguồn học thuật và tư liệu:** [Sổ nguồn đầy đủ](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) gồm các mục đánh mã đến **REF-68**, có mức kiểm và giới hạn; không đồng nghĩa **68 nguồn độc lập đều được xác minh trực tiếp**.
+- **Bản quyền:** kho có thể xem công khai **không** đồng nghĩa được sao chép, huấn luyện AI, dùng thương mại hoặc tái phát hành bản ký âm, ca từ, PDF và MP3. Hiện chưa xác nhận một giấy phép chung cho tất cả nội dung; mã nguồn và nội dung bên thứ ba cần xét riêng.
+- **Không mạo nhận chứng nhận:** việc dẫn UNESCO, Viện Âm nhạc, ICHCAP, nghệ nhân và tác giả **không** có nghĩa các đơn vị/cá nhân đó chứng nhận kho này.
+- **Sửa nguồn minh bạch:** không tự biến chỗ chưa rõ thành “đã đạt”; xem [quy trình đóng góp](CONTRIBUTING.md) trước khi gửi thay đổi.
+
+## Cùng góp sức để giữ tiếng đờn đúng với nguồn
+
+Một trang in, một điểm sai khác câu nhạc được chỉ rõ, hay một góp ý của người thực hành có dẫn chứng đều có thể giúp kho tư liệu tốt hơn. [**Gửi Issue**](https://github.com/Form997/Vong-co/issues/new/choose) · [**Đọc hướng dẫn đóng góp**](CONTRIBUTING.md).
+
+<p align="center"><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
+
+<p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v2-development">Nhánh nghiên cứu V2 (liên kết ngoài)</a></sub></p>
