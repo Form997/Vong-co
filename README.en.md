@@ -2,9 +2,22 @@
 
 **Preserving a living musical tradition through source-grounded research, transparent variants, and responsible AI access.**
 
-[**Đọc README tiếng Việt**](README.md) · [**Source registry (51 documented source entries)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
+[**Đọc README tiếng Việt**](README.md) · [**Source registry (at least 68 numbered entries)**](docs/nguon-tham-khao.md) · [**AI/MCP prototype**](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp)
 
-> **Research status, 28 October 2026:** 20/20 research folders indexed; 17/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
+> **Research status, 28 October 2026:** 20/20 research folders indexed; 20/20 compositions have a V2 **source-review record**; **0/20** have passed independent performance-level validation. **This is an evolving research corpus, not a finished, licensed, or musicologist-certified transcription/audio dataset.**
+
+## Version timeline — dates, meaningful progress, and verifiable sizes
+
+Each new V generation must document its **first recorded start date**, **what genuinely changed**, and its **measured Git snapshot size**. Dates are backed by commits; byte counts come from Git tree blobs at a fixed SHA and do not describe ZIP downloads.
+
+| Generation | First documented start (Viet Nam time) | What's genuinely new | Fixed Git snapshot |
+|---|---|---|---:|
+| **V1 — Establish the evidence base** | **12 Oct 2026** (initial repository commit) | Twenty composition folders, bibliographic evidence, initial version distinctions and auditing notes. | **397.63 KiB**, 407,176 bytes; 64 files |
+| **V2 — Trace each phrase back to evidence** | **19 Oct 2026** (first V2-labeled commit); formal acceptance-review phase **27 Oct** | Source-review records opened for **20/20** pieces, phrase-by-phrase ledgers, printed-page references, variant and uncertainty tracking. **0/20** performance-approved. | **942.96 KiB**, 965,588 bytes; 112 files |
+
+**Fixed measurement commits:** [V1 `f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4) · [V2 `4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). These are uncompressed Git blob totals from fixed snapshots, **not a promise that a moving branch has the same size**. 1 KiB = 1,024 bytes; 1 KB = 1,000 bytes. The start date is the earliest **documented Git milestone**, not necessarily the day off-Git research began.
+
+For V3 and later, follow the [**Vietnamese version ledger and required template**](docs/nhat-ky-phien-ban.md); reproduce the counts with [**Python Git size reporter**](scripts/thong-ke-dung-luong.py). If size has not been measured, say **“not measured yet”**, never estimate.
 
 ## What is this project?
 
