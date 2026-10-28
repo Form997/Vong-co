@@ -1,0 +1,45 @@
+name: "HAI DAT V3 - Kiem thu trinh duyet that"
+
+on:
+  push:
+    branches:
+      - v3-development
+    paths:
+      - ".github/workflows/kiem-thu-trinh-duyet-v3.yml"
+      - "web/v3/**"
+      - "data/v3/catalog.json"
+      - "tests/v3_browser.cjs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium-e2e:
+    name: "Tim kiem, loc nhom, nguon va mobile"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Cai Playwright va Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Chay trang HTML va du lieu JSON qua HTTP, kiem Chromium
+        shell: bash
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/hai-dat-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          node tests/v3_browser.cjs
+      - name: Luu anh doi chung tren dien thoai va may tinh
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hai-dat-v3-browser-evidence
+          path: browser-evidence/
+          if-no-files-found: warn
+          retention-days: 7
