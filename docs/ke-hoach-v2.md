@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 16/20 bài đã mở rà nguồn V2; 0/20 đã nghiệm thu diễn xướng.** Đã mở đủ **3/3 bài Ba Nam** (14–16), vẫn cần đối chiếu bản thu và người thẩm định chuyên môn. Còn **4 bài Bốn Oán** chưa mở biên bản nguồn V2.
+> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 17/20 bài đã mở biên bản rà nguồn V2; 0/20 bài được nghiệm thu diễn xướng.** Đã mở bài đầu **Bốn Oán: Tứ Đại Oán (17)**; ba bài 18–20 chưa mở V2.
+
+> **Bài 17 – Tứ Đại Oán:** [biên bản V2](../ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md), [sổ 38 câu](../ban-to/17-tu-dai-oan/v2-ra-soat-38-cau.md). **Nguồn mới so với V1:** Nhị Tấn tập IV (1997) **tr.302/304/306/308** có nhạc **38 câu nhịp tám, song lang 6–8**, lời ***Bá Lý Hề*** **tr.303/305/307/309** ghi soạn lời **Trần Quan Quờn**. **Bảy lớp 6+8+8+4+4+4+4**, khác Tứ Đại Vắn **19 câu nhịp tư**. Phụ lục tập II **tr.181–184** có bộ lời xưa riêng ***Bùi Kiệm, Bùi Ông, Nguyệt Nga***, sách năm 1997 nhắc **Mỹ Tho 1910, Vĩnh Long 1915**; **chưa có chứng cứ sự kiện đương thời**. **Lỗi in tr.183: nhãn 21 lặp, thiếu 22**, giữ nguyên nhãn. **Đã rà 38/38 chỉ mục nhạc và lời tập IV, 0/38 được nghiệm thu diễn xướng**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 16/20 bài đã mở rà nguồn V2; 0/20 đã nghiệm thu diễn xướng.** Đã mở đủ **3/3 bài Ba Nam** (14–16), vẫn cần đối chiếu bản thu và người thẩm định chuyên môn. Còn **4 bài Bốn Oán** chưa mở biên bản nguồn V2.
 
 > **Bài 16 – Đảo Ngũ Cung / Nam Đảo:** [biên bản V2](../ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md), [sổ 67 vị trí S1](../ban-to/16-dao-ngu-cung/v2-ra-soat-67-cau.md), [khung 68 Viện chưa thẩm định riêng](../ban-to/16-dao-ngu-cung/v2-doi-chieu-68-cau.md). **Nhị Tấn tập III tr.278–287 in “Đảo Ngũ Cung (52 câu)” = 4 Phản Xuân + 48 lòng, kế tiếp 15 Song Cước = 67 vị trí nhạc/lời đã định vị.** Viện Âm nhạc mô tả **68=4+48+16**, độc tấu bỏ câu 68 thành 67 nhưng **chưa chứng minh hai hệ 67 cùng bản**. Sách có chú chuyển **hơi Ai oán và Hò Tư→Hò Nhứt** trước Song Cước; sai nhãn lời **Lớp IX/IV** ở tr.283/282 và lỗi **lặp câu 32** ở Văn Dần. Ba bộ lời: *Tích Thúy Kiều* (Nhị Tấn III), *Lục Vân Tiên* (Trần Ngọc Thạch), *Gương mê sắc* (Sáu Hải). **CHỜ NGHIỆM THU (0/67), sổ 68 mới là khung vị trí chưa xác minh tổng phổ**.
 
