@@ -34,6 +34,12 @@
 
 **Trạng thái web:** **chưa xác nhận có địa chỉ GitHub Pages hoạt động**. File HTML/JSON đã có trên GitHub và kiểm tra cú pháp thành công; có thể chạy thử qua Codespaces hoặc máy chủ HTTP theo hướng dẫn.
 
+## Tiến độ triển khai website công khai
+
+- [Gói website Pages](../.github/workflows/pages-v3.yml) đã được tạo và thử trên GitHub Actions ngày **28/10/2026**: **7 tệp công khai** được đóng gói và upload thành công.
+- [Lần triển khai #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366) **không thành công** ở job Deploy; không có website Pages đã được chứng thực hoạt động.
+- [Hướng dẫn bật Pages và rà soát quy tắc môi trường](v3-github-pages.md) đã được thêm. Chỉ ghi `đã xuất bản` khi job Deploy đạt **Success** và URL website truy cập được.
+
 ## Điều **KHÔNG** được tuyên bố ở alpha
 
 - Chưa có bộ tổng phổ chuẩn 20 bài, chưa có bản thu có quyền phát lại và chưa được nghệ nhân duyệt.
