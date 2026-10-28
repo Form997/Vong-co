@@ -55,6 +55,19 @@
 
 **Tài liệu V3:** [Báo cáo khởi động](v3-khoi-dong.md) · [Bộ dữ liệu](../data/v3/README.md) · [Giao diện thử nghiệm](../web/v3/README.md).
 
+### Cập nhật V3.0-alpha — kiểm thử trình duyệt và chuẩn bị website (28/10/2026)
+
+**Mới so với mốc alpha đầu tiên:**
+- **Kiểm thử giao diện Chromium thật:** tìm có/không dấu, 4 bộ lọc 6/7/3/4, tách Phụng Hoàng–Phụng Cầu, Cổ Bản Vắn–Trường, liên kết sâu `#bai-20`, giao diện điện thoại 390 px; [kết quả thành công #40675487073](https://github.com/Form997/Vong-co/actions/runs/40675487073), có ảnh đối chứng mobile và desktop.
+- **42 phép thử Python** và **174 liên kết nội bộ** được kiểm thành công tại [GitHub Actions V3](https://github.com/Form997/Vong-co/actions/runs/40675606514). Không hiểu các phép thử này là kiểm định đúng/đủ âm nhạc cổ truyền.
+- **Gói website công khai 7 tệp:** [script đóng gói](../scripts/v3_build_site.py), [workflow Pages](../.github/workflows/pages-v3.yml). Gói được tạo và upload **thành công**; **job Deploy hiện Skipped theo thiết kế opt-in**, nên **website chưa được xác nhận công bố lên GitHub Pages**. Chủ kho cần kiểm cấu hình và bật [công tắc triển khai](v3-github-pages.md).
+- **Đã sửa lỗi tìm kiếm**: từ ghi chú nhắc “Phụng Cầu” trong hồ sơ Phụng Hoàng, hệ thống trước đây trả 2 kết quả; nay ưu tiên tên bài/dị bản khớp trực tiếp.
+- **Đã sửa deep-link** để URL `#bai-20` mở đúng hồ sơ số 20 khi trang đã được tải.
+
+**Dung lượng tại bản chụp giai đoạn 2:** **1.105.876 byte** = **1.105,88 KB** = **1.079,96 KiB**, **139 tệp**, commit cố định [`193f3da`](https://github.com/Form997/Vong-co/tree/193f3da5f44d0e66c939c9e36fe1da1d3d7a1e34). Bản chụp này lớn hơn snapshot V3 alpha đầu tiên **39.019 byte**; đây chỉ là **chênh kích thước tổng hai Git tree**, không phải tổng của riêng các tệp mới.
+
+**Mức hoàn thành âm nhạc:** **0/20** bài được nghiệm thu diễn xướng, không thay đổi. **V3 vẫn alpha**.
+
 ## 5. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.
