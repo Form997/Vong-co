@@ -23,11 +23,12 @@ Cảm ơn bạn muốn cùng gìn giữ tư liệu đờn ca tài tử Nam Bộ.
 
 ## Pull Request
 
-- Đề nghị sửa nội dung nghiên cứu trên **`v2-development`**, không sửa **`v1-frozen`**.
+- **Tư liệu chuyên môn V2:** đề nghị chỉnh trên `v2-development` và bổ sung nguồn in/biên bản; **dữ liệu JSON, web và mã kiểm V3:** gửi thay đổi trên `v3-development`. Không sửa `v1-frozen`.
+- Mỗi thay đổi V3 về `data/v3/catalog.json` phải giữ **mã hệ bản, đường dẫn biên bản V2, nguồn URL, nhãn chứng cứ, ghi chú giới hạn**; không gộp các hệ câu không tương thích.
 - Mỗi Pull Request tập trung một chủ đề để dễ thẩm tra. Ghi các đường dẫn nguồn, những câu chịu ảnh hưởng, và lý do điều chỉnh.
 - **Không tự đổi `CHỜ NGHIỆM THU` thành `ĐẠT`** nếu chưa có chứng cứ và người thẩm định chuyên môn phù hợp.
 - Khi thay đổi số liệu các thế hệ, cập nhật [Nhật ký V](docs/nhat-ky-phien-ban.md) và thống kê dung lượng theo **commit cụ thể**.
-- Chạy kiểm thử (nếu có Python): `python -m unittest discover -s tests -p "test_*.py" -v` và `python -m compileall -q scripts tests`. Kết quả CI xem tại [GitHub Actions](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml).
+- Chạy kiểm thử (nếu có Python): `python -m unittest discover -s tests -p "test_*.py" -v` và `python -m compileall -q scripts tests`. Kết quả CI xem tại [GitHub Actions V2](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) hoặc [GitHub Actions V3](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml). Với V3 chạy thêm `python scripts/v3_validate.py --json` và `python scripts/kiem-tra-lien-ket.py`.
 
 ## Quy định trích dẫn
 
