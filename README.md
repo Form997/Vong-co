@@ -8,7 +8,7 @@
 >
 > **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **20/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
 
-[**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
+[**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Các thế hệ V**](docs/nhat-ky-phien-ban.md) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
 ## Nhật ký các thế hệ V — Mỗi phiên bản là một bước tiến có chứng cứ
 
