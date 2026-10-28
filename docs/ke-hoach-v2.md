@@ -1,6 +1,12 @@
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
 
-> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 13/20 bài đã lập biên bản rà nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** **Đã mở biên bản nguồn cả 7/7 bài nhóm Bảy Lễ (07–13), không có nghĩa đã cấp chứng nhận thực tấu.**
+> **TIẾN ĐỘ HIỆN HÀNH – 28/10/2026: 14/20 bản Tổ đã có biên bản rà nguồn V2; 0/20 đạt nghiệm thu diễn xướng.** Đã mở nhóm Ba Nam, **bài số 14 Nam Xuân**, 6 bài còn lại chưa mở biên bản nguồn V2.
+
+> **Bài 14 – Nam Xuân:** [biên bản V2](../ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) và [sổ 68 câu](../ban-to/14-nam-xuan/v2-ra-soat-68-cau.md). Đã tìm thấy **nhạc đủ 68 câu** trong **Nhị Tấn tập III**, nhạc **tr.260/262/264/266/268**, lời *Tích Thúy Kiều* đủ 68 câu **tr.261/263/265/267/269**, ghi **Phan Trúc Quân (Sáu Lục, trước 1900)** theo sách. Sách ghi **8 lớp × 8 câu + LỚP IX bốn câu 65–68**, khác cách thuyết minh “8 lớp và 4 câu phần”. Bản Văn Dần có **nét nhạc khác tại câu 38, 42**. Nhị Tấn tập IV phụ lục *Tô Huệ – Chức Cẩm Hồi Văn* tr.395–397 có **48 câu lời + chỉ dẫn lặp ca 20 câu đầu**, không phải 68 câu *Tích Thúy Kiều*. **CHỜ NGHIỆM THU (0/68 thực tấu)**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 13/20 bài đã lập biên bản rà nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** **Đã mở biên bản nguồn cả 7/7 bài nhóm Bảy Lễ (07–13), không có nghĩa đã cấp chứng nhận thực tấu.**
 
 > **Bài 13 – Tiểu Khúc:** [biên bản V2](../ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) và [sổ 29 câu](../ban-to/13-tieu-khuc/v2-ra-soat-29-cau.md) đã lập. **Nhị Tấn tập III tr.250/252** có **29 nhãn ký âm**, **tr.251/253** có **29 nhãn lời *Dữ Thúc thành hôn***, ghi **Cao Hoài Sang 1940**. Chia **4 lớp 10+7+8+4**. **Nhị Tấn tập V tr.503–504** có bộ lời 29 câu riêng *Bàng Quyên chặt chơn Tôn Tẫn* (Thái Thụy Phong); VOH (2022) có *Anh hùng Nguyễn Trung Trực* (Thiếu Bá), **không trộn ba bộ lời**. Ranh: Vạn Giá câu 42–47 phía trên tr.250/251; Ngũ Đối Ai sau Tiểu Khúc câu 29 trên tr.252/253. **CHỜ NGHIỆM THU biểu diễn (0/29).**
 
