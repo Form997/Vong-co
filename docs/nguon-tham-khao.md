@@ -140,3 +140,17 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 | REF-62 | **Tủ nhạc Cổ Nhạc miền Nam – Ba Tu đờn kìm** | Hồ sơ V1 ghi nhận metadata Giang Nam Cửu Khúc do Ba Tu độc tấu; chưa rà bản thu/timecode và giấy phép. | [Nguồn](https://www.namkyluctinh.org/am-nhac/tu-nhac-co-nhac-mien-nam.html) |
 
 **Nguyên tắc:** Tài liệu chính có số trang, song **không có thẩm định nghệ nhân**; không tự chép toàn bộ ký âm, lời ca hay MP3. [Sổ câu và lỗi 45/47/48](../ban-to/19-giang-nam/v2-ra-soat-58-cau.md).
+
+
+## Bổ sung bài 20 — Phụng Cầu Hoàng Duyên (28/10/2026)
+
+| ID | Nguồn | Đã đối chiếu và giới hạn | Liên kết |
+|---|---|---|---|
+| REF-63 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (PDF số hóa), tr.332–341** | Đã xem **ảnh 10 trang**: 40 nhãn ký âm tại 332/334/336/338/340, lời *Bá Nha Đoạn Cầm* 40 nhãn tại 333/335/337/339/341, ghi **Nhị Tấn 2002**. 3 lớp 18+8+14. Bìa **1997**, bài khảo cứu tr.411 **1999**, mục lục ghi *Tư Mã Tương Như*: **chưa rõ lịch sử biên tập**. Chưa duyệt phách, ca, song lang và quyền. | [Nguồn](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) |
+| REF-64 | **Viện Âm nhạc – 20 bản Tổ, mục Phụng Cầu hoàn duyên** | Theo nội dung chỉ mục: 40 câu nhịp tám, 18+8+14, đối xứng từng cặp, chầu/mô, dứt ngoại **thường** ở nhịp 7 câu chẵn. **Không có bảng phách đã kiểm**, PDF Viện chưa xem trực tiếp. | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-65 | **Viện Âm nhạc – giáo trình guitar phím lõm** | Theo chỉ mục: *Phụng cầu hoàng duyên* 40 câu nhịp 8, 3 lớp. **Chưa đối chứng kỹ thuật ngón**. | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-66 | **Nguyễn Tuấn Khanh – Bộ 20 bài Tổ do Ba Tu độc tấu đờn kìm** | Nguồn danh mục nghệ nhân/bản ghi, **không phải** bản nghe/timecode đã đối chiếu. | [Nguồn](https://www.namkyluctinh.org/tac-gia-tac-pham/n/nguyen-tuan-khanh/nhac-tai-tu-20-bai-to.html) |
+| REF-67 | **Văn Dần – hai video ca Phụng Cầu Thu Thảo/Thanh Thủy** | Nguồn tham khảo biểu diễn, **chưa kiểm đủ 40 câu**, chưa có quyền tải lại MP3/video. | [Nguồn](https://nhacsivandan.wordpress.com/2013/11/05/sinh-hoat-don-ca-tai-tu-tai-tu-gia-nhac-si-tan-nhi-2/) |
+| REF-68 | **Karaoke Cải Lương tổng hợp – *Phụng Cầu 40 câu: Từ Hải thọ tiễn*** | Ví dụ lời khác gắn nhãn 40 câu; website **không rõ tác giả và nguồn bản gốc**, chưa thẩm định, không tự gán là lời Nhị Tấn. | [Nguồn](https://www.karaoke.cailuongtoiyeu.com/karaoke-ph%E1%BB%A5ng-c%E1%BA%A7u-40-c%C3%A2u.html) |
+
+**Mốc V2: 20/20 mở biên bản kiểm nguồn, 0/20 nghiệm thu diễn xướng.** [Biên bản bài 20](../ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) · [40 câu có trang](../ban-to/20-phung-cau/v2-ra-soat-40-cau.md). **Đây không phải tổng phổ đã được chứng nhận hoặc giấy phép sử dụng âm thanh cho AI.**
