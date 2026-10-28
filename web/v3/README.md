@@ -18,6 +18,22 @@ Workflow [**thử xuất bản V3**](../../.github/workflows/pages-v3.yml) đã 
 
 **Chủ kho cần kiểm tra Settings → Pages (Source: GitHub Actions) và quy tắc môi trường `github-pages`**. Đọc [**hướng dẫn khắc phục chi tiết theo GitHub Docs**](../../docs/v3-github-pages.md).
 
+## Đã kiểm thử thao tác bằng Chromium thật
+
+[**GitHub Actions: kiểm thử trình duyệt thành công — run #40675487073**](https://github.com/Form997/Vong-co/actions/runs/40675487073). Kết quả đã kiểm trên trang chạy qua HTTP:
+
+- Nạp đúng **20 bản Tổ và 30 hệ bản**;
+- Lọc bốn nhóm **6/7/3/4**;
+- Tìm `phung cau` chỉ hiện **Phụng Cầu** (không lấy Phụng Hoàng vì ghi chú nhắc tên bài khác);
+- Tìm `co ban van` nhận đúng **Cổ Bản Vắn/Trường**;
+- Xem **Nam Ai 84/68** theo hai nguồn khác nhau;
+- Liên kết `#bai-20` hoạt động khi điều hướng mà không tải lại trang;
+- Màn hình điện thoại **390 px không tràn ngang**, không có lỗi JavaScript không được bắt.
+
+Run đã tạo ảnh chụp **`v3-mobile.png`** và **`v3-desktop.png`** trong artifact `hai-dat-v3-browser-evidence`. Đây là **kiểm thử chức năng giao diện**, không phải bảo chứng âm nhạc hay kiểm trực tiếp Chrome Android trên thiết bị thật.
+
+**Kiểm thử Python riêng:** [GitHub Actions V3](../../.github/workflows/kiem-thu-v3.yml) có **42 bài thử**, xác thực danh mục/nguồn/website HTTP, khoảng **174 đường dẫn nội bộ** tại mốc kiểm thử ngày 28/10/2026.
+
 ## Chạy thử bằng Python trên Codespaces hoặc máy tính
 
 Tại thư mục gốc repository, nhánh `v3-development`:
