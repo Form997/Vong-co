@@ -155,7 +155,7 @@
             <select id="lesson-status" aria-label="Lọc bài có chỉ mục học câu">
               <option value="all">Tất cả 20 bản Tổ</option>
               <option value="indexed">Đã có sổ câu học V3.2</option>
-              <option value="pending">Chưa có sổ câu đủ chuẩn</option>
+              <option value="pending">Chưa chuẩn hóa sổ V2 thành bài học</option>
             </select>
           </label>
           <label for="sort-order">Sắp xếp
@@ -247,7 +247,7 @@
         card.append(node("span","num",String(item.id).padStart(2,"0")),
           node("strong","",item.title),
           node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"),
-          node("small","",hasLesson ? "Có sổ câu đối chiếu V3.2 (chưa nghiệm thu)" : "Chưa có chỉ mục từng câu đủ chuẩn"));
+          node("small","",hasLesson ? "Có sổ câu đối chiếu V3.2 (chưa nghiệm thu)" : "Sổ V2 chưa chuyển thành bài học V3.2"));
         card.addEventListener("click", () => {
           state.selected = item.id;
           updateList(); updateDetail();
@@ -290,7 +290,7 @@
       const availability = node("p", "", indexed
         ? "Bài này có sổ " + indexed.phrase_count + " vị trí nhãn câu theo hệ " + indexed.variant_id +
           ". Chưa có nhịp/ngón/song lang được nghiệm thu."
-        : "Chưa có sổ từng câu đủ chuẩn cho V3.2; không suy diễn từ số câu trong danh mục.");
+        : "Đã có hồ sơ hoặc sổ câu V2 ở mức độ khác nhau, nhưng V3.2 chưa đối chiếu đủ để đưa vào bài học; không suy diễn từ tổng số câu.");
       detail.append(availability);
       const pageLink = node("a", "piece-page-link", "Trang riêng của bản Tổ ↗");
       pageLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/";
