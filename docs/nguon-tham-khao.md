@@ -65,6 +65,10 @@
 | REF-29 | **VOH – Thanh âm dân tộc (2022)**, hướng dẫn Tiểu Khúc với lời *Anh hùng Nguyễn Trung Trực* | Ghi **tác giả lời Thiếu Bá**, hướng dẫn bốn lớp, lớp I **1–10**, lớp III **18–25**, lớp IV **26–29**, có bài **ráp 4 lớp**. Nêu danh tính người hướng dẫn và ban đệm. **Chưa nghe kiểm phách với sách Nhị Tấn**. | [Lớp I 14/10/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-lop-1-anh-hung-nguyen-trung-truc-14220922000010432.html) · [Lớp IV 04/11/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-lop-4-anh-hung-nguyen-trung-truc-14220922000010436.html) · [Ráp 4 lớp 11/11/2022](https://voh.com.vn/radio/thanh-am-dan-toc-fm-999/the-dieu-tieu-khuc-rap-4-lop-anh-hung-nguyen-trung-truc-14220922000010437.html) |
 | REF-30 | **Karaoke Cải Lương Tổng hợp – *Tiểu Khúc 29 câu / Dữ Thúc Thành Hôn*** | Trang giới thiệu ghi **Cao Hoài Sang**. Dùng như đối chứng nhận diện tên bài lời, **không thay thế sách Nhị Tấn** về xuất xứ, không cấp quyền khai thác thương mại. | [Karaoke Tiểu Khúc 29 câu](https://www.karaoke.cailuongtoiyeu.com/karaoke-tieu-khuc-29-cau.html) · Chưa xác minh quyền |
 
+| REF-31 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)**, Trung tâm Văn hóa Quận 8 / Câu lạc bộ Đờn ca tài tử Quận 8 | **Nam Xuân 68 câu nhịp tư**: nhạc tr.**260/262/264/266/268**, lời ***Tích Thúy Kiều*** tr.**261/263/265/267/269**, sách ghi **Phan Trúc Quân (Sáu Lục, “trước năm 1900”)**. **Tám lớp 8 câu và nhãn in LỚP IX 4 câu 65–68**; hai lớp Trống Xuân ở lớp V/VI. Đã xem ảnh phần chính, kiểm chỉ mục các trang còn lại. | [Nhị Tấn tập III – bản số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · **Chưa có giấy phép tái bản/huấn luyện AI**, niên đại lời theo ấn phẩm, không độc lập xác nhận bản thảo |
+| REF-32 | **Blog Nhạc sĩ Văn Dần, *Bài Nam Xuân* (18/08/2013)** | Có **68 câu chữ nhạc và lời *Tích Thúy Kiều***, ghi Phan Trúc Quân (Sáu Lục, trước 1900). Dùng để ghi nhận **sai khác câu 38 và 42** với Nhị Tấn tập III, **không tự xác định bên nào sai**. | [Bài Nam Xuân – Văn Dần](https://nhacsivandan.wordpress.com/2013/08/18/bai-nam-xuan/) · Nguồn đăng trực tuyến, chưa truy nguyên bản ghi/giấy phép |
+| REF-33 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (1997), phụ lục “Ba bản Nam – Tô Huệ Chức Cẩm Hồi Văn”, tr.395–397** | Đã xem ảnh **tr.395–397**. Lời Nam Xuân có **48 câu lớp I–VI**, tiếp theo chỉ dẫn **ca lại 20 câu đầu Nam Xuân rồi chuyển Nam Ai**. Đây là **trình tự ca liên hoàn riêng**, không phải 68 câu lời *Tích Thúy Kiều*, **không phải trang ký âm 68 câu**. | [Nhị Tấn tập IV – phụ lục](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) · Chưa kiểm bản thu diễn xướng, bản quyền ca |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -85,6 +89,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–13](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–14](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
