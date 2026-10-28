@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b1724">
   <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
-  <title>HAI ĐẤT V3 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.1 · Thư viện 20 bản Tổ</title>
   <style>
     :root {--bg:#0b1724;--panel:#14263a;--panel2:#1a3045;--line:#30475b;--ink:#f4f3ed;--muted:#b2c2cc;--accent:#e3bf7a;--teal:#88d0c6;--warning:#f7d797;--radius:16px;}
     * { box-sizing:border-box }
@@ -53,6 +53,10 @@
     .search{display:block;width:100%;padding:13px 16px;background:#0b1928;border:1px solid #435568;border-radius:10px;color:var(--ink);outline:none;margin-bottom:15px}
     .search:focus-visible{border-color:var(--accent);box-shadow:0 0 0 3px #e3bf7a2b}
     .search::placeholder {color:#8d9eaa}
+    .advanced{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+    .advanced label{display:flex;flex:1 1 190px;flex-direction:column;gap:5px;font-size:12px;color:var(--muted)}
+    .advanced select{width:100%;min-width:0;padding:10px 12px;background:#0b1928;color:var(--ink);border:1px solid #435568;border-radius:10px;cursor:pointer}
+    .advanced select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     .tabs{display:flex;gap:6px;overflow-x:auto;padding:1px 0 3px}
     .tab{border:1px solid transparent;background:transparent;border-radius:9px;white-space:nowrap;color:var(--muted);padding:7px 11px;font-size:12px}
     .tab[aria-pressed="true"]{background:#2d4657;color:var(--ink);border-color:#68817d}
@@ -104,7 +108,7 @@
   </header>
   <main class="container" id="dau-trang">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="eyebrow">Phiên bản V3.0-alpha · Kho tư liệu có xuất xứ</div>
+      <div class="eyebrow">Phiên bản V3.1 · Tra cứu theo từng bản Tổ</div>
       <h1 id="hero-title">Hai mươi bản Tổ.<br><em>Muôn nẻo tiếng đờn.</em></h1>
       <p>Khám phá Đờn ca tài tử Nam Bộ qua những hồ sơ có nguồn. Tra cứu bài bản, đối chiếu hệ câu và dị bản — để mỗi điều tìm hiểu đều có dấu vết trở về tư liệu gốc.</p>
       <div class="hero-actions">
@@ -137,6 +141,22 @@
           <button type="button" class="tab" data-group="ba-nam" aria-pressed="false">Ba Nam</button>
           <button type="button" class="tab" data-group="bon-oan" aria-pressed="false">Bốn Oán</button>
         </div>
+        <div class="advanced">
+          <label for="evidence">Mức chứng cứ của hệ bản
+            <select id="evidence" aria-label="Lọc theo mức chứng cứ">
+              <option value="all">Tất cả mức chứng cứ</option>
+              <option value="source_indexed">Đã định vị trong hồ sơ V2</option>
+              <option value="source_reported">Nguồn được thuật lại</option>
+              <option value="derived_unverified">Ánh xạ chưa kiểm chứng</option>
+            </select>
+          </label>
+          <label for="sort-order">Sắp xếp
+            <select id="sort-order" aria-label="Chọn thứ tự sắp xếp">
+              <option value="number">Theo số thứ tự bài</option>
+              <option value="name">Theo tên bài (A–Z)</option>
+            </select>
+          </label>
+        </div>
       </div>
       <div class="layout">
         <div id="pieces" class="pieces" aria-label="Danh sách 20 bản Tổ" aria-live="polite">
@@ -152,7 +172,7 @@
   </main>
   <footer><div class="container">
     <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
-    <p>V3.0-alpha · Ngày bắt đầu 28/10/2026 · Đây là giao diện nghiên cứu thử nghiệm. Không phải trang được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <p>V3.1 · Bắt đầu 28/10/2026 · Đây là giao diện nghiên cứu thử nghiệm. Không phải trang được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
     <div class="footer-links"><a href="https://github.com/Form997/Vong-co/blob/v3-development/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
   </div></footer>
   <script>
@@ -164,7 +184,7 @@
       source_reported: "Nguồn thuật lại",
       derived_unverified: "Ánh xạ chưa thẩm định"
     };
-    const state = { catalog: null, family: "all", term: "", selected: null };
+    const state = { catalog: null, family: "all", term: "", selected: null, evidence: "all", sort: "number" };
     const byId = (id) => document.getElementById(id);
     const norm = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
     function node(tag, className, text) {
@@ -183,23 +203,26 @@
     }
     function matchingItems() {
       if (!state.catalog) return [];
-      const familyItems = state.catalog.items.filter(item =>
-        state.family === "all" || state.family === item.family
-      );
+      const subset = state.catalog.items.filter(item => (
+        (state.family === "all" || state.family === item.family) &&
+        (state.evidence === "all" || item.variants.some(v => v.evidence_status === state.evidence))
+      ));
       const keyword = norm(state.term.trim());
-      if (!keyword) return familyItems;
-      // Prefer canonical names, aliases and variant IDs. Mentions in warnings
-      // must NEVER overshadow the exact named piece (e.g. Phung Hoang vs
-      // Phung Cau). Only search long notes when direct matches are absent.
-      const direct = familyItems.filter(item => {
-        const identifiers = [item.title, item.slug]
-          .concat(item.aliases, item.variants.map(v => v.label), item.variants.map(v => v.variant_id));
-        return norm(identifiers.join(" ")).includes(keyword);
-      });
-      if (direct.length) return direct;
-      return familyItems.filter(item =>
-        norm([item.family_label, item.research_note].join(" ")).includes(keyword)
-      );
+      let found = subset;
+      if (keyword) {
+        // Canonical name, alias and variant ID take priority over a phrase
+        // appearing incidentally in another song's research note.
+        const direct = subset.filter(item => {
+          const names = [item.title, item.slug, ...item.aliases,
+            ...item.variants.map(v => v.label), ...item.variants.map(v => v.variant_id)];
+          return norm(names.join(" ")).includes(keyword);
+        });
+        found = direct.length ? direct : subset.filter(item =>
+          norm([item.family_label, item.research_note].join(" ")).includes(keyword));
+      }
+      return [...found].sort(state.sort === "name"
+        ? (a, b) => a.title.localeCompare(b.title, "vi")
+        : (a, b) => a.id - b.id);
     }
     function updateList() {
       const list = matchingItems(), container = byId("pieces");
@@ -249,7 +272,9 @@
         wrapper.append(meta,node("p","",v.qualification),link("Xem nguồn đối chiếu ↗",v.reference_url));detail.append(wrapper);
       }
       const links=node("div","detail-links");
-      links.append(researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
+      const pageLink = node("a", "piece-page-link", "Trang riêng của bản Tổ ↗");
+      pageLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/";
+      links.append(pageLink, researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
       detail.append(links);
     }
     function filterFamily(family) {
@@ -269,6 +294,8 @@
       state.term = "";
       byId("search").value = "";
       state.family = "all";
+      state.evidence = "all";
+      byId("evidence").value = "all";
       for (const tab of document.querySelectorAll(".tab")) {
         tab.setAttribute("aria-pressed", String(tab.dataset.group === "all"));
       }
@@ -276,6 +303,8 @@
     });
     document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
     byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
+    byId("evidence").addEventListener("change", e => {state.evidence=e.target.value;updateList();});
+    byId("sort-order").addEventListener("change", e => {state.sort=e.target.value;updateList();});
     async function start(){
       try{
         const resp = await fetch(DATA_URL,{cache:"no-store"});
