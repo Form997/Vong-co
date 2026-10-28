@@ -1,12 +1,12 @@
 # HAI ĐẤT V3.1 — Tra cứu 20 bản Tổ và trang riêng từng bài
 
-**Trạng thái:** V3.1 phát triển trên [`v3.1-development`](https://github.com/Form997/Vong-co/tree/v3.1-development) · khởi động **28/10/2026**. Website **V3.0** đã được GitHub Pages triển khai thành công [tại lần chạy #40675923989](https://github.com/Form997/Vong-co/actions/runs/40675923989). **Bản V3.1 chưa được đưa lên website công khai**; cần nghiệm thu Pull Request vào `v3-development`.
+**Trạng thái:** V3.1 được khởi động ngày **28/10/2026** trên nhánh `v3.1-development`, sau đó đã được [PR #5](https://github.com/Form997/Vong-co/pull/5) hợp nhất vào `v3-development` và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40689588576). Website công khai nay là **V3.1**.
 
 [**Website V3 công khai**](https://form997.github.io/Vong-co/) · [**Danh mục JSON**](../../data/v3/catalog.json) · [**Nhật ký V3.1**](../../docs/v3.1-khoi-dong.md)
 
 ## Có gì mới trong V3.1?
 
-- **20 trang riêng có URL ổn định**: `/Vong-co/bai/01-luu-thuy-truong/` đến `/Vong-co/bai/20-phung-cau/`, **được tạo khi build** từ dữ liệu JSON. Những URL này **đã được GitHub báo xuất bản thành công** trước khi nhánh V3.1 được hợp nhất và xuất bản.
+- **20 trang riêng có URL ổn định**: `/Vong-co/bai/01-luu-thuy-truong/` đến `/Vong-co/bai/20-phung-cau/`, **được tạo khi build** từ dữ liệu JSON. Các URL này đã được **GitHub Pages báo xuất bản thành công sau khi hợp nhất PR #5**.
 - Mỗi trang có tên bài, nhóm, tên khác, từng hệ câu/nhịp **theo nguồn**, mức chứng cứ, lưu ý nghiên cứu, liên kết biên bản V2, nút bài trước/sau và đường trở về danh mục.
 - Tìm không dấu, lọc 4 nhóm **Sáu Bắc (6), Bảy Lễ (7), Ba Nam (3), Bốn Oán (4)**; thêm lọc **có chỉ mục ở V2 / nguồn thuật lại / ánh xạ chưa thẩm định** và sắp xếp theo tên tiếng Việt hoặc số bài.
 - **Sitemap 22 địa chỉ**: trang gốc, danh mục và 20 trang bài; không gán chứng nhận hay chép nguyên nội dung được bảo hộ.
@@ -39,9 +39,9 @@ Với Codespaces, mở cổng 8000 bằng tính năng **Ports**. Không mở tr�
 
 - [GitHub Actions V3.1 — 45 bài thử Python đạt](https://github.com/Form997/Vong-co/actions/runs/40688707624).
 - [Chromium end-to-end](https://github.com/Form997/Vong-co/actions/runs/40688596819) đã kiểm tra tìm kiếm, lọc chứng cứ, sắp xếp tiếng Việt, 20 URL trả HTTP 200, liên kết nguồn và giao diện 390 px.
-- [Đóng gói website V3.1](https://github.com/Form997/Vong-co/actions/runs/40688707588): **27 tệp, 197.920 byte**, job Build thành công, **Deploy = Skipped** đúng quy trình thử nhánh; chưa xuất bản ra Internet.
+- [Đóng gói bản xem trước V3.1](https://github.com/Form997/Vong-co/actions/runs/40688707588): **27 tệp, 197.920 byte**, Build thành công, Deploy Skipped **khi còn ở nhánh thử nghiệm**. Sau khi merge PR #5, [Deploy chính thức thành công](https://github.com/Form997/Vong-co/actions/runs/40689588576).
 
-## Quy trình phát hành an toàn
+## Quy trình phát hành an toàn — đã thực hiện
 
 `v3.1-development` → kiểm thử tự động → **Pull Request** vào `v3-development` → rà soát → merge → workflow Pages triển khai khi điều kiện được cấp → xác nhận trang web online.
 
