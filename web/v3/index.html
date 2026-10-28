@@ -183,13 +183,23 @@
     }
     function matchingItems() {
       if (!state.catalog) return [];
-      return state.catalog.items.filter(item => {
-        if (state.family !== "all" && state.family !== item.family) return false;
-        if (!state.term) return true;
-        const searchable = [item.title, item.slug, item.family_label, item.research_note]
-          .concat(item.aliases, item.variants.map(v => v.label), item.variants.map(v => v.variant_id)).join(" ");
-        return norm(searchable).includes(norm(state.term));
+      const familyItems = state.catalog.items.filter(item =>
+        state.family === "all" || state.family === item.family
+      );
+      const keyword = norm(state.term.trim());
+      if (!keyword) return familyItems;
+      // Prefer canonical names, aliases and variant IDs. Mentions in warnings
+      // must NEVER overshadow the exact named piece (e.g. Phung Hoang vs
+      // Phung Cau). Only search long notes when direct matches are absent.
+      const direct = familyItems.filter(item => {
+        const identifiers = [item.title, item.slug]
+          .concat(item.aliases, item.variants.map(v => v.label), item.variants.map(v => v.variant_id));
+        return norm(identifiers.join(" ")).includes(keyword);
       });
+      if (direct.length) return direct;
+      return familyItems.filter(item =>
+        norm([item.family_label, item.research_note].join(" ")).includes(keyword)
+      );
     }
     function updateList() {
       const list = matchingItems(), container = byId("pieces");
