@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b1724">
+  <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
+  <title>HAI ĐẤT V3 · Thư viện 20 bản Tổ</title>
+  <style>
+    :root {--bg:#0b1724;--panel:#14263a;--panel2:#1a3045;--line:#30475b;--ink:#f4f3ed;--muted:#b2c2cc;--accent:#e3bf7a;--teal:#88d0c6;--warning:#f7d797;--radius:16px;}
+    * { box-sizing:border-box }
+    html {scroll-behavior:smooth}
+    body{margin:0;min-width:280px;background:radial-gradient(circle at 80% -10%,#1e3b50 0,transparent 44%),var(--bg);color:var(--ink);font:15px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a {color:var(--teal);text-underline-offset:3px}
+    a:hover {color:#d0fff4}
+    button,input {font:inherit}
+    button {cursor:pointer}
+    .container {max-width:1190px;margin:0 auto;padding:0 23px}
+    .top {border-bottom:1px solid var(--line);background:#0c1927eb}
+    .top-inner {display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:75px}
+    .brand {display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}
+    .mark {display:inline-grid;place-items:center;width:39px;height:39px;border:1px solid var(--accent);border-radius:12px;font:bold 21px Georgia,serif;color:var(--accent)}
+    .brand strong {display:block;font-size:15px;letter-spacing:2px}
+    .brand small {color:var(--muted);font-size:10px;letter-spacing:1.5px}
+    .top-links{display:flex;gap:22px}
+    .top-links a{text-decoration:none;color:var(--muted);font-size:13px}
+    .top-links a:hover{color:var(--ink)}
+    .hero{padding:70px 0 40px;position:relative}
+    .eyebrow{text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:700;font-size:11px}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.18}
+    h1{font-size:clamp(36px,5.4vw,68px);margin:12px 0 18px;max-width:780px;font-weight:500}
+    .hero p{max-width:650px;color:var(--muted);font-size:16px;margin:0 0 24px}
+    .hero em{font-style:normal;color:var(--accent)}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .primary,.secondary {display:inline-flex;align-items:center;gap:9px;border-radius:11px;padding:11px 17px;text-decoration:none;font-weight:650;font-size:13px}
+    .primary {background:var(--accent);color:#142335}
+    .primary:hover{color:#142335;background:#ffe0a8}
+    .secondary {border:1px solid var(--line);color:var(--ink)}
+    .secondary:hover {color:var(--ink);border-color:var(--accent)}
+    .notice{display:flex;gap:12px;align-items:start;margin:18px 0 32px;border:1px solid #6b5e3e;background:#29293a;padding:16px 19px;border-radius:12px;color:#f4e5c9;font-size:13px}
+    .notice strong{display:block;color:var(--warning)}
+    .notice svg {flex:none;margin-top:3px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0 48px}
+    .stat{background:linear-gradient(155deg,#192c3f,#102134);border:1px solid var(--line);border-radius:var(--radius);padding:21px}
+    .stat strong{font-family:Georgia,serif;font-size:33px;line-height:1.2;color:var(--accent);display:block}
+    .stat span{color:var(--muted);font-size:12px;letter-spacing:.2px}
+    .intro{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}
+    .intro h2{font-size:32px;font-weight:500;margin:4px 0 5px}
+    .intro p{color:var(--muted);margin:0}
+    .hint{font-size:12px;color:var(--muted)}
+    .controls{padding:14px;background:#122437;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:20px}
+    .search{display:block;width:100%;padding:13px 16px;background:#0b1928;border:1px solid #435568;border-radius:10px;color:var(--ink);outline:none;margin-bottom:15px}
+    .search:focus-visible{border-color:var(--accent);box-shadow:0 0 0 3px #e3bf7a2b}
+    .search::placeholder {color:#8d9eaa}
+    .tabs{display:flex;gap:6px;overflow-x:auto;padding:1px 0 3px}
+    .tab{border:1px solid transparent;background:transparent;border-radius:9px;white-space:nowrap;color:var(--muted);padding:7px 11px;font-size:12px}
+    .tab[aria-pressed="true"]{background:#2d4657;color:var(--ink);border-color:#68817d}
+    .tab:focus-visible,.piece:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);gap:18px;align-items:start}
+    .pieces{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .piece{position:relative;display:flex;flex-direction:column;text-align:left;gap:5px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:13px;padding:17px;min-height:123px}
+    .piece:hover,.piece[aria-pressed="true"]{border-color:var(--accent);background:#1a3146}
+    .piece .num{color:var(--accent);font:20px Georgia,serif}
+    .piece strong{font-size:15px;line-height:1.35}
+    .piece small{color:var(--muted);font-size:12px}
+    .detail{background:linear-gradient(165deg,#1a3146,#132537);border:1px solid var(--line);border-radius:var(--radius);padding:23px;position:sticky;top:15px;min-height:380px}
+    .detail .tag{font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:1.5px}
+    .detail h3{font-size:28px;font-weight:500;margin:8px 0 11px}
+    .detail p{font-size:13px;color:var(--muted);margin:7px 0 15px}
+    .pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:15px}
+    .pill{font-size:11px;border-radius:20px;border:1px solid #5c6270;padding:3px 9px;color:#ebdca6}
+    .pills .neutral{color:#bcd7da;border-color:#527079}
+    .variant{border-top:1px solid var(--line);padding:13px 0 3px}
+    .variant strong{font-size:13px;display:block}
+    .variant p{font-size:12px;margin:5px 0 7px}
+    .variant .meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+    .variant .meta b{color:var(--accent);font-weight:650}
+    .variant a{font-size:12px;display:inline-block;margin:7px 0 2px}
+    .detail-links{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0;border-top:1px solid var(--line);padding-top:15px}
+    .detail-links a{font-size:12px}
+    .empty{grid-column:1/-1;border:1px dashed var(--line);padding:24px;border-radius:12px;color:var(--muted);font-size:13px}
+    footer{border-top:1px solid var(--line);margin-top:63px;padding:28px 0 40px;color:var(--muted);font-size:12px}
+    footer p{margin:5px 0}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+    @media(max-width:960px){.layout{grid-template-columns:1fr}.detail{position:static}.stats{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.container{padding:0 15px}.top-inner{min-height:64px}.top-links a:nth-child(2){display:none}.top-links{gap:12px}.hero{padding:44px 0 25px}.hero p{font-size:14px}.stats{gap:8px;margin-bottom:34px}.stat{padding:15px}.stat strong{font-size:27px}.intro{display:block}.intro h2{font-size:27px}.pieces{grid-template-columns:1fr}.piece{min-height:100px}.detail{padding:18px}.notice{font-size:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="container top-inner">
+      <a class="brand" href="#dau-trang" aria-label="HAI ĐẤT - về đầu trang">
+        <span class="mark" aria-hidden="true">Đ</span>
+        <span><strong>HAI ĐẤT</strong><small>DI SẢN · DỮ LIỆU · ĐỐI CHIẾU</small></span>
+      </a>
+      <nav class="top-links" aria-label="Điều hướng">
+        <a href="#tra-cuu">Tra cứu</a>
+        <a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">V3 là gì?</a>
+        <a href="https://github.com/Form997/Vong-co/tree/v3-development" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="dau-trang">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow">Phiên bản V3.0-alpha · Kho tư liệu có xuất xứ</div>
+      <h1 id="hero-title">Hai mươi bản Tổ.<br><em>Muôn nẻo tiếng đờn.</em></h1>
+      <p>Khám phá Đờn ca tài tử Nam Bộ qua những hồ sơ có nguồn. Tra cứu bài bản, đối chiếu hệ câu và dị bản — để mỗi điều tìm hiểu đều có dấu vết trở về tư liệu gốc.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#tra-cuu">Khám phá 20 bản Tổ <span aria-hidden="true">↘</span></a>
+        <a class="secondary" href="https://github.com/Form997/Vong-co/blob/v3-development/docs/nguon-tham-khao.md" target="_blank" rel="noopener noreferrer">Sổ nguồn tham khảo</a>
+      </div>
+    </section>
+    <aside class="notice" role="note">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z" stroke-width="1.5"/><path d="M12 9v5m0 3v1" stroke-width="1.5"/></svg>
+      <div><strong>Dữ liệu nghiên cứu, chưa phải bản diễn xướng chuẩn.</strong> Đã mở 20/20 hồ sơ kiểm nguồn V2; 0/20 bài được nghiệm thu diễn xướng. Không tự sao chép ký âm, lời ca hoặc bản thu có bản quyền.</div>
+    </aside>
+    <section class="stats" aria-label="Tổng quan dữ liệu">
+      <div class="stat"><strong id="count-pieces">20</strong><span>Bản Tổ trong danh mục</span></div>
+      <div class="stat"><strong id="count-variants">—</strong><span>Hệ bản và dị bản mô tả</span></div>
+      <div class="stat"><strong>04</strong><span>Nhóm Bắc · Lễ · Nam · Oán</span></div>
+      <div class="stat"><strong>00</strong><span>Bài đã nghiệm thu diễn xướng</span></div>
+    </section>
+    <section id="tra-cuu" aria-labelledby="browse-title">
+      <div class="intro">
+        <div><div class="eyebrow">Tìm hiểu theo bản / nhóm / dị bản</div><h2 id="browse-title">Thư viện tra cứu</h2><p>Chọn bài để mở đối chiếu nguồn và những chỗ còn chưa chắc chắn.</p></div>
+        <span class="hint" id="result-count" aria-live="polite">Đang tải dữ liệu…</span>
+      </div>
+      <div class="controls">
+        <label for="search" class="hint">Tìm tên bản Tổ, tên khác hoặc mã hệ bản</label>
+        <input id="search" class="search" type="search" autocomplete="off" placeholder="Ví dụ: Nam Ai, Phung Cau, Cổ Bản Vắn..." aria-label="Tìm kiếm bản Tổ">
+        <div id="filters" class="tabs" role="group" aria-label="Lọc theo nhóm nhạc">
+          <button type="button" class="tab" data-group="all" aria-pressed="true">Tất cả</button>
+          <button type="button" class="tab" data-group="sau-bac" aria-pressed="false">Sáu Bắc</button>
+          <button type="button" class="tab" data-group="bay-le" aria-pressed="false">Bảy Lễ</button>
+          <button type="button" class="tab" data-group="ba-nam" aria-pressed="false">Ba Nam</button>
+          <button type="button" class="tab" data-group="bon-oan" aria-pressed="false">Bốn Oán</button>
+        </div>
+      </div>
+      <div class="layout">
+        <div id="pieces" class="pieces" aria-label="Danh sách 20 bản Tổ" aria-live="polite">
+          <p class="empty">Đang nạp danh mục V3 từ dữ liệu JSON...</p>
+        </div>
+        <aside class="detail" id="detail" aria-label="Thông tin bản Tổ" aria-live="polite">
+          <div class="tag">Thông tin bản Tổ</div>
+          <h3>Chọn một bản Tổ</h3>
+          <p>Nhấn vào tên bài để xem hệ câu/nhịp, các dị bản được ghi nhận và liên kết biên bản kiểm nguồn.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">
+    <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
+    <p>V3.0-alpha · Ngày bắt đầu 28/10/2026 · Đây là giao diện nghiên cứu thử nghiệm. Không phải trang được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <div class="footer-links"><a href="https://github.com/Form997/Vong-co/blob/v3-development/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
+  </div></footer>
+  <script>
+    "use strict";
+    const DATA_URL = "../../data/v3/catalog.json";
+    const SOURCE_BASE = "https://github.com/Form997/Vong-co/blob/v3-development/";
+    const LABELS = {
+      source_indexed: "Có chỉ mục từ V2",
+      source_reported: "Nguồn thuật lại",
+      derived_unverified: "Ánh xạ chưa thẩm định"
+    };
+    const state = { catalog: null, family: "all", term: "", selected: null };
+    const byId = (id) => document.getElementById(id);
+    const norm = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
+    function node(tag, className, text) {
+      const e = document.createElement(tag);
+      if (className) e.className = className;
+      if (text !== undefined) e.textContent = String(text);
+      return e;
+    }
+    function link(label, href) {
+      const a = node("a", "", label);
+      a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
+      return a;
+    }
+    function researchLink(label, path) {
+      return link(label, SOURCE_BASE + path);
+    }
+    function matchingItems() {
+      if (!state.catalog) return [];
+      return state.catalog.items.filter(item => {
+        if (state.family !== "all" && state.family !== item.family) return false;
+        if (!state.term) return true;
+        const searchable = [item.title, item.slug, item.family_label, item.research_note]
+          .concat(item.aliases, item.variants.map(v => v.label), item.variants.map(v => v.variant_id)).join(" ");
+        return norm(searchable).includes(norm(state.term));
+      });
+    }
+    function updateList() {
+      const list = matchingItems(), container = byId("pieces");
+      container.replaceChildren();
+      byId("result-count").textContent = list.length + " / 20 bài phù hợp";
+      for (const item of list) {
+        const card = node("button","piece"); card.type = "button";
+        card.setAttribute("aria-pressed",String(state.selected === item.id));
+        card.append(node("span","num",String(item.id).padStart(2,"0")),
+          node("strong","",item.title),
+          node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"));
+        card.addEventListener("click", () => {
+          state.selected = item.id;
+          updateList(); updateDetail();
+          history.replaceState(null,"","#bai-" + String(item.id).padStart(2,"0"));
+          if (window.matchMedia("(max-width: 960px)").matches) byId("detail").scrollIntoView({behavior:"smooth",block:"start"});
+        });
+        container.append(card);
+      }
+      if (!list.length) container.append(node("p","empty","Không thấy bài phù hợp. Thử tìm bằng tên khác hoặc bỏ bộ lọc nhóm."));
+      if (state.selected === null || !list.some(x=>x.id===state.selected)) state.selected = list.length ? list[0].id : null;
+      for (const card of container.querySelectorAll(".piece")) {
+        const cardId = Number(card.firstElementChild.textContent);
+        card.setAttribute("aria-pressed",String(cardId===state.selected));
+      }
+      updateDetail();
+    }
+    function updateDetail() {
+      const detail = byId("detail"); detail.replaceChildren();
+      const item = state.catalog?.items.find(x=>x.id===state.selected);
+      if (!item) {
+        detail.append(node("div","tag","Hướng dẫn tra cứu"), node("h3","","Chọn một bản Tổ"), node("p","","Hãy chọn tên bài ở danh sách để xem nguồn và dị bản.")); return;
+      }
+      detail.append(node("div","tag",item.family_label + " · Bản số " + String(item.id).padStart(2,"0")),node("h3","",item.title));
+      if (item.aliases.length) detail.append(node("p","","Tên khác: " + item.aliases.join(" · ")));
+      const pills=node("div","pills");
+      pills.append(node("span","pill neutral","Hồ sơ nguồn V2: đã mở"),node("span","pill","Diễn xướng: chờ nghiệm thu"),node("span","pill","Quyền: chưa xác minh"));
+      detail.append(pills,node("p","",item.research_note));
+      const caption=node("div","tag","Các hệ bản đang quản lý");caption.style.marginTop="19px";detail.append(caption);
+      for(const v of item.variants) {
+        const wrapper=node("section","variant");
+        wrapper.append(node("strong","",v.label));
+        const meta=node("div","meta");
+        meta.append(node("b","",v.phrase_count+" câu"),
+          node("span","",v.beats_per_phrase === null ? "Nhịp chưa rõ" : "Nhịp "+v.beats_per_phrase),
+          node("span","",LABELS[v.evidence_status]||"Chưa rõ"));
+        wrapper.append(meta,node("p","",v.qualification),link("Xem nguồn đối chiếu ↗",v.reference_url));detail.append(wrapper);
+      }
+      const links=node("div","detail-links");
+      links.append(researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
+      detail.append(links);
+    }
+    function filterFamily(family) {
+      state.family=family;
+      for(const t of document.querySelectorAll(".tab")) t.setAttribute("aria-pressed",String(t.dataset.group===family));
+      updateList();
+    }
+    document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
+    byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
+    async function start(){
+      try{
+        const resp = await fetch(DATA_URL,{cache:"no-store"});
+        if(!resp.ok) throw new Error("HTTP "+resp.status);
+        const data=await resp.json();
+        if(!Array.isArray(data.items)||data.items.length!==20||data.catalog_status!=="research_preview") throw new Error("Không đúng định dạng danh mục V3");
+        state.catalog=data;
+        const hashMatch=location.hash.match(/^#bai-(\d{2})$/);
+        state.selected=hashMatch?Number(hashMatch[1]):1;
+        byId("count-pieces").textContent=data.items.length;
+        byId("count-variants").textContent=data.items.reduce((sum,p)=>sum+p.variants.length,0);
+        updateList();
+      } catch(error) {
+        byId("pieces").replaceChildren(node("p","empty","Không thể nạp dữ liệu JSON. Mở trang qua máy chủ HTTP, ví dụ: python -m http.server 8000 tại thư mục gốc rồi truy cập /web/v3/. Chi tiết: "+error.message));
+        byId("result-count").textContent="Lỗi tải dữ liệu";
+      }
+    }
+    start();
+  </script>
+</body>
+</html>
