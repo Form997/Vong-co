@@ -6,7 +6,7 @@
 
 > **20 bài bản Tổ · 4 nhóm hơi/điệu · hồ sơ nghiên cứu có dẫn nguồn · nghiệm thu theo từng câu · hướng tới tra cứu bằng AI/MCP**
 >
-> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **13/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
+> **Trạng thái 28/10/2026:** **20/20** hồ sơ V1 đã được kiểm kê · **14/20** bài đã mở biên bản V2 · **00/20** bài đạt nghiệm thu diễn xướng. Đây là **dự án nghiên cứu đang phát triển**, không phải thư viện tổng phổ/âm thanh đã được chứng nhận.
 
 [**Khám phá 20 bài**](#khám-phá-20-bản-tổ) · [**Dành cho AI & doanh nghiệp**](#dành-cho-ai-doanh-nghiệp-và-nhà-phát-triển) · [**Nguồn tham khảo**](#nguồn-khoa-học-và-tư-liệu-có-thể-truy-cập) · [**Cộng tác**](#cùng-xây-dựng-một-kho-tư-liệu-có-thể-kiểm-chứng)
 
@@ -48,7 +48,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 | 11 | Bảy Lễ | [Long Ngâm](ban-to/11-long-ngam/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 12 | Bảy Lễ | [Vạn Giá](ban-to/12-van-gia/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 13 | Bảy Lễ | [Tiểu Khúc](ban-to/13-tieu-khuc/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
-| 14 | Ba Nam | [Nam Xuân](ban-to/14-nam-xuan/README.md) | Chưa mở biên bản V2 |
+| 14 | Ba Nam | [Nam Xuân](ban-to/14-nam-xuan/README.md) | [Biên bản V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) — chờ nghiệm thu |
 | 15 | Ba Nam | [Nam Ai](ban-to/15-nam-ai/README.md) | Chưa mở biên bản V2 |
 | 16 | Ba Nam | [Đảo Ngũ Cung](ban-to/16-dao-ngu-cung/README.md) | Chưa mở biên bản V2 |
 | 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | Chưa mở biên bản V2 |
@@ -67,6 +67,7 @@ Dự án quản lý **6 Bắc + 7 Lễ + 3 Nam + 4 Oán**. Số thứ tự là *
 - **Vạn Giá (12):** ký âm **47 câu** tr.244/246/248/250 và lời **“Biệt mãi thanh lâu”** tr.245/247/249/251, sách Nhị Tấn tập III ghi **Cao Hoài Sang (1940)**; **câu 42–47 nằm sát trước Tiểu Khúc**. Lời *Nhẫn nhịn* (TKaraoke ghi Hoài Như) là nguồn mới riêng, chưa rà ca cùng bản đờn.
 - **Tiểu Khúc (13):** bản ký âm **29 câu, bốn lớp 10+7+8+4** trong Nhị Tấn tập III, nhạc tr.**250/252**, lời *Dữ Thúc thành hôn* tr.**251/253** (sách ghi **Cao Hoài Sang 1940**). Phụ lục tập V tr.**503–504** có lời khác *Bàng Quyên chặt chơn Tôn Tẫn* (Thái Thụy Phong); VOH 2022 có bài *Anh hùng Nguyễn Trung Trực* (ghi Thiếu Bá). **Đừng trộn ba bộ lời hoặc coi bản thu đã được nghiệm thu**.
 - **Nhóm Bảy Lễ (07–13): đã mở đủ 7/7 biên bản kiểm nguồn V2, nhưng 0/7 bài đạt nghiệm thu diễn xướng.**
+- **Nam Xuân (14):** tìm thấy **68 câu nhạc + 68 câu lời** trong Nhị Tấn tập III, nhạc tr.**260/262/264/266/268**, lời *Tích Thúy Kiều* tr.**261/263/265/267/269** (sách ghi **Phan Trúc Quân/Sáu Lục, trước 1900**). **8 lớp 8 câu + LỚP IX bốn câu 65–68** trên bản in. Văn Dần khác nét nhạc tại **câu 38, 42**. Phụ lục tập IV có ***Tô Huệ – Chức Cẩm Hồi Văn*: 48 câu + chỉ dẫn hát lặp 20 câu**, không được ghép thành bộ lời gốc 68 câu. **CHỜ nghiệm thu biểu diễn**.
 - Các mâu thuẫn về **Nam Ai 68/84 và Đảo Ngũ Cung 67/68** còn cần đối chứng. Không tự chuẩn hóa bằng suy đoán.
 
 [Danh mục và hệ câu/nhịp V1](docs/20-ban-to.md) · [Biên bản kiểm toán V1](docs/kiem-toan-v1-20-ban.md) · [Quy chế nghiệm thu V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md)
@@ -122,11 +123,11 @@ Mỗi hồ sơ cần qua bốn tầng bằng chứng:
 
 **Trạng thái của bài:** `CHỜ NGHIỆM THU` (thiếu bằng chứng) · `KHÔNG ĐẠT` (sai lệch đã chứng minh) · `ĐẠT` (đủ điều kiện và có kiểm duyệt). Mọi kết quả **ĐẠT kiểm nguồn** chỉ áp dụng ở tiêu chí đã kiểm, **không phải ĐẠT toàn bài**.
 
-**Tình trạng hiện tại: 13/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
+**Tình trạng hiện tại: 14/20 bài đã có biên bản nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** Các sổ chứa 32, 34, 44, 68… dòng **là chỉ mục làm việc**, không phải bản ký âm/thu âm được bảo chứng.
 
 ## Nguồn khoa học và tư liệu có thể truy cập
 
-**[MỞ DANH MỤC 30 MỤC NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
+**[MỞ DANH MỤC 33 MỤC NGUỒN ĐÃ SỬ DỤNG — TÁC GIẢ, NĂM, LINK GỐC, MỨC KIỂM VÀ GIỚI HẠN](docs/nguon-tham-khao.md)**
 
 Các mốc tham khảo chính, sắp theo **mục đích và mức xuất xứ** (không đánh đồng tất cả nguồn là tài liệu học thuật đồng cấp):
 
