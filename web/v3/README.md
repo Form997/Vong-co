@@ -6,7 +6,7 @@
 
 ## Có gì mới trong V3.1?
 
-- **20 trang riêng có URL ổn định**: `/Vong-co/bai/01-luu-thuy-truong/` đến `/Vong-co/bai/20-phung-cau/`, **được tạo khi build** từ dữ liệu JSON. Những URL này **chưa phải trang đang online** trước khi nhánh V3.1 được hợp nhất và xuất bản.
+- **20 trang riêng có URL ổn định**: `/Vong-co/bai/01-luu-thuy-truong/` đến `/Vong-co/bai/20-phung-cau/`, **được tạo khi build** từ dữ liệu JSON. Những URL này **đã được GitHub báo xuất bản thành công** trước khi nhánh V3.1 được hợp nhất và xuất bản.
 - Mỗi trang có tên bài, nhóm, tên khác, từng hệ câu/nhịp **theo nguồn**, mức chứng cứ, lưu ý nghiên cứu, liên kết biên bản V2, nút bài trước/sau và đường trở về danh mục.
 - Tìm không dấu, lọc 4 nhóm **Sáu Bắc (6), Bảy Lễ (7), Ba Nam (3), Bốn Oán (4)**; thêm lọc **có chỉ mục ở V2 / nguồn thuật lại / ánh xạ chưa thẩm định** và sắp xếp theo tên tiếng Việt hoặc số bài.
 - **Sitemap 22 địa chỉ**: trang gốc, danh mục và 20 trang bài; không gán chứng nhận hay chép nguyên nội dung được bảo hộ.
@@ -48,3 +48,11 @@ Với Codespaces, mở cổng 8000 bằng tính năng **Ports**. Không mở tr�
 Nhánh `main` và `v1-frozen` không bị thay đổi. V3.1 **không** tự cấp phép nội dung hay tuyên bố đã nghiệm thu âm nhạc: **20/20 đã mở hồ sơ kiểm nguồn; 0/20 nghiệm thu diễn xướng**.
 
 **Giới hạn còn lại:** chưa có ký âm/audio đủ quyền công bố, chưa nghiệm thu thực tấu nghệ nhân, chưa có giao diện nhập/sửa dữ liệu hay API/AI chính thức; các bài V3.1 là trang **metadata**, không phải bài học hoàn chỉnh hoặc bản diễn nhạc.
+
+## Phát hành V3.1 đã xác nhận
+
+- [Kết quả GitHub Actions triển khai Pages](https://github.com/Form997/Vong-co/actions/runs/40689588576): **Build Success · Deploy Success**.
+- [Kiểm thử Python sau merge](https://github.com/Form997/Vong-co/actions/runs/40689588560) và [Chromium sau merge](https://github.com/Form997/Vong-co/actions/runs/40689588524): **Success**.
+- [Website tra cứu](https://form997.github.io/Vong-co/) · [Lưu Thủy Trường](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/) · [Phụng Cầu](https://form997.github.io/Vong-co/bai/20-phung-cau/).
+
+*URL công khai đã được GitHub deploy ghi nhận. Kiểm thử HTTP 20 trang được thực hiện trong môi trường Chromium của GitHub Actions; chưa thực hiện kiểm tra truy cập web công khai độc lập từ bên ngoài.*
