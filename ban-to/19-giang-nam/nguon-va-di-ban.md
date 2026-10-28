@@ -26,3 +26,8 @@
 | GN-57 | 57 câu theo một nguồn giảng dạy | Chưa biết câu bị bỏ, không xóa tùy tiện |
 
 **Chưa nghiệm thu:** 58 chữ đờn, phách mô, song lang, bản MP3 được phép tái phân phối và toàn lời ca đủ 58 câu.
+
+
+## ĐÍNH CHÍNH V2 (28/10/2026)
+
+Bản V1 ở trên là **lịch sử khảo cứu, không phải kết quả cuối cùng**. Nay đã định vị bản in Nhị Tấn IV tr.320–331 có 58 câu ký âm và **58 câu lời *Kim, Kiều hoa viên ngộ* – Nguyễn Văn Thinh (1970)**. **Cấu trúc in S1 là 16+18+13+11**, trái mô tả Viện **16+18+12+12**; Khúc 8 nhạc từ 47, lời từ 45. Cần phân biệt **Nguyễn Văn Thinh 58 câu** với **Trần Thiên Hùng 16 câu**, không nhầm tình trạng đã kiểm văn bản với đã thẩm âm. [Biên bản](v2-bien-ban-nghiem-thu.md) · [Sổ đầy đủ](v2-ra-soat-58-cau.md).
