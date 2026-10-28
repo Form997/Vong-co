@@ -2,7 +2,7 @@
 
 > **CẬP NHẬT THỰC TẾ — 28/10/2026:** GitHub đã **triển khai thành công website V3.0** ở [run #40675923989, attempt 3](https://github.com/Form997/Vong-co/actions/runs/40675923989), job **Deploy public research preview = Success**. GitHub xác nhận địa chỉ [https://form997.github.io/Vong-co/](https://form997.github.io/Vong-co/). Các lỗi và hướng dẫn bên dưới là **lịch sử xử lý ban đầu**, không phải trạng thái hiện tại.
 >
-> **V3.1:** nhánh `v3.1-development` hiện **chỉ build và kiểm thử**, không tự deploy. Gói V3.1 gồm **27 tệp** (20 trang bài mới); chỉ sau khi xét duyệt Pull Request vào `v3-development` mới kích hoạt xuất bản V3.1. Xem [hướng dẫn thử V3.1](../web/v3/README.md).
+> **V3.1 — đã triển khai:** [PR #5 đã merge](https://github.com/Form997/Vong-co/pull/5), [Deploy GitHub Pages đã Success](https://github.com/Form997/Vong-co/actions/runs/40689588576). Gói V3.1 có **27 tệp** (20 trang bài mới), công bố từ nhánh `v3-development`. Nhánh `v3.1-development` chỉ dùng chuẩn bị/bảo lưu thay đổi. Xem [hướng dẫn thử V3.1](../web/v3/README.md).
 
 
 
