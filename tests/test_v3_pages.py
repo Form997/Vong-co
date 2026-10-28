@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import functools
+from html import escape
 import http.server
 import json
 from pathlib import Path
@@ -63,7 +64,7 @@ class V31PagesBuildTests(unittest.TestCase):
                 self.assertIn("../../web/v3/", html)
                 for v in item["variants"]:
                     self.assertIn(v["reference_url"], html)
-                    self.assertIn(v["qualification"].replace("&", "&amp;"), html)
+                    self.assertIn(escape(v["qualification"], quote=True), html)
 
     def test_external_values_are_html_escaped(self):
         data = json.loads(json.dumps(self.catalog[0]))
