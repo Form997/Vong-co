@@ -29,6 +29,29 @@ FAMILIES = (
     ("bon-oan", "Bốn Oán", 17, 20),
 )
 ALLOWED_EVIDENCE = frozenset(("source_indexed", "source_reported", "derived_unverified"))
+ROOT_FIELDS = frozenset((
+    "schema_version", "project", "started_on", "origin_branch", "catalog_status",
+    "rights_notice", "verification_notice", "variant_status_definitions", "items",
+))
+PIECE_FIELDS = frozenset((
+    "id", "slug", "title", "family", "family_label", "aliases", "review_status",
+    "performance_status", "rights_status", "readme_document", "review_document",
+    "variants", "research_note",
+))
+VARIANT_FIELDS = frozenset((
+    "variant_id", "label", "phrase_count", "beats_per_phrase",
+    "evidence_status", "reference_url", "qualification",
+))
+
+
+def require_exact_fields(errors: list[str], entry: dict, fields: frozenset[str], context: str):
+    missing = fields - set(entry)
+    extra = set(entry) - fields
+    if missing:
+        errors.append(f"{context}: thiếu trường {sorted(missing)}.")
+    if extra:
+        errors.append(f"{context}: có trường lạ {sorted(extra)}.")
+
 
 
 def reject_duplicate_keys(pairs: list[tuple[str, object]]) -> dict:
@@ -52,6 +75,7 @@ def validate_catalog(data: dict, root: Path = ROOT) -> list[str]:
     errors: list[str] = []
     if not isinstance(data, dict):
         return ["Gốc JSON không phải object."]
+    require_exact_fields(errors, data, ROOT_FIELDS, "Dữ liệu gốc")
     if data.get("schema_version") != "3.0.0-alpha.1":
         errors.append("Sai schema_version V3.0-alpha.1.")
     if data.get("catalog_status") != "research_preview":
@@ -84,6 +108,7 @@ def validate_catalog(data: dict, root: Path = ROOT) -> list[str]:
         if not isinstance(item, dict):
             errors.append(f"{prefix} phải là object.")
             continue
+        require_exact_fields(errors, item, PIECE_FIELDS, prefix)
         piece_id = item.get("id")
         if type(piece_id) is not int or piece_id != idx:
             errors.append(f"{prefix}.id phải là số {idx}, không được đảo/trùng.")
@@ -101,6 +126,8 @@ def validate_catalog(data: dict, root: Path = ROOT) -> list[str]:
             errors.append(f"{prefix} nhóm sai cho bài {idx}.")
         if not isinstance(item.get("aliases"), list) or any(not isinstance(x, str) for x in item["aliases"]):
             errors.append(f"{prefix}.aliases phải là mảng chuỗi.")
+        elif len(set(norm.casefold() for norm in item["aliases"])) != len(item["aliases"]):
+            errors.append(f"{prefix}.aliases có tên trùng.")
         if item.get("review_status") != "source_review_open":
             errors.append(f"{prefix}: hồ sơ V2 chỉ mới được mở, chưa thể nâng cấp mức kiểm nguồn.")
         if item.get("performance_status") != "pending":
@@ -130,6 +157,7 @@ def validate_catalog(data: dict, root: Path = ROOT) -> list[str]:
             if not isinstance(variant, dict):
                 errors.append(f"{name} không phải object.")
                 continue
+            require_exact_fields(errors, variant, VARIANT_FIELDS, name)
             vid = variant.get("variant_id")
             if not isinstance(vid, str) or not re.fullmatch(r"[A-Z0-9-]+", vid):
                 errors.append(f"{name}.variant_id không hợp lệ.")
@@ -183,6 +211,12 @@ def main() -> int:
         schema = strict_load(SCHEMA)
         if schema.get("properties", {}).get("schema_version", {}).get("const") != "3.0.0-alpha.1":
             raise ValueError("JSON Schema không cùng thế hệ.")
+        if set(schema.get("required", ())) != ROOT_FIELDS:
+            raise ValueError("JSON Schema thiếu/thừa trường gốc so với validator.")
+        if set(schema.get("$defs", {}).get("piece", {}).get("required", ())) != PIECE_FIELDS:
+            raise ValueError("JSON Schema thiếu/thừa trường bài bản so với validator.")
+        if set(schema.get("$defs", {}).get("variant", {}).get("required", ())) != VARIANT_FIELDS:
+            raise ValueError("JSON Schema thiếu/thừa trường dị bản so với validator.")
         errors = validate_catalog(data)
     except (OSError, ValueError, TypeError, KeyError) as exc:
         print(f"FAIL: {exc}", file=sys.stderr)
