@@ -40,6 +40,14 @@ The 20-song browser distinguishes **2 source-indexed study modules** and **18 pi
 
 **Release state: V3.2 is now live on GitHub Pages**, following [merged PR #8](https://github.com/Form997/Vong-co/pull/8) and [successful deployment](https://github.com/Form997/Vong-co/actions/runs/40694415309). [All 60 Python tests](https://github.com/Form997/Vong-co/actions/runs/40694415249) and [Chromium checks](https://github.com/Form997/Vong-co/actions/runs/40694415286) passed after merging. **0/20 compositions are certified for performance**, and music/audio reuse permissions remain unverified.
 
+### V3.2 — Heritage Editorial interface refresh (28 October 2026)
+
+The source-first V3.2 release was followed by a visual redesign, merged in [PR #9](https://github.com/Form997/Vong-co/pull/9). It introduces an original **warm ivory, forest green and muted gold** design system, an editorial landing page with a CSS-only circular motif, clearer library filtering and cards, cohesive layouts for all 20 composition pages, and responsive phrase-study accordions. No third-party font service, stock imagery or unlicensed audio is loaded.
+
+**Live:** [HAI ĐẤT website](https://form997.github.io/Vong-co/), [GitHub Pages deployment successful](https://github.com/Form997/Vong-co/actions/runs/40697296276), [62 Python tests passed](https://github.com/Form997/Vong-co/actions/runs/40697296133), [Chromium checks passed at 360/390/768/1024/1366 px](https://github.com/Form997/Vong-co/actions/runs/40697296268).
+
+**Pinned size:** [merge commit `a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15) has **150 source files, 1,275,924 Git blob bytes (1,246.02 KiB)**; the generated website has **29 files, 462,065 bytes**. These are not ZIP sizes. Musical validation remains **0/20 approved** and source/reuse restrictions are unchanged.
+
 ### V3.1 — Discoverable evidence-backed pages
 
 Started **28 October 2026** on `v3.1-development`. V3.1 adds **20 standalone, source-aware composition pages**, filters for three evidence levels, and Vietnamese-alphabet sorting. Every page links to its V2 research record and distinguishes unapproved performance and reuse rights.
