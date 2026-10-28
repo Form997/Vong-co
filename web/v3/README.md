@@ -2,7 +2,7 @@
 
 **Ngày bắt đầu V3.2:** 28/10/2026.  
 **Nhánh làm việc:** [`v3.2-development`](https://github.com/Form997/Vong-co/tree/v3.2-development).  
-**Website công khai hiện tại:** [HAI ĐẤT V3.1](https://form997.github.io/Vong-co/), đã được [GitHub Pages xác nhận triển khai](https://github.com/Form997/Vong-co/actions/runs/40689588576). **V3.2 chưa thay thế website đó cho tới khi Pull Request được kiểm và merge.**
+**Website công khai hiện tại:** [HAI ĐẤT V3.2](https://form997.github.io/Vong-co/); [PR #8 đã merge](https://github.com/Form997/Vong-co/pull/8) và [GitHub Pages Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40694415309) ngày 28/10/2026.
 
 ## Điều mới trong V3.2
 
@@ -14,7 +14,7 @@ Website vẫn có **20 trang riêng / 30 hệ bản thuộc danh mục V3**, đ�
 - [JSON 72 câu](../../data/v3_2/phrase_index.json), [JSON Schema](../../data/v3_2/schema.json) và [trình kiểm dữ liệu theo sổ V2](../../scripts/v3_2_validate.py), không cần API bên ngoài.
 - Link đến [quy chế thẩm định](../../docs/v3.2-quy-trinh-tham-dinh.md) và [phiếu thực hành](../../docs/v3.2-phieu-thuc-hanh.md). Mọi trang ghi **0/20 nghiệm thu diễn xướng**, chưa có bản ghi có quyền tái phát.
 
-## Xem thử V3.2 từ GitHub (chưa cần cập nhật website)
+## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
 Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:
 
@@ -52,7 +52,7 @@ Dùng **GitHub Codespaces** cũng được: mở port 8000 ở tab **Ports**. Tr
 - Bộ Python phải kiểm đúng toàn bộ 72 hàng V2 và chặn tự gắn `audio_url`, nốt, `lesson_certified`, đổi quyền hoặc đổi hệ nhịp.
 - Chromium thực tế kiểm: 20 bản/30 hệ, tìm không dấu, lọc 2/18, 32+40 nhãn câu, trang PDF, khả năng xem điện thoại 390 px và không có lỗi JavaScript.
 - Gói GitHub Pages chỉ được phép chứa **HTML tra cứu, JSON/schema và robots/sitemap**, không chép nguồn PDF/MP3/ký âm hoặc thư mục V2 lên web. 20 trang bài vẫn giữ nguyên địa chỉ từ V3.1.
-- **Chỉ merge vào `v3-development` sau khi CI đạt và được rà soát**. Website công khai chỉ cập nhật khi [workflow Pages](../../.github/workflows/pages-v3.yml) có **Deploy Success**.
+- **Đã hợp nhất PR #8 vào `v3-development` và xác nhận [workflow Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40694415309).** [Python 60/60](https://github.com/Form997/Vong-co/actions/runs/40694415249) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40694415286) đều đạt trên commit merge. Bạn có thể [mở bài 01](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/#hoc-tung-cau) hoặc [bài 20](https://form997.github.io/Vong-co/bai/20-phung-cau/#hoc-tung-cau) để xem 72 vị trí câu. Đây là bài học *truy nguồn*, chưa phải âm nhạc được chứng nhận.
 
 **Đã mở hồ sơ nguồn 20/20, nhưng nghiệm thu biểu diễn vẫn 0/20.** Địa chỉ web, README hoặc điểm kiểm thử phần mềm không phải chứng nhận của cơ quan chuyên môn.
 
