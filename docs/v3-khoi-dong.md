@@ -25,10 +25,10 @@
 | Danh mục máy đọc | [`data/v3/catalog.json`](../data/v3/catalog.json): **20/20 bài** theo bốn nhóm; **30 hệ bản/dị bản**, có `reference_url`, `qualification`, mức chứng cứ và liên kết biên bản V2 |
 | Lược đồ và kiểm dữ liệu | [JSON Schema](../data/v3/schema.json) + [validator Python](../scripts/v3_validate.py); từ chối hồ sơ gán sai số bài, nhóm, nguồn, quyền và nghiệm thu |
 | Giao diện tra cứu trên điện thoại | [`web/v3/index.html`](../web/v3/index.html); tìm tên có/không dấu, lọc bốn nhóm, đọc ghi chú từng hệ và mở nguồn; [hướng dẫn chạy thử](../web/v3/README.md) |
-| Kiểm thử tự động | [GitHub Actions V3](../.github/workflows/kiem-thu-v3.yml), [lần chạy thành công](https://github.com/Form997/Vong-co/actions/runs/40653394677): **32 bài thử Python đạt**, **144 đường dẫn nội bộ hợp lệ**, JavaScript qua `node --check` |
+| Kiểm thử tự động | [GitHub Actions V3](../.github/workflows/kiem-thu-v3.yml), [lần chạy thành công](https://github.com/Form997/Vong-co/actions/runs/40654050406): **39 bài thử Python đạt**, **170 đường dẫn nội bộ hợp lệ**, JavaScript qua `node --check` |
 | Số câu được thẩm định thực tấu | **0/20 bài**; tất cả `performance_status=pending` |
 
-**Dung lượng V3.0-alpha tại bản chụp có CI thành công:** **1.066.857 byte** = **1.066,86 KB** = **1.041,85 KiB**, gồm **132 tệp**. Mốc đo cố định [commit `7ff24c4`](https://github.com/Form997/Vong-co/tree/7ff24c4f9399a482cfee14c33119f0ddc4d27f35). Commit sau mốc này có thể làm nhánh V3 tăng dung lượng; đừng coi số snapshot là số đo luôn cập nhật.
+**Dung lượng V3.0-alpha tại bản chụp có CI thành công:** **1.081.181 byte** = **1.081,18 KB** = **1.055,84 KiB**, gồm **133 tệp**. Mốc đo cố định [commit `d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). Commit sau mốc này có thể làm nhánh V3 tăng dung lượng; đừng coi số snapshot là số đo luôn cập nhật.
 
 **Mốc bắt đầu chính thức:** [commit `660cbe1`](https://github.com/Form997/Vong-co/commit/660cbe1d99a20f521a818cb514eee8ee2f8381cb) ngày **28/10/2026**.
 
