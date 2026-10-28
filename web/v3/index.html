@@ -261,7 +261,7 @@
     // without a full page reload (browser back/forward, copied deep links).
     window.addEventListener("hashchange", () => {
       if (!state.catalog) return;
-      const match = location.hash.match(/^#bai-(\\d{2})$/);
+      const match = location.hash.match(/^#bai-(\d{2})$/);
       if (!match) return;
       const pieceId = Number(match[1]);
       if (!state.catalog.items.some(x => x.id === pieceId)) return;
