@@ -11,6 +11,7 @@ Kết quả chỉ là snapshot của nhánh/commit tại thời điểm gọi.
 """
 import argparse
 import json
+import os
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote
@@ -36,10 +37,15 @@ def get_snapshot(repository: str, ref: str) -> dict:
         f"{quote(owner, safe='')}/{quote(name, safe='')}/git/trees/"
         f"{quote(ref, safe='')}?recursive=1"
     )
-    req = Request(endpoint, headers={
+    headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "Hai-Dat-Version-Size-Reporter/1.0",
-    })
+    }
+    # GitHub Actions provides GITHUB_TOKEN. Never print or persist that token.
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = Request(endpoint, headers=headers)
     with urlopen(req, timeout=25) as response:
         result = json.load(response)
     if result.get("truncated"):
