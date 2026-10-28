@@ -113,3 +113,16 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Các biên bản V2 đã mở của bài 01–17](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
+
+
+## Bổ sung bài 18 — Phụng Hoàng (28/10/2026)
+
+| ID | Tài liệu | Điều chứng minh / chưa chứng minh | URL |
+|---|---|---|---|
+| REF-52 | Viện Âm nhạc, thuyết minh 20 bản Tổ | Hồ sơ V1 trích 48 câu nhịp tám, 4 lớp; chưa xem trang ký âm trực tiếp | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-53 | Viện Âm nhạc, giáo trình guitar phím lõm | Mô tả Phụng Hoàng 48 câu/4 lớp; chưa xác minh trang in | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-54 | Nhị Tấn, nhận xét bộ CD 20 bài Tổ (2014) | Thuật lại ấn bản 1905 72 câu nhịp tư, chưa đối chiếu bản in 1905 | [Nguồn](https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/nhan-xet-ve-bo-cd-20-bai-ban-to-d-956483aceb933b12.html) |
+| REF-55 | Võ Trường Kỳ, Sự tương tác ĐCTT và cải lương | Phân biệt bản cải lương 12 câu với bản tài tử 48 câu | [Nguồn](https://www.namkyluctinh.org/tac-gia-tac-pham/s-t-u-v/vo-truong-ky/su-tuong-tac-giua-dhon-ca-tai-tu--4c70530152b807f1.html) |
+| REF-56 | Nhị Tấn, Hệ thống bài bản ĐCTT | Định danh Phụng Hoàng trong Bốn Oán; không phải tổng phổ | [Nguồn](https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/he-thong-bai-ban-dhon-ca-tai-tu.html) |
+
+**Trạng thái:** chỉ mở hồ sơ kiểm nguồn, không xác nhận đã đọc đủ bản ký âm hoặc nghiệm thu diễn xướng.
