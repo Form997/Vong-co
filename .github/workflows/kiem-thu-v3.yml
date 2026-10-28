@@ -45,7 +45,10 @@ jobs:
           python scripts/kiem-tra-lien-ket.py \
             README.md README.en.md CONTRIBUTING.md \
             docs/tong-hop-phat-hien-v2.md docs/v3-khoi-dong.md \
-            data/v3/README.md web/v3/README.md
+            data/v3/README.md web/v3/README.md \
+            data/v3_2/README.md docs/v3.2-khoi-dong.md \
+            docs/v3.2-kiem-toan-20-ban.md docs/v3.2-quy-trinh-tham-dinh.md \
+            docs/v3.2-phieu-thuc-hanh.md
 
       - name: Trich JavaScript cua giao dien V3
         run: |
