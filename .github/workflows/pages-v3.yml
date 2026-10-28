@@ -1,0 +1,67 @@
+name: "HAI DAT V3 - Thu xuat ban GitHub Pages"
+
+on:
+  push:
+    branches:
+      - v3-development
+    paths:
+      - ".github/workflows/pages-v3.yml"
+      - "web/v3/**"
+      - "data/v3/**"
+      - "scripts/v3_build_site.py"
+      - "scripts/v3_validate.py"
+      - "tests/test_v3_pages.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "hai-dat-v3-pages"
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    name: "Dong goi website tu du lieu da kiem"
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Kiem dinh 20 bai va 30 he
+        run: python scripts/v3_validate.py --json
+      - name: Chay bo kiem thu
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+      - name: Tao artifact chi gom du lieu duoc phep cong bo
+        run: python scripts/v3_build_site.py --out _site
+      - name: Kiem tra tep goc va JSON can thiet
+        run: |
+          test -s _site/index.html
+          test -s _site/web/v3/index.html
+          test -s _site/data/v3/catalog.json
+          test -s _site/data/v3/schema.json
+          test -f _site/.nojekyll
+          test "$(find _site -type f | wc -l)" -eq 7
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    name: "Deploy public research preview"
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Xuat ban len GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
