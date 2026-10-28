@@ -84,8 +84,8 @@ def main() -> int:
         print("| Phiên bản/ref | Số tệp | Dung lượng | Byte (chính xác) | Tree SHA |")
         print("|---|---:|---:|---:|---|")
         for x in snapshots:
-            print(f"| \`{x['ref']}\` | {x['files']} | "
-                  f"{x['human']} | {x['bytes']:,} | \`{x['tree_sha'][:12]}\` |")
+            print(f"| `{x['ref']}` | {x['files']} | "
+                  f"{x['human']} | {x['bytes']:,} | `{x['tree_sha'][:12]}` |")
         print("\n**Lưu ý:** Đo blob Git chưa nén, không phải dung lượng ZIP/.git.")
         print("Ngày bắt đầu một phiên bản cần ghi bằng chứng commit riêng,")
         print("không tự suy diễn ngày bắt đầu công việc ngoài GitHub.")
