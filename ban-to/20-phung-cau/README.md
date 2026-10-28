@@ -69,3 +69,12 @@
 
 **KẾT LUẬN: ĐẠT HỒ SƠ NGUỒN V1, CHƯA NGHIỆM THU BIỂU DIỄN 40 CÂU.**  
 [Sổ kiểm 40 câu](kiem-dinh-40-cau.md) · [Nguồn và đối chiếu](nguon-va-di-ban.md).
+
+
+## Bổ sung V2 — kết quả rà nguồn toàn bản (28/10/2026)
+
+Đã lập [**biên bản kiểm V2**](v2-bien-ban-nghiem-thu.md) và [**sổ 40 câu có trang in**](v2-ra-soat-40-cau.md), thay cho tình trạng V1 mới đọc tr.332/333. **Đã xem ảnh đầy đủ 10 trang in tr.332–341** của [Nhị Tấn tập IV](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf): **nhạc tr.332/334/336/338/340**, **lời tr.333/335/337/339/341**, **40/40 nhãn nhạc và 40/40 nhãn lời**, ba lớp **18+8+14**.
+
+**Quan trọng:** Bộ lời ***Bá Nha Đoạn Cầm*** ghi **soạn lời Nhị Tấn 2002** tại tr.333, nhưng bìa tập IV ghi **1997**, bài khảo cứu cuối tập tr.411 ghi **17/10/1999**, mục lục tập IV ghi ***Tư Mã Tương Như***. **Chưa giải quyết được lịch sử xuất bản** và có thể là bộ lời/bản số hóa được cập nhật; không tự khẳng định lý do.
+
+**Nghiệm thu:** hiện **chưa đối chiếu thực tấu, dứt ngoại, 20 cặp câu, chầu/mô, song lang hoặc giấy phép**; **0/40 câu đạt nghiệm thu âm nhạc**. **Hồ sơ nguồn V2 đã mở, nhưng tác phẩm chưa được chứng nhận**.
