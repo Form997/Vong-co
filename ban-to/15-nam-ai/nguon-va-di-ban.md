@@ -1,5 +1,17 @@
 # Thư mục nguồn Nam Ai — truy bản in và phân biệt truyền bản
 
+## CẬP NHẬT KIỂM NGUỒN V2 — 28/10/2026
+
+**[Biên bản V2 và danh sách 11 vấn đề](v2-bien-ban-nghiem-thu.md)** · **[Sổ 84 câu bản Nhị Tấn tập III](v2-ra-soat-84-cau.md)** · **[Sổ 68 có điều kiện](v2-doi-chieu-68-cau.md)**.
+
+**Nguồn in gốc đã được tìm thấy:** [Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III, trang **268–277**](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf), ghi **84 câu nhịp tư, song lang 3–4**, gồm **4 Phản Xuân qua Ai + 80 Nam Ai chia 10 lớp**, có cả số câu nhạc và lời *Tích Thúy Kiều (tiếp theo)*. **Ảnh trang đã kiểm trực tiếp**, không chỉ là tư liệu blog Văn Dần.
+
+**Lưu ý:** mô tả Viện **68=4+64** (chưa xem PDF gốc vì 502) và nguồn hỏi đáp **68 lòng+16 nối** là hai cách đếm cần phân biệt. **104** trong bài lược khảo/danh mục Viện mới là lời chứng thư tịch, **chưa có tổng phổ 104 đã rà**. Nhị Tấn in thêm **20 Nam Xuân** sau Nam Ai 84 trước Đảo Ngũ Cung, chưa chứng minh tương đương tổng phổ 104 được nói trong các tài liệu khác.
+
+**Quyền và thẩm định:** thiếu nguồn 1905 scan tr.59, bản thu 68/84/104 được mốc từng câu, thẩm định nghệ nhân và phép phát lại nhạc/lời/ghi âm. **CHỜ NGHIỆM THU**.
+
+---
+
 1. **Viện Âm nhạc:** https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf — mô tả **68 câu nhịp tư = 4 chuyển + 8 lớp × 8 câu**, hai lớp Trống Ai/Mái Ai; khác Nam Ai ca Huế.
 2. **Văn Dần 2013:** https://nhacsivandan.wordpress.com/2013/08/18/bai-nam-ai/ — ghi **84 câu nhịp tư = 4 Phản Xuân qua Ai + 10 lớp × 8 câu**, đăng bản chữ nhạc và lời *Tích Thúy Kiều* (tác giả lời chưa xác nhận).
 3. **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập I:** https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%201%20-%20Nhi%20Tan.pdf — diễn giải ngón và cấu trúc ba bản Nam; bản quyền số hóa chưa rõ.
