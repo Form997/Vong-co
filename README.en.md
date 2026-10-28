@@ -7,12 +7,14 @@
 <p align="center">
   <a href="README.md">Tiếng Việt</a> ·
   <a href="#start-here">Get started</a> ·
+  <a href="web/v3/README.md">V3.0 alpha</a> ·
   <a href="#browse-the-20-compositions">20 compositions</a> ·
   <a href="#research-versions">Version history</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml"><img alt="GitHub Actions V3 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml/badge.svg?branch=v3-development"></a>
   <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml"><img alt="GitHub Actions test status for V2" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml/badge.svg?branch=v2-development"></a>
   <img alt="20 of 20 V2 source-review dossiers opened" src="https://img.shields.io/badge/V2%20source%20reviews-20%2F20-28776D">
   <img alt="Zero compositions have passed performance-level validation" src="https://img.shields.io/badge/Performance%20approved-0%2F20-8B6F47">
@@ -21,12 +23,16 @@
 > [!IMPORTANT]
 > **Research status — 28 October 2026.** **20/20** composition dossiers have a V2 **source-review record**; **0/20** compositions have passed performance-level validation. This is a developing, source-grounded research project, **not** a certified score/audio collection or a license-cleared AI training dataset. Green software-test badges do not mean musical validation.
 
+> [!NOTE]
+> **V3.0-alpha began on 28 October 2026.** [20-piece catalog with 30 documented systems/variants](data/v3/catalog.json), [JSON Schema](data/v3/schema.json), [Vietnamese search interface](web/v3/README.md), and [successful V3 GitHub Actions tests](https://github.com/Form997/Vong-co/actions/runs/40653394677) (**32 tests passed and 144 internal links checked** at the first fixed snapshot). The web viewer is source code **not yet deployed on GitHub Pages**. This is an **alpha research preview**, not a music performance certification.
+
 ---
 
 ## Start here
 
 | Your goal | The best entry point |
 |---|---|
+| **Try the V3 catalog viewer** | [How to run the website](web/v3/README.md) · [View HTML source](web/v3/index.html) |
 | **Explore the tradition** | [20 composition index](#browse-the-20-compositions) |
 | **Learn and perform** | [Per-composition research folders](ban-to/) · [First-piece practice notes (Vietnamese)](docs/01-huong-dan-don-va-ca.md) |
 | **Investigate scores and variants** | [V2 findings and unresolved discrepancies](docs/tong-hop-phat-hien-v2.md) · [Evidence registry](docs/nguon-tham-khao.md) |
@@ -46,6 +52,8 @@ UNESCO inscribed **the art of Đờn ca tài tử** in 2013 ([decision 8.COM 8.3
 | Area | Current evidence-based status |
 |---|---|
 | **Research dossiers** | 20 composition folders and 20 V2 source-review minutes |
+| **V3 structured catalog** | 20 pieces, **30 source-specific variants**, schema and offline validator; [JSON](data/v3/catalog.json) |
+| **V3 Vietnamese browser** | Search, 4-family filtering, provenance links; [preview instructions](web/v3/README.md) — not yet deployed as a public Pages site |
 | **Phrase and variant records** | Available per composition, with different verification levels; not all are complete musical transcriptions |
 | **Bibliography** | [Numbered source entries through REF-68](docs/nguon-tham-khao.md), including documented limitations; **not** 68 independently verified primary sources |
 | **Code validation** | Working [GitHub Actions workflow](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) for Python and research-folder structure |
@@ -87,8 +95,9 @@ The project groups the 20 pieces into **Sáu Bắc (6)**, **Bảy Lễ (7)**, **
 |---|---|---|---:|
 | **V1 — The evidence base** | **12 October 2026** | Twenty folders, sources, variants, auditing notes | **397.63 KiB** |
 | **V2 — Tracing each phrase** | **19 October 2026** (V2-labeled commit); formal review framework **27 October** | Twenty source-review minutes, phrase/page ledgers, documented discrepancies; **no performance certifications** | **942.96 KiB** |
+| **V3.0-alpha — Evidence-aware browsing** | **28 October 2026** | 20-piece JSON catalog, 30 variant records, automated checks and Vietnamese static viewer | **1,041.85 KiB** |
 
-V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
+V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2 measures **965,588 bytes / 112 files** at [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha measures **1,066,857 bytes / 132 files** at [`7ff24c4`](https://github.com/Form997/Vong-co/tree/7ff24c4f9399a482cfee14c33119f0ddc4d27f35). These are **uncompressed Git blob sizes at pinned commits**, not ZIP or permanently fixed working-branch sizes.
 
 [**Full version ledger and future-version template (Vietnamese)**](docs/nhat-ky-phien-ban.md) · [Reproducible Python size reporter](scripts/thong-ke-dung-luong.py)
 
@@ -96,7 +105,7 @@ V1 measures **407,176 bytes / 64 files** at [`f6537c8`](https://github.com/Form9
 
 The [experimental MCP connector](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) is maintained on a **separate research branch**. Systems integrating this corpus should preserve **source, page, variant ID, verification status and reuse rights**, and decline unsupported claims.
 
-The expected path for **future V3/V4 work** is structured research data → Vietnamese reference interface → permission-cleared audio comparison → controlled AI/MCP integration. These features are **planned**, not presented as released.
+**V3.0-alpha now includes structured JSON and a working static HTML codebase with a successful CI run; it is not a deployed public website or stable release.** Further planned work: page/phrase-level evidence, permission-cleared audio comparison and responsibly tested AI/MCP integration. [V3 scope and limits](docs/v3-khoi-dong.md).
 
 ## Sources, rights and collaboration
 
@@ -106,4 +115,4 @@ The expected path for **future V3/V4 work** is structured research data → Viet
 
 <p align="center"><strong>HAI ĐẤT · Preserve the music. Preserve its provenance.</strong></p>
 
-<p align="center"><sub>Research-first Southern Vietnamese musical heritage · Updated 28 October 2026 · <a href="https://github.com/Form997/Vong-co/tree/v2-development">V2 research branch</a></sub></p>
+<p align="center"><sub>Research-first Southern Vietnamese musical heritage · Updated 28 October 2026 · <a href="https://github.com/Form997/Vong-co/tree/v3-development">V3 alpha branch</a></sub></p>
