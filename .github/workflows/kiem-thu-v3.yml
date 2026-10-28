@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - v3-development
+      - v3.1-development
   pull_request:
     branches:
       - main
+      - v3-development
   workflow_dispatch:
 
 permissions:
@@ -78,4 +80,4 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           python scripts/thong-ke-dung-luong.py \
-            --refs v1-frozen v2-development v3-development --json
+            --refs v1-frozen v2-development v3-development v3.1-development --json
