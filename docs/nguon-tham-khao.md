@@ -78,6 +78,12 @@
 | REF-40 | **Trần Phước Thuận, *Tiền thân của bài Nam Ai Tô Huệ chức cẩm hồi văn*, Tạp chí Hán Nôm số 3 (2001), trên cổng Viện Nghiên cứu Hán Nôm** | Công trình nghiên cứu về **tích Tô Huệ, lịch sử lưu truyền** và mối quan hệ với Nhạc Khị; **không phải bản 84 câu có ký âm**. | [Tạp chí Hán Nôm 3/2001 – bản số hóa](https://hannom-en.vass.gov.vn/web/tchn/data/0103v.htm) |
 | REF-41 | **Báo Phụ Nữ, *Nhạc giới tài tử vắng thêm tiếng đờn* (2018)** | Nhắc nhóm sưu khảo Long An phát hành **CD hòa tấu ba bản Nam năm 2018**, trong đó có **Nam Ai 68 câu**. Có chứng cứ tư liệu âm thanh dạng 68 để truy tiếp, **chưa nghe hoặc kiểm phách từng câu**, chưa có quyền tái phân phối. | [Bài Báo Phụ Nữ 2018](https://www.phunuonline.com.vn/nhac-gioi-tai-tu-vang-them-tieng-don-a118785.html) |
 
+| REF-42 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997), tr.278–287**, Trung tâm Văn hóa Quận 8 / CLB Đờn ca tài tử Quận 8 | **Đảo Ngũ Cung** đầu bài in **“52 câu, nhịp tư, song lang 3–4”**: **4 Phản Xuân qua Đảo + 48 Nam Đảo**; tiếp thêm **Song Cước 15 câu**, tổng **67 vị trí** có chỉ mục ký âm và lời ***Tích Thúy Kiều (tiếp theo)***. Đã **xem ảnh trực tiếp 10 trang** (nhạc 278/280/282/284/286, lời 279/281/283/285/287). Trang 284 chỉ dẫn chuyển hơi **Ai oán**, **Hò Tư → Hò Nhứt**; **tr.283 lời ghi “Lớp IX” ở vị trí mà tr.282 nhạc ghi “Lớp IV”**. | [Nhị Tấn tập III – PDF số hóa](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · **Không có quyền công bố nguyên tác/MP3 và chưa thẩm âm** |
+| REF-43 | **Viện Âm nhạc Việt Nam, *Hai mươi bài bản Tổ đờn ca tài tử Nam Bộ*, mục Nam Đảo** | **Theo chỉ mục tìm kiếm:** **68 câu nhịp tư = 4 câu Phản + 48 lòng + 16 Song Cước**; khi biểu diễn độc lập **không tấu câu cuối số 68 → 67 câu**. **Không đủ chứng cứ** để đồng nhất bản 67 theo thao tác này với **52+15** trong Nhị Tấn III. | [Tư liệu Viện Âm nhạc – PDF](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) · **Trả 502 khi đọc PDF**, chưa kiểm ảnh/tổng phổ 68 trực tiếp |
+| REF-44 | **Viện Âm nhạc – giáo trình độc tấu guitar phím lõm** | Trích chỉ mục mô tả **Đảo Ngũ Cung 68 câu, 8 lớp và 4 câu phần, hai Song Cước**, hơi Đảo; **không phải chứng nhận nhạc 68 câu đã chép vào dự án**. | [Giáo trình PDF – Viện Âm nhạc](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) · **502, chưa soi trang trong lần này** |
+| REF-45 | **Blog Nhạc sĩ Văn Dần, *Đảo Ngũ Cung* (18/08/2013)** | Đăng bộ lời ***Lục Vân Tiên***, ghi **Trần Ngọc Thạch**, đầu trang **52 câu** (4 Phản + 48 Nam Đảo), tiếp theo **15 Song Cước**. Lớp V có nhãn **32 bị lặp**, sau đó đến 34: **không tự hiệu đính bản đăng**. | [Đảo Ngũ Cung – Văn Dần](https://nhacsivandan.wordpress.com/2013/08/18/dao-ngu-cung/) · Chưa kiểm quyền tái bản/cách ráp từng phách |
+| REF-46 | **Nhị Tấn tập III, phụ lục tr.291 trở đi: *Gương mê sắc (Lòng dạ đàn bà)*, ghi soạn lời Sáu Hải** | **Đã xem trang in 291** có nhan đề và ghi tác giả; là **bộ lời khác**, không phải *Tích Thúy Kiều* hay *Lục Vân Tiên*. Chưa rà toàn bộ lời phụ lục và chưa khớp với bản diễn. | [Nhị Tấn tập III – phụ lục tr.291](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf) · Chưa xác minh quyền/khả năng dùng thương mại |
+
 ## Mẫu trích dẫn bắt buộc trong bài và công cụ AI
 
 Khi trả lời về một bản Tổ, nên kèm tối thiểu:
@@ -98,6 +104,6 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Danh mục 20 bài và hồ sơ V1](20-ban-to.md).
 - [Kiểm toán V1 – 20 bản](kiem-toan-v1-20-ban.md).
 - [Quy chế nghiệm thu V2 trên nhánh phát triển](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md).
-- [Các biên bản V2 đã mở của bài 01–15](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
+- [Các biên bản V2 đã mở của bài 01–16](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
