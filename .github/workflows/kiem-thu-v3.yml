@@ -1,0 +1,81 @@
+name: "HAI DAT V3 - Thu nghiem danh muc va giao dien"
+
+on:
+  push:
+    branches:
+      - v3-development
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-v3:
+    name: "V3: Python, 20 ban To, web JS va provenance"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Lay ma nguon tai commit hien tai
+        uses: actions/checkout@v4
+
+      - name: Cai Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Kiem tra cu phap Python
+        run: python -m compileall -q scripts tests
+
+      - name: Chay toan bo bai thu V2 + V3
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Kiem dinh danh muc JSON va lien ket 20 ho so
+        run: python scripts/v3_validate.py --json
+
+      - name: Kiem tra lien ket tai lieu noi bo
+        run: |
+          python scripts/kiem-tra-lien-ket.py \
+            README.md README.en.md CONTRIBUTING.md \
+            docs/tong-hop-phat-hien-v2.md docs/v3-khoi-dong.md \
+            data/v3/README.md web/v3/README.md
+
+      - name: Trich JavaScript cua giao dien V3
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          class Extractor(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.inside = False
+                  self.parts = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == "script" and not any(k == "src" for k, _ in attrs):
+                      self.inside = True
+              def handle_endtag(self, tag):
+                  if tag == "script":
+                      self.inside = False
+              def handle_data(self, data):
+                  if self.inside:
+                      self.parts.append(data)
+
+          e = Extractor()
+          e.feed(Path("web/v3/index.html").read_text(encoding="utf-8"))
+          assert e.parts, "Khong tim thay ma JavaScript V3"
+          Path("/tmp/hai-dat-v3-ui.js").write_text("\n".join(e.parts), encoding="utf-8")
+          print("Da trich JavaScript de kiem tra cu phap.")
+          PY
+
+      - name: Kiem tra cu phap JavaScript bang Node.js
+        run: node --check /tmp/hai-dat-v3-ui.js
+
+      - name: Do dung luong V1 V2 V3 bang GitHub API
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/thong-ke-dung-luong.py \
+            --refs v1-frozen v2-development v3-development --json
