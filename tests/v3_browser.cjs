@@ -1,4 +1,4 @@
-/* HAI ĐẤT V3.1: Chromium E2E for 20 detail pages, source filters and navigation.
+/* HAI ĐẤT V3.2: Chromium E2E for 20 detail pages, source filters and navigation.
  * Run: npm i --no-save playwright@1.56.1 && npx playwright install chromium
  * Build site: python scripts/v3_build_site.py --out _site\n * Serve artifact: python -m http.server 8765 --directory _site --bind 127.0.0.1
  * Then: node tests/v3_browser.cjs
@@ -36,6 +36,7 @@ async function run() {
     await expectCount(page, 20, "Full catalog");
     assert.equal((await page.locator("#count-pieces").innerText()).trim(), "20");
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
+    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "2");
     console.log("PASS: load 20 pieces and 30 variants");
 
     const groups = [
@@ -78,6 +79,18 @@ async function run() {
     assert.match(await page.locator("button.piece").first().innerText(), /Lưu Thủy/);
     console.log("PASS: Vietnamese A–Z sort and numeric reset");
 
+    const lessonSelect = page.locator("#lesson-status");
+    await lessonSelect.selectOption("indexed");
+    await expectCount(page, 2, "Only 2 source-verified phrase indexes");
+    const indexedNames = await page.locator("button.piece strong").allInnerTexts();
+    assert.ok(indexedNames.some(t => t.includes("Lưu Thủy")));
+    assert.ok(indexedNames.some(t => t.includes("Phụng Cầu")));
+    await lessonSelect.selectOption("pending");
+    await expectCount(page, 18, "18 without validated phrase indexes");
+    await lessonSelect.selectOption("all");
+    await expectCount(page, 20, "Reset lesson availability");
+    console.log("PASS: lesson availability filter shows exactly 2 indexed and 18 pending");
+
     const search = page.locator("#search");
     await search.fill("phung cau");
     await expectCount(page, 1, "Unaccented search Phung Cau");
@@ -114,9 +127,10 @@ async function run() {
     const links = await page.locator("#detail .detail-links a").evaluateAll(els =>
       els.map(a => ({ href: a.href, rel: a.rel, target: a.target }))
     );
-    assert.equal(links.length, 3);
+    assert.equal(links.length, 4);
     assert.match(links[0].href, /\/Vong-co\/bai\/20-phung-cau\/$|\/bai\/20-phung-cau\/$/);
-    for (const link of links.slice(1)) {
+    assert.match(links[1].href, /\/bai\/20-phung-cau\/#hoc-tung-cau$/);
+    for (const link of links.slice(2)) {
       assert.match(link.href, /^https:\/\/github\.com\/Form997\/Vong-co\/blob\/v3-development\/ban-to\//);
       assert.equal(link.target, "_blank");
       assert.ok(link.rel.includes("noopener"));
@@ -125,6 +139,15 @@ async function run() {
     await page.waitForURL("**/bai/20-phung-cau/");
     assert.match(await page.locator("h1").innerText(), /Phụng Cầu/);
     assert.equal(await page.locator("article.variant").count(), 1);
+    assert.equal(await page.locator("details.phrase-row").count(), 40);
+    await page.locator("#cau-40 summary").click();
+    const lastPhrase = await page.locator("#cau-40").innerText();
+    assert.match(lastPhrase, /340/);
+    assert.match(lastPhrase, /341/);
+    assert.match(lastPhrase, /chưa/i);
+    const audioNodes = await page.locator("audio,video,iframe").count();
+    assert.equal(audioNodes, 0, "No unlicensed media embeds");
+    console.log("PASS: Phung Cau source index has 40 labels; final phrase on pp.340/341");
     assert.match(await page.locator("main").innerText(), /0\/20/);
     const detailLayout = await page.evaluate(() => ({ vw: innerWidth, sw: document.documentElement.scrollWidth }));
     assert.ok(detailLayout.sw <= detailLayout.vw + 1, "Detail page overflows mobile viewport");
@@ -136,6 +159,21 @@ async function run() {
       assert.equal(itemPage.status(), 200, "Missing detail URL " + item.slug);
     }
     console.log("PASS: 20/20 dedicated URLs serve HTTP 200");
+
+    const learningURL = new URL("../../bai/01-luu-thuy-truong/", BASE).toString();
+    await page.goto(learningURL,{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 32);
+    await page.locator("#cau-01 summary").click();
+    assert.match(await page.locator("#cau-01").innerText(), /HO/);
+    await page.locator("#cau-03 summary").click();
+    assert.match(await page.locator("#cau-03").innerText(), /HÒ/);
+    assert.match(await page.locator("#hoc-tung-cau").innerText(), /0\/20/);
+    console.log("PASS: Luu Thuy 32 source-specific rows, HO versus HÒ preserved");
+
+    await page.goto(new URL("../../bai/18-phung-hoang/", BASE).toString(),{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 0);
+    assert.match(await page.locator("#hoc-tung-cau").innerText(), /chờ sổ nguồn/i);
+    console.log("PASS: no invented 18 other lessons");
 
     await page.goto(BASE, {waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");
