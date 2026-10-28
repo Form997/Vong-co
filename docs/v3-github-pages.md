@@ -2,7 +2,7 @@
 
 **Dự án:** [Form997/Vong-co](https://github.com/Form997/Vong-co) · **Nhánh nguồn:** `v3-development` · **Phiên bản:** V3.0-alpha (nghiên cứu).
 
-> **Trạng thái kiểm chứng ngày 28/10/2026:** Đã tạo workflow xuất bản và chạy được bước **đóng gói 7 tệp**. Tuy nhiên [lần thử triển khai Pages #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366) **không thành công tại job Deploy trước khi các bước trên runner khởi chạy**. Không được ghi website đã lên mạng. Connector không lấy được log lỗi của job Deploy, nên **chưa xác định chắc chắn nguyên nhân**. Các mục dưới đây là cách kiểm tra cấu hình theo GitHub Docs, không phải khẳng định đã sửa lỗi.
+> **Trạng thái kiểm chứng ngày 28/10/2026:** Đã tạo workflow xuất bản và chạy được bước **đóng gói 7 tệp**. Tuy nhiên [lần thử triển khai Pages #40674839366](https://github.com/Form997/Vong-co/actions/runs/40674839366) **không thành công tại job Deploy trước khi các bước trên runner khởi chạy**. Sau đó workflow đã được thiết kế **opt-in**, [lượt mới có Build thành công, Deploy = Skipped](https://github.com/Form997/Vong-co/actions/runs/40675606473). **Chưa có website đã xuất bản**; không được lấy trạng thái workflow xanh khi Deploy bỏ qua làm bằng chứng website đã lên mạng. Connector không lấy được log lỗi của job Deploy, nên **chưa xác định chắc chắn nguyên nhân**. Các mục dưới đây là cách kiểm tra cấu hình theo GitHub Docs, không phải khẳng định đã sửa lỗi.
 
 ## 1. Những gì đã được chuẩn bị
 
@@ -23,9 +23,10 @@ Trên điện thoại, dùng Chrome và chọn **Trang web cho máy tính** nế
 1. Mở [**Settings → Pages**](https://github.com/Form997/Vong-co/settings/pages).
 2. Trong **Build and deployment**, chọn **Source → GitHub Actions** (không chọn `Deploy from a branch` khi sử dụng workflow đóng gói an toàn này).
 3. Vào [**Settings → Environments**](https://github.com/Form997/Vong-co/settings/environments). Nếu có môi trường **`github-pages`**, mở và kiểm tra **Deployment branches and tags**.
-4. Nếu đang chặn nhánh `v3-development`, thiết lập quy tắc **chỉ cho phép `v3-development`** triển khai bản thử nghiệm (hoặc thêm nhánh này vào các quy tắc hiện có phù hợp). **Không xóa bảo vệ `main` hoặc mở quyền tùy tiện cho mọi nhánh.** Chỉ thay đổi khi GitHub hiển thị nhánh không được phép triển khai.
-5. Mở [**Actions → HAI DAT V3 - Thu xuat ban GitHub Pages**](https://github.com/Form997/Vong-co/actions/workflows/pages-v3.yml). Chọn lần chạy bị lỗi và **Re-run failed jobs** hoặc **Re-run all jobs** để thử lại sau khi cài đặt.
-6. **Chỉ khi job `Deploy public research preview` chuyển sang Success** và GitHub Settings → Pages hiển thị `Your site is live at ...`, mới ghi địa chỉ công khai là hoạt động.
+4. Nếu GitHub đang chặn nhánh `v3-development`, thêm quy tắc cho phép **đúng nhánh `v3-development`** triển khai bản thử nghiệm. **Không xóa bảo vệ `main` hoặc mở quyền tùy tiện cho mọi nhánh.** Chỉ thay đổi khi đã hiểu chính sách môi trường.
+5. Khi đã kiểm tra Pages và quyền nhánh, vào **Settings → Secrets and variables → Actions → Variables → New repository variable**, đặt **Name: `HAI_DAT_PAGES_ENABLED`** và **Value: `true`**. Đây là **công tắc đồng ý công bố website**: mặc định không có biến thì job Deploy bị **skipped** để tránh báo lỗi lặp lại và tránh xuất bản ngoài ý muốn. Không cần điền mật khẩu/token vào biến này.
+6. Mở [**Actions → HAI DAT V3 - Thu xuat ban GitHub Pages**](https://github.com/Form997/Vong-co/actions/workflows/pages-v3.yml). Chọn lần chạy mới nhất và **Re-run all jobs** sau khi cài đặt; hoặc cập nhật một tệp trong `web/v3/` để tự kích hoạt lại.
+7. **Chỉ khi job `Deploy public research preview (opt-in)` có kết quả Success** (**không phải Skipped**) và Settings → Pages hiển thị `Your site is live at ...`, mới được thông báo website đã hoạt động.
 
 Trang web theo cấu trúc dự kiến sẽ nằm tại:
 
@@ -40,6 +41,7 @@ https://form997.github.io/Vong-co/web/v3/
 
 - **Failed trước bước Setup:** xem quy tắc môi trường `github-pages` và điều kiện nhánh; xem mục lỗi trực tiếp trên Actions.
 - **GitHub Pages chưa được bật hoặc nguồn sai:** chọn `Source: GitHub Actions` tại Settings → Pages.
+- **Workflow xanh nhưng job Deploy = Skipped:** chưa bật biến repository `HAI_DAT_PAGES_ENABLED=true`; xem bước 5. Không được nhầm Build Success với website đã xuất bản.
 - **Bị chặn quyền deploy:** workflow đã khai báo `pages: write`, `id-token: write`; kiểm tra thông báo cụ thể ở job và chính sách repository/organization.
 - **Mở website được nhưng không hiện dữ liệu:** dùng tab Network/Console xem `/Vong-co/data/v3/catalog.json`; artifact phải có cả `data/v3/`. Không mở riêng `file://` để thử `fetch` JSON.
 - **Bị chặn bởi bảo vệ branch:** không tắt bảo vệ V1/main. Cần điều chỉnh đúng quy tắc môi trường hoặc chọn nhánh phát hành hợp lệ.
