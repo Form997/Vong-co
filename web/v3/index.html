@@ -257,6 +257,23 @@
       for(const t of document.querySelectorAll(".tab")) t.setAttribute("aria-pressed",String(t.dataset.group===family));
       updateList();
     }
+    // Support direct links to a piece even when the URL hash changes
+    // without a full page reload (browser back/forward, copied deep links).
+    window.addEventListener("hashchange", () => {
+      if (!state.catalog) return;
+      const match = location.hash.match(/^#bai-(\\d{2})$/);
+      if (!match) return;
+      const pieceId = Number(match[1]);
+      if (!state.catalog.items.some(x => x.id === pieceId)) return;
+      state.selected = pieceId;
+      state.term = "";
+      byId("search").value = "";
+      state.family = "all";
+      for (const tab of document.querySelectorAll(".tab")) {
+        tab.setAttribute("aria-pressed", String(tab.dataset.group === "all"));
+      }
+      updateList();
+    });
     document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
     byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
     async function start(){
