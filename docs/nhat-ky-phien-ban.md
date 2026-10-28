@@ -12,6 +12,7 @@
 | **V2 — Từ danh mục đến hồ sơ có chứng cứ** | **19/10/2026** (commit sớm nhất có nhãn V2 trong lịch sử); **27/10/2026** bắt đầu giai đoạn nghiệm thu V2 theo quy chế | Mở biên bản kiểm nguồn **20/20 bản**, xây sổ câu theo nguồn/trang, bóc tách khác biệt dị bản, cập nhật README và danh mục trích dẫn; **0/20 bài được nghiệm thu diễn xướng** | **942,96 KiB** (965.588 byte) | 112 |
 | **V3.0-alpha — Dữ liệu tra cứu có chứng cứ** | **28/10/2026**, có commit khởi động riêng | JSON **20 bài + 30 hệ bản/dị bản**, lược đồ JSON, validator, trang tra cứu tiếng Việt trên điện thoại; **39 phép thử và 170 liên kết nội bộ đạt trên GitHub Actions**; chưa có bản thu/âm nhạc nghiệm thu hoặc website Pages đã triển khai | **1.055,84 KiB** (1.081.181 byte) | 133 |
 | **V3.1 — 20 trang bài có thể tra cứu độc lập** | **28/10/2026**, nhánh khởi động `v3.1-development` | **20 trang HTML sinh tự động**, 3 mức lọc chứng cứ, A–Z tiếng Việt, liên kết nguồn V2, sitemap; **45 bài Python và Chromium đạt, Pages đã triển khai** | **1.111,14 KiB** (1.137.811 byte) | 140 |
+| **V3.2 — Học từng câu có dấu vết nguồn** | **28/10/2026**, tạo `v3.2-development` | **72 nhãn câu thuộc 2 hệ riêng**, lớp và trang đối chiếu V2, phiếu thực hành, quy chế 5 tầng, chống bịa MIDI/âm thanh và trộn dị bản; **đang kiểm thử** | **1.215,88 KiB** (1.245.064 byte) | 150 |
 
 ### Mốc đo và bằng chứng
 
@@ -92,7 +93,26 @@
 
 **Liên kết:** [Giới thiệu V3.1](v3.1-khoi-dong.md) · [Hướng dẫn chạy thử V3.1](../web/v3/README.md) · [Mã tạo trang](../scripts/v3_build_site.py).
 
-## 6. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
+## 6. V3.2 — Từ trang hồ sơ đến việc học một câu nhạc cho đúng nguồn
+
+**Ngày khởi động:** **28/10/2026**, nhánh [`v3.2-development`](https://github.com/Form997/Vong-co/tree/v3.2-development) tách từ bản V3.1 công khai. **Chưa tuyên bố đã phát hành V3.2 khi mới ghi nhật ký này.**
+
+**Điểm mới có giá trị thực tế:**
+1. **72 vị trí nhãn câu có thể tra lại:** 32 thuộc `LT-32-4` của *Lưu Thủy Trường* và 40 thuộc `PC-40-8` của *Phụng Cầu Hoàng Duyên*. Số câu/lớp/trang/chữ kết ngắn được đối chiếu với **từng hàng trong sổ V2**, không sinh từ số tổng hoặc lời đoán.
+2. **Trang học câu thực dụng:** người học mở từng nhãn câu, xem lớp, trang nhạc/lời hoặc chữ kết đã ghi, nguồn gốc, điểm cần hỏi nghệ nhân, đường dẫn đến bản gốc và mẫu phiếu thực hành. Các trang vẫn thân thiện điện thoại và bàn phím.
+3. **Cảnh báo chưa đủ chuyên môn:** cả **20 bài có bảng/sổ V2 ở các mức khác nhau**, nhưng chỉ **2 hệ được chuyển vào mô hình học máy đọc V3.2**. [Sổ kiểm toán 20 bài](v3.2-kiem-toan-20-ban.md) đánh dấu hệ đếm phức tạp (61/60, 84/80, 67/68), bảng còn “Chưa xác minh”, tránh khẳng định 18 bài không có tài liệu.
+4. **An toàn dữ liệu:** [JSON 72 câu](../data/v3_2/phrase_index.json), [schema](../data/v3_2/schema.json), [trình kiểm](../scripts/v3_2_validate.py) và các bài kiểm thử cố ý đưa **dữ liệu sai** vào để bảo đảm website từ chối nốt/âm thanh/giấy phép không có bằng chứng.
+5. **Phương pháp và đạo đức khoa học:** [quy chế 5 tầng](v3.2-quy-trinh-tham-dinh.md) phân biệt *nguồn, chỉ mục câu, cấu trúc âm nhạc, diễn xướng, quyền công bố*; [phiếu thực hành](v3.2-phieu-thuc-hanh.md) để nghệ nhân/người học tự lưu đánh giá.
+
+**Kết quả kiểm thử trước khi phát hành:** [60/60 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40692114438), [Chromium tương tác thật đạt](https://github.com/Form997/Vong-co/actions/runs/40692114437). Đây là **kiểm thử phần mềm**; **0/20 bài nghiệm thu biểu diễn**, chưa có bản thu/ký âm/lời được cấp phép để tải lại.
+
+**Dung lượng snapshot V3.2 trước cập nhật README/nhật ký:** **150 tệp**, tổng **1.245.064 byte** = **1.245,06 KB** = **1.215,88 KiB**, lấy cây Git tại [commit `efb84fa`](https://github.com/Form997/Vong-co/tree/efb84fa0065465d6bdf5ed90cac2bbfc4e4063fd). **Snapshot cố định**, không phải ZIP và không phải dung lượng nhánh thay đổi liên tục. Số liệu phát hành cuối cùng (nếu merge) sẽ ghi riêng tại merge commit.
+
+**Giới hạn quan trọng:** không được tự suy tính điểm song lang, nhịp 7–8 của từng câu, ngón đờn, BPM, nốt MIDI hoặc chữ ca từ số nhãn. Không tuyên bố V3.2 cung cấp một khóa học 20 bản Tổ đã được nghệ nhân duyệt.
+
+**Tài liệu:** [Báo cáo V3.2](v3.2-khoi-dong.md) · [Kiểm toán đủ 20 sổ V2](v3.2-kiem-toan-20-ban.md) · [Dữ liệu 72 nhãn](../data/v3_2/README.md).
+
+## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.
 

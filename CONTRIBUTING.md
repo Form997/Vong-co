@@ -14,6 +14,14 @@ Cảm ơn bạn muốn cùng gìn giữ tư liệu đờn ca tài tử Nam Bộ.
 | Sửa README, Markdown, Python/CI | Nêu lỗi trước/sau, tệp chỉnh, cách kiểm thử đã chạy |
 | Đề xuất tích hợp AI/MCP | Cách trích nguồn, giới hạn dữ liệu và biện pháp trả lời “chưa xác minh” |
 
+## Đóng góp V3.2 — một nhãn câu phải có đường trở về nguồn
+
+**Bắt đầu áp dụng 28/10/2026.** Những thay đổi ở `data/v3_2/phrase_index.json` cần kèm **bài + mã hệ + nhãn câu + lớp + dòng bảng V2 + URL/trang in**, không được gộp các hệ Vắn/Trường hoặc nhịp tư/tám. [Quy trình thẩm định](docs/v3.2-quy-trinh-tham-dinh.md) quy định năm tầng tách biệt nguồn → chỉ mục → âm nhạc → thực tấu → quyền.
+
+**Dữ liệu V3.2 hiện chỉ chuẩn hóa 2 hệ (72 nhãn)**. Các bản khác có sổ câu V2 nhưng chưa chuyển thành dữ liệu học công khai; [sổ kiểm toán 20 bài](docs/v3.2-kiem-toan-20-ban.md) ghi tồn đọng. Đừng biến giá trị “Chưa xác minh” thành số trang hoặc nốt nhạc suy đoán.
+
+Mỗi Pull Request cập nhật bài học phải chạy `python scripts/v3_2_validate.py --json`, toàn bộ unittest và Chromium, giữ `performance_status=pending` và `rights_status=unverified` trừ khi có thủ tục thẩm định/giấy phép khác được tài liệu hóa độc lập. Không gửi file âm thanh, scan PDF, toàn văn ký âm/ca từ vào kho khi chưa có quyền.
+
 ## Gửi lỗi hoặc đề xuất
 
 1. Mở [Issues](https://github.com/Form997/Vong-co/issues/new/choose).
@@ -23,7 +31,7 @@ Cảm ơn bạn muốn cùng gìn giữ tư liệu đờn ca tài tử Nam Bộ.
 
 ## Pull Request
 
-- **Tư liệu chuyên môn V2:** đề nghị chỉnh trên `v2-development` và bổ sung nguồn in/biên bản; **dữ liệu JSON, web và mã kiểm V3:** gửi thay đổi trên `v3-development`. Không sửa `v1-frozen`.
+- **Tư liệu chuyên môn V2:** đề nghị chỉnh trên `v2-development` với nguồn/biên bản; **thay đổi bài học V3.2:** phát triển trên `v3.2-development`, mở Pull Request vào `v3-development` sau khi kiểm thử; **không sửa `v1-frozen`**.
 - Mỗi thay đổi V3 về `data/v3/catalog.json` phải giữ **mã hệ bản, đường dẫn biên bản V2, nguồn URL, nhãn chứng cứ, ghi chú giới hạn**; không gộp các hệ câu không tương thích.
 - Mỗi Pull Request tập trung một chủ đề để dễ thẩm tra. Ghi các đường dẫn nguồn, những câu chịu ảnh hưởng, và lý do điều chỉnh.
 - **Không tự đổi `CHỜ NGHIỆM THU` thành `ĐẠT`** nếu chưa có chứng cứ và người thẩm định chuyên môn phù hợp.
