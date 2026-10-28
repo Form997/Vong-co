@@ -25,7 +25,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 > **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
 > [!NOTE]
-> **V3.0-alpha đã khởi động 28/10/2026:** có [dữ liệu máy đọc 20 bản / 30 hệ bản](data/v3/catalog.json), [lược đồ JSON](data/v3/schema.json), [trang tra cứu tiếng Việt](web/v3/README.md) và [bộ kiểm thử GitHub Actions V3](https://github.com/Form997/Vong-co/actions/runs/40653394677) (**32 phép thử đạt, 144 liên kết nội bộ đạt** tại bản chụp đầu tiên). Trang HTML **chưa được xuất bản thành GitHub Pages**. **V3 đang ở giai đoạn alpha, không phải nghiệm thu âm nhạc.**
+> **V3.0-alpha đã khởi động 28/10/2026:** có [dữ liệu máy đọc 20 bản / 30 hệ bản](data/v3/catalog.json), [lược đồ JSON](data/v3/schema.json), [trang tra cứu tiếng Việt](web/v3/README.md) và [bộ kiểm thử GitHub Actions V3](https://github.com/Form997/Vong-co/actions/runs/40654050406) (**39 phép thử đạt, 170 liên kết nội bộ đạt**, kiểm cả HTTP thử nghiệm). Trang HTML **chưa được xuất bản thành GitHub Pages**. **V3 đang ở giai đoạn alpha, không phải nghiệm thu âm nhạc.**
 
 ---
 
@@ -96,9 +96,9 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 |---|---|---|---:|
 | **V1 – Gieo nền tư liệu** | **12/10/2026** | Tạo hệ thống hồ sơ và nguồn cho 20 bản Tổ, ghi nhận dị bản và phần còn thiếu | **397,63 KiB** |
 | **V2 – Đưa câu đờn trở về nguồn** | **19/10/2026**; bắt đầu quy chế kiểm nguồn toàn bộ **27/10** | Mở biên bản cho **20/20**, đối chiếu số câu, nguồn, trang in, lời ca và cách phân lớp; **chưa nghiệm thu biểu diễn** | **942,96 KiB** |
-| **V3.0-alpha – Tra cứu có nguồn** | **28/10/2026** | JSON 20 bản, **30 hệ bản**, kiểm định tự động, tra cứu tiếng Việt; **chưa phát hành ổn định** | **1.041,85 KiB** |
+| **V3.0-alpha – Tra cứu có nguồn** | **28/10/2026** | JSON 20 bản, **30 hệ bản**, kiểm định tự động, tra cứu tiếng Việt; **chưa phát hành ổn định** | **1.055,84 KiB** |
 
-*Dung lượng **Git chưa nén tại snapshot có commit cố định**, không phải ZIP hay kích thước nhánh thay đổi liên tục. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4). V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha: **1.066.857 byte**, 132 tệp tại [`7ff24c4`](https://github.com/Form997/Vong-co/tree/7ff24c4f9399a482cfee14c33119f0ddc4d27f35).*
+*Dung lượng **Git chưa nén tại snapshot có commit cố định**, không phải ZIP hay kích thước nhánh thay đổi liên tục. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4). V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha: **1.081.181 byte**, 133 tệp tại [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386).*
 
 
 [**Nhật ký V1–V2, mốc thời gian, số đo và mẫu ghi thế hệ tiếp theo**](docs/nhat-ky-phien-ban.md) · [Công cụ Python đo dung lượng](scripts/thong-ke-dung-luong.py)
