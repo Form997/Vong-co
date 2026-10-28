@@ -114,6 +114,14 @@
 
 **Tài liệu:** [Báo cáo V3.2](v3.2-khoi-dong.md) · [Kiểm toán đủ 20 sổ V2](v3.2-kiem-toan-20-ban.md) · [Dữ liệu 72 nhãn](../data/v3_2/README.md).
 
+### Đợt cải tiến giao diện V3.2 — 28/10/2026
+
+**Thiết kế lại để người thật muốn sử dụng, nhưng giữ tiêu chuẩn khoa học.** Sau khi có bản V3.2 phát hành, [PR #9](https://github.com/Form997/Vong-co/pull/9) hợp nhất một giao diện mới: bố cục biên tập **ngà / xanh rừng / vàng đồng**, hero đồ họa CSS do dự án tạo, thanh tìm kiếm và bộ lọc phân cấp rõ, danh mục 20 thẻ dễ xem hơn. **20 trang bài độc lập và bộ 72 nhãn câu** có cùng nhận diện, accordion sáng dễ đọc, hai cột trên máy tính và một cột trên điện thoại.
+
+**Ngày hoàn thành phát hành:** 28/10/2026. [CI Python #40697296133](https://github.com/Form997/Vong-co/actions/runs/40697296133) có **62/62 phép thử đạt**; [Chromium #40697296268](https://github.com/Form997/Vong-co/actions/runs/40697296268) xác nhận không tràn ngang tại **360, 390, 768, 1024, 1366 px**, đồng thời lưu ảnh đối chứng trang chính và trang học; [GitHub Pages #40697296276](https://github.com/Form997/Vong-co/actions/runs/40697296276) báo **Deploy Success** tại `https://form997.github.io/Vong-co/`.
+
+**Dung lượng chính xác, snapshot bất biến sau merge:** [commit `a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15) có **150 tệp, 1.275.924 byte = 1.275,92 KB = 1.246,02 KiB** mã nguồn Git chưa nén; gói Pages **29 tệp, 462.065 byte**. Không đồng nhất hai kích thước với ZIP. Bản này vẫn là **thế hệ V3.2 có đợt cải tiến UI**, không tự đổi thành V3.3. **0/20 bài nghiệm thu diễn xướng**, không thêm audio hoặc ký âm không rõ quyền.
+
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.
