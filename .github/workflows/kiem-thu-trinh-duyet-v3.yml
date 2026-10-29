@@ -11,6 +11,8 @@ on:
       - "web/v3/**"
       - "data/v3/catalog.json"
       - "data/v3_2/**"
+      - "data/v3_3/**"
+      - "data/v3_4/**"
       - "scripts/v3_2_*"
       - "tests/v3_browser.cjs"
       - "scripts/v3_build_site.py"
@@ -18,6 +20,8 @@ on:
     branches:
       - v3-development
     paths:
+      - "data/v3_4/**"
+      - "scripts/v3_4_validate.py"
       - "web/v3/**"
       - "scripts/v3_build_site.py"
       - "scripts/v3_2_lesson_html.py"

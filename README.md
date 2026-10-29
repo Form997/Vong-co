@@ -9,6 +9,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
   <a href="README.en.md">English</a> ·
   <a href="#bắt-đầu-tại-đây">Bắt đầu</a> ·
   <a href="#danh-mục-20-bản-tổ">20 bản Tổ</a> ·
+  <a href="docs/v3.4-co-ban.md">V3.4-alpha</a> ·
   <a href="docs/v3.3-khoi-dong.md">V3.3-alpha</a> ·
   <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
   <a href="CONTRIBUTING.md">Đóng góp</a>
@@ -82,6 +83,12 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 [**Đề cương, giới hạn và checklist V3.3**](docs/v3.3-khoi-dong.md) · [Chỉ mục JSON](data/v3_3/phrase_index.json) · [Quy tắc kiểm](scripts/v3_3_validate.py) · [Hồ sơ 20 bản V2](docs/v3.2-kiem-toan-20-ban.md).
 
 **V3.3-alpha đã được phát hành ở cấp chỉ mục và phần mềm nhưng chưa hoàn thiện toàn diện**: [102 Python tests](https://github.com/Form997/Vong-co/actions/runs/40798312794) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40798312801) **đạt**, 404 đường dẫn nội bộ hợp lệ. **Mã nguồn tại [commit `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19): 177 tệp / 1.638.193 byte (1.599,80 KiB)**; **gói website: 38 tệp / 703.350 byte**, không phải ZIP. `0/20` bài nghiệm thu diễn xướng, quyền nhạc/lời/bản ghi chưa chứng nhận, thương mại chưa phê duyệt.
+
+### V3.4-alpha — Hai hệ Cổ Bản theo nguồn (bắt đầu 29/10/2026)
+
+V3.4 tách Cổ Bản Vắn **34 nhãn** và Trường **68 nhãn** theo Nhị Tấn tập II và sổ V2. Cộng bốn bài V3.3: **5 bài, 6 hệ, 252 nhãn**; **15 bài** chưa chuẩn hóa thành chỉ mục. Không tự ánh xạ câu giữa hai hệ. [Hồ sơ đối chiếu](docs/v3.4-co-ban.md) · [Dữ liệu và giới hạn](data/v3_4/README.md).
+
+Đây là bản phát triển, không phải nghiệm thu diễn xướng: **0/20 bài** đã nghiệm thu, quyền chưa xác minh; không bổ sung lời, ký âm hay bản thu. Các kết quả kiểm thử và thông số snapshot V3.4 được ghi trong [nhật ký phiên bản](docs/nhat-ky-phien-ban.md); việc triển khai chỉ được xác nhận sau CI và Pages thành công.
 
 ## Bắt đầu tại đây
 

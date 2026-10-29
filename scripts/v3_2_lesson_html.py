@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from html import escape
+import re
 from urllib.parse import quote, urlsplit
 
 BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
@@ -52,13 +53,13 @@ def safe_url(value: str) -> str:
     return html_text(value)
 
 
-def render_lesson(piece: dict, lesson: dict | None) -> str:
+def render_lesson(piece: dict, lesson: dict | None, *, id_prefix: str = "") -> str:
     """Return static, keyboard-accessible HTML. Never embeds media or lyrics."""
     if lesson is None:
         return ('<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">'
                 '<h2 id="learn-title">Học theo từng câu — đang chờ sổ nguồn</h2>'
                 '<p class="lesson-empty">Bài này có bảng hoặc sổ câu V2 ở mức độ khác nhau, '
-                'nhưng V3.3 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
+                'nhưng V3.4 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
                 'Không tự tạo nốt đờn, lời ca, ngón bấm, điểm song lang hoặc số trang.</p>'
                 '<p>Đọc hồ sơ và biên bản nguồn V2 ở phần bên dưới để biết điều đã kiểm.</p>'
                 '</section>')
@@ -68,7 +69,7 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
     jump, sections = [], []
     for layer in lesson["sections"]:
         label = html_text(layer["label"])
-        anchor = "lop-" + label.lower()
+        anchor = id_prefix + "lop-" + label.lower()
         jump.append(f'<a href="#{anchor}">Lớp {label}: {layer["start"]}–{layer["end"]}</a>')
         rows = []
         for phrase in lesson["phrases"]:
@@ -123,7 +124,7 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
                 'đặt lời theo phách và đối chiếu bản ghi. Chưa được phép sao chép nhạc/lời.</p>'
             )
             rows.append(
-                f'<details class="phrase-row" id="cau-{n:02d}">'
+                f'<details class="phrase-row" id="{id_prefix}cau-{n:02d}">'
                 f'<summary>Câu {n:02d} · Lớp {label} · xem nguồn & điểm cần kiểm</summary>'
                 f'<div class="body">{"".join(fields)}</div></details>'
             )
@@ -133,9 +134,9 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
             f'{"".join(rows)}</section>'
         )
     count = lesson["phrase_count"]
-    return f"""<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">
-<span class="eyebrow">V3.3 · Bài học từ sổ nguồn</span>
-<h2 id="learn-title">Học từng câu theo đúng hệ {variant_id}</h2>
+    return f"""<section class="section" id="{id_prefix}hoc-tung-cau" aria-labelledby="{id_prefix}learn-title">
+<span class="eyebrow">Bài học từ sổ nguồn</span>
+<h2 id="{id_prefix}learn-title">Học từng câu theo đúng hệ {variant_id}</h2>
 <p>Có <strong>{count}/{count} nhãn câu được rà ở V2</strong>; không phải
  {count} câu đã thẩm âm. Tên hệ nhịp và cách phân câu chỉ áp dụng cho
  <strong>phiên bản {variant_id}</strong>.</p>
@@ -164,3 +165,21 @@ hoặc người hướng dẫn chuyên môn kiểm phách.</li>
 <p class="muted">Dữ liệu từng câu được kiểm tự động với sổ V2 gốc.
 Có thể gửi vấn đề qua GitHub Issues kèm số câu, trang và hệ bản.</p>
 </section>"""
+
+
+def render_lessons(piece: dict, lessons: list[dict]) -> str:
+    """Render each independent system without duplicate anchors on the same page."""
+    if not lessons:
+        return render_lesson(piece, None)
+    if len(lessons) == 1:
+        return render_lesson(piece, lessons[0])
+    ids = [item["variant_id"] for item in lessons]
+    if len({item.lower() for item in ids}) != len(ids):
+        raise ValueError("Hệ bài học trùng mã.")
+    # Validated variant IDs are ASCII slugs. Reject ambiguous values rather than
+    # silently generating colliding fragment identifiers.
+    if any(not re.fullmatch(r"[A-Za-z0-9-]+", item) for item in ids):
+        raise ValueError("Mã hệ không hợp lệ cho liên kết nội bộ.")
+    sections = [render_lesson(piece, item, id_prefix="he-" + item["variant_id"].lower() + "-")
+                for item in lessons]
+    return '<div id="hoc-tung-cau">' + ''.join(sections) + '</div>'

@@ -216,3 +216,14 @@ python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
 ---
 
 **Nguyên tắc ghi phiên bản HAI ĐẤT:** Lịch sử có chứng cứ · thay đổi có ích · kích thước đo được · trạng thái nói thật.
+
+
+## V3.4-alpha — Cổ Bản Vắn và Trường
+
+**Bắt đầu:** 29/10/2026, nhánh phát triển riêng từ `v3-development` tại `322557ac08f94a0e0254c17550142a68c995cb5b`. [Hồ sơ đối chiếu](v3.4-co-ban.md) ghi hai hệ Vắn 34 và Trường 68 nhãn theo Nhị Tấn II; cùng dữ liệu V3.3 là 5 bài, 6 hệ, 252 nhãn. Nhãn là vị trí trong nguồn, không phải diễn xướng đã nghiệm thu.
+
+**Chưa hoàn thành:** 15 bài chưa chuẩn hóa chỉ mục, 0/20 bài nghiệm thu diễn xướng; quyền nhạc/lời/bản thu chưa xác minh, chưa có phê duyệt thương mại. Không suy ra ánh xạ giữa hai hệ. Kiểm thử, CI, triển khai và kích thước bản chụp được ghi sau khi thực hiện, không xem số liệu bản phát hành cũ là kết quả V3.4.
+
+**Kiểm thử tại máy:** 105/105 bài Python, trình duyệt Chromium với 34 + 68 nhãn và neo riêng, 417 liên kết nội bộ trong 29 tài liệu; bộ kiểm không chứng nhận nội dung biểu diễn. Gói website dựng tại máy: **40 tệp / 932.810 byte** chưa nén. CI PR và triển khai Pages còn chờ kết quả GitHub.
+
+**Bản chụp mã nguồn V3.4 trước PR:** 183 tệp / 1.793.317 byte chưa nén, tính tổng byte các tệp thuộc cây Git của bản chụp, không tính `.git` hoặc gói website. Kích thước phát hành sau hợp nhất cần được đo lại tại commit phát hành.

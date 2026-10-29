@@ -134,23 +134,24 @@ class V33SourceIndexTests(unittest.TestCase):
         self.assertNotIn('<img src=x onerror=',html)
         self.assertIn("&lt;img",html)
 
-    def test_site_build_publish_only_4_systems_and_16_pending(self):
+    def test_site_build_preserves_v33_and_includes_v34(self):
         with tempfile.TemporaryDirectory() as temp:
             dst=Path(temp)/"site"
             result=build(dst)
             self.assertEqual(result["status"],"pass")
-            self.assertEqual(result["file_count"],38)
-            self.assertEqual(result["indexed_lesson_pieces"],4)
-            self.assertEqual(result["indexed_lesson_phrases"],150)
+            self.assertEqual(result["file_count"],40)
+            self.assertEqual(result["indexed_lesson_pieces"],5)
+            self.assertEqual(result["indexed_lesson_phrases"],252)
             self.assertFalse(result["includes_rights_restricted_media"])
             published=set(result["published_files"])
+            self.assertIn("data/v3_4/phrase_index.json",published)
             self.assertIn("data/v3_3/phrase_index.json",published)
             self.assertIn("data/v3_2/phrase_index.json",published)  # historical previous version
             for n,count in [(1,32),(2,34),(3,44),(20,40)]:
                 cat=self.cat["items"][n-1]
                 html=(dst/"bai"/cat["slug"]/"index.html").read_text(encoding="utf-8")
                 self.assertEqual(html.count('class="phrase-row"'),count)
-                self.assertIn("V3.3",html)
+                self.assertIn("V3.4",html)
             html=(dst/"bai"/self.cat["items"][17]["slug"]/"index.html").read_text(encoding="utf-8")
             self.assertNotIn('class="phrase-row"',html)
             self.assertIn("chưa chuẩn hóa",html)
