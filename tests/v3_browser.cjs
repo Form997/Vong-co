@@ -107,9 +107,31 @@ async function run() {
     await policyLink.click();
     await page.waitForURL("**/web/v3/legal.html");
     assert.match(await page.locator("h1").innerText(), /Pháp lý/);
+    const countries = [
+      ["my", "Hoa Kỳ", 4], ["nga", "Nga", 4], ["trung-quoc", "Trung Quốc", 6],
+      ["uc", "Úc", 5], ["nhat-ban", "Nhật Bản", 4], ["han-quoc", "Hàn Quốc", 5]
+    ];
+    for (const [slug, label, n] of countries) {
+      const countryURL = new URL("quoc-gia/" + slug + ".html", BASE).toString();
+      const response = await page.request.get(countryURL);
+      assert.equal(response.status(), 200, "Country page missing " + slug);
+      await page.goto(countryURL,{waitUntil:"networkidle"});
+      assert.match(await page.locator("h1").innerText(), new RegExp(label));
+      assert.equal(await page.locator("article.source").count(), n);
+      assert.equal(await page.locator('article.source a[href^="https://"]').count(), n);
+      assert.match(await page.locator("main").innerText(), /NO-GO/);
+      assert.equal(await page.locator("iframe,video,audio,form").count(), 0);
+    }
+    await page.goto(new URL("legal.html", BASE).toString(),{waitUntil:"networkidle"});
+    for (const [slug] of countries) {
+      assert.equal(await page.locator('a[href="quoc-gia/'+slug+'.html"]').count(), 1);
+    }
+    await page.setViewportSize({width:390,height:844});
+    const countryOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
+    assert.equal(countryOverflow,false,"Six-country legal hub must fit mobile 390px");
     await page.goto(BASE,{waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");
-    console.log("PASS: public legal page HTTP 200, official sources, privacy, security, rights and footer link");
+    console.log("PASS: six 2026 country law pages (28 official sources), mobile links and privacy disclosure");
 
     const lessonSelect = page.locator("#lesson-status");
     await lessonSelect.selectOption("indexed");

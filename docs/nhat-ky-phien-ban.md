@@ -141,6 +141,18 @@
 
 **Giới hạn:** chưa có chứng nhận tuân thủ toàn cầu, kênh báo lỗ hổng riêng chưa xác minh đã bật, không có giấy phép thương mại cho nhạc/bản ghi của người khác; bộ kiểm chỉ xác thực tính nhất quán của nguồn và mã.
 
+### Đợt rà soát pháp lý sáu nước V3.2 — 29/10/2026
+
+**Mục tiêu:** khắc phục thiếu sót nghiên cứu pháp luật của **Mỹ, Nga, Trung Quốc, Úc, Nhật Bản và Hàn Quốc** ở các đợt trước. Không nâng thành V3.3 trước khi nghiệm thu nội dung.
+
+**Nội dung đã viết trên nhánh thử:** [sáu hồ sơ chuyên sâu](phap-ly-quoc-te/README.md), **28 nguồn luật/hướng dẫn có URL gốc** ở [dữ liệu kiểm](../data/v3_2/six_country_sources.json), bộ kiểm từ chối sai quốc gia, luật ngoài danh mục, ngày tương lai, trang giả mạo và đánh dấu trái phép “đã được phép kinh doanh”. Sáu trang HTML nguồn độc lập được sinh vào website khi build, giao diện thiết kế thống nhất với HAI ĐẤT; không tải nhạc/PDF/ảnh bên thứ ba.
+
+**Dấu mốc thời gian không được sửa sai:** Trung Quốc 01/01/2026 (Luật An ninh mạng sửa 2025); Hàn Quốc 29/10/2026 (Luật Bản quyền sửa), 02/10/2026 (Luật Mạng), 11/09/2026 (PIPA), 21/07/2026 (AI Basic Act); Úc có hợp nhất năm 2026; sửa đổi Nhật 2026 phải phân biệt ngày công bố và hiệu lực.
+
+**Kiểm chứng:** mỗi tệp ghi đúng nguyên ngữ, URL chính thức, điều kiện áp dụng, nội dung chưa thể kết luận. **Các nguồn Nga về 149-ФЗ có bản cơ quan nhà nước còn cũ**, phải đối chiếu cổng `pravo.gov.ru` bản hiện hành trước khi vận hành thương mại. **Không tuyên bố đã đủ luật 50 bang Mỹ hay mọi quốc gia trên thế giới.**
+
+**Trạng thái khi ghi:** trên nhánh `v3.2-six-country-law-audit` trước merge; số liệu commit, byte Git, website artifact và CI sẽ ghi **sau khi chốt phát hành**, tránh báo sai số. Website vẫn phi thương mại và nghiệm thu thực tấu **0/20**.
+
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.

@@ -16,6 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from v3_validate import ROOT
+from v3_2_six_country_validate import validate_all as validate_six_countries
 
 INDEX = ROOT / "data" / "v3_2" / "legal_sources.json"
 POLICIES = {
@@ -213,7 +214,8 @@ def validate_all(root: Path = ROOT) -> list[str]:
         data = json.loads((root / "data/v3_2/legal_sources.json").read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
         return [f"Legal sources unavailable or invalid: {exc}"]
-    return validate_source_registry(data) + validate_policy_files(root) + validate_website_legal(root)
+    return (validate_source_registry(data) + validate_policy_files(root) +
+            validate_website_legal(root) + validate_six_countries(root))
 
 
 def main() -> int:
@@ -225,6 +227,8 @@ def main() -> int:
         "status": "pass" if not errors else "fail",
         "sources": len(REQUIRED_IDS),
         "policy_files": len(POLICIES),
+        "foreign_country_sources": 28,
+        "foreign_country_count": 6,
         "commercial_enabled": False,
         "privacy_impact_assessment_completed": False,
         "legal_compliance_certified": False,

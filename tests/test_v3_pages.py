@@ -32,12 +32,14 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["pieces"], 20)
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
-            self.assertEqual(result["file_count"], 30)  # 10 base + 20 generated
+            self.assertEqual(result["file_count"], 36)  # 10 base + 20 pieces + 6 country pages
             names = set(result["published_files"])
-            self.assertEqual(len(names), 30)
+            self.assertEqual(len(names), 36)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
+            for slug in ("my", "nga", "trung-quoc", "uc", "nhat-ban", "han-quoc"):
+                self.assertIn(f"web/v3/quoc-gia/{slug}.html", names)
             self.assertIn("data/v3_2/phrase_index.json", names)
             self.assertIn("data/v3_2/schema.json", names)
             for item in self.catalog:
@@ -50,8 +52,10 @@ class V31PagesBuildTests(unittest.TestCase):
 
     def test_sitemap_contains_all_20_canonical_pages(self):
         sitemap = generate_sitemap(self.catalog)
-        self.assertEqual(sitemap.count("<url>"), 23)  # root, browser, legal page, 20 pieces
+        self.assertEqual(sitemap.count("<url>"), 29)  # root, browser, legal page, 6 countries, 20 pieces
         self.assertIn("/Vong-co/web/v3/legal.html", sitemap)
+        for slug in ("my", "nga", "trung-quoc", "uc", "nhat-ban", "han-quoc"):
+            self.assertIn(f"/Vong-co/web/v3/quoc-gia/{slug}.html", sitemap)
         for item in self.catalog:
             self.assertIn(f'/Vong-co/bai/{item["slug"]}/', sitemap)
 
@@ -102,7 +106,11 @@ class V31PagesBuildTests(unittest.TestCase):
             thread.start()
             root_url = f"http://127.0.0.1:{server.server_address[1]}"
             try:
-                for path in ("/", "/web/v3/", "/data/v3/catalog.json", "/data/v3/schema.json", "/web/v3/legal.html", "/sitemap.xml"):
+                for path in ("/", "/web/v3/", "/data/v3/catalog.json", "/data/v3/schema.json", "/web/v3/legal.html",
+                             "/web/v3/quoc-gia/my.html", "/web/v3/quoc-gia/nga.html",
+                             "/web/v3/quoc-gia/trung-quoc.html", "/web/v3/quoc-gia/uc.html",
+                             "/web/v3/quoc-gia/nhat-ban.html", "/web/v3/quoc-gia/han-quoc.html",
+                             "/sitemap.xml"):
                     with self.subTest(path=path):
                         with urlopen(root_url + path, timeout=5) as response:
                             self.assertEqual(response.status, 200)
