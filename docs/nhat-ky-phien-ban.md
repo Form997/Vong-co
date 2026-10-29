@@ -153,6 +153,16 @@
 
 **Đã phát hành ngày 29/10/2026:** [Pull Request #11](https://github.com/Form997/Vong-co/pull/11) đã hợp nhất tại [commit `2278abb`](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf). Git tree không bị truncated có **171 tệp, tổng 1.521.759 byte = 1.521,76 KB = 1.486,09 KiB**; đây là mã nguồn chưa nén, không phải ZIP. [GitHub Pages #40794249686](https://github.com/Form997/Vong-co/actions/runs/40794249686) xác nhận **Build Success + Deploy Success**, với gói website **36 tệp / 540.826 byte** (sáu trang luật quốc gia). [Python #40794249729](https://github.com/Form997/Vong-co/actions/runs/40794249729) đạt **87/87** và **376 liên kết nội bộ trong 25 tệp** hợp lệ. Website vẫn phi thương mại; nghiệm thu thực tấu **0/20**. Đây là snapshot bất biến tại commit merge, các chỉnh sửa nhật ký sau đó không làm thay đổi số liệu snapshot.
 
+## 6B. V3.3-alpha — Nâng cấp chỉ mục có nguồn, ngày 29/10/2026
+
+**Bắt đầu:** **29/10/2026**, nhánh `v3.3-development` từ `v3-development`. V3.3 không tự xóa hoặc hợp nhất lại V1, V2 hay JSON V3.2. Đã biên soạn **`data/v3_3/phrase_index.json` với 4 hệ/150 nhãn câu**, tức V3.2 72 nhãn giữ nguyên + **PLC-34-4** và **BBC-44-4** từ hai sổ V2 đã có chứng cứ từng trang.
+
+**Điều quan trọng được xử lý:** bài 02 có 34 nhạc nhưng 32 lời ở bản Nhị Tấn tập II; giữ `null` cho trang lời 33–34, ghi dị bản ở câu 08/34, không dùng số trang PDF tự suy đoán. Bài 03 44/4 tách với 22/8, ký hiệu cuối hàng chỉ là metadata, không phải âm thanh kiểm chứng.
+
+**Tài liệu và thử nghiệm:** [đề cương V3.3](v3.3-khoi-dong.md) · [README dữ liệu](../data/v3_3/README.md) · [đối chiếu V2](v3.2-kiem-toan-20-ban.md) · [validator](../scripts/v3_3_validate.py) · [negative tests](../tests/test_v3_3_phrases.py). Bộ kiểm không tự tạo ghi âm, ký âm hoặc lời ca có quyền.
+
+**Giới hạn phát hành:** `4/20` chỉ mục, `150` nhãn văn bản, `16/20` chưa chuẩn hóa; **0/20 bài nghiệm thu diễn xướng, quyền `unverified`**. V3.3 mới ở giai đoạn alpha; chưa ghi dung lượng nguồn/website cho đến lúc có commit merge và gói Pages hoàn chỉnh. Không suy 150 nhãn là 150 bài luyện đã được nghệ nhân xác nhận.
+
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.
