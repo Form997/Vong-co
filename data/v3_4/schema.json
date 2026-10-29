@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://form997.github.io/Vong-co/data/v3_4/schema.json",
+  "title": "HAI ĐẤT V3.4 — six independent V2 source-label systems",
+  "description": "252 source-label locators in six distinct systems across five pieces; no performance or rights approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "started_on",
+    "research_scope",
+    "performance_status",
+    "rights_status",
+    "reader_notice",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "3.4.0-alpha.1"
+    },
+    "started_on": {
+      "const": "2026-10-29"
+    },
+    "research_scope": {
+      "const": "source_label_index_only"
+    },
+    "performance_status": {
+      "const": "pending"
+    },
+    "rights_status": {
+      "const": "unverified"
+    },
+    "reader_notice": {
+      "type": "string",
+      "minLength": 30,
+      "pattern": "0/20"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "number",
+        "section",
+        "source_music_locator",
+        "source_lyric_locator",
+        "printed_music_page",
+        "printed_lyric_page",
+        "ending_token",
+        "pair_index",
+        "source_note"
+      ],
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 68
+        },
+        "section": {
+          "enum": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI",
+            "VII",
+            "VIII"
+          ]
+        },
+        "source_music_locator": {
+          "type": "string",
+          "minLength": 10
+        },
+        "source_lyric_locator": {
+          "type": "string",
+          "minLength": 10
+        },
+        "printed_music_page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "printed_lyric_page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "ending_token": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 20
+        },
+        "pair_index": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 20
+        },
+        "source_note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "label": {
+          "enum": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI",
+            "VII",
+            "VIII"
+          ]
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 68
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 68
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "piece_id",
+        "slug",
+        "title",
+        "variant_id",
+        "phrase_count",
+        "beats_per_phrase",
+        "source_register",
+        "source_url",
+        "source_description",
+        "sections",
+        "phrases"
+      ],
+      "properties": {
+        "piece_id": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            20
+          ]
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[0-9]{2}-[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "variant_id": {
+          "enum": [
+            "LT-32-4",
+            "PLC-34-4",
+            "BBC-44-4",
+            "CBV-34-4",
+            "CBT-68-4",
+            "PC-40-8"
+          ]
+        },
+        "phrase_count": {
+          "enum": [
+            32,
+            34,
+            44,
+            68,
+            40
+          ]
+        },
+        "beats_per_phrase": {
+          "enum": [
+            4,
+            8
+          ]
+        },
+        "source_register": {
+          "type": "string",
+          "pattern": "^ban-to/[0-9]{2}-[a-z0-9-]+/v2-(ra-soat-[0-9]+-cau|kiem-(34-cau-co-ban-van|68-cau-co-ban-truong))\\.md$"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "source_description": {
+          "type": "string",
+          "minLength": 40
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/section"
+          }
+        },
+        "phrases": {
+          "type": "array",
+          "minItems": 32,
+          "maxItems": 68,
+          "items": {
+            "$ref": "#/$defs/phrase"
+          }
+        }
+      }
+    }
+  }
+}

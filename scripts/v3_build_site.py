@@ -18,8 +18,8 @@ from xml.sax.saxutils import escape as xml_escape
 
 from v3_validate import ROOT, CATALOG, validate_catalog, strict_load
 from v3_2_validate import INDEX as V32_INDEX, validate_phrase_index
-from v3_3_validate import INDEX as LESSON_INDEX, validate_v33
-from v3_2_lesson_html import render_lesson, LESSON_CSS
+from v3_4_validate import INDEX as LESSON_INDEX, validate_v34
+from v3_2_lesson_html import render_lesson, render_lessons, LESSON_CSS
 from v3_2_legal_validate import validate_all as validate_legal_publication
 from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
 from v3_2_country_html import COUNTRIES, render_country_page
@@ -35,6 +35,8 @@ ALLOWLIST = (
     ("data/v3_2/schema.json", "data/v3_2/schema.json"),
     ("data/v3_3/phrase_index.json", "data/v3_3/phrase_index.json"),
     ("data/v3_3/schema.json", "data/v3_3/schema.json"),
+    ("data/v3_4/phrase_index.json", "data/v3_4/phrase_index.json"),
+    ("data/v3_4/schema.json", "data/v3_4/schema.json"),
 )
 BASE_FILES = ("index.html", ".nojekyll", "robots.txt", "sitemap.xml")
 
@@ -46,7 +48,7 @@ LANDING = """<!doctype html>
   <meta name="robots" content="index,follow">
   <meta name="description" content="HAI ĐẤT — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, bảo tồn nguồn gốc và dị bản.">
   <meta http-equiv="refresh" content="0;url=web/v3/">
-  <title>HAI ĐẤT V3.3 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.4 · Thư viện 20 bản Tổ</title>
   <link rel="canonical" href="https://form997.github.io/Vong-co/web/v3/">
 </head>
 <body><main>
@@ -144,7 +146,7 @@ def piece_url(piece: dict) -> str:
 
 
 def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | None,
-                   lesson: dict | None = None) -> str:
+                   lesson: dict | list[dict] | None = None) -> str:
     title = html_text(piece["title"])
     family = html_text(piece["family_label"])
     aliases = ", ".join(html_text(x) for x in piece["aliases"]) or "Không ghi nhận trong danh mục V3"
@@ -193,7 +195,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#f6f4ee">
   <link rel="canonical" href="{url}">
-  <title>{title} · Bản Tổ số {piece['id']:02d} | HAI ĐẤT V3.3</title>
+  <title>{title} · Bản Tổ số {piece['id']:02d} | HAI ĐẤT V3.4</title>
   <style>{CSS}{LESSON_CSS}</style>
 </head><body>
 <header class="top"><div class="container">
@@ -202,7 +204,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
 </div></header>
 <main class="container">
  <section class="detail-hero" aria-label="Giới thiệu tác phẩm">
- <span class="eyebrow">{family} · Bản Tổ số {piece['id']:02d} · V3.3</span>
+ <span class="eyebrow">{family} · Bản Tổ số {piece['id']:02d} · V3.4</span>
  <h1>{title}</h1>
  <p class="lead">Một bản Tổ có thể có nhiều hệ câu, lớp và dị bản. Trang này giúp lần theo
  nguồn và ghi rõ điều chưa được người thực hành thẩm định.</p>
@@ -223,7 +225,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
    Một số nguồn được thuật lại hoặc đề xuất ánh xạ, chưa có đối chứng trực tiếp.</p>
    <div class="variants">{''.join(variant_cards)}</div>
  </section>
- {render_lesson(piece, lesson)}
+ {render_lessons(piece, lesson) if isinstance(lesson, list) else render_lesson(piece, lesson)}
  <section class="section" aria-labelledby="records">
    <h2 id="records">Đọc hồ sơ và đối chiếu chứng cứ</h2>
    <div class="actions">
@@ -238,7 +240,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
  <nav class="actions" aria-label="Chuyển bài">{' '.join(nav_links)}</nav>
 </main>
 <footer><div class="container">HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.
- · V3.3 · Thư viện di sản âm nhạc · Không thay thế chứng nhận chuyên môn
+ · V3.4 · Thư viện di sản âm nhạc · Không thay thế chứng nhận chuyên môn
  · <a href="../../web/v3/legal.html">Pháp lý, quyền riêng tư và an ninh mạng</a></div></footer>
 </body></html>
 """
@@ -259,7 +261,7 @@ def build(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
     six_country_data = strict_load(SIX_COUNTRY_INDEX)
-    errors = validate_catalog(data) + validate_v33(lesson_data, data) + validate_legal_publication()
+    errors = validate_catalog(data) + validate_v34(lesson_data, data) + validate_legal_publication()
     if errors:
         raise ValueError("Không xuất bản metadata không hợp lệ: " + "; ".join(errors[:5]))
     target, source = output.resolve(), ROOT.resolve()
@@ -280,7 +282,9 @@ def build(output: Path) -> dict[str, object]:
     (target / "robots.txt").write_text(ROBOTS, encoding="utf-8")
 
     pieces = data["items"]
-    lesson_by_piece = {item["piece_id"]: item for item in lesson_data["items"]}
+    lesson_by_piece: dict[int, list[dict]] = {}
+    for item in lesson_data["items"]:
+        lesson_by_piece.setdefault(item["piece_id"], []).append(item)
     for i, p in enumerate(pieces):
         page = target / "bai" / p["slug"] / "index.html"
         page.parent.mkdir(parents=True, exist_ok=True)
@@ -313,13 +317,14 @@ def build(output: Path) -> dict[str, object]:
         "country_law_pages": len(COUNTRIES),
         "country_law_source_records": len(six_country_data["sources"]),
         "indexed_lesson_pieces": len(lesson_by_piece),
+        "indexed_lesson_systems": len(lesson_data["items"]),
         "indexed_lesson_phrases": sum(len(i["phrases"]) for i in lesson_data["items"]),
         "includes_rights_restricted_media": False,
     }
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Đóng gói an toàn trang tra cứu V3.3")
+    parser = argparse.ArgumentParser(description="Đóng gói an toàn trang tra cứu V3.4")
     parser.add_argument("--out", required=True, type=Path)
     args = parser.parse_args()
     try:

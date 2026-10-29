@@ -15,7 +15,7 @@ async function expectCount(page, count, label) {
 }
 
 async function run() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   const page = await browser.newPage({
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 1,
@@ -36,7 +36,7 @@ async function run() {
     await expectCount(page, 20, "Full catalog");
     assert.equal((await page.locator("#count-pieces").innerText()).trim(), "20");
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
-    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "4");
+    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "5");
     console.log("PASS: load 20 pieces and 30 variants");
 
     // Visual regression contract: coherent heritage color system and hero landmarks.
@@ -135,15 +135,15 @@ async function run() {
 
     const lessonSelect = page.locator("#lesson-status");
     await lessonSelect.selectOption("indexed");
-    await expectCount(page, 4, "Four V2 source-indexed systems in V3.3");
+    await expectCount(page, 5, "Five pieces with source indexes in V3.4");
     const indexedNames = await page.locator("button.piece strong").allInnerTexts();
     assert.ok(indexedNames.some(t => t.includes("Lưu Thủy")));
     assert.ok(indexedNames.some(t => t.includes("Phụng Cầu")));
     await lessonSelect.selectOption("pending");
-    await expectCount(page, 16, "16 without normalized source-label indexes");
+    await expectCount(page, 15, "15 without normalized source-label indexes");
     await lessonSelect.selectOption("all");
     await expectCount(page, 20, "Reset lesson availability");
-    console.log("PASS: V3.3 lesson filter: 4 source-locator indexes and 16 waiting");
+    console.log("PASS: V3.4 lesson filter: 5 pieces and 15 waiting");
 
     const search = page.locator("#search");
     await search.fill("phung cau");
@@ -156,6 +156,8 @@ async function run() {
     await expectCount(page, 1, "Unaccented search Co Ban Van");
     assert.match(await page.locator("#detail h3").innerText(), /Cổ Bản/);
     assert.equal(await page.locator("#detail .variant").count(), 2);
+    assert.match(await page.locator("#detail").innerText(), /34 nhãn/);
+    assert.match(await page.locator("#detail").innerText(), /68 nhãn/);
     console.log("PASS: distinct Vắn/Trường variants");
 
     await search.fill("");
@@ -252,6 +254,18 @@ async function run() {
     assert.match(await page.locator("#cau-44").innerText(), /135/);
     assert.equal(await page.locator("#cau-44 a[href*='#page=']").count(), 0);
     console.log("PASS: Binh Ban Chan 44 indexed source labels with source-specific printed page citations");
+
+    await page.goto(new URL("../../bai/04-co-ban-van/", BASE).toString(),{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 102);
+    assert.match(await page.locator("#hoc-tung-cau").innerText(), /Vắn/);
+    assert.match(await page.locator("#hoc-tung-cau").innerText(), /Trường/);
+    assert.equal(await page.locator("#hoc-tung-cau").count(), 1);
+    assert.deepEqual(await page.evaluate(() => {
+      const ids = [...document.querySelectorAll("[id]")].map(x => x.id);
+      return ids.filter((id, i) => ids.indexOf(id) !== i);
+    }), [], "IDs for both systems must be unique");
+    assert.equal(await page.locator("audio").count(), 0);
+    console.log("PASS: Co Ban Vắn and Trường 34/68 labels, unique anchors, no audio");
 
     await page.goto(new URL("../../bai/18-phung-hoang/", BASE).toString(),{waitUntil:"networkidle"});
     assert.equal(await page.locator("details.phrase-row").count(), 0);
