@@ -38,7 +38,7 @@ Nếu trích đoạn cho học thuật phải kiểm ngoại lệ/điều kiện
 
 Nếu triển khai khóa học thu phí, bản ghi, AI/giọng hoặc dữ liệu người học từ Nga: cần đánh giá nội luật hóa dữ liệu, quyền tác giả, yêu cầu về môi trường pháp lý/kinh doanh, thủ tục dịch vụ thông tin và người chịu trách nhiệm tại Nga; nghiên cứu thêm luật quảng cáo, quyền người dùng và các giới hạn thanh toán/sanctions khi giao dịch xuyên biên giới. **Mặc định NO-GO** cho đến khi tư vấn địa bàn và hạ tầng được kiểm.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
