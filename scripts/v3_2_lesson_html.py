@@ -59,7 +59,7 @@ def render_lesson(piece: dict, lesson: dict | None, *, id_prefix: str = "") -> s
         return ('<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">'
                 '<h2 id="learn-title">Học theo từng câu — đang chờ sổ nguồn</h2>'
                 '<p class="lesson-empty">Bài này có bảng hoặc sổ câu V2 ở mức độ khác nhau, '
-                'nhưng V3.4 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
+                'nhưng V3.5 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
                 'Không tự tạo nốt đờn, lời ca, ngón bấm, điểm song lang hoặc số trang.</p>'
                 '<p>Đọc hồ sơ và biên bản nguồn V2 ở phần bên dưới để biết điều đã kiểm.</p>'
                 '</section>')

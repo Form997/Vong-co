@@ -36,7 +36,7 @@ async function run() {
     await expectCount(page, 20, "Full catalog");
     assert.equal((await page.locator("#count-pieces").innerText()).trim(), "20");
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
-    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "5");
+    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "6");
     console.log("PASS: load 20 pieces and 30 variants");
 
     // Visual regression contract: coherent heritage color system and hero landmarks.
@@ -135,15 +135,15 @@ async function run() {
 
     const lessonSelect = page.locator("#lesson-status");
     await lessonSelect.selectOption("indexed");
-    await expectCount(page, 5, "Five pieces with source indexes in V3.4");
+    await expectCount(page, 6, "Six pieces with source indexes in V3.5");
     const indexedNames = await page.locator("button.piece strong").allInnerTexts();
     assert.ok(indexedNames.some(t => t.includes("Lưu Thủy")));
     assert.ok(indexedNames.some(t => t.includes("Phụng Cầu")));
     await lessonSelect.selectOption("pending");
-    await expectCount(page, 15, "15 without normalized source-label indexes");
+    await expectCount(page, 14, "14 without normalized source-label indexes");
     await lessonSelect.selectOption("all");
     await expectCount(page, 20, "Reset lesson availability");
-    console.log("PASS: V3.4 lesson filter: 5 pieces and 15 waiting");
+    console.log("PASS: V3.5 lesson filter: 6 pieces and 14 waiting");
 
     const search = page.locator("#search");
     await search.fill("phung cau");
@@ -266,6 +266,14 @@ async function run() {
     }), [], "IDs for both systems must be unique");
     assert.equal(await page.locator("audio").count(), 0);
     console.log("PASS: Co Ban Vắn and Trường 34/68 labels, unique anchors, no audio");
+
+    await page.goto(new URL("../../bai/05-xuan-tinh-chan/", BASE).toString(),{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 48);
+    await page.locator("#cau-37 summary").click();
+    assert.match(await page.locator("#cau-37").innerText(), /khác|khác biệt/i);
+    assert.equal(await page.locator("#cau-37 a[href*='#page=']").count(), 0);
+    assert.equal(await page.locator("audio").count(), 0);
+    console.log("PASS: Xuan Tinh 48 source labels and unresolved discrepancy");
 
     await page.goto(new URL("../../bai/18-phung-hoang/", BASE).toString(),{waitUntil:"networkidle"});
     assert.equal(await page.locator("details.phrase-row").count(), 0);

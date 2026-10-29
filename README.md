@@ -92,6 +92,10 @@ V3.4-alpha đã phát hành qua [PR #13](https://github.com/Form997/Vong-co/pull
 
 Đây là chỉ mục nguồn, chưa phải nghiệm thu diễn xướng: **0/20 bài** đã nghiệm thu, quyền chưa xác minh; không bổ sung lời, ký âm hay bản thu. Các kết quả và thông số được ghi trong [nhật ký phiên bản](docs/nhat-ky-phien-ban.md).
 
+### V3.5-alpha — Xuân Tình Chấn (bắt đầu 29/10/2026)
+
+V3.5 bổ sung 48 nhãn theo Nhị Tấn tập II và sổ V2, phân biệt bản Thủ tập I và phần Tây Thi trên trang chung. Tổng dự kiến **6 bài, 7 hệ, 300 nhãn**; **14 bài** còn chờ chuẩn hóa. [Hồ sơ nguồn](docs/v3.5-xuan-tinh.md) · [Dữ liệu](data/v3_5/README.md). Đây là chỉ mục nguồn, không phải nghiệm thu diễn xướng; quyền chưa xác minh và 0/20 bài đã nghiệm thu. Kết quả CI, Pages và kích thước bản phát hành được ghi sau khi xác nhận.
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |

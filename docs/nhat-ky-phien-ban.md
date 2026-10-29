@@ -229,3 +229,9 @@ python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
 **Bản chụp mã nguồn V3.4 trước PR:** 183 tệp / 1.793.317 byte chưa nén, tính tổng byte các tệp thuộc cây Git của bản chụp, không tính `.git` hoặc gói website. Kích thước phát hành sau hợp nhất cần được đo lại tại commit phát hành.
 
 **Phát hành V3.4-alpha:** [PR #13](https://github.com/Form997/Vong-co/pull/13) hợp nhất tại [commit `86ac6a4`](https://github.com/Form997/Vong-co/tree/86ac6a4c299b9dd205f4ebe719ffa8e4e5b82582); cây Git của commit này có **183 tệp / 1.793.317 byte** chưa nén. [CI Python](https://github.com/Form997/Vong-co/actions/runs/40805890696) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40805890695) đạt, [Pages build và deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40805890692); log đóng gói ghi **40 tệp / 932.810 byte**. Các kết quả trên kiểm phần mềm và dữ liệu theo sổ, không chứng nhận diễn xướng hoặc quyền.
+
+## V3.5-alpha — Xuân Tình Chấn
+
+**Bắt đầu:** 29/10/2026, từ `v3-development` tại `e3fc2ed550632d467c9106813d0bfb7c719bb232`. Bổ sung chỉ mục 48 nhãn của bài 05 theo [sổ V2](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md), tách bản tập II khỏi Thủ tập I và giữ ranh giới Tây Thi trên trang chung. Tổng đề xuất 6 bài / 7 hệ / 300 nhãn.
+
+**Còn chờ:** 14 bài chưa chuẩn hóa, 0/20 bài nghiệm thu diễn xướng; quyền nhạc, lời và bản thu chưa xác minh. CI, Chromium, Pages, số tệp và dung lượng snapshot sẽ ghi theo kết quả thực tế sau khi kiểm.
