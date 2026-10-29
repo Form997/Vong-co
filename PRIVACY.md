@@ -33,7 +33,7 @@ Muốn phản ánh dữ liệu bị đăng nhầm, hãy báo tại [Issues](http
 
 ## 4. Cơ sở pháp lý và địa bàn áp dụng
 
-Tại Việt Nam, khi dự án xử lý dữ liệu cá nhân theo tư cách chủ thể chịu điều chỉnh, phải xem [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=215855&pageid=27160) (hiệu lực 01/01/2026) và [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160), cùng các quy định áp dụng khác. Phạm vi quyền/nghĩa vụ **phụ thuộc vai trò, dữ liệu, địa bàn và hoạt động thực tế**, không vì trang miễn phí mà tự miễn trừ.
+Tại Việt Nam, khi dự án xử lý dữ liệu cá nhân theo tư cách chủ thể chịu điều chỉnh, phải xem [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160) (hiệu lực 01/01/2026) và [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160), cùng các quy định áp dụng khác. Phạm vi quyền/nghĩa vụ **phụ thuộc vai trò, dữ liệu, địa bàn và hoạt động thực tế**, không vì trang miễn phí mà tự miễn trừ.
 
 Khi chủ động phục vụ/giám sát người tại EU, đánh giá [GDPR Điều 3](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (kể cả dịch vụ miễn phí); **website có thể truy cập ở EU không tự động đủ** để kết luận áp dụng ngoại lãnh thổ. Đối với Anh/những nước khác, đánh giá riêng theo từng phạm vi.
 
