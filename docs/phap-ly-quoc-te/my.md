@@ -38,7 +38,7 @@
 
 Nếu kinh doanh tại Mỹ hoặc phục vụ thị trường bang cụ thể: xác định chủ thể bán hàng, thuế/consumer protection, điều khoản giao dịch, dữ liệu trẻ em, quy định từng bang, bản quyền phạm vi Mỹ, thanh toán và hợp đồng đối tác. Với sản phẩm AI mô phỏng giọng nghệ sĩ phải kiểm thêm luật về danh tính, publicity, giọng, quyền tác giả và quy định tiểu bang có hiệu lực tại thời điểm khai thác. Không dùng GitHub Pages làm nền tảng SaaS/e-commerce chính.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
