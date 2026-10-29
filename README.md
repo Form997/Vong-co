@@ -73,7 +73,7 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 [**Danh mục sáu nước**](docs/phap-ly-quoc-te/README.md) · [Mỹ](docs/phap-ly-quoc-te/my.md) · [Nga](docs/phap-ly-quoc-te/nga.md) · [Trung Quốc](docs/phap-ly-quoc-te/trung-quoc.md) · [Úc](docs/phap-ly-quoc-te/uc.md) · [Nhật Bản](docs/phap-ly-quoc-te/nhat-ban.md) · [Hàn Quốc](docs/phap-ly-quoc-te/han-quoc.md) · [sổ nguồn có cấu trúc](data/v3_2/six_country_sources.json).
 
-**Website:** thiết kế thêm sáu trang luật quốc gia từ dữ liệu đã kiểm, nối từ [trang pháp lý HAI ĐẤT](https://form997.github.io/Vong-co/web/v3/legal.html). **Chưa công bố bản thay đổi này trước khi CI và GitHub Pages triển khai thành công**. Quy định áp dụng tùy hoạt động, người dùng và nơi vận hành; đây không phải xác nhận dự án đã đủ chuẩn pháp luật sáu nước.
+**Đã phát hành trên website:** sáu trang luật quốc gia nối từ [trang pháp lý HAI ĐẤT](https://form997.github.io/Vong-co/web/v3/legal.html) qua [PR #11](https://github.com/Form997/Vong-co/pull/11); [GitHub Pages Build + Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40794249686), [87/87 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40794249729) và **376 liên kết nội bộ** hợp lệ. **Mã nguồn tại commit phát hành [2278abb](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf): 171 tệp, 1.521.759 byte (1.486,09 KiB)**; gói website **36 tệp, 540.826 byte**. Quy định áp dụng tùy hoạt động, người dùng, nơi vận hành; đây không phải xác nhận dự án đã đủ chuẩn pháp luật sáu nước.
 
 ## Bắt đầu tại đây
 
