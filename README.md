@@ -9,7 +9,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
   <a href="README.en.md">English</a> ·
   <a href="#bắt-đầu-tại-đây">Bắt đầu</a> ·
   <a href="#danh-mục-20-bản-tổ">20 bản Tổ</a> ·
-  <a href="docs/v3.2-khoi-dong.md">V3.2</a> ·
+  <a href="docs/v3.3-khoi-dong.md">V3.3-alpha</a> ·
   <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
   <a href="CONTRIBUTING.md">Đóng góp</a>
 </p>
@@ -22,7 +22,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 </p>
 
 > [!IMPORTANT]
-> **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
+> **Trạng thái nghiên cứu · 29/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
 > [!NOTE]
 > **Website V3.0 đã được GitHub Pages triển khai thành công ngày 28/10/2026**: [mở trang tra cứu công khai](https://form997.github.io/Vong-co/) · [minh chứng Deploy](https://github.com/Form997/Vong-co/actions/runs/40675923989). **V3.1 đã triển khai công khai** qua [GitHub Pages run #40689588576](https://github.com/Form997/Vong-co/actions/runs/40689588576). **V3.2 đã được hợp nhất qua [Pull Request #8](https://github.com/Form997/Vong-co/pull/8) và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40694415309)** ngày 28/10/2026. Giao diện và hồ sơ nghiên cứu **không tương đương nghiệm thu âm nhạc**.
@@ -77,11 +77,11 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 ### V3.3-alpha — Từ 72 đến 150 nhãn câu có chứng cứ (29/10/2026)
 
-**V3.3 đang triển khai trên nhánh riêng**, ưu tiên **học liệu từng câu** thay vì chỉ cải tiến giao diện. Bổ sung **Phú Lục Chấn 34 nhãn** và **Bình Bán Chấn 44 nhãn** theo sổ V2; cùng hai hệ V3.2 (Lưu Thủy Trường 32, Phụng Cầu 40) tổng **4 bài có chỉ mục / 150 nhãn**, **16 bài chờ tiếp tục chuẩn hóa**. Quan trọng: **34 câu nhạc nhưng chỉ 32 nhãn lời trong Nhị Tấn II** của bài 02; chữ kết câu 08 và 34 khác với Văn Dần; không đoán phách, MIDI, ca từ hoặc PDF page.
+**V3.3-alpha đã được hợp nhất qua [Pull Request #12](https://github.com/Form997/Vong-co/pull/12) và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40798312828)**, ưu tiên **học liệu từng câu** thay vì chỉ cải tiến giao diện. Bổ sung **Phú Lục Chấn 34 nhãn** và **Bình Bán Chấn 44 nhãn** theo sổ V2; cùng hai hệ V3.2 (Lưu Thủy Trường 32, Phụng Cầu 40) tổng **4 bài có chỉ mục / 150 nhãn**, **16 bài chờ tiếp tục chuẩn hóa**. Quan trọng: **34 câu nhạc nhưng chỉ 32 nhãn lời trong Nhị Tấn II** của bài 02; chữ kết câu 08 và 34 khác với Văn Dần; không đoán phách, MIDI, ca từ hoặc PDF page.
 
 [**Đề cương, giới hạn và checklist V3.3**](docs/v3.3-khoi-dong.md) · [Chỉ mục JSON](data/v3_3/phrase_index.json) · [Quy tắc kiểm](scripts/v3_3_validate.py) · [Hồ sơ 20 bản V2](docs/v3.2-kiem-toan-20-ban.md).
 
-**V3.3-alpha chưa được gọi là hoàn thiện toàn diện**: `0/20` bài nghiệm thu diễn xướng, quyền nhạc/lời/bản ghi chưa được chứng nhận, thương mại chưa được phê duyệt. Chỉ ghi “đã lên website” sau khi CI + Chromium + Pages đều đạt và ghi đúng SHA/dung lượng.
+**V3.3-alpha đã được phát hành ở cấp chỉ mục và phần mềm nhưng chưa hoàn thiện toàn diện**: [102 Python tests](https://github.com/Form997/Vong-co/actions/runs/40798312794) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40798312801) **đạt**, 404 đường dẫn nội bộ hợp lệ. **Mã nguồn tại [commit `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19): 177 tệp / 1.638.193 byte (1.599,80 KiB)**; **gói website: 38 tệp / 703.350 byte**, không phải ZIP. `0/20` bài nghiệm thu diễn xướng, quyền nhạc/lời/bản ghi chưa chứng nhận, thương mại chưa phê duyệt.
 
 ## Bắt đầu tại đây
 
