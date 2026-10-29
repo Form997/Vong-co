@@ -38,7 +38,7 @@ Việc dẫn link có thể an toàn hơn sao chép lại, nhưng vẫn phải x
 
 Nếu bán khóa học/sản phẩm/AI cho người tại Nhật phải xem thêm **luật giao dịch thương mại đặc định (特定商取引法)**, nghĩa vụ hiển thị thông tin người bán, giá, thanh toán, hoàn tiền và các điều khoản liên quan; cần xác minh bản chính thức của cơ quan tiêu dùng tại thời điểm mở dịch vụ. Hiện chỉ có nghiên cứu và **chưa có đánh giá giao dịch thương mại Nhật đầy đủ**, nên NO-GO.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
