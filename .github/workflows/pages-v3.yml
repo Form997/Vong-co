@@ -46,6 +46,7 @@ jobs:
         run: |
           test -s _site/index.html
           test -s _site/web/v3/index.html
+          test -s _site/web/v3/legal.html
           test -s _site/data/v3/catalog.json
           test -s _site/data/v3/schema.json
           test -s _site/data/v3_2/phrase_index.json
@@ -53,7 +54,7 @@ jobs:
           grep -q "hoc-tung-cau" _site/bai/01-luu-thuy-truong/index.html
           grep -q "hoc-tung-cau" _site/bai/20-phung-cau/index.html
           test -f _site/.nojekyll
-          test "$(find _site -type f | wc -l)" -eq 29
+          test "$(find _site -type f | wc -l)" -eq 30
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v4
         with:
