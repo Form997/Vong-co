@@ -32,9 +32,9 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["pieces"], 20)
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
-            self.assertEqual(result["file_count"], 36)  # 10 base + 20 pieces + 6 country pages
+            self.assertEqual(result["file_count"], 38)  # 12 base + 20 pieces + 6 country pages
             names = set(result["published_files"])
-            self.assertEqual(len(names), 36)
+            self.assertEqual(len(names), 38)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
@@ -42,13 +42,15 @@ class V31PagesBuildTests(unittest.TestCase):
                 self.assertIn(f"web/v3/quoc-gia/{slug}.html", names)
             self.assertIn("data/v3_2/phrase_index.json", names)
             self.assertIn("data/v3_2/schema.json", names)
+            self.assertIn("data/v3_3/phrase_index.json", names)
+            self.assertIn("data/v3_3/schema.json", names)
             for item in self.catalog:
                 self.assertIn(f'bai/{item["slug"]}/index.html', names)
             self.assertFalse(any(p.startswith(("ban-to/", "docs/", ".github/", "tests/", "scripts/")) for p in names))
             self.assertFalse(any(p.endswith((".mp3", ".pdf", ".zip", ".wav", ".py", ".md")) for p in names))
             self.assertFalse(result["includes_rights_restricted_media"])
-            self.assertEqual(result["indexed_lesson_pieces"], 2)
-            self.assertEqual(result["indexed_lesson_phrases"], 72)
+            self.assertEqual(result["indexed_lesson_pieces"], 4)
+            self.assertEqual(result["indexed_lesson_phrases"], 150)
 
     def test_sitemap_contains_all_20_canonical_pages(self):
         sitemap = generate_sitemap(self.catalog)

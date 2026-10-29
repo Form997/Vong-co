@@ -98,7 +98,7 @@ class SixJurisdictionLawTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             site=Path(tmp)/"www"
             result=build(site)
-            self.assertEqual(result["file_count"],36)
+            self.assertEqual(result["file_count"],38)
             self.assertEqual(result["country_law_pages"],6)
             self.assertEqual(result["country_law_source_records"],28)
             for code, obj in COUNTRIES.items():
@@ -109,7 +109,7 @@ class SixJurisdictionLawTests(unittest.TestCase):
                 self.assertIn("29/10/2026",text)
                 self.assertNotIn("<iframe",text)
             self.assertFalse(any(x.endswith((".pdf",".mp3",".wav",".mid",".env")) for x in result["published_files"]))
-            self.assertEqual(result["indexed_lesson_phrases"],72)
+            self.assertEqual(result["indexed_lesson_phrases"],150)
 
 if __name__=="__main__":
     unittest.main()

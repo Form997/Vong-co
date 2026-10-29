@@ -41,6 +41,12 @@ Trang [pháp lý V3.2](legal.html) có thêm **6 thẻ quốc gia** dẫn đến
 
 **Đã triển khai trên website:** [GitHub Pages Build + Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40794249686) sau khi [PR #11](https://github.com/Form997/Vong-co/pull/11) hợp nhất. Gói web có **36 tệp / 540.826 byte** tại bản phát hành 29/10/2026; sáu trang luật được trình duyệt kiểm tra. Đây là nghiên cứu pháp lý có nguồn, không thay kiểm toán/tư vấn pháp lý và không mở khóa `commercial_enabled=false`.
 
+### V3.3-alpha — 4 bài / 150 nhãn có chỉ mục nguồn
+
+Bản V3.3 kế thừa giao diện thư viện sáng V3.2, mở rộng đến **bài 01 (32), 02 (34), 03 (44), 20 (40)**; **16 bài** còn trong hàng đợi kiểm nguồn. Dữ liệu mới ở [`data/v3_3`](../../data/v3_3/README.md); giữ nguyên JSON V3.2. Cảnh báo sai biệt **34 nhạc/32 lời** và câu 08/34 được hiển thị ngay trong danh mục và trang Phú Lục Chấn.
+
+Đây là **chỉ mục nhãn câu theo sổ V2, không phải xác nhận âm nhạc biểu diễn**. Không tải PDF về máy chủ, không tự tạo số trang PDF, lời ca hay MP3. Chưa tuyên bố lên website công khai cho đến khi CI/Chromium/Pages báo Deploy Success.
+
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
 Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:

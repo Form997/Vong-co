@@ -72,6 +72,14 @@ The project now documents **28 primary-law or regulator records across the US, R
 
 **Released**: six public national-law pages are linked from the [HAI ĐẤT legal hub](https://form997.github.io/Vong-co/web/v3/legal.html), after [PR #11](https://github.com/Form997/Vong-co/pull/11) and [successful GitHub Pages Build + Deploy](https://github.com/Form997/Vong-co/actions/runs/40794249686). [87 Python tests passed](https://github.com/Form997/Vong-co/actions/runs/40794249729) and **376 internal links** were validated. Pinned [release commit 2278abb](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf): **171 uncompressed Git files, 1,521,759 bytes (1,486.09 KiB)**; published website **36 files, 540,826 bytes**. A globally accessible URL does not automatically trigger every law in each country; no audit here certifies compliance or licenses the commercial reuse of music.
 
+### V3.3-alpha — 150 traced source-label locators (29 October 2026)
+
+V3.3 develops source-aware phrase learning, **not automated transcription**. It adds **34 Phú Lục Chấn** and **44 Bình Bán Chấn** source-labelled positions to the existing 72 V3.2 rows, for **4 of 20 works / 150 labels**, with 16 still awaiting normalization. In the Nhị Tấn volume II source of Phú Lục Chấn, **34 music positions but only 32 printed lyric positions** are evidenced; the manuscript discrepancies at lines 08 and 34 remain explicit rather than fabricated away.
+
+[Research scope and release checklist](docs/v3.3-khoi-dong.md) · [V3.3 machine-readable source index](data/v3_3/phrase_index.json) · [line-by-line provenance validator](scripts/v3_3_validate.py).
+
+**This is a development-stage alpha**, not a complete 20-piece music curriculum or authorization to reproduce sheet music/audio/lyrics. **0/20 performances approved, rights unverified, commercial use not enabled.** Public website claims require successful post-merge CI and Pages deployment.
+
 ## Start here
 
 | Your goal | The best entry point |

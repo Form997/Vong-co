@@ -36,7 +36,7 @@ async function run() {
     await expectCount(page, 20, "Full catalog");
     assert.equal((await page.locator("#count-pieces").innerText()).trim(), "20");
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
-    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "2");
+    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "4");
     console.log("PASS: load 20 pieces and 30 variants");
 
     // Visual regression contract: coherent heritage color system and hero landmarks.
@@ -135,15 +135,15 @@ async function run() {
 
     const lessonSelect = page.locator("#lesson-status");
     await lessonSelect.selectOption("indexed");
-    await expectCount(page, 2, "Only 2 source-verified phrase indexes");
+    await expectCount(page, 4, "Four V2 source-indexed systems in V3.3");
     const indexedNames = await page.locator("button.piece strong").allInnerTexts();
     assert.ok(indexedNames.some(t => t.includes("Lưu Thủy")));
     assert.ok(indexedNames.some(t => t.includes("Phụng Cầu")));
     await lessonSelect.selectOption("pending");
-    await expectCount(page, 18, "18 without validated phrase indexes");
+    await expectCount(page, 16, "16 without normalized source-label indexes");
     await lessonSelect.selectOption("all");
     await expectCount(page, 20, "Reset lesson availability");
-    console.log("PASS: lesson availability filter shows exactly 2 indexed and 18 pending");
+    console.log("PASS: V3.3 lesson filter: 4 source-locator indexes and 16 waiting");
 
     const search = page.locator("#search");
     await search.fill("phung cau");
@@ -227,10 +227,36 @@ async function run() {
     assert.match(await page.locator("#hoc-tung-cau").innerText(), /0\/20/);
     console.log("PASS: Luu Thuy 32 source-specific rows, HO versus HÒ preserved");
 
+
+    // V3.3: independently verified source-label locators, not musical validation.
+    await page.goto(new URL("../../bai/02-phu-luc-chan/", BASE).toString(),{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 34);
+    await page.locator("#cau-08 summary").click();
+    assert.match(await page.locator("#cau-08").innerText(), /DỊ BẢN/);
+    assert.match(await page.locator("#cau-08").innerText(), /Xáng Tồn/);
+    await page.locator("#cau-33 summary").click();
+    await page.locator("#cau-34 summary").click();
+    for (const n of [33,34]) {
+      const row = await page.locator("#cau-"+n).innerText();
+      assert.match(row, /KHÔNG CÓ/);
+      assert.match(row, /Văn Dần/);
+      assert.doesNotMatch(row, /trang nhạc 130/); // no fabricated page offsets for Nhi Tan II
+    }
+    assert.equal(await page.locator("#cau-34 a[href*='#page=']").count(), 0);
+    console.log("PASS: Phu Luc Chan 34/32 discrepancy, source variants 08/34 and no false PDF page mapping");
+
+    await page.goto(new URL("../../bai/03-binh-ban-chan/", BASE).toString(),{waitUntil:"networkidle"});
+    assert.equal(await page.locator("details.phrase-row").count(), 44);
+    await page.locator("#cau-44 summary").click();
+    assert.match(await page.locator("#cau-44").innerText(), /134/);
+    assert.match(await page.locator("#cau-44").innerText(), /135/);
+    assert.equal(await page.locator("#cau-44 a[href*='#page=']").count(), 0);
+    console.log("PASS: Binh Ban Chan 44 indexed source labels with source-specific printed page citations");
+
     await page.goto(new URL("../../bai/18-phung-hoang/", BASE).toString(),{waitUntil:"networkidle"});
     assert.equal(await page.locator("details.phrase-row").count(), 0);
     assert.match(await page.locator("#hoc-tung-cau").innerText(), /chờ sổ nguồn/i);
-    console.log("PASS: no invented 18 other lessons");
+    console.log("PASS: piece 18 provisional ledger is NOT published as verified phrase index");
 
     await page.goto(BASE, {waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");
