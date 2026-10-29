@@ -108,7 +108,7 @@ async function run() {
     await page.waitForURL("**/web/v3/legal.html");
     assert.match(await page.locator("h1").innerText(), /Pháp lý/);
     const countries = [
-      ["my", "Mỹ", 4], ["nga", "Nga", 4], ["trung-quoc", "Trung Quốc", 6],
+      ["my", "Hoa Kỳ", 4], ["nga", "Nga", 4], ["trung-quoc", "Trung Quốc", 6],
       ["uc", "Úc", 5], ["nhat-ban", "Nhật Bản", 4], ["han-quoc", "Hàn Quốc", 5]
     ];
     for (const [slug, label, n] of countries) {
