@@ -42,7 +42,7 @@ Nguồn nền tảng bắt buộc kiểm: [GitHub Pages limits](https://docs.git
 - [Luật TMĐT 122/2025/QH15](https://vanban.chinhphu.vn/?docid=216503&pageid=27160): 01/07/2026.
 - [Nghị định 248/2026/NĐ-CP](https://vanban.chinhphu.vn/?docid=218747&pageid=27160): 01/07/2026.
 - [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160): 01/07/2026.
-- [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=215855&pageid=27160) và [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160): 01/01/2026.
+- [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160) và [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160): 01/01/2026.
 - [Luật sửa đổi Luật SHTT 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160): 01/04/2026.
 
 Đánh giá **còn cần** xác định loại hình và nghĩa vụ cụ thể về đăng ký, thông báo, thương mại điện tử, bảo vệ người tiêu dùng, quảng cáo, hóa đơn và thuế. Chỉ có một địa chỉ `github.io` không xác định được tất cả nghĩa vụ.
