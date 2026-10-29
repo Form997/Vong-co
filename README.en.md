@@ -70,7 +70,7 @@ The project now documents **28 primary-law or regulator records across the US, R
 
 [Six-country legal review](docs/phap-ly-quoc-te/README.md) · [United States](docs/phap-ly-quoc-te/my.md) · [Russia](docs/phap-ly-quoc-te/nga.md) · [China](docs/phap-ly-quoc-te/trung-quoc.md) · [Australia](docs/phap-ly-quoc-te/uc.md) · [Japan](docs/phap-ly-quoc-te/nhat-ban.md) · [South Korea](docs/phap-ly-quoc-te/han-quoc.md) · [machine-readable sources](data/v3_2/six_country_sources.json).
 
-The six public law pages are **prepared, not released until GitHub Pages reports Deploy Success**. A globally accessible URL does not automatically trigger every law in each country; no audit here certifies compliance or licenses the commercial reuse of music.
+**Released**: six public national-law pages are linked from the [HAI ĐẤT legal hub](https://form997.github.io/Vong-co/web/v3/legal.html), after [PR #11](https://github.com/Form997/Vong-co/pull/11) and [successful GitHub Pages Build + Deploy](https://github.com/Form997/Vong-co/actions/runs/40794249686). [87 Python tests passed](https://github.com/Form997/Vong-co/actions/runs/40794249729) and **376 internal links** were validated. Pinned [release commit 2278abb](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf): **171 uncompressed Git files, 1,521,759 bytes (1,486.09 KiB)**; published website **36 files, 540,826 bytes**. A globally accessible URL does not automatically trigger every law in each country; no audit here certifies compliance or licenses the commercial reuse of music.
 
 ## Start here
 
