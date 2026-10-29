@@ -39,7 +39,7 @@ Trang [pháp lý V3.2](legal.html) có thêm **6 thẻ quốc gia** dẫn đến
 - `web/v3/quoc-gia/nhat-ban.html` — Nhật Bản
 - `web/v3/quoc-gia/han-quoc.html` — Hàn Quốc
 
-**Chưa hiển thị công khai nếu chỉ đang nằm trên nhánh phát triển:** chỉ xem là website live sau Pages Deploy Success. Đây là nghiên cứu pháp lý có nguồn, không thay kiểm toán/tư vấn pháp lý và không mở khóa `commercial_enabled=false`.
+**Đã triển khai trên website:** [GitHub Pages Build + Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40794249686) sau khi [PR #11](https://github.com/Form997/Vong-co/pull/11) hợp nhất. Gói web có **36 tệp / 540.826 byte** tại bản phát hành 29/10/2026; sáu trang luật được trình duyệt kiểm tra. Đây là nghiên cứu pháp lý có nguồn, không thay kiểm toán/tư vấn pháp lý và không mở khóa `commercial_enabled=false`.
 
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
