@@ -40,6 +40,9 @@ jobs:
       - name: Kiem 72 nhan cau dung theo so nguon V2
         run: python scripts/v3_2_validate.py --json
 
+      - name: Kiem tra bao ve du lieu va van ban phap ly
+        run: python scripts/v3_2_legal_validate.py --json
+
       - name: Kiem tra lien ket tai lieu noi bo
         run: |
           python scripts/kiem-tra-lien-ket.py \
