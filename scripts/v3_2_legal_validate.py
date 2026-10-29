@@ -163,6 +163,8 @@ def validate_policy_files(root: Path = ROOT) -> list[str]:
             errors.append(f"Policy has no primary source links: {relative}.")
         if re.search(r"docid=215855\b", text):
             errors.append(f"Stale personal-data law citation: {relative}.")
+    if any(not (root / name).is_file() for name in POLICIES):
+        return errors  # Missing-policy test must fail closed, not crash on FileNotFoundError.
     rights = (root / "RIGHTS_AND_LICENSING.md").read_text(encoding="utf-8")
     if "không" not in rights.lower() or "bên thứ ba" not in rights.lower():
         errors.append("Rights policy must distinguish third-party materials.")
