@@ -62,7 +62,7 @@ This **noncommercial research site** now has an explicitly scoped policy framewo
 
 **Documents:** [Vietnam & conditional international law review](docs/phap-ly-an-ninh-mang-v3.2.md) · [privacy](PRIVACY.md) · [security disclosures](SECURITY.md) · [copyright and licensing](RIGHTS_AND_LICENSING.md) · [commercial go/no-go checklist](docs/quy-trinh-thuong-mai-hoa.md) · [incident response](docs/quy-trinh-ung-pho-su-co.md) · [21 authoritative sources, standards and platform terms](data/v3_2/legal_sources.json).
 
-The EU AI Act was amended by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj); territorial scope and entry-into-application dates require a use-case review. **These are governance documents and software tests, not certification of national/global legal compliance.** The [public legal notice](https://form997.github.io/Vong-co/web/v3/legal.html) becomes available only after reviewed deployment.
+The EU AI Act was amended by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj); territorial scope and entry-into-application dates require a use-case review. **These are governance documents and software tests, not certification of national/global legal compliance.** The [public legal notice is now deployed](https://form997.github.io/Vong-co/web/v3/legal.html), following [merged PR #10](https://github.com/Form997/Vong-co/pull/10) and [successful GitHub Pages deployment](https://github.com/Form997/Vong-co/actions/runs/40791942791). The release snapshot has **160 source files / 1,398,285 Git bytes (1,365.51 KiB)** at [commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f); the public Pages artifact has **30 files / 473,683 bytes**.
 
 ## Start here
 
