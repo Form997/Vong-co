@@ -1,7 +1,7 @@
 # HAI ĐẤT V3.2 — CHÍNH SÁCH PHÁP LÝ, AN NINH MẠNG VÀ SỬ DỤNG TRONG NƯỚC / QUỐC TẾ
 
 **Mã chính sách:** HD-LEGAL-SEC-V3.2.1  
-**Ngày rà soát nguồn chính thức:** 28/10/2026 (giờ Việt Nam)  
+**Ngày rà soát nguồn chính thức:** 29/10/2026 (giờ Việt Nam)  
 **Chủ thể áp dụng:** dự án nghiên cứu HAI ĐẤT – 20 bản Tổ Đờn ca tài tử Nam Bộ (`Form997/Vong-co`).  
 **Mô hình mặc định:** website tra cứu **phi thương mại**, không tài khoản, không thanh toán, không thu thập hồ sơ người dùng trực tiếp bằng mã nguồn hiện tại.  
 **Mô hình thương mại:** **chưa được kích hoạt**; cần kiểm định và triển khai trên hạ tầng phù hợp trước khi mở.  
@@ -32,10 +32,10 @@ Dự án hiện **không** mở đăng ký, bán hàng, nhận thanh toán, tả
 | Văn bản | Có hiệu lực từ | Ứng dụng thực tế |
 |---|---|---|
 | [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?classid=1&docid=216499&orggroupid=1&pageid=27160) | **01/07/2026** | Nghĩa vụ an ninh mạng theo vai trò/hệ thống; luật này **thay thế** Luật An ninh mạng 24/2018 và Luật An toàn thông tin mạng 86/2015 theo điều khoản hiệu lực, có quy định chuyển tiếp. Không áp dụng hướng dẫn cũ mà quên kiểm luật mới. |
-| [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://bocongan.gov.vn/chinh-sach-phap-luat/co-so-du-lieu-van-ban/luat-bao-ve-du-lieu-ca-nhan-1753688803) | **01/01/2026** | Khi xử lý dữ liệu cá nhân: mục đích/cơ sở phù hợp, bảo vệ quyền của chủ thể, minh bạch, bảo mật, xử lý yêu cầu và sự cố theo nghĩa vụ thực tế. |
+| [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?classid=1&docid=214590&pageid=27160) | **01/01/2026** | Khi xử lý dữ liệu cá nhân: mục đích/cơ sở phù hợp, bảo vệ quyền của chủ thể, minh bạch, bảo mật, xử lý yêu cầu và sự cố theo nghĩa vụ thực tế. |
 | [Nghị định 356/2025/NĐ-CP](https://chinhphu.vn/?classid=1&docid=216387&pageid=27160) | **01/01/2026** | Biện pháp/điều kiện chi tiết thi hành luật dữ liệu cá nhân; kiểm nghĩa vụ hồ sơ, chuyển dữ liệu, đánh giá/khai báo theo đối tượng và trường hợp. |
-| [Luật Dữ liệu 60/2024/QH15](https://vbpl.moj.gov.vn/botuphap/Pages/vbpq-thuoctinh.aspx?ItemID=174877) | **01/07/2025** | Kiểm thêm khi phát triển thành kho dữ liệu số, dịch vụ dữ liệu hoặc hoạt động chia sẻ/xử lý dữ liệu thuộc phạm vi luật. |
-| [Luật sửa đổi Luật Sở hữu trí tuệ 131/2025/QH15](https://vbpl.moj.gov.vn/botaichinh/Pages/vbpq-thuoctinh.aspx?ItemID=187492&Keyword=) | **01/04/2026** | Phải xem cùng Luật SHTT hiện hành và các lần sửa đổi; kiểm quyền của tác giả, người biểu diễn, nhà sản xuất bản ghi, bản chép, sáng tạo/lời mới và ngoại lệ cụ thể. |
+| [Luật Dữ liệu 60/2024/QH15](https://vanban.chinhphu.vn/?classid=1&docid=212488&pageid=27160) | **01/07/2025** | Kiểm thêm khi phát triển thành kho dữ liệu số, dịch vụ dữ liệu hoặc hoạt động chia sẻ/xử lý dữ liệu thuộc phạm vi luật. |
+| [Luật sửa đổi Luật Sở hữu trí tuệ 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160) | **01/04/2026** | Phải xem cùng Luật SHTT hiện hành và các lần sửa đổi; kiểm quyền của tác giả, người biểu diễn, nhà sản xuất bản ghi, bản chép, sáng tạo/lời mới và ngoại lệ cụ thể. |
 | [Nghị định 147/2024/NĐ-CP](https://vanban.chinhphu.vn/?classid=1&docid=211654&orggroupid=2&pageid=27160) | **25/12/2024** | Phân loại loại dịch vụ Internet/trang cung cấp thông tin trên mạng; nghĩa vụ có thể khác nhau giữa trang nghiên cứu tĩnh, trang thông tin tổng hợp, mạng xã hội hoặc nền tảng UGC. Không tự nhận mọi website đều phải xin một loại giấy phép. |
 | [Luật Di sản văn hóa 45/2024/QH15](https://vanban.chinhphu.vn/?docid=212473&pageid=27160) | **01/07/2025** | Bảo tồn/giới thiệu văn hóa theo đúng thông tin, tránh làm sai nguồn hay mượn danh cơ quan văn hóa. |
 | [Luật Thương mại điện tử 122/2025/QH15](https://vanban.chinhphu.vn/?classid=1&docid=216503&pageid=27160&typegroupid=3) | **01/07/2026** | Chỉ khi triển khai hoạt động thương mại điện tử nằm trong phạm vi luật; cần xác định loại website/nền tảng và trách nhiệm cụ thể. |
@@ -49,7 +49,7 @@ Dự án hiện **không** mở đăng ký, bán hàng, nhận thanh toán, tả
 |---|---|
 | [Liên minh châu Âu: GDPR — EU 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Điều 3: cơ sở tại EU hoặc tổ chức ngoài EU **nhắm cung cấp hàng hóa/dịch vụ (kể cả miễn phí)** cho người ở EU, hoặc **theo dõi hành vi** của họ tại EU. Chỉ có website truy cập được từ EU **không tự đủ** để khẳng định GDPR áp dụng ngoại lãnh thổ. |
 | [EU: Digital Services Act — EU 2022/2065](https://eur-lex.europa.eu/eli/reg/2022/2065/oj) | Liên quan **dịch vụ trung gian** cung cấp cho người tại EU. Website chỉ công bố tài liệu của chính mình không mặc nhiên là nền tảng trung gian/hosting UGC thuộc các nghĩa vụ tương tự mạng xã hội. |
-| [EU: AI Act — EU 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) | Có lộ trình áp dụng theo từng điều khoản; phải đánh giá **nếu** có sản phẩm AI, mô hình AI, cung cấp/triển khai hệ thống thuộc phạm vi. Trang tra cứu tĩnh không phải vì có từ “AI” trên README mà tự động là sản phẩm AI bị quản lý như hệ thống rủi ro cao. **Phải kiểm văn bản hợp nhất/sửa đổi tại thời điểm ra mắt AI**. |
+| [EU: AI Act — EU 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), **đã được sửa bởi [EU 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)** | Có lộ trình áp dụng **đã được sửa đổi tháng 7/2026** theo từng điều khoản; phải đánh giá **nếu** có sản phẩm AI, mô hình AI, cung cấp/triển khai hệ thống thuộc phạm vi. Trang tra cứu tĩnh không phải vì có từ “AI” trên README mà tự động là sản phẩm AI bị quản lý như hệ thống rủi ro cao. **Phải kiểm cả quy định 2026/1744 và văn bản hợp nhất/sửa đổi tại thời điểm ra mắt AI**. |
 | [Vương quốc Anh: UK GDPR / Data Protection Act 2018](https://www.gov.uk/data-protection) | Chỉ khi xử lý dữ liệu có mối liên hệ và phạm vi điều chỉnh của UK. Không đồng nhất UK GDPR với EU GDPR. |
 | [Hoa Kỳ: COPPA, 16 CFR Part 312](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) | Điều kiện của nhà vận hành/dịch vụ với **trẻ dưới 13 tuổi** và việc thu thập thông tin của các em; kiểm **bản sửa đổi 2025**. Không áp dụng mức nghĩa vụ cho mọi trang học liệu trưởng thành như nhau. |
 | [Hoa Kỳ: DMCA §512](https://www.copyright.gov/512/) | Cơ chế báo cáo gỡ bỏ và điều kiện `safe harbor` **nếu** có vai trò dịch vụ trực tuyến thuộc phạm vi; không tuyên bố mọi kho GitHub tự có miễn trừ trách nhiệm. |
