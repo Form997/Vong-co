@@ -40,7 +40,7 @@ Một bản Tổ truyền khẩu có thể là di sản văn hóa, nhưng bản 
 
 **Luật Thương mại điện tử từ 01/01/2019** có phạm vi với hoạt động bán sản phẩm/dịch vụ trên mạng tại Trung Quốc, đồng thời nêu có loại dịch vụ văn hóa/nội dung thuộc luật chuyên ngành. Nếu HAI ĐẤT bán khóa học, API, dữ liệu hoặc bản ghi cho người dùng Trung Quốc phải rà điều kiện hoạt động dịch vụ Internet/nội dung, quyền IP, dữ liệu xuyên biên giới, thuế, bảo vệ khách hàng và nhà cung cấp thanh toán. **NO-GO** tới khi xác minh loại dịch vụ có thể hoạt động và quyền cần cấp.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
