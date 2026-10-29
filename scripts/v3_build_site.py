@@ -19,11 +19,13 @@ from xml.sax.saxutils import escape as xml_escape
 from v3_validate import ROOT, CATALOG, validate_catalog, strict_load
 from v3_2_validate import INDEX as LESSON_INDEX, validate_phrase_index
 from v3_2_lesson_html import render_lesson, LESSON_CSS
+from v3_2_legal_validate import validate_all as validate_legal_publication
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
 ALLOWLIST = (
     ("web/v3/index.html", "web/v3/index.html"),
+    ("web/v3/legal.html", "web/v3/legal.html"),
     ("data/v3/catalog.json", "data/v3/catalog.json"),
     ("data/v3/schema.json", "data/v3/schema.json"),
     ("data/v3_2/phrase_index.json", "data/v3_2/phrase_index.json"),
@@ -231,13 +233,14 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
  <nav class="actions" aria-label="Chuyển bài">{' '.join(nav_links)}</nav>
 </main>
 <footer><div class="container">HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.
- · V3.2 · Thư viện di sản âm nhạc · 28/10/2026 · Không thay thế chứng nhận chuyên môn</div></footer>
+ · V3.2 · Thư viện di sản âm nhạc · Không thay thế chứng nhận chuyên môn
+ · <a href="../../web/v3/legal.html">Pháp lý, quyền riêng tư và an ninh mạng</a></div></footer>
 </body></html>
 """
 
 
 def generate_sitemap(pieces: list[dict]) -> str:
-    urls = [BASE_URL, BASE_URL + "web/v3/"] + [piece_url(p) for p in pieces]
+    urls = [BASE_URL, BASE_URL + "web/v3/", BASE_URL + "web/v3/legal.html"] + [piece_url(p) for p in pieces]
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for url in urls:
@@ -248,7 +251,7 @@ def generate_sitemap(pieces: list[dict]) -> str:
 def build(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
-    errors = validate_catalog(data) + validate_phrase_index(lesson_data, data)
+    errors = validate_catalog(data) + validate_phrase_index(lesson_data, data) + validate_legal_publication()
     if errors:
         raise ValueError("Không xuất bản metadata không hợp lệ: " + "; ".join(errors[:5]))
     target, source = output.resolve(), ROOT.resolve()

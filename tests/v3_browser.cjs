@@ -93,6 +93,24 @@ async function run() {
     assert.match(await page.locator("button.piece").first().innerText(), /Lưu Thủy/);
     console.log("PASS: Vietnamese A–Z sort and numeric reset");
 
+    // V3.2 legal release: users must see the law/privacy notice from the homepage.
+    const policyLink = page.locator('footer a[href="legal.html"]');
+    assert.equal(await policyLink.count(), 1, "Privacy and legal notice must be in homepage footer");
+    const legalResponse = await page.request.get(new URL("legal.html", BASE).toString());
+    assert.equal(legalResponse.status(), 200);
+    const legalBody = await legalResponse.text();
+    for (const word of ["PRIVACY.md", "SECURITY.md", "RIGHTS_AND_LICENSING.md",
+                        "116/2025/QH15", "91/2025/QH15", "2026/1744",
+                        "0/20", "phi thương mại"]) {
+      assert.ok(legalBody.includes(word), "Legal page missing " + word);
+    }
+    await policyLink.click();
+    await page.waitForURL("**/web/v3/legal.html");
+    assert.match(await page.locator("h1").innerText(), /Pháp lý/);
+    await page.goto(BASE,{waitUntil:"networkidle"});
+    await page.waitForSelector("button.piece");
+    console.log("PASS: public legal page HTTP 200, official sources, privacy, security, rights and footer link");
+
     const lessonSelect = page.locator("#lesson-status");
     await lessonSelect.selectOption("indexed");
     await expectCount(page, 2, "Only 2 source-verified phrase indexes");

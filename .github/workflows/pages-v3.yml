@@ -15,6 +15,13 @@ on:
       - "scripts/v3_build_site.py"
       - "scripts/v3_validate.py"
       - "tests/test_v3_pages.py"
+      - "tests/test_v3_2_legal_security.py"
+      - "PRIVACY.md"
+      - "SECURITY.md"
+      - "RIGHTS_AND_LICENSING.md"
+      - "docs/phap-ly-an-ninh-mang-v3.2.md"
+      - "docs/quy-trinh-thuong-mai-hoa.md"
+      - "docs/quy-trinh-ung-pho-su-co.md"
   workflow_dispatch:
 
 permissions:
@@ -38,6 +45,8 @@ jobs:
         run: python scripts/v3_validate.py --json
       - name: Kiem 72 nhan cau co nguon
         run: python scripts/v3_2_validate.py --json
+      - name: Kiem chinh sach va nguon luat 2026
+        run: python scripts/v3_2_legal_validate.py --json
       - name: Chay bo kiem thu
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Tao artifact chi gom du lieu duoc phep cong bo
@@ -46,6 +55,7 @@ jobs:
         run: |
           test -s _site/index.html
           test -s _site/web/v3/index.html
+          test -s _site/web/v3/legal.html
           test -s _site/data/v3/catalog.json
           test -s _site/data/v3/schema.json
           test -s _site/data/v3_2/phrase_index.json
@@ -53,7 +63,7 @@ jobs:
           grep -q "hoc-tung-cau" _site/bai/01-luu-thuy-truong/index.html
           grep -q "hoc-tung-cau" _site/bai/20-phung-cau/index.html
           test -f _site/.nojekyll
-          test "$(find _site -type f | wc -l)" -eq 29
+          test "$(find _site -type f | wc -l)" -eq 30
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v4
         with:

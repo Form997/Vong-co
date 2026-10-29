@@ -1,0 +1,197 @@
+{
+  "project": "HAI DAT — 20 bản Tổ Đờn ca tài tử Nam Bộ",
+  "revision": "V3.2 legal-security.1",
+  "verified_on": "2026-10-29",
+  "note": "Danh mục nguồn chính thức hoặc đơn vị quản lý. Ngày hiệu lực là mốc được cơ quan công bố; không khẳng định mọi điều khoản áp dụng cho mọi website hoặc người dùng. Trước khi thay đổi mô hình phải kiểm lại sửa đổi và phạm vi áp dụng. WIPO treaty, NIST guidance, GitHub terms không được đồng nhất với luật quốc gia. Kiểm EU AI Act phải kèm Regulation (EU) 2026/1744 được thông qua tháng 7/2026; không sử dụng lộ trình bản 2024 mà bỏ qua các sửa đổi.",
+  "sources": [
+    {
+      "id": "VN-CYBER-2025",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật An ninh mạng 116/2025/QH15",
+      "effective_on": "2026-07-01",
+      "legal_weight": "binding",
+      "applicability": "core",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=216499&orggroupid=1&pageid=27160"
+    },
+    {
+      "id": "VN-PERSONAL-2025",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15",
+      "effective_on": "2026-01-01",
+      "legal_weight": "binding",
+      "applicability": "when-personal-data",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=214590&pageid=27160&typegroup="
+    },
+    {
+      "id": "VN-PERSONAL-DECREE",
+      "jurisdiction": "Việt Nam",
+      "title": "Nghị định 356/2025/NĐ-CP về bảo vệ dữ liệu cá nhân",
+      "effective_on": "2026-01-01",
+      "legal_weight": "binding",
+      "applicability": "when-personal-data",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=216387&pageid=27160"
+    },
+    {
+      "id": "VN-IP-2025",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật sửa đổi, bổ sung Luật Sở hữu trí tuệ 131/2025/QH15",
+      "effective_on": "2026-04-01",
+      "legal_weight": "binding",
+      "applicability": "core",
+      "official_url": "https://vanban.chinhphu.vn/?docid=216511&pageid=27160"
+    },
+    {
+      "id": "VN-DATA-2024",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật Dữ liệu 60/2024/QH15",
+      "effective_on": "2025-07-01",
+      "legal_weight": "binding",
+      "applicability": "assess-data-operations",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=212488&pageid=27160"
+    },
+    {
+      "id": "VN-INTERNET-2024",
+      "jurisdiction": "Việt Nam",
+      "title": "Nghị định 147/2024/NĐ-CP về Internet và thông tin trên mạng",
+      "effective_on": "2024-12-25",
+      "legal_weight": "binding",
+      "applicability": "assess-online-service-classification",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=211654&orggroupid=2&pageid=27160"
+    },
+    {
+      "id": "VN-ECOM-2025",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật Thương mại điện tử 122/2025/QH15",
+      "effective_on": "2026-07-01",
+      "legal_weight": "binding",
+      "applicability": "commerce-only-where-scope-met",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=216503&pageid=27160&typegroupid=3"
+    },
+    {
+      "id": "VN-ECOM-DECREE-2026",
+      "jurisdiction": "Việt Nam",
+      "title": "Nghị định 248/2026/NĐ-CP hướng dẫn Luật Thương mại điện tử",
+      "effective_on": "2026-07-01",
+      "legal_weight": "binding",
+      "applicability": "commerce-only-where-scope-met",
+      "official_url": "https://vanban.chinhphu.vn/?docid=218747&orggroupid=2&pageid=27160"
+    },
+    {
+      "id": "VN-HERITAGE-2024",
+      "jurisdiction": "Việt Nam",
+      "title": "Luật Di sản văn hóa 45/2024/QH15",
+      "effective_on": "2025-07-01",
+      "legal_weight": "binding",
+      "applicability": "heritage-activities",
+      "official_url": "https://vanban.chinhphu.vn/?classid=1&docid=212473&pageid=27160"
+    },
+    {
+      "id": "EU-GDPR",
+      "jurisdiction": "Liên minh châu Âu/EEA",
+      "title": "Regulation (EU) 2016/679 (GDPR)",
+      "effective_on": "2018-05-25",
+      "legal_weight": "binding",
+      "applicability": "eu-establishment-targeting-or-monitoring",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    },
+    {
+      "id": "EU-DSA",
+      "jurisdiction": "Liên minh châu Âu",
+      "title": "Regulation (EU) 2022/2065 (DSA)",
+      "effective_on": "2024-02-17",
+      "legal_weight": "binding",
+      "applicability": "eu-intermediary-service-only",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj"
+    },
+    {
+      "id": "EU-AI-ACT",
+      "jurisdiction": "Liên minh châu Âu",
+      "title": "Regulation (EU) 2024/1689 (AI Act), as amended in 2026 by Regulation (EU) 2026/1744",
+      "effective_on": null,
+      "legal_weight": "binding",
+      "applicability": "phase-in-dates-amended-in-2026-check-each-article-and-system-role",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "id": "UK-DATA",
+      "jurisdiction": "Vương quốc Anh",
+      "title": "UK GDPR và Data Protection Act 2018",
+      "effective_on": "2018-05-25",
+      "legal_weight": "binding",
+      "applicability": "uk-personal-data-in-scope",
+      "official_url": "https://www.gov.uk/data-protection"
+    },
+    {
+      "id": "US-COPPA",
+      "jurisdiction": "Hoa Kỳ",
+      "title": "COPPA 16 CFR Part 312 (rule amended 2025; compliance dates in amended text)",
+      "effective_on": "2025-06-23",
+      "legal_weight": "binding",
+      "applicability": "operators-in-scope-children-under-13",
+      "official_url": "https://www.ftc.gov/legal-library/browse/federal-register-notices/16-cfr-part-312-coppa-final-rule-amendments"
+    },
+    {
+      "id": "US-DMCA-512",
+      "jurisdiction": "Hoa Kỳ",
+      "title": "17 USC §512 / DMCA safe-harbor framework",
+      "effective_on": "1998-10-28",
+      "legal_weight": "binding",
+      "applicability": "us-copyright-online-service-role",
+      "official_url": "https://www.copyright.gov/512/"
+    },
+    {
+      "id": "WIPO-BERNE",
+      "jurisdiction": "Điều ước quốc tế",
+      "title": "Berne Convention for the Protection of Literary and Artistic Works",
+      "effective_on": null,
+      "legal_weight": "treaty",
+      "applicability": "copyright-in-member-territories",
+      "official_url": "https://www.wipo.int/en/web/treaties/ip/berne/index"
+    },
+    {
+      "id": "NIST-CSF",
+      "jurisdiction": "Tiêu chuẩn hướng dẫn",
+      "title": "NIST Cybersecurity Framework (CSF) 2.0",
+      "effective_on": null,
+      "legal_weight": "voluntary",
+      "applicability": "security-risk-reference-not-law",
+      "official_url": "https://www.nist.gov/cyberframework/cybersecurity-framework-faqs-framework-basics"
+    },
+    {
+      "id": "CC-LICENSES",
+      "jurisdiction": "Hướng dẫn cấp phép",
+      "title": "Creative Commons licenses",
+      "effective_on": null,
+      "legal_weight": "guidance",
+      "applicability": "only-if-license-granted-by-rightsholder",
+      "official_url": "https://creativecommons.org/cc-licenses/"
+    },
+    {
+      "id": "GITHUB-PAGES-LIMITS",
+      "jurisdiction": "Điều khoản nền tảng",
+      "title": "GitHub Pages usage limits",
+      "effective_on": null,
+      "legal_weight": "platform-terms",
+      "applicability": "always-on-github-pages",
+      "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+    },
+    {
+      "id": "GITHUB-PAGES-PRIVACY",
+      "jurisdiction": "Thông báo nền tảng",
+      "title": "GitHub Pages: visitor IP logged for security",
+      "effective_on": null,
+      "legal_weight": "platform-terms",
+      "applicability": "always-on-github-pages",
+      "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+    },
+    {
+      "id": "EU-AI-OMNIBUS-2026",
+      "jurisdiction": "Liên minh châu Âu",
+      "title": "Regulation (EU) 2026/1744 — amending AI Act timetable and other provisions",
+      "effective_on": null,
+      "legal_weight": "binding",
+      "applicability": "when-in-scope-of-ai-act-and-applicable-provision",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
+    }
+  ]
+}

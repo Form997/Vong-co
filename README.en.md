@@ -56,6 +56,14 @@ Started **28 October 2026** on `v3.1-development`. V3.1 adds **20 standalone, so
 
 [Public V3 site](https://form997.github.io/Vong-co/) · [V3.1 milestone notes](docs/v3.1-khoi-dong.md) · [V3.1 preview instructions](web/v3/README.md).
 
+### V3.2 — Security, privacy, rights and commercial governance (29 October 2026)
+
+This **noncommercial research site** now has an explicitly scoped policy framework; **commercial use remains NO-GO** pending verified ownership/licensing, applicable legal obligations, suitable hosting, and a 12-point approval gate. A free-to-read website does **not** grant blanket permissions to redistribute scores, lyrics, audio or images. GitHub Pages records visitor IP addresses for security according to its [published statement](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
+
+**Documents:** [Vietnam & conditional international law review](docs/phap-ly-an-ninh-mang-v3.2.md) · [privacy](PRIVACY.md) · [security disclosures](SECURITY.md) · [copyright and licensing](RIGHTS_AND_LICENSING.md) · [commercial go/no-go checklist](docs/quy-trinh-thuong-mai-hoa.md) · [incident response](docs/quy-trinh-ung-pho-su-co.md) · [21 authoritative sources, standards and platform terms](data/v3_2/legal_sources.json).
+
+The EU AI Act was amended by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj); territorial scope and entry-into-application dates require a use-case review. **These are governance documents and software tests, not certification of national/global legal compliance.** The [public legal notice](https://form997.github.io/Vong-co/web/v3/legal.html) becomes available only after reviewed deployment.
+
 ## Start here
 
 | Your goal | The best entry point |

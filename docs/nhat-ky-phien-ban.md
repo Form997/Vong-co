@@ -122,6 +122,21 @@
 
 **Dung lượng chính xác, snapshot bất biến sau merge:** [commit `a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15) có **150 tệp, 1.275.924 byte = 1.275,92 KB = 1.246,02 KiB** mã nguồn Git chưa nén; gói Pages **29 tệp, 462.065 byte**. Không đồng nhất hai kích thước với ZIP. Bản này vẫn là **thế hệ V3.2 có đợt cải tiến UI**, không tự đổi thành V3.3. **0/20 bài nghiệm thu diễn xướng**, không thêm audio hoặc ký âm không rõ quyền.
 
+### Đợt bổ sung pháp lý và an ninh mạng V3.2 — 29/10/2026
+
+**Mục tiêu:** bảo vệ một thư viện văn hóa phi thương mại đang hoạt động và đặt **cổng NO-GO** cho các tính năng kinh doanh tương lai, không tự tuyên bố đã có giấy chứng nhận pháp lý.
+
+**Nguồn chính thức có thể kiểm tra lại:** [21 mục nguồn luật, điều ước, chuẩn tự nguyện và điều khoản nền tảng](../data/v3_2/legal_sources.json), trong đó có [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160) (01/07/2026), [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160) (01/01/2026), [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160) (01/01/2026), [Luật sửa đổi SHTT 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160) (01/04/2026), các văn bản TMĐT năm 2025–2026 và [sửa đổi EU AI Act 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj). Một khung luật chỉ áp dụng khi đúng điều kiện địa bàn và hoạt động; công văn hành chính không tự được coi là văn bản quy phạm pháp luật.
+
+**Nội dung viết mới:**
+- [Quy chế Việt Nam và quốc tế](phap-ly-an-ninh-mang-v3.2.md): phạm vi thực tế, quyền tác giả/quyền liên quan, trang nghiên cứu và dịch vụ kinh doanh, trách nhiệm riêng tư.
+- [PRIVACY.md](../PRIVACY.md), [SECURITY.md](../SECURITY.md), [RIGHTS_AND_LICENSING.md](../RIGHTS_AND_LICENSING.md): dữ liệu do trình duyệt xử lý và log IP hosting, báo lỗ hổng kín, điều kiện dùng mã/sách/ghi âm.
+- [12 cổng thương mại hóa](quy-trinh-thuong-mai-hoa.md), [ứng phó sự cố 6 bước](quy-trinh-ung-pho-su-co.md).
+- [Trình kiểm pháp lý-safety tĩnh](../scripts/v3_2_legal_validate.py): tên nguồn/ngày, liên kết chính sách, không thêm tracker hay form chưa được rà, trạng thái NO-GO; có **13 bài thử đối chứng âm tính** ở [test_v3_2_legal_security.py](../tests/test_v3_2_legal_security.py).
+- [Trang thông báo công khai](../web/v3/legal.html), được đưa vào gói Pages theo danh sách tệp cho phép mới (**30 tệp khi phát hành**), có đường dẫn từ danh mục và các trang bài.
+
+**Trạng thái tại lúc viết:** đang kiểm chứng qua Pull Request [#10](https://github.com/Form997/Vong-co/pull/10). **Không tuyên bố “đã phát hành” trước khi CI + Pages Deploy Success**; không tự thay đổi nhánh V1/V2/`main`. **Không có chứng nhận tuân thủ toàn cầu, không có giấy phép kinh doanh cho nhạc/bản ghi của người khác.**
+
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
 **Khi bắt đầu giai đoạn V3.x, V4, V5... tiếp theo**, tạo ngay mục theo mẫu sau, rồi bổ sung dần. Không để mục trống biến thành một lời hứa đã hoàn thành.

@@ -22,6 +22,14 @@ Cảm ơn bạn muốn cùng gìn giữ tư liệu đờn ca tài tử Nam Bộ.
 
 Mỗi Pull Request cập nhật bài học phải chạy `python scripts/v3_2_validate.py --json`, toàn bộ unittest và Chromium, giữ `performance_status=pending` và `rights_status=unverified` trừ khi có thủ tục thẩm định/giấy phép khác được tài liệu hóa độc lập. Không gửi file âm thanh, scan PDF, toàn văn ký âm/ca từ vào kho khi chưa có quyền.
 
+## Đóng góp pháp lý và báo lỗi bảo mật V3.2
+
+**Không tạo GitHub Issue công khai nếu chứa mật khẩu, khóa, dữ liệu cá nhân, bản thu riêng hoặc hướng dẫn khai thác lỗ hổng.** Đọc [SECURITY.md](SECURITY.md) và xác minh khả năng dùng GitHub **private vulnerability reporting** (chủ repository phải bật; chính sách không nói đã bật sẵn). Với nội dung phi nhạy cảm, Issues có thể được dùng để đề nghị sửa trích dẫn.
+
+Khi đề xuất luật, phải ghi rõ **số hiệu, loại văn bản, ngày hiệu lực, cơ quan ban hành, URL chính thức, lãnh thổ và điều kiện áp dụng**; không gán nhãn “tuân thủ toàn cầu” khi chưa có cơ sở. Xem [chính sách pháp lý V3.2](docs/phap-ly-an-ninh-mang-v3.2.md) và [sổ nguồn văn bản](data/v3_2/legal_sources.json).
+
+Chỉ đề nghị thêm tính năng thanh toán, tài khoản, phân tích người dùng hay dùng bản ghi/giọng AI khi kèm đánh giá **quyền tài sản, quyền riêng tư, an ninh, hạ tầng, giấy phép và cổng phê duyệt thương mại**.
+
 ## Gửi lỗi hoặc đề xuất
 
 1. Mở [Issues](https://github.com/Form997/Vong-co/issues/new/choose).
