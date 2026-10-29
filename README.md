@@ -57,6 +57,16 @@ Sau khi hoàn tất phần học theo nguồn, dự án đã phát hành **giao 
 
 **Kích thước tại commit phát hành UI [`a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15):** **150 tệp, 1.275.924 byte = 1.246,02 KiB** (mã nguồn Git chưa nén); gói website riêng **29 tệp, 462.065 byte**, không phải tệp ZIP.
 
+### V3.2 — Chính sách pháp lý, bảo vệ dữ liệu và an ninh mạng (29/10/2026)
+
+Tài liệu của dự án được tách thành **hai kịch bản**: **phi thương mại đang hoạt động** và **thương mại chỉ được phép khi hoàn tất cổng đánh giá riêng**. Không dùng chữ “phi thương mại” để miễn nghĩa vụ về bản quyền hoặc dữ liệu cá nhân; không lấy “GitHub Actions thành công” để tuyên bố website đã được Nhà nước hay tổ chức quốc tế chứng nhận.
+
+**Nguồn pháp lý được kiểm tra:** [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160) (**01/07/2026**), [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160) (**01/01/2026**), [Luật sửa đổi Luật SHTT 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160) (**01/04/2026**), và [EU AI Act có sửa đổi Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj), áp dụng theo điều kiện cụ thể; không có một bộ luật “toàn thế giới” cho mọi website.
+
+**Bộ hồ sơ điều hành:** [phân tích pháp lý đầy đủ](docs/phap-ly-an-ninh-mang-v3.2.md) · [quyền riêng tư](PRIVACY.md) · [an ninh/báo lỗ hổng](SECURITY.md) · [quyền tác giả và cấp phép](RIGHTS_AND_LICENSING.md) · [12 cổng mở kinh doanh](docs/quy-trinh-thuong-mai-hoa.md) · [quy trình ứng phó sự cố](docs/quy-trinh-ung-pho-su-co.md) · [21 nguồn chính thức/tiêu chuẩn/điều khoản nền tảng](data/v3_2/legal_sources.json).
+
+**Khi phát hành:** người đọc có trang [pháp lý và quyền riêng tư trên website](https://form997.github.io/Vong-co/web/v3/legal.html); **đường dẫn chỉ trở thành trang công khai mới sau khi Pull Request được merge và Pages Deploy Success**. Website vẫn **chưa** có tài khoản, thu tiền, API kinh doanh hay quyền tái bản nhạc/ca từ/âm thanh chưa rõ giấy phép. **0/20 bài nghiệm thu biểu diễn.**
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
