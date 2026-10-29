@@ -19,7 +19,7 @@ Người đọc có thể **truy cập và đọc website miễn phí**, dùng c
 Nội dung thuộc người khác **không được tự động cấp quyền** chỉ vì website này phi thương mại hoặc GitHub công khai. Trích dẫn “để học” chỉ được thực hiện theo ngoại lệ pháp luật phù hợp, không lấy đó làm căn cứ tải và đăng toàn bộ sách/nhạc/lời lên internet.
 
 Các nguồn chính thức:
-- [Luật Sở hữu trí tuệ Việt Nam sửa đổi bởi Luật 131/2025/QH15](https://vbpl.moj.gov.vn/botaichinh/Pages/vbpq-thuoctinh.aspx?ItemID=187492&Keyword=), có hiệu lực sửa đổi 01/04/2026.
+- [Luật Sở hữu trí tuệ Việt Nam sửa đổi bởi Luật 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160), có hiệu lực sửa đổi 01/04/2026.
 - [WIPO – Công ước Berne](https://www.wipo.int/en/web/treaties/ip/berne/index), về bảo hộ tác phẩm tại các quốc gia thành viên.
 - [Creative Commons – các điều kiện giấy phép](https://creativecommons.org/cc-licenses/) (chỉ có tác dụng khi **người đủ quyền** đã cấp phép đúng thành phần).
 
