@@ -51,7 +51,10 @@ jobs:
             data/v3/README.md web/v3/README.md \
             data/v3_2/README.md docs/v3.2-khoi-dong.md \
             docs/v3.2-kiem-toan-20-ban.md docs/v3.2-quy-trinh-tham-dinh.md \
-            docs/v3.2-phieu-thuc-hanh.md
+            docs/v3.2-phieu-thuc-hanh.md \
+            PRIVACY.md SECURITY.md RIGHTS_AND_LICENSING.md \
+            docs/phap-ly-an-ninh-mang-v3.2.md \
+            docs/quy-trinh-thuong-mai-hoa.md docs/quy-trinh-ung-pho-su-co.md
 
       - name: Trich JavaScript cua giao dien V3
         run: |
