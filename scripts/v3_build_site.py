@@ -20,6 +20,8 @@ from v3_validate import ROOT, CATALOG, validate_catalog, strict_load
 from v3_2_validate import INDEX as LESSON_INDEX, validate_phrase_index
 from v3_2_lesson_html import render_lesson, LESSON_CSS
 from v3_2_legal_validate import validate_all as validate_legal_publication
+from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
+from v3_2_country_html import COUNTRIES, render_country_page
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
@@ -240,7 +242,9 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
 
 
 def generate_sitemap(pieces: list[dict]) -> str:
-    urls = [BASE_URL, BASE_URL + "web/v3/", BASE_URL + "web/v3/legal.html"] + [piece_url(p) for p in pieces]
+    urls = ([BASE_URL, BASE_URL + "web/v3/", BASE_URL + "web/v3/legal.html"] +
+            [BASE_URL + "web/v3/quoc-gia/" + info[2] + ".html" for info in COUNTRIES.values()] +
+            [piece_url(p) for p in pieces])
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for url in urls:
@@ -251,6 +255,7 @@ def generate_sitemap(pieces: list[dict]) -> str:
 def build(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
+    six_country_data = strict_load(SIX_COUNTRY_INDEX)
     errors = validate_catalog(data) + validate_phrase_index(lesson_data, data) + validate_legal_publication()
     if errors:
         raise ValueError("Không xuất bản metadata không hợp lệ: " + "; ".join(errors[:5]))
@@ -280,13 +285,18 @@ def build(output: Path) -> dict[str, object]:
                                   pieces[i+1] if i+1 < len(pieces) else None,
                                   lesson_by_piece.get(p["id"])),
                         encoding="utf-8")
+    for country, (_, _, slug) in COUNTRIES.items():
+        page = target / "web" / "v3" / "quoc-gia" / f"{slug}.html"
+        page.parent.mkdir(parents=True, exist_ok=True)
+        page.write_text(render_country_page(country, six_country_data), encoding="utf-8")
     (target / "sitemap.xml").write_text(generate_sitemap(pieces), encoding="utf-8")
 
     files = sorted(p.relative_to(target).as_posix()
                    for p in target.rglob("*") if p.is_file())
     expected = sorted([destination for _, destination in ALLOWLIST]
                       + list(BASE_FILES)
-                      + [f"bai/{p['slug']}/index.html" for p in pieces])
+                      + [f"bai/{p['slug']}/index.html" for p in pieces]
+                      + [f"web/v3/quoc-gia/{info[2]}.html" for info in COUNTRIES.values()])
     if files != expected:
         raise RuntimeError("Tệp xuất bản khác allowlist; từ chối: " + repr(files))
     return {
@@ -297,6 +307,8 @@ def build(output: Path) -> dict[str, object]:
         "pieces": len(pieces),
         "variants": sum(len(x["variants"]) for x in pieces),
         "detail_pages": len(pieces),
+        "country_law_pages": len(COUNTRIES),
+        "country_law_source_records": len(six_country_data["sources"]),
         "indexed_lesson_pieces": len(lesson_by_piece),
         "indexed_lesson_phrases": sum(len(i["phrases"]) for i in lesson_data["items"]),
         "includes_rights_restricted_media": False,
