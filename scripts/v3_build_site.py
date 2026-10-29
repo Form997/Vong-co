@@ -19,6 +19,7 @@ from xml.sax.saxutils import escape as xml_escape
 from v3_validate import ROOT, CATALOG, validate_catalog, strict_load
 from v3_2_validate import INDEX as LESSON_INDEX, validate_phrase_index
 from v3_2_lesson_html import render_lesson, LESSON_CSS
+from v3_2_legal_validate import validate_all as validate_legal_publication
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
@@ -250,7 +251,7 @@ def generate_sitemap(pieces: list[dict]) -> str:
 def build(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
-    errors = validate_catalog(data) + validate_phrase_index(lesson_data, data)
+    errors = validate_catalog(data) + validate_phrase_index(lesson_data, data) + validate_legal_publication()
     if errors:
         raise ValueError("Không xuất bản metadata không hợp lệ: " + "; ".join(errors[:5]))
     target, source = output.resolve(), ROOT.resolve()
