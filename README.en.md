@@ -78,7 +78,7 @@ V3.3 develops source-aware phrase learning, **not automated transcription**. It 
 
 [Research scope and release checklist](docs/v3.3-khoi-dong.md) · [V3.3 machine-readable source index](data/v3_3/phrase_index.json) · [line-by-line provenance validator](scripts/v3_3_validate.py).
 
-**This is a development-stage alpha**, not a complete 20-piece music curriculum or authorization to reproduce sheet music/audio/lyrics. **0/20 performances approved, rights unverified, commercial use not enabled.** Public website claims require successful post-merge CI and Pages deployment.
+**V3.3-alpha has been released as a source-indexing software milestone** following [merged PR #12](https://github.com/Form997/Vong-co/pull/12), [successful Pages deployment](https://github.com/Form997/Vong-co/actions/runs/40798312828), [102 Python tests](https://github.com/Form997/Vong-co/actions/runs/40798312794) and [Chromium browser checks](https://github.com/Form997/Vong-co/actions/runs/40798312801). This is **not** a complete 20-piece music curriculum or authorization to reproduce scores/audio/lyrics. **0/20 performances approved, rights unverified, commerce disabled.** Snapshot [commit `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19) includes **177 Git source files / 1,638,193 bytes (1,599.80 KiB)**; the website artifact contains **38 files / 703,350 bytes**.
 
 ## Start here
 
