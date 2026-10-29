@@ -75,6 +75,14 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 **Đã phát hành trên website:** sáu trang luật quốc gia nối từ [trang pháp lý HAI ĐẤT](https://form997.github.io/Vong-co/web/v3/legal.html) qua [PR #11](https://github.com/Form997/Vong-co/pull/11); [GitHub Pages Build + Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40794249686), [87/87 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40794249729) và **376 liên kết nội bộ** hợp lệ. **Mã nguồn tại commit phát hành [2278abb](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf): 171 tệp, 1.521.759 byte (1.486,09 KiB)**; gói website **36 tệp, 540.826 byte**. Quy định áp dụng tùy hoạt động, người dùng, nơi vận hành; đây không phải xác nhận dự án đã đủ chuẩn pháp luật sáu nước.
 
+### V3.3-alpha — Từ 72 đến 150 nhãn câu có chứng cứ (29/10/2026)
+
+**V3.3 đang triển khai trên nhánh riêng**, ưu tiên **học liệu từng câu** thay vì chỉ cải tiến giao diện. Bổ sung **Phú Lục Chấn 34 nhãn** và **Bình Bán Chấn 44 nhãn** theo sổ V2; cùng hai hệ V3.2 (Lưu Thủy Trường 32, Phụng Cầu 40) tổng **4 bài có chỉ mục / 150 nhãn**, **16 bài chờ tiếp tục chuẩn hóa**. Quan trọng: **34 câu nhạc nhưng chỉ 32 nhãn lời trong Nhị Tấn II** của bài 02; chữ kết câu 08 và 34 khác với Văn Dần; không đoán phách, MIDI, ca từ hoặc PDF page.
+
+[**Đề cương, giới hạn và checklist V3.3**](docs/v3.3-khoi-dong.md) · [Chỉ mục JSON](data/v3_3/phrase_index.json) · [Quy tắc kiểm](scripts/v3_3_validate.py) · [Hồ sơ 20 bản V2](docs/v3.2-kiem-toan-20-ban.md).
+
+**V3.3-alpha chưa được gọi là hoàn thiện toàn diện**: `0/20` bài nghiệm thu diễn xướng, quyền nhạc/lời/bản ghi chưa được chứng nhận, thương mại chưa được phê duyệt. Chỉ ghi “đã lên website” sau khi CI + Chromium + Pages đều đạt và ghi đúng SHA/dung lượng.
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
