@@ -40,7 +40,7 @@ Không tuyên bố một bản thu Ca tài tử truyền thống tự động đ
 - **Luật Bảo vệ người tiêu dùng TMĐT** sửa hiệu lực 21/07/2026: nếu bán khóa học, nhạc số, API AI, phải xem nghĩa vụ người bán, thông tin hợp đồng, hoàn tiền, thanh toán và thuế cụ thể.
 - **Trước khi kích hoạt AI ca/đờn thương mại:** kiểm bản quyền, quyền nghệ nhân và giọng, nhãn AI, dữ liệu cá nhân, trách nhiệm hạ tầng, quốc gia cung cấp, pháp nhân. NO-GO khi chưa có hồ sơ.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
