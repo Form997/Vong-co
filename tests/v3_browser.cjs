@@ -36,7 +36,7 @@ async function run() {
     await expectCount(page, 20, "Full catalog");
     assert.equal((await page.locator("#count-pieces").innerText()).trim(), "20");
     assert.equal((await page.locator("#count-variants").innerText()).trim(), "30");
-    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "2");
+    assert.equal((await page.locator("#count-lessons").innerText()).trim(), "4");
     console.log("PASS: load 20 pieces and 30 variants");
 
     // Visual regression contract: coherent heritage color system and hero landmarks.
