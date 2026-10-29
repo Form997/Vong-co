@@ -151,7 +151,7 @@
 
 **Kiểm chứng:** mỗi tệp ghi đúng nguyên ngữ, URL chính thức, điều kiện áp dụng, nội dung chưa thể kết luận. **Các nguồn Nga về 149-ФЗ có bản cơ quan nhà nước còn cũ**, phải đối chiếu cổng `pravo.gov.ru` bản hiện hành trước khi vận hành thương mại. **Không tuyên bố đã đủ luật 50 bang Mỹ hay mọi quốc gia trên thế giới.**
 
-**Trạng thái khi ghi:** trên nhánh `v3.2-six-country-law-audit` trước merge; số liệu commit, byte Git, website artifact và CI sẽ ghi **sau khi chốt phát hành**, tránh báo sai số. Website vẫn phi thương mại và nghiệm thu thực tấu **0/20**.
+**Đã phát hành ngày 29/10/2026:** [Pull Request #11](https://github.com/Form997/Vong-co/pull/11) đã hợp nhất tại [commit `2278abb`](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf). Git tree không bị truncated có **171 tệp, tổng 1.521.759 byte = 1.521,76 KB = 1.486,09 KiB**; đây là mã nguồn chưa nén, không phải ZIP. [GitHub Pages #40794249686](https://github.com/Form997/Vong-co/actions/runs/40794249686) xác nhận **Build Success + Deploy Success**, với gói website **36 tệp / 540.826 byte** (sáu trang luật quốc gia). [Python #40794249729](https://github.com/Form997/Vong-co/actions/runs/40794249729) đạt **87/87** và **376 liên kết nội bộ trong 25 tệp** hợp lệ. Website vẫn phi thương mại; nghiệm thu thực tấu **0/20**. Đây là snapshot bất biến tại commit merge, các chỉnh sửa nhật ký sau đó không làm thay đổi số liệu snapshot.
 
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
