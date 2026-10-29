@@ -64,6 +64,14 @@ This **noncommercial research site** now has an explicitly scoped policy framewo
 
 The EU AI Act was amended by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj); territorial scope and entry-into-application dates require a use-case review. **These are governance documents and software tests, not certification of national/global legal compliance.** The [public legal notice is now deployed](https://form997.github.io/Vong-co/web/v3/legal.html), following [merged PR #10](https://github.com/Form997/Vong-co/pull/10) and [successful GitHub Pages deployment](https://github.com/Form997/Vong-co/actions/runs/40791942791). The release snapshot has **160 source files / 1,398,285 Git bytes (1,365.51 KiB)** at [commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f); the public Pages artifact has **30 files / 473,683 bytes**.
 
+### V3.2 — Six more national law audits (29 October 2026)
+
+The project now documents **28 primary-law or regulator records across the US, Russia, China, Australia, Japan and South Korea**. Each record names its official source, language-specific statute, verified commencement information where available, differences between promulgation and enforcement, and conditions for territorial and business applicability. Key 2026 dates include China's amended Cybersecurity Law (**1 January 2026**) and South Korea's updated Copyright Act (**29 October 2026**).
+
+[Six-country legal review](docs/phap-ly-quoc-te/README.md) · [United States](docs/phap-ly-quoc-te/my.md) · [Russia](docs/phap-ly-quoc-te/nga.md) · [China](docs/phap-ly-quoc-te/trung-quoc.md) · [Australia](docs/phap-ly-quoc-te/uc.md) · [Japan](docs/phap-ly-quoc-te/nhat-ban.md) · [South Korea](docs/phap-ly-quoc-te/han-quoc.md) · [machine-readable sources](data/v3_2/six_country_sources.json).
+
+The six public law pages are **prepared, not released until GitHub Pages reports Deploy Success**. A globally accessible URL does not automatically trigger every law in each country; no audit here certifies compliance or licenses the commercial reuse of music.
+
 ## Start here
 
 | Your goal | The best entry point |
