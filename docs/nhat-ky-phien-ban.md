@@ -232,6 +232,8 @@ python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
 
 ## V3.5-alpha — Xuân Tình Chấn
 
-**Bắt đầu:** 29/10/2026, từ `v3-development` tại `e3fc2ed550632d467c9106813d0bfb7c719bb232`. Bổ sung chỉ mục 48 nhãn của bài 05 theo [sổ V2](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md), tách bản tập II khỏi Thủ tập I và giữ ranh giới Tây Thi trên trang chung. Tổng đề xuất 6 bài / 7 hệ / 300 nhãn.
+**Bắt đầu:** 29/10/2026, từ `v3-development` tại `e3fc2ed550632d467c9106813d0bfb7c719bb232`. Bổ sung chỉ mục 48 nhãn của bài 05 theo [sổ V2](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md), tách bản tập II khỏi Thủ tập I và giữ ranh giới Tây Thi trên trang chung. Tổng 6 bài / 7 hệ / 300 nhãn.
 
-**Còn chờ:** 14 bài chưa chuẩn hóa, 0/20 bài nghiệm thu diễn xướng; quyền nhạc, lời và bản thu chưa xác minh. CI, Chromium, Pages, số tệp và dung lượng snapshot sẽ ghi theo kết quả thực tế sau khi kiểm.
+**Còn chờ:** 14 bài chưa chuẩn hóa, 0/20 bài nghiệm thu diễn xướng; quyền nhạc, lời và bản thu chưa xác minh. Các kiểm thử phần mềm không thay cho nghiệm thu diễn xướng.
+
+**Phát hành V3.5-alpha:** [PR #15](https://github.com/Form997/Vong-co/pull/15) hợp nhất tại [commit `25afafb`](https://github.com/Form997/Vong-co/tree/25afafb9eea982daf87faaf31fe2412f13af3111): **189 tệp / 1.959.347 byte** chưa nén trong Git tree. [Python 108/108 và 426 liên kết nội bộ trong 31 tài liệu](https://github.com/Form997/Vong-co/actions/runs/40967193507), [Chromium](https://github.com/Form997/Vong-co/actions/runs/40967193483) và [Pages build + deploy](https://github.com/Form997/Vong-co/actions/runs/40967193526) đều thành công. Gói website theo log build: **42 tệp / 1.130.487 byte**. Không có kiểm thử tại máy vì môi trường không khả dụng. Các kết quả này không chứng nhận biểu diễn hoặc quyền.
