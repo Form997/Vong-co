@@ -45,7 +45,7 @@ Trang [pháp lý V3.2](legal.html) có thêm **6 thẻ quốc gia** dẫn đến
 
 Bản V3.3 kế thừa giao diện thư viện sáng V3.2, mở rộng đến **bài 01 (32), 02 (34), 03 (44), 20 (40)**; **16 bài** còn trong hàng đợi kiểm nguồn. Dữ liệu mới ở [`data/v3_3`](../../data/v3_3/README.md); giữ nguyên JSON V3.2. Cảnh báo sai biệt **34 nhạc/32 lời** và câu 08/34 được hiển thị ngay trong danh mục và trang Phú Lục Chấn.
 
-Đây là **chỉ mục nhãn câu theo sổ V2, không phải xác nhận âm nhạc biểu diễn**. Không tải PDF về máy chủ, không tự tạo số trang PDF, lời ca hay MP3. Chưa tuyên bố lên website công khai cho đến khi CI/Chromium/Pages báo Deploy Success.
+Đây là **chỉ mục nhãn câu theo sổ V2, không phải xác nhận âm nhạc biểu diễn**. Không tải PDF về máy chủ, không tự tạo số trang PDF, lời ca hay MP3. Đã [xuất bản trên GitHub Pages](https://github.com/Form997/Vong-co/actions/runs/40798312828) sau [PR #12](https://github.com/Form997/Vong-co/pull/12); [102 Python tests](https://github.com/Form997/Vong-co/actions/runs/40798312794) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40798312801) đạt. Gói **38 tệp / 703.350 byte**; mã nguồn [commit `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19) có **177 tệp / 1.638.193 byte**.
 
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
