@@ -58,6 +58,21 @@ Dự án hiện **không** mở đăng ký, bán hàng, nhận thanh toán, tả
 
 Các khu vực khác (Singapore PDPA, Nhật APPI, Trung Quốc PIPL, California CCPA/CPRA...) phải được rà theo **lãnh thổ, người dùng, hoạt động xử lý, quy mô và điều kiện cụ thể** trước khi triển khai dịch vụ tương ứng. Không tuyên bố đã “tuân thủ toàn thế giới” vì đã liệt kê tên nhiều đạo luật.
 
+### IV-A. Sáu quốc gia có hồ sơ riêng, cập nhật luật 2026
+
+**Ngày rà nguồn: 29/10/2026.** Ngoài GDPR/DSA/UK và các nguyên tắc chung, đã lập [bộ hồ sơ sáu quốc gia](phap-ly-quoc-te/README.md) với **28 nguồn luật, sửa đổi và hướng dẫn chính thức**, không nhận “tuân thủ thế giới” chỉ bằng cách liệt kê:
+
+| Quốc gia | Căn cứ được kiểm | Điều kiện trước khi áp dụng |
+|---|---|---|
+| [Hoa Kỳ](phap-ly-quoc-te/my.md) | COPPA 2025, CPPA California 2026, DMCA, 18 USC §1030 | Tình trạng nhà vận hành, người dùng trẻ, loại doanh nghiệp/bang, quyền IP và hành vi thực tế |
+| [Nga](phap-ly-quoc-te/nga.md) | 152-ФЗ, 149-ФЗ, 187-ФЗ, Bộ luật Dân sự phần IV | Thu dữ liệu công dân Nga, dịch vụ thông tin, nơi lưu dữ liệu, loại hạ tầng; phải kiểm bản hợp nhất Nga mới |
+| [Trung Quốc](phap-ly-quoc-te/trung-quoc.md) | Luật An ninh mạng sửa 2025/hiệu lực 01/01/2026, PIPL, DSL, CAC 16, IP/TMĐT | Xử lý dữ liệu và nhắm thị trường trong phạm vi, chuyển dữ liệu, loại kinh doanh và dữ liệu quan trọng |
+| [Úc](phap-ly-quoc-te/uc.md) | Privacy Act 1988 bản hợp nhất 04/06/2026, Cyber Security Act 2024, Copyright Act bản hợp nhất 02/04/2026 | Là APP entity hay không, eligible data breach, ransomware payment reporting có điều kiện |
+| [Nhật Bản](phap-ly-quoc-te/nhat-ban.md) | APPI, các sửa đổi 2026 và Luật Bản quyền | Phiên bản tiếng Nhật có hiệu lực; sửa đổi công bố chưa chắc đã có hiệu lực từng phần |
+| [Hàn Quốc](phap-ly-quoc-te/han-quoc.md) | PIPA 11/09/2026, Luật Mạng 02/10/2026, Luật Bản quyền 29/10/2026, AI/TMĐT | Thu dữ liệu, khai thác nhạc/bản ghi, AI tạo giọng/âm thanh và thị trường Hàn Quốc |
+
+**Nguyên tắc pháp lý:** luật nước ngoài **không tự áp dụng chỉ vì trang được mở từ đó**; đồng thời việc hoàn toàn phi thương mại không giúp dự án miễn trách nhiệm về bản quyền và an ninh. Thời điểm áp dụng, ngoại lệ nghiên cứu, bản hợp nhất và thẩm quyền cần chuyên gia sở tại xác minh khi thực sự triển khai hoạt động thuộc phạm vi. **Các hồ sơ chưa phải giấy phép hoạt động hay chứng nhận tuân thủ.**
+
 ## V. Ma trận quyền đối với nội dung Đờn ca tài tử
 
 | Đối tượng | Phi thương mại hiện tại | Thương mại dự kiến |
