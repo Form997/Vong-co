@@ -161,7 +161,9 @@
 
 **Tài liệu và thử nghiệm:** [đề cương V3.3](v3.3-khoi-dong.md) · [README dữ liệu](../data/v3_3/README.md) · [đối chiếu V2](v3.2-kiem-toan-20-ban.md) · [validator](../scripts/v3_3_validate.py) · [negative tests](../tests/test_v3_3_phrases.py). Bộ kiểm không tự tạo ghi âm, ký âm hoặc lời ca có quyền.
 
-**Giới hạn phát hành:** `4/20` chỉ mục, `150` nhãn văn bản, `16/20` chưa chuẩn hóa; **0/20 bài nghiệm thu diễn xướng, quyền `unverified`**. V3.3 mới ở giai đoạn alpha; chưa ghi dung lượng nguồn/website cho đến lúc có commit merge và gói Pages hoàn chỉnh. Không suy 150 nhãn là 150 bài luyện đã được nghệ nhân xác nhận.
+**Giới hạn phát hành:** `4/20` chỉ mục, `150` nhãn văn bản, `16/20` chưa chuẩn hóa; **0/20 bài nghiệm thu diễn xướng, quyền `unverified`**. V3.3 vẫn ở giai đoạn alpha, không suy 150 nhãn là 150 bài luyện đã được nghệ nhân xác nhận.
+
+**Mốc phát hành V3.3-alpha — 29/10/2026:** [PR #12 đã merge](https://github.com/Form997/Vong-co/pull/12) tại [commit bất biến `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19). Git tree chưa nén có **177 tệp, 1.638.193 byte = 1.638,19 KB = 1.599,80 KiB**, không phải ZIP hay dung lượng lúc chỉnh README sau đó. [GitHub Pages](https://github.com/Form997/Vong-co/actions/runs/40798312828) báo **Build Success + Deploy Success** tại `https://form997.github.io/Vong-co/`; artifact **38 tệp / 703.350 byte**, 20 trang bản Tổ, 6 trang pháp luật, 4 hệ/150 nhãn. [Python #40798312794](https://github.com/Form997/Vong-co/actions/runs/40798312794) đạt **102/102**, **404 liên kết nội bộ/27 tài liệu hợp lệ**; [Chromium #40798312801](https://github.com/Form997/Vong-co/actions/runs/40798312801) đạt trên 5 độ rộng, có kiểm 34/32 và bài 03 44 nhãn. Không có phép mở URL độc lập của công cụ duyệt web ngoài; trạng thái triển khai dựa trên GitHub Actions và Chromium CI. V1/V2/`main` không được thay đổi.
 
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
