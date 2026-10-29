@@ -65,7 +65,7 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 **Bộ hồ sơ điều hành:** [phân tích pháp lý đầy đủ](docs/phap-ly-an-ninh-mang-v3.2.md) · [quyền riêng tư](PRIVACY.md) · [an ninh/báo lỗ hổng](SECURITY.md) · [quyền tác giả và cấp phép](RIGHTS_AND_LICENSING.md) · [12 cổng mở kinh doanh](docs/quy-trinh-thuong-mai-hoa.md) · [quy trình ứng phó sự cố](docs/quy-trinh-ung-pho-su-co.md) · [21 nguồn chính thức/tiêu chuẩn/điều khoản nền tảng](data/v3_2/legal_sources.json).
 
-**Khi phát hành:** người đọc có trang [pháp lý và quyền riêng tư trên website](https://form997.github.io/Vong-co/web/v3/legal.html); **đường dẫn chỉ trở thành trang công khai mới sau khi Pull Request được merge và Pages Deploy Success**. Website vẫn **chưa** có tài khoản, thu tiền, API kinh doanh hay quyền tái bản nhạc/ca từ/âm thanh chưa rõ giấy phép. **0/20 bài nghiệm thu biểu diễn.**
+**Đã triển khai trang pháp lý V3.2:** [mở trang pháp lý, an ninh mạng và quyền riêng tư](https://form997.github.io/Vong-co/web/v3/legal.html); [PR #10 đã hợp nhất](https://github.com/Form997/Vong-co/pull/10), [Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40791942791), [75 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40791942971). Gói công khai có **30 tệp / 473.683 byte**; mã nguồn tại [merge commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f) có **160 tệp / 1.398.285 byte** (**1.365,51 KiB**). Không có tài khoản/thu tiền/API kinh doanh và chưa được phép tái bản nhạc/ca từ/âm thanh chưa rõ quyền. **0/20 bài nghiệm thu biểu diễn.**
 
 ## Bắt đầu tại đây
 
