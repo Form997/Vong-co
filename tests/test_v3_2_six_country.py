@@ -109,7 +109,7 @@ class SixJurisdictionLawTests(unittest.TestCase):
                 self.assertIn("29/10/2026",text)
                 self.assertNotIn("<iframe",text)
             self.assertFalse(any(x.endswith((".pdf",".mp3",".wav",".mid",".env")) for x in result["published_files"]))
-            self.assertEqual(result["indexed_lesson_phrases"],72)
+            self.assertEqual(result["indexed_lesson_phrases"],150)
 
 if __name__=="__main__":
     unittest.main()
