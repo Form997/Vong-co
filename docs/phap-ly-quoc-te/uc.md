@@ -37,7 +37,7 @@ Khung trọng tâm gồm **Privacy Act 1988** (bản hợp nhất pháp luật �
 
 Nếu sau này cung cấp sản phẩm số hoặc dạy trực tuyến có thu phí cho khách Úc, đánh giá **Australian Consumer Law**, điều khoản/hoàn tiền, thuế, giấy phép học liệu, bảo vệ dữ liệu liên bang và bang, hạ tầng thanh toán và quyền người dùng. Nếu cung cấp thiết bị đầu cuối/smart device, đánh giá thêm Part 2 của Cyber Security Act; nếu chỉ có web tĩnh thì không tự xếp cùng thiết bị IoT.
 
-**Cổng quyết định:** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
+**Cổng quyết định: NO-GO cho mọi hoạt động thương mại chưa qua thẩm định.** [12 mục thương mại hóa của dự án](../quy-trinh-thuong-mai-hoa.md) phải có tài liệu chứng minh trước khi kích hoạt; mặc định `commercial_enabled=false`. Bất kỳ việc mở đăng ký người học, thu email, thanh toán, upload giọng/ảnh, AI sinh âm nhạc, tái bản MIDI/ca từ đều đòi hỏi rà phạm vi luật **và giấy phép của từng chủ thể**.
 
 ## 6. Ghi chú kiểm chứng và điều chưa kết luận
 
