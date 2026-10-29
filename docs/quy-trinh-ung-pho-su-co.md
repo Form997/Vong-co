@@ -44,7 +44,7 @@ Lưu trong nơi hạn chế truy cập (không phải repo public): SHA, hash n�
 
 **Không đặt thời hạn 72 giờ chung cho mọi sự cố ở Việt Nam và thế giới.** Tùy loại dữ liệu, địa bàn, vai trò chủ thể, ngành và quy định đang hiệu lực:
 
-- **Việt Nam:** đối chiếu [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160), [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=215855&pageid=27160), [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160) và hướng dẫn/cơ quan tương ứng. Chỉ lập hồ sơ thông báo khi thuộc trường hợp nghĩa vụ thực sự phát sinh.
+- **Việt Nam:** đối chiếu [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160), [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160), [Nghị định 356/2025/NĐ-CP](https://vanban.chinhphu.vn/?docid=216387&pageid=27160) và hướng dẫn/cơ quan tương ứng. Chỉ lập hồ sơ thông báo khi thuộc trường hợp nghĩa vụ thực sự phát sinh.
 - **EU:** [GDPR Điều 33](https://eur-lex.europa.eu/eli/reg/2016/679/oj) có nguyên tắc thông báo cơ quan giám sát **không chậm trễ và, khi khả thi, trong 72 giờ kể từ biết vi phạm** nếu đủ điều kiện của điều luật; Điều 34 về thông báo chủ thể khi rủi ro cao với điều kiện/ngoại lệ áp dụng. Không dùng quy tắc này như nghĩa vụ mặc định của mọi website Việt Nam.
 - **Thư viện bên thứ ba:** nếu GitHub/nhà cung cấp có sự cố hạ tầng, phân định rõ trách nhiệm của hosting và trách nhiệm của bên vận hành dự án. Không hứa xóa log IP do GitHub nắm giữ.
 
