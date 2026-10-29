@@ -67,6 +67,14 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 **Đã triển khai trang pháp lý V3.2:** [mở trang pháp lý, an ninh mạng và quyền riêng tư](https://form997.github.io/Vong-co/web/v3/legal.html); [PR #10 đã hợp nhất](https://github.com/Form997/Vong-co/pull/10), [Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40791942791), [75 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40791942971). Gói công khai có **30 tệp / 473.683 byte**; mã nguồn tại [merge commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f) có **160 tệp / 1.398.285 byte** (**1.365,51 KiB**). Không có tài khoản/thu tiền/API kinh doanh và chưa được phép tái bản nhạc/ca từ/âm thanh chưa rõ quyền. **0/20 bài nghiệm thu biểu diễn.**
 
+### V3.2 — Bổ sung pháp luật 6 quốc gia (29/10/2026)
+
+**Đã lập hồ sơ theo nguồn chính thức của Mỹ, Nga, Trung Quốc, Úc, Nhật Bản và Hàn Quốc**, gồm **28 văn bản/hướng dẫn có đường dẫn gốc** và trạng thái hiệu lực cụ thể. Nổi bật: Trung Quốc sửa luật an ninh mạng áp dụng **01/01/2026**; Úc có bản hợp nhất luật dữ liệu/bản quyền năm 2026; Hàn Quốc có **Luật Bản quyền hiệu lực đúng 29/10/2026**; Nhật có sửa đổi mới với nhiều mốc áp dụng khác nhau.
+
+[**Danh mục sáu nước**](docs/phap-ly-quoc-te/README.md) · [Mỹ](docs/phap-ly-quoc-te/my.md) · [Nga](docs/phap-ly-quoc-te/nga.md) · [Trung Quốc](docs/phap-ly-quoc-te/trung-quoc.md) · [Úc](docs/phap-ly-quoc-te/uc.md) · [Nhật Bản](docs/phap-ly-quoc-te/nhat-ban.md) · [Hàn Quốc](docs/phap-ly-quoc-te/han-quoc.md) · [sổ nguồn có cấu trúc](data/v3_2/six_country_sources.json).
+
+**Website:** thiết kế thêm sáu trang luật quốc gia từ dữ liệu đã kiểm, nối từ [trang pháp lý HAI ĐẤT](https://form997.github.io/Vong-co/web/v3/legal.html). **Chưa công bố bản thay đổi này trước khi CI và GitHub Pages triển khai thành công**. Quy định áp dụng tùy hoạt động, người dùng và nơi vận hành; đây không phải xác nhận dự án đã đủ chuẩn pháp luật sáu nước.
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
