@@ -135,7 +135,11 @@
 - [Trình kiểm pháp lý-safety tĩnh](../scripts/v3_2_legal_validate.py): tên nguồn/ngày, liên kết chính sách, không thêm tracker hay form chưa được rà, trạng thái NO-GO; có **13 bài thử đối chứng âm tính** ở [test_v3_2_legal_security.py](../tests/test_v3_2_legal_security.py).
 - [Trang thông báo công khai](../web/v3/legal.html), được đưa vào gói Pages theo danh sách tệp cho phép mới (**30 tệp khi phát hành**), có đường dẫn từ danh mục và các trang bài.
 
-**Trạng thái tại lúc viết:** đang kiểm chứng qua Pull Request [#10](https://github.com/Form997/Vong-co/pull/10). **Không tuyên bố “đã phát hành” trước khi CI + Pages Deploy Success**; không tự thay đổi nhánh V1/V2/`main`. **Không có chứng nhận tuân thủ toàn cầu, không có giấy phép kinh doanh cho nhạc/bản ghi của người khác.**
+**Mốc phát hành ngày 29/10/2026:** [PR #10 đã merge](https://github.com/Form997/Vong-co/pull/10) tại [commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f). **75/75 bài Python** đạt ở [run #40791942971](https://github.com/Form997/Vong-co/actions/runs/40791942971), **290 liên kết nội bộ hợp lệ** trong **18 tài liệu**, và [GitHub Pages Build + Deploy = Success](https://github.com/Form997/Vong-co/actions/runs/40791942791). Trang thông báo [https://form997.github.io/Vong-co/web/v3/legal.html](https://form997.github.io/Vong-co/web/v3/legal.html) được đưa vào website, tuy trợ lý chưa tự truy cập độc lập qua trình duyệt web ngoài.
+
+**Dung lượng snapshot phát hành có thể kiểm tra lại:** **160 tệp, 1.398.285 byte = 1.398,29 KB = 1.365,51 KiB** trong Git tree bất biến tại commit `3a68a9a` (không có truncated). **Gói web:** **30 tệp, 473.683 byte**. Đây là hai hệ số đo khác nhau, không phải ZIP. **Không thay nhánh `main`, `v1-frozen` hoặc `v2-development`.**
+
+**Giới hạn:** chưa có chứng nhận tuân thủ toàn cầu, kênh báo lỗ hổng riêng chưa xác minh đã bật, không có giấy phép thương mại cho nhạc/bản ghi của người khác; bộ kiểm chỉ xác thực tính nhất quán của nguồn và mã.
 
 ## 7. Quy tắc bắt buộc cho mọi thế hệ V tiếp theo
 
