@@ -49,6 +49,12 @@ Nguồn nền tảng bắt buộc kiểm: [GitHub Pages limits](https://docs.git
 
 **EU:** nếu thực sự tiếp cận thị trường và có hoạt động thuộc phạm vi GDPR/DSA/AI Act, kiểm luật hợp nhất tại ngày ra mắt, đánh giá controller/processor, quốc gia, trẻ em, chuyển dữ liệu và quyền ảnh/giọng. **UK, Hoa Kỳ, Nhật Bản, Singapore, Trung Quốc, Úc và các nơi khác:** phải đánh giá riêng theo nơi có khách hàng, hợp đồng và dữ liệu; không đóng dấu “đã tuân thủ luật toàn cầu”.
 
+### C-2. Kiểm tra sáu thị trường lớn nếu bán khóa học, AI hoặc bản thu ra quốc tế
+
+Trước khi mở bán ngoài Việt Nam, sử dụng các hồ sơ **[Mỹ](phap-ly-quoc-te/my.md)**, **[Nga](phap-ly-quoc-te/nga.md)**, **[Trung Quốc](phap-ly-quoc-te/trung-quoc.md)**, **[Úc](phap-ly-quoc-te/uc.md)**, **[Nhật Bản](phap-ly-quoc-te/nhat-ban.md)** và **[Hàn Quốc](phap-ly-quoc-te/han-quoc.md)** cùng [28 nguồn gốc](../data/v3_2/six_country_sources.json) để xác định luật thực sự phát sinh theo địa bàn, chủ thể, người dùng và chức năng. Mỗi nước **phải có phê duyệt riêng** đối với doanh thu, dữ liệu người học, trẻ em, quyền bản thu, giọng nghệ nhân/AI và giao dịch.
+
+Đặc biệt: Mỹ có luật bang, Nga có nghĩa vụ xử lý dữ liệu phụ thuộc điều kiện, Trung Quốc có hạn chế/ngoại lệ chuyển dữ liệu, Úc phân biệt APP entities và ransomware payment reporting, Nhật Bản có sửa đổi năm 2026 đang chờ lịch áp dụng, Hàn Quốc có mốc luật bản quyền mới **29/10/2026** và quy định AI sản phẩm thuộc phạm vi. **Không lấy việc hoàn thành 28 dòng JSON để đổi quyết định thương mại thành GO.**
+
 ## D. Cách tổ chức phát hành thương mại an toàn
 
 1. Tạo **môi trường thử nghiệm thương mại riêng**, không ghi mật khẩu/thẻ vào HTML/JS của GitHub Pages.
