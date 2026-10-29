@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f6f4ee">
   <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
-  <title>HAI ĐẤT V3.4 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.5 · Thư viện 20 bản Tổ</title>
   <style>
 
 /* HAI ĐẤT / Heritage Editorial — V3.2 design system. Pure CSS, zero third-party assets. */
@@ -221,12 +221,13 @@ footer p{margin:0;font-size:12px;max-width:850px}
       <div><strong>Bài 02 · Phú Lục Chấn</strong>34 nhãn nhạc Nhị Tấn tập II nhưng chỉ 32 nhãn lời in trong nguồn này. Câu 08/34 còn khác dấu cuối với Văn Dần. <a href="../../bai/02-phu-luc-chan/#hoc-tung-cau">Xem 34 vị trí và cảnh báo ↗</a></div>
       <div><strong>Bài 03 · Bình Bán Chấn</strong>44 vị trí ở bốn lớp theo Nhị Tấn tập II. Ký hiệu cuối hàng không được suy thành nhịp, cao độ hoặc ngón đờn thực tấu. <a href="../../bai/03-binh-ban-chan/#hoc-tung-cau">Đối chiếu 44 nhãn ↗</a></div>
       <div><strong>Bài 04 · Cổ Bản</strong>Hai hệ độc lập: Vắn 34 nhãn và Trường 68 nhãn theo Nhị Tấn tập II; chưa đối chiếu thành bản diễn xướng. <a href="../../bai/04-co-ban-van/#hoc-tung-cau">Xem hai hệ ↗</a></div>
+      <div><strong>Bài 05 · Xuân Tình Chấn</strong>48 nhãn theo Nhị Tấn tập II, bốn lớp. Câu 37 có sai biệt ký hiệu; tách khỏi bản Thủ tập I và Tây Thi ở cuối trang. <a href="../../bai/05-xuan-tinh-chan/#hoc-tung-cau">Xem chỉ mục ↗</a></div>
     </section>
     <section class="stats" aria-label="Tổng quan dữ liệu">
       <div class="stat"><strong id="count-pieces">20</strong><span>Bản Tổ trong danh mục</span></div>
       <div class="stat"><strong id="count-variants">—</strong><span>Hệ bản và dị bản mô tả</span></div>
       <div class="stat"><strong>04</strong><span>Nhóm Bắc · Lễ · Nam · Oán</span></div>
-      <div class="stat"><strong id="count-lessons">—</strong><span>Bài có chỉ mục câu V3.4 · 252 nhãn</span></div>
+      <div class="stat"><strong id="count-lessons">—</strong><span>Bài có chỉ mục câu V3.5 · 300 nhãn</span></div>
       <div class="stat"><strong>00</strong><span>Bài đã nghiệm thu diễn xướng</span></div>
     </section>
     <section id="tra-cuu" aria-labelledby="browse-title">
@@ -256,7 +257,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
           <label for="lesson-status">Bài học từng câu
             <select id="lesson-status" aria-label="Lọc bài có chỉ mục học câu">
               <option value="all">Tất cả 20 bản Tổ</option>
-              <option value="indexed">Có chỉ mục nguồn V3.4</option>
+              <option value="indexed">Có chỉ mục nguồn V3.5</option>
               <option value="pending">Chưa chuẩn hóa sổ V2 thành bài học</option>
             </select>
           </label>
@@ -282,13 +283,13 @@ footer p{margin:0;font-size:12px;max-width:850px}
   </main>
   <footer><div class="container">
     <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
-    <p>V3.4-alpha · Tách hai hệ Cổ Bản · 29/10/2026 · Dữ liệu nghiên cứu, không phải thư viện biểu diễn được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <p>V3.5-alpha · Xuân Tình Chấn · 29/10/2026 · Dữ liệu nghiên cứu, không phải thư viện biểu diễn được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
     <div class="footer-links"><a href="legal.html">Pháp lý &amp; quyền riêng tư</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
   </div></footer>
   <script>
     "use strict";
     const DATA_URL = "../../data/v3/catalog.json";
-    const PHRASE_URL = "../../data/v3_4/phrase_index.json";
+    const PHRASE_URL = "../../data/v3_5/phrase_index.json";
     const SOURCE_BASE = "https://github.com/Form997/Vong-co/blob/v3-development/";
     const LABELS = {
       source_indexed: "Có chỉ mục từ V2",
@@ -350,7 +351,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
           node("strong","",item.title),
           node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"),
           node("small",hasLesson ? "piece-status" : "piece-status pending",
-            hasLesson ? "◉ Có chỉ mục câu V3.4" : "◌ Chờ đối chiếu sổ V2"));
+            hasLesson ? "◉ Có chỉ mục câu V3.5" : "◌ Chờ đối chiếu sổ V2"));
         card.addEventListener("click", () => {
           state.selected = item.id;
           updateList(); updateDetail();
@@ -393,9 +394,10 @@ footer p{margin:0;font-size:12px;max-width:850px}
       const availability = node("p", "", indexed.length
         ? "Bài này có chỉ mục: " + indexed.map(x => x.variant_id + " (" + x.phrase_count + " nhãn)").join("; ") +
           ". Chưa có nhịp/ngón/song lang được nghiệm thu."
-        : "Đã có hồ sơ hoặc sổ câu V2 ở mức độ khác nhau, nhưng V3.4 chưa chuẩn hóa đủ để đưa vào chỉ mục từng câu; không suy diễn từ tổng số câu.");
+        : "Đã có hồ sơ hoặc sổ câu V2 ở mức độ khác nhau, nhưng V3.5 chưa chuẩn hóa đủ để đưa vào chỉ mục từng câu; không suy diễn từ tổng số câu.");
       detail.append(availability);
       if (item.id === 2) detail.append(node("p", "", "LƯU Ý NGUỒN: 34 nhãn nhạc / chỉ 32 nhãn lời in trong Nhị Tấn II; câu 08 và 34 có dị bản chữ cuối với Văn Dần. Chưa chấp thuận biểu diễn."));
+      if (item.id === 5) detail.append(node("p", "", "48 nhãn theo Nhị Tấn tập II; câu 37 còn khác ký hiệu giữa các nguồn, chưa thẩm âm. Không trộn bản Thủ tập I."));
       if (item.id === 4) detail.append(node("p", "", "Cổ Bản Vắn và Trường là hai hệ riêng trong nguồn; không suy ra tương ứng từng câu giữa hai hệ."));
       if (item.id === 3) detail.append(node("p", "", "44 nhãn nguồn, nhưng chưa kiểm phách, song lang hoặc kỹ thuật qua bản thu. Ký hiệu cuối dòng không phải âm thanh đã xác minh."));
       const pageLink = node("a", "piece-page-link", "Trang riêng của bản Tổ ↗");
@@ -448,7 +450,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
         if(!resp.ok||!lessonResp.ok) throw new Error("Không tải được JSON danh mục/chỉ mục: " + resp.status + "/" + lessonResp.status);
         const [data, lessonData] = await Promise.all([resp.json(),lessonResp.json()]);
         if(!Array.isArray(data.items)||data.items.length!==20||data.catalog_status!=="research_preview") throw new Error("Không đúng danh mục V3");
-        if(lessonData.schema_version!=="3.4.0-alpha.1"||!Array.isArray(lessonData.items)||lessonData.items.length!==6||lessonData.items.reduce((n,x)=>n+x.phrases.length,0)!==252||new Set(lessonData.items.map(x=>x.piece_id)).size!==5) throw new Error("Chỉ mục V3.4 thiếu dữ liệu đã kiểm.");
+        if(lessonData.schema_version!=="3.5.0-alpha.1"||!Array.isArray(lessonData.items)||lessonData.items.length!==7||lessonData.items.reduce((n,x)=>n+x.phrases.length,0)!==300||new Set(lessonData.items.map(x=>x.piece_id)).size!==6) throw new Error("Chỉ mục V3.5 thiếu dữ liệu đã kiểm.");
         state.catalog=data; state.lessons=lessonData;
         byId("count-lessons").textContent=new Set(lessonData.items.map(x=>x.piece_id)).size;
         const hashMatch=location.hash.match(/^#bai-(\d{2})$/);

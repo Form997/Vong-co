@@ -67,7 +67,7 @@ class V34Tests(unittest.TestCase):
             dst = Path(temp) / 'site'
             result = build(dst)
             self.assertEqual((result['indexed_lesson_pieces'], result['indexed_lesson_systems'],
-                              result['indexed_lesson_phrases']), (5, 6, 252))
+                              result['indexed_lesson_phrases']), (6, 7, 300))
             slug = next(x['slug'] for x in self.catalog['items'] if x['id'] == 4)
             html = (dst / 'bai' / slug / 'index.html').read_text(encoding='utf-8')
             self.assertEqual(html.count('class="phrase-row"'), 102)

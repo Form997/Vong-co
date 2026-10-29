@@ -139,9 +139,9 @@ class V33SourceIndexTests(unittest.TestCase):
             dst=Path(temp)/"site"
             result=build(dst)
             self.assertEqual(result["status"],"pass")
-            self.assertEqual(result["file_count"],40)
-            self.assertEqual(result["indexed_lesson_pieces"],5)
-            self.assertEqual(result["indexed_lesson_phrases"],252)
+            self.assertEqual(result["file_count"],42)
+            self.assertEqual(result["indexed_lesson_pieces"],6)
+            self.assertEqual(result["indexed_lesson_phrases"],300)
             self.assertFalse(result["includes_rights_restricted_media"])
             published=set(result["published_files"])
             self.assertIn("data/v3_4/phrase_index.json",published)
@@ -151,7 +151,7 @@ class V33SourceIndexTests(unittest.TestCase):
                 cat=self.cat["items"][n-1]
                 html=(dst/"bai"/cat["slug"]/"index.html").read_text(encoding="utf-8")
                 self.assertEqual(html.count('class="phrase-row"'),count)
-                self.assertIn("V3.4",html)
+                self.assertIn("V3.5",html)
             html=(dst/"bai"/self.cat["items"][17]["slug"]/"index.html").read_text(encoding="utf-8")
             self.assertNotIn('class="phrase-row"',html)
             self.assertIn("chưa chuẩn hóa",html)

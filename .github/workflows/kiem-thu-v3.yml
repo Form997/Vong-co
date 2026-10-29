@@ -46,6 +46,9 @@ jobs:
       - name: Kiem hai he Co Ban V3.4 theo so V2
         run: python scripts/v3_4_validate.py --json
 
+      - name: Kiem 48 nhan Xuan Tinh V3.5
+        run: python scripts/v3_5_validate.py --json
+
       - name: Kiem tra bao ve du lieu va van ban phap ly
         run: python scripts/v3_2_legal_validate.py --json
 
@@ -69,7 +72,8 @@ jobs:
             docs/phap-ly-quoc-te/uc.md docs/phap-ly-quoc-te/nhat-ban.md \
             docs/phap-ly-quoc-te/han-quoc.md \
             docs/v3.3-khoi-dong.md data/v3_3/README.md \
-            docs/v3.4-co-ban.md data/v3_4/README.md
+            docs/v3.4-co-ban.md data/v3_4/README.md \
+            docs/v3.5-xuan-tinh.md data/v3_5/README.md
 
       - name: Trich JavaScript cua giao dien V3
         run: |
