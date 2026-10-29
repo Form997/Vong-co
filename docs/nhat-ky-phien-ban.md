@@ -224,6 +224,8 @@ python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
 
 **Chưa hoàn thành:** 15 bài chưa chuẩn hóa chỉ mục, 0/20 bài nghiệm thu diễn xướng; quyền nhạc/lời/bản thu chưa xác minh, chưa có phê duyệt thương mại. Không suy ra ánh xạ giữa hai hệ. Kiểm thử, CI, triển khai và kích thước bản chụp được ghi sau khi thực hiện, không xem số liệu bản phát hành cũ là kết quả V3.4.
 
-**Kiểm thử tại máy:** 105/105 bài Python, trình duyệt Chromium với 34 + 68 nhãn và neo riêng, 417 liên kết nội bộ trong 29 tài liệu; bộ kiểm không chứng nhận nội dung biểu diễn. Gói website dựng tại máy: **40 tệp / 932.810 byte** chưa nén. CI PR và triển khai Pages còn chờ kết quả GitHub.
+**Kiểm thử tại máy:** 105/105 bài Python, trình duyệt Chromium với 34 + 68 nhãn và neo riêng, 417 liên kết nội bộ trong 29 tài liệu; bộ kiểm không chứng nhận nội dung biểu diễn. Gói website dựng tại máy: **40 tệp / 932.810 byte** chưa nén. Tại thời điểm bản chụp trước PR, CI và triển khai Pages còn chờ kết quả GitHub; xem mốc phát hành bên dưới.
 
 **Bản chụp mã nguồn V3.4 trước PR:** 183 tệp / 1.793.317 byte chưa nén, tính tổng byte các tệp thuộc cây Git của bản chụp, không tính `.git` hoặc gói website. Kích thước phát hành sau hợp nhất cần được đo lại tại commit phát hành.
+
+**Phát hành V3.4-alpha:** [PR #13](https://github.com/Form997/Vong-co/pull/13) hợp nhất tại [commit `86ac6a4`](https://github.com/Form997/Vong-co/tree/86ac6a4c299b9dd205f4ebe719ffa8e4e5b82582); cây Git của commit này có **183 tệp / 1.793.317 byte** chưa nén. [CI Python](https://github.com/Form997/Vong-co/actions/runs/40805890696) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40805890695) đạt, [Pages build và deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40805890692); log đóng gói ghi **40 tệp / 932.810 byte**. Các kết quả trên kiểm phần mềm và dữ liệu theo sổ, không chứng nhận diễn xướng hoặc quyền.
