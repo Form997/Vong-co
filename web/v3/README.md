@@ -28,6 +28,19 @@ Dự án giữ **miễn phí/phi thương mại** ở V3.2. Trang [pháp lý dà
 
 **Mục đích là minh bạch, không tự cấp chứng nhận.** GitHub Pages có thể ghi địa chỉ IP phục vụ an ninh; mã trang không triển khai tracker, đăng ký hay thanh toán. Trước khi đưa website sang thu phí/API thương mại, đánh giá pháp luật và chuyển hạ tầng phù hợp: [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 
+### Sáu trang pháp luật quốc tế mới (29/10/2026)
+
+Trang [pháp lý V3.2](legal.html) có thêm **6 thẻ quốc gia** dẫn đến các trang tĩnh sinh từ 28 nguồn nhà nước ở [sổ luật](../../data/v3_2/six_country_sources.json). Mỗi trang có tên luật gốc và điều kiện phạm vi sử dụng, không có JavaScript bên thứ ba hay tracker:
+
+- `web/v3/quoc-gia/my.html` — Hoa Kỳ
+- `web/v3/quoc-gia/nga.html` — Nga
+- `web/v3/quoc-gia/trung-quoc.html` — Trung Quốc
+- `web/v3/quoc-gia/uc.html` — Úc
+- `web/v3/quoc-gia/nhat-ban.html` — Nhật Bản
+- `web/v3/quoc-gia/han-quoc.html` — Hàn Quốc
+
+**Chưa hiển thị công khai nếu chỉ đang nằm trên nhánh phát triển:** chỉ xem là website live sau Pages Deploy Success. Đây là nghiên cứu pháp lý có nguồn, không thay kiểm toán/tư vấn pháp lý và không mở khóa `commercial_enabled=false`.
+
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
 Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:
