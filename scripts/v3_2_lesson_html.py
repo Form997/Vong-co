@@ -58,7 +58,7 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
         return ('<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">'
                 '<h2 id="learn-title">Học theo từng câu — đang chờ sổ nguồn</h2>'
                 '<p class="lesson-empty">Bài này có bảng hoặc sổ câu V2 ở mức độ khác nhau, '
-                'nhưng V3.2 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
+                'nhưng V3.3 chưa chuẩn hóa và kiểm lại từng hàng để đưa thành bài học. '
                 'Không tự tạo nốt đờn, lời ca, ngón bấm, điểm song lang hoặc số trang.</p>'
                 '<p>Đọc hồ sơ và biên bản nguồn V2 ở phần bên dưới để biết điều đã kiểm.</p>'
                 '</section>')
@@ -81,21 +81,33 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
             ]
             music, lyric = phrase["printed_music_page"], phrase["printed_lyric_page"]
             if music is not None:
-                # V2 source records: printed p.332 = PDF page 38 (1-based).
-                # Applies solely to the indexed digitized Nhị Tấn volume IV.
-                mp, lp = music - 294, lyric - 294
-                fields.append(
-                    f'<p><strong>Trang bản in:</strong> nhạc {music}; lời {lyric}. '
-                    f'<a href="{source}#page={mp}" target="_blank" rel="noopener noreferrer">'
-                    f'Xem PDF trang nhạc {mp} ↗</a> · '
-                    f'<a href="{source}#page={lp}" target="_blank" rel="noopener noreferrer">'
-                    f'Xem PDF trang lời {lp} ↗</a></p>'
-                )
+                # Mapping print-page -> PDF-page was checked ONLY for Nhị Tấn IV, piece #20.
+                # Do not apply this offset to volume II or turn absent lyric pages into numbers.
+                if lesson["piece_id"] == 20:
+                    if lyric is None:
+                        raise ValueError("Phụng Cầu page pair unexpectedly incomplete.")
+                    mp, lp = music - 294, lyric - 294
+                    fields.append(
+                        f'<p><strong>Trang bản in:</strong> nhạc {music}; lời {lyric}. '
+                        f'<a href="{source}#page={mp}" target="_blank" rel="noopener noreferrer">'
+                        f'Xem PDF trang nhạc {mp} ↗</a> · '
+                        f'<a href="{source}#page={lp}" target="_blank" rel="noopener noreferrer">'
+                        f'Xem PDF trang lời {lp} ↗</a></p>'
+                    )
+                else:
+                    lyric_text = str(lyric) if lyric is not None else "KHÔNG CÓ trong trang lời của nguồn Nhị Tấn II"
+                    fields.append(
+                        f'<p><strong>Trang bản in (tập II):</strong> nhạc {music}; lời {html_text(lyric_text)}. '
+                        f'<a href="{source}" target="_blank" rel="noopener noreferrer">'
+                        'Đối chiếu trực tiếp PDF theo số trang IN; chưa xác minh trang PDF 1-based ↗</a></p>'
+                    )
             if phrase["ending_token"] is not None:
+                ending_label = ("Ký hiệu cuối dòng chữ nhạc in tại nguồn V2" if
+                                lesson["piece_id"] in (2, 3) else "Chữ kết ghi trong sổ V2")
                 fields.append(
-                    f'<p><strong>Chữ kết ghi trong sổ V2:</strong> '
+                    f'<p><strong>{ending_label}:</strong> '
                     f'<code>{html_text(phrase["ending_token"])}</code>. '
-                    'Giữ nguyên mặt chữ nguồn; không suy ra cao độ, trường độ hoặc MIDI.</p>'
+                    'Giữ nguyên mặt chữ nguồn; không suy ra cao độ, trường độ, điểm song lang hay MIDI.</p>'
                 )
             if phrase["pair_index"] is not None:
                 fields.append(
@@ -122,7 +134,7 @@ def render_lesson(piece: dict, lesson: dict | None) -> str:
         )
     count = lesson["phrase_count"]
     return f"""<section class="section" id="hoc-tung-cau" aria-labelledby="learn-title">
-<span class="eyebrow">V3.2 · Bài học từ sổ nguồn</span>
+<span class="eyebrow">V3.3 · Bài học từ sổ nguồn</span>
 <h2 id="learn-title">Học từng câu theo đúng hệ {variant_id}</h2>
 <p>Có <strong>{count}/{count} nhãn câu được rà ở V2</strong>; không phải
  {count} câu đã thẩm âm. Tên hệ nhịp và cách phân câu chỉ áp dụng cho
