@@ -88,7 +88,9 @@ Tài liệu của dự án được tách thành **hai kịch bản**: **phi th�
 
 V3.4 tách Cổ Bản Vắn **34 nhãn** và Trường **68 nhãn** theo Nhị Tấn tập II và sổ V2. Cộng bốn bài V3.3: **5 bài, 6 hệ, 252 nhãn**; **15 bài** chưa chuẩn hóa thành chỉ mục. Không tự ánh xạ câu giữa hai hệ. [Hồ sơ đối chiếu](docs/v3.4-co-ban.md) · [Dữ liệu và giới hạn](data/v3_4/README.md).
 
-Đây là bản phát triển, không phải nghiệm thu diễn xướng: **0/20 bài** đã nghiệm thu, quyền chưa xác minh; không bổ sung lời, ký âm hay bản thu. Các kết quả kiểm thử và thông số snapshot V3.4 được ghi trong [nhật ký phiên bản](docs/nhat-ky-phien-ban.md); việc triển khai chỉ được xác nhận sau CI và Pages thành công.
+V3.4-alpha đã phát hành qua [PR #13](https://github.com/Form997/Vong-co/pull/13); [Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40805890692), [Python](https://github.com/Form997/Vong-co/actions/runs/40805890696) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40805890695) đạt. Tại [commit phát hành `86ac6a4`](https://github.com/Form997/Vong-co/tree/86ac6a4c299b9dd205f4ebe719ffa8e4e5b82582): **183 tệp / 1.793.317 byte**; gói website **40 tệp / 932.810 byte**.
+
+Đây là chỉ mục nguồn, chưa phải nghiệm thu diễn xướng: **0/20 bài** đã nghiệm thu, quyền chưa xác minh; không bổ sung lời, ký âm hay bản thu. Các kết quả và thông số được ghi trong [nhật ký phiên bản](docs/nhat-ky-phien-ban.md).
 
 ## Bắt đầu tại đây
 
