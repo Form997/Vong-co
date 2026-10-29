@@ -22,6 +22,12 @@ Trang chính có khối giới thiệu rõ nét, thanh tìm kiếm lớn, tab l�
 
 **Đối chứng kỹ thuật:** [62 Python tests đạt](https://github.com/Form997/Vong-co/actions/runs/40697296133); [Chromium 5 kích thước màn hình đạt và có ảnh](https://github.com/Form997/Vong-co/actions/runs/40697296268); [Pages đã triển khai](https://github.com/Form997/Vong-co/actions/runs/40697296276). Gói HTML/JSON xuất bản: **29 tệp, 462.065 byte** tại lần build này.
 
+## Chính sách sử dụng và an ninh mạng (29/10/2026)
+
+Dự án giữ **miễn phí/phi thương mại** ở V3.2. Trang [pháp lý dành cho người đọc](legal.html) đã có trong mã; được xuất bản cùng website khi GitHub Pages triển khai thành công. Nội dung có đường dẫn đến [quy định pháp lý](../../docs/phap-ly-an-ninh-mang-v3.2.md), [quyền riêng tư](../../PRIVACY.md), [an ninh](../../SECURITY.md), [quyền và giấy phép](../../RIGHTS_AND_LICENSING.md), [cổng thương mại](../../docs/quy-trinh-thuong-mai-hoa.md) và [ứng phó sự cố](../../docs/quy-trinh-ung-pho-su-co.md).
+
+**Mục đích là minh bạch, không tự cấp chứng nhận.** GitHub Pages có thể ghi địa chỉ IP phục vụ an ninh; mã trang không triển khai tracker, đăng ký hay thanh toán. Trước khi đưa website sang thu phí/API thương mại, đánh giá pháp luật và chuyển hạ tầng phù hợp: [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+
 ## Mở bản công khai hoặc chạy thử V3.2 tại máy
 
 Trên máy có Python 3.11+, mở nhánh `v3.2-development`. Chạy **tại thư mục gốc repository**:
