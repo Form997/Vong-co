@@ -98,7 +98,7 @@ V3.5 bổ sung 48 nhãn theo Nhị Tấn tập II và sổ V2, phân biệt bả
 
 ### Website tự cập nhật bản dựng
 
-Website tạo mã bản dựng theo nội dung sau khi kiểm thử; khi phiên bản mới được triển khai, trang đang mở tự kiểm tra và tải lại. [Cách hoạt động và giới hạn](docs/tu-dong-cap-nhat.md). Mã bản dựng không tự tạo học liệu, quyền hay chứng nhận diễn xướng.
+Website tạo mã bản dựng theo nội dung sau khi kiểm thử; khi phiên bản mới được triển khai, trang đang mở tự kiểm tra và tải lại. [Đã phát hành qua PR #17](https://github.com/Form997/Vong-co/pull/17), [Pages thành công](https://github.com/Form997/Vong-co/actions/runs/40996898637). [Cách hoạt động và giới hạn](docs/tu-dong-cap-nhat.md). Mã bản dựng không tự tạo học liệu, quyền hay chứng nhận diễn xướng.
 
 ## Bắt đầu tại đây
 
