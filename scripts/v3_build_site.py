@@ -9,8 +9,10 @@ included. Run from anywhere: python scripts/v3_build_site.py --out _site
 from __future__ import annotations
 
 import argparse
+import hashlib
 from html import escape
 import json
+import posixpath
 import shutil
 from pathlib import Path
 from urllib.parse import quote, urlsplit
@@ -39,8 +41,47 @@ ALLOWLIST = (
     ("data/v3_4/schema.json", "data/v3_4/schema.json"),
     ("data/v3_5/phrase_index.json", "data/v3_5/phrase_index.json"),
     ("data/v3_5/schema.json", "data/v3_5/schema.json"),
+    ("web/v3/auto-update.js", "web/v3/auto-update.js"),
 )
-BASE_FILES = ("index.html", ".nojekyll", "robots.txt", "sitemap.xml")
+BASE_FILES = ("index.html", ".nojekyll", "robots.txt", "sitemap.xml", "site-version.json")
+REVISION_PLACEHOLDER = "__HAI_DAT_REVISION__"
+
+
+def stamp_site_revision(target: Path) -> str:
+    """Stamp a deterministic revision without hashing the self-referential manifest.
+
+    The digest covers each published path and its bytes, in sorted order, after
+    inserting a fixed placeholder in HTML. Paths and lengths are framed so two
+    different file layouts cannot produce the same concatenated stream.
+    """
+    html_files = sorted(target.rglob("*.html"))
+    for path in html_files:
+        relative = path.relative_to(target).as_posix()
+        script = posixpath.relpath("web/v3/auto-update.js", posixpath.dirname(relative) or ".")
+        html = path.read_text(encoding="utf-8")
+        if html.count("</head>") != 1 or REVISION_PLACEHOLDER in html:
+            raise ValueError(f"Không thể gắn phiên bản an toàn: {relative}")
+        metadata = (f'<meta name="hai-dat-revision" content="{REVISION_PLACEHOLDER}">\n'
+                    f'<script defer src="{escape(script, quote=True)}"></script>\n')
+        path.write_text(html.replace("</head>", metadata + "</head>", 1), encoding="utf-8")
+
+    digest = hashlib.sha256()
+    for path in sorted(p for p in target.rglob("*") if p.is_file()):
+        name = path.relative_to(target).as_posix().encode("utf-8")
+        content = path.read_bytes()
+        digest.update(len(name).to_bytes(8, "big"))
+        digest.update(name)
+        digest.update(len(content).to_bytes(8, "big"))
+        digest.update(content)
+    revision = digest.hexdigest()
+    for path in html_files:
+        html = path.read_text(encoding="utf-8")
+        if html.count(REVISION_PLACEHOLDER) != 1:
+            raise ValueError(f"Không thể gắn phiên bản: {path.relative_to(target)}")
+        path.write_text(html.replace(REVISION_PLACEHOLDER, revision), encoding="utf-8")
+    (target / "site-version.json").write_text(
+        json.dumps({"version": revision}, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+    return revision
 
 LANDING = """<!doctype html>
 <html lang="vi">
@@ -300,6 +341,8 @@ def build(output: Path) -> dict[str, object]:
         page.write_text(render_country_page(country, six_country_data), encoding="utf-8")
     (target / "sitemap.xml").write_text(generate_sitemap(pieces), encoding="utf-8")
 
+    revision = stamp_site_revision(target)
+
     files = sorted(p.relative_to(target).as_posix()
                    for p in target.rglob("*") if p.is_file())
     expected = sorted([destination for _, destination in ALLOWLIST]
@@ -313,6 +356,7 @@ def build(output: Path) -> dict[str, object]:
         "published_files": files,
         "file_count": len(files),
         "total_bytes": sum(p.stat().st_size for p in target.rglob("*") if p.is_file()),
+        "site_revision": revision,
         "pieces": len(pieces),
         "variants": sum(len(x["variants"]) for x in pieces),
         "detail_pages": len(pieces),

@@ -98,7 +98,7 @@ class SixJurisdictionLawTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             site=Path(tmp)/"www"
             result=build(site)
-            self.assertEqual(result["file_count"],42)
+            self.assertEqual(result["file_count"],44)
             self.assertEqual(result["country_law_pages"],6)
             self.assertEqual(result["country_law_source_records"],28)
             for code, obj in COUNTRIES.items():

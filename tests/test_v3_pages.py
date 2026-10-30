@@ -32,12 +32,14 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["pieces"], 20)
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
-            self.assertEqual(result["file_count"], 42)  # 14 base + 20 pieces + 6 country pages
+            self.assertEqual(result["file_count"], 44)  # 16 base + 20 pieces + 6 country pages
             names = set(result["published_files"])
-            self.assertEqual(len(names), 42)
+            self.assertEqual(len(names), 44)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
+            self.assertIn("web/v3/auto-update.js", names)
+            self.assertIn("site-version.json", names)
             for slug in ("my", "nga", "trung-quoc", "uc", "nhat-ban", "han-quoc"):
                 self.assertIn(f"web/v3/quoc-gia/{slug}.html", names)
             self.assertIn("data/v3_2/phrase_index.json", names)

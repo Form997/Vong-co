@@ -96,6 +96,10 @@ V3.4-alpha đã phát hành qua [PR #13](https://github.com/Form997/Vong-co/pull
 
 V3.5 bổ sung 48 nhãn theo Nhị Tấn tập II và sổ V2, phân biệt bản Thủ tập I và phần Tây Thi trên trang chung. Tổng **6 bài, 7 hệ, 300 nhãn**; **14 bài** còn chờ chuẩn hóa. [Hồ sơ nguồn](docs/v3.5-xuan-tinh.md) · [Dữ liệu](data/v3_5/README.md). Đây là chỉ mục nguồn, không phải nghiệm thu diễn xướng; quyền chưa xác minh và 0/20 bài đã nghiệm thu. [PR #15](https://github.com/Form997/Vong-co/pull/15) đã hợp nhất; [Python](https://github.com/Form997/Vong-co/actions/runs/40967193507), [Chromium](https://github.com/Form997/Vong-co/actions/runs/40967193483) và [Pages](https://github.com/Form997/Vong-co/actions/runs/40967193526) thành công. Bản phát hành [25afafb](https://github.com/Form997/Vong-co/tree/25afafb9eea982daf87faaf31fe2412f13af3111): **189 tệp / 1.959.347 byte** chưa nén; website **42 tệp / 1.130.487 byte**.
 
+### Website tự cập nhật bản dựng
+
+Website tạo mã bản dựng theo nội dung sau khi kiểm thử; khi phiên bản mới được triển khai, trang đang mở tự kiểm tra và tải lại. [Cách hoạt động và giới hạn](docs/tu-dong-cap-nhat.md). Mã bản dựng không tự tạo học liệu, quyền hay chứng nhận diễn xướng.
+
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |

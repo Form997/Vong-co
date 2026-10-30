@@ -237,3 +237,10 @@ python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
 **Còn chờ:** 14 bài chưa chuẩn hóa, 0/20 bài nghiệm thu diễn xướng; quyền nhạc, lời và bản thu chưa xác minh. Các kiểm thử phần mềm không thay cho nghiệm thu diễn xướng.
 
 **Phát hành V3.5-alpha:** [PR #15](https://github.com/Form997/Vong-co/pull/15) hợp nhất tại [commit `25afafb`](https://github.com/Form997/Vong-co/tree/25afafb9eea982daf87faaf31fe2412f13af3111): **189 tệp / 1.959.347 byte** chưa nén trong Git tree. [Python 108/108 và 426 liên kết nội bộ trong 31 tài liệu](https://github.com/Form997/Vong-co/actions/runs/40967193507), [Chromium](https://github.com/Form997/Vong-co/actions/runs/40967193483) và [Pages build + deploy](https://github.com/Form997/Vong-co/actions/runs/40967193526) đều thành công. Gói website theo log build: **42 tệp / 1.130.487 byte**. Không có kiểm thử tại máy vì môi trường không khả dụng. Các kết quả này không chứng nhận biểu diễn hoặc quyền.
+
+
+## Cập nhật tự động website — bắt đầu 30/10/2026
+
+Bổ sung mã bản dựng theo nội dung và kiểm tra phiên bản trên các trang đang mở; quy trình GitHub tự kiểm và đóng gói khi nhánh V3 được cập nhật. Đây là phiên bản tính năng phần mềm; dữ liệu học liệu V3.5 và 0/20 nghiệm thu diễn xướng không tự thay đổi. [Phương thức và giới hạn](tu-dong-cap-nhat.md). Kết quả kiểm thử, số tệp và dung lượng bản phát hành sẽ được ghi sau khi các job hoàn tất.
+
+**Bản chụp trước PR:** số tệp 193, tổng 1.977.249 byte chưa nén theo cây Git; gói website thử **44 tệp / 1.137.615 byte**. Kiểm tại máy: **110/110 bài Python**, Chromium kiểm trang mới, bản cũ từ CDN và neo/URL, cùng kiểm thử logic JavaScript. Kết quả CI và triển khai công khai được cập nhật sau khi GitHub xác nhận.

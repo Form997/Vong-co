@@ -14,6 +14,48 @@ async function expectCount(page, count, label) {
   assert.equal(actual, count, label + " expected " + count + ", got " + actual);
 }
 
+// Exercise real browser navigation, including a CDN that briefly serves stale HTML.
+async function checkAutoUpdateNavigation(browser, staleHtml) {
+  const testPage = await browser.newPage();
+  const oldVersion = "a".repeat(64), newVersion = "b".repeat(64);
+  const client = fs.readFileSync("web/v3/auto-update.js", "utf8");
+  let documentLoads = 0, manifestRequests = 0;
+  await testPage.route("http://updates.test/**", async route => {
+    const url = new URL(route.request().url());
+    if (url.pathname.endsWith("/site-version.json")) {
+      manifestRequests++;
+      // Let the first document load before the asynchronous manifest response.
+      await new Promise(resolve => setTimeout(resolve, 150));
+      return route.fulfill({status:200, contentType:"application/json", body:JSON.stringify({version:newVersion})});
+    }
+    if (url.pathname.endsWith("/web/v3/auto-update.js")) {
+      return route.fulfill({status:200, contentType:"application/javascript", body:client});
+    }
+    if (route.request().isNavigationRequest()) {
+      documentLoads++;
+      const version = !staleHtml && url.searchParams.has("hai_dat_version") ? newVersion : oldVersion;
+      const html = `<meta name="hai-dat-revision" content="${version}"><script src="../../web/v3/auto-update.js"></script>`;
+      return route.fulfill({status:200, contentType:"text/html", body:html});
+    }
+    return route.abort();
+  });
+  try {
+    await testPage.goto("http://updates.test/Vong-co/bai/05/?lang=vi#cau-37", {waitUntil:"domcontentloaded"});
+    await testPage.waitForURL(url => url.searchParams.get("hai_dat_version") === newVersion, {timeout:8000});
+    await testPage.waitForLoadState("load");
+    // Give an accidental second refresh enough time to occur.
+    await testPage.waitForTimeout(650);
+    const result = new URL(testPage.url());
+    assert.equal(result.searchParams.get("lang"), "vi");
+    assert.equal(result.hash, "#cau-37");
+    assert.equal(documentLoads, 2, "only one automatic refresh for a given revision");
+    assert.ok(manifestRequests >= 2, "both old and refreshed pages check the manifest");
+    assert.equal(await testPage.locator('meta[name="hai-dat-revision"]').getAttribute("content"), staleHtml ? oldVersion : newVersion);
+  } finally {
+    await testPage.close();
+  }
+}
+
 async function run() {
   const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   const page = await browser.newPage({
@@ -318,6 +360,10 @@ async function run() {
     await page.locator("#cau-01 summary").click();
     await page.screenshot({path:"browser-evidence/v3-lesson-mobile.png", fullPage:true});
     console.log("PASS: saved mobile/tablet/desktop home and lesson visual snapshots");
+
+    await checkAutoUpdateNavigation(browser, false);
+    await checkAutoUpdateNavigation(browser, true);
+    console.log("PASS: automatic version refresh preserves query/hash and avoids stale-cache loops");
   } finally {
     await browser.close();
   }

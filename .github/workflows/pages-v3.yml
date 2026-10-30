@@ -6,35 +6,6 @@ on:
       - v3-development
       - v3.1-development
       - v3.2-development
-    paths:
-      - ".github/workflows/pages-v3.yml"
-      - "web/v3/**"
-      - "data/v3/**"
-      - "data/v3_2/**"
-      - "data/v3_3/**"
-      - "data/v3_4/**"
-      - "data/v3_5/**"
-      - "scripts/v3_5_validate.py"
-      - "tests/test_v3_5_phrases.py"
-      - "scripts/v3_4_validate.py"
-      - "tests/test_v3_4_phrases.py"
-      - "scripts/v3_3_validate.py"
-      - "tests/test_v3_3_phrases.py"
-      - "docs/phap-ly-quoc-te/**"
-      - "scripts/v3_2_country_html.py"
-      - "scripts/v3_2_six_country_validate.py"
-      - "tests/test_v3_2_six_country.py"
-      - "scripts/v3_2_*"
-      - "scripts/v3_build_site.py"
-      - "scripts/v3_validate.py"
-      - "tests/test_v3_pages.py"
-      - "tests/test_v3_2_legal_security.py"
-      - "PRIVACY.md"
-      - "SECURITY.md"
-      - "RIGHTS_AND_LICENSING.md"
-      - "docs/phap-ly-an-ninh-mang-v3.2.md"
-      - "docs/quy-trinh-thuong-mai-hoa.md"
-      - "docs/quy-trinh-ung-pho-su-co.md"
   workflow_dispatch:
 
 permissions:
@@ -93,7 +64,25 @@ jobs:
           grep -q "hoc-tung-cau" _site/bai/01-luu-thuy-truong/index.html
           grep -q "hoc-tung-cau" _site/bai/20-phung-cau/index.html
           test -f _site/.nojekyll
-          test "$(find _site -type f | wc -l)" -eq 42
+          test -s _site/site-version.json
+          test -s _site/web/v3/auto-update.js
+      - name: Cai Node va Chromium cho kiem thu truoc trien khai
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Cai Playwright va Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Kiem logic tu dong cap nhat
+        run: node --test tests/auto_update.test.cjs
+      - name: Kiem tra Chromium voi dung goi website
+        shell: bash
+        run: |
+          python3 -m http.server 8765 --directory _site --bind 127.0.0.1 >/tmp/hai-dat-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          node tests/v3_browser.cjs
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v4
         with:
@@ -115,6 +104,20 @@ jobs:
       pages: write
       id-token: write
     steps:
+      - name: Chi trien khai commit moi nhat cua V3
+        id: current
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          latest=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/v3-development" --jq .object.sha)
+          if [ "$latest" = "$GITHUB_SHA" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "Bo qua ban dung cu; commit moi hon se duoc xu ly."
+          fi
       - name: Xuat ban len GitHub Pages
         id: deployment
+        if: steps.current.outputs.publish == 'true'
         uses: actions/deploy-pages@v4
