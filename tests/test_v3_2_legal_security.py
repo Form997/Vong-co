@@ -129,7 +129,7 @@ class LegalSecurityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             result=build(Path(tmp)/"site")
             self.assertEqual(result["status"], "pass")
-            self.assertEqual(result["file_count"],42)
+            self.assertEqual(result["file_count"],44)
             self.assertIn("web/v3/legal.html",result["published_files"])
             self.assertFalse(result["includes_rights_restricted_media"])
 

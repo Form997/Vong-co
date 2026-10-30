@@ -73,7 +73,8 @@ jobs:
             docs/phap-ly-quoc-te/han-quoc.md \
             docs/v3.3-khoi-dong.md data/v3_3/README.md \
             docs/v3.4-co-ban.md data/v3_4/README.md \
-            docs/v3.5-xuan-tinh.md data/v3_5/README.md
+            docs/v3.5-xuan-tinh.md data/v3_5/README.md \
+            docs/tu-dong-cap-nhat.md
 
       - name: Trich JavaScript cua giao dien V3
         run: |
@@ -105,6 +106,9 @@ jobs:
 
       - name: Kiem tra cu phap JavaScript bang Node.js
         run: node --check /tmp/hai-dat-v3-ui.js
+
+      - name: Kiem hanh vi tu dong cap nhat
+        run: node --test tests/auto_update.test.cjs
 
       - name: Do dung luong V1 V2 V3 bang GitHub API
         env:

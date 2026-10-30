@@ -139,7 +139,7 @@ class V33SourceIndexTests(unittest.TestCase):
             dst=Path(temp)/"site"
             result=build(dst)
             self.assertEqual(result["status"],"pass")
-            self.assertEqual(result["file_count"],42)
+            self.assertEqual(result["file_count"],44)
             self.assertEqual(result["indexed_lesson_pieces"],6)
             self.assertEqual(result["indexed_lesson_phrases"],300)
             self.assertFalse(result["includes_rights_restricted_media"])
