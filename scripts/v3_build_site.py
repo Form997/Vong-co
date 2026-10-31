@@ -92,7 +92,7 @@ LANDING = """<!doctype html>
   <meta name="robots" content="index,follow">
   <meta name="description" content="HAI ĐẤT — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, bảo tồn nguồn gốc và dị bản.">
   <meta http-equiv="refresh" content="0;url=web/v3/">
-  <title>HAI ĐẤT V3.5 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.6 · Thư viện 20 bản Tổ</title>
   <link rel="canonical" href="https://form997.github.io/Vong-co/web/v3/">
 </head>
 <body><main>
@@ -241,7 +241,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#f6f4ee">
   <link rel="canonical" href="{url}">
-  <title>{title} · Bản Tổ số {piece['id']:02d} | HAI ĐẤT V3.5</title>
+  <title>{title} · Bản Tổ số {piece['id']:02d} | HAI ĐẤT V3.6</title>
   <style>{CSS}{LESSON_CSS}</style>
 </head><body>
 <header class="top"><div class="container">
@@ -250,7 +250,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
 </div></header>
 <main class="container">
  <section class="detail-hero" aria-label="Giới thiệu tác phẩm">
- <span class="eyebrow">{family} · Bản Tổ số {piece['id']:02d} · V3.5</span>
+ <span class="eyebrow">{family} · Bản Tổ số {piece['id']:02d} · V3.6</span>
  <h1>{title}</h1>
  <p class="lead">Một bản Tổ có thể có nhiều hệ câu, lớp và dị bản. Trang này giúp lần theo
  nguồn và ghi rõ điều chưa được người thực hành thẩm định.</p>
@@ -286,7 +286,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
  <nav class="actions" aria-label="Chuyển bài">{' '.join(nav_links)}</nav>
 </main>
 <footer><div class="container">HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.
- · V3.5 · Thư viện di sản âm nhạc · Không thay thế chứng nhận chuyên môn
+ · V3.6 · Thư viện di sản âm nhạc · Không thay thế chứng nhận chuyên môn
  · <a href="../../web/v3/legal.html">Pháp lý, quyền riêng tư và an ninh mạng</a></div></footer>
 </body></html>
 """
@@ -381,7 +381,7 @@ def build(output: Path) -> dict[str, object]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Đóng gói an toàn trang tra cứu V3.5")
+    parser = argparse.ArgumentParser(description="Đóng gói an toàn trang tra cứu V3.6")
     parser.add_argument("--out", required=True, type=Path)
     args = parser.parse_args()
     try:
