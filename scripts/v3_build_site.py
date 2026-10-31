@@ -25,6 +25,7 @@ from v3_2_lesson_html import render_lesson, render_lessons, LESSON_CSS
 from v3_2_legal_validate import validate_all as validate_legal_publication
 from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
 from v3_2_country_html import COUNTRIES, render_country_page
+from v3_family_pages import FAMILIES, page_for_family
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/v3-development/"
@@ -219,6 +220,8 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
             f'<a href="{source}" target="_blank" rel="noopener noreferrer">Đọc nguồn được dẫn ↗</a></article>'
         )
     nav_links = ['<a href="../../web/v3/">← Tất cả 20 bài</a>']
+    family_slug = next(slug for slug, label, *_ in FAMILIES if label == piece["family_label"])
+    nav_links.append(f'<a href="../../nhom/{family_slug}/">Nhóm {family} ↗</a>')
     if previous_piece:
         nav_links.append('<a rel="prev" href="../' + quote(previous_piece["slug"],safe="-") + '/">← Bài '
                          + str(previous_piece["id"]).zfill(2) + '</a>')
@@ -292,6 +295,7 @@ def page_for_piece(piece: dict, previous_piece: dict | None, next_piece: dict | 
 def generate_sitemap(pieces: list[dict]) -> str:
     urls = ([BASE_URL, BASE_URL + "web/v3/", BASE_URL + "web/v3/legal.html"] +
             [BASE_URL + "web/v3/quoc-gia/" + info[2] + ".html" for info in COUNTRIES.values()] +
+            [BASE_URL + "nhom/" + slug + "/" for slug, *_ in FAMILIES] +
             [piece_url(p) for p in pieces])
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -335,6 +339,11 @@ def build(output: Path) -> dict[str, object]:
                                   pieces[i+1] if i+1 < len(pieces) else None,
                                   lesson_by_piece.get(p["id"])),
                         encoding="utf-8")
+    for group_slug, *_ in FAMILIES:
+        page = target / "nhom" / group_slug / "index.html"
+        page.parent.mkdir(parents=True, exist_ok=True)
+        page.write_text(page_for_family(group_slug, pieces, BASE_URL, REPO_BLOB, CSS),
+                        encoding="utf-8")
     for country, (_, _, slug) in COUNTRIES.items():
         page = target / "web" / "v3" / "quoc-gia" / f"{slug}.html"
         page.parent.mkdir(parents=True, exist_ok=True)
@@ -348,6 +357,7 @@ def build(output: Path) -> dict[str, object]:
     expected = sorted([destination for _, destination in ALLOWLIST]
                       + list(BASE_FILES)
                       + [f"bai/{p['slug']}/index.html" for p in pieces]
+                      + [f"nhom/{slug}/index.html" for slug, *_ in FAMILIES]
                       + [f"web/v3/quoc-gia/{info[2]}.html" for info in COUNTRIES.values()])
     if files != expected:
         raise RuntimeError("Tệp xuất bản khác allowlist; từ chối: " + repr(files))
@@ -360,6 +370,7 @@ def build(output: Path) -> dict[str, object]:
         "pieces": len(pieces),
         "variants": sum(len(x["variants"]) for x in pieces),
         "detail_pages": len(pieces),
+        "family_pages": len(FAMILIES),
         "country_law_pages": len(COUNTRIES),
         "country_law_source_records": len(six_country_data["sources"]),
         "indexed_lesson_pieces": len(lesson_by_piece),

@@ -32,9 +32,10 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["pieces"], 20)
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
-            self.assertEqual(result["file_count"], 44)  # 16 base + 20 pieces + 6 country pages
+            self.assertEqual(result["family_pages"], 4)
+            self.assertEqual(result["file_count"], 48)  # 18 base + 20 pieces + 6 country pages + 4 family pages
             names = set(result["published_files"])
-            self.assertEqual(len(names), 44)
+            self.assertEqual(len(names), 48)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
@@ -52,6 +53,8 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertIn("data/v3_5/schema.json", names)
             for item in self.catalog:
                 self.assertIn(f'bai/{item["slug"]}/index.html', names)
+            for group in ("sau-bac", "bay-le", "ba-nam", "bon-oan"):
+                self.assertIn(f"nhom/{group}/index.html", names)
             self.assertFalse(any(p.startswith(("ban-to/", "docs/", ".github/", "tests/", "scripts/")) for p in names))
             self.assertFalse(any(p.endswith((".mp3", ".pdf", ".zip", ".wav", ".py", ".md")) for p in names))
             self.assertFalse(result["includes_rights_restricted_media"])
@@ -60,12 +63,14 @@ class V31PagesBuildTests(unittest.TestCase):
 
     def test_sitemap_contains_all_20_canonical_pages(self):
         sitemap = generate_sitemap(self.catalog)
-        self.assertEqual(sitemap.count("<url>"), 29)  # root, browser, legal page, 6 countries, 20 pieces
+        self.assertEqual(sitemap.count("<url>"), 33)  # root, browser, legal, 6 countries, 20 pieces, 4 groups
         self.assertIn("/Vong-co/web/v3/legal.html", sitemap)
         for slug in ("my", "nga", "trung-quoc", "uc", "nhat-ban", "han-quoc"):
             self.assertIn(f"/Vong-co/web/v3/quoc-gia/{slug}.html", sitemap)
         for item in self.catalog:
             self.assertIn(f'/Vong-co/bai/{item["slug"]}/', sitemap)
+        for group in ("sau-bac", "bay-le", "ba-nam", "bon-oan"):
+            self.assertIn(f"/Vong-co/nhom/{group}/", sitemap)
 
     def test_page_has_sources_and_explicit_not_approved(self):
         for item in self.catalog:
@@ -118,7 +123,8 @@ class V31PagesBuildTests(unittest.TestCase):
                              "/web/v3/quoc-gia/my.html", "/web/v3/quoc-gia/nga.html",
                              "/web/v3/quoc-gia/trung-quoc.html", "/web/v3/quoc-gia/uc.html",
                              "/web/v3/quoc-gia/nhat-ban.html", "/web/v3/quoc-gia/han-quoc.html",
-                             "/sitemap.xml"):
+                             "/nhom/sau-bac/", "/nhom/bay-le/", "/nhom/ba-nam/",
+                             "/nhom/bon-oan/", "/sitemap.xml"):
                     with self.subTest(path=path):
                         with urlopen(root_url + path, timeout=5) as response:
                             self.assertEqual(response.status, 200)

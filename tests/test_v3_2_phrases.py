@@ -153,7 +153,7 @@ class PhraseLessonsTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp)/"site"
             result = build(target)
-            self.assertEqual(result["file_count"], 44)
+            self.assertEqual(result["file_count"], 48)
             self.assertEqual(result["indexed_lesson_pieces"], 6)
             self.assertEqual(result["indexed_lesson_phrases"], 300)
             a = (target/"bai/01-luu-thuy-truong/index.html").read_text(encoding="utf-8")
