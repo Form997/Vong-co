@@ -151,7 +151,7 @@ class V33SourceIndexTests(unittest.TestCase):
                 cat=self.cat["items"][n-1]
                 html=(dst/"bai"/cat["slug"]/"index.html").read_text(encoding="utf-8")
                 self.assertEqual(html.count('class="phrase-row"'),count)
-                self.assertIn("V3.5",html)
+                self.assertIn("V3.6",html)
             html=(dst/"bai"/self.cat["items"][17]["slug"]/"index.html").read_text(encoding="utf-8")
             self.assertNotIn('class="phrase-row"',html)
             self.assertIn("chưa chuẩn hóa",html)
