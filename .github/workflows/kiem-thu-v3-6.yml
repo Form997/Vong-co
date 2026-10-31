@@ -1,14 +1,10 @@
 name: "V3.6 - Kiem thu thu thap nguon an toan"
 
 on:
+  # Always report 'offline-tests' for any PR to protected branches.
+  # Without this, path-filtered documentation PRs never produce the required check.
   pull_request:
     branches: [main, v3-development]
-    paths:
-      - "scripts/v3_6_discover.py"
-      - "tests/test_v3_6_discovery.py"
-      - "data/v3_6/**"
-      - ".github/workflows/nguon-moi-v3-6.yml"
-      - ".github/workflows/kiem-thu-v3-6.yml"
   push:
     branches: [main, v3-development]
     paths:
