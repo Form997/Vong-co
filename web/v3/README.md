@@ -1,5 +1,7 @@
 > **Cập nhật phát hành V3.5 · 31/10/2026:** Website tra cứu đang sử dụng bộ chỉ mục **300 nhãn câu / 7 hệ / 6 bài**, có 48 nhãn Xuân Tình Chấn (`XTC-48-4`). Đây là **dữ liệu chỉ vị trí nguồn**, không phải bản ký âm, lời ca hoặc âm thanh đã nghiệm thu; **0/20** bài được nghiệm thu diễn xướng và quyền tái phát vẫn cần xác minh. Bộ kiểm thử V3.5 và quy trình GitHub Pages đã [chạy thành công ngày 30/10/2026](https://github.com/Form997/Vong-co/actions/runs/40997372703). Xem [hồ sơ V3.5](../../docs/v3.5-xuan-tinh.md), [chỉ mục V3.5](../../data/v3_5/README.md) và [hướng dẫn triển khai nhiều nhánh](https://github.com/Form997/Vong-co/blob/main/docs/v3.5-huong-dan-trien-khai-nhieu-nhanh.md). Mỗi lần cập nhật website chỉ được xác nhận sau khi GitHub Actions báo deploy thành công.
 
+> **V3.6 — cập nhật nguồn từ Internet có kiểm duyệt (31/10/2026):** Crossref đã được quét trên nhánh `main`, mở [Issue #23](https://github.com/Form997/Vong-co/issues/23) để người đọc đối chiếu; OpenAlex tùy chọn khóa riêng. Đường dẫn từ trang chủ mới chỉ mở **hồ sơ chờ duyệt**, không tự thay đổi 300 nhãn chỉ mục V3.5. [Hướng dẫn V3.6](https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md).
+
 # HAI ĐẤT V3.2 — Thư viện tra cứu và HỌC THEO NHÃN CÂU CÓ NGUỒN
 
 **Ngày bắt đầu V3.2:** 28/10/2026.  
