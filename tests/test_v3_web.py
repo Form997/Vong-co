@@ -46,6 +46,13 @@ class V3WebTests(unittest.TestCase):
         self.assertIn('const DATA_URL = "../../data/v3/catalog.json";', self.html)
         self.assertTrue((ROOT / "data/v3/catalog.json").is_file())
 
+    def test_v36_source_review_never_autopublishes(self):
+        self.assertIn('class="v36-sources"', self.html)
+        self.assertIn("issues/23", self.html)
+        self.assertIn("Crossref", self.html)
+        self.assertIn("không tự", self.html)
+        self.assertIn("0/20", self.html)
+
     def test_four_group_filters(self):
         for label in ("sau-bac", "bay-le", "ba-nam", "bon-oan"):
             with self.subTest(label=label):
