@@ -28,6 +28,8 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 > [!NOTE]
 > **Website V3.0 đã được GitHub Pages triển khai thành công ngày 28/10/2026**: [mở trang tra cứu công khai](https://form997.github.io/Vong-co/) · [minh chứng Deploy](https://github.com/Form997/Vong-co/actions/runs/40675923989). **V3.1 đã triển khai công khai** qua [GitHub Pages run #40689588576](https://github.com/Form997/Vong-co/actions/runs/40689588576). **V3.2 đã được hợp nhất qua [Pull Request #8](https://github.com/Form997/Vong-co/pull/8) và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40694415309)** ngày 28/10/2026. Giao diện và hồ sơ nghiên cứu **không tương đương nghiệm thu âm nhạc**.
 
+> **V3.6 · 31/10/2026 — Tự dò nguồn nghiên cứu có kiểm định:** robot đã chạy trên `main` bằng Crossref; kết quả được giữ ở [Issue #23 – nguồn chờ duyệt](https://github.com/Form997/Vong-co/issues/23), không tự sửa các bài bản. [Hướng dẫn tự động cập nhật và bảo vệ nhánh](https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md). Bốn trang nhóm, 20 trang bài vẫn có thể tra cứu; **0/20 nghiệm thu diễn xướng**.
+
 ---
 
 ### V3.1 — 20 trang riêng, tra cứu rõ nguồn, triển khai có kiểm soát
