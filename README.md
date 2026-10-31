@@ -12,6 +12,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
   <a href="docs/v3.4-co-ban.md">V3.4-alpha</a> ·
   <a href="docs/v3.3-khoi-dong.md">V3.3-alpha</a> ·
   <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
+  <a href="docs/v3.5-huong-dan-trien-khai-nhieu-nhanh.md">Triển khai nhiều nhánh</a> ·
   <a href="CONTRIBUTING.md">Đóng góp</a>
 </p>
 
