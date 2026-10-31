@@ -1,0 +1,37 @@
+name: "V3.6 - Kiem thu thu thap nguon an toan"
+
+on:
+  pull_request:
+    branches: [main, v3-development]
+    paths:
+      - "scripts/v3_6_discover.py"
+      - "tests/test_v3_6_discovery.py"
+      - "data/v3_6/**"
+      - ".github/workflows/nguon-moi-v3-6.yml"
+      - ".github/workflows/kiem-thu-v3-6.yml"
+  push:
+    branches: [main, v3-development]
+    paths:
+      - "scripts/v3_6_discover.py"
+      - "tests/test_v3_6_discovery.py"
+      - "data/v3_6/**"
+      - ".github/workflows/nguon-moi-v3-6.yml"
+      - ".github/workflows/kiem-thu-v3-6.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile and test V3.6 scanner
+        run: |
+          python -m compileall -q scripts/v3_6_discover.py tests/test_v3_6_discovery.py
+          python -m unittest discover -s tests -p "test_v3_6_discovery.py" -v
