@@ -13,6 +13,7 @@
 | **V3.0-alpha — Dữ liệu tra cứu có chứng cứ** | **28/10/2026**, có commit khởi động riêng | JSON **20 bài + 30 hệ bản/dị bản**, lược đồ JSON, validator, trang tra cứu tiếng Việt trên điện thoại; **39 phép thử và 170 liên kết nội bộ đạt trên GitHub Actions**; chưa có bản thu/âm nhạc nghiệm thu hoặc website Pages đã triển khai | **1.055,84 KiB** (1.081.181 byte) | 133 |
 | **V3.1 — 20 trang bài có thể tra cứu độc lập** | **28/10/2026**, nhánh khởi động `v3.1-development` | **20 trang HTML sinh tự động**, 3 mức lọc chứng cứ, A–Z tiếng Việt, liên kết nguồn V2, sitemap; **45 bài Python và Chromium đạt, Pages đã triển khai** | **1.111,14 KiB** (1.137.811 byte) | 140 |
 | **V3.2 — Học từng câu có dấu vết nguồn** | **28/10/2026**, tạo `v3.2-development` | **72 nhãn câu thuộc 2 hệ riêng**, lớp và trang đối chiếu V2, phiếu thực hành, quy chế 5 tầng, chống bịa MIDI/âm thanh và trộn dị bản; **Pages đã triển khai thành công** | **1.225,20 KiB** (1.254.609 byte) | 150 |
+| **V3.6 — Nguồn Internet chờ thẩm định** | **31/10/2026**, quét Crossref trên `main`, website V3.6 từ `v3-development` | Crossref metadata miễn phí, OpenAlex tùy chọn; tạo Issue chờ kiểm, kiểm thử offline; giao diện liên kết nguồn mới, giữ 20 trang bài + 4 trang nhóm và 300 nhãn V3.5 | **1.947,98 KiB** (1.994.731 byte) tại snapshot `baaa7aa` | 195 |
 
 ### Mốc đo và bằng chứng
 
@@ -246,3 +247,19 @@ Bổ sung mã bản dựng theo nội dung và kiểm tra phiên bản trên cá
 **Bản chụp trước PR:** số tệp 193, tổng 1.977.249 byte chưa nén theo cây Git; gói website thử **44 tệp / 1.137.615 byte**. Kiểm tại máy: **110/110 bài Python**, Chromium kiểm trang mới, bản cũ từ CDN và neo/URL, cùng kiểm thử logic JavaScript. Kết quả CI và triển khai công khai được cập nhật sau khi GitHub xác nhận.
 
 **Phát hành:** [PR #17](https://github.com/Form997/Vong-co/pull/17) hợp nhất tại [commit `ae1fd26`](https://github.com/Form997/Vong-co/tree/ae1fd260e0ae65b4ef800797404d9c3a61047ca3). Cây Git tại commit phát hành: **193 tệp / 1.977.249 byte** chưa nén; website **44 tệp / 1.137.615 byte**. [Python 110/110](https://github.com/Form997/Vong-co/actions/runs/40996898770), [Chromium](https://github.com/Form997/Vong-co/actions/runs/40996898698) và [Pages với kiểm tra Chromium trước triển khai](https://github.com/Form997/Vong-co/actions/runs/40996898637) thành công. Website trả mã bản dựng `3cbbd409873a28649810e956257bd41b0bc5d31988522aeb2fdf2e6e3e9004a9`. Kết quả này không xác nhận quyền hoặc diễn xướng.
+
+
+## V3.6 — Robot tìm nguồn học thuật và công bố cổng chờ kiểm
+
+**Ngày bắt đầu:** 31/10/2026. V3.6 là một bước nâng cấp **tính năng tìm nguồn và duyệt nguồn**, KHÔNG phải đợt nghiệm thu âm nhạc hoặc thêm nhãn câu đã chứng minh.
+
+- **Scanner được thử và triển khai trên main:** [PR #22](https://github.com/Form997/Vong-co/pull/22), commit [df626e0](https://github.com/Form997/Vong-co/commit/df626e0ba4d05420208bf9a77d789b74c9f6eab1). Crossref công khai được quét, OpenAlex có thể bổ sung bằng API key riêng; không bắt buộc có khóa và không cần server trả phí.
+- **Lần quét đầu tiên:** [workflow run #41203941847](https://github.com/Form997/Vong-co/actions/runs/41203941847) thành công ngày 31/10/2026, phát hiện **9 ứng viên metadata DOI**, đưa vào [Issue #23](https://github.com/Form997/Vong-co/issues/23) chờ người có chuyên môn xem xét. **9 ứng viên không phải 9 tài liệu đã được xác thực hoặc có quyền tái phân phối.**
+- **Website V3.6:** [PR #24](https://github.com/Form997/Vong-co/pull/24), commit [baaa7aa](https://github.com/Form997/Vong-co/commit/baaa7aa531f1ebf92f7f68f74e11fd6a21ec36a7). Thêm mục dẫn tới hàng chờ nguồn nghiên cứu trên trang chính, giữ dữ liệu 300 nhãn V3.5, 20 trang bài và bốn trang Sáu Bắc/Bảy Lễ/Ba Nam/Bốn Oán.
+- **Kiểm thử & phát hành:** [GitHub Pages run #41204266481](https://github.com/Form997/Vong-co/actions/runs/41204266481) thành công. [Python CI #41204266444](https://github.com/Form997/Vong-co/actions/runs/41204266444) và [Chromium #41204266469](https://github.com/Form997/Vong-co/actions/runs/41204266469) đạt.
+- **Giới hạn bảo mật:** Robot mặc định chỉ đọc repository và tạo/cập nhật Issue; không có quyền thay đổi dữ liệu chính thức hoặc tự merge. **Branch Rulesets phải do chủ kho bật tại Settings**; việc ghi tài liệu không bảo đảm quy tắc đã hoạt động.
+- **Mức thẩm định:** 0/20 bài nghiệm thu diễn xướng. Không tự chép bản nhạc, lời, PDF hay âm thanh của bên thứ ba.
+
+**Dung lượng đo được:** tại snapshot commit [baaa7aa](https://github.com/Form997/Vong-co/tree/baaa7aa531f1ebf92f7f68f74e11fd6a21ec36a7), Git Trees API trả **195 Git blobs**, tổng **1.994.731 byte = 1.947,98 KiB**. Đây là tổng tệp theo cây Git **trước khi thêm biên bản này**, không phải dung lượng ZIP hoặc tập âm thanh, và không phải tổng dung lượng lịch sử Git.
+
+[Hướng dẫn cài đặt, khóa và thẩm định V3.6](https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md).
