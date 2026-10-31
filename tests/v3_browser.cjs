@@ -112,6 +112,19 @@ async function run() {
     await page.locator('button.tab[data-group="all"]').click();
     await expectCount(page, 20, "Reset filter");
     console.log("PASS: 6/7/3/4 family filters");
+    // Four dedicated family pages must be navigable, source-linked and return 200.
+    for (const [group, count] of groups) {
+      const familyLink = page.locator('.group-directory-grid a[href="../../nhom/' + group + '/"]');
+      assert.equal(await familyLink.count(), 1, "Group link missing: " + group);
+      const url = new URL("../../nhom/" + group + "/", BASE).toString();
+      const response = await page.request.get(url);
+      assert.equal(response.status(), 200, "Family page HTTP: " + group);
+      const markup = await response.text();
+      assert.ok(markup.includes("0/20"), "Family disclaimer: " + group);
+      assert.equal((markup.match(/class="family-piece"/g) || []).length, count,
+        "Family page count: " + group);
+    }
+    console.log("PASS: four standalone family group pages via HTTP");
 
     // Evidence selector returns only pieces with this kind of evidence.
     const catalogResponse = await page.request.get(new URL("../../data/v3/catalog.json", BASE).toString());
