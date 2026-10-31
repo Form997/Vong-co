@@ -26,6 +26,8 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 > [!IMPORTANT]
 > **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
+> **V3.6 · 31/10/2026 — Quét nguồn học thuật có kiểm duyệt:** Crossref công khai và OpenAlex tùy chọn; GitHub Actions trên `main` tự tìm metadata, đưa vào Issue/Artifact **chờ kiểm** và không tự chỉnh sửa bài bản hoặc phát hành âm thanh. [Hướng dẫn V3.6](docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md). Trạng thái nghiệm thu: **0/20**.
+
 ---
 
 ## Bắt đầu tại đây

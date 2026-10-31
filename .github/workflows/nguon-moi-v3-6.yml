@@ -1,0 +1,75 @@
+name: "V3.6 - Tim nguon Internet cho duyet"
+
+on:
+  schedule:
+    # 02:17 UTC = 09:17 Viet Nam; GitHub may delay scheduled runs.
+    - cron: "17 2 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/v3_6_discover.py"
+      - "data/v3_6/source_queries.json"
+      - ".github/workflows/nguon-moi-v3-6.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: hai-dat-v3-6-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout default branch only
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Offline security tests before requesting Internet
+        run: python -m unittest discover -s tests -p "test_v3_6_discovery.py" -v
+      - name: Fetch bounded scholarly metadata only
+        id: scan
+        shell: bash
+        run: |
+          python scripts/v3_6_discover.py \
+            --out "$RUNNER_TEMP/v3_6_pending_review.json" \
+            --issue-body "$RUNNER_TEMP/v3_6_issue.md"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = json.loads((Path(os.environ["RUNNER_TEMP"]) / "v3_6_pending_review.json").read_text(encoding="utf-8"))
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("has_candidates=" + ("true" if report["candidate_count"] else "false") + "\n")
+          PY
+      - name: Store audit artifact with pending candidates
+        if: steps.scan.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: v3-6-pending-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/v3_6_pending_review.json
+            ${{ runner.temp }}/v3_6_issue.md
+          retention-days: 14
+      - name: Create or update human-review Issue, never touch catalog
+        if: steps.scan.outputs.has_candidates == 'true'
+        shell: bash
+        env:
+          TITLE: "V3.6 — Nguồn Internet chờ kiểm định"
+        run: |
+          number=$(gh issue list --state open --limit 100 --json number,title \
+            --jq '.[] | select(.title == "V3.6 — Nguồn Internet chờ kiểm định") | .number' | head -n 1)
+          if [ -z "$number" ]; then
+            gh issue create --title "$TITLE" --body-file "$RUNNER_TEMP/v3_6_issue.md"
+          else
+            gh issue edit "$number" --body-file "$RUNNER_TEMP/v3_6_issue.md"
+          fi

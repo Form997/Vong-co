@@ -1,0 +1,23 @@
+{
+  "schema_version": "3.6.0-alpha.1",
+  "scope": "metadata_only",
+  "review_policy": "human_required",
+  "auto_publish": false,
+  "query_terms": [
+    "đờn ca tài tử",
+    "don ca tai tu",
+    "vong co music",
+    "southern Vietnamese chamber music"
+  ],
+  "title_match_phrases": [
+    "đờn ca tài tử",
+    "đàn ca tài tử",
+    "don ca tai tu",
+    "vọng cổ",
+    "vong co",
+    "vietnamese chamber music",
+    "southern vietnamese chamber music"
+  ],
+  "per_page": 5,
+  "max_candidates": 25
+}
