@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f6f4ee">
   <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
-  <title>HAI ĐẤT V3.5 · Thư viện 20 bản Tổ</title>
+  <title>HAI ĐẤT V3.6 · Thư viện 20 bản Tổ</title>
   <style>
 
 /* HAI ĐẤT / Heritage Editorial — V3.2 design system. Pure CSS, zero third-party assets. */
@@ -187,6 +187,11 @@ footer p{margin:0;font-size:12px;max-width:850px}
 .group-directory-grid span{font-size:12px;color:var(--muted)}
 @media(max-width:930px){.group-directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.group-directory{margin:-45px 0 58px}.group-directory-grid{grid-template-columns:1fr}.group-directory-grid a{padding:17px}}
+.v36-sources{padding:24px 28px;margin:-64px 0 86px;border:1px solid var(--line);border-left:4px solid var(--jade);border-radius:16px;background:var(--surface)}
+.v36-sources h2{font-size:clamp(25px,2.8vw,33px);margin:7px 0 13px}
+.v36-sources p{font-size:13px;color:var(--muted);line-height:1.85;margin:0 0 14px}
+.v36-sources a{display:inline-block;font-size:13px;font-weight:750;margin-right:22px}
+@media(max-width:700px){.v36-sources{margin:-42px 0 62px;padding:20px}}
 .v33-context{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:-1px 0 26px}
 .v33-context>div{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:13px;background:var(--surface);padding:17px 20px;font-size:12px;color:var(--ink-soft);line-height:1.72}
 .v33-context strong{display:block;color:var(--forest);font-size:13px;margin-bottom:5px}
@@ -251,6 +256,13 @@ footer p{margin:0;font-size:12px;max-width:850px}
         <a href="../../nhom/bon-oan/"><strong>Bốn Oán</strong><span>4 bài · Bài 17–20 · Mở trang nhóm ↗</span></a>
       </nav>
     </section>
+    <section class="v36-sources" aria-labelledby="v36-title">
+      <div class="eyebrow">Nguồn nghiên cứu có kiểm duyệt · V3.6</div>
+      <h2 id="v36-title">Internet tìm nguồn mới, con người kiểm chứng</h2>
+      <p>V3.6 dùng Crossref và OpenAlex tùy chọn để tìm metadata khoa học. Kết quả tự động chỉ vào hàng chờ, không tự điền vào các bài Tổ, không tự đăng lời ca, ký âm hay âm thanh. 300 nhãn câu V3.5 tiếp tục là chỉ mục nguồn đang đối chiếu; 0/20 nghiệm thu diễn xướng.</p>
+      <a href="https://github.com/Form997/Vong-co/issues/23" target="_blank" rel="noopener noreferrer">Xem nguồn Internet chờ duyệt ↗</a>
+      <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md" target="_blank" rel="noopener noreferrer">Quy trình kiểm định và bảo vệ nhánh ↗</a>
+    </section>
     <section id="tra-cuu" aria-labelledby="browse-title">
       <div class="intro">
         <div><div class="eyebrow">Danh mục tư liệu</div><h2 id="browse-title">Khám phá 20 bản Tổ</h2><p>Tìm bài, chọn nhóm nhạc và xem chính xác nguồn nào đang được sử dụng.</p></div>
@@ -304,7 +316,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
   </main>
   <footer><div class="container">
     <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
-    <p>V3.5-alpha · Xuân Tình Chấn · 29/10/2026 · Dữ liệu nghiên cứu, không phải thư viện biểu diễn được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <p>Website V3.6 · Quét nguồn có kiểm duyệt từ 31/10/2026 · Chỉ mục câu V3.5 vẫn chờ đối chứng · Không phải thư viện biểu diễn được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
     <div class="footer-links"><a href="legal.html">Pháp lý &amp; quyền riêng tư</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/v3-development/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
   </div></footer>
   <script>
