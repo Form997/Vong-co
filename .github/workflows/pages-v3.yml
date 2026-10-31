@@ -48,6 +48,10 @@ jobs:
           test -s _site/index.html
           test -s _site/web/v3/index.html
           test -s _site/web/v3/legal.html
+          for group in sau-bac bay-le ba-nam bon-oan; do
+            test -s "_site/nhom/$group/index.html"
+            grep -q "0/20" "_site/nhom/$group/index.html"
+          done
           test -s _site/data/v3_3/phrase_index.json
           test -s _site/data/v3_3/schema.json
           test -s _site/data/v3_4/phrase_index.json
