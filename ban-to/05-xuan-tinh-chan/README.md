@@ -1,5 +1,19 @@
 # BẢN TỔ 05 — XUÂN TÌNH CHẤN (XUÂN TÌNH CHẦN)
 
+## NGHIỆM THU V2 — BÀI 05 (27/10/2026)
+
+**[Biên bản nghiệm thu V2 — Xuân Tình Chấn](v2-bien-ban-nghiem-thu.md)** và **[sổ kiểm nguồn 48 câu](v2-ra-soat-48-cau.md)**.
+
+- Nguồn Nhị Tấn **tập II, trang in 140–147** có **48 câu nhạc + 48 câu lời** (*Kiều vãng Trọng hiên*, ghi Nguyễn Văn Thinh 1955), nhịp tư, song lang 3–4, lớp **14–16–10–8**.
+- Bản Văn Dần cũng có 48 câu nhạc/lời; khác **chữ nhạc câu 37** (cụm “Là Hò Líu” ở sách, “Hò Líu” ở blog) và có các vị trí lời ca phải làm rõ (05,11,23,26,30).
+- **Nhị Tấn tập I có *Thủ Xuân Tình Chấn***, khác bản trong tập II; không gộp lời *Anh hùng Lý Thường Kiệt* vào lời *Kiều vãng Trọng hiên*.
+- Trong đợt này PDF Viện Âm nhạc không mở được để tái kiểm metadata; giữ thông tin V1 **chưa tái xác nhận**.
+- **ĐẠT bước kiểm văn bản (48/48 chỉ mục); CHỜ NGHIỆM THU diễn xướng (0/48)**. Chưa có người kiểm phách/ngón/song lang và giấy phép sử dụng.
+
+> Phần phía dưới thuộc hồ sơ nghiên cứu V1 tham chiếu, **không phải phán quyết nghiệm thu của V2**.
+
+---
+
 **Hệ:** Sáu Bắc · **Bản tham chiếu:** 48 câu nhịp tư · **Cập nhật:** 26/10/2026.  
 **Trạng thái:** Có bản chữ nhạc và lời ca đánh số 48 câu từ nguồn nêu tác giả; chưa phiên âm MusicXML, chưa duyệt từng phách, chưa có quyền sao chép toàn văn hoặc MP3.
 

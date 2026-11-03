@@ -1,5 +1,20 @@
 # BẢN TỔ 17 — TỨ ĐẠI OÁN
 
+## V2 — NGHIỆM THU KIỂM NGUỒN TỨ ĐẠI OÁN (28/10/2026)
+
+**[Biên bản V2 — 11 phát hiện](v2-bien-ban-nghiem-thu.md)** · **[Sổ 38 câu có trang ký âm/lời và lỗi nhãn nguồn](v2-ra-soat-38-cau.md)**.
+
+**ĐÍNH CHÍNH CÓ BẰNG CHỨNG SO VỚI V1:** Đã tìm và **xem ảnh trực tiếp** sách **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (1997)**, có **38 câu ký âm Tứ Đại Oán nhịp tám, song lang 6–8** ở trang in **302/304/306/308**, kèm **38 câu lời *Bá Lý Hề*** ở **303/305/307/309**. Đầu phần lời tr.303 ghi **“Soạn lời: Trần Quan Quờn”** theo đúng mặt chữ sách. V1 trước đó ghi **chưa kiểm được bản ký âm 38 câu đầy đủ**, kết luận thiếu nguồn này nay **đã được giải quyết**, nhưng **chưa kiểm theo bản thu, phách và kỹ thuật thực tấu**.
+
+- **Khúc thức bản in 7 lớp:** **Thủ (1–6), Xang dài 1 (7–14), Xang dài 2 (15–22), Xang vắn 1 (23–26), Xang vắn 2 (27–30), Hồi thủ (31–34), Xang dứt (35–38)**. Tổng **6+8+8+4+4+4+4=38**. **Không tự gộp lớp nhỏ thành một sơ đồ số câu khác**.
+- **Tứ Đại Vắn 19 câu nhịp tư, song lang 3–4** ở ngay trước Tứ Đại Oán trong tập IV tr.300–302, là **hệ nhạc khác**. Không dùng ký âm Vắn để tự dựng nốt nhịp tám.
+- **Lời xưa *Bùi Kiệm, Bùi Ông, Nguyệt Nga*** có ở **Nhị Tấn tập II, phụ lục tr.181–184**; sách ghi mốc **Mỹ Tho 1910 / Vĩnh Long 1915** theo lời dẫn **được in lại năm 1997**, chưa kiểm tư liệu sự kiện đương thời. **Trang 183 in nhãn câu 21 hai lần, thiếu 22**; đã ghi lỗi để tra nguồn, không tự sửa ấn bản.
+- Bộ lời **S1 *Bá Lý Hề* (Trần Quan Quờn)** và bộ lời **S2 *Bùi Kiệm – Bùi Ông – Nguyệt Nga* (“Lời xưa”, chưa rõ tác giả)** phải tách **`lyric_version_id`**, không chuyển nhầm tác giả. Ca *Mong Chờ* (Trần Ngọc Thạch/Kim Thanh) chỉ có đầu mối trích ca khác, chưa đủ 38 câu.
+- **Đã xác minh hiện diện 38/38 câu nhạc và 38/38 câu lời ở tập IV**, nhưng **0/38 câu được nghiệm thu diễn xướng**; cần bản thu cùng hệ, nhịp mồ côi/mô/qua sông, ngón, song lang, nghệ nhân, quyền sử dụng. **CHỜ NGHIỆM THU**.
+- Nhánh `v1-frozen` **giữ nguyên**, nội dung bên dưới là nghiên cứu V1 lịch sử; khi thông tin cũ mâu thuẫn nguồn in mới, dùng chứng cứ và biên bản V2.
+
+---
+
 **Nhóm:** Bốn Oán · **Hơi:** Oán · **Bản tham chiếu:** 38 câu nhịp tám · **Khảo cứu:** 27/10/2026.
 
 > **Trạng thái:** Có nguồn Viện Âm nhạc về khúc thức và bản lời xưa có bằng chứng trong sách Nhị Tấn (1997); chưa nghiệm thu từng chữ đờn, trường độ, phách song lang và ngón đờn.

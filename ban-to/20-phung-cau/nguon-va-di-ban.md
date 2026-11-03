@@ -20,3 +20,8 @@
 | PH-48 | Phụng Hoàng 48 câu nhịp tám — bài 18 khác, không trộn |
 
 **Còn thiếu:** so nhạc 40 câu với bản thu cùng hệ; kiểm phách chầu/mô, dứt ngoại; đối chiếu niên đại 1997/2002; giấy phép ca từ, ký âm, MP3; nghệ nhân duyệt.
+
+
+## Đính chính phạm vi V2 — 28/10/2026
+
+Đã kiểm **trực tiếp ảnh 10 trang** Nhị Tấn IV tr.332–341: nhạc **332/334/336/338/340**, lời **333/335/337/339/341**, đầy đủ **40 nhãn mỗi phía**, 3 lớp **18+8+14**. Trang 340/341 **chỉ có câu 40** của Phụng Cầu, phần sau chuyển sang Ngươn Tiêu Hội Oán. Bản lời ***Bá Nha Đoạn Cầm*** được sách ghi Nhị Tấn **2002**; bìa **1997**, cuối bài khảo cứu **1999**, mục lục ***Tư Mã Tương Như***. **Chưa chứng minh nguyên nhân**. [Biên bản V2](v2-bien-ban-nghiem-thu.md) · [Sổ 40 câu](v2-ra-soat-40-cau.md). Không sao chép toàn văn lời/nhạc/MP3; **CHỜ nghiệm thu diễn xướng**.

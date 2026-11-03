@@ -1,6 +1,20 @@
 # BẢN TỔ 04 — CỔ BẢN (VẮN / TRƯỜNG)
 **Nhóm:** Sáu Bắc · **Phiên bản học V1 trong thư mục này:** Cổ Bản Vắn, 34 câu nhịp tư; **cách gọi trong danh mục ICHCAP/Viện Âm nhạc:** Cổ Bản Trường. **Không coi Vắn 34 câu là thay thế Trường**. · **Ngày khảo cứu:** 26/10/2026
 
+## NGHIỆM THU V2 — BẢN SỐ 04 (27/10/2026)
+
+**ĐÍNH CHÍNH PHẠM VI:** V1 chọn **Cổ Bản Vắn 34 câu** làm phiên bản học, nhưng hệ danh mục 20 bản Tổ của **Viện Âm nhạc chọn Cổ Bản Trường 68 câu**. **V2 xét Trường 68 câu là hệ chính**, còn Vắn 34 câu được giữ độc lập; không gộp hay tính thêm một bản Tổ thứ 21.
+
+- [**Biên bản nghiệm thu V2**, nguồn Nhị Tấn/Viện Âm nhạc/Văn Dần, 8 phát hiện](v2-bien-ban-nghiem-thu.md).
+- [**Sổ nguồn 68 câu Cổ Bản Trường** — 8 lớp, lời *Tình nghĩa vợ chồng* (Trần Ngọc Thạch)](v2-kiem-68-cau-co-ban-truong.md).
+- [**Sổ nguồn 34 câu Cổ Bản Vắn** — 5 lớp, lời *Ngư Ông* (chưa rõ tác giả)](v2-kiem-34-cau-co-ban-van.md).
+- **Đã xác nhận sự hiện diện của chữ nhạc và lời theo 68/68 và 34/34 câu.** Chưa đối chiếu ngón, chữ ngân, song lang/audio từng câu và chưa có người thẩm định độc lập.
+- **KẾT LUẬN: CHỜ NGHIỆM THU DIỄN XƯỚNG** cho cả hai hệ (**0/68**, **0/34**).
+
+> Những câu phía dưới thuộc **hồ sơ nguồn V1**; chỗ ghi Vắn 34 là hệ chính chỉ phản ánh lựa chọn **trước hiệu đính**. Không coi đó là phán quyết V2.
+
+---
+
 > **Trạng thái:** Đã tìm được ký âm chữ nhạc đủ 34 câu, một bản lời đánh số đủ 34 câu, nguồn biểu diễn, nguồn dị bản Cổ Bản Trường. Chưa có giấy phép tái bản toàn văn, chưa kiểm được từng trường độ/song lang và chưa có nghệ nhân nghiệm thu.
 
 ## 1. Chọn đúng tên và phiên bản

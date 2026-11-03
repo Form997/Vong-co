@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f4ee">
+  <meta name="description" content="HAI ĐẤT V3 — Tra cứu 20 bản Tổ Đờn ca tài tử Nam Bộ, có nguồn, dị bản và mức kiểm chứng rõ ràng.">
+  <title>HAI ĐẤT V3.6 · Thư viện 20 bản Tổ</title>
+  <style>
+
+/* HAI ĐẤT / Heritage Editorial — V3.2 design system. Pure CSS, zero third-party assets. */
+:root{
+  color-scheme:light;
+  --paper:#f6f4ee;--surface:#fffefb;--surface-2:#f0eee6;
+  --ink:#142823;--ink-soft:#304d45;--muted:#63746d;--line:#d9dfd7;
+  --forest:#10382f;--forest-2:#17483c;--jade:#266859;
+  --gold:#c79c5d;--gold-light:#e7c993;--gold-wash:#fbf1de;
+  --danger:#8c4c3d;--shadow:0 16px 40px rgba(17,51,40,.07);
+  --radius:20px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;min-width:280px;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit}
+button{cursor:pointer}
+a{color:var(--jade);text-underline-offset:4px}
+a:hover{color:#153e32}
+:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+::selection{color:#fff;background:var(--jade)}
+.container{max-width:1280px;margin:auto;padding:0 34px}
+.top{background:rgba(255,254,251,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;backdrop-filter:blur(18px)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:82px}
+.brand{display:inline-flex;gap:13px;align-items:center;text-decoration:none;color:var(--forest);flex-shrink:0}
+.mark{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid #aab9af;position:relative;background:#f2f2e9;color:var(--forest);font:500 28px Georgia,serif}
+.mark:after{content:"";position:absolute;inset:5px;border:1px solid #ccd5cd;border-radius:50%}
+.brand strong{display:block;font-size:18px;letter-spacing:3.5px;line-height:1.3;font-weight:800}
+.brand small{display:block;color:var(--muted);letter-spacing:1.3px;font-weight:650;font-size:9.5px;line-height:1.45}
+.top-links{display:flex;align-items:center;gap:30px}
+.top-links a{color:var(--ink-soft);text-decoration:none;font-size:13px;font-weight:650}
+.top-links a:hover{color:var(--jade)}
+.top-links a:last-child{border:1px solid #b9c9bf;padding:10px 16px;border-radius:100px}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,.66fr);gap:20px;margin:31px 0 0;padding:76px 5.2%;min-height:520px;border-radius:26px;overflow:hidden;background:linear-gradient(118deg,#103b33 10%,#0e302b 65%,#18382e 100%);color:#fff}
+.hero:before{content:"";position:absolute;inset:0;opacity:.24;pointer-events:none;background:radial-gradient(ellipse at 69% 43%,#3d806f 0,transparent 48%),repeating-linear-gradient(120deg,transparent 0,transparent 69px,rgba(222,239,219,.05) 70px,transparent 71px)}
+.hero-copy{z-index:2;align-self:center;position:relative}
+.eyebrow{display:flex;align-items:center;gap:11px;color:var(--jade);font-size:11px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase}
+.eyebrow:before{content:"";display:block;height:1px;width:24px;background:currentColor}
+.hero .eyebrow{color:var(--gold-light)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.14;letter-spacing:-.03em}
+h1{font-size:clamp(44px,5.1vw,78px);max-width:800px;letter-spacing:-.045em;margin:25px 0 22px}
+.hero h1 em{font-weight:400;color:#eacb95;font-style:italic}
+.hero p{max-width:580px;color:#d5e1d8;font-size:16px;line-height:1.85;margin:0 0 32px}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.primary,.secondary{display:inline-flex;gap:16px;align-items:center;justify-content:center;min-height:51px;padding:12px 22px;text-decoration:none;border-radius:100px;font-size:13px;font-weight:750;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.primary{background:#e9c993;color:#18372c}
+.primary:hover{color:#18372c;background:#f4dba9;transform:translateY(-2px)}
+.secondary{border:1px solid rgba(228,239,230,.46);color:#f3f8f3}
+.secondary:hover{border-color:#edd7b5;color:#fff;transform:translateY(-2px)}
+.hero-art{position:relative;min-height:300px;align-self:stretch;display:grid;place-items:center;isolation:isolate}
+.hero-art:before{content:"";position:absolute;width:min(39vw,520px);height:min(39vw,520px);border:1px solid rgba(232,211,166,.29);border-radius:50%;box-shadow:0 0 0 35px rgba(232,211,166,.03),0 0 0 70px rgba(232,211,166,.04),0 0 0 108px rgba(232,211,166,.025);transform:rotate(-17deg)}
+.art-disc{display:grid;place-items:center;aspect-ratio:1;width:min(31vw,408px);border-radius:50%;background:radial-gradient(circle at 35% 30%,#345d51 0,#15382f 45%,#0c2d29 80%);border:1px solid rgba(238,211,162,.6);box-shadow:0 0 0 1px #15352c,inset 0 0 0 17px rgba(11,40,34,.44),inset 0 0 0 18px rgba(237,199,137,.24),inset 0 0 0 54px rgba(11,40,34,.33),inset 0 0 0 55px rgba(237,199,137,.18),0 22px 55px rgba(0,0,0,.25);position:relative}
+.art-disc:before,.art-disc:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(237,199,137,.25)}
+.art-disc:before{inset:29%}.art-disc:after{inset:37%}
+.art-disc strong{font:500 clamp(92px,13vw,190px)/1 Georgia,serif;letter-spacing:-14px;color:#eacc99;text-shadow:0 6px 35px rgba(0,0,0,.15);margin-right:15px}
+.art-corner{position:absolute;bottom:0;right:0;padding:10px 0 0;border-top:1px solid rgba(232,211,166,.5);color:#e7d2aa;font:11px/1.8 system-ui,sans-serif;text-transform:uppercase;letter-spacing:2px;text-align:right}
+.art-axis{position:absolute;top:7%;left:-3%;font-size:10px;letter-spacing:2px;writing-mode:vertical-rl;color:#c9d6cc;text-transform:uppercase}
+.notice{display:flex;align-items:center;gap:17px;max-width:100%;margin:28px 0 26px;padding:17px 21px;border-radius:14px;border:1px solid #e5d5b9;background:var(--gold-wash);font-size:13px;color:#665740}
+.notice svg{flex-shrink:0;stroke:#9d7648}
+.notice strong{display:inline;color:#573f21;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin:0 0 100px;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 22px rgba(24,54,38,.035)}
+.stat{padding:25px 23px;min-width:0;position:relative}
+.stat:not(:first-child):before{content:"";height:55%;width:1px;background:var(--line);position:absolute;left:0;top:23%}
+.stat strong{display:block;font:500 38px/1.18 Georgia,serif;color:var(--forest);letter-spacing:-2px}
+.stat span{display:block;margin-top:8px;font-size:11px;line-height:1.5;color:var(--muted);font-weight:650}
+.intro{display:flex;align-items:end;justify-content:space-between;gap:22px;margin:0 0 24px}
+.intro h2{margin:12px 0 9px;font-size:clamp(35px,3.8vw,54px)}
+.intro p{margin:0;color:var(--muted);font-size:15px}
+.hint{color:var(--muted);font-size:12px}
+#result-count{background:#e3ece6;border-radius:100px;padding:9px 14px;font-weight:700;color:var(--forest);white-space:nowrap}
+.controls{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px 19px;margin-bottom:24px;box-shadow:0 7px 27px rgba(24,54,38,.04)}
+.controls>label{display:block;margin-bottom:7px;font-size:12px;font-weight:700;color:var(--ink-soft)}
+.search{display:block;width:100%;background:#f6f7f2;color:var(--ink);border:1px solid #bdcfc3;border-radius:12px;padding:16px 18px;outline:none;font-size:15px}
+.search::placeholder{color:#788980}
+.search:focus-visible{border-color:var(--jade);box-shadow:0 0 0 3px rgba(37,102,83,.13)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 0}
+.tab{padding:10px 17px;background:#f1f3ef;border:1px solid transparent;border-radius:100px;color:var(--ink-soft);font-size:12px;font-weight:700;transition:background .2s,border-color .2s}
+.tab:hover{background:#e4ece5}
+.tab[aria-pressed="true"]{background:var(--forest);color:white;border-color:var(--forest)}
+.advanced{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:21px;border-top:1px solid var(--line);padding-top:20px}
+.advanced label{display:flex;flex-direction:column;gap:7px;min-width:0;color:var(--muted);font-size:12px;font-weight:700}
+.advanced select{width:100%;min-width:0;color:var(--ink);background:var(--surface);border:1px solid #cad5cb;border-radius:10px;padding:12px 13px;font-size:12px;font-weight:600}
+.layout{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(350px,.84fr);align-items:start;gap:25px}
+.pieces{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.piece{min-width:0;min-height:194px;padding:21px 21px 18px;border-radius:17px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left;display:flex;flex-direction:column;gap:8px;position:relative;transition:border-color .2s,transform .2s,box-shadow .2s}
+.piece:hover{border-color:#9cb8a8;transform:translateY(-2px);box-shadow:0 12px 30px rgba(26,64,50,.07)}
+.piece[aria-pressed="true"]{border-color:var(--jade);background:#f3f8f3;box-shadow:inset 0 0 0 1px var(--jade),0 15px 35px rgba(23,80,55,.085)}
+.piece:after{content:"↗";font-size:20px;position:absolute;right:19px;top:18px;color:#789688;transition:transform .2s}
+.piece:hover:after{transform:translate(2px,-2px);color:var(--jade)}
+.piece .num{font:italic 500 29px/1 Georgia,serif;color:#ae8452;margin:0 0 7px}
+.piece strong{font-size:17px;font-weight:750;line-height:1.35;letter-spacing:-.02em;padding-right:14px}
+.piece small{font-size:12px;line-height:1.5;color:var(--muted)}
+.piece .piece-status{margin-top:auto;color:var(--jade);font-size:11px;font-weight:750}
+.piece .piece-status.pending{color:#947e5f}
+.detail{background:#143d32;color:#eef7ef;border-radius:21px;padding:28px 29px;position:sticky;top:102px;box-shadow:0 22px 43px rgba(19,51,39,.16);overflow:hidden}
+.detail:before{content:"";position:absolute;right:-70px;top:-80px;width:245px;height:245px;border:1px solid rgba(227,203,149,.19);border-radius:50%;box-shadow:0 0 0 30px rgba(227,203,149,.035),0 0 0 59px rgba(227,203,149,.035);pointer-events:none}
+.detail>*{position:relative}
+.detail .tag{display:inline-block;text-transform:uppercase;letter-spacing:2.3px;font-size:10px;color:#e7c58b;font-weight:800}
+.detail h3{font-size:clamp(28px,3vw,39px);margin:17px 0 17px;line-height:1.16;color:#fff}
+.detail p{font-size:13px;color:#c7d9cf;margin:10px 0 18px;line-height:1.78}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 20px}
+.pill{font-size:10px;color:#f0d4a3;border:1px solid rgba(232,200,140,.39);padding:5px 10px;border-radius:100px}
+.pill.neutral{color:#cce1d6;border-color:rgba(202,233,219,.36)}
+.variant{padding:18px 0 14px;border-top:1px solid rgba(219,236,224,.18)}
+.variant strong{font-size:14px;display:block;color:#f9f8ed;line-height:1.4}
+.variant p{font-size:12px;margin:9px 0}
+.variant .meta{display:flex;flex-wrap:wrap;gap:8px 13px;color:#c0d5c8;font-size:11px;margin-top:7px}
+.variant .meta b{color:#e9ca92}
+.variant a{display:inline-flex;font-size:12px;color:#e9cd99;text-underline-offset:4px;margin-top:4px}
+.detail-links{display:flex;flex-wrap:wrap;gap:9px;border-top:1px solid rgba(219,236,224,.18);padding-top:20px;margin-top:23px}
+.detail-links a{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(233,224,198,.45);border-radius:100px;padding:10px 14px;color:#f3eee2;font-size:11px;font-weight:750;text-decoration:none}
+.detail-links a:hover{background:rgba(255,255,255,.09);color:white}
+.detail-links a.study-link{background:var(--gold-light);color:#213b2e;border-color:var(--gold-light)}
+.detail-links a.piece-page-link{background:#e8f2e9;color:#143b30;border-color:#e8f2e9}
+.empty{grid-column:1/-1;background:var(--surface);border:1px dashed #bac9ba;padding:30px;border-radius:14px;color:var(--muted);font-size:13px}
+footer{margin-top:100px;padding:55px 0 48px;background:#102c26;color:#c6d4ca}
+footer .container{display:grid;gap:8px}
+footer strong{color:#e2c694;font:500 21px Georgia,serif}
+footer p{margin:0;font-size:12px;max-width:850px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px;margin-top:14px}
+.footer-links a{color:#e4d2b3;font-size:12px}
+@media(max-width:1060px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(250px,.52fr);padding:55px 45px}
+  .layout{grid-template-columns:minmax(0,1.2fr) minmax(310px,.8fr);gap:16px}
+  .pieces{gap:10px}.detail{padding:23px}
+}
+@media(max-width:960px){
+  .layout{grid-template-columns:1fr}.detail{position:relative;top:auto}
+  .stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(4):before{display:none}
+  .hero{grid-template-columns:1fr minmax(175px,.44fr);padding:55px 34px;min-height:440px}
+  .hero-art{min-height:250px}
+  .art-disc{width:min(100%,235px)}.art-disc strong{font-size:clamp(72px,11vw,120px)}
+}
+@media(max-width:700px){
+  .container{padding:0 18px}.top-inner{min-height:70px}
+  .top-links{gap:16px}.top-links a{font-size:11px}.top-links a:nth-child(2){display:none}
+  .brand strong{font-size:16px}.brand small{font-size:8px}.mark{width:39px;height:39px;font-size:24px}
+  .hero{grid-template-columns:1fr;gap:0;margin:16px 0 0;padding:40px 26px 28px;min-height:0;border-radius:18px}
+  .hero h1{font-size:clamp(39px,9vw,60px);margin:18px 0}
+  .hero p{font-size:14px;line-height:1.7}.hero-art{display:none}
+  .notice{margin:20px 0;padding:14px 16px;align-items:start;font-size:12px}
+  .stats{grid-template-columns:repeat(2,1fr);margin-bottom:66px}
+  .stat{padding:18px}.stat:before{display:none}.stat:nth-child(odd){border-right:1px solid var(--line)}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .stat strong{font-size:32px}.stat span{font-size:11px}
+  .advanced{grid-template-columns:1fr;gap:12px}
+  .intro{display:block}.intro h2{font-size:40px}
+  #result-count{display:inline-flex;margin-top:13px}
+  .controls{padding:18px}.tabs{gap:5px}.tab{padding:9px 12px}
+  .pieces{grid-template-columns:repeat(2,minmax(0,1fr))}.piece{min-height:173px;padding:16px}
+  .piece strong{font-size:14px}.piece .num{font-size:23px}
+  .detail{padding:24px}.detail-links a{min-height:42px}
+  footer{margin-top:65px;padding:42px 0}
+}
+@media(max-width:560px){
+  .container{padding:0 16px}.top-inner{gap:10px}.top-links{gap:8px}.top-links a:first-child{display:none}.top-links a:last-child{padding:8px 10px}
+  .hero{padding:35px 23px 29px}.hero h1{font-size:clamp(38px,10vw,49px)}
+  .hero .eyebrow{font-size:9px;letter-spacing:1.6px}
+  .hero-actions{gap:9px}.primary,.secondary{padding:11px 17px;font-size:12px}
+  .intro h2{font-size:36px}
+  .pieces{grid-template-columns:1fr}.piece{min-height:136px;padding:19px 21px;gap:6px}
+  .piece strong{font-size:17px}.piece small{font-size:12px}
+  .piece .num{margin-bottom:0}
+  .detail{padding:24px 20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+  
+.group-directory{margin:-65px 0 75px}
+.group-directory h2{font-size:clamp(28px,3vw,39px);margin:10px 0 10px}
+.group-directory p{font-size:14px;color:var(--muted);margin:0 0 20px}
+.group-directory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.group-directory-grid a{background:var(--surface);border:1px solid var(--line);border-radius:15px;min-width:0;display:flex;flex-direction:column;gap:9px;padding:21px;text-decoration:none;transition:border-color .2s,transform .2s}
+.group-directory-grid a:hover{border-color:var(--jade);transform:translateY(-2px)}
+.group-directory-grid strong{font:500 24px Georgia,serif;color:var(--forest)}
+.group-directory-grid span{font-size:12px;color:var(--muted)}
+@media(max-width:930px){.group-directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.group-directory{margin:-45px 0 58px}.group-directory-grid{grid-template-columns:1fr}.group-directory-grid a{padding:17px}}
+.v36-sources{padding:24px 28px;margin:-64px 0 86px;border:1px solid var(--line);border-left:4px solid var(--jade);border-radius:16px;background:var(--surface)}
+.v36-sources h2{font-size:clamp(25px,2.8vw,33px);margin:7px 0 13px}
+.v36-sources p{font-size:13px;color:var(--muted);line-height:1.85;margin:0 0 14px}
+.v36-sources a{display:inline-block;font-size:13px;font-weight:750;margin-right:22px}
+@media(max-width:700px){.v36-sources{margin:-42px 0 62px;padding:20px}}
+.v33-context{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:-1px 0 26px}
+.v33-context>div{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:13px;background:var(--surface);padding:17px 20px;font-size:12px;color:var(--ink-soft);line-height:1.72}
+.v33-context strong{display:block;color:var(--forest);font-size:13px;margin-bottom:5px}
+.v33-context a{font-weight:750}
+@media(max-width:700px){.v33-context{grid-template-columns:1fr;margin:0 0 25px}.v33-context>div{padding:15px}}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="container top-inner">
+      <a class="brand" href="#dau-trang" aria-label="HAI ĐẤT - về đầu trang">
+        <span class="mark" aria-hidden="true">Đ</span>
+        <span><strong>HAI ĐẤT</strong><small>THƯ VIỆN DI SẢN ÂM NHẠC</small></span>
+      </a>
+      <nav class="top-links" aria-label="Điều hướng">
+        <a href="#tra-cuu">Tra cứu</a>
+        <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">V3 là gì?</a>
+        <a href="https://github.com/Form997/Vong-co/tree/main" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="dau-trang">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow">Đờn ca tài tử Nam Bộ · Bộ sưu tập nghiên cứu</div>
+      <h1 id="hero-title">Giữ hồn tiếng đờn.<br><em>Mở lối tri thức.</em></h1>
+      <p>Không chỉ là tên 20 bản Tổ. Một không gian để khám phá từng làn điệu, lần theo nguồn gốc, đối chiếu dị bản và học từng câu nhạc bằng chứng cứ.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#tra-cuu">Khám phá thư viện <span aria-hidden="true">↗</span></a>
+        <a class="secondary" href="https://github.com/Form997/Vong-co/blob/main/docs/nguon-tham-khao.md" target="_blank" rel="noopener noreferrer">Sổ nguồn tham khảo</a>
+      </div></div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-axis">BẢN TỔ · NAM BỘ · TƯ LIỆU</div>
+        <div class="art-disc"><strong>20</strong></div>
+        <div class="art-corner">Dấu xưa còn đó<br>Tiếng đờn còn vang</div>
+      </div>
+    </section>
+    <aside class="notice" role="note">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z" stroke-width="1.5"/><path d="M12 9v5m0 3v1" stroke-width="1.5"/></svg>
+      <div><strong>Dữ liệu nghiên cứu, chưa phải bản diễn xướng chuẩn.</strong> Đã mở 20/20 hồ sơ kiểm nguồn V2; 0/20 bài được nghiệm thu diễn xướng. Không tự sao chép ký âm, lời ca hoặc bản thu có bản quyền.</div>
+    </aside>
+    <section class="v33-context" aria-label="Những điểm nghiên cứu về nguồn">
+      <div><strong>Bài 02 · Phú Lục Chấn</strong>34 nhãn nhạc Nhị Tấn tập II nhưng chỉ 32 nhãn lời in trong nguồn này. Câu 08/34 còn khác dấu cuối với Văn Dần. <a href="../../bai/02-phu-luc-chan/#hoc-tung-cau">Xem 34 vị trí và cảnh báo ↗</a></div>
+      <div><strong>Bài 03 · Bình Bán Chấn</strong>44 vị trí ở bốn lớp theo Nhị Tấn tập II. Ký hiệu cuối hàng không được suy thành nhịp, cao độ hoặc ngón đờn thực tấu. <a href="../../bai/03-binh-ban-chan/#hoc-tung-cau">Đối chiếu 44 nhãn ↗</a></div>
+      <div><strong>Bài 04 · Cổ Bản</strong>Hai hệ độc lập: Vắn 34 nhãn và Trường 68 nhãn theo Nhị Tấn tập II; chưa đối chiếu thành bản diễn xướng. <a href="../../bai/04-co-ban-van/#hoc-tung-cau">Xem hai hệ ↗</a></div>
+      <div><strong>Bài 05 · Xuân Tình Chấn</strong>48 nhãn theo Nhị Tấn tập II, bốn lớp. Câu 37 có sai biệt ký hiệu; tách khỏi bản Thủ tập I và Tây Thi ở cuối trang. <a href="../../bai/05-xuan-tinh-chan/#hoc-tung-cau">Xem chỉ mục ↗</a></div>
+    </section>
+    <section class="stats" aria-label="Tổng quan dữ liệu">
+      <div class="stat"><strong id="count-pieces">20</strong><span>Bản Tổ trong danh mục</span></div>
+      <div class="stat"><strong id="count-variants">—</strong><span>Hệ bản và dị bản mô tả</span></div>
+      <div class="stat"><strong>04</strong><span>Nhóm Bắc · Lễ · Nam · Oán</span></div>
+      <div class="stat"><strong id="count-lessons">—</strong><span>Bài có chỉ mục câu V3.5 · 300 nhãn</span></div>
+      <div class="stat"><strong>00</strong><span>Bài đã nghiệm thu diễn xướng</span></div>
+    </section>
+    <section class="group-directory" aria-labelledby="groups-title">
+      <div class="eyebrow">Bốn nhóm của 20 bản Tổ</div>
+      <h2 id="groups-title">Mỗi nhóm, một trang tra cứu riêng</h2>
+      <p>Tìm đúng bài trong nhóm mình muốn học, rồi mở hồ sơ nguồn từng tác phẩm. Không thay thế nghiệm thu diễn xướng.</p>
+      <nav class="group-directory-grid" aria-label="Mở bốn trang nhóm bản Tổ">
+        <a href="../../nhom/sau-bac/"><strong>Sáu Bắc</strong><span>6 bài · Bài 01–06 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/bay-le/"><strong>Bảy Lễ</strong><span>7 bài · Bài 07–13 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/ba-nam/"><strong>Ba Nam</strong><span>3 bài · Bài 14–16 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/bon-oan/"><strong>Bốn Oán</strong><span>4 bài · Bài 17–20 · Mở trang nhóm ↗</span></a>
+      </nav>
+    </section>
+    <section class="v36-sources" aria-labelledby="v36-title">
+      <div class="eyebrow">Nguồn nghiên cứu có kiểm duyệt · V3.6</div>
+      <h2 id="v36-title">Internet tìm nguồn mới, con người kiểm chứng</h2>
+      <p>V3.6 dùng Crossref và OpenAlex tùy chọn để tìm metadata khoa học. Kết quả tự động chỉ vào hàng chờ, không tự điền vào các bài Tổ, không tự đăng lời ca, ký âm hay âm thanh. 300 nhãn câu V3.5 tiếp tục là chỉ mục nguồn đang đối chiếu; 0/20 nghiệm thu diễn xướng.</p>
+      <a href="https://github.com/Form997/Vong-co/issues/23" target="_blank" rel="noopener noreferrer">Xem nguồn Internet chờ duyệt ↗</a>
+      <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md" target="_blank" rel="noopener noreferrer">Quy trình kiểm định và bảo vệ nhánh ↗</a>
+    </section>
+    <section id="tra-cuu" aria-labelledby="browse-title">
+      <div class="intro">
+        <div><div class="eyebrow">Danh mục tư liệu</div><h2 id="browse-title">Khám phá 20 bản Tổ</h2><p>Tìm bài, chọn nhóm nhạc và xem chính xác nguồn nào đang được sử dụng.</p></div>
+        <span class="hint" id="result-count" aria-live="polite">Đang tải dữ liệu…</span>
+      </div>
+      <div class="controls">
+        <label for="search" class="hint">Tìm tên bản Tổ, tên khác hoặc mã hệ bản</label>
+        <input id="search" class="search" type="search" autocomplete="off" placeholder="Ví dụ: Nam Ai, Phung Cau, Cổ Bản Vắn..." aria-label="Tìm kiếm bản Tổ">
+        <div id="filters" class="tabs" role="group" aria-label="Lọc theo nhóm nhạc">
+          <button type="button" class="tab" data-group="all" aria-pressed="true">Tất cả</button>
+          <button type="button" class="tab" data-group="sau-bac" aria-pressed="false">Sáu Bắc</button>
+          <button type="button" class="tab" data-group="bay-le" aria-pressed="false">Bảy Lễ</button>
+          <button type="button" class="tab" data-group="ba-nam" aria-pressed="false">Ba Nam</button>
+          <button type="button" class="tab" data-group="bon-oan" aria-pressed="false">Bốn Oán</button>
+        </div>
+        <div class="advanced">
+          <label for="evidence">Mức chứng cứ của hệ bản
+            <select id="evidence" aria-label="Lọc theo mức chứng cứ">
+              <option value="all">Tất cả mức chứng cứ</option>
+              <option value="source_indexed">Đã định vị trong hồ sơ V2</option>
+              <option value="source_reported">Nguồn được thuật lại</option>
+              <option value="derived_unverified">Ánh xạ chưa kiểm chứng</option>
+            </select>
+          </label>
+          <label for="lesson-status">Bài học từng câu
+            <select id="lesson-status" aria-label="Lọc bài có chỉ mục học câu">
+              <option value="all">Tất cả 20 bản Tổ</option>
+              <option value="indexed">Có chỉ mục nguồn V3.5</option>
+              <option value="pending">Chưa chuẩn hóa sổ V2 thành bài học</option>
+            </select>
+          </label>
+          <label for="sort-order">Sắp xếp
+            <select id="sort-order" aria-label="Chọn thứ tự sắp xếp">
+              <option value="number">Theo số thứ tự bài</option>
+              <option value="name">Theo tên bài (A–Z)</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="layout">
+        <div id="pieces" class="pieces" aria-label="Danh sách 20 bản Tổ" aria-live="polite">
+          <p class="empty">Đang nạp danh mục V3 từ dữ liệu JSON...</p>
+        </div>
+        <aside class="detail" id="detail" aria-label="Thông tin bản Tổ" aria-live="polite">
+          <div class="tag">Hồ sơ chuyên đề</div>
+          <h3>Khám phá từng giai điệu</h3>
+          <p>Chọn một tác phẩm bên trái để mở nhanh hồ sơ, nguồn tham khảo và các hệ bản đang được nghiên cứu.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">
+    <p><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
+    <p>Website V3.6 · Quét nguồn có kiểm duyệt từ 31/10/2026 · Chỉ mục câu V3.5 vẫn chờ đối chứng · Không phải thư viện biểu diễn được UNESCO hoặc Viện Âm nhạc chứng nhận.</p>
+    <div class="footer-links"><a href="legal.html">Pháp lý &amp; quyền riêng tư</a><a href="https://github.com/Form997/Vong-co/blob/main/data/v3/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu JSON</a><a href="https://github.com/Form997/Vong-co/blob/main/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">Nhật ký V3</a><a href="https://github.com/Form997/Vong-co/issues/new/choose" target="_blank" rel="noopener noreferrer">Đề xuất đính chính</a></div>
+  </div></footer>
+  <script>
+    "use strict";
+    const DATA_URL = "../../data/v3/catalog.json";
+    const PHRASE_URL = "../../data/v3_5/phrase_index.json";
+    const SOURCE_BASE = "https://github.com/Form997/Vong-co/blob/main/";
+    const LABELS = {
+      source_indexed: "Có chỉ mục từ V2",
+      source_reported: "Nguồn thuật lại",
+      derived_unverified: "Ánh xạ chưa thẩm định"
+    };
+    const state = { catalog: null, lessons: null, family: "all", term: "", selected: null, evidence: "all", sort: "number", lessonStatus: "all" };
+    const byId = (id) => document.getElementById(id);
+    const norm = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
+    function node(tag, className, text) {
+      const e = document.createElement(tag);
+      if (className) e.className = className;
+      if (text !== undefined) e.textContent = String(text);
+      return e;
+    }
+    function link(label, href) {
+      const a = node("a", "", label);
+      a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
+      return a;
+    }
+    function researchLink(label, path) {
+      return link(label, SOURCE_BASE + path);
+    }
+    function matchingItems() {
+      if (!state.catalog) return [];
+      const available = new Set((state.lessons?.items || []).map(x => x.piece_id));
+      const subset = state.catalog.items.filter(item => (
+        (state.family === "all" || state.family === item.family) &&
+        (state.evidence === "all" || item.variants.some(v => v.evidence_status === state.evidence)) &&
+        (state.lessonStatus === "all" || (state.lessonStatus === "indexed" && available.has(item.id)) ||
+          (state.lessonStatus === "pending" && !available.has(item.id)))
+      ));
+      const keyword = norm(state.term.trim());
+      let found = subset;
+      if (keyword) {
+        // Canonical name, alias and variant ID take priority over a phrase
+        // appearing incidentally in another song's research note.
+        const direct = subset.filter(item => {
+          const names = [item.title, item.slug, ...item.aliases,
+            ...item.variants.map(v => v.label), ...item.variants.map(v => v.variant_id)];
+          return norm(names.join(" ")).includes(keyword);
+        });
+        found = direct.length ? direct : subset.filter(item =>
+          norm([item.family_label, item.research_note].join(" ")).includes(keyword));
+      }
+      return [...found].sort(state.sort === "name"
+        ? (a, b) => a.title.localeCompare(b.title, "vi")
+        : (a, b) => a.id - b.id);
+    }
+    function updateList() {
+      const list = matchingItems(), container = byId("pieces");
+      container.replaceChildren();
+      byId("result-count").textContent = list.length + " / 20 bài phù hợp";
+      for (const item of list) {
+        const card = node("button","piece"); card.type = "button";
+        card.setAttribute("aria-pressed",String(state.selected === item.id));
+        const hasLesson = state.lessons?.items.some(x => x.piece_id === item.id);
+        card.append(node("span","num",String(item.id).padStart(2,"0")),
+          node("strong","",item.title),
+          node("small","",item.family_label + " · " + item.variants.length + " hệ được ghi nhận"),
+          node("small",hasLesson ? "piece-status" : "piece-status pending",
+            hasLesson ? "◉ Có chỉ mục câu V3.5" : "◌ Chờ đối chiếu sổ V2"));
+        card.addEventListener("click", () => {
+          state.selected = item.id;
+          updateList(); updateDetail();
+          history.replaceState(null,"","#bai-" + String(item.id).padStart(2,"0"));
+          if (window.matchMedia("(max-width: 960px)").matches) byId("detail").scrollIntoView({behavior:"smooth",block:"start"});
+        });
+        container.append(card);
+      }
+      if (!list.length) container.append(node("p","empty","Không thấy bài phù hợp. Thử tìm bằng tên khác hoặc bỏ bộ lọc nhóm."));
+      if (state.selected === null || !list.some(x=>x.id===state.selected)) state.selected = list.length ? list[0].id : null;
+      for (const card of container.querySelectorAll(".piece")) {
+        const cardId = Number(card.firstElementChild.textContent);
+        card.setAttribute("aria-pressed",String(cardId===state.selected));
+      }
+      updateDetail();
+    }
+    function updateDetail() {
+      const detail = byId("detail"); detail.replaceChildren();
+      const item = state.catalog?.items.find(x=>x.id===state.selected);
+      if (!item) {
+        detail.append(node("div","tag","Mục lục tương tác"), node("h3","","Chọn một bản Tổ"), node("p","","Chọn tên bài ở danh sách để xem xuất xứ, các hệ câu và nguồn tham khảo.")); return;
+      }
+      detail.append(node("div","tag",item.family_label + " · Bản số " + String(item.id).padStart(2,"0")),node("h3","",item.title));
+      if (item.aliases.length) detail.append(node("p","","Tên khác: " + item.aliases.join(" · ")));
+      const pills=node("div","pills");
+      pills.append(node("span","pill neutral","Hồ sơ nguồn V2: đã mở"),node("span","pill","Diễn xướng: chờ nghiệm thu"),node("span","pill","Quyền: chưa xác minh"));
+      detail.append(pills,node("p","",item.research_note));
+      const caption=node("div","tag","Các hệ đang được đối chiếu");caption.style.marginTop="19px";detail.append(caption);
+      for(const v of item.variants) {
+        const wrapper=node("section","variant");
+        wrapper.append(node("strong","",v.label));
+        const meta=node("div","meta");
+        meta.append(node("b","",v.phrase_count+" câu"),
+          node("span","",v.beats_per_phrase === null ? "Nhịp chưa rõ" : "Nhịp "+v.beats_per_phrase),
+          node("span","",LABELS[v.evidence_status]||"Chưa rõ"));
+        wrapper.append(meta,node("p","",v.qualification),link("Xem nguồn đối chiếu ↗",v.reference_url));detail.append(wrapper);
+      }
+      const links=node("div","detail-links");
+      const indexed = (state.lessons?.items || []).filter(x => x.piece_id === item.id);
+      const availability = node("p", "", indexed.length
+        ? "Bài này có chỉ mục: " + indexed.map(x => x.variant_id + " (" + x.phrase_count + " nhãn)").join("; ") +
+          ". Chưa có nhịp/ngón/song lang được nghiệm thu."
+        : "Đã có hồ sơ hoặc sổ câu V2 ở mức độ khác nhau, nhưng V3.5 chưa chuẩn hóa đủ để đưa vào chỉ mục từng câu; không suy diễn từ tổng số câu.");
+      detail.append(availability);
+      if (item.id === 2) detail.append(node("p", "", "LƯU Ý NGUỒN: 34 nhãn nhạc / chỉ 32 nhãn lời in trong Nhị Tấn II; câu 08 và 34 có dị bản chữ cuối với Văn Dần. Chưa chấp thuận biểu diễn."));
+      if (item.id === 5) detail.append(node("p", "", "48 nhãn theo Nhị Tấn tập II; câu 37 còn khác ký hiệu giữa các nguồn, chưa thẩm âm. Không trộn bản Thủ tập I."));
+      if (item.id === 4) detail.append(node("p", "", "Cổ Bản Vắn và Trường là hai hệ riêng trong nguồn; không suy ra tương ứng từng câu giữa hai hệ."));
+      if (item.id === 3) detail.append(node("p", "", "44 nhãn nguồn, nhưng chưa kiểm phách, song lang hoặc kỹ thuật qua bản thu. Ký hiệu cuối dòng không phải âm thanh đã xác minh."));
+      const pageLink = node("a", "piece-page-link", "Trang riêng của bản Tổ ↗");
+      pageLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/";
+      links.append(pageLink);
+      if (indexed.length) {
+        const studyLink = node("a","study-link","Học từng câu theo nguồn ↗");
+        studyLink.href = "../../bai/" + encodeURIComponent(item.slug) + "/#hoc-tung-cau";
+        links.append(studyLink);
+      }
+      links.append(researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
+      detail.append(links);
+    }
+    function filterFamily(family) {
+      state.family=family;
+      for(const t of document.querySelectorAll(".tab")) t.setAttribute("aria-pressed",String(t.dataset.group===family));
+      updateList();
+    }
+    // Support direct links to a piece even when the URL hash changes
+    // without a full page reload (browser back/forward, copied deep links).
+    window.addEventListener("hashchange", () => {
+      if (!state.catalog) return;
+      const match = location.hash.match(/^#bai-(\d{2})$/);
+      if (!match) return;
+      const pieceId = Number(match[1]);
+      if (!state.catalog.items.some(x => x.id === pieceId)) return;
+      state.selected = pieceId;
+      state.term = "";
+      byId("search").value = "";
+      state.family = "all";
+      state.evidence = "all";
+      state.lessonStatus = "all";
+      byId("evidence").value = "all";
+      byId("lesson-status").value = "all";
+      for (const tab of document.querySelectorAll(".tab")) {
+        tab.setAttribute("aria-pressed", String(tab.dataset.group === "all"));
+      }
+      updateList();
+    });
+    document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
+    byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
+    byId("evidence").addEventListener("change", e => {state.evidence=e.target.value;updateList();});
+    byId("lesson-status").addEventListener("change", e => {state.lessonStatus=e.target.value;updateList();});
+    byId("sort-order").addEventListener("change", e => {state.sort=e.target.value;updateList();});
+    async function start(){
+      try{
+        const [resp, lessonResp] = await Promise.all([
+          fetch(DATA_URL,{cache:"no-store"}),fetch(PHRASE_URL,{cache:"no-store"})
+        ]);
+        if(!resp.ok||!lessonResp.ok) throw new Error("Không tải được JSON danh mục/chỉ mục: " + resp.status + "/" + lessonResp.status);
+        const [data, lessonData] = await Promise.all([resp.json(),lessonResp.json()]);
+        if(!Array.isArray(data.items)||data.items.length!==20||data.catalog_status!=="research_preview") throw new Error("Không đúng danh mục V3");
+        if(lessonData.schema_version!=="3.5.0-alpha.1"||!Array.isArray(lessonData.items)||lessonData.items.length!==7||lessonData.items.reduce((n,x)=>n+x.phrases.length,0)!==300||new Set(lessonData.items.map(x=>x.piece_id)).size!==6) throw new Error("Chỉ mục V3.5 thiếu dữ liệu đã kiểm.");
+        state.catalog=data; state.lessons=lessonData;
+        byId("count-lessons").textContent=new Set(lessonData.items.map(x=>x.piece_id)).size;
+        const hashMatch=location.hash.match(/^#bai-(\d{2})$/);
+        state.selected=hashMatch?Number(hashMatch[1]):1;
+        byId("count-pieces").textContent=data.items.length;
+        byId("count-variants").textContent=data.items.reduce((sum,p)=>sum+p.variants.length,0);
+        updateList();
+      } catch(error) {
+        byId("pieces").replaceChildren(node("p","empty","Không thể nạp dữ liệu JSON. Mở trang qua máy chủ HTTP, ví dụ: python -m http.server 8000 tại thư mục gốc rồi truy cập /web/v3/. Chi tiết: "+error.message));
+        byId("result-count").textContent="Lỗi tải dữ liệu";
+      }
+    }
+    start();
+  </script>
+</body>
+</html>
+

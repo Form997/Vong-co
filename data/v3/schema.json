@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Form997/Vong-co/blob/v3-development/data/v3/schema.json",
+  "title": "HAI ĐẤT — V3 metadata catalog schema",
+  "description": "Research preview. Phrase counts describe source-specific variants, not certified music; rights and performance validation remain pending.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "started_on",
+    "origin_branch",
+    "catalog_status",
+    "rights_notice",
+    "verification_notice",
+    "variant_status_definitions",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "3.0.0-alpha.1"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 8
+    },
+    "started_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "origin_branch": {
+      "type": "string",
+      "const": "v2-development"
+    },
+    "catalog_status": {
+      "const": "research_preview"
+    },
+    "rights_notice": {
+      "type": "string",
+      "minLength": 20
+    },
+    "verification_notice": {
+      "type": "string",
+      "minLength": 30
+    },
+    "variant_status_definitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_indexed",
+        "source_reported",
+        "derived_unverified"
+      ],
+      "properties": {
+        "source_indexed": {
+          "type": "string",
+          "minLength": 15
+        },
+        "source_reported": {
+          "type": "string",
+          "minLength": 15
+        },
+        "derived_unverified": {
+          "type": "string",
+          "minLength": 15
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "$ref": "#/$defs/piece"
+      }
+    }
+  },
+  "$defs": {
+    "piece": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "slug",
+        "title",
+        "family",
+        "family_label",
+        "aliases",
+        "review_status",
+        "performance_status",
+        "rights_status",
+        "readme_document",
+        "review_document",
+        "variants",
+        "research_note"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[0-9]{2}-[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "family": {
+          "enum": [
+            "sau-bac",
+            "bay-le",
+            "ba-nam",
+            "bon-oan"
+          ]
+        },
+        "family_label": {
+          "enum": [
+            "Sáu Bắc",
+            "Bảy Lễ",
+            "Ba Nam",
+            "Bốn Oán"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "review_status": {
+          "const": "source_review_open"
+        },
+        "performance_status": {
+          "const": "pending"
+        },
+        "rights_status": {
+          "const": "unverified"
+        },
+        "readme_document": {
+          "type": "string",
+          "pattern": "^ban-to/[0-9]{2}-[a-z0-9-]+/README\\.md$"
+        },
+        "review_document": {
+          "type": "string",
+          "pattern": "^ban-to/[0-9]{2}-[a-z0-9-]+/v2-bien-ban-nghiem-thu\\.md$"
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/variant"
+          }
+        },
+        "research_note": {
+          "type": "string",
+          "minLength": 15
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "variant_id",
+        "label",
+        "phrase_count",
+        "beats_per_phrase",
+        "evidence_status",
+        "reference_url",
+        "qualification"
+      ],
+      "properties": {
+        "variant_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9-]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 5
+        },
+        "phrase_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 500
+        },
+        "beats_per_phrase": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "enum": [
+            4,
+            8,
+            null
+          ]
+        },
+        "evidence_status": {
+          "enum": [
+            "source_indexed",
+            "source_reported",
+            "derived_unverified"
+          ]
+        },
+        "reference_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "qualification": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    }
+  }
+}

@@ -113,3 +113,44 @@ Biên bản: https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xa
 - [Các biên bản V2 đã mở của bài 01–17](https://github.com/Form997/Vong-co/tree/v2-development/ban-to).
 
 **Lưu ý bảo trì:** Liên kết bên ngoài có thể thay đổi; kiểm lại trước khi nghiệm thu hoặc dùng làm bộ dữ liệu thương mại. Hồ sơ từng bài là nơi ghi số câu, trang in, điểm xung đột và tình trạng bản thu chi tiết hơn.
+
+
+## Bổ sung bài 18 — Phụng Hoàng (28/10/2026)
+
+| ID | Tài liệu | Điều chứng minh / chưa chứng minh | URL |
+|---|---|---|---|
+| REF-52 | Viện Âm nhạc, thuyết minh 20 bản Tổ | Hồ sơ V1 trích 48 câu nhịp tám, 4 lớp; chưa xem trang ký âm trực tiếp | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-53 | Viện Âm nhạc, giáo trình guitar phím lõm | Mô tả Phụng Hoàng 48 câu/4 lớp; chưa xác minh trang in | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-54 | Nhị Tấn, nhận xét bộ CD 20 bài Tổ (2014) | Thuật lại ấn bản 1905 72 câu nhịp tư, chưa đối chiếu bản in 1905 | [Nguồn](https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/nhan-xet-ve-bo-cd-20-bai-ban-to-d-956483aceb933b12.html) |
+| REF-55 | Võ Trường Kỳ, Sự tương tác ĐCTT và cải lương | Phân biệt bản cải lương 12 câu với bản tài tử 48 câu | [Nguồn](https://www.namkyluctinh.org/tac-gia-tac-pham/s-t-u-v/vo-truong-ky/su-tuong-tac-giua-dhon-ca-tai-tu--4c70530152b807f1.html) |
+| REF-56 | Nhị Tấn, Hệ thống bài bản ĐCTT | Định danh Phụng Hoàng trong Bốn Oán; không phải tổng phổ | [Nguồn](https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/he-thong-bai-ban-dhon-ca-tai-tu.html) |
+
+**Trạng thái:** chỉ mở hồ sơ kiểm nguồn, không xác nhận đã đọc đủ bản ký âm hoặc nghiệm thu diễn xướng.
+
+
+## Bổ sung bài 19 — Giang Nam Cửu Khúc (28/10/2026)
+
+| ID | Tài liệu | Đã xác minh và giới hạn | Liên kết |
+|---|---|---|---|
+| REF-57 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (1997), tr.320–331** | Đã kiểm 58 nhãn ký âm và 58 nhãn lời *Kim, Kiều hoa viên ngộ* (soạn lời Nguyễn Văn Thinh 1970 theo tr.321). Nhịp tám/song lang 6–8. Lớp 16+18+13+11; khác chỉ mục Viện ở câu 47/48. Khúc 8 nhạc 47, lời 45. Chú thích tr.330 về OAN/LIU câu 1/5/17/21 và kết câu 58. Ảnh tr.328 chưa tải được, có văn bản PDF. Không thẩm âm hoặc quyền sao chép. | [Nguồn](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) |
+| REF-58 | **Viện Âm nhạc, *Hai mươi bài bản Tổ*, mục Giang Nam** | Theo chỉ mục: 58 câu, 4 lớp 16+18+12+12; nhịp 8, nguồn Giang Nam nhịp tư liên hệ Vọng Giang Nam, khác chữ Oan/Lưu câu đầu; **PDF trả 502, chưa xem ảnh**, khác ranh lớp in Nhị Tấn. | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-59 | **Viện Âm nhạc – giáo trình guitar phím lõm** | Hồ sơ V1 nhắc chín khúc và ba nhịp mô giữa các khúc; chưa kiểm trực tiếp tài liệu và thời điểm mô từng câu. | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-60 | **Trần Thiên Hùng, *Giang Nam tam khúc – Bên Trời Tha Hương*** | Lời riêng 16 câu, tác giả tự nêu hệ 3 lớp 16+18+24. Không phải lời 58 câu *Kim, Kiều hoa viên ngộ* của Nguyễn Văn Thinh. | [Nguồn](https://lyric.tkaraoke.com/49813/giang_nam_tam_khuc___ben_troi_tha_huong.html) |
+| REF-61 | **Cổng tỉnh Đồng Nai – sáng tác mới ĐCTT** | Hồ sơ V1 ghi *Thương Quá Đồng Nai* (Giang Nam Cửu Khúc), chưa xác minh toàn lời, người viết, ráp ca và quyền dùng. | [Nguồn](https://dongnai.gov.vn/vi/news/chuong-trinh-ke-hoach-phat-trien-ktxh/sang-tac-moi-cho-don-ca-tai-tu-dong-nai-18153.html) |
+| REF-62 | **Tủ nhạc Cổ Nhạc miền Nam – Ba Tu đờn kìm** | Hồ sơ V1 ghi nhận metadata Giang Nam Cửu Khúc do Ba Tu độc tấu; chưa rà bản thu/timecode và giấy phép. | [Nguồn](https://www.namkyluctinh.org/am-nhac/tu-nhac-co-nhac-mien-nam.html) |
+
+**Nguyên tắc:** Tài liệu chính có số trang, song **không có thẩm định nghệ nhân**; không tự chép toàn bộ ký âm, lời ca hay MP3. [Sổ câu và lỗi 45/47/48](../ban-to/19-giang-nam/v2-ra-soat-58-cau.md).
+
+
+## Bổ sung bài 20 — Phụng Cầu Hoàng Duyên (28/10/2026)
+
+| ID | Nguồn | Đã đối chiếu và giới hạn | Liên kết |
+|---|---|---|---|
+| REF-63 | **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập IV (PDF số hóa), tr.332–341** | Đã xem **ảnh 10 trang**: 40 nhãn ký âm tại 332/334/336/338/340, lời *Bá Nha Đoạn Cầm* 40 nhãn tại 333/335/337/339/341, ghi **Nhị Tấn 2002**. 3 lớp 18+8+14. Bìa **1997**, bài khảo cứu tr.411 **1999**, mục lục ghi *Tư Mã Tương Như*: **chưa rõ lịch sử biên tập**. Chưa duyệt phách, ca, song lang và quyền. | [Nguồn](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) |
+| REF-64 | **Viện Âm nhạc – 20 bản Tổ, mục Phụng Cầu hoàn duyên** | Theo nội dung chỉ mục: 40 câu nhịp tám, 18+8+14, đối xứng từng cặp, chầu/mô, dứt ngoại **thường** ở nhịp 7 câu chẵn. **Không có bảng phách đã kiểm**, PDF Viện chưa xem trực tiếp. | [Nguồn](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf) |
+| REF-65 | **Viện Âm nhạc – giáo trình guitar phím lõm** | Theo chỉ mục: *Phụng cầu hoàng duyên* 40 câu nhịp 8, 3 lớp. **Chưa đối chứng kỹ thuật ngón**. | [Nguồn](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf) |
+| REF-66 | **Nguyễn Tuấn Khanh – Bộ 20 bài Tổ do Ba Tu độc tấu đờn kìm** | Nguồn danh mục nghệ nhân/bản ghi, **không phải** bản nghe/timecode đã đối chiếu. | [Nguồn](https://www.namkyluctinh.org/tac-gia-tac-pham/n/nguyen-tuan-khanh/nhac-tai-tu-20-bai-to.html) |
+| REF-67 | **Văn Dần – hai video ca Phụng Cầu Thu Thảo/Thanh Thủy** | Nguồn tham khảo biểu diễn, **chưa kiểm đủ 40 câu**, chưa có quyền tải lại MP3/video. | [Nguồn](https://nhacsivandan.wordpress.com/2013/11/05/sinh-hoat-don-ca-tai-tu-tai-tu-gia-nhac-si-tan-nhi-2/) |
+| REF-68 | **Karaoke Cải Lương tổng hợp – *Phụng Cầu 40 câu: Từ Hải thọ tiễn*** | Ví dụ lời khác gắn nhãn 40 câu; website **không rõ tác giả và nguồn bản gốc**, chưa thẩm định, không tự gán là lời Nhị Tấn. | [Nguồn](https://www.karaoke.cailuongtoiyeu.com/karaoke-ph%E1%BB%A5ng-c%E1%BA%A7u-40-c%C3%A2u.html) |
+
+**Mốc V2: 20/20 mở biên bản kiểm nguồn, 0/20 nghiệm thu diễn xướng.** [Biên bản bài 20](../ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) · [40 câu có trang](../ban-to/20-phung-cau/v2-ra-soat-40-cau.md). **Đây không phải tổng phổ đã được chứng nhận hoặc giấy phép sử dụng âm thanh cho AI.**

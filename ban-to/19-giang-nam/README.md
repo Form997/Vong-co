@@ -69,3 +69,14 @@ Theo [Viện Âm nhạc, 20 bản Tổ](https://vienamnhac.vn/Media/Default/Down
 - [ ] Chưa thẩm âm bản Ba Tu, chưa có giấy phép phát hành lại MP3.
 
 **KẾT LUẬN: ĐẠT HỒ SƠ NGUỒN V1; CHƯA ĐẠT BẢN BIỂU DIỄN ĐƯỢC NGHIỆM THU.** [Nguồn và dị bản](nguon-va-di-ban.md).
+
+
+## ĐÍNH CHÍNH / BỔ SUNG V2 — 28/10/2026 (giữ nguyên lịch sử V1)
+
+Đã mở [**biên bản đối chiếu V2**](v2-bien-ban-nghiem-thu.md) và [**sổ nguồn 58 câu (có trang in)**](v2-ra-soat-58-cau.md).
+
+**Phát hiện mới quan trọng:** [Nhị Tấn, *Nhạc Tài Tử Nam Bộ* tập IV, tr.320–331](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) có **58/58 nhãn ký âm** (nhạc trang chẵn 320/322/324/326/328/330) và **58/58 nhãn lời** (trang lẻ 321/323/325/327/329/331), bộ lời ***Kim, Kiều hoa viên ngộ*** ghi **“Soạn lời: Nguyễn Văn Thinh 1970”** (tr.321). **Tr.328** có văn bản PDF nhưng chưa tải được ảnh trong phiên; chưa đối chiếu âm thanh.
+
+**KHÔNG ĐƯỢC xóa sai khác hệ lớp:** Bản in Nhị Tấn đánh **16+18+13+11** (lớp IV từ câu 48); hồ sơ Viện theo chỉ mục web ghi **16+18+12+12** (lớp IV từ câu 47). Cùng Nhị Tấn còn ghi **Khúc 8: nhạc từ 47 (tr.328), lời từ 45 (tr.329)**. Cần nghệ nhân/chuyên gia thẩm định, **không tự sửa nguyên bản**. Chú thích **tr.330** nói về chữ vào **OAN thay LIU ở câu 1/5/17/21**, câu 58 dứt **XƯ luyến XANG**; không coi đó là đã thẩm âm.
+
+Bộ lời 58 câu **Nguyễn Văn Thinh** là **một bộ lời xác định theo ấn bản Nhị Tấn**; lời ***Bên Trời Tha Hương*** của **Trần Thiên Hùng** là **trích 16 câu riêng**, không trộn. **CHỜ NGHIỆM THU (0/58 câu được xác nhận diễn xướng)**, chưa có quyền tái bản ký âm/lời/MP3.

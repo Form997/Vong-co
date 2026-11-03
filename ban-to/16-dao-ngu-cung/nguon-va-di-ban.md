@@ -1,5 +1,15 @@
 # Nguồn – dị bản – lời ca Đảo Ngũ Cung (Nam Đảo)
 
+## ĐÍNH CHÍNH V2 — 28/10/2026: ĐÃ CÓ KÝ ÂM IN ĐỐI CHỨNG
+
+[**Biên bản V2**](v2-bien-ban-nghiem-thu.md) · [**Sổ 67 vị trí từ Nhị Tấn III**](v2-ra-soat-67-cau.md) · [**Khung 68 theo Viện, chưa xác minh bản ký âm**](v2-doi-chieu-68-cau.md).
+
+**Nhị Tấn tập III, tr.278–287**, đã soi ảnh, có **52 câu** gồm **4 Phản + 48 Nam Đảo**, **15 câu Song Cước** tiếp theo, cùng các nhãn lời *Tích Thúy Kiều (tiếp theo)*; **67 vị trí** khi đếm cả Song Cước. Viện Âm nhạc ghi **68 = 4+48+16**, biểu diễn độc lập bỏ câu 68 thì thành 67: **chưa có phép đối chiếu âm nhạc chứng minh hai hệ 67 giống nhau**. Cần bản có Song Cước câu 16, nghe đoạn chuyển hơi và chốt quyền.
+
+Bản đăng Văn Dần có *Lục Vân Tiên* (Trần Ngọc Thạch), phụ lục Nhị Tấn có *Gương mê sắc* (Sáu Hải) — phải tách ba bộ lời. Hai lỗi nhãn đã ghi: S1 tr.283 **Lớp IX** ở nơi nhạc tr.282 **Lớp IV**; Văn Dần trùng **câu 32** lớp V. **CHỜ NGHIỆM THU**.
+
+---
+
 ## Nguồn chuyên ngành
 - [Viện Âm nhạc, 20 bài Tổ](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf): **68 câu nhịp tư**. Ghi **4 câu Phản Xuân qua Đảo, 8 lớp × 8 câu**, lớp 7 và 8 là hai lớp Song Cước. Nếu chơi độc lập, **không tấu câu 68**, còn **67**.
 - [Viện Âm nhạc, giáo trình guitar phím lõm](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf): mô tả 68 câu, 8 lớp và 4 câu phần, hơi Đảo.

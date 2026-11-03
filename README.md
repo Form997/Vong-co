@@ -1,3 +1,5 @@
+> **Bản hợp nhất kỹ thuật · 03/11/2026:** `main` chứa website V3.6, MCP chỉ đọc và bộ quét nguồn. Nhánh phát hành website là `main`; V1 đóng băng được giữ nguyên. [Cài đặt, kiểm thử và triển khai](docs/hop-nhat-2026-11-03.md).
+
 <h1 align="center">HAI ĐẤT</h1>
 
 <p align="center"><strong>20 BẢN TỔ · ĐỜN CA TÀI TỬ NAM BỘ</strong></p>
@@ -9,37 +11,109 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
   <a href="README.en.md">English</a> ·
   <a href="#bắt-đầu-tại-đây">Bắt đầu</a> ·
   <a href="#danh-mục-20-bản-tổ">20 bản Tổ</a> ·
-  <a href="https://github.com/Form997/Vong-co/blob/v2-development/docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
-  <a href="docs/v3.5-huong-dan-trien-khai-nhieu-nhanh.md">Hướng dẫn đưa nhiều nhánh lên web</a> ·
+  <a href="docs/v3.4-co-ban.md">V3.4-alpha</a> ·
+  <a href="docs/v3.3-khoi-dong.md">V3.3-alpha</a> ·
+  <a href="docs/nhat-ky-phien-ban.md">Các thế hệ V</a> ·
   <a href="CONTRIBUTING.md">Đóng góp</a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml"><img alt="GitHub Actions - V3 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml/badge.svg?branch=v3-development"></a>
   <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml"><img alt="GitHub Actions - V2 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml/badge.svg?branch=v2-development"></a>
   <img alt="V2: 20 trên 20 hồ sơ kiểm nguồn đã mở" src="https://img.shields.io/badge/V2-20%2F20%20h%E1%BB%93%20s%C6%A1%20ngu%E1%BB%93n-28776D">
   <img alt="Chưa có bài nghiệm thu diễn xướng" src="https://img.shields.io/badge/Di%E1%BB%85n%20x%C6%B0%E1%BB%9Bng-0%2F20%20nghi%E1%BB%87m%20thu-8B6F47">
 </p>
 
-> [!NOTE]
-> **Trang công khai trên nhánh `main`** được giới thiệu riêng; các nguồn và biên bản **V2** nằm trên [nhánh `v2-development`](https://github.com/Form997/Vong-co/tree/v2-development). Liên kết tới V2 là tài liệu nghiên cứu đang phát triển, **không có nghĩa toàn bộ V2 đã hợp nhất vào `main`**.
-
 > [!IMPORTANT]
-> **Trạng thái nghiên cứu · 28/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
+> **Trạng thái nghiên cứu · 29/10/2026:** **20/20** bản Tổ đã có biên bản kiểm nguồn V2; **00/20** bài được nghiệm thu diễn xướng. Đây là kho **nghiên cứu và kiểm chứng tư liệu đang phát triển**, **chưa phải** thư viện ký âm/âm thanh được chứng nhận hay cấp phép để tái phân phối. Không xem các huy hiệu kiểm thử phần mềm là chứng nhận âm nhạc.
 
-> **V3.6 · 31/10/2026 — Quét nguồn học thuật có kiểm duyệt:** Crossref công khai và OpenAlex tùy chọn; GitHub Actions trên `main` tự tìm metadata, đưa vào Issue/Artifact **chờ kiểm** và không tự chỉnh sửa bài bản hoặc phát hành âm thanh. [Hướng dẫn V3.6](docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md). Trạng thái nghiệm thu: **0/20**.
+> [!NOTE]
+> **Website V3.0 đã được GitHub Pages triển khai thành công ngày 28/10/2026**: [mở trang tra cứu công khai](https://form997.github.io/Vong-co/) · [minh chứng Deploy](https://github.com/Form997/Vong-co/actions/runs/40675923989). **V3.1 đã triển khai công khai** qua [GitHub Pages run #40689588576](https://github.com/Form997/Vong-co/actions/runs/40689588576). **V3.2 đã được hợp nhất qua [Pull Request #8](https://github.com/Form997/Vong-co/pull/8) và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40694415309)** ngày 28/10/2026. Giao diện và hồ sơ nghiên cứu **không tương đương nghiệm thu âm nhạc**.
 
-> **Nâng cấp mã · 03/11/2026:** sửa tra cứu số bài MCP, kiểm soát tải nguồn và mở rộng kiểm thử. [Phạm vi, kết quả và giới hạn](docs/nang-cap-ma-2026-11-03.md).
+> **V3.6 · 31/10/2026 — Tự dò nguồn nghiên cứu có kiểm định:** robot đã chạy trên `main` bằng Crossref; kết quả được giữ ở [Issue #23 – nguồn chờ duyệt](https://github.com/Form997/Vong-co/issues/23), không tự sửa các bài bản. [Hướng dẫn tự động cập nhật và bảo vệ nhánh](https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md). Bốn trang nhóm, 20 trang bài vẫn có thể tra cứu; **0/20 nghiệm thu diễn xướng**.
 
 ---
+
+### V3.1 — 20 trang riêng, tra cứu rõ nguồn, triển khai có kiểm soát
+
+**Ngày bắt đầu:** 28/10/2026, nhánh `v3.1-development`. V3.1 tạo **20 trang URL riêng** từ metadata V3, thêm **lọc mức chứng cứ** và **sắp xếp A–Z tiếng Việt**, có danh sách nguồn/nhận xét chưa kiểm chứng ở từng hệ bản. [Xem kế hoạch V3.1](docs/v3.1-khoi-dong.md).
+
+**Đã phát hành V3.1:** [45 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40689588560), [Chromium trên điện thoại và 20 URL HTTP thành công](https://github.com/Form997/Vong-co/actions/runs/40689588524), [GitHub Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40689588576). Website công khai nay có 20 trang bài riêng.
+
+**Website V3 đang hoạt động theo nhật ký Deploy**: [mở trang](https://form997.github.io/Vong-co/). **Pull Request #5 đã được hợp nhất và GitHub triển khai V3.1 thành công**, có thể truy cập các URL `/bai/<slug>/`.
+
+### V3.2 — Học từng câu theo dấu vết nguồn, không bịa nhạc
+
+**Bắt đầu:** **28/10/2026**, nhánh [`v3.2-development`](https://github.com/Form997/Vong-co/tree/v3.2-development).
+
+V3.2 thêm **72 vị trí câu đã đối chiếu sổ V2** cho hai hệ cụ thể: **Lưu Thủy Trường 32 câu nhịp tư (LT-32-4)** và **Phụng Cầu Hoàng Duyên 40 câu nhịp tám (PC-40-8)**. Mỗi nhãn có lớp, vị trí nhạc/lời, nguồn, chữ kết ngắn hoặc số trang in khi đã có bằng chứng. Bản 01 **không trộn với hệ 16 câu nhịp tám**; bản 20 **không trộn với Phụng Hoàng**.
+
+Trong trang bài, người học mở từng câu, đọc nguồn và ghi điều còn thiếu. Trên danh mục có bộ lọc **2 bài đã chuẩn hóa chỉ mục học / 18 bài chờ chuyển đổi có kiểm**. **Cả 20 bài đều có dạng sổ V2**, nhưng mức kiểm không giống nhau; [kiểm toán 20 bài](docs/v3.2-kiem-toan-20-ban.md) giải thích từng trường hợp. **Chưa có âm thanh, lời ca hoặc nốt ký âm được phép tái phát; vẫn 0/20 bài nghiệm thu diễn xướng.**
+
+**Đã có mã và kiểm thử:** [JSON 72 nhãn](data/v3_2/phrase_index.json) · [schema](data/v3_2/schema.json) · [quy trình thẩm định 5 tầng](docs/v3.2-quy-trinh-tham-dinh.md) · [hướng dẫn chạy V3.2](web/v3/README.md). [60/60 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40692114438) và [Chromium kiểm tra giao diện thật](https://github.com/Form997/Vong-co/actions/runs/40692114437).
+
+**Tình trạng mới nhất:** [V3.2 đã phát hành trên GitHub Pages](https://github.com/Form997/Vong-co/actions/runs/40694415309) sau khi [PR #8](https://github.com/Form997/Vong-co/pull/8) được hợp nhất; [60/60 bài Python trên nhánh phát hành đạt](https://github.com/Form997/Vong-co/actions/runs/40694415249) và [Chromium thực tế đạt](https://github.com/Form997/Vong-co/actions/runs/40694415286). Mở [bài Lưu Thủy Trường](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/#hoc-tung-cau) hoặc [Phụng Cầu](https://form997.github.io/Vong-co/bai/20-phung-cau/#hoc-tung-cau) để xem các vị trí câu được dẫn nguồn.
+
+#### V3.2 · Làm mới giao diện thư viện — 28/10/2026
+
+Sau khi hoàn tất phần học theo nguồn, dự án đã phát hành **giao diện mới theo phong cách thư viện di sản** qua [Pull Request #9](https://github.com/Form997/Vong-co/pull/9). Phối màu **ngà / xanh rừng / vàng đồng**, trang chào có đồ họa đồng tâm bằng CSS tự viết, bộ lọc và thẻ bài rõ ràng hơn; **20 trang tác phẩm cùng 72 nhãn câu** dùng cùng hệ thiết kế. Không tải font, ảnh stock hay thư viện giao diện từ bên thứ ba.
+
+**Đã phát hành trên GitHub Pages:** [Deploy thành công #40697296276](https://github.com/Form997/Vong-co/actions/runs/40697296276) · [62 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40697296133) · [Chromium kiểm 360/390/768/1024/1366 px](https://github.com/Form997/Vong-co/actions/runs/40697296268). Không đổi dữ liệu nguồn và chưa có bài nào được nghiệm thu diễn xướng.
+
+**Kích thước tại commit phát hành UI [`a16cf55`](https://github.com/Form997/Vong-co/tree/a16cf55499ba5912731db1cd10b0453ac49c0d15):** **150 tệp, 1.275.924 byte = 1.246,02 KiB** (mã nguồn Git chưa nén); gói website riêng **29 tệp, 462.065 byte**, không phải tệp ZIP.
+
+### V3.2 — Chính sách pháp lý, bảo vệ dữ liệu và an ninh mạng (29/10/2026)
+
+Tài liệu của dự án được tách thành **hai kịch bản**: **phi thương mại đang hoạt động** và **thương mại chỉ được phép khi hoàn tất cổng đánh giá riêng**. Không dùng chữ “phi thương mại” để miễn nghĩa vụ về bản quyền hoặc dữ liệu cá nhân; không lấy “GitHub Actions thành công” để tuyên bố website đã được Nhà nước hay tổ chức quốc tế chứng nhận.
+
+**Nguồn pháp lý được kiểm tra:** [Luật An ninh mạng 116/2025/QH15](https://vanban.chinhphu.vn/?docid=216499&pageid=27160) (**01/07/2026**), [Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15](https://vanban.chinhphu.vn/?docid=214590&pageid=27160) (**01/01/2026**), [Luật sửa đổi Luật SHTT 131/2025/QH15](https://vanban.chinhphu.vn/?docid=216511&pageid=27160) (**01/04/2026**), và [EU AI Act có sửa đổi Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj), áp dụng theo điều kiện cụ thể; không có một bộ luật “toàn thế giới” cho mọi website.
+
+**Bộ hồ sơ điều hành:** [phân tích pháp lý đầy đủ](docs/phap-ly-an-ninh-mang-v3.2.md) · [quyền riêng tư](PRIVACY.md) · [an ninh/báo lỗ hổng](SECURITY.md) · [quyền tác giả và cấp phép](RIGHTS_AND_LICENSING.md) · [12 cổng mở kinh doanh](docs/quy-trinh-thuong-mai-hoa.md) · [quy trình ứng phó sự cố](docs/quy-trinh-ung-pho-su-co.md) · [21 nguồn chính thức/tiêu chuẩn/điều khoản nền tảng](data/v3_2/legal_sources.json).
+
+**Đã triển khai trang pháp lý V3.2:** [mở trang pháp lý, an ninh mạng và quyền riêng tư](https://form997.github.io/Vong-co/web/v3/legal.html); [PR #10 đã hợp nhất](https://github.com/Form997/Vong-co/pull/10), [Pages Deploy Success](https://github.com/Form997/Vong-co/actions/runs/40791942791), [75 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40791942971). Gói công khai có **30 tệp / 473.683 byte**; mã nguồn tại [merge commit `3a68a9a`](https://github.com/Form997/Vong-co/tree/3a68a9afbd66cd7e0c80f5a137787ac84b1de69f) có **160 tệp / 1.398.285 byte** (**1.365,51 KiB**). Không có tài khoản/thu tiền/API kinh doanh và chưa được phép tái bản nhạc/ca từ/âm thanh chưa rõ quyền. **0/20 bài nghiệm thu biểu diễn.**
+
+### V3.2 — Bổ sung pháp luật 6 quốc gia (29/10/2026)
+
+**Đã lập hồ sơ theo nguồn chính thức của Mỹ, Nga, Trung Quốc, Úc, Nhật Bản và Hàn Quốc**, gồm **28 văn bản/hướng dẫn có đường dẫn gốc** và trạng thái hiệu lực cụ thể. Nổi bật: Trung Quốc sửa luật an ninh mạng áp dụng **01/01/2026**; Úc có bản hợp nhất luật dữ liệu/bản quyền năm 2026; Hàn Quốc có **Luật Bản quyền hiệu lực đúng 29/10/2026**; Nhật có sửa đổi mới với nhiều mốc áp dụng khác nhau.
+
+[**Danh mục sáu nước**](docs/phap-ly-quoc-te/README.md) · [Mỹ](docs/phap-ly-quoc-te/my.md) · [Nga](docs/phap-ly-quoc-te/nga.md) · [Trung Quốc](docs/phap-ly-quoc-te/trung-quoc.md) · [Úc](docs/phap-ly-quoc-te/uc.md) · [Nhật Bản](docs/phap-ly-quoc-te/nhat-ban.md) · [Hàn Quốc](docs/phap-ly-quoc-te/han-quoc.md) · [sổ nguồn có cấu trúc](data/v3_2/six_country_sources.json).
+
+**Đã phát hành trên website:** sáu trang luật quốc gia nối từ [trang pháp lý HAI ĐẤT](https://form997.github.io/Vong-co/web/v3/legal.html) qua [PR #11](https://github.com/Form997/Vong-co/pull/11); [GitHub Pages Build + Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40794249686), [87/87 bài Python đạt](https://github.com/Form997/Vong-co/actions/runs/40794249729) và **376 liên kết nội bộ** hợp lệ. **Mã nguồn tại commit phát hành [2278abb](https://github.com/Form997/Vong-co/tree/2278abbf3be63c679c47ddf28540a130498275bf): 171 tệp, 1.521.759 byte (1.486,09 KiB)**; gói website **36 tệp, 540.826 byte**. Quy định áp dụng tùy hoạt động, người dùng, nơi vận hành; đây không phải xác nhận dự án đã đủ chuẩn pháp luật sáu nước.
+
+### V3.3-alpha — Từ 72 đến 150 nhãn câu có chứng cứ (29/10/2026)
+
+**V3.3-alpha đã được hợp nhất qua [Pull Request #12](https://github.com/Form997/Vong-co/pull/12) và [GitHub Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40798312828)**, ưu tiên **học liệu từng câu** thay vì chỉ cải tiến giao diện. Bổ sung **Phú Lục Chấn 34 nhãn** và **Bình Bán Chấn 44 nhãn** theo sổ V2; cùng hai hệ V3.2 (Lưu Thủy Trường 32, Phụng Cầu 40) tổng **4 bài có chỉ mục / 150 nhãn**, **16 bài chờ tiếp tục chuẩn hóa**. Quan trọng: **34 câu nhạc nhưng chỉ 32 nhãn lời trong Nhị Tấn II** của bài 02; chữ kết câu 08 và 34 khác với Văn Dần; không đoán phách, MIDI, ca từ hoặc PDF page.
+
+[**Đề cương, giới hạn và checklist V3.3**](docs/v3.3-khoi-dong.md) · [Chỉ mục JSON](data/v3_3/phrase_index.json) · [Quy tắc kiểm](scripts/v3_3_validate.py) · [Hồ sơ 20 bản V2](docs/v3.2-kiem-toan-20-ban.md).
+
+**V3.3-alpha đã được phát hành ở cấp chỉ mục và phần mềm nhưng chưa hoàn thiện toàn diện**: [102 Python tests](https://github.com/Form997/Vong-co/actions/runs/40798312794) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40798312801) **đạt**, 404 đường dẫn nội bộ hợp lệ. **Mã nguồn tại [commit `4b448fc`](https://github.com/Form997/Vong-co/tree/4b448fc2cc3ade035f97f8c9be44179aff7abc19): 177 tệp / 1.638.193 byte (1.599,80 KiB)**; **gói website: 38 tệp / 703.350 byte**, không phải ZIP. `0/20` bài nghiệm thu diễn xướng, quyền nhạc/lời/bản ghi chưa chứng nhận, thương mại chưa phê duyệt.
+
+### V3.4-alpha — Hai hệ Cổ Bản theo nguồn (bắt đầu 29/10/2026)
+
+V3.4 tách Cổ Bản Vắn **34 nhãn** và Trường **68 nhãn** theo Nhị Tấn tập II và sổ V2. Cộng bốn bài V3.3: **5 bài, 6 hệ, 252 nhãn**; **15 bài** chưa chuẩn hóa thành chỉ mục. Không tự ánh xạ câu giữa hai hệ. [Hồ sơ đối chiếu](docs/v3.4-co-ban.md) · [Dữ liệu và giới hạn](data/v3_4/README.md).
+
+V3.4-alpha đã phát hành qua [PR #13](https://github.com/Form997/Vong-co/pull/13); [Pages triển khai thành công](https://github.com/Form997/Vong-co/actions/runs/40805890692), [Python](https://github.com/Form997/Vong-co/actions/runs/40805890696) và [Chromium](https://github.com/Form997/Vong-co/actions/runs/40805890695) đạt. Tại [commit phát hành `86ac6a4`](https://github.com/Form997/Vong-co/tree/86ac6a4c299b9dd205f4ebe719ffa8e4e5b82582): **183 tệp / 1.793.317 byte**; gói website **40 tệp / 932.810 byte**.
+
+Đây là chỉ mục nguồn, chưa phải nghiệm thu diễn xướng: **0/20 bài** đã nghiệm thu, quyền chưa xác minh; không bổ sung lời, ký âm hay bản thu. Các kết quả và thông số được ghi trong [nhật ký phiên bản](docs/nhat-ky-phien-ban.md).
+
+### V3.5-alpha — Xuân Tình Chấn (bắt đầu 29/10/2026)
+
+V3.5 bổ sung 48 nhãn theo Nhị Tấn tập II và sổ V2, phân biệt bản Thủ tập I và phần Tây Thi trên trang chung. Tổng **6 bài, 7 hệ, 300 nhãn**; **14 bài** còn chờ chuẩn hóa. [Hồ sơ nguồn](docs/v3.5-xuan-tinh.md) · [Dữ liệu](data/v3_5/README.md). Đây là chỉ mục nguồn, không phải nghiệm thu diễn xướng; quyền chưa xác minh và 0/20 bài đã nghiệm thu. [PR #15](https://github.com/Form997/Vong-co/pull/15) đã hợp nhất; [Python](https://github.com/Form997/Vong-co/actions/runs/40967193507), [Chromium](https://github.com/Form997/Vong-co/actions/runs/40967193483) và [Pages](https://github.com/Form997/Vong-co/actions/runs/40967193526) thành công. Bản phát hành [25afafb](https://github.com/Form997/Vong-co/tree/25afafb9eea982daf87faaf31fe2412f13af3111): **189 tệp / 1.959.347 byte** chưa nén; website **42 tệp / 1.130.487 byte**.
+
+### Website tự cập nhật bản dựng
+
+Website tạo mã bản dựng theo nội dung sau khi kiểm thử; khi phiên bản mới được triển khai, trang đang mở tự kiểm tra và tải lại. [Đã phát hành qua PR #17](https://github.com/Form997/Vong-co/pull/17), [Pages thành công](https://github.com/Form997/Vong-co/actions/runs/40996898637). [Cách hoạt động và giới hạn](docs/tu-dong-cap-nhat.md). Mã bản dựng không tự tạo học liệu, quyền hay chứng nhận diễn xướng.
 
 ## Bắt đầu tại đây
 
 | Bạn đến để… | Nơi nên mở trước |
 |---|---|
+| **Xem website V3 đang công khai** | [Mở HAI ĐẤT trực tuyến](https://form997.github.io/Vong-co/) |
+| **Dùng thử V3.2 học từng câu theo nguồn** | [Hướng dẫn chạy bản thử](web/v3/README.md) · [Sổ 72 nhãn câu](data/v3_2/README.md) |
 | **Khám phá 20 bản Tổ** và đọc từng bài | [Danh mục 20 bản ngay bên dưới](#danh-mục-20-bản-tổ) |
-| **Học đờn – ca**, hiểu số câu và hơi điệu | [Hồ sơ từng bài](https://github.com/Form997/Vong-co/tree/v2-development/ban-to/) · [Hướng dẫn đọc và thực hành bài 01](https://github.com/Form997/Vong-co/blob/v2-development/docs/01-huong-dan-don-va-ca.md) |
-| **Nghiên cứu và đối chiếu** ký âm, lời, dị bản | [Những phát hiện V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md) · [Nguồn tham khảo](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) |
-| **Phát triển ứng dụng AI / RAG / MCP** | [Nguyên mẫu MCP chỉ đọc](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế chứng cứ V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) |
+| **Học đờn – ca**, hiểu số câu và hơi điệu | [Hồ sơ từng bài](ban-to/) · [Hướng dẫn đọc và thực hành bài 01](docs/01-huong-dan-don-va-ca.md) |
+| **Nghiên cứu và đối chiếu** ký âm, lời, dị bản | [Những phát hiện V2](docs/tong-hop-phat-hien-v2.md) · [Nguồn tham khảo](docs/nguon-tham-khao.md) |
+| **Phát triển ứng dụng AI / RAG / MCP** | [Nguyên mẫu MCP chỉ đọc](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) · [Quy chế chứng cứ V2](docs/ke-hoach-v2.md) |
 | **Đề xuất sửa lỗi hoặc đóng góp** | [Hướng dẫn đóng góp](CONTRIBUTING.md) · [Gửi vấn đề](https://github.com/Form997/Vong-co/issues/new/choose) |
 
 ### Vì sao dự án này khác một danh sách tên bài?
@@ -54,12 +128,16 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 
 | Hạng mục | Hiện trạng | Mở minh chứng |
 |---|---|---|
-| **Hồ sơ 20 bài** | Đã có 20 thư mục và biên bản kiểm nguồn V2 | [Danh mục bài](https://github.com/Form997/Vong-co/blob/v2-development/docs/20-ban-to.md) |
-| **Sổ đối chiếu câu & dị bản** | Đã mở theo bài; mức kiểm chứng không đồng đều | [Báo cáo phát hiện V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md) |
-| **Nguồn tham khảo** | Có mã nguồn, liên kết, trang in và giới hạn sử dụng | [Sổ nguồn](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) |
+| **Hồ sơ 20 bài** | Đã có 20 thư mục và biên bản kiểm nguồn V2 | [Danh mục bài](docs/20-ban-to.md) |
+| **V3.0-alpha — dữ liệu máy đọc** | **20 bản, 30 hệ bản/dị bản**, JSON + JSON Schema, chưa nghiệm thu diễn xướng | [Catalog](data/v3/catalog.json) · [Tài liệu dữ liệu](data/v3/README.md) |
+| **Website V3 đã triển khai** | GitHub Pages có [kết quả Deploy thành công](https://github.com/Form997/Vong-co/actions/runs/40675923989) | [Mở website](https://form997.github.io/Vong-co/) |
+| **V3.1 — đã triển khai** | 20 trang riêng, lọc chứng cứ, A–Z; Deploy Success | [Mở bài số 01](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/) |
+| **V3.2 — đã triển khai** | 72 vị trí câu theo hai hệ nguồn; 18 bài chờ chuẩn hóa, quy chế thẩm định 5 tầng, không tái bản nhạc/âm thanh thiếu quyền | [Mở bài 01](https://form997.github.io/Vong-co/bai/01-luu-thuy-truong/#hoc-tung-cau) · [Bài 20](https://form997.github.io/Vong-co/bai/20-phung-cau/#hoc-tung-cau) · [CI](https://github.com/Form997/Vong-co/actions/runs/40694415249) |
+| **Sổ đối chiếu câu & dị bản** | Đã mở theo bài; mức kiểm chứng không đồng đều | [Báo cáo phát hiện V2](docs/tong-hop-phat-hien-v2.md) |
+| **Nguồn tham khảo** | Có mã nguồn, liên kết, trang in và giới hạn sử dụng | [Sổ nguồn](docs/nguon-tham-khao.md) |
 | **Kiểm thử mã nguồn** | Workflow GitHub Actions hoạt động trên V2; có các bài thử Python và kiểm cấu trúc | [Xem kết quả CI](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) |
-| **Tích hợp cho AI** | Có **nguyên mẫu MCP chỉ đọc ở nhánh riêng**; chưa công bố là dịch vụ thương mại ổn định | [Xem prototype](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) |
-| **Nghiệm thu biểu diễn** | **0/20**; còn đối chiếu phách, lối nhấn, song lang, bản thu, nghệ nhân | [Quy chế V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) |
+| **Tích hợp cho AI** | Có **nguyên mẫu MCP chỉ đọc trên `main`**; chưa công bố là dịch vụ thương mại ổn định | [Xem prototype](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) |
+| **Nghiệm thu biểu diễn** | **0/20**; còn đối chiếu phách, lối nhấn, song lang, bản thu, nghệ nhân | [Quy chế V2](docs/ke-hoach-v2.md) |
 
 ## Danh mục 20 bản Tổ
 
@@ -67,28 +145,28 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 
 | Số | Nhóm | Bản Tổ | Kiểm nguồn V2 |
 |---:|---|---|---|
-| 01 | Sáu Bắc | [Lưu Thủy Trường](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/01-luu-thuy-truong/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) |
-| 02 | Sáu Bắc | [Phú Lục Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/02-phu-luc-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md) |
-| 03 | Sáu Bắc | [Bình Bán Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/03-binh-ban-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) |
-| 04 | Sáu Bắc | [Cổ Bản (Vắn / Trường)](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/04-co-ban-van/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md) |
-| 05 | Sáu Bắc | [Xuân Tình Chấn](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/05-xuan-tinh-chan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) |
-| 06 | Sáu Bắc | [Tây Thi (Vắn / Trường)](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) |
-| 07 | Bảy Lễ | [Xàng Xê](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) |
-| 08 | Bảy Lễ | [Ngũ Đối Thượng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md) |
-| 09 | Bảy Lễ | [Ngũ Đối Hạ](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) |
-| 10 | Bảy Lễ | [Long Đăng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) |
-| 11 | Bảy Lễ | [Long Ngâm](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) |
-| 12 | Bảy Lễ | [Vạn Giá](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) |
-| 13 | Bảy Lễ | [Tiểu Khúc](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) |
-| 14 | Ba Nam | [Nam Xuân](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) |
-| 15 | Ba Nam | [Nam Ai](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md) |
-| 16 | Ba Nam | [Đảo Ngũ Cung](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md) |
-| 17 | Bốn Oán | [Tứ Đại Oán](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) |
-| 18 | Bốn Oán | [Phụng Hoàng](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/18-phung-hoang/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) |
-| 19 | Bốn Oán | [Giang Nam](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/19-giang-nam/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md) |
-| 20 | Bốn Oán | [Phụng Cầu](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/20-phung-cau/README.md) | [Xem hồ sơ V2](https://github.com/Form997/Vong-co/blob/v2-development/ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) |
+| 01 | Sáu Bắc | [Lưu Thủy Trường](ban-to/01-luu-thuy-truong/README.md) | [Xem hồ sơ V2](ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md) |
+| 02 | Sáu Bắc | [Phú Lục Chấn](ban-to/02-phu-luc-chan/README.md) | [Xem hồ sơ V2](ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md) |
+| 03 | Sáu Bắc | [Bình Bán Chấn](ban-to/03-binh-ban-chan/README.md) | [Xem hồ sơ V2](ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) |
+| 04 | Sáu Bắc | [Cổ Bản (Vắn / Trường)](ban-to/04-co-ban-van/README.md) | [Xem hồ sơ V2](ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md) |
+| 05 | Sáu Bắc | [Xuân Tình Chấn](ban-to/05-xuan-tinh-chan/README.md) | [Xem hồ sơ V2](ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) |
+| 06 | Sáu Bắc | [Tây Thi (Vắn / Trường)](ban-to/06-tay-thi-van/README.md) | [Xem hồ sơ V2](ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) |
+| 07 | Bảy Lễ | [Xàng Xê](ban-to/07-xang-xe/README.md) | [Xem hồ sơ V2](ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) |
+| 08 | Bảy Lễ | [Ngũ Đối Thượng](ban-to/08-ngu-doi-thuong/README.md) | [Xem hồ sơ V2](ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md) |
+| 09 | Bảy Lễ | [Ngũ Đối Hạ](ban-to/09-ngu-doi-ha/README.md) | [Xem hồ sơ V2](ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) |
+| 10 | Bảy Lễ | [Long Đăng](ban-to/10-long-dang/README.md) | [Xem hồ sơ V2](ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) |
+| 11 | Bảy Lễ | [Long Ngâm](ban-to/11-long-ngam/README.md) | [Xem hồ sơ V2](ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) |
+| 12 | Bảy Lễ | [Vạn Giá](ban-to/12-van-gia/README.md) | [Xem hồ sơ V2](ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) |
+| 13 | Bảy Lễ | [Tiểu Khúc](ban-to/13-tieu-khuc/README.md) | [Xem hồ sơ V2](ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) |
+| 14 | Ba Nam | [Nam Xuân](ban-to/14-nam-xuan/README.md) | [Xem hồ sơ V2](ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) |
+| 15 | Ba Nam | [Nam Ai](ban-to/15-nam-ai/README.md) | [Xem hồ sơ V2](ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md) |
+| 16 | Ba Nam | [Đảo Ngũ Cung](ban-to/16-dao-ngu-cung/README.md) | [Xem hồ sơ V2](ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md) |
+| 17 | Bốn Oán | [Tứ Đại Oán](ban-to/17-tu-dai-oan/README.md) | [Xem hồ sơ V2](ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md) |
+| 18 | Bốn Oán | [Phụng Hoàng](ban-to/18-phung-hoang/README.md) | [Xem hồ sơ V2](ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) |
+| 19 | Bốn Oán | [Giang Nam](ban-to/19-giang-nam/README.md) | [Xem hồ sơ V2](ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md) |
+| 20 | Bốn Oán | [Phụng Cầu](ban-to/20-phung-cau/README.md) | [Xem hồ sơ V2](ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) |
 
-**Cần lưu ý khi tìm hiểu:** *Cổ Bản* có hệ Vắn/Trường **34/68 câu**; *Tây Thi* có hệ **26/52 câu**. *Phụng Hoàng* (#18) **khác** *Phụng Cầu* (#20). Không suy từ số dòng trong sổ câu ra việc đã thẩm định nhạc. Những khác biệt khó hơn, như ranh lớp **Giang Nam**, được lưu đầy đủ trong [báo cáo phát hiện](https://github.com/Form997/Vong-co/blob/v2-development/docs/tong-hop-phat-hien-v2.md).
+**Cần lưu ý khi tìm hiểu:** *Cổ Bản* có hệ Vắn/Trường **34/68 câu**; *Tây Thi* có hệ **26/52 câu**. *Phụng Hoàng* (#18) **khác** *Phụng Cầu* (#20). Không suy từ số dòng trong sổ câu ra việc đã thẩm định nhạc. Những khác biệt khó hơn, như ranh lớp **Giang Nam**, được lưu đầy đủ trong [báo cáo phát hiện](docs/tong-hop-phat-hien-v2.md).
 
 ## Các thế hệ V — lịch sử có thể kiểm chứng
 
@@ -96,10 +174,14 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 |---|---|---|---:|
 | **V1 – Gieo nền tư liệu** | **12/10/2026** | Tạo hệ thống hồ sơ và nguồn cho 20 bản Tổ, ghi nhận dị bản và phần còn thiếu | **397,63 KiB** |
 | **V2 – Đưa câu đờn trở về nguồn** | **19/10/2026**; bắt đầu quy chế kiểm nguồn toàn bộ **27/10** | Mở biên bản cho **20/20**, đối chiếu số câu, nguồn, trang in, lời ca và cách phân lớp; **chưa nghiệm thu biểu diễn** | **942,96 KiB** |
+| **V3.0-alpha – Tra cứu có nguồn** | **28/10/2026** | JSON 20 bản, **30 hệ bản**, kiểm định tự động, website GitHub Pages đã triển khai | **1.055,84 KiB** |
+| **V3.1 – 20 trang riêng có chứng cứ** | **28/10/2026** | Bộ lọc, 20 trang, sitemap; đã Deploy | **1.111,14 KiB** |
+| **V3.2 – Học đúng câu, đúng nguồn** | **28/10/2026** | JSON 72 nhãn (2 hệ), truy xuất trang nhạc/lời, phiếu luyện và kiểm 5 tầng; **Pages đã triển khai thành công** | **1.225,20 KiB** |
 
-*Các số trên là **kích thước Git chưa nén tại các commit cố định**, không phải dung lượng ZIP hoặc dung lượng nhánh luôn thay đổi. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4); V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968).*
+*Dung lượng **Git chưa nén tại snapshot có commit cố định**, không phải ZIP hay kích thước nhánh thay đổi liên tục. V1: **407.176 byte**, 64 tệp tại [`f6537c8`](https://github.com/Form997/Vong-co/tree/f6537c83878bca079752dbdd4baec5b1164a1ab4). V2: **965.588 byte**, 112 tệp tại [`4d919d2`](https://github.com/Form997/Vong-co/tree/4d919d2ebdf63df61c8fd723f850830e7eaf5968). V3 alpha: **1.081.181 byte**, 133 tệp tại [`d7d9765`](https://github.com/Form997/Vong-co/tree/d7d976561215be5c28e1b10db7ddc868037ed386). V3.1 bản thử: **1.130.175 byte**, 140 tệp tại [`f868dc8`](https://github.com/Form997/Vong-co/tree/f868dc84c89a6aca82474a805665ecb2f026fc9d). **V3.1 bản phát hành:** **1.137.811 byte**, 140 tệp tại [merge commit `5243541`](https://github.com/Form997/Vong-co/tree/5243541e3ba9e6bb5953994188853c6fd6612248). Đây là tổng kích thước Git chưa nén, **khác** dung lượng gói web (197.920 byte/27 tệp). V3.2 bản thử: **1.245.064 byte**, **150 tệp** tại [`efb84fa`](https://github.com/Form997/Vong-co/tree/efb84fa0065465d6bdf5ed90cac2bbfc4e4063fd); số liệu này là **snapshot trước khi cập nhật README**, không phải kích thước ZIP hoặc nhánh cập nhật tự động. **V3.2 snapshot phát hành:** **1.254.609 byte, 150 tệp** tại [merge commit `9c6b7e7`](https://github.com/Form997/Vong-co/tree/9c6b7e7b7deb4e2d896500a8a6a64db084e62386); **1.225,20 KiB**. Gói website riêng: **29 tệp / 348.588 byte**.*
 
-[**Nhật ký V1–V2, mốc thời gian, số đo và mẫu ghi thế hệ tiếp theo**](https://github.com/Form997/Vong-co/blob/v2-development/docs/nhat-ky-phien-ban.md) · [Công cụ Python đo dung lượng](https://github.com/Form997/Vong-co/blob/v2-development/scripts/thong-ke-dung-luong.py)
+
+[**Nhật ký V1–V2, mốc thời gian, số đo và mẫu ghi thế hệ tiếp theo**](docs/nhat-ky-phien-ban.md) · [Công cụ Python đo dung lượng](scripts/thong-ke-dung-luong.py)
 
 ## Dành cho nhà nghiên cứu, lập trình viên và tổ chức
 
@@ -112,7 +194,7 @@ Nguồn gốc / ảnh trang sách / dị bản / dữ liệu mô tả
                            ↓
          Kiểm thử cấu trúc và trích nguồn
                            ↓
-     Nguyên mẫu MCP chỉ đọc (nhánh riêng)
+     Nguyên mẫu MCP chỉ đọc (main)
                            ↓
        Ứng dụng tra cứu AI / giáo dục
 ```
@@ -120,13 +202,13 @@ Nguồn gốc / ảnh trang sách / dị bản / dữ liệu mô tả
 Dự án ưu tiên **tra cứu bằng chứng trước khi đưa ra kết luận**. Bên tích hợp AI cần giữ nguyên tác giả, hệ dị bản, nguồn/trang, tình trạng xác minh và quyền sử dụng; khi không đủ dữ liệu thì phải có cơ chế **không khẳng định**.
 
 **Đường dẫn cho kỹ thuật:**
-[Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế V2](https://github.com/Form997/Vong-co/blob/v2-development/docs/ke-hoach-v2.md) · [Sổ nguồn](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) · [Workflow kiểm thử](https://github.com/Form997/Vong-co/blob/v2-development/.github/workflows/kiem-thu-v2.yml)
+[Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) · [Quy chế V2](docs/ke-hoach-v2.md) · [Sổ nguồn](docs/nguon-tham-khao.md) · [Workflow kiểm thử](.github/workflows/kiem-thu-v2.yml)
 
-**Hướng phát triển V3–V4 (dự kiến, chưa phát hành):** chuẩn hóa dữ liệu có cấu trúc → giao diện tra cứu tiếng Việt → đối chiếu bản thu có quyền sử dụng → thử nghiệm AI/MCP có kiểm soát. **Không** công bố đây là sản phẩm đã chạy ổn định hoặc đã được kiểm định âm nhạc.
+**V3.0-alpha và V3.1 đều đã được GitHub Pages triển khai thành công**; V3.1 được phát hành sau khi [Pull Request #5](https://github.com/Form997/Vong-co/pull/5) được hợp nhất. Cả hai vẫn là sản phẩm tra cứu metadata, chưa có nghiệm thu biểu diễn. Bước kế tiếp là bổ sung chứng cứ từng câu/trang, xác minh quyền âm thanh và thẩm định chuyên môn trước khi tính đến AI/MCP ổn định. [Lộ trình V3.1](docs/v3.1-khoi-dong.md).
 
 ## Nguồn, quyền sử dụng và liêm chính khoa học
 
-- **Nguồn học thuật và tư liệu:** [Sổ nguồn đầy đủ](https://github.com/Form997/Vong-co/blob/v2-development/docs/nguon-tham-khao.md) gồm các mục đánh mã đến **REF-68**, có mức kiểm và giới hạn; không đồng nghĩa **68 nguồn độc lập đều được xác minh trực tiếp**.
+- **Nguồn học thuật và tư liệu:** [Sổ nguồn đầy đủ](docs/nguon-tham-khao.md) gồm các mục đánh mã đến **REF-68**, có mức kiểm và giới hạn; không đồng nghĩa **68 nguồn độc lập đều được xác minh trực tiếp**.
 - **Bản quyền:** kho có thể xem công khai **không** đồng nghĩa được sao chép, huấn luyện AI, dùng thương mại hoặc tái phát hành bản ký âm, ca từ, PDF và MP3. Hiện chưa xác nhận một giấy phép chung cho tất cả nội dung; mã nguồn và nội dung bên thứ ba cần xét riêng.
 - **Không mạo nhận chứng nhận:** việc dẫn UNESCO, Viện Âm nhạc, ICHCAP, nghệ nhân và tác giả **không** có nghĩa các đơn vị/cá nhân đó chứng nhận kho này.
 - **Sửa nguồn minh bạch:** không tự biến chỗ chưa rõ thành “đã đạt”; xem [quy trình đóng góp](CONTRIBUTING.md) trước khi gửi thay đổi.
@@ -137,5 +219,9 @@ Một trang in, một điểm sai khác câu nhạc được chỉ rõ, hay mộ
 
 <p align="center"><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
 
-<p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v2-development">Nhánh nghiên cứu V2 (liên kết ngoài)</a></sub></p>
+<p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v3-development">Nhánh phát hành V3.1</a></sub></p>
 
+
+## Nâng cấp mã website — 03/11/2026
+
+Kiểm toàn bộ chỉ mục xuất bản, phục hồi tự cập nhật khi mạng treo và mở rộng CI. [Biên bản kiểm thử, ngày bắt đầu và dung lượng bản dựng](docs/nang-cap-web-2026-11-03.md).

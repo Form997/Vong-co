@@ -1,0 +1,632 @@
+{
+  "schema_version": "3.0.0-alpha.1",
+  "project": "HAI ĐẤT — 20 BẢN TỔ ĐỜN CA TÀI TỬ NAM BỘ",
+  "started_on": "2026-10-28",
+  "origin_branch": "v2-development",
+  "catalog_status": "research_preview",
+  "rights_notice": "Dẫn nguồn không đồng nghĩa được quyền tái bản ký âm, lời ca, bản thu hoặc dùng huấn luyện AI.",
+  "verification_notice": "Chỉ là metadata dựa trên hồ sơ V2. 20/20 biên bản đã mở, 0/20 bài nghiệm thu diễn xướng. Các số câu và nhịp thuộc những hệ bản cụ thể, không phải một bản chuẩn duy nhất.",
+  "variant_status_definitions": {
+    "source_indexed": "Số câu/hệ đã được định vị trong tài liệu ở hồ sơ V2; chưa chứng minh diễn xướng.",
+    "source_reported": "Nguồn được hồ sơ V2 thuật lại; cần đối chứng trực tiếp hoặc âm thanh.",
+    "derived_unverified": "Bản ánh xạ/biến đổi đang đề xuất; chưa được kiểm chứng độc lập."
+  },
+  "items": [
+    {
+      "id": 1,
+      "slug": "01-luu-thuy-truong",
+      "title": "Lưu Thủy Trường",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [
+        "Lưu Thủy"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/01-luu-thuy-truong/README.md",
+      "review_document": "ban-to/01-luu-thuy-truong/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "LT-32-4",
+          "label": "32 câu nhịp tư (nguồn Văn Dần)",
+          "phrase_count": 32,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/",
+          "qualification": "Đã rà nhãn 1–32; tài liệu Viện có mô tả 32 câu nhịp tám, cần giữ riêng."
+        },
+        {
+          "variant_id": "LT-16-8",
+          "label": "16 câu nhịp tám (quan điểm Nguyễn Vĩnh Bảo)",
+          "phrase_count": 16,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_reported",
+          "reference_url": "https://dantranhpvv.wordpress.com/2009/12/20/l%C6%B0u-th%E1%BB%A7y-tr%C6%B0%E1%BB%9Dng/",
+          "qualification": "Bản tường thuật riêng; chưa đối chiếu ghi âm và bản sách gốc."
+        },
+        {
+          "variant_id": "LT-32-8",
+          "label": "32 câu nhịp tám (mô tả ICHCAP)",
+          "phrase_count": 32,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_reported",
+          "reference_url": "https://archive.unesco-ichcap.org/eng/ek/sub16/pdf_file/handbook_cd8.pdf",
+          "qualification": "Hệ đếm nhịp bất đồng với Văn Dần; chưa thể coi cùng một bản."
+        }
+      ],
+      "research_note": "Các nguồn không đồng nhất cách đếm 16/32 và nhịp tư/nhịp tám."
+    },
+    {
+      "id": 2,
+      "slug": "02-phu-luc-chan",
+      "title": "Phú Lục Chấn",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/02-phu-luc-chan/README.md",
+      "review_document": "ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "PLC-34-4",
+          "label": "34 câu nhịp tư",
+          "phrase_count": 34,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc đủ 34 nhãn; lời tr.127/129 chỉ 32 nhãn trong bản Nhị Tấn; nguồn khác đủ 34."
+        }
+      ],
+      "research_note": "Chênh lệch 34 nhãn nhạc và 32 nhãn lời giữa các nguồn."
+    },
+    {
+      "id": 3,
+      "slug": "03-binh-ban-chan",
+      "title": "Bình Bán Chấn",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/03-binh-ban-chan/README.md",
+      "review_document": "ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "BBC-44-4",
+          "label": "44 câu nhịp tư",
+          "phrase_count": 44,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "Có 44 nhãn nhạc/lời ở trang in 130–135; chưa kiểm thực tấu."
+        },
+        {
+          "variant_id": "BBC-22-8",
+          "label": "22 câu nhịp tám (thuyết minh Viện)",
+          "phrase_count": 22,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_reported",
+          "reference_url": "https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf",
+          "qualification": "Mô tả hệ đếm khác, chưa đối chiếu bản ghi 22 câu."
+        }
+      ],
+      "research_note": "Phân biệt bản 44 câu nhịp tư và hệ 22 câu nhịp tám."
+    },
+    {
+      "id": 4,
+      "slug": "04-co-ban-van",
+      "title": "Cổ Bản",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [
+        "Cổ Bản Vắn",
+        "Cổ Bản Trường"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/04-co-ban-van/README.md",
+      "review_document": "ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "CBV-34-4",
+          "label": "Cổ Bản Vắn",
+          "phrase_count": 34,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "34 câu bản Vắn; không đại diện bản Trường."
+        },
+        {
+          "variant_id": "CBT-68-4",
+          "label": "Cổ Bản Trường",
+          "phrase_count": 68,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "68 câu bản Trường, có bảng nhạc/lời; cần nghiệm thu riêng."
+        }
+      ],
+      "research_note": "Hai hệ Vắn/Trường độc lập; không cộng thành 102 câu."
+    },
+    {
+      "id": 5,
+      "slug": "05-xuan-tinh-chan",
+      "title": "Xuân Tình Chấn",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/05-xuan-tinh-chan/README.md",
+      "review_document": "ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "XTC-48-4",
+          "label": "48 câu nhịp tư",
+          "phrase_count": 48,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "Bản nhạc/lời đủ 48 nhãn; có bản Thủ khác, chưa thẩm âm."
+        }
+      ],
+      "research_note": "Bản Thủ và bản tập II có nét nhạc và bộ lời khác nhau."
+    },
+    {
+      "id": 6,
+      "slug": "06-tay-thi-van",
+      "title": "Tây Thi",
+      "family": "sau-bac",
+      "family_label": "Sáu Bắc",
+      "aliases": [
+        "Tây Thi Vắn",
+        "Tây Thi Trường"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/06-tay-thi-van/README.md",
+      "review_document": "ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "TSV-26-4",
+          "label": "Tây Thi Vắn",
+          "phrase_count": 26,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "26 nhãn chính; tiêu đề '34 câu' ở nguồn web không khớp phần đánh số."
+        },
+        {
+          "variant_id": "TST-52-4",
+          "label": "Tây Thi Trường",
+          "phrase_count": 52,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+          "qualification": "52 câu bản Trường; không được gộp với 26 câu Vắn."
+        }
+      ],
+      "research_note": "Không lập một dị bản 34 câu khi chỉ có tiêu đề thiếu nhãn đối chứng."
+    },
+    {
+      "id": 7,
+      "slug": "07-xang-xe",
+      "title": "Xàng Xê",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [
+        "Xàng Xề"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/07-xang-xe/README.md",
+      "review_document": "ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "XX-64-4",
+          "label": "64 câu nhịp tư",
+          "phrase_count": 64,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://conhacnambo.com/destop/topics_list.php?topic_id=424",
+          "qualification": "Bản trực tuyến có đủ 64 nhãn; lớp III có Xê/Xề khác nguồn."
+        }
+      ],
+      "research_note": "Còn khác biệt Xê/Xề và cách diễn giải nhịp."
+    },
+    {
+      "id": 8,
+      "slug": "08-ngu-doi-thuong",
+      "title": "Ngũ Đối Thượng",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/08-ngu-doi-thuong/README.md",
+      "review_document": "ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "NDT-61-4",
+          "label": "61 câu trong bản Nhị Tấn",
+          "phrase_count": 61,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Bản in 61 câu; đối chiếu nguồn tr.226–233."
+        },
+        {
+          "variant_id": "NDT-60-4",
+          "label": "Hệ 60 câu lược câu nguồn 53",
+          "phrase_count": 60,
+          "beats_per_phrase": 4,
+          "evidence_status": "derived_unverified",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Phương án ánh xạ bỏ câu 53; chưa xác nhận độc lập bằng bản thu."
+        }
+      ],
+      "research_note": "Không coi bản 60 câu là lỗi in hoặc bản diễn đã kiểm."
+    },
+    {
+      "id": 9,
+      "slug": "09-ngu-doi-ha",
+      "title": "Ngũ Đối Hạ",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/09-ngu-doi-ha/README.md",
+      "review_document": "ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "NDH-38-4",
+          "label": "38 câu nhịp tư",
+          "phrase_count": 38,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc tr.234/236 và lời tr.235/237 có 38 nhãn; có hai cách chia lớp."
+        }
+      ],
+      "research_note": "Bản in có 5 lớp, nguồn nghiên cứu cũng nêu cách nhóm 3 lớp."
+    },
+    {
+      "id": 10,
+      "slug": "10-long-dang",
+      "title": "Long Đăng",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/10-long-dang/README.md",
+      "review_document": "ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "LD-40-4",
+          "label": "40 câu nhịp tư",
+          "phrase_count": 40,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Câu 39–40 ở tr.242, trước đầu mục Long Ngâm; có bộ lời khác ở tập V."
+        }
+      ],
+      "research_note": "Không ghép lời tập V vào lời được in tại tập III."
+    },
+    {
+      "id": 11,
+      "slug": "11-long-ngam",
+      "title": "Long Ngâm",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/11-long-ngam/README.md",
+      "review_document": "ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "LNG-33-4",
+          "label": "33 câu nhịp tư",
+          "phrase_count": 33,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc tr.242/244 và lời tr.243/245, giữ ranh với Long Đăng/Vạn Giá."
+        }
+      ],
+      "research_note": "Lưu ý ranh giới đầu/cuối trang cùng bài lân cận."
+    },
+    {
+      "id": 12,
+      "slug": "12-van-gia",
+      "title": "Vạn Giá",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [
+        "Bài Vạn"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/12-van-gia/README.md",
+      "review_document": "ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "VG-47-4",
+          "label": "47 câu nhịp tư",
+          "phrase_count": 47,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc/lời 47 nhãn tại tr.244–251; có bộ lời khác chưa rà ca."
+        }
+      ],
+      "research_note": "Cách chia 5 lớp theo bản in, không mặc định trùng ngắt hơi."
+    },
+    {
+      "id": 13,
+      "slug": "13-tieu-khuc",
+      "title": "Tiểu Khúc",
+      "family": "bay-le",
+      "family_label": "Bảy Lễ",
+      "aliases": [
+        "Bài Tiểu"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/13-tieu-khuc/README.md",
+      "review_document": "ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "TK-29-4",
+          "label": "29 câu nhịp tư",
+          "phrase_count": 29,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc/lời tr.250–253; nhiều bộ lời tác giả khác, phải tách riêng."
+        }
+      ],
+      "research_note": "Bộ lời trong sách và bộ lời phụ lục/VOH là các nguồn khác."
+    },
+    {
+      "id": 14,
+      "slug": "14-nam-xuan",
+      "title": "Nam Xuân",
+      "family": "ba-nam",
+      "family_label": "Ba Nam",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/14-nam-xuan/README.md",
+      "review_document": "ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "NX-68-4",
+          "label": "68 câu nhịp tư",
+          "phrase_count": 68,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc/lời 68 nhãn; nguồn in có Lớp IX 65–68; cách mô tả khác nói 8 lớp+4 câu."
+        }
+      ],
+      "research_note": "Câu 65–68 ở Lớp IX trong bản Nhị Tấn."
+    },
+    {
+      "id": 15,
+      "slug": "15-nam-ai",
+      "title": "Nam Ai",
+      "family": "ba-nam",
+      "family_label": "Ba Nam",
+      "aliases": [],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/15-nam-ai/README.md",
+      "review_document": "ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "NA-84-4",
+          "label": "84 vị trí: 4 chuyển + 80 lòng",
+          "phrase_count": 84,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "4 câu Phản Xuân qua Ai đánh số riêng; 80 câu lòng đánh số lại, không phải 84 số liên tục."
+        },
+        {
+          "variant_id": "NA-68-4",
+          "label": "Hệ 68 theo thuyết minh Viện",
+          "phrase_count": 68,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_reported",
+          "reference_url": "https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf",
+          "qualification": "Hệ 4+64 được thuyết minh; chưa có đối chứng bản nhạc độc lập."
+        }
+      ],
+      "research_note": "Không đồng nhất 84 vị trí với 68 hoặc hệ 104 chưa chứng minh."
+    },
+    {
+      "id": 16,
+      "slug": "16-dao-ngu-cung",
+      "title": "Đảo Ngũ Cung",
+      "family": "ba-nam",
+      "family_label": "Ba Nam",
+      "aliases": [
+        "Nam Đảo",
+        "Song Cước"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/16-dao-ngu-cung/README.md",
+      "review_document": "ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "DG-67-4",
+          "label": "67 vị trí 4+48+15 theo bản Nhị Tấn",
+          "phrase_count": 67,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%203%20-%20Nhi%20Tan.pdf",
+          "qualification": "Phần Nam Đảo 52 (4+48) và Song Cước 15; không thấy câu 16 Song Cước."
+        },
+        {
+          "variant_id": "DG-68-4",
+          "label": "68 vị trí theo thuyết minh Viện",
+          "phrase_count": 68,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_reported",
+          "reference_url": "https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf",
+          "qualification": "Hệ 4+48+16; chưa chứng minh cùng bản chép 67 vị trí."
+        }
+      ],
+      "research_note": "Số 67 và 68 có cách tính và nguồn chứng cứ khác nhau."
+    },
+    {
+      "id": 17,
+      "slug": "17-tu-dai-oan",
+      "title": "Tứ Đại Oán",
+      "family": "bon-oan",
+      "family_label": "Bốn Oán",
+      "aliases": [
+        "Tứ Đại Vắn"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/17-tu-dai-oan/README.md",
+      "review_document": "ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "TDO-38-8",
+          "label": "38 câu nhịp tám",
+          "phrase_count": 38,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf",
+          "qualification": "Nhạc tr.302/304/306/308 và lời tr.303/305/307/309; bảy lớp."
+        },
+        {
+          "variant_id": "TDO-19-4",
+          "label": "Tứ Đại Vắn 19 câu nhịp tư",
+          "phrase_count": 19,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_reported",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf",
+          "qualification": "Bản Vắn khác cần đối chiếu nguồn riêng, không cộng số câu."
+        }
+      ],
+      "research_note": "Bộ lời Bá Lý Hề và lời xưa Bùi Kiệm là hai nguồn khác."
+    },
+    {
+      "id": 18,
+      "slug": "18-phung-hoang",
+      "title": "Phụng Hoàng",
+      "family": "bon-oan",
+      "family_label": "Bốn Oán",
+      "aliases": [
+        "Phụng Hoàng Lai Nghi"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/18-phung-hoang/README.md",
+      "review_document": "ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "PH-48-8",
+          "label": "48 câu nhịp tám theo thuyết minh",
+          "phrase_count": 48,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_reported",
+          "reference_url": "https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf",
+          "qualification": "Sổ V2 mới là khung 48 vị trí; CHƯA kiểm trực tiếp 48 nhãn ký âm."
+        },
+        {
+          "variant_id": "PH-72-4",
+          "label": "72 câu nhịp tư (được thuật lại từ 1905)",
+          "phrase_count": 72,
+          "beats_per_phrase": 4,
+          "evidence_status": "source_reported",
+          "reference_url": "https://namkyluctinh.org/tac-gia-tac-pham/n/nhi-tan/nhan-xet-ve-bo-cd-20-bai-ban-to-d-956483aceb933b12.html",
+          "qualification": "Nguồn thứ cấp thuật lại năm 1905; chưa xem ấn bản gốc."
+        }
+      ],
+      "research_note": "Phân biệt trích đoạn cải lương 12 câu, bản 48 câu và bản 72 câu; không lẫn Phụng Cầu."
+    },
+    {
+      "id": 19,
+      "slug": "19-giang-nam",
+      "title": "Giang Nam Cửu Khúc",
+      "family": "bon-oan",
+      "family_label": "Bốn Oán",
+      "aliases": [
+        "Giang Nam"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/19-giang-nam/README.md",
+      "review_document": "ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "GN-58-8",
+          "label": "58 câu nhịp tám",
+          "phrase_count": 58,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf",
+          "qualification": "Sách tr.320–331, có nhãn 58 nhạc/lời; tr.328 chưa xem ảnh trực tiếp trong lần kiểm."
+        }
+      ],
+      "research_note": "Nhị Tấn chia 16+18+13+11; Viện nêu 16+18+12+12, Khúc 8 cũng lệch nhãn 45/47."
+    },
+    {
+      "id": 20,
+      "slug": "20-phung-cau",
+      "title": "Phụng Cầu Hoàng Duyên",
+      "family": "bon-oan",
+      "family_label": "Bốn Oán",
+      "aliases": [
+        "Phụng Cầu",
+        "Phụng Cầu hoàn duyên"
+      ],
+      "review_status": "source_review_open",
+      "performance_status": "pending",
+      "rights_status": "unverified",
+      "readme_document": "ban-to/20-phung-cau/README.md",
+      "review_document": "ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md",
+      "variants": [
+        {
+          "variant_id": "PC-40-8",
+          "label": "40 câu nhịp tám",
+          "phrase_count": 40,
+          "beats_per_phrase": 8,
+          "evidence_status": "source_indexed",
+          "reference_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf",
+          "qualification": "Bản số hóa tr.332–341, 40 nhãn nhạc/lời; niên đại và mục lục có bất nhất."
+        }
+      ],
+      "research_note": "Nhị Tấn ghi lời Bá Nha Đoạn Cầm 2002; bìa tập 1997, bài khảo cứu 1999; mục lục khác tựa lời."
+    }
+  ]
+}
