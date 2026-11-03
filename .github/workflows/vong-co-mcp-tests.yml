@@ -3,14 +3,13 @@ name: Validate Vong-co MCP
 on:
   push:
     branches:
+      - main
       - feature/mcp-readonly-v1
     paths:
       - "integrations/vong-co-mcp/**"
       - ".github/workflows/vong-co-mcp-tests.yml"
   pull_request:
-    paths:
-      - "integrations/vong-co-mcp/**"
-      - ".github/workflows/vong-co-mcp-tests.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -18,6 +17,7 @@ permissions:
 jobs:
   offline-and-protocol-tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     defaults:
       run:
         working-directory: integrations/vong-co-mcp
@@ -29,5 +29,18 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+
+
+  remote-source-smoke:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m unittest discover -s tests -p "test_remote_smoke.py" -v
+        working-directory: integrations/vong-co-mcp
         env:
           RUN_REMOTE_SMOKE: "1"

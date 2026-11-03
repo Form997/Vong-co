@@ -36,7 +36,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Offline security tests before requesting Internet
-        run: python -m unittest discover -s tests -p "test_v3_6_discovery.py" -v
+        run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Fetch bounded scholarly metadata only
         id: scan
         shell: bash
@@ -52,7 +52,7 @@ jobs:
               f.write("has_candidates=" + ("true" if report["candidate_count"] else "false") + "\n")
           PY
       - name: Store audit artifact with pending candidates
-        if: steps.scan.outcome == 'success'
+        if: always() && steps.scan.outcome != 'skipped'
         uses: actions/upload-artifact@v4
         with:
           name: v3-6-pending-${{ github.run_id }}
@@ -73,3 +73,4 @@ jobs:
           else
             gh issue edit "$number" --body-file "$RUNNER_TEMP/v3_6_issue.md"
           fi
+
