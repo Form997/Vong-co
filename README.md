@@ -1,3 +1,5 @@
+> **Gia cố đóng gói · bắt đầu 04/11/2026:** dựng trong thư mục tạm, chỉ chuyển bộ website hoàn chỉnh sang đích; thêm 5 kiểm thử hồi quy. [Phạm vi, dung lượng và kết quả kiểm tra](docs/kiem-tra-2026-11-04.md).
+
 > **Bản hợp nhất kỹ thuật · 03/11/2026:** `main` chứa website V3.6, MCP chỉ đọc và bộ quét nguồn. Nhánh phát hành website là `main`; V1 đóng băng được giữ nguyên. [Cài đặt, kiểm thử và triển khai](docs/hop-nhat-2026-11-03.md).
 
 <h1 align="center">HAI ĐẤT</h1>
@@ -18,7 +20,7 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 </p>
 
 <p align="center">
-  <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml"><img alt="GitHub Actions - V3 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml/badge.svg?branch=v3-development"></a>
+  <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml"><img alt="GitHub Actions - V3 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v3.yml/badge.svg?branch=main"></a>
   <a href="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml"><img alt="GitHub Actions - V2 test status" src="https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml/badge.svg?branch=v2-development"></a>
   <img alt="V2: 20 trên 20 hồ sơ kiểm nguồn đã mở" src="https://img.shields.io/badge/V2-20%2F20%20h%E1%BB%93%20s%C6%A1%20ngu%E1%BB%93n-28776D">
   <img alt="Chưa có bài nghiệm thu diễn xướng" src="https://img.shields.io/badge/Di%E1%BB%85n%20x%C6%B0%E1%BB%9Bng-0%2F20%20nghi%E1%BB%87m%20thu-8B6F47">

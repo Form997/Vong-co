@@ -14,6 +14,7 @@ from html import escape
 import json
 import posixpath
 import shutil
+import tempfile
 from pathlib import Path
 from urllib.parse import quote, urlsplit
 from xml.sax.saxutils import escape as xml_escape
@@ -307,6 +308,38 @@ def generate_sitemap(pieces: list[dict]) -> str:
 
 
 def build(output: Path) -> dict[str, object]:
+    """Publish only a complete artifact; failures leave the destination untouched."""
+    output = Path(output)
+    target, source = output.resolve(), ROOT.resolve()
+    if output.is_symlink():
+        raise ValueError("Thư mục đích không được là liên kết tượng trưng.")
+    if target == source or source.is_relative_to(target):
+        raise ValueError("Thư mục đích trùng/chứa cả repository: không an toàn.")
+    if target.exists() and (not target.is_dir() or any(target.iterdir())):
+        raise ValueError("Thư mục đích phải rỗng để tránh lộ dữ liệu cũ.")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    # Same filesystem permits a final rename, with automatic staging cleanup.
+    with tempfile.TemporaryDirectory(prefix=".vong-co-build-", dir=target.parent) as tmp:
+        staged = Path(tmp) / "site"
+        result = _build_staged(staged)
+        # Recheck after generation: do not overwrite newly created user files.
+        if output.is_symlink() or output.resolve() != target:
+            raise ValueError("Thư mục đích đã thay đổi trong khi đóng gói.")
+        existed = target.exists()
+        if existed:
+            if not target.is_dir() or any(target.iterdir()):
+                raise ValueError("Thư mục đích đã có dữ liệu trong khi đóng gói.")
+            target.rmdir()
+        try:
+            staged.rename(target)
+        except OSError:
+            if existed:
+                target.mkdir(exist_ok=True)
+            raise
+    return result
+
+
+def _build_staged(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
     six_country_data = strict_load(SIX_COUNTRY_INDEX)
