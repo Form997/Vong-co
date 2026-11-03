@@ -1,5 +1,22 @@
 # BẢN TỔ 11 — LONG NGÂM (BÀI NGÂM)
 
+## NGHIỆM THU V2 — LONG NGÂM (28/10/2026)
+
+**[Biên bản nghiệm thu V2 (9 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ kiểm 33 câu và trang nguồn](v2-ra-soat-33-cau.md)**.
+
+**ĐÍNH CHÍNH QUAN TRỌNG V1:** Đã đối chiếu ảnh trực tiếp **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)**: bản **Long Ngâm 33 câu nhịp tư**, có **chữ nhạc 01–16 ở tr.242, 17–33 ở tr.244**; **lời 01–16 ở tr.243, 17–33 ở tr.245**, tên **“Tống Trọng qui tang”**, **soạn lời Cao Hoài Sang (1940)** theo bản in. Trước đây V1 ghi **chưa xác nhận được lời ca đời sớm 33 câu**, nay có bản lời 33 câu ghi năm 1940 trong sách, song **chưa đối chứng bản thảo gốc 1940 và bản hát cùng hệ**.
+
+- Phải bỏ qua **câu 39–40 Long Đăng** nằm **phía trên đầu mục Long Ngâm** ở tr.242/243, và dừng ở **câu 33 ngay trước Vạn Giá** ở tr.244/245. **Không ghép hai bài**.
+- Bản in chia **8+11+14**, chữ ngoặc cuối câu 33 là **XANG**. Cổ Nhạc Nam Bộ đăng lại 33 câu có ghi **theo Nhị Tấn**.
+- Nghiên cứu TS. Bùi Thiên Hoàng Quân ghi **chữ mở Xư**, trong khi Nhị Tấn có **“(--) Líu (XỰ)”** ở câu 01. **CHỜ** diễn giải chuyên môn, không tự “sửa” chữ nguồn.
+- Lời hiện đại *Tự hào đất đỏ miền Đông* vẫn bảo lưu như bộ lời riêng, chưa xác minh đủ tác giả/giấy phép/cách ráp phách.
+- **Đã kiểm có mặt 33/33 nhãn nhạc và 33/33 nhãn lời; 0/33 câu đạt thẩm định đờn–ca. PHÁN QUYẾT: CHỜ NGHIỆM THU.**
+- Không chỉnh sửa nhánh `v1-frozen` và không phân phối lại ký âm/lời/MP3 khi chưa có phép.
+
+> Nội dung V1 ở phía dưới là **dữ liệu lịch sử**; kết luận V2 và các nguồn dẫn trực tiếp phía trên được ưu tiên khi có phát hiện mới.
+
+---
+
 **Nhóm:** Bảy Lễ / Thất Chánh · **Hơi:** Lễ (Hạ) · **Phiên bản tham chiếu:** 33 câu nhịp tư, 3 lớp · **Hồ sơ V1: 27/10/2026**.
 
 > Hồ sơ nghiên cứu đã tìm được tài liệu ký âm chữ nhạc của Nhị Tấn và một lời ca hiện đại được đánh số. **Chưa nghiệm thu từng chữ đờn và lời ca, chưa có quyền tái bản toàn văn hoặc MP3.**

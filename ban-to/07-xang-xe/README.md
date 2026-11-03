@@ -1,5 +1,16 @@
 # BẢN TỔ SỐ 07 — XÀNG XÊ
 
+## V2 – NGHIỆM THU ĐỢT KIỂM NGUỒN (27/10/2026)
+
+- [**Biên bản V2 Xàng Xê: 10 vấn đề, bằng chứng, phán quyết**](v2-bien-ban-nghiem-thu.md).
+- [**Sổ rà soát nhạc từng câu 01–64, chỉ mục nguồn và ký hiệu cuối**](v2-ra-soat-64-cau.md).
+- **ĐÍNH CHÍNH trạng thái lời ca V1:** tìm được văn bản lời *Bích câu kỳ ngộ* có nhãn **1–64**, trang Karaoke Cải Lương ghi **Trần Ngọc Thạch** soạn. **Chưa kiểm từ ấn bản độc lập, chưa chứng thực quyền tái bản và chưa xác nhận hát khớp từng phách**. Câu V1 phía dưới ghi chưa có nguồn lời trọn 64 câu nay **không còn đầy đủ**.
+- **Khác cách diễn giải nguồn:** Viện Âm nhạc mô tả nhịp tư và lớp **Xê**; Cổ Nhạc Nam Bộ ghi nhịp tư và lớp **Xề**; nghiên cứu TS. Bùi Thiên Hoàng Quân mô tả nhịp tám/lái mười sáu hoặc nhịp tư lơi, lớp **Xề**, có thể chia **4 hoặc 5 lớp**.
+- Sổ V2 giữ hệ **64 câu nhịp tư** làm tham chiếu; **không ghép với Xàng Xê 20 câu nhịp tám**. Chỗ khác chữ kết lời/nhạc nổi bật: câu **08** và **36**.
+- **ĐẠT rà chỉ mục nguồn (64/64); CHỜ NGHIỆM THU diễn xướng (0/64)**. V1 vẫn ở nhánh `v1-frozen`, không sửa lại lịch sử.
+
+---
+
 **Nhóm:** Bảy Lễ (Thất Chánh, hệ Hạ/Lễ) · **Phiên bản tham chiếu:** 64 câu, nhịp tư · **Khảo cứu:** 27/10/2026.
 
 > **Trạng thái:** Có tài liệu chuyên ngành về cấu trúc, có trang chữ nhạc 64 câu và lời ca có tác giả ở các nguồn khác nhau. Chưa xác nhận một bộ lời truyền thống nguyên thủy duy nhất; chưa số hóa hay kiểm định từng câu và chưa được phép tái bản nguyên văn nội dung có chủ sở hữu.

@@ -1,5 +1,18 @@
 # BẢN TỔ 08 — NGŨ ĐỐI THƯỢNG
 
+## NGHIỆM THU V2 — BÀI 08 (27/10/2026)
+
+- [**Biên bản nghiệm thu V2 — Ngũ Đối Thượng**](v2-bien-ban-nghiem-thu.md): 8 phát hiện, tài liệu in, nhịp/lớp, nguồn ca và tình trạng kiểm kỹ thuật.
+- [**Sổ V2 61 câu với trang nhạc/lời trong Nhị Tấn tập III**](v2-ra-soat-61-cau.md): đã xác nhận **61/61 số câu nhạc và 61/61 số câu lời** từ trang in **226–233**, lớp **16+8+8+16+13**; **0/61 câu đạt kiểm diễn xướng**.
+- [**Bảng ánh xạ giả định 60 câu từ bản 61**](v2-doi-chieu-60-cau.md): theo ghi chú Viện Âm nhạc, bản 60 **bỏ câu gốc 53**. Đây **không phải bản ký âm 60 câu được chứng minh độc lập**, còn cần nghe đối chiếu đoạn **52→54**.
+- Lời *Kiều du Thanh Minh* ghi **Cao Hoài Sang (1940)** ở đầu trang **227** bản số hóa. Bản Thanh Tuyết ca *Lữ Bố hí Điêu Thuyền* là **trích 16 câu lớp I**, không được coi là toàn bản.
+- Trong đợt này PDF thuyết minh Viện Âm nhạc trả lỗi **502**, mức dẫn chứng 60/bỏ 53 là **chỉ mục web và nguồn thứ cấp**; nguồn nhạc/lời 61 câu đã kiểm **ảnh sách Nhị Tấn**.
+- **PHÁN QUYẾT: CHỜ NGHIỆM THU cả hai hệ**. Không tái bản nguyên văn ký âm/lời/MP3 chưa rõ quyền. Không sửa nhánh `v1-frozen`.
+
+> Nội dung **V1 phía dưới là hồ sơ lịch sử**, không được tự xem là nghiệm thu biểu diễn; khi có khác biệt về mức kiểm, ưu tiên biên bản V2 và chứng cứ đính kèm.
+
+---
+
 **Hệ 20 bản Tổ · Nhóm Bảy Lễ (Bảy bài Hạ) · phiên bản tham chiếu 61 câu nhịp tư · 27/10/2026.**
 
 > **Trạng thái:** Đã xác minh nguồn phân loại, nguồn ký âm Nhị Tấn và tên lời ca; chưa nghe kiểm đủ 61 câu với nghệ nhân, chưa có quyền tái bản toàn văn hay MP3.

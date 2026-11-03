@@ -1,0 +1,1795 @@
+{
+  "schema_version": "3.3.0-alpha.1",
+  "started_on": "2026-10-29",
+  "research_scope": "source_label_index_only",
+  "performance_status": "pending",
+  "rights_status": "unverified",
+  "reader_notice": "V3.3 là 150 nhãn câu theo 4 hệ nguồn V2 (32+34+44+40), không có tổng phổ, ca từ hay nhịp/song lang đã thẩm định. 20/20 hồ sơ mở, 0/20 bài nghiệm thu diễn xướng.",
+  "items": [
+    {
+      "piece_id": 1,
+      "slug": "01-luu-thuy-truong",
+      "title": "Lưu Thủy Trường",
+      "variant_id": "LT-32-4",
+      "phrase_count": 32,
+      "beats_per_phrase": 4,
+      "source_register": "ban-to/01-luu-thuy-truong/v2-ra-soat-32-cau.md",
+      "source_url": "https://nhacsivandan.wordpress.com/2013/08/18/bai-luu-thuy-truong/",
+      "source_description": "Văn Dần công bố bản chữ nhạc 32 câu nhịp tư; nhãn lời số tương ứng. Không dùng hệ 16/32 câu nhịp tám để lấp.",
+      "sections": [
+        {
+          "label": "I",
+          "start": 1,
+          "end": 8
+        },
+        {
+          "label": "II",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "label": "III",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "label": "IV",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "number": 1,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 01",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 01",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "HO",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 2,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 02",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 02",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 3,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 03",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 03",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 4,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 04",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 04",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 5,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 05",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 05",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 5↔7"
+        },
+        {
+          "number": 6,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 06",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 06",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 7,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 07",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 07",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 5↔7"
+        },
+        {
+          "number": 8,
+          "section": "I",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 08",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 08",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": "cụm lời “Đai cân” cần đối chứng"
+        },
+        {
+          "number": 9,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 09",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 09",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 10,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 10",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 10",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 11,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 11",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 11",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 12,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 12",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 12",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 13,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 13",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 13",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 13↔17↔21"
+        },
+        {
+          "number": 14,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 14",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 14",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 15,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 15",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 15",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": "lời ghi dấu “(U)” — cần giải nghĩa ca/ngân"
+        },
+        {
+          "number": 16,
+          "section": "II",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 16",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 16",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 17,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 17",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 17",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 13↔17↔21"
+        },
+        {
+          "number": 18,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 18",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 18",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 18↔22"
+        },
+        {
+          "number": 19,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 19",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 19",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 20,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 20",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 20",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 21,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 21",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 21",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 13↔17↔21"
+        },
+        {
+          "number": 22,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 22",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 22",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": "mô-típ trùng 18↔22; chữ “tạn” cần đối chiếu"
+        },
+        {
+          "number": 23,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 23",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 23",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 24,
+          "section": "III",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 24",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 24",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XỀ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 25,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 25",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 25",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": "hiển thị “Aån” cần kiểm mã chữ"
+        },
+        {
+          "number": 26,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 26",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 26",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 27,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 27",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 27",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 28,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 28",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 28",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 29,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 29",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 29",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 30,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 30",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 30",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 31,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 31",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 31",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 32,
+          "section": "IV",
+          "source_music_locator": "Bảng V2: nhãn nhạc câu 32",
+          "source_lyric_locator": "Bảng V2: nhãn lời câu 32",
+          "printed_music_page": null,
+          "printed_lyric_page": null,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        }
+      ]
+    },
+    {
+      "piece_id": 2,
+      "slug": "02-phu-luc-chan",
+      "title": "Phú Lục Chấn",
+      "variant_id": "PLC-34-4",
+      "phrase_count": 34,
+      "beats_per_phrase": 4,
+      "source_register": "ban-to/02-phu-luc-chan/v2-ra-soat-34-cau.md",
+      "source_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+      "source_description": "Nhị Tấn tập II: 34 dòng nhạc nhịp tư, 32 nhãn lời tr.127/129; Văn Dần có 34 nhãn lời. Không lấy Thủ Phú Lục Chấn tập I, không suy diễn ca/phách thực tấu.",
+      "sections": [
+        {
+          "label": "I",
+          "start": 1,
+          "end": 8
+        },
+        {
+          "label": "II",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "label": "III",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "label": "IV",
+          "start": 25,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "number": 1,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 01",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 01",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 2,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 02",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 02",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 3,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 03",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 03",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 4,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 04",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 04",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 5,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 05",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 05",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 6,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 06",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 06",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 7,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 07",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 07",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 8,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 08",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 08",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "(nghỉ)",
+          "pair_index": null,
+          "source_note": "DỊ BẢN: Văn Dần ghi Xáng Tồn (LIU); Nhị Tấn ghi Xáng Liu (—) | Ký hiệu gạch ở cuối dòng bản in; KHÔNG kết luận khoảng nghỉ thực tấu."
+        },
+        {
+          "number": 9,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 09",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 09",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 10,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 10",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 10",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "XỀ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 11,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 11",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 11",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 12,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 126, câu 12",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 127, câu 12",
+          "printed_music_page": 126,
+          "printed_lyric_page": 127,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 13,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 13",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 13",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 14,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 14",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 14",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 15,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 15",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 15",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 16,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 16",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 16",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "(nghỉ)",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch ở cuối dòng bản in; KHÔNG kết luận khoảng nghỉ thực tấu."
+        },
+        {
+          "number": 17,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 17",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 17",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 18,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 18",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 18",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XỀ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 19,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 19",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 19",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 20,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 20",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 20",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 21,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 21",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 21",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 22,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 22",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 22",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 23,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 23",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 23",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 24,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 24",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 24",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "(nghỉ)",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch ở cuối dòng bản in; KHÔNG kết luận khoảng nghỉ thực tấu."
+        },
+        {
+          "number": 25,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 25",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 25",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 26,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 26",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 26",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 27,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 27",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 27",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 28,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 28",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 28",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 29,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 29",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 29",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 30,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 30",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 30",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 31,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 31",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 31",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 32,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 128, câu 32",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 129, câu 32",
+          "printed_music_page": 128,
+          "printed_lyric_page": 129,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 33,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 33",
+          "source_lyric_locator": "Chỉ có nhãn lời ở Văn Dần cho câu 33; Nhị Tấn II không có tr. lời",
+          "printed_music_page": 130,
+          "printed_lyric_page": null,
+          "ending_token": "U",
+          "pair_index": null,
+          "source_note": "Văn Dần có nhãn lời, sách Nhị Tấn tập II không in câu lời này."
+        },
+        {
+          "number": 34,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 34",
+          "source_lyric_locator": "Chỉ có nhãn lời ở Văn Dần cho câu 34; Nhị Tấn II không có tr. lời",
+          "printed_music_page": 130,
+          "printed_lyric_page": null,
+          "ending_token": "(nghỉ)",
+          "pair_index": null,
+          "source_note": "DỊ BẢN: Văn Dần ghi Xáng Tồn (LIU); Nhị Tấn ghi Xáng Liu (—) | Văn Dần có nhãn lời, sách Nhị Tấn tập II không in câu lời này. | Ký hiệu gạch ở cuối dòng bản in; KHÔNG kết luận khoảng nghỉ thực tấu."
+        }
+      ]
+    },
+    {
+      "piece_id": 3,
+      "slug": "03-binh-ban-chan",
+      "title": "Bình Bán Chấn",
+      "variant_id": "BBC-44-4",
+      "phrase_count": 44,
+      "beats_per_phrase": 4,
+      "source_register": "ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md",
+      "source_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%202%20-%20Nhi%20Tan.pdf",
+      "source_description": "Nhị Tấn tập II trang in 130–135: đủ 44 nhãn câu nhạc và lời ở 4 lớp; không suy từ ký hiệu cuối hàng thành kỹ thuật, âm cao hay điểm song lang.",
+      "sections": [
+        {
+          "label": "I",
+          "start": 1,
+          "end": 10
+        },
+        {
+          "label": "II",
+          "start": 11,
+          "end": 22
+        },
+        {
+          "label": "III",
+          "start": 23,
+          "end": 32
+        },
+        {
+          "label": "IV",
+          "start": 33,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "number": 1,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 01",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 01",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 2,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 02",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 02",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "Ú",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 3,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 03",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 03",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 4,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 04",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 04",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 5,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 05",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 05",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "Ú",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 6,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 06",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 06",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 7,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 07",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 07",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 8,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 08",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 08",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 9,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 09",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 09",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 10,
+          "section": "I",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 10",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 10",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 11,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 11",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 11",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 12,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 12",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 12",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 13,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 13",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 13",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 14,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 14",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 14",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 15,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 15",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 15",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 16,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 130, câu 16",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 131, câu 16",
+          "printed_music_page": 130,
+          "printed_lyric_page": 131,
+          "ending_token": "Ú",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 17,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 17",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 17",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "Ú",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 18,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 18",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 18",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 19,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 19",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 19",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "Ú",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 20,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 20",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 20",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 21,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 21",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 21",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 22,
+          "section": "II",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 22",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 22",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 23,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 23",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 23",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 24,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 24",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 24",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 25,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 25",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 25",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "LIU",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 26,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 26",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 26",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XỀ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 27,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 27",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 27",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 28,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 28",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 28",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 29,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 29",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 29",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 30,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 30",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 30",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 31,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 31",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 31",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "CỘNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 32,
+          "section": "III",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 32",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 32",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 33,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 33",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 33",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 34,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 34",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 34",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 35,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 35",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 35",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "HÒ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 36,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 132, câu 36",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 133, câu 36",
+          "printed_music_page": 132,
+          "printed_lyric_page": 133,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 37,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 37",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 37",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 38,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 38",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 38",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "—",
+          "pair_index": null,
+          "source_note": "Ký hiệu gạch cuối hàng chữ nhạc; chưa xác minh âm thanh, trường độ hoặc phách."
+        },
+        {
+          "number": 39,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 39",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 39",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XÀNG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 40,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 40",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 40",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 41,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 41",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 41",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XÊ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 42,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 42",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 42",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XỰ",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 43,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 43",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 43",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        },
+        {
+          "number": 44,
+          "section": "IV",
+          "source_music_locator": "Nhị Tấn tập II, chữ nhạc tr. 134, câu 44",
+          "source_lyric_locator": "Nhị Tấn tập II, lời tr. 135, câu 44",
+          "printed_music_page": 134,
+          "printed_lyric_page": 135,
+          "ending_token": "XANG",
+          "pair_index": null,
+          "source_note": null
+        }
+      ]
+    },
+    {
+      "piece_id": 20,
+      "slug": "20-phung-cau",
+      "title": "Phụng Cầu Hoàng Duyên",
+      "variant_id": "PC-40-8",
+      "phrase_count": 40,
+      "beats_per_phrase": 8,
+      "source_register": "ban-to/20-phung-cau/v2-ra-soat-40-cau.md",
+      "source_url": "https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf",
+      "source_description": "Nhị Tấn, tập IV, bản số hóa: nhãn nhạc trang 332–340 và nhãn lời trang 333–341, ba lớp 18+8+14. Chưa kiểm từng phách, song lang và bản thu.",
+      "sections": [
+        {
+          "label": "I",
+          "start": 1,
+          "end": 18
+        },
+        {
+          "label": "II",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "label": "III",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "number": 1,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 01",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 01",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 1,
+          "source_note": "Đầu bài tại tr.332; tựa lời tr.333 ghi Nhị Tấn (2002)"
+        },
+        {
+          "number": 2,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 02",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 02",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 1,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 3,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 03",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 03",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 2,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 4,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 04",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 04",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 2,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 5,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 05",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 05",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 3,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 6,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 06",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 06",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 3,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 7,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 07",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 07",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 4,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 8,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 08",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 08",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 4,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 9,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 332, câu 09",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 333, câu 09",
+          "printed_music_page": 332,
+          "printed_lyric_page": 333,
+          "ending_token": null,
+          "pair_index": 5,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 10,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 10",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 10",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 5,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 11,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 11",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 11",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 6,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 12,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 12",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 12",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 6,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 13,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 13",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 13",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 7,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 14,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 14",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 14",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 7,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 15,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 15",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 15",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 8,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 16,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 16",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 16",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 8,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 17,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 17",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 17",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 9,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 18,
+          "section": "I",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 18",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 18",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 9,
+          "source_note": "Câu cuối lớp I, tiếp lớp II câu 19; Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 19,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 334, câu 19",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 335, câu 19",
+          "printed_music_page": 334,
+          "printed_lyric_page": 335,
+          "ending_token": null,
+          "pair_index": 10,
+          "source_note": "Bắt đầu Lớp II ở cả bản nhạc và bản lời tr.334/335"
+        },
+        {
+          "number": 20,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 20",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 20",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 10,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 21,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 21",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 21",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 11,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 22,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 22",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 22",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 11,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 23,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 23",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 23",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 12,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 24,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 24",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 24",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 12,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 25,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 25",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 25",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 13,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 26,
+          "section": "II",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 26",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 26",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 13,
+          "source_note": "Câu cuối lớp II; Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 27,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 27",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 27",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 14,
+          "source_note": "Bắt đầu Lớp III ở cả bản nhạc và lời tr.336/337"
+        },
+        {
+          "number": 28,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 28",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 28",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 14,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 29,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 336, câu 29",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 337, câu 29",
+          "printed_music_page": 336,
+          "printed_lyric_page": 337,
+          "ending_token": null,
+          "pair_index": 15,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 30,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 30",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 30",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 15,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 31,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 31",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 31",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 16,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 32,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 32",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 32",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 16,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 33,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 33",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 33",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 17,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 34,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 34",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 34",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 17,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 35,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 35",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 35",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 18,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 36,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 36",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 36",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 18,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 37,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 37",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 37",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 19,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 38,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 38",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 38",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 19,
+          "source_note": "Chưa kiểm dứt ngoại, chầu/mô theo bản thu và cặp câu"
+        },
+        {
+          "number": 39,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 338, câu 39",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 339, câu 39",
+          "printed_music_page": 338,
+          "printed_lyric_page": 339,
+          "ending_token": null,
+          "pair_index": 20,
+          "source_note": "Có nhãn nhạc và lời trên ảnh; chưa duyệt từng phách, nét, âm thanh"
+        },
+        {
+          "number": 40,
+          "section": "III",
+          "source_music_locator": "Bản Nhị Tấn IV, nhạc tr. 340, câu 40",
+          "source_lyric_locator": "Bản Nhị Tấn IV, lời tr. 341, câu 40",
+          "printed_music_page": 340,
+          "printed_lyric_page": 341,
+          "ending_token": null,
+          "pair_index": 20,
+          "source_note": "Câu kết 40; sau đó sang Ngươn Tiêu Hội Oán; không gộp câu bài sau"
+        }
+      ]
+    }
+  ]
+}

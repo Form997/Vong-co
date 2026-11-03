@@ -1,5 +1,22 @@
 # BẢN TỔ 12 — VẠN GIÁ (BÀI VẠN)
 
+## V2 — NGHIỆM THU KIỂM NGUỒN VẠN GIÁ (28/10/2026)
+
+**[Biên bản V2, 9 phát hiện](v2-bien-ban-nghiem-thu.md)** · **[Sổ 47 câu theo trang in và ký hiệu cuối](v2-ra-soat-47-cau.md)**.
+
+Đã kiểm **ảnh đủ tám trang in 244–251** sách **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997)**:
+
+- **47/47 nhãn chữ nhạc:** trang **244 (câu 01)**, **246 (02–21)**, **248 (22–41)**, **250 (42–47)**.
+- **47/47 nhãn lời ca:** **245 (01)**, **247 (02–21)**, **249 (22–41)**, **251 (42–47)**; lời **“Biệt mãi thanh lâu”**, sách ghi **Cao Hoài Sang (1940)**.
+- **Hệ bản:** **47 câu, nhịp tư, song lang 3–4**, **5 lớp 8+6+10+14+9**. Trang 244/245 **có Long Ngâm kết ở phía trên**, trang 250/251 **có Tiểu Khúc bắt đầu phía dưới**; phân định đúng phạm vi từng bài.
+- **Nguồn so sánh:** [Cổ Nhạc Nam Bộ – Vạn Giá 47 câu (15/02/2021)](https://conhacnambo.com/destop/topics_list.php?topic_id=419), bản **đăng lại theo Nhị Tấn**; lời **“Nhẫn nhịn”**, trang [TKaraoke ghi Hoài Như](https://lyric.tkaraoke.com/74557/van_gia__47_cau__tua_bai_ca__nhan_nhin.html), là **bộ lời riêng**, chưa xác minh tác quyền hay ca khớp từng phách.
+- **Câu cuối 47** có chữ **Phạn** và ký hiệu cuối **LIU** trong bản chép; cần nghệ nhân giải thích kỹ thuật/âm thực. Các câu có mô-típ lặp **không được lược bỏ**.
+- **Kết luận:** đã kiểm **hiện diện đủ 47 câu ký âm và 47 câu lời trong bản in**; **0/47 câu đạt nghiệm thu thực tấu**. Vẫn **CHỜ NGHIỆM THU**, thiếu audio đúng hệ có timecode, ngón đờn, song lang, người duyệt và quyền tái bản. **Không thay đổi `v1-frozen`**.
+
+> Nội dung bên dưới là **hồ sơ V1 để tra cứu lịch sử**, chưa phải một văn bản được thẩm định diễn xướng hoàn chỉnh. Khi khác mức kiểm, dùng biên bản V2 và nguồn gốc từng trang.
+
+---
+
 **Nhóm:** Bảy Lễ / Thất Chánh · **Phiên bản tham chiếu:** 47 câu nhịp tư · **Cập nhật:** 27/10/2026.
 
 > **Tình trạng:** Đã xác định sách ký âm 47 câu và lời ca có tác giả, năm công bố; chưa nghiệm thu diễn tấu từng câu, chưa có phép tái bản đầy đủ chữ nhạc/lời/âm thanh.

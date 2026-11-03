@@ -1,0 +1,16 @@
+# HAI DAT V3.6 — Netlify static deployment
+# Netlify must use production branch: main
+# Build creates a complete public-only HTML site, including /index.html.
+[build]
+  command = "python3 scripts/v3_build_site.py --out _site"
+  publish = "_site"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"

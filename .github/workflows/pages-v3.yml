@@ -1,0 +1,127 @@
+name: "HAI DAT V3 - Thu xuat ban GitHub Pages"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "hai-dat-v3-pages"
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    name: "Dong goi website tu du lieu da kiem"
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Kiem dinh 20 bai va 30 he
+        run: python scripts/v3_validate.py --json
+      - name: Kiem 72 nhan cau co nguon
+        run: python scripts/v3_2_validate.py --json
+      - name: Kiem chinh sach va nguon luat 2026
+        run: python scripts/v3_2_legal_validate.py --json
+      - name: Kiem 28 nguon luat goc cua 6 quoc gia
+        run: python scripts/v3_2_six_country_validate.py --json
+      - name: Kiem 150 nhan cau V3.3 va hai so V2 moi
+        run: python scripts/v3_3_validate.py --json
+      - name: Kiem hai he Co Ban V3.4
+        run: python scripts/v3_4_validate.py --json
+      - name: Kiem Xuan Tinh V3.5
+        run: python scripts/v3_5_validate.py --json
+      - name: Chay bo kiem thu
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+      - name: Tao artifact chi gom du lieu duoc phep cong bo
+        run: python scripts/v3_build_site.py --out _site
+      - name: Kiem tra tep goc va JSON can thiet
+        run: |
+          test -s _site/index.html
+          test -s _site/web/v3/index.html
+          test -s _site/web/v3/legal.html
+          for group in sau-bac bay-le ba-nam bon-oan; do
+            test -s "_site/nhom/$group/index.html"
+            grep -q "0/20" "_site/nhom/$group/index.html"
+          done
+          test -s _site/data/v3_3/phrase_index.json
+          test -s _site/data/v3_3/schema.json
+          test -s _site/data/v3_4/phrase_index.json
+          test -s _site/data/v3_4/schema.json
+          test -s _site/data/v3_5/phrase_index.json
+          test -s _site/data/v3_5/schema.json
+          for country in my nga trung-quoc uc nhat-ban han-quoc; do
+            test -s "_site/web/v3/quoc-gia/$country.html"
+          done
+          test -s _site/data/v3/catalog.json
+          test -s _site/data/v3/schema.json
+          test -s _site/data/v3_2/phrase_index.json
+          test -s _site/data/v3_2/schema.json
+          grep -q "hoc-tung-cau" _site/bai/01-luu-thuy-truong/index.html
+          grep -q "hoc-tung-cau" _site/bai/20-phung-cau/index.html
+          test -f _site/.nojekyll
+          test -s _site/site-version.json
+          test -s _site/web/v3/auto-update.js
+      - name: Cai Node va Chromium cho kiem thu truoc trien khai
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Cai Playwright va Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Kiem logic tu dong cap nhat
+        run: node --test tests/auto_update.test.cjs
+      - name: Kiem tra Chromium voi dung goi website
+        shell: bash
+        run: |
+          python3 -m http.server 8765 --directory _site --bind 127.0.0.1 >/tmp/hai-dat-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          node tests/v3_browser.cjs
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    name: "Deploy verified main website"
+    needs: prepare
+    # Production is the integrated main branch; PRs only validate the artifact.
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Chi trien khai commit moi nhat cua main
+        id: current
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          latest=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha)
+          if [ "$latest" = "$GITHUB_SHA" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "Bo qua ban dung cu; commit moi hon se duoc xu ly."
+          fi
+      - name: Xuat ban len GitHub Pages
+        id: deployment
+        if: steps.current.outputs.publish == 'true'
+        uses: actions/deploy-pages@v4
+

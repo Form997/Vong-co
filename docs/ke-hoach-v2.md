@@ -1,10 +1,92 @@
+> **MỐC HOÀN THÀNH DANH MỤC 28/10/2026: 20/20 bài đã MỞ HỒ SƠ KIỂM NGUỒN V2; 0/20 nghiệm thu diễn xướng.** [**Bài 20 – Phụng Cầu Hoàng Duyên: biên bản V2**](../ban-to/20-phung-cau/v2-bien-ban-nghiem-thu.md) và [**sổ 40 câu có nguồn in**](../ban-to/20-phung-cau/v2-ra-soat-40-cau.md). Đã xem ảnh 10 trang Nhị Tấn IV tr.332–341, **40 nhãn nhạc + 40 nhãn lời**, **3 lớp 18+8+14**. Bộ lời ***Bá Nha Đoạn Cầm*** ghi **Nhị Tấn 2002** trong tập có bìa **1997**, bài khảo cứu cuối tập ghi **1999**, mục lục ghi ***Tư Mã Tương Như***; **chưa giải quyết niên đại và tiêu đề**. Song lang, phách, dứt ngoại/chầu–mô, bản thu, quyền và chữ ký nghệ nhân **đều CHỜ**. Đây là **mốc mở đủ sổ nguồn**, không phải hoàn thành nghiệm thu bản nhạc.
+
+> **MỐC MỚI 28/10/2026: 19/20 bài mở biên bản kiểm nguồn V2; 0/20 nghiệm thu diễn xướng.** [**Bài 19 – Giang Nam Cửu Khúc: biên bản**](../ban-to/19-giang-nam/v2-bien-ban-nghiem-thu.md), [**sổ 58 câu có trang in**](../ban-to/19-giang-nam/v2-ra-soat-58-cau.md). Đã định vị 58 nhãn nhạc và 58 nhãn lời *Kim, Kiều hoa viên ngộ* trong Nhị Tấn IV tr.320–331; lời ghi **Nguyễn Văn Thinh 1970**. **Bất đồng đáng xử lý:** Nhị Tấn **16+18+13+11** so với Viện **16+18+12+12**; **Khúc 8 nhạc từ 47, lời từ 45**; Viện PDF 502, ảnh Nhị Tấn tr.328 chưa tải được; không coi đã nghiệm thu. **Còn bài 20 – Phụng Cầu**.
+
+> **MỐC MỚI 28/10/2026: 18/20 bài đã mở biên bản nguồn V2; 0/20 nghiệm thu diễn xướng.** [Bài 18 – Phụng Hoàng](../ban-to/18-phung-hoang/v2-bien-ban-nghiem-thu.md) có [sổ 48 vị trí dự kiến](../ban-to/18-phung-hoang/v2-ra-soat-48-cau.md). **Chưa xác nhận trực tiếp ký âm từng câu**, chưa có lời 48 câu/âm thanh/giấy phép; không tính sổ vị trí là kiểm nhạc đạt.
+
 # V2 — QUY CHẾ NGHIỆM THU 20 BẢN TỔ ĐỜN CA TÀI TỬ
+
+> **MỐC LỊCH SỬ – 28/10/2026: 17/20 bài đã mở biên bản rà nguồn V2; 0/20 bài được nghiệm thu diễn xướng.** Tại mốc này đã mở Bốn Oán: Tứ Đại Oán (17); bài 18–20 **khi đó** chưa mở V2 (đã cập nhật sau tại đầu tài liệu).
+
+> **Bài 17 – Tứ Đại Oán:** [biên bản V2](../ban-to/17-tu-dai-oan/v2-bien-ban-nghiem-thu.md), [sổ 38 câu](../ban-to/17-tu-dai-oan/v2-ra-soat-38-cau.md). **Nguồn mới so với V1:** Nhị Tấn tập IV (1997) **tr.302/304/306/308** có nhạc **38 câu nhịp tám, song lang 6–8**, lời ***Bá Lý Hề*** **tr.303/305/307/309** ghi soạn lời **Trần Quan Quờn**. **Bảy lớp 6+8+8+4+4+4+4**, khác Tứ Đại Vắn **19 câu nhịp tư**. Phụ lục tập II **tr.181–184** có bộ lời xưa riêng ***Bùi Kiệm, Bùi Ông, Nguyệt Nga***, sách năm 1997 nhắc **Mỹ Tho 1910, Vĩnh Long 1915**; **chưa có chứng cứ sự kiện đương thời**. **Lỗi in tr.183: nhãn 21 lặp, thiếu 22**, giữ nguyên nhãn. **Đã rà 38/38 chỉ mục nhạc và lời tập IV, 0/38 được nghiệm thu diễn xướng**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 16/20 bài đã mở rà nguồn V2; 0/20 đã nghiệm thu diễn xướng.** Đã mở đủ **3/3 bài Ba Nam** (14–16), vẫn cần đối chiếu bản thu và người thẩm định chuyên môn. Còn **4 bài Bốn Oán** chưa mở biên bản nguồn V2.
+
+> **Bài 16 – Đảo Ngũ Cung / Nam Đảo:** [biên bản V2](../ban-to/16-dao-ngu-cung/v2-bien-ban-nghiem-thu.md), [sổ 67 vị trí S1](../ban-to/16-dao-ngu-cung/v2-ra-soat-67-cau.md), [khung 68 Viện chưa thẩm định riêng](../ban-to/16-dao-ngu-cung/v2-doi-chieu-68-cau.md). **Nhị Tấn tập III tr.278–287 in “Đảo Ngũ Cung (52 câu)” = 4 Phản Xuân + 48 lòng, kế tiếp 15 Song Cước = 67 vị trí nhạc/lời đã định vị.** Viện Âm nhạc mô tả **68=4+48+16**, độc tấu bỏ câu 68 thành 67 nhưng **chưa chứng minh hai hệ 67 cùng bản**. Sách có chú chuyển **hơi Ai oán và Hò Tư→Hò Nhứt** trước Song Cước; sai nhãn lời **Lớp IX/IV** ở tr.283/282 và lỗi **lặp câu 32** ở Văn Dần. Ba bộ lời: *Tích Thúy Kiều* (Nhị Tấn III), *Lục Vân Tiên* (Trần Ngọc Thạch), *Gương mê sắc* (Sáu Hải). **CHỜ NGHIỆM THU (0/67), sổ 68 mới là khung vị trí chưa xác minh tổng phổ**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 15/20 bài đã mở biên bản rà nguồn V2; 0/20 được nghiệm thu diễn xướng.** Đã mở **hai bài Ba Nam: Nam Xuân (#14) và Nam Ai (#15)**; còn năm bài chưa mở V2.
+
+> **Bài 15 – Nam Ai:** [biên bản V2](../ban-to/15-nam-ai/v2-bien-ban-nghiem-thu.md), [sổ 84 câu bản in](../ban-to/15-nam-ai/v2-ra-soat-84-cau.md), [bảng ánh xạ 68 chưa chứng nhận](../ban-to/15-nam-ai/v2-doi-chieu-68-cau.md). **Đã soi ảnh Nhị Tấn tập III tr.268–277:** sách in **“Nam Ai (84 câu, nhịp tư, song lang 3–4)”**, 4 câu Phản Xuân qua Ai **đánh số 1–4 riêng**, 10 lớp Nam Ai **đánh số 1–80**, lời *Tích Thúy Kiều (tiếp theo)* có số tương ứng. **Khác nguồn Văn Dần ở câu chuyển 02 và lòng 01/26**. Viện Âm nhạc lập chỉ mục **68=4+64**, nguồn hỏi đáp có lối giải thích **68 lòng +16 bổ sung**, **104 câu** được nhắc trong lược khảo/danh mục nhưng **chưa có tổng phổ 104 thẩm định**. Sau 80 câu, sách còn **20 câu Nam Xuân** để liên hoàn, không tự gán 104 là lòng Nam Ai độc lập. **CHỜ NGHIỆM THU diễn xướng; 0/84**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 14/20 bản Tổ đã có biên bản rà nguồn V2; 0/20 đạt nghiệm thu diễn xướng.** Đã mở nhóm Ba Nam, **bài số 14 Nam Xuân**, 6 bài còn lại chưa mở biên bản nguồn V2.
+
+> **Bài 14 – Nam Xuân:** [biên bản V2](../ban-to/14-nam-xuan/v2-bien-ban-nghiem-thu.md) và [sổ 68 câu](../ban-to/14-nam-xuan/v2-ra-soat-68-cau.md). Đã tìm thấy **nhạc đủ 68 câu** trong **Nhị Tấn tập III**, nhạc **tr.260/262/264/266/268**, lời *Tích Thúy Kiều* đủ 68 câu **tr.261/263/265/267/269**, ghi **Phan Trúc Quân (Sáu Lục, trước 1900)** theo sách. Sách ghi **8 lớp × 8 câu + LỚP IX bốn câu 65–68**, khác cách thuyết minh “8 lớp và 4 câu phần”. Bản Văn Dần có **nét nhạc khác tại câu 38, 42**. Nhị Tấn tập IV phụ lục *Tô Huệ – Chức Cẩm Hồi Văn* tr.395–397 có **48 câu lời + chỉ dẫn lặp ca 20 câu đầu**, không phải 68 câu *Tích Thúy Kiều*. **CHỜ NGHIỆM THU (0/68 thực tấu)**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 13/20 bài đã lập biên bản rà nguồn V2; 0/20 bài đạt nghiệm thu diễn xướng.** **Đã mở biên bản nguồn cả 7/7 bài nhóm Bảy Lễ (07–13), không có nghĩa đã cấp chứng nhận thực tấu.**
+
+> **Bài 13 – Tiểu Khúc:** [biên bản V2](../ban-to/13-tieu-khuc/v2-bien-ban-nghiem-thu.md) và [sổ 29 câu](../ban-to/13-tieu-khuc/v2-ra-soat-29-cau.md) đã lập. **Nhị Tấn tập III tr.250/252** có **29 nhãn ký âm**, **tr.251/253** có **29 nhãn lời *Dữ Thúc thành hôn***, ghi **Cao Hoài Sang 1940**. Chia **4 lớp 10+7+8+4**. **Nhị Tấn tập V tr.503–504** có bộ lời 29 câu riêng *Bàng Quyên chặt chơn Tôn Tẫn* (Thái Thụy Phong); VOH (2022) có *Anh hùng Nguyễn Trung Trực* (Thiếu Bá), **không trộn ba bộ lời**. Ranh: Vạn Giá câu 42–47 phía trên tr.250/251; Ngũ Đối Ai sau Tiểu Khúc câu 29 trên tr.252/253. **CHỜ NGHIỆM THU biểu diễn (0/29).**
+
+---
+
+> **MỐC LỊCH SỬ — 28/10/2026: 12/20 bài đã mở kiểm nguồn V2; 0/20 bài nghiệm thu diễn xướng đạt.** Số bài mở biên bản **không bằng số bài đã được chứng nhận chuyên môn**.
+
+> **Bài 12 – Vạn Giá:** [biên bản V2](../ban-to/12-van-gia/v2-bien-ban-nghiem-thu.md) và [sổ 47 câu](../ban-to/12-van-gia/v2-ra-soat-47-cau.md). Đã xem trực tiếp **8 trang sách Nhị Tấn tập III**: nhạc câu **01 ở tr.244, 02–21 tr.246, 22–41 tr.248, 42–47 tr.250**; lời tương ứng tr.**245/247/249/251** mang tên **“Biệt mãi thanh lâu” – Cao Hoài Sang (1940, theo ấn phẩm)**. Phân **5 lớp 8+6+10+14+9**. Lời **“Nhẫn nhịn”** (trang TKaraoke ghi Hoài Như) là bộ lời khác, chưa duyệt âm tiết/phách. **CHỜ NGHIỆM THU biểu diễn, 0/47**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 11/20 bản Tổ đã mở biên bản nguồn V2; 0/20 được nghiệm thu diễn xướng.** Chưa có thẩm định đầy đủ bằng bản nghe và nghệ nhân.
+
+> **Bài 11 – Long Ngâm:** [biên bản V2](../ban-to/11-long-ngam/v2-bien-ban-nghiem-thu.md) và [sổ 33 câu](../ban-to/11-long-ngam/v2-ra-soat-33-cau.md) đã lưu. **33 nhãn nhạc tr.242/244, 33 nhãn lời tr.243/245** trong Nhị Tấn tập III, lời **“Tống Trọng qui tang” – Cao Hoài Sang (1940)**. Chia lớp **8+11+14**. Phân biệt **Long Đăng 39–40** nằm đầu tr.242/243 và **Vạn Giá** bắt đầu sau Long Ngâm trên tr.244/245. Ghi điểm cần chuyên gia giải thích: **chữ mở Xư trong bài nghiên cứu** so với **“(--) Líu (XỰ)” ở sách Nhị Tấn**. **CHỜ NGHIỆM THU diễn xướng (0/33)**.
+
+---
+
+> **MỐC LỊCH SỬ — 28/10/2026: 10/20 bài đã mở biên bản kiểm nguồn V2, 0/20 bài đạt nghiệm thu diễn xướng.** Chưa có chữ ký thẩm định đờn–ca cho các bài 01–10.
+
+> **Bài 10 – Long Đăng:** đã lập [biên bản V2](../ban-to/10-long-dang/v2-bien-ban-nghiem-thu.md) và [sổ 40 câu](../ban-to/10-long-dang/v2-ra-soat-40-cau.md). **Giải quyết điểm nghẽn V1:** tìm được ký âm **40/40 câu ở Nhị Tấn TẬP III**, trang **238/240/242**; lời *Kiều vãng Trọng hiên* **40/40 câu** tại **239/241/243**, ghi Cao Hoài Sang (1940). Câu 39–40 nằm trước phần **Long Ngâm** ở hai trang cuối; **tập V tr.501–502 chỉ là bộ lời khác *Bàng Quyên xuống núi* – Thái Thụy Phong**, không phải tổng phổ. **CHỜ NGHIỆM THU biểu diễn (0/40)**.
+
+---
+
+> **MỐC LỊCH SỬ – 28/10/2026: 9/20 bài đã mở biên bản nguồn V2; 0/20 bài nghiệm thu diễn xướng đạt.** Các số **8/20** và trước đó nằm ở đoạn **lưu vết tiến độ lịch sử** bên dưới, không phải trạng thái hôm nay.
+
+> **Bài 09 – Ngũ Đối Hạ:** đã tạo [biên bản V2](../ban-to/09-ngu-doi-ha/v2-bien-ban-nghiem-thu.md) và [sổ 38 câu](../ban-to/09-ngu-doi-ha/v2-ra-soat-38-cau.md). **Phát hiện mới so với V1:** sách Nhị Tấn tập III có **nhạc 38 câu tr.234,236** và **lời 38 câu tr.235,237** (*Kim, Kiều hoa viên ngộ* — Cao Hoài Sang, ghi 1940). 5 lớp **9+6+6+6+11**; một nguồn nghiên cứu có sơ đồ **3 lớp 20+10+8**. **ĐẠT kiểm sự hiện diện nhạc/lời 38/38 nhưng CHỜ NGHIỆM THU biểu diễn (0/38)**.
+
+---
+
+> **MỐC LỊCH SỬ – 27/10/2026: 8/20 đã mở biên bản nguồn V2; 0/20 đã đạt nghiệm thu diễn xướng.** Chỉ các biên bản được chuyên gia duyệt đủ bằng chứng mới có thể đổi trạng thái toàn bài.
+
+> **Bài 08 – Ngũ Đối Thượng:** đã tạo [biên bản V2](../ban-to/08-ngu-doi-thuong/v2-bien-ban-nghiem-thu.md), [sổ 61 câu](../ban-to/08-ngu-doi-thuong/v2-ra-soat-61-cau.md) và [bảng đối chiếu 60 câu](../ban-to/08-ngu-doi-thuong/v2-doi-chieu-60-cau.md). Nhị Tấn tập III tr.226–233 có **61/61 nhãn nhạc và 61/61 nhãn lời**; bản 60 câu theo nguồn thuyết minh **lược câu 53** và đánh số lại từ đó. Bảng 60 chỉ là **ánh xạ có điều kiện**, chưa phải bản chép/bản thu đã nghiệm thu riêng. **CHỜ NGHIỆM THU; 0/61** câu được thẩm định biểu diễn.
+
+---
+
+> **Bài 07 — Xàng Xê (27/10/2026):** đã tạo [biên bản V2](../ban-to/07-xang-xe/v2-bien-ban-nghiem-thu.md) và [sổ 64 câu](../ban-to/07-xang-xe/v2-ra-soat-64-cau.md). **64 câu, 4 lớp 20–16–12–16**; đã rà nguồn chữ nhạc theo Cổ Nhạc Nam Bộ. Tìm được lời 64 câu *Bích câu kỳ ngộ* (trang đăng ghi Trần Ngọc Thạch) — mới xác nhận hiện diện, chưa kiểm ca/ngón. Khác tên lớp **Xê/Xề** và diễn giải nhịp giữa Viện Âm nhạc và TS. Bùi Thiên Hoàng Quân. **CHỜ NGHIỆM THU**, tổng **7/20 mở và 0/20 đạt diễn xướng**.
+
+---
+
+> **Bài 06 – Tây Thi (27/10/2026):** [biên bản V2](../ban-to/06-tay-thi-van/v2-bien-ban-nghiem-thu.md) đã lập, xác nhận **Trường 52 câu/3 lớp 18–26–8** và **Vắn 26 câu/3 lớp 9–13–4** qua Nhị Tấn và Văn Dần. **Sửa sai V1:** trang Vắn của Văn Dần ghi tiêu đề 34 nhưng nội dung chỉ đánh số 26 câu; không có chứng cứ về tổng phổ 34 câu. Hai bộ lời Vắn và lời Trường quản lý riêng. **CHỜ NGHIỆM THU**, tiến độ **6/20 bài đã mở; 0/20 đạt diễn xướng**.
+
+---
+
+> **Bài 05 – Xuân Tình Chấn (27/10/2026):** [biên bản V2](../ban-to/05-xuan-tinh-chan/v2-bien-ban-nghiem-thu.md) và [sổ 48 câu](../ban-to/05-xuan-tinh-chan/v2-ra-soat-48-cau.md) đã lập. Nhị Tấn tập II và Văn Dần có 48 câu nhạc + 48 câu lời, lớp 14–16–10–8; có khác chữ nhạc câu 37 và chữ lời 05/11/23/26/30. Thủ Xuân Tình Chấn tập I là bản nguồn riêng. **CHỜ NGHIỆM THU**, tổng **5/20 mở và 0/20 đạt diễn xướng**.
+
+---
+
+> **Bài 04 (27/10/2026):** mở [biên bản nghiệm thu Cổ Bản](../ban-to/04-co-ban-van/v2-bien-ban-nghiem-thu.md); tách **Cổ Bản Trường 68 câu/8 lớp** theo Viện Âm nhạc và **Cổ Bản Vắn 34 câu/5 lớp** theo Nhị Tấn/Văn Dần. Đã rà vị trí nguồn 68/68 và 34/34; **cả hai CHỜ nghiệm thu âm thanh/ngón/song lang**, không tăng số bản trong danh mục. **Tiến độ tổng: 4/20 mở, 0/20 đạt**.
+
+---
 
 > **Bài 03 — Bình Bán Chấn (27/10/2026):** đã lập [biên bản V2](../ban-to/03-binh-ban-chan/v2-bien-ban-nghiem-thu.md) và [bảng kiểm nguồn 44 câu](../ban-to/03-binh-ban-chan/v2-ra-soat-44-cau.md). Có 44 câu nhạc và 44 câu lời trong hai nguồn; khác lời ở một vài vị trí, bản Thủ/Bình Bán cần phân tách. **CHỜ NGHIỆM THU**, tiến độ **3/20 đã mở, 0/20 đạt diễn xướng**.
 
 ---
 
-**Tiến độ đợt nghiệm thu:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
+**Lưu vết tiến độ khi mở bài 02:** Bài 01 và bài 02 đã lập biên bản; cả hai **CHỜ NGHIỆM THU**; **0/20 bài đã ĐẠT biểu diễn**. Bài 02 phát hiện mới: Nhị Tấn tập II có 34 câu nhạc nhưng phần lời Bá Nha Tử Kỳ đánh số 32 câu; Văn Dần có đủ 34 câu lời. [Chi tiết bài 02](../ban-to/02-phu-luc-chan/v2-bien-ban-nghiem-thu.md).
 
 ---
 

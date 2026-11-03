@@ -1,5 +1,17 @@
 # Nguồn, lời xưa, dị bản — Tứ Đại Oán
 
+## ĐÍNH CHÍNH V2 – CÓ KÝ ÂM TỨ ĐẠI OÁN 38 CÂU (28/10/2026)
+
+**[Biên bản V2](v2-bien-ban-nghiem-thu.md)** · **[Sổ câu 01–38](v2-ra-soat-38-cau.md)**.
+
+Đã trực tiếp kiểm ảnh và chỉ mục nguồn **Nhị Tấn tập IV, tr.302–309**: **ký âm 38 câu nhịp tám, song lang 6–8**, chia bảy lớp **6+8+8+4+4+4+4**; lời ***Bá Lý Hề*** ghi **soạn lời Trần Quan Quờn**. **Không còn thiếu bản ký âm 38 câu có trang sách**, nhưng vẫn chưa thẩm định thực đờn/ca.
+
+Phụ lục **Nhị Tấn tập II tr.181–184** có lời xưa ***Bùi Kiệm, Bùi Ông, Nguyệt Nga***, **không rõ người soạn đầu tiên**. **Trang 183 in 21 hai lần, không có nhãn 22**; sổ V2 bảo lưu số nguồn và tách số vị trí quản lý. Chú dẫn **1910/1915** là tường thuật trong ấn phẩm 1997, chưa xác nhận từ tài liệu xuất bản đương thời.
+
+Tài liệu V1 phía dưới là lịch sử công việc. **CHỜ NGHIỆM THU diễn xướng (0/38)**, chưa có phép đăng lại toàn lời/nhạc/MP3.
+
+---
+
 ## 1. Nguồn cấp tổ chức
 - [Viện Âm nhạc — Hai mươi bản Tổ](https://vienamnhac.vn/Media/Default/Download/20%20ban%20to%20ch.pdf): Tứ Đại Oán **38 câu nhịp tám**, phát triển từ Tứ Đại Vắn, có mô/qua sông/nhịp mồ côi.
 - [Viện Âm nhạc — giáo trình độc tấu guitar phím lõm](https://vienamnhac.vn/Media/Default/Default/Tai%20lieu/doc%20tau%20ghi%20ta%20phim%20lom.pdf): **Thủ, Xang dài, Xang vắn, Hồi thủ**, âm Hò–Y–Xang–Xê–Oan.

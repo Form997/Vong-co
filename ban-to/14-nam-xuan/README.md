@@ -1,5 +1,21 @@
 # BẢN TỔ 14 — NAM XUÂN
 
+## V2 — NGHIỆM THU KIỂM NGUỒN NAM XUÂN (28/10/2026)
+
+**[Biên bản V2 (10 phát hiện)](v2-bien-ban-nghiem-thu.md)** · **[Sổ định vị 68 câu đầy đủ](v2-ra-soat-68-cau.md)**.
+
+**ĐÍNH CHÍNH V1 CÓ CHỨNG CỨ:** Đã tìm thấy và kiểm nguồn in **Nhị Tấn, *Nhạc Tài Tử Nam Bộ*, tập III (1997), tr.260–269**. Tài liệu có **68 câu nhạc nhịp tư, song lang 3–4** (nhạc tr.260/262/264/266/268), kèm **68 câu lời *Tích Thúy Kiều*** (lời tr.261/263/265/267/269), sách ghi **soạn lời Phan Trúc Quân, tục danh Sáu Lục, trước năm 1900**. Đã kiểm ảnh phần chính và chỉ mục trang còn lại; việc tìm được sách **không tương đương** kiểm âm thực tấu.
+
+- **Bản in đánh dấu LỚP I–VIII**, mỗi lớp **8 câu**, và **LỚP IX 4 câu 65–68**; hai lớp **V (33–40) / VI (41–48)** là **Trống Xuân 1/2**. Cách thuyết minh “8 lớp + 4 câu phần” được giữ như **một quy ước mô tả**, không xóa nhãn IX trên sách.
+- **Sau câu 68 mới đến Nam Ai**, có riêng **4 câu Phản Xuân qua Ai** đánh số lại; không gộp hai nhóm bốn câu.
+- [**Bản chép Văn Dần, 18/08/2013**](https://nhacsivandan.wordpress.com/2013/08/18/bai-nam-xuan/) cũng có 68 câu và lời *Tích Thúy Kiều*, nhưng **khác nét chữ nhạc tại câu 38 và 42** so với tập III. Cần kiểm dị bản/chuyển mã với nghệ nhân, không tự sửa bất kỳ nguồn nào.
+- [**Nhị Tấn tập IV, phụ lục *Tô Huệ – Chức Cẩm Hồi Văn*, tr.395–397**](https://www.namkyluctinh.org/eBooks/AmNhac/Nhac%20Tai%20Tu%20Nam%20Bo%204%20-%20Nhi%20Tan.pdf) ghi **48 câu lời Nam Xuân** và hướng dẫn **ca trở lại 20 câu đầu rồi qua Nam Ai**. Đây là kịch bản diễn liên hoàn riêng, **không phải 68 câu lời *Tích Thúy Kiều***.
+- **ĐẠT mức kiểm hiện diện 68/68 câu ký âm và 68/68 câu lời trong bản in; 0/68 câu được nghệ nhân xác nhận trình diễn. PHÁN QUYẾT: CHỜ NGHIỆM THU.** Chưa rõ quyền sao chép nguyên văn/MP3; không sửa nhánh `v1-frozen`.
+
+> Phần bên dưới giữ **lịch sử V1**; nếu V1 ghi chưa tìm được ký âm/lời đầy đủ, dùng kết quả kiểm nguồn V2 phía trên. Không được tự gắn nhãn ĐẠT biểu diễn chỉ vì tìm đủ bản in.
+
+---
+
 **Nhóm:** Ba Nam · **Hơi:** Xuân · **Hệ tham chiếu:** 68 câu nhịp tư (8 lớp × 8 câu, thêm 4 câu phần/chuyển) · **Cập nhật:** 27/10/2026.
 
 > **Mức độ hoàn thành: hồ sơ tư liệu V1.** Đã xác nhận cấu trúc từ Viện Âm nhạc, bản thu nghệ nhân Ba Tu và bài ca một phần có người hát. **Chưa có bản chép từng chữ nhạc và toàn bộ lời 68 câu được nghiệm thu hoặc cho phép tái bản.**
