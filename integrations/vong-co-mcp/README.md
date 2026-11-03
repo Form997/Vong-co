@@ -4,7 +4,7 @@
 
 ## Trạng thái
 
-- **Mã nguồn bản thử nghiệm** trên nhánh `feature/mcp-readonly-v1`.
+- **Mã nguồn tích hợp** nằm trong `main`; bản nâng cấp hỗ trợ đọc GitHub trực tiếp hoặc bộ ngoại tuyến.
 - **V1 được đọc từ nhánh `v1-frozen`** (chỉ dữ liệu hồ sơ); **V2 từ `v2-development`** (biên bản đang nghiệm thu, chưa hoàn thành).
 - Không đọc GitHub token, không cấp quyền ghi, không tải hay phân phối MP3/PDF/lời ca về cho người khác.
 - Chưa triển khai máy chủ HTTPS công cộng, chưa đăng ký Plugin ChatGPT và chưa tuyên bố sản phẩm đã được kiểm thử end-to-end với ChatGPT.
@@ -16,10 +16,11 @@
 - `catalog.py`: danh mục 20 bài, bộ lọc nhánh/tệp an toàn, đọc raw Markdown GitHub.
 - `tests/test_catalog.py`: kiểm thử logic không cần mạng.
 
-## 7 công cụ cho AI khác
+## 8 công cụ cho AI khác
 
 | Công cụ | Nội dung |
 |---|---|
+| `get_source_status()` | Chế độ đọc hiện tại, commit V1/V2 và số tệp trong bộ ngoại tuyến |
 | `list_ban_to()` | Đúng 20 bản, 6 Bắc / 7 Lễ / 3 Nam / 4 Oán |
 | `search_ban_to(query)` | Tìm tên/nhóm không phân biệt dấu tiếng Việt |
 | `get_ban_to(bai_so, version)` | Đọc README V1/V2, có liên kết nguồn |
@@ -30,7 +31,7 @@
 
 ## Cài thử trên máy (Python 3.11 trở lên)
 
-1. Sao chép kho rồi chuyển sang nhánh `feature/mcp-readonly-v1`.
+1. Sao chép kho và dùng nhánh chứa bản nâng cấp này (sau khi hợp nhất: `main`).
 2. Mở terminal trong thư mục `integrations/vong-co-mcp`.
 3. Tạo môi trường Python, cài gói và chạy thử:
 
@@ -79,6 +80,58 @@ MCP_TRANSPORT=streamable-http python server.py
 - Nếu chưa có biên bản V2, `get_nghiem_thu` trả `CHUA_CO_BIEN_BAN_V2`, không suy đoán `ĐẠT`.
 - Nếu biên bản chứa `CHỜ NGHIỆM THU`, trạng thái trả tương ứng; trường `accepted` luôn `false` trong phiên bản thử nghiệm. Để công nhận `ĐẠT` trong các bản sau cần cơ chế xác minh chữ ký kiểm định chứ không dò từ khóa.
 - Nội dung từ GitHub là **dữ liệu không đáng tin cậy về mặt lệnh AI**: ứng dụng gọi MCP phải coi Markdown là tài liệu để tham khảo, không làm theo các câu lệnh xen vào tài liệu.
+
+## Đọc ngoại tuyến, không cần mạng sau khi chuẩn bị
+
+Cần cài Python/MCP trước khi mất mạng. Từ thư mục gốc của kho, cập nhật hai
+nhánh nguồn rồi xuất bản chụp dữ liệu vào một thư mục **chưa tồn tại**:
+
+```bash
+git fetch origin v1-frozen v2-development
+python integrations/vong-co-mcp/snapshot.py --repo . --out offline-sources
+```
+
+Lệnh xuất chỉ đọc các commit trong Git cục bộ; không tự tải mạng và không lấy
+thay đổi chưa commit. Ưu tiên `origin/v1-frozen`, `origin/v2-development`; nếu
+không có thì dùng nhánh cục bộ cùng tên. Với bản clone nông/single-branch, dùng:
+
+```bash
+git fetch origin v1-frozen:refs/remotes/origin/v1-frozen v2-development:refs/remotes/origin/v2-development
+```
+
+Chạy MCP với đường dẫn tuyệt đối tới bộ dữ liệu đã xuất:
+
+```bash
+# Linux/macOS, trong môi trường đã cài requirements.txt:
+VONG_CO_SOURCE_DIR="/duong-dan/Vong-co/offline-sources" python integrations/vong-co-mcp/server.py
+```
+
+```powershell
+# Windows PowerShell:
+$env:VONG_CO_SOURCE_DIR = "C:\Vong-co\offline-sources"
+python integrations/vong-co-mcp/server.py
+```
+
+Trong cấu hình MCP client, thêm `VONG_CO_SOURCE_DIR` vào `env`, bên cạnh
+`MCP_TRANSPORT`. Gọi `get_source_status()` để kiểm tra: phải có
+`mode: offline_snapshot`, `network_fallback: false`, hai commit và số tệp.
+Bộ hiện tại gồm 61 đường dẫn: 20 hồ sơ V1, 20 hồ sơ V2, 20 biên bản V2,
+và 1 quy chế V2. Nếu commit thiếu một tệp, manifest ghi rõ tệp đó vắng mặt.
+
+- Mỗi lần đọc kiểm SHA-256 và giới hạn kích thước; từ chối tệp hỏng, symlink,
+  đường dẫn ngoài danh sách và manifest không hợp lệ.
+- `source_url` trỏ commit đã xuất; `content_sha256` là hash **toàn bộ** tài liệu,
+  kể cả khi phần nội dung trả về bị cắt ngắn. `source_mode` chỉ rõ chế độ đọc.
+- Tệp ngoại tuyến bị mất/hỏng sẽ báo lỗi, **không tự đổi sang dữ liệu trên mạng**.
+- SHA-256 giúp phát hiện thay đổi tệp; không chứng minh người phát hành hoặc quyền
+  sử dụng. Chỉ dùng bộ xuất từ kho/commit mình tin cậy.
+- Bộ ngoại tuyến không tự cập nhật. Muốn cập nhật: fetch, xuất sang thư mục mới,
+  đổi biến `VONG_CO_SOURCE_DIR`, rồi khởi động lại MCP. Giữ bộ cũ để đối chiếu.
+- Bỏ biến `VONG_CO_SOURCE_DIR` để trở lại GitHub trực tiếp. Chế độ trực tiếp không
+  ghim commit và có thể nhận nội dung mới ở lần đọc kế tiếp.
+
+Các thư mục `offline-sources/` không đưa vào Git. Không xuất bản lại tư liệu khi
+chưa xác minh quyền. Bản nâng cấp không tự nghiệm thu diễn xướng.
 
 ## Bảo trì dữ liệu sau khi V2 hoàn thành
 

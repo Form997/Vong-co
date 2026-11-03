@@ -56,6 +56,67 @@ async function checkAutoUpdateNavigation(browser, staleHtml) {
   }
 }
 
+async function checkSearchAndRecovery(browser) {
+  const page = await browser.newPage();
+  try {
+    await page.goto(BASE, {waitUntil:"networkidle"});
+    await page.waitForSelector("button.piece");
+    for (const [query, title] of [["1", "Lưu Thủy Trường"], ["17", "Tứ Đại Oán"], ["20", "Phụng Cầu"]]) {
+      await page.locator("#search").fill(query);
+      await expectCount(page, 1, "Exact song number " + query);
+      assert.equal(await page.locator("button.piece strong").innerText(), title);
+    }
+    await page.locator("#reset-filters").click();
+    await expectCount(page, 20, "Reset restores all songs");
+    await page.locator('[data-group="bon-oan"]').click();
+    await page.locator("#sort-order").selectOption("name");
+    const shared = new URL(page.url());
+    assert.equal(shared.searchParams.get("group"), "bon-oan");
+    assert.equal(shared.searchParams.get("sort"), "name");
+    await page.reload({waitUntil:"networkidle"});
+    await page.waitForSelector("button.piece");
+    await expectCount(page, 4, "Shared filters survive reload");
+    assert.equal(await page.locator("#sort-order").inputValue(), "name");
+    await page.locator("#reset-filters").click();
+    assert.equal(new URL(page.url()).searchParams.has("group"), false);
+    await page.goto(BASE + "?group=invalid&evidence=invalid&lesson=invalid&sort=invalid", {waitUntil:"networkidle"});
+    await page.waitForSelector("button.piece");
+    await expectCount(page, 20, "Invalid URL filters use defaults");
+    let failed = false;
+    await page.route("**/data/v3/catalog.json", async route => {
+      if (!failed) { failed=true; return route.fulfill({status:503, body:"unavailable"}); }
+      return route.continue();
+    });
+    await page.goto(BASE, {waitUntil:"networkidle"});
+    await page.locator("#retry-load").waitFor();
+    assert.equal(await page.locator("#pieces").getAttribute("aria-busy"), "false");
+    await page.locator("#retry-load").click();
+    await page.waitForSelector("button.piece");
+    await expectCount(page, 20, "Retry recovers without a page reload");
+    await page.unroute("**/data/v3/catalog.json");
+    await page.clock.install();
+    await page.addInitScript(() => {
+      const original = window.fetch.bind(window);
+      window.stallCatalog = true;
+      window.fetch = (url, options) => {
+        if (window.stallCatalog && String(url).includes("catalog.json"))
+          return new Promise((resolve, reject) => options.signal.addEventListener("abort",
+            () => reject(new DOMException("timeout", "AbortError")), {once:true}));
+        return original(url, options);
+      };
+    });
+    await page.goto(BASE, {waitUntil:"domcontentloaded"});
+    await page.clock.fastForward(13000);
+    await page.locator("#retry-load").waitFor();
+    assert.match(await page.locator("#pieces").innerText(), /quá lâu/);
+    await page.evaluate(() => { window.stallCatalog = false; });
+    await page.locator("#retry-load").click();
+    await page.waitForSelector("button.piece");
+    await expectCount(page, 20, "Timed-out request can recover");
+    console.log("PASS: exact numeric search, reset, shared filters, HTTP failure and timeout recovery");
+  } finally { await page.close(); }
+}
+
 async function run() {
   const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   const page = await browser.newPage({
@@ -374,6 +435,7 @@ async function run() {
     await page.screenshot({path:"browser-evidence/v3-lesson-mobile.png", fullPage:true});
     console.log("PASS: saved mobile/tablet/desktop home and lesson visual snapshots");
 
+    await checkSearchAndRecovery(browser);
     await checkAutoUpdateNavigation(browser, false);
     await checkAutoUpdateNavigation(browser, true);
     console.log("PASS: automatic version refresh preserves query/hash and avoids stale-cache loops");

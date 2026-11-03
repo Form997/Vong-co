@@ -15,3 +15,8 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Local research snapshots and browser evidence
+offline-sources/
+.vong-co-snapshot-*/
+browser-evidence/
