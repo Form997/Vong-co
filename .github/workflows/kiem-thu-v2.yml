@@ -56,6 +56,8 @@ jobs:
         run: python scripts/kiem-tra-lien-ket.py
 
       - name: Goi API GitHub de thu thong ke dung luong V1-V2
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/thong-ke-dung-luong.py --refs v1-frozen v2-development --json
+

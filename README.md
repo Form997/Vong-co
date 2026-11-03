@@ -113,7 +113,7 @@ Website tạo mã bản dựng theo nội dung sau khi kiểm thử; khi phiên 
 | **Khám phá 20 bản Tổ** và đọc từng bài | [Danh mục 20 bản ngay bên dưới](#danh-mục-20-bản-tổ) |
 | **Học đờn – ca**, hiểu số câu và hơi điệu | [Hồ sơ từng bài](ban-to/) · [Hướng dẫn đọc và thực hành bài 01](docs/01-huong-dan-don-va-ca.md) |
 | **Nghiên cứu và đối chiếu** ký âm, lời, dị bản | [Những phát hiện V2](docs/tong-hop-phat-hien-v2.md) · [Nguồn tham khảo](docs/nguon-tham-khao.md) |
-| **Phát triển ứng dụng AI / RAG / MCP** | [Nguyên mẫu MCP chỉ đọc](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế chứng cứ V2](docs/ke-hoach-v2.md) |
+| **Phát triển ứng dụng AI / RAG / MCP** | [Nguyên mẫu MCP chỉ đọc](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) · [Quy chế chứng cứ V2](docs/ke-hoach-v2.md) |
 | **Đề xuất sửa lỗi hoặc đóng góp** | [Hướng dẫn đóng góp](CONTRIBUTING.md) · [Gửi vấn đề](https://github.com/Form997/Vong-co/issues/new/choose) |
 
 ### Vì sao dự án này khác một danh sách tên bài?
@@ -136,7 +136,7 @@ UNESCO đã ghi danh **nghệ thuật Đờn ca tài tử Nam Bộ** năm 2013 (
 | **Sổ đối chiếu câu & dị bản** | Đã mở theo bài; mức kiểm chứng không đồng đều | [Báo cáo phát hiện V2](docs/tong-hop-phat-hien-v2.md) |
 | **Nguồn tham khảo** | Có mã nguồn, liên kết, trang in và giới hạn sử dụng | [Sổ nguồn](docs/nguon-tham-khao.md) |
 | **Kiểm thử mã nguồn** | Workflow GitHub Actions hoạt động trên V2; có các bài thử Python và kiểm cấu trúc | [Xem kết quả CI](https://github.com/Form997/Vong-co/actions/workflows/kiem-thu-v2.yml) |
-| **Tích hợp cho AI** | Có **nguyên mẫu MCP chỉ đọc ở nhánh riêng**; chưa công bố là dịch vụ thương mại ổn định | [Xem prototype](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) |
+| **Tích hợp cho AI** | Có **nguyên mẫu MCP chỉ đọc trên `main`**; chưa công bố là dịch vụ thương mại ổn định | [Xem prototype](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) |
 | **Nghiệm thu biểu diễn** | **0/20**; còn đối chiếu phách, lối nhấn, song lang, bản thu, nghệ nhân | [Quy chế V2](docs/ke-hoach-v2.md) |
 
 ## Danh mục 20 bản Tổ
@@ -194,7 +194,7 @@ Nguồn gốc / ảnh trang sách / dị bản / dữ liệu mô tả
                            ↓
          Kiểm thử cấu trúc và trích nguồn
                            ↓
-     Nguyên mẫu MCP chỉ đọc (nhánh riêng)
+     Nguyên mẫu MCP chỉ đọc (main)
                            ↓
        Ứng dụng tra cứu AI / giáo dục
 ```
@@ -202,7 +202,7 @@ Nguồn gốc / ảnh trang sách / dị bản / dữ liệu mô tả
 Dự án ưu tiên **tra cứu bằng chứng trước khi đưa ra kết luận**. Bên tích hợp AI cần giữ nguyên tác giả, hệ dị bản, nguồn/trang, tình trạng xác minh và quyền sử dụng; khi không đủ dữ liệu thì phải có cơ chế **không khẳng định**.
 
 **Đường dẫn cho kỹ thuật:**
-[Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/feature/mcp-readonly-v1/integrations/vong-co-mcp) · [Quy chế V2](docs/ke-hoach-v2.md) · [Sổ nguồn](docs/nguon-tham-khao.md) · [Workflow kiểm thử](.github/workflows/kiem-thu-v2.yml)
+[Nguyên mẫu MCP](https://github.com/Form997/Vong-co/tree/main/integrations/vong-co-mcp) · [Quy chế V2](docs/ke-hoach-v2.md) · [Sổ nguồn](docs/nguon-tham-khao.md) · [Workflow kiểm thử](.github/workflows/kiem-thu-v2.yml)
 
 **V3.0-alpha và V3.1 đều đã được GitHub Pages triển khai thành công**; V3.1 được phát hành sau khi [Pull Request #5](https://github.com/Form997/Vong-co/pull/5) được hợp nhất. Cả hai vẫn là sản phẩm tra cứu metadata, chưa có nghiệm thu biểu diễn. Bước kế tiếp là bổ sung chứng cứ từng câu/trang, xác minh quyền âm thanh và thẩm định chuyên môn trước khi tính đến AI/MCP ổn định. [Lộ trình V3.1](docs/v3.1-khoi-dong.md).
 
