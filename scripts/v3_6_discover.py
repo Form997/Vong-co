@@ -13,7 +13,7 @@ import time
 import unicodedata
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, quote, urlsplit
-from urllib.request import Request, urlopen
+from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "data/v3_6/source_queries.json"
@@ -117,10 +117,23 @@ def normalize(item, provider, terms):
     }
 
 
-def load_api(url, *, auth=None, opener=urlopen, sleep=time.sleep):
+class NoRedirect(HTTPRedirectHandler):
+    """Do not forward requests or credentials beyond the approved endpoint."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise HTTPError(req.full_url, code, "API redirect refused", headers, fp)
+
+
+_API_OPENER = build_opener(NoRedirect())
+
+
+def load_api(url, *, auth=None, opener=None, sleep=time.sleep):
     parsed = urlsplit(url)
     if parsed.scheme != "https" or (parsed.netloc, parsed.path) not in ENDPOINTS:
         raise ValueError("Disallowed API URL")
+    if parsed.fragment or (auth and parsed.netloc != "api.openalex.org"):
+        raise ValueError("Disallowed API credentials or fragment")
+    opener = opener or _API_OPENER.open
     headers = {"Accept": "application/json",
                "User-Agent": "HaiDatVongCoV3.6 (+https://github.com/Form997/Vong-co)"}
     if auth:
@@ -131,11 +144,11 @@ def load_api(url, *, auth=None, opener=urlopen, sleep=time.sleep):
                 data = f.read(1_500_001)
             if len(data) > 1_500_000:
                 raise ValueError("Oversized API reply")
-            return json.loads(data.decode("utf-8"))
+            return json.loads(data.decode("utf-8"), object_pairs_hook=unique_keys)
         except HTTPError as e:
             if e.code not in (429, 500, 502, 503, 504) or retry == 2:
                 raise RuntimeError("HTTP " + str(e.code)) from None
-        except (URLError, TimeoutError):
+        except (URLError, TimeoutError, OSError):
             if retry == 2:
                 raise RuntimeError("Network error") from None
         sleep(2 ** retry)
@@ -154,12 +167,12 @@ def scan(config, *, requester=load_api, openalex_key=None, at=None):
             records = requester(url)["message"]["items"]
             if not isinstance(records, list):
                 raise ValueError("Crossref items malformed")
-            successful += 1
-            counts["crossref"] += 1
             for rec in records:
                 obj = normalize(rec, "crossref", config["title_match_phrases"])
                 if obj:
                     found.setdefault(obj["candidate_id"], obj)
+            successful += 1
+            counts["crossref"] += 1
         except (ValueError, RuntimeError, KeyError, TypeError):
             errors.append("crossref_error")
     if openalex_key:
@@ -170,12 +183,12 @@ def scan(config, *, requester=load_api, openalex_key=None, at=None):
                 records = requester(url, auth=openalex_key)["results"]
                 if not isinstance(records, list):
                     raise ValueError("OpenAlex results malformed")
-                successful += 1
-                counts["openalex"] += 1
                 for rec in records:
                     obj = normalize(rec, "openalex", config["title_match_phrases"])
                     if obj:
                         found.setdefault(obj["candidate_id"], obj)
+                successful += 1
+                counts["openalex"] += 1
             except (ValueError, RuntimeError, KeyError, TypeError):
                 errors.append("openalex_error")
     matches = sorted(found.values(), key=lambda r: (r["year"] or 0, r["candidate_id"]), reverse=True)
@@ -228,3 +241,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

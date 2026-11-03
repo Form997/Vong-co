@@ -28,6 +28,8 @@ Tra cứu dễ hiểu · Tôn trọng dị bản · Kết nối người học v
 
 > **V3.6 · 31/10/2026 — Quét nguồn học thuật có kiểm duyệt:** Crossref công khai và OpenAlex tùy chọn; GitHub Actions trên `main` tự tìm metadata, đưa vào Issue/Artifact **chờ kiểm** và không tự chỉnh sửa bài bản hoặc phát hành âm thanh. [Hướng dẫn V3.6](docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md). Trạng thái nghiệm thu: **0/20**.
 
+> **Nâng cấp mã · 03/11/2026:** sửa tra cứu số bài MCP, kiểm soát tải nguồn và mở rộng kiểm thử. [Phạm vi, kết quả và giới hạn](docs/nang-cap-ma-2026-11-03.md).
+
 ---
 
 ## Bắt đầu tại đây
@@ -136,3 +138,4 @@ Một trang in, một điểm sai khác câu nhạc được chỉ rõ, hay mộ
 <p align="center"><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
 
 <p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v2-development">Nhánh nghiên cứu V2 (liên kết ngoài)</a></sub></p>
+

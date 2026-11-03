@@ -86,6 +86,8 @@ class SourceAccessError(Exception):
 
 
 def _valid_path(path: str) -> bool:
+    if not isinstance(path, str):
+        return False
     parsed = PurePosixPath(path)
     return (
         isinstance(path, str)
@@ -99,6 +101,14 @@ def _valid_path(path: str) -> bool:
     )
 
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise urllib.error.HTTPError(req.full_url, code, "Source redirect refused", headers, fp)
+
+
+_SOURCE_OPENER = urllib.request.build_opener(NoRedirect())
+
+
 def _download(branch: str, path: str) -> str:
     if branch not in BRANCHES.values() or not _valid_path(path):
         raise ValueError("Unsupported source reference")
@@ -108,7 +118,7 @@ def _download(branch: str, path: str) -> str:
         headers={"User-Agent": "VongCo-MCP-readonly/0.1", "Accept": "text/plain"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=9) as response:
+        with _SOURCE_OPENER.open(req, timeout=9) as response:
             body = response.read(MAX_BYTES + 1)
     except urllib.error.HTTPError as exc:
         if exc.code == 404:
@@ -118,7 +128,10 @@ def _download(branch: str, path: str) -> str:
         raise SourceAccessError("Cannot currently reach the GitHub source") from exc
     if len(body) > MAX_BYTES:
         raise SourceAccessError("Source document exceeds safety limit")
-    return body.decode("utf-8", errors="replace")
+    try:
+        return body.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        raise SourceAccessError("Source document is not valid UTF-8") from exc
 
 
 def _fold(value: str) -> str:
@@ -139,7 +152,10 @@ class Catalog:
     def _read(self, branch: str, path: str) -> str:
         if branch not in BRANCHES.values() or not _valid_path(path):
             raise ValueError("Disallowed repository path or branch")
-        return self.fetch_text(branch, path)
+        content = self.fetch_text(branch, path)
+        if not isinstance(content, str) or len(content.encode("utf-8")) > MAX_BYTES:
+            raise SourceAccessError("Invalid or oversized source document")
+        return content
 
     @staticmethod
     def _reference(branch: str, path: str) -> str:
@@ -157,9 +173,11 @@ class Catalog:
         if not isinstance(query, str) or not 1 <= len(query.strip()) <= 100:
             raise ValueError("query must have 1 to 100 characters")
         needle = _fold(query.strip())
+        numeric = int(needle) if needle.isascii() and needle.isdecimal() else None
         matches = [
             w.descriptor() for w in WORKS
-            if needle in _fold(f"{w.number:02d} {w.name} {w.group} {w.slug}")
+            if (w.number == numeric if numeric is not None else
+                needle in _fold(f"{w.number:02d} {w.name} {w.group} {w.slug}"))
         ]
         return {
             "query": query,
@@ -170,7 +188,7 @@ class Catalog:
 
     def get_ban_to(self, bai_so: int, version: str = "v1") -> dict:
         w = _work(bai_so)
-        if version not in BRANCHES:
+        if not isinstance(version, str) or version not in BRANCHES:
             raise ValueError("version must be v1 or v2")
         branch = BRANCHES[version]
         path = f"{w.folder}/README.md"
@@ -261,5 +279,7 @@ class Catalog:
         return {
             "source_url": self._reference(branch, path),
             "content": content[:MAX_CHARS],
+            "truncated": len(content) > MAX_CHARS,
             "disclaimer": "Tiêu chí nghiệm thu, không phải chứng nhận mọi bài đã đạt.",
         }
+
