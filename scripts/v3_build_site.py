@@ -20,6 +20,8 @@ from xml.sax.saxutils import escape as xml_escape
 
 from v3_validate import ROOT, CATALOG, validate_catalog, strict_load
 from v3_2_validate import INDEX as V32_INDEX, validate_phrase_index
+from v3_3_validate import INDEX as V33_INDEX, validate_v33
+from v3_4_validate import INDEX as V34_INDEX, validate_v34
 from v3_5_validate import INDEX as LESSON_INDEX, validate_v35
 from v3_2_lesson_html import render_lesson, render_lessons, LESSON_CSS
 from v3_2_legal_validate import validate_all as validate_legal_publication
@@ -308,7 +310,11 @@ def build(output: Path) -> dict[str, object]:
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
     six_country_data = strict_load(SIX_COUNTRY_INDEX)
-    errors = validate_catalog(data) + validate_v35(lesson_data, data) + validate_legal_publication()
+    errors = (validate_catalog(data)
+              + validate_phrase_index(strict_load(V32_INDEX), data)
+              + validate_v33(strict_load(V33_INDEX), data)
+              + validate_v34(strict_load(V34_INDEX), data)
+              + validate_v35(lesson_data, data) + validate_legal_publication())
     if errors:
         raise ValueError("Không xuất bản metadata không hợp lệ: " + "; ".join(errors[:5]))
     target, source = output.resolve(), ROOT.resolve()
@@ -394,3 +400,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

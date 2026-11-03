@@ -26,10 +26,13 @@ async function launch(options = {}) {
   };
   let response = options.response || {ok:true, json: async () => ({version: newVersion})};
   const context = {
-    document:doc, URL,
-    window:{location, setInterval: (callback, delay) => {handlers.timer=callback; handlers.delay=delay;}},
+    document:doc, URL, AbortController,
+    window:{location, setTimeout: callback => {handlers.timeout = callback; return 1;}, clearTimeout: () => {}, setInterval: (callback, delay) => {handlers.timer=callback; handlers.delay=delay;}},
     fetch: async (url, init) => {
       calls.push({url, init});
+      if (options.hang && calls.length === 1) return new Promise((resolve, reject) => {
+        init.signal.addEventListener("abort", () => reject(new Error("aborted")), {once:true});
+      });
       if (response instanceof Error) throw response;
       return response;
     }
@@ -87,4 +90,22 @@ test("cross-origin script URL cannot trigger update checks", async () => {
   const x=await launch({script:"https://elsewhere.test/web/v3/auto-update.js"});
   assert.equal(x.calls.length,0);
   assert.deepEqual(x.replacements,[]);
+});
+
+
+
+test("a stalled request times out and the next scheduled check can recover", async () => {
+  const x = await launch({hang:true});
+  assert.equal(x.calls.length, 1);
+  x.handlers.timer();
+  await turn();
+  assert.equal(x.calls.length, 1);
+  x.handlers.timeout();
+  await turn();
+  assert.equal(x.calls[0].init.signal.aborted, true);
+  assert.deepEqual(x.replacements, []);
+  x.handlers.timer();
+  await turn();
+  assert.equal(x.calls.length, 2);
+  assert.equal(x.replacements.length, 1);
 });

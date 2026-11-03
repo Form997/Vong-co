@@ -218,3 +218,8 @@ Một trang in, một điểm sai khác câu nhạc được chỉ rõ, hay mộ
 <p align="center"><strong>HAI ĐẤT · Gìn giữ tiếng đờn, không đánh mất xuất xứ.</strong></p>
 
 <p align="center"><sub>Research-first Vietnamese musical heritage knowledge base · Cập nhật giao diện README: 28/10/2026 · <a href="https://github.com/Form997/Vong-co/tree/v3-development">Nhánh phát hành V3.1</a></sub></p>
+
+
+## Nâng cấp mã website — 03/11/2026
+
+Kiểm toàn bộ chỉ mục xuất bản, phục hồi tự cập nhật khi mạng treo và mở rộng CI. [Biên bản kiểm thử, ngày bắt đầu và dung lượng bản dựng](docs/nang-cap-web-2026-11-03.md).
