@@ -6,9 +6,11 @@ on:
       - v3-development
       - v3.1-development
       - v3.2-development
+      - v3.3-development
+      - v3.4-development
+      - v3.5-development
+      - v3.6-development
   pull_request:
-    branches:
-      - v3-development
   workflow_dispatch:
 
 permissions:
@@ -44,3 +46,4 @@ jobs:
           path: browser-evidence/
           if-no-files-found: warn
           retention-days: 7
+

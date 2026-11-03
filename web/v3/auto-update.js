@@ -31,8 +31,10 @@
   async function check() {
     if (checking || document.visibilityState === "hidden") return;
     checking = true;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 10_000);
     try {
-      const response = await fetch(manifest.href, {cache: "no-store", redirect: "error"});
+      const response = await fetch(manifest.href, {cache: "no-store", redirect: "error", signal: controller.signal});
       if (!response.ok) return;
       const data = await response.json();
       if (!data || !isRevision(data.version) || data.version === current) return;
@@ -45,6 +47,7 @@
     } catch (_) {
       // Khi mất mạng hoặc manifest chưa sẵn sàng, giữ trang đang đọc và thử lại sau.
     } finally {
+      window.clearTimeout(timeout);
       checking = false;
     }
   }
@@ -54,3 +57,4 @@
   window.setInterval(() => void check(), 60_000);
   void check();
 })();
+

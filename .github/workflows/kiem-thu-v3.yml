@@ -6,10 +6,11 @@ on:
       - v3-development
       - v3.1-development
       - v3.2-development
+      - v3.3-development
+      - v3.4-development
+      - v3.5-development
+      - v3.6-development
   pull_request:
-    branches:
-      - main
-      - v3-development
   workflow_dispatch:
 
 permissions:
@@ -111,8 +112,10 @@ jobs:
         run: node --test tests/auto_update.test.cjs
 
       - name: Do dung luong V1 V2 V3 bang GitHub API
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           python scripts/thong-ke-dung-luong.py \
             --refs v1-frozen v2-development v3-development v3.1-development v3.2-development --json
+
