@@ -155,6 +155,26 @@ async function run() {
     assert.match(palette.hero, /linear-gradient/);
     assert.ok(palette.focusableCards);
     console.log("PASS: editorial ivory/jade palette, accessible hero and real button cards");
+    await page.setViewportSize({width:360,height:800});
+    assert.equal(await page.locator('.taskbar a').count(), 4);
+    await page.locator('#search').fill('17');
+    await expectCount(page, 1, 'Search before taskbar navigation');
+    const queryBeforeTask = new URL(page.url()).search;
+    await page.locator('.taskbar [data-task="ly"]').click();
+    await page.waitForFunction(() => Math.abs(document.getElementById('bai-ly').getBoundingClientRect().top) < 150 && document.querySelector('.taskbar [aria-current]')?.dataset.task === 'ly');
+    assert.equal(new URL(page.url()).search, queryBeforeTask);
+    await page.locator('#ly-dossier-002-link').click();
+    assert.equal(await page.locator('.taskbar [aria-current]').getAttribute('data-task'), 'ly');
+    await page.locator('.taskbar [data-task="search"]').click();
+    await page.waitForSelector('button.piece');
+    await page.locator('.taskbar [data-task="search"]').click();
+    assert.equal(await page.locator('#search').evaluate(el => el === document.activeElement), true);
+    assert.ok(await page.locator('.taskbar').evaluate(el => el.getBoundingClientRect().bottom <= innerHeight));
+    await page.locator('.taskbar [data-task="sources"]').click();
+    assert.equal(new URL(page.url()).hash, '#nguon');
+    await page.locator('.taskbar [data-task="home"]').click();
+    await page.goto(BASE, {waitUntil:'networkidle'});
+    console.log('PASS: mobile taskbar, section navigation, nested return, search focus and query preservation');
 
     const groups = [
       ["sau-bac", 6],
