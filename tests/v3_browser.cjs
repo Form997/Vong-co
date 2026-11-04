@@ -161,7 +161,7 @@ async function run() {
     await expectCount(page, 1, 'Search before taskbar navigation');
     const queryBeforeTask = new URL(page.url()).search;
     await page.locator('.taskbar [data-task="ly"]').click();
-    await page.waitForFunction(() => Math.abs(document.getElementById('bai-ly').getBoundingClientRect().top) < 260);
+    await page.waitForFunction(() => Math.abs(document.getElementById('bai-ly').getBoundingClientRect().top) < 150 && document.querySelector('.taskbar [aria-current]')?.dataset.task === 'ly');
     assert.equal(new URL(page.url()).search, queryBeforeTask);
     await page.locator('#ly-dossier-002-link').click();
     assert.equal(await page.locator('.taskbar [aria-current]').getAttribute('data-task'), 'ly');
