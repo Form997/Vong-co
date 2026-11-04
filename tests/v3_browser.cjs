@@ -397,7 +397,7 @@ async function run() {
     console.log("PASS: piece 18 provisional ledger is NOT published as verified phrase index");
 
     await page.goto(BASE, {waitUntil:"networkidle"});
-    await page.locator('nav.top-links a[href="../../ly/01-ly-cay-bong/"]').click();
+    await page.locator('#ly-dossier-link').click();
     assert.equal(await page.locator("h1").innerText(), "Lý cây bông");
     assert.match(await page.locator(".status").innerText(), /Chưa nghiệm thu diễn xướng/);
     assert.equal(await page.locator("ol > li").count(), 4);
