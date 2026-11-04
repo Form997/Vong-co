@@ -408,6 +408,22 @@ async function run() {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1));
     }
     console.log("PASS: Ly cay bong dossier, 4 sources, PDF page 96, responsive and no media");
+    await page.goto(BASE, {waitUntil:"networkidle"});
+    await page.setViewportSize({width:360,height:900});
+    await page.locator('#ly-dossier-002-link').click();
+    assert.equal(await page.locator('h1').innerText(), 'Lý con sáo Gò Công');
+    assert.equal(await page.locator('ol > li').count(), 6);
+    assert.equal(await page.locator('table tbody tr').count(), 5);
+    assert.equal(await page.locator("a[href$='#page=116']").count(), 1);
+    assert.equal(await page.locator("a[href$='#page=96']").count(), 0);
+    assert.equal(await page.locator('audio, iframe').count(), 0);
+    for (const width of [360, 768, 1366]) {
+      await page.setViewportSize({width,height:900});
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1));
+    }
+    await page.locator('nav a[href="../01-ly-cay-bong/"]').click();
+    assert.equal(await page.locator('h1').innerText(), 'Lý cây bông');
+    console.log('PASS: Ly con sao Go Cong, 6 sources, source isolation, 5 comparison rows and sibling navigation');
 
     await page.goto(BASE, {waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");

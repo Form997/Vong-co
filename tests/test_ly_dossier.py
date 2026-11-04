@@ -38,6 +38,35 @@ class LyDossierTest(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     ly_pages.load_dossier()
 
+    def test_second_dossier_keeps_sources_and_counts_separate(self):
+        data = ly_pages.load_dossier('02-ly-con-sao-go-cong')
+        self.assertEqual(data['id'], 'LY-002')
+        self.assertEqual(len(data['sources']), 6)
+        html = ly_pages.render_dossier(data)
+        self.assertIn('<h1>Lý con sáo Gò Công</h1>', html)
+        self.assertIn('12 câu', html)
+        self.assertIn('17 câu, 2 nhịp', html)
+        self.assertIn('#page=116', html)
+        self.assertNotIn('#page=96', html)
+        self.assertIn('/ly/02-ly-con-sao-go-cong/', html)
+        self.assertIn('data/ly/02-ly-con-sao-go-cong.json', html)
+        self.assertIn('../01-ly-cay-bong/', html)
+        self.assertFalse(data['performance_accepted'])
+
+    def test_unknown_slug_cannot_read_arbitrary_path(self):
+        for slug in ['../../README', '03-unreviewed', '/tmp/secret']:
+            with self.subTest(slug=slug), patch.object(Path, 'read_text') as read:
+                with self.assertRaises(ValueError):
+                    ly_pages.load_dossier(slug)
+                read.assert_not_called()
+
+    def test_comparison_requires_own_source(self):
+        data = ly_pages.load_dossier('02-ly-con-sao-go-cong')
+        data['comparison'][0]['sources'] = ['S99']
+        with patch.object(Path, 'read_text', return_value=json.dumps(data)):
+            with self.assertRaises(ValueError):
+                ly_pages.load_dossier('02-ly-con-sao-go-cong')
+
     def test_escape_source_text(self):
         data = ly_pages.load_dossier()
         data['sources'][0]['title'] = '<script>alert(1)</script>'
