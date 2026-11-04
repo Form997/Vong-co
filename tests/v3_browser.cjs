@@ -61,7 +61,7 @@ async function checkSearchAndRecovery(browser) {
   try {
     await page.goto(BASE, {waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");
-    for (const [query, title] of [["1", "Lưu Thủy Trường"], ["17", "Tứ Đại Oán"], ["20", "Phụng Cầu"]]) {
+    for (const [query, title] of [["1", "Lưu Thủy Trường"], ["17", "Tứ Đại Oán"], ["20", "Phụng Cầu Hoàng Duyên"]]) {
       await page.locator("#search").fill(query);
       await expectCount(page, 1, "Exact song number " + query);
       assert.equal(await page.locator("button.piece strong").innerText(), title);
