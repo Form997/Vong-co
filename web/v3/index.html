@@ -270,7 +270,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
       </div>
       <div class="controls">
         <label for="search" class="hint">Tìm tên bản Tổ, tên khác hoặc mã hệ bản</label>
-        <input id="search" class="search" type="search" autocomplete="off" placeholder="Ví dụ: Nam Ai, Phung Cau, Cổ Bản Vắn..." aria-label="Tìm kiếm bản Tổ">
+        <input id="search" class="search" type="search" autocomplete="off" placeholder="Ví dụ: 17, Nam Ai, Phung Cau, Cổ Bản Vắn..." maxlength="100" aria-label="Tìm kiếm bản Tổ">
         <div id="filters" class="tabs" role="group" aria-label="Lọc theo nhóm nhạc">
           <button type="button" class="tab" data-group="all" aria-pressed="true">Tất cả</button>
           <button type="button" class="tab" data-group="sau-bac" aria-pressed="false">Sáu Bắc</button>
@@ -302,6 +302,8 @@ footer p{margin:0;font-size:12px;max-width:850px}
           </label>
         </div>
       </div>
+      <p><button type="button" class="tab" id="reset-filters">Xóa bộ lọc</button>
+        <span class="hint">Đường dẫn trên thanh địa chỉ giữ bộ lọc để bạn chia sẻ hoặc mở lại.</span></p>
       <div class="layout">
         <div id="pieces" class="pieces" aria-label="Danh sách 20 bản Tổ" aria-live="polite">
           <p class="empty">Đang nạp danh mục V3 từ dữ liệu JSON...</p>
@@ -357,7 +359,9 @@ footer p{margin:0;font-size:12px;max-width:850px}
       ));
       const keyword = norm(state.term.trim());
       let found = subset;
-      if (keyword) {
+      if (/^\d+$/.test(keyword)) {
+        found = subset.filter(item => item.id === Number(keyword));
+      } else if (keyword) {
         // Canonical name, alias and variant ID take priority over a phrase
         // appearing incidentally in another song's research note.
         const direct = subset.filter(item => {
@@ -400,6 +404,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
         card.setAttribute("aria-pressed",String(cardId===state.selected));
       }
       updateDetail();
+      saveFilters();
     }
     function updateDetail() {
       const detail = byId("detail"); detail.replaceChildren();
@@ -444,9 +449,43 @@ footer p{margin:0;font-size:12px;max-width:850px}
       links.append(researchLink("Hồ sơ đầy đủ ↗",item.readme_document),researchLink("Biên bản V2 ↗",item.review_document));
       detail.append(links);
     }
+    function saveFilters() {
+      const url = new URL(location.href);
+      for (const [key, value, fallback] of [
+        ["q", state.term.trim(), ""], ["group", state.family, "all"],
+        ["evidence", state.evidence, "all"], ["lesson", state.lessonStatus, "all"],
+        ["sort", state.sort, "number"]
+      ]) {
+        if (value === fallback) url.searchParams.delete(key);
+        else url.searchParams.set(key, value);
+      }
+      history.replaceState(null, "", url.href);
+    }
+    function restoreFilters() {
+      const params = new URLSearchParams(location.search);
+      state.term = (params.get("q") || "").slice(0, 100);
+      byId("search").value = state.term;
+      const pick = (key, allowed, fallback) => allowed.includes(params.get(key)) ? params.get(key) : fallback;
+      state.family = pick("group", ["all", "sau-bac", "bay-le", "ba-nam", "bon-oan"], "all");
+      state.evidence = pick("evidence", ["all", ...Object.keys(LABELS)], "all");
+      state.lessonStatus = pick("lesson", ["all", "indexed", "pending"], "all");
+      state.sort = pick("sort", ["number", "name"], "number");
+      byId("evidence").value = state.evidence;
+      byId("lesson-status").value = state.lessonStatus;
+      byId("sort-order").value = state.sort;
+      for (const tab of document.querySelectorAll(".tab[data-group]"))
+        tab.setAttribute("aria-pressed", String(tab.dataset.group === state.family));
+    }
+    byId("reset-filters").addEventListener("click", () => {
+      state.term = ""; state.evidence = "all"; state.lessonStatus = "all"; state.sort = "number";
+      byId("search").value = ""; byId("evidence").value = "all";
+      byId("lesson-status").value = "all"; byId("sort-order").value = "number";
+      filterFamily("all");
+      byId("search").focus();
+    });
     function filterFamily(family) {
       state.family=family;
-      for(const t of document.querySelectorAll(".tab")) t.setAttribute("aria-pressed",String(t.dataset.group===family));
+      for(const t of document.querySelectorAll(".tab[data-group]")) t.setAttribute("aria-pressed",String(t.dataset.group===family));
       updateList();
     }
     // Support direct links to a piece even when the URL hash changes
@@ -465,20 +504,27 @@ footer p{margin:0;font-size:12px;max-width:850px}
       state.lessonStatus = "all";
       byId("evidence").value = "all";
       byId("lesson-status").value = "all";
-      for (const tab of document.querySelectorAll(".tab")) {
+      for (const tab of document.querySelectorAll(".tab[data-group]")) {
         tab.setAttribute("aria-pressed", String(tab.dataset.group === "all"));
       }
       updateList();
     });
-    document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
+    document.querySelectorAll(".tab[data-group]").forEach(t=>t.addEventListener("click",()=>filterFamily(t.dataset.group)));
     byId("search").addEventListener("input",e=>{state.term=e.target.value;updateList();});
     byId("evidence").addEventListener("change", e => {state.evidence=e.target.value;updateList();});
     byId("lesson-status").addEventListener("change", e => {state.lessonStatus=e.target.value;updateList();});
     byId("sort-order").addEventListener("change", e => {state.sort=e.target.value;updateList();});
+    let loading = false;
     async function start(){
+      if (loading) return;
+      loading = true;
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      byId("pieces").setAttribute("aria-busy", "true");
+      byId("result-count").textContent = "Đang tải dữ liệu…";
       try{
         const [resp, lessonResp] = await Promise.all([
-          fetch(DATA_URL,{cache:"no-store"}),fetch(PHRASE_URL,{cache:"no-store"})
+          fetch(DATA_URL,{cache:"no-store", signal:controller.signal}),fetch(PHRASE_URL,{cache:"no-store", signal:controller.signal})
         ]);
         if(!resp.ok||!lessonResp.ok) throw new Error("Không tải được JSON danh mục/chỉ mục: " + resp.status + "/" + lessonResp.status);
         const [data, lessonData] = await Promise.all([resp.json(),lessonResp.json()]);
@@ -490,10 +536,22 @@ footer p{margin:0;font-size:12px;max-width:850px}
         state.selected=hashMatch?Number(hashMatch[1]):1;
         byId("count-pieces").textContent=data.items.length;
         byId("count-variants").textContent=data.items.reduce((sum,p)=>sum+p.variants.length,0);
+        restoreFilters();
         updateList();
       } catch(error) {
-        byId("pieces").replaceChildren(node("p","empty","Không thể nạp dữ liệu JSON. Mở trang qua máy chủ HTTP, ví dụ: python -m http.server 8000 tại thư mục gốc rồi truy cập /web/v3/. Chi tiết: "+error.message));
+        controller.abort();
+        const message = node("p", "empty", error.name === "AbortError"
+          ? "Tải dữ liệu quá lâu. Kiểm tra kết nối rồi thử lại nghen."
+          : "Chưa tải được danh mục. Kiểm tra kết nối rồi bấm Thử lại.");
+        const retry = node("button", "tab", "Thử lại");
+        retry.type = "button"; retry.id = "retry-load";
+        retry.addEventListener("click", () => void start());
+        byId("pieces").replaceChildren(message, retry);
         byId("result-count").textContent="Lỗi tải dữ liệu";
+      } finally {
+        clearTimeout(timer);
+        loading = false;
+        byId("pieces").setAttribute("aria-busy", "false");
       }
     }
     start();

@@ -6,6 +6,7 @@ untrusted research material, not instructions to an AI assistant.
 from __future__ import annotations
 
 import re
+import hashlib
 import unicodedata
 import urllib.error
 import urllib.request
@@ -157,9 +158,23 @@ class Catalog:
             raise SourceAccessError("Invalid or oversized source document")
         return content
 
-    @staticmethod
-    def _reference(branch: str, path: str) -> str:
-        return f"{WEB_ROOT}/{branch}/{path}"
+    def _reference(self, branch: str, path: str) -> str:
+        commit = getattr(self.fetch_text, "commits", {}).get(branch, branch)
+        return f"{WEB_ROOT}/{commit}/{path}"
+
+    def get_source_status(self) -> dict:
+        """Describe the active source without downloading any document."""
+        status = getattr(self.fetch_text, "status", None)
+        if status:
+            return {"repository": REPO, **status()}
+        return {"repository": REPO,
+                "mode": "github_live" if self.fetch_text is _download else "custom",
+                "branches": dict(BRANCHES), "network_fallback": False,
+                "notice": "Live branch content can change between reads."}
+
+    def _metadata(self, text: str) -> dict:
+        return {"source_mode": self.get_source_status()["mode"],
+                "content_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest()}
 
     def list_ban_to(self) -> dict:
         return {
@@ -172,12 +187,13 @@ class Catalog:
     def search_ban_to(self, query: str) -> dict:
         if not isinstance(query, str) or not 1 <= len(query.strip()) <= 100:
             raise ValueError("query must have 1 to 100 characters")
-        needle = _fold(query.strip())
+        needle = " ".join(_fold(query).split())
         numeric = int(needle) if needle.isascii() and needle.isdecimal() else None
         matches = [
             w.descriptor() for w in WORKS
             if (w.number == numeric if numeric is not None else
-                needle in _fold(f"{w.number:02d} {w.name} {w.group} {w.slug}"))
+                all(token in _fold(f"{w.number:02d} {w.name} {w.group} {w.slug}")
+                    for token in needle.split()))
         ]
         return {
             "query": query,
@@ -198,6 +214,7 @@ class Catalog:
             "version": version,
             "source_branch": branch,
             "source_url": self._reference(branch, path),
+            **self._metadata(content),
             "content": content[:MAX_CHARS],
             "truncated": len(content) > MAX_CHARS,
             "disclaimer": "Hồ sơ nghiên cứu, không phải chứng nhận nghệ nhân.",
@@ -231,6 +248,7 @@ class Catalog:
             "accepted": False,  # Never automatically award musical certification.
             "source_branch": branch,
             "source_url": url,
+            **self._metadata(content),
             "report": content[:MAX_CHARS],
             "truncated": len(content) > MAX_CHARS,
             "notice": "Biên bản nghiên cứu; xác nhận ĐẠT cần kết quả kiểm chuyên môn độc lập.",
@@ -249,6 +267,7 @@ class Catalog:
         return {
             "work": w.descriptor(),
             "source_url": self._reference(BRANCHES["v1"], path),
+            **self._metadata(text),
             "excerpts": selected,
             "notice": "Dòng trích từ nguồn V1; không khẳng định các dị bản tương đương.",
         }
@@ -268,6 +287,7 @@ class Catalog:
         return {
             "work": w.descriptor(),
             "source_url": self._reference(BRANCHES["v1"], path),
+            **self._metadata(text),
             "links": sources[:35],
             "notice": "Liên kết chép từ hồ sơ, chưa tự kiểm mọi URL và quyền tái bản.",
         }
@@ -278,6 +298,7 @@ class Catalog:
         content = self._read(branch, path)
         return {
             "source_url": self._reference(branch, path),
+            **self._metadata(content),
             "content": content[:MAX_CHARS],
             "truncated": len(content) > MAX_CHARS,
             "disclaimer": "Tiêu chí nghiệm thu, không phải chứng nhận mọi bài đã đạt.",

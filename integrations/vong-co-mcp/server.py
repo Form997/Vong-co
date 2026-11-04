@@ -21,7 +21,21 @@ mcp = MCPServer(
         "review. Cite the source_url when using facts."
     ),
 )
-store = Catalog()
+def configured_catalog():
+    directory = os.environ.get("VONG_CO_SOURCE_DIR", "").strip()
+    if directory:
+        from snapshot import LocalSource
+        return Catalog(LocalSource(directory))
+    return Catalog()
+
+
+store = configured_catalog()
+
+
+@mcp.tool(structured_output=True)
+def get_source_status() -> dict[str, Any]:
+    """Report live/offline source mode and snapshot commits without network access."""
+    return store.get_source_status()
 
 
 @mcp.tool(structured_output=True)

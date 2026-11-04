@@ -14,6 +14,7 @@ class MCPProtocolTests(unittest.IsolatedAsyncioTestCase):
                 names,
                 {
                     "list_ban_to",
+                    "get_source_status",
                     "search_ban_to",
                     "get_ban_to",
                     "get_nghiem_thu",

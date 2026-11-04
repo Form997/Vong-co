@@ -1,0 +1,22 @@
+# Local Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated website and transactional build staging
+_site/
+.vong-co-build-*/
+
+# Local browser test dependencies
+node_modules/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Local research snapshots and browser evidence
+offline-sources/
+.vong-co-snapshot-*/
+browser-evidence/
