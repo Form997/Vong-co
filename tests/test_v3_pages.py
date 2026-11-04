@@ -33,9 +33,9 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
             self.assertEqual(result["family_pages"], 4)
-            self.assertEqual(result["file_count"], 50)  # 19 base + 20 pieces + 6 country pages + 4 family pages + 1 lý dossier
+            self.assertEqual(result["file_count"], 52)  # 20 base + 20 pieces + 6 country pages + 4 family pages + 2 lý dossiers
             names = set(result["published_files"])
-            self.assertEqual(len(names), 50)
+            self.assertEqual(len(names), 52)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
@@ -63,7 +63,7 @@ class V31PagesBuildTests(unittest.TestCase):
 
     def test_sitemap_contains_all_20_canonical_pages(self):
         sitemap = generate_sitemap(self.catalog)
-        self.assertEqual(sitemap.count("<url>"), 34)  # root, browser, legal, 6 countries, 20 pieces, 4 groups, 1 lý
+        self.assertEqual(sitemap.count("<url>"), 35)  # root, browser, legal, 6 countries, 20 pieces, 4 groups, 2 lý
         self.assertIn("/Vong-co/web/v3/legal.html", sitemap)
         for slug in ("my", "nga", "trung-quoc", "uc", "nhat-ban", "han-quoc"):
             self.assertIn(f"/Vong-co/web/v3/quoc-gia/{slug}.html", sitemap)

@@ -29,12 +29,13 @@ from v3_2_legal_validate import validate_all as validate_legal_publication
 from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
 from v3_2_country_html import COUNTRIES, render_country_page
 from v3_family_pages import FAMILIES, page_for_family
-from ly_pages import load_dossier, render_dossier, PAGE as LY_PAGE
+from ly_pages import load_dossier, render_dossier, DOSSIERS, PAGES as LY_PAGES
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/main/"
 ALLOWLIST = (
     ("data/ly/01-ly-cay-bong.json", "data/ly/01-ly-cay-bong.json"),
+    ("data/ly/02-ly-con-sao-go-cong.json", "data/ly/02-ly-con-sao-go-cong.json"),
     ("web/v3/index.html", "web/v3/index.html"),
     ("web/v3/legal.html", "web/v3/legal.html"),
     ("data/v3/catalog.json", "data/v3/catalog.json"),
@@ -301,7 +302,7 @@ def generate_sitemap(pieces: list[dict]) -> str:
     urls = ([BASE_URL, BASE_URL + "web/v3/", BASE_URL + "web/v3/legal.html"] +
             [BASE_URL + "web/v3/quoc-gia/" + info[2] + ".html" for info in COUNTRIES.values()] +
             [BASE_URL + "nhom/" + slug + "/" for slug, *_ in FAMILIES] +
-            [piece_url(p) for p in pieces] + [BASE_URL + "ly/01-ly-cay-bong/"])
+            [piece_url(p) for p in pieces] + [BASE_URL + "ly/" + slug + "/" for _, slug in DOSSIERS])
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for url in urls:
@@ -342,7 +343,7 @@ def build(output: Path) -> dict[str, object]:
 
 
 def _build_staged(output: Path) -> dict[str, object]:
-    ly_data = load_dossier()
+    ly_data = [load_dossier(slug) for _, slug in DOSSIERS]
     data = strict_load(CATALOG)
     lesson_data = strict_load(LESSON_INDEX)
     six_country_data = strict_load(SIX_COUNTRY_INDEX)
@@ -392,16 +393,17 @@ def _build_staged(output: Path) -> dict[str, object]:
         page.write_text(render_country_page(country, six_country_data), encoding="utf-8")
     (target / "sitemap.xml").write_text(generate_sitemap(pieces), encoding="utf-8")
 
-    ly_page = target / LY_PAGE
-    ly_page.parent.mkdir(parents=True, exist_ok=True)
-    ly_page.write_text(render_dossier(ly_data), encoding="utf-8")
+    for dossier, page_path in zip(ly_data, LY_PAGES):
+        ly_page = target / page_path
+        ly_page.parent.mkdir(parents=True, exist_ok=True)
+        ly_page.write_text(render_dossier(dossier), encoding="utf-8")
 
     revision = stamp_site_revision(target)
 
     files = sorted(p.relative_to(target).as_posix()
                    for p in target.rglob("*") if p.is_file())
     expected = sorted([destination for _, destination in ALLOWLIST]
-                      + list(BASE_FILES) + [LY_PAGE]
+                      + list(BASE_FILES) + list(LY_PAGES)
                       + [f"bai/{p['slug']}/index.html" for p in pieces]
                       + [f"nhom/{slug}/index.html" for slug, *_ in FAMILIES]
                       + [f"web/v3/quoc-gia/{info[2]}.html" for info in COUNTRIES.values()])
@@ -417,7 +419,7 @@ def _build_staged(output: Path) -> dict[str, object]:
         "variants": sum(len(x["variants"]) for x in pieces),
         "detail_pages": len(pieces),
         "family_pages": len(FAMILIES),
-        "ly_dossiers": 1,
+        "ly_dossiers": len(ly_data),
         "country_law_pages": len(COUNTRIES),
         "country_law_source_records": len(six_country_data["sources"]),
         "indexed_lesson_pieces": len(lesson_by_piece),
