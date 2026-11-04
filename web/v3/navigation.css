@@ -1,0 +1,9 @@
+/* Shared navigation: local assets, keyboard accessible, mobile safe area. */
+body{padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))!important}
+.taskbar{box-sizing:border-box;position:fixed;z-index:60;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:calc(100% - 32px);max-width:520px;padding:7px;gap:4px;background:#fffefb;border:1px solid #cbd8ce;border-radius:24px;box-shadow:0 12px 40px #10382f26;font:600 12px/1.3 system-ui,sans-serif}
+.taskbar a{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:58px;min-width:0;padding:7px 4px;color:#446257;text-decoration:none;border-radius:17px;transition:background .15s,color .15s}
+.taskbar a:hover{background:#edf2ec;color:#10382f}.taskbar a[aria-current]{background:#10382f;color:#fff7e8}.taskbar a:focus-visible{outline:3px solid #a7752d;outline-offset:2px}.taskbar svg{flex-shrink:0}
+@media(min-width:1000px){.taskbar{bottom:24px;background:#fffefbf5;backdrop-filter:blur(16px)}.taskbar a{flex-direction:row;gap:8px;min-height:48px}}
+@media(max-width:380px){.taskbar{width:calc(100% - 20px);bottom:calc(10px + env(safe-area-inset-bottom,0px));border-radius:20px}.taskbar a{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.taskbar a{transition:none}}
+@media print{.taskbar{display:none}body{padding-bottom:0!important}}

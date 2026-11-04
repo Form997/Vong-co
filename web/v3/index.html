@@ -197,9 +197,23 @@ footer p{margin:0;font-size:12px;max-width:850px}
 .v33-context strong{display:block;color:var(--forest);font-size:13px;margin-bottom:5px}
 .v33-context a{font-weight:750}
 @media(max-width:700px){.v33-context{grid-template-columns:1fr;margin:0 0 25px}.v33-context>div{padding:15px}}
+
+/* Navigation refresh: shorter introduction, clear collections and touch targets. */
+.skip-link{position:fixed;top:-100px;left:16px;z-index:100;padding:12px 18px;background:#10382f;color:white;border-radius:12px}.skip-link:focus{top:12px;color:white}
+.hero{min-height:390px;padding:48px 5.2%;margin-top:24px}.hero h1{font-size:clamp(42px,4.6vw,66px)}
+.stats{margin-bottom:48px}.stat{padding:20px 23px}.notice{margin:20px 0}
+#tra-cuu,#bai-ly,#nguon{scroll-margin-top:100px}
+.ly-directory{margin:64px 0}.ly-directory h2{font-size:clamp(30px,3.8vw,46px);margin:12px 0}.ly-directory>p{color:var(--muted)}
+.ly-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 16px}
+.ly-card{display:block;padding:28px;border:1px solid #d7c9aa;border-radius:20px;background:linear-gradient(140deg,#fffdf7,#f3ebd9);text-decoration:none;color:var(--forest);box-shadow:0 7px 25px #10382f08;transition:transform .2s,border-color .2s}
+.ly-card:hover{transform:translateY(-3px);border-color:#997644}.ly-number{font-size:11px;letter-spacing:2px;font-weight:750;color:#806131}.ly-card h3{font-size:32px;margin:20px 0 10px}.ly-card p{font-size:14px;color:var(--ink-soft)}.ly-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #d9ccb3;padding-top:16px;margin-top:24px;font-size:12px;font-weight:700}.ly-meta b{font-size:24px}
+.group-directory{margin:54px 0}.v36-sources{margin:54px 0 24px}.v33-context{margin:24px 0}
+.tab,.advanced select{min-height:44px}.top-links a{min-height:44px;display:inline-flex;align-items:center}
+@media(max-width:700px){.hero{min-height:0;padding:32px 24px}.hero h1{font-size:clamp(38px,9vw,54px)}.stats{margin-bottom:36px}.stat{padding:16px}.ly-cards{grid-template-columns:1fr}.ly-directory{margin:44px 0}.ly-card{padding:24px}.group-directory{margin:42px 0}.v36-sources{margin:42px 0 24px}.top-links a:not(:last-child){display:none}}
 </style>
 </head>
 <body>
+  <a class="skip-link" href="#tra-cuu">Bỏ qua phần giới thiệu, tới tra cứu</a>
   <header class="top">
     <div class="container top-inner">
       <a class="brand" href="#dau-trang" aria-label="HAI ĐẤT - về đầu trang">
@@ -207,7 +221,7 @@ footer p{margin:0;font-size:12px;max-width:850px}
         <span><strong>HAI ĐẤT</strong><small>THƯ VIỆN DI SẢN ÂM NHẠC</small></span>
       </a>
       <nav class="top-links" aria-label="Điều hướng">
-        <a href="../../ly/01-ly-cay-bong/">Bài lý · Lý cây bông</a>
+        <a href="#bai-ly">Các bài lý</a>
         <a href="#tra-cuu">Tra cứu</a>
         <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3-khoi-dong.md" target="_blank" rel="noopener noreferrer">V3 là gì?</a>
         <a href="https://github.com/Form997/Vong-co/tree/main" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
@@ -215,7 +229,6 @@ footer p{margin:0;font-size:12px;max-width:850px}
     </div>
   </header>
   <main class="container" id="dau-trang">
-    <p><a id="ly-dossier-link" href="../../ly/01-ly-cay-bong/">Bài lý 001: Lý cây bông</a> · <a id="ly-dossier-002-link" href="../../ly/02-ly-con-sao-go-cong/">Bài lý 002: Lý con sáo Gò Công</a> · Đang kiểm nguồn, chưa nghiệm thu diễn xướng.</p>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy"><div class="eyebrow">Đờn ca tài tử Nam Bộ · Bộ sưu tập nghiên cứu</div>
       <h1 id="hero-title">Giữ hồn tiếng đờn.<br><em>Mở lối tri thức.</em></h1>
@@ -234,36 +247,12 @@ footer p{margin:0;font-size:12px;max-width:850px}
       <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z" stroke-width="1.5"/><path d="M12 9v5m0 3v1" stroke-width="1.5"/></svg>
       <div><strong>Dữ liệu nghiên cứu, chưa phải bản diễn xướng chuẩn.</strong> Đã mở 20/20 hồ sơ kiểm nguồn V2; 0/20 bài được nghiệm thu diễn xướng. Không tự sao chép ký âm, lời ca hoặc bản thu có bản quyền.</div>
     </aside>
-    <section class="v33-context" aria-label="Những điểm nghiên cứu về nguồn">
-      <div><strong>Bài 02 · Phú Lục Chấn</strong>34 nhãn nhạc Nhị Tấn tập II nhưng chỉ 32 nhãn lời in trong nguồn này. Câu 08/34 còn khác dấu cuối với Văn Dần. <a href="../../bai/02-phu-luc-chan/#hoc-tung-cau">Xem 34 vị trí và cảnh báo ↗</a></div>
-      <div><strong>Bài 03 · Bình Bán Chấn</strong>44 vị trí ở bốn lớp theo Nhị Tấn tập II. Ký hiệu cuối hàng không được suy thành nhịp, cao độ hoặc ngón đờn thực tấu. <a href="../../bai/03-binh-ban-chan/#hoc-tung-cau">Đối chiếu 44 nhãn ↗</a></div>
-      <div><strong>Bài 04 · Cổ Bản</strong>Hai hệ độc lập: Vắn 34 nhãn và Trường 68 nhãn theo Nhị Tấn tập II; chưa đối chiếu thành bản diễn xướng. <a href="../../bai/04-co-ban-van/#hoc-tung-cau">Xem hai hệ ↗</a></div>
-      <div><strong>Bài 05 · Xuân Tình Chấn</strong>48 nhãn theo Nhị Tấn tập II, bốn lớp. Câu 37 có sai biệt ký hiệu; tách khỏi bản Thủ tập I và Tây Thi ở cuối trang. <a href="../../bai/05-xuan-tinh-chan/#hoc-tung-cau">Xem chỉ mục ↗</a></div>
-    </section>
     <section class="stats" aria-label="Tổng quan dữ liệu">
       <div class="stat"><strong id="count-pieces">20</strong><span>Bản Tổ trong danh mục</span></div>
       <div class="stat"><strong id="count-variants">—</strong><span>Hệ bản và dị bản mô tả</span></div>
       <div class="stat"><strong>04</strong><span>Nhóm Bắc · Lễ · Nam · Oán</span></div>
       <div class="stat"><strong id="count-lessons">—</strong><span>Bài có chỉ mục câu V3.5 · 300 nhãn</span></div>
       <div class="stat"><strong>00</strong><span>Bài đã nghiệm thu diễn xướng</span></div>
-    </section>
-    <section class="group-directory" aria-labelledby="groups-title">
-      <div class="eyebrow">Bốn nhóm của 20 bản Tổ</div>
-      <h2 id="groups-title">Mỗi nhóm, một trang tra cứu riêng</h2>
-      <p>Tìm đúng bài trong nhóm mình muốn học, rồi mở hồ sơ nguồn từng tác phẩm. Không thay thế nghiệm thu diễn xướng.</p>
-      <nav class="group-directory-grid" aria-label="Mở bốn trang nhóm bản Tổ">
-        <a href="../../nhom/sau-bac/"><strong>Sáu Bắc</strong><span>6 bài · Bài 01–06 · Mở trang nhóm ↗</span></a>
-        <a href="../../nhom/bay-le/"><strong>Bảy Lễ</strong><span>7 bài · Bài 07–13 · Mở trang nhóm ↗</span></a>
-        <a href="../../nhom/ba-nam/"><strong>Ba Nam</strong><span>3 bài · Bài 14–16 · Mở trang nhóm ↗</span></a>
-        <a href="../../nhom/bon-oan/"><strong>Bốn Oán</strong><span>4 bài · Bài 17–20 · Mở trang nhóm ↗</span></a>
-      </nav>
-    </section>
-    <section class="v36-sources" aria-labelledby="v36-title">
-      <div class="eyebrow">Nguồn nghiên cứu có kiểm duyệt · V3.6</div>
-      <h2 id="v36-title">Internet tìm nguồn mới, con người kiểm chứng</h2>
-      <p>V3.6 dùng Crossref và OpenAlex tùy chọn để tìm metadata khoa học. Kết quả tự động chỉ vào hàng chờ, không tự điền vào các bài Tổ, không tự đăng lời ca, ký âm hay âm thanh. 300 nhãn câu V3.5 tiếp tục là chỉ mục nguồn đang đối chiếu; 0/20 nghiệm thu diễn xướng.</p>
-      <a href="https://github.com/Form997/Vong-co/issues/23" target="_blank" rel="noopener noreferrer">Xem nguồn Internet chờ duyệt ↗</a>
-      <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md" target="_blank" rel="noopener noreferrer">Quy trình kiểm định và bảo vệ nhánh ↗</a>
     </section>
     <section id="tra-cuu" aria-labelledby="browse-title">
       <div class="intro">
@@ -316,6 +305,39 @@ footer p{margin:0;font-size:12px;max-width:850px}
           <p>Chọn một tác phẩm bên trái để mở nhanh hồ sơ, nguồn tham khảo và các hệ bản đang được nghiên cứu.</p>
         </aside>
       </div>
+    </section>
+    <section id="bai-ly" class="ly-directory" aria-labelledby="ly-title">
+      <div class="eyebrow">Từng bài · Từng nguồn</div>
+      <h2 id="ly-title">Những điệu lý quê mình</h2>
+      <p>Hai hồ sơ đang đối chiếu. Mở từng bài để đọc nguồn và xem những điểm còn chờ kiểm chứng.</p>
+      <div class="ly-cards">
+        <a id="ly-dossier-link" class="ly-card" href="../../ly/01-ly-cay-bong/"><span class="ly-number">01 / BÀI LÝ</span><h3>Lý cây bông</h3><p>Đối chiếu bản ký âm và tư liệu diễn xướng.</p><span class="ly-meta">4 nguồn · Đang nghiên cứu <b aria-hidden="true">↗</b></span></a>
+        <a id="ly-dossier-002-link" class="ly-card" href="../../ly/02-ly-con-sao-go-cong/"><span class="ly-number">02 / BÀI LÝ</span><h3>Lý con sáo Gò Công</h3><p>Phân biệt các bản và cách đếm câu theo từng nguồn.</p><span class="ly-meta">6 nguồn · Đang nghiên cứu <b aria-hidden="true">↗</b></span></a>
+      </div><p class="hint">Chưa nghiệm thu diễn xướng. Danh mục bài lý được theo dõi riêng với 20 bản Tổ.</p>
+    </section>
+    <section class="group-directory" aria-labelledby="groups-title">
+      <div class="eyebrow">Bốn nhóm của 20 bản Tổ</div>
+      <h2 id="groups-title">Mỗi nhóm, một trang tra cứu riêng</h2>
+      <p>Tìm đúng bài trong nhóm mình muốn học, rồi mở hồ sơ nguồn từng tác phẩm. Không thay thế nghiệm thu diễn xướng.</p>
+      <nav class="group-directory-grid" aria-label="Mở bốn trang nhóm bản Tổ">
+        <a href="../../nhom/sau-bac/"><strong>Sáu Bắc</strong><span>6 bài · Bài 01–06 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/bay-le/"><strong>Bảy Lễ</strong><span>7 bài · Bài 07–13 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/ba-nam/"><strong>Ba Nam</strong><span>3 bài · Bài 14–16 · Mở trang nhóm ↗</span></a>
+        <a href="../../nhom/bon-oan/"><strong>Bốn Oán</strong><span>4 bài · Bài 17–20 · Mở trang nhóm ↗</span></a>
+      </nav>
+    </section>
+    <section class="v36-sources" id="nguon" aria-labelledby="v36-title">
+      <div class="eyebrow">Nguồn nghiên cứu có kiểm duyệt · V3.6</div>
+      <h2 id="v36-title">Internet tìm nguồn mới, con người kiểm chứng</h2>
+      <p>V3.6 dùng Crossref và OpenAlex tùy chọn để tìm metadata khoa học. Kết quả tự động chỉ vào hàng chờ, không tự điền vào các bài Tổ, không tự đăng lời ca, ký âm hay âm thanh. 300 nhãn câu V3.5 tiếp tục là chỉ mục nguồn đang đối chiếu; 0/20 nghiệm thu diễn xướng.</p>
+      <a href="https://github.com/Form997/Vong-co/issues/23" target="_blank" rel="noopener noreferrer">Xem nguồn Internet chờ duyệt ↗</a>
+      <a href="https://github.com/Form997/Vong-co/blob/main/docs/v3.6-tu-dong-nguon-va-bao-ve-nhanh.md" target="_blank" rel="noopener noreferrer">Quy trình kiểm định và bảo vệ nhánh ↗</a>
+    </section>
+    <section class="v33-context" aria-label="Những điểm nghiên cứu về nguồn">
+      <div><strong>Bài 02 · Phú Lục Chấn</strong>34 nhãn nhạc Nhị Tấn tập II nhưng chỉ 32 nhãn lời in trong nguồn này. Câu 08/34 còn khác dấu cuối với Văn Dần. <a href="../../bai/02-phu-luc-chan/#hoc-tung-cau">Xem 34 vị trí và cảnh báo ↗</a></div>
+      <div><strong>Bài 03 · Bình Bán Chấn</strong>44 vị trí ở bốn lớp theo Nhị Tấn tập II. Ký hiệu cuối hàng không được suy thành nhịp, cao độ hoặc ngón đờn thực tấu. <a href="../../bai/03-binh-ban-chan/#hoc-tung-cau">Đối chiếu 44 nhãn ↗</a></div>
+      <div><strong>Bài 04 · Cổ Bản</strong>Hai hệ độc lập: Vắn 34 nhãn và Trường 68 nhãn theo Nhị Tấn tập II; chưa đối chiếu thành bản diễn xướng. <a href="../../bai/04-co-ban-van/#hoc-tung-cau">Xem hai hệ ↗</a></div>
+      <div><strong>Bài 05 · Xuân Tình Chấn</strong>48 nhãn theo Nhị Tấn tập II, bốn lớp. Câu 37 có sai biệt ký hiệu; tách khỏi bản Thủ tập I và Tây Thi ở cuối trang. <a href="../../bai/05-xuan-tinh-chan/#hoc-tung-cau">Xem chỉ mục ↗</a></div>
     </section>
   </main>
   <footer><div class="container">

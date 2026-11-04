@@ -29,11 +29,14 @@ from v3_2_legal_validate import validate_all as validate_legal_publication
 from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
 from v3_2_country_html import COUNTRIES, render_country_page
 from v3_family_pages import FAMILIES, page_for_family
+from site_navigation import navigation_for
 from ly_pages import load_dossier, render_dossier, DOSSIERS, PAGES as LY_PAGES
 
 BASE_URL = "https://form997.github.io/Vong-co/"
 REPO_BLOB = "https://github.com/Form997/Vong-co/blob/main/"
 ALLOWLIST = (
+    ("web/v3/navigation.css", "web/v3/navigation.css"),
+    ("web/v3/navigation.js", "web/v3/navigation.js"),
     ("data/ly/01-ly-cay-bong.json", "data/ly/01-ly-cay-bong.json"),
     ("data/ly/02-ly-con-sao-go-cong.json", "data/ly/02-ly-con-sao-go-cong.json"),
     ("web/v3/index.html", "web/v3/index.html"),
@@ -68,7 +71,15 @@ def stamp_site_revision(target: Path) -> str:
         html = path.read_text(encoding="utf-8")
         if html.count("</head>") != 1 or REVISION_PLACEHOLDER in html:
             raise ValueError(f"Không thể gắn phiên bản an toàn: {relative}")
-        metadata = (f'<meta name="hai-dat-revision" content="{REVISION_PLACEHOLDER}">\n'
+        nav_css = posixpath.relpath("web/v3/navigation.css", posixpath.dirname(relative) or ".")
+        nav_js = posixpath.relpath("web/v3/navigation.js", posixpath.dirname(relative) or ".")
+        if relative != "index.html":
+            if html.count("</body>") != 1:
+                raise ValueError(f"Không thể gắn điều hướng: {relative}")
+            html = html.replace("</body>", navigation_for(relative) + "</body>", 1)
+        metadata = (f'<link rel="stylesheet" href="{escape(nav_css, quote=True)}">\n'
+                    f'<script defer src="{escape(nav_js, quote=True)}"></script>\n'
+                    f'<meta name="hai-dat-revision" content="{REVISION_PLACEHOLDER}">\n'
                     f'<script defer src="{escape(script, quote=True)}"></script>\n')
         path.write_text(html.replace("</head>", metadata + "</head>", 1), encoding="utf-8")
 

@@ -33,9 +33,9 @@ class V31PagesBuildTests(unittest.TestCase):
             self.assertEqual(result["variants"], 30)
             self.assertEqual(result["detail_pages"], 20)
             self.assertEqual(result["family_pages"], 4)
-            self.assertEqual(result["file_count"], 52)  # 20 base + 20 pieces + 6 country pages + 4 family pages + 2 lý dossiers
+            self.assertEqual(result["file_count"], 54)  # 22 base + 20 pieces + 6 country pages + 4 family pages + 2 lý dossiers
             names = set(result["published_files"])
-            self.assertEqual(len(names), 52)
+            self.assertEqual(len(names), 54)
             self.assertIn(".nojekyll", names)
             self.assertIn("web/v3/index.html", names)
             self.assertIn("web/v3/legal.html", names)
