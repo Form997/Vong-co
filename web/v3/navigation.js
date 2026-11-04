@@ -26,7 +26,16 @@
     const link = event.target.closest('a[data-task]');
     if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     activate(link.dataset.task);
-    if (link.dataset.task === 'search') document.getElementById('search')?.focus({preventScroll:true});
+    if (link.dataset.task === 'search') {
+      event.preventDefault();
+      if (location.hash !== '#tra-cuu') {
+        const url = new URL(location.href);
+        url.hash = 'tra-cuu';
+        history.pushState(null, '', url);
+      }
+      document.getElementById('tra-cuu').scrollIntoView({block:'start'});
+      document.getElementById('search')?.focus({preventScroll:true});
+    }
   });
   track();
 })();
