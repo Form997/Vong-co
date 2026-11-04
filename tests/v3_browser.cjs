@@ -397,6 +397,19 @@ async function run() {
     console.log("PASS: piece 18 provisional ledger is NOT published as verified phrase index");
 
     await page.goto(BASE, {waitUntil:"networkidle"});
+    await page.locator('#ly-dossier-link').click();
+    assert.equal(await page.locator("h1").innerText(), "Lý cây bông");
+    assert.match(await page.locator(".status").innerText(), /Chưa nghiệm thu diễn xướng/);
+    assert.equal(await page.locator("ol > li").count(), 4);
+    assert.equal(await page.locator("a[href$='#page=96']").count(), 1);
+    assert.equal(await page.locator("audio, iframe").count(), 0);
+    for (const width of [360, 768, 1366]) {
+      await page.setViewportSize({width,height:900});
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1));
+    }
+    console.log("PASS: Ly cay bong dossier, 4 sources, PDF page 96, responsive and no media");
+
+    await page.goto(BASE, {waitUntil:"networkidle"});
     await page.waitForSelector("button.piece");
     assert.deepEqual(consoleErrors, [], "No uncaught browser JavaScript errors");
     console.log("PASS: local V2 review links and error-free browser rendering");
