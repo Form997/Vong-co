@@ -13,6 +13,7 @@ import hashlib
 from html import escape
 import json
 import posixpath
+import re
 import shutil
 import tempfile
 from pathlib import Path
@@ -29,7 +30,7 @@ from v3_2_legal_validate import validate_all as validate_legal_publication
 from v3_2_six_country_validate import REGISTRY as SIX_COUNTRY_INDEX
 from v3_2_country_html import COUNTRIES, render_country_page
 from v3_family_pages import FAMILIES, page_for_family
-from site_navigation import navigation_for
+from site_navigation import navigation_for, reading_tools_for
 from ly_pages import load_dossier, render_dossier, DOSSIERS, PAGES as LY_PAGES
 
 BASE_URL = "https://form997.github.io/Vong-co/"
@@ -77,6 +78,11 @@ def stamp_site_revision(target: Path) -> str:
             if html.count("</body>") != 1:
                 raise ValueError(f"Không thể gắn điều hướng: {relative}")
             html = html.replace("</body>", navigation_for(relative) + "</body>", 1)
+            reader = reading_tools_for(relative)
+            if reader:
+                html, count = re.subn(r"(<main\b[^>]*>)", lambda m: m.group(1) + reader, html, count=1)
+                if count != 1:
+                    raise ValueError(f"Không thể gắn tùy chọn đọc: {relative}")
         metadata = (f'<link rel="stylesheet" href="{escape(nav_css, quote=True)}">\n'
                     f'<script defer src="{escape(nav_js, quote=True)}"></script>\n'
                     f'<meta name="hai-dat-revision" content="{REVISION_PLACEHOLDER}">\n'
