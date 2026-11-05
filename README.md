@@ -1,3 +1,5 @@
+> **Tùy chọn đọc hồ sơ · 05/11/2026:** ba mức cỡ chữ, chế độ đọc gọn, đặt lại và về đầu bài cho trang bản Tổ / bài lý. Ghi nhớ tùy chọn trên thiết bị; không thay đổi dữ liệu nghiên cứu.
+
 > **Giao diện và thanh tác vụ · 04/11/2026:** điều hướng cố định Trang chủ / Tra cứu / Bài lý / Nguồn trên các trang; thẻ bài lý riêng, phần tìm kiếm được đưa lên trước các ghi chú nghiên cứu. Hỗ trợ bàn phím, màn hình nhỏ và giảm chuyển động.
 
 > **Bài lý 002 · 04/11/2026:** [Lý con sáo Gò Công](ly/02-ly-con-sao-go-cong/README.md) — 6 nguồn, phân biệt bản Gò Công và ca khúc Bạc Liêu; giữ riêng cách đếm 12/17 câu. Chưa nghiệm thu diễn xướng.

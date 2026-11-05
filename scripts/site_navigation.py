@@ -22,3 +22,9 @@ def navigation_for(relative):
         links.append(f'<a href="{escape(base + "#" + anchor, quote=True)}" data-task="{key}"{current}>'
                      f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{icon}</svg><span>{label}</span></a>')
     return '<nav class="taskbar" aria-label="Thanh tác vụ thư viện">'+''.join(links)+'</nav>'
+
+
+def reading_tools_for(relative):
+    if not relative.startswith(('bai/', 'ly/')):
+        return ''
+    return '<details class="reading-tools" hidden><summary>Tùy chọn đọc</summary><div class="reading-controls"><span>Cỡ chữ</span><button type="button" data-reading="smaller" aria-label="Giảm cỡ chữ">A−</button><output id="reading-size-label" aria-live="polite">Mặc định</output><button type="button" data-reading="larger" aria-label="Tăng cỡ chữ">A+</button><button type="button" data-reading="focus" aria-pressed="false">Đọc gọn</button><button type="button" data-reading="reset">Đặt lại</button><button type="button" data-reading="top">Về đầu bài ↑</button></div><p>Tùy chọn đọc được lưu trên thiết bị này; nội dung và nguồn của bài được giữ đầy đủ.</p></details>'
