@@ -461,6 +461,7 @@ async function run() {
     await page.locator('[data-reading="reset"]').click();
     assert.equal(await page.locator('body').getAttribute('data-reading-size'), '0');
     assert.equal(await page.locator('body').getAttribute('data-reading-focus'), 'false');
+    assert.equal(await page.evaluate(() => localStorage.getItem('hai-dat-reading-v1')), null);
     await page.locator('[data-reading="top"]').click();
     assert.equal(await page.locator('h1').evaluate(el => el === document.activeElement), true);
     const noScript = await browser.newContext({javaScriptEnabled:false});

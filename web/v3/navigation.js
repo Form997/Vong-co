@@ -37,8 +37,11 @@
     if (action === 'larger') size = Math.min(2, size + 1);
     if (action === 'smaller') size = Math.max(0, size - 1);
     if (action === 'focus') focused = !focused;
-    if (action === 'reset') { size = 0; focused = false; }
-    apply(true);
+    if (action === 'reset') {
+      size = 0; focused = false;
+      try { localStorage.removeItem(key); } catch (_) { /* Optional storage. */ }
+      apply();
+    } else apply(true);
   });
 })();
 

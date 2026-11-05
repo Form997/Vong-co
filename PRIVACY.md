@@ -6,7 +6,7 @@
 
 ## 1. Bản tóm tắt minh bạch
 
-Mã website hiện tại dùng JavaScript để **tải hai tệp JSON tĩnh từ chính website**, tìm kiếm và lọc nội dung **trực tiếp trong trình duyệt**. Tại thời điểm rà soát mã, website **không có** SDK phân tích truy cập, thẻ quảng cáo, tracker hành vi, cookie do ứng dụng tự tạo, `localStorage`, biểu mẫu thu tên/email, API lưu dữ liệu người học, trình phát âm thanh hay cơ chế nhận thanh toán.
+Mã website hiện tại dùng JavaScript để **tải hai tệp JSON tĩnh từ chính website**, tìm kiếm và lọc nội dung **trực tiếp trong trình duyệt**. Tại thời điểm rà soát mã, website **không có** SDK phân tích truy cập, thẻ quảng cáo, tracker hành vi, cookie do ứng dụng tự tạo, biểu mẫu thu tên/email, API lưu dữ liệu người học, trình phát âm thanh hay cơ chế nhận thanh toán.
 
 **Nhưng không tuyên bố “không ai thu thập bất cứ dữ liệu nào”.** GitHub Pages, đơn vị cung cấp hosting, nêu rõ **địa chỉ IP người truy cập được ghi và lưu cho mục đích an ninh**, bất kể có tài khoản GitHub hay không. Ngoài ra, trình duyệt/nhà mạng và trang bên ngoài bạn tự nhấn liên kết có thể xử lý dữ liệu theo chính sách của họ.
 
@@ -39,7 +39,9 @@ Khi chủ động phục vụ/giám sát người tại EU, đánh giá [GDPR Đ
 
 ## 5. Cookie, lưu trữ thiết bị, bên thứ ba
 
-**Mã HAI ĐẤT đang triển khai** không viết cookie/localStorage, không gắn Google Analytics, Meta Pixel hay trình quảng cáo. Điều này **không phải** cam kết rằng GitHub hay trình duyệt không dùng bất kỳ công nghệ/log nào. Nếu gắn phân tích, nhúng trình phát bên thứ ba, captcha, mạng xã hội hoặc SDK sau này, phải cập nhật chính sách này **trước khi bật tính năng** và thiết lập cơ chế chấp thuận theo địa bàn nếu cần.
+**Tùy chọn đọc bổ sung ngày 05/11/2026:** mã HAI ĐẤT dùng khóa `hai-dat-reading-v1` trong `localStorage` để nhớ mức cỡ chữ (0–2) và chế độ đọc gọn (bật/tắt) trên thiết bị. Không lưu tên, nội dung tìm kiếm hoặc lịch sử đọc trong khóa này và không gửi tùy chọn về máy chủ. Nút **Đặt lại** xóa khóa này và đưa giao diện về mặc định; người dùng cũng có thể xóa dữ liệu trang trong trình duyệt. Nếu lưu trữ bị chặn, các nút vẫn dùng được trong lần mở trang hiện tại.
+
+**Mã HAI ĐẤT đang triển khai** không viết cookie theo dõi, không gắn Google Analytics, Meta Pixel hay trình quảng cáo. Điều này **không phải** cam kết rằng GitHub hay trình duyệt không dùng bất kỳ công nghệ/log nào. Nếu gắn phân tích, nhúng trình phát bên thứ ba, captcha, mạng xã hội hoặc SDK sau này, phải cập nhật chính sách này **trước khi bật tính năng** và thiết lập cơ chế chấp thuận theo địa bàn nếu cần.
 
 Link ngoài chuyển bạn sang website khác; chính sách tại đó điều chỉnh cách họ xử lý dữ liệu.
 
